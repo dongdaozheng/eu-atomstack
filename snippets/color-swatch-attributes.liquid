@@ -1,0 +1,82 @@
+{%- comment -%}
+   Extract text and background color from the color swatch config. You must passed three parameters to this snippet:
+
+  - color_swatch_text_color_config: extracted from the theme settings
+  - color_swatch_background_color_config: extracted from the theme settings
+  - value: the actual color
+{%- endcomment -%}
+
+{%- assign color_value_downcase = value | downcase -%}
+{%- assign color_swatch_text_color = '' -%}
+{%- assign color_swatch_background_color = '' -%}
+
+{%- for color_swatch_item in color_swatch_text_color_config -%}
+  {%- assign color_swatch_parts = color_swatch_item | split: ':' -%}
+  {%- assign color_swatch_name = color_swatch_parts.first | downcase | strip -%}
+
+  {%- if color_value_downcase == color_swatch_name -%}
+    {%- assign color_swatch_value = color_swatch_parts.last | strip -%}
+
+    {%- if color_swatch_value contains '#' -%}
+      {%- assign color_swatch_value_red = color_swatch_value | color_extract: 'red' -%}
+      {%- assign color_swatch_value_green = color_swatch_value | color_extract: 'green' -%}
+      {%- assign color_swatch_value_blue = color_swatch_value | color_extract: 'blue' -%}
+
+      {%- assign color_swatch_text_color = color_swatch_value_red
+        | append: ','
+        | append: color_swatch_value_green
+        | append: ','
+        | append: color_swatch_value_blue
+      -%}
+    {%- endif -%}
+
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- for color_swatch_item in color_swatch_background_color_config -%}
+  {%- assign color_swatch_parts = color_swatch_item | split: ':' -%}
+  {%- assign color_swatch_name = color_swatch_parts.first | downcase | strip -%}
+
+  {%- if color_value_downcase == color_swatch_name -%}
+    {%- assign color_swatch_value = color_swatch_parts.last | strip -%}
+    {%- assign color_swatch_group_values = color_swatch_value | split: ',' -%}
+
+    {%- assign color_swatch_value_red = '' -%}
+    {%- assign color_swatch_value_green = '' -%}
+    {%- assign color_swatch_value_blue = '' -%}
+
+    {%- if color_swatch_group_values.size > 1 -%}
+      {%- for color_swatch_group_value in color_swatch_group_values -%}
+        {%- if color_swatch_group_value contains '#' -%}
+          {%- assign color_swatch_value_red = color_swatch_group_value | color_extract: 'red' -%}
+          {%- assign color_swatch_value_green = color_swatch_group_value | color_extract: 'green' -%}
+          {%- assign color_swatch_value_blue = color_swatch_group_value | color_extract: 'blue' -%}
+
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- elsif color_swatch_value contains '#' -%}
+      {%- assign color_swatch_value_red = color_swatch_value | color_extract: 'red' -%}
+      {%- assign color_swatch_value_green = color_swatch_value | color_extract: 'green' -%}
+      {%- assign color_swatch_value_blue = color_swatch_value | color_extract: 'blue' -%}
+    {%- endif -%}
+
+    {%- assign color_swatch_background_color = color_swatch_value_red
+      | append: ','
+      | append: color_swatch_value_green
+      | append: ','
+      | append: color_swatch_value_blue
+    -%}
+
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if color_swatch_text_color != '' -%}
+  data-text-color="{{ color_swatch_text_color }}"
+{%- endif -%}
+
+{%- if color_swatch_background_color != '' -%}
+  data-bg-color="{{ color_swatch_background_color }}"
+{%- endif -%}

@@ -1,0 +1,46 @@
+<style>
+  {% for block in section.blocks %}
+    {%- if block.settings.color_name and block.settings.image != nil -%}
+      .color-swatch__item[data-color-name='{{ block.settings.color_name }}'],
+      .combo-box__color-swatch[data-color-name='{{ block.settings.color_name }}'] {
+        background-color: unset !important;
+        background-image: url({{ block.settings.image | image_url: width: 50, height: 50, crop: 'center' }}) !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+      }
+    {%- endif -%}
+  {% endfor %}
+</style>
+
+{% schema %}
+{
+  "name": "t:Color_swatch_patterns",
+  "class": "shopify-section--color-swatch-patterns",
+  "blocks": [
+    {
+      "type": "pattern",
+      "name": "t:Pattern",
+      "settings": [
+        {
+          "type": "text",
+          "id": "color_name",
+          "label": "t:Color_name"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:Image"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:Customize_image_patterns_for_specific_colors"
+    }
+  ],
+  "default": {}
+}
+{% endschema %}

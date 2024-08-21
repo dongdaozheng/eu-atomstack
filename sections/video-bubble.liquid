@@ -1,0 +1,391 @@
+{% comment %}
+  Global video bubble.
+{% endcomment %}
+
+{%- if section.settings.enable -%}
+  {%- render 'video-bubble' -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:Video_bubble",
+  "class": "shopify-section--video-bubble",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "t:Enable",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "context",
+      "label": "t:Context",
+      "default": "Chat with me!"
+    },
+    {
+      "type": "image_picker",
+      "id": "video_poster",
+      "label": "t:Cover_image",
+      "info": "t:Video_cover_image_info"
+    },
+    {
+      "type": "video",
+      "id": "preview_video",
+      "label": "t:Preview_video",
+      "info": "t:Preview_video_info"
+    },
+    {
+      "type": "video_url",
+      "id": "preview_video_url",
+      "accept": ["vimeo", "youtube"],
+      "label": "t:Preview_video_url"
+    },
+    {
+      "type": "video",
+      "id": "main_video",
+      "label": "t:Main_video",
+      "info": "t:Main_video_info"
+    },
+    {
+      "type": "video_url",
+      "id": "main_video_url",
+      "accept": ["vimeo", "youtube"],
+      "label": "t:Main_video_url"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "t:Product"
+    },
+    {
+      "type": "text",
+      "id": "shop_button_content",
+      "label": "t:Shop_button_content",
+      "default": "Shop"
+    },
+    {
+      "type": "header",
+      "content": "t:Desktop_settings"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width",
+      "label": "t:Width",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "desktop_height",
+      "label": "t:Height",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "desktop_border_radius",
+      "label": "t:Border_radius",
+      "min": 0,
+      "max": 250,
+      "step": 2.5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "select",
+      "id": "desktop_position",
+      "label": "t:Position",
+      "options": [
+        {
+          "value": "top_left",
+          "label": "t:Top_left"
+        },
+        {
+          "value": "top_right",
+          "label": "t:Top_right"
+        },
+        {
+          "value": "middle_left",
+          "label": "t:Middle_left"
+        },
+        {
+          "value": "middle_right",
+          "label": "t:Middle_right"
+        },
+        {
+          "value": "bottom_left",
+          "label": "t:Bottom_left"
+        },
+        {
+          "value": "bottom_right",
+          "label": "t:Bottom_right"
+        }
+      ],
+      "default": "bottom_right"
+    },
+    {
+      "type": "range",
+      "id": "desktop_x_margin",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:Top_bottom_margin",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "desktop_y_margin",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:Left_right_margin",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "t:Mobile_settings"
+    },
+    {
+      "type": "range",
+      "id": "mobile_width",
+      "label": "t:Width",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "mobile_height",
+      "label": "t:Height",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "mobile_border_radius",
+      "label": "t:Border_radius",
+      "min": 0,
+      "max": 250,
+      "step": 2.5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "select",
+      "id": "mobile_position",
+      "label": "t:Position",
+      "options": [
+        {
+          "value": "top_left",
+          "label": "t:Top_left"
+        },
+        {
+          "value": "top_right",
+          "label": "t:Top_right"
+        },
+        {
+          "value": "middle_left",
+          "label": "t:Middle_left"
+        },
+        {
+          "value": "middle_right",
+          "label": "t:Middle_right"
+        },
+        {
+          "value": "bottom_left",
+          "label": "t:Bottom_left"
+        },
+        {
+          "value": "bottom_right",
+          "label": "t:Bottom_right"
+        }
+      ],
+      "default": "bottom_right"
+    },
+    {
+      "type": "range",
+      "id": "mobile_x_margin",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:Top_bottom_margin",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_y_margin",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:Left_right_margin",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "t:Desktop_close_button"
+    },
+    {
+      "type": "select",
+      "id": "desktop_close_button_position",
+      "label": "t:Position",
+      "options": [
+        {
+          "value": "right",
+          "label": "t:Right"
+        },
+        {
+          "value": "left",
+          "label": "t:Left"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "range",
+      "id": "desktop_close_button_x_margin",
+      "min": -50,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "t:Top_margin",
+      "default": -8
+    },
+    {
+      "type": "range",
+      "id": "desktop_close_button_y_margin",
+      "min": -50,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "t:Left_right_margin",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "t:Mobile_close_button"
+    },
+    {
+      "type": "select",
+      "id": "mobile_close_button_position",
+      "label": "t:Position",
+      "options": [
+        {
+          "value": "right",
+          "label": "t:Right"
+        },
+        {
+          "value": "left",
+          "label": "t:Left"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "range",
+      "id": "mobile_close_button_x_margin",
+      "min": -50,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "t:Top_margin",
+      "default": -8
+    },
+    {
+      "type": "range",
+      "id": "mobile_close_button_y_margin",
+      "min": -50,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "t:Left_right_margin",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "t:Style"
+    },
+    {
+      "type": "range",
+      "id": "desktop_font_size",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "unit": "px",
+      "label": "t:Desktop_font_size",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "mobile_font_size",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "unit": "px",
+      "label": "t:Mobile_font_size",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:Text_color",
+      "default": "rgba(255,255,255,0)"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "t:Border_width",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "border_style",
+      "label": "t:Border_style",
+      "options": [
+        {
+          "value": "dotted",
+          "label": "t:Dotted"
+        },
+        {
+          "value": "dashed",
+          "label": "t:Dashed"
+        },
+        {
+          "value": "solid",
+          "label": "t:Solid"
+        },
+        {
+          "value": "double",
+          "label": "t:Double"
+        }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "t:Border_color",
+      "default": "rgba(0,0,0,0)"
+    }
+  ]
+}
+{% endschema %}

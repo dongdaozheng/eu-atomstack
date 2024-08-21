@@ -1,0 +1,41 @@
+{% comment %}
+  IMPLEMENTATION NOTE: This feature is used to block users from certain countries/regions from accessing the website. If the user's geographical location is Mainland China or Hong Kong, a warning will be displayed and they will be redirected to a specified unavailable page.
+{% endcomment %}
+
+{% if request.design_mode == false
+  and settings.unavailable_page != blank
+  and request.path != settings.unavailable_page.url
+%}
+  <script>
+    rbBlockCountries = function ($) {
+      $('body').hide();
+      $.get('//www.cloudflare.com/cdn-cgi/trace').done(function (data) {
+        var country_code = data.replace(/(\r\n|\n|\r)/gm, '').split('loc=');
+        country_code = country_code[1].split('tls=');
+        country_code = country_code[0];
+        if (country_code == 'CN' || country_code == 'HK') {
+          alert('You are not allowed to access this store!');
+          window.location.replace('{{ settings.unavailable_page.url }}');
+        } else {
+          $('body').show();
+        }
+      });
+    };
+    var rainbowShopifyScript = document.createElement('script');
+    rainbowShopifyScript.setAttribute('src', "{{ 'jquery.min.js' | asset_url }}");
+    rainbowShopifyScript.setAttribute('type', 'text/javascript');
+    if (rainbowShopifyScript.readyState) {
+      rainbowShopifyScript.onreadystatechange = function () {
+        if (this.readyState == 'loaded' || this.readyState == 'complete') {
+          rbBlockCountries(jQuery.noConflict(true));
+        }
+      };
+    } else {
+      rainbowShopifyScript.onload = function () {
+        rbBlockCountries(jQuery.noConflict(true));
+      };
+    }
+    var d = document.getElementsByTagName('head')[0] || document.documentElement;
+    d.appendChild(rainbowShopifyScript);
+  </script>
+{% endif %}

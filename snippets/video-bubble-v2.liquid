@@ -1,0 +1,223 @@
+{%- assign product = section.settings.product -%}
+{%- assign preview_video = section.settings.preview_video -%}
+{%- assign main_video = section.settings.main_video -%}
+{%- assign main_video_url = section.settings.main_video_url -%}
+
+<video-bubble
+  class="video-bubble-v2"
+  section-id="{{ section.id }}"
+  {%- if preview_video != blank and main_video != blank or main_video_url != blank -%}
+    has-popup
+  {% endif %}
+  {%- if section.settings.hide_on_close -%}
+    hidden-on-close
+  {% endif %}
+  hidden
+>
+  <div class="video-bubble-v2__wrapper">
+    <button
+      class="tap-area bubble__close-button"
+      data-action="close"
+      title="{{ 'general.accessibility.close' | t | escape }}"
+    >
+      {% render 'icon' with 'close', height: 10, width: 10 %}
+    </button>
+
+    <native-video
+      id="{{ section.id }}-{{ preview_video.id }}"
+      class="video-bubble-item__video video-wrapper video-wrapper--native video-wrapper--inert"
+      style="--aspect-ratio: {{ preview_video.aspect_ratio }}"
+      autoplay
+    >
+      <template>
+        {{- preview_video | video_tag: image_size: '200x', controls: false, autoplay: true, muted: true, loop: true -}}
+      </template>
+    </native-video>
+  </div>
+
+  {%- if preview_video != blank and main_video != blank or main_video_url != blank -%}
+    <modal-content id="{{ section.id }}-modal-zoom" class="video-bubble-v2__popup modal">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__content">
+        <div class="bubble-modal">
+          <button
+            type="button"
+            class="modal__close-button tap-area"
+            data-action="close"
+            title="{{ 'general.accessibility.close' | t | escape }}"
+          >
+            {%- render 'icon' with 'close' -%}
+          </button>
+
+          <button
+            type="button"
+            class="modal__close-button pswp__button pswp__button--close prev-next-button"
+            data-action="close"
+            title="{{ 'general.accessibility.close' | t | escape }}"
+          >
+            {% render 'icon' with 'close' %}
+          </button>
+
+          <div
+            class="bubble-modal__video-wrapper"
+            style="--aspect-ratio: {% if main_video != blank %}{{ main_video.aspect_ratio }}{% else %}1.7778{% endif %}"
+          >
+            {%- if main_video != blank -%}
+              <native-video style="--aspect-ratio: {{ main_video.aspect_ratio }}">
+                <div class="video-wrapper__poster">
+                  {%- if main_video.preview_image != blank -%}
+                    <img
+                      class="video-wrapper__poster-image"
+                      loading="lazy"
+                      sizes="(max-width: 740px) calc(100vw - 96px), (max-width: 999px) calc(100vw - 160px), 600px"
+                      {% render 'image-attributes',
+                        image: main_video.preview_image,
+                        sizes: '600,700,800,1000,1200,1400'
+                      %}
+                    >
+                  {%- endif -%}
+
+                  <div class="video-wrapper__poster-content">
+                    <button
+                      type="button"
+                      class="video-wrapper__play-button video-wrapper__play-button--large video-wrapper__play-button--ripple"
+                      title="{{ 'general.accessibility.play_video' | t | escape }}"
+                    >
+                      {%- render 'icon' with 'play', width: 72, height: 72 -%}
+                    </button>
+                  </div>
+                </div>
+
+                <template>
+                  {{-
+                    main_video
+                    | video_tag: image_size: '1024x', controls: true, autoplay: true, muted: false, loop: true
+                  -}}
+                </template>
+              </native-video>
+            {%- elsif main_video_url != blank -%}
+              <external-video
+                provider="{{ main_video_url.type | escape }}"
+                style="--aspect-ratio: 1.7778"
+              >
+                <div class="video-wrapper__poster">
+                  <div class="video-wrapper__poster-content">
+                    <button
+                      type="button"
+                      class="video-wrapper__play-button video-wrapper__play-button--large video-wrapper__play-button--ripple"
+                      title="{{ 'general.accessibility.play_video' | t | escape }}"
+                    >
+                      {%- render 'icon' with 'play', width: 72, height: 72 -%}
+                    </button>
+                  </div>
+                </div>
+
+                <template>
+                  {%- if main_video_url.type == 'youtube' -%}
+                    <iframe
+                      title="{{ section.settings.title | escape }}"
+                      src="https://www.youtube.com/embed/{{ main_video_url.id }}?playsinline=1&autoplay=1&playlist={{ main_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen="allowfullscreen"
+                    ></iframe>
+                  {%- elsif main_video_url.type == 'vimeo' -%}
+                    <iframe
+                      title="{{ section.settings.title | escape }}"
+                      src="https://player.vimeo.com/video/{{ main_video_url.id }}?autoplay=1&autopause=1&transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}"
+                      allow="autoplay; encrypted-media;"
+                      allowfullscreen="allowfullscreen"
+                    ></iframe>
+                  {%- endif -%}
+                </template>
+              </external-video>
+            {%- endif -%}
+          </div>
+
+          {%- if product != blank -%}
+            <div class="bubble-modal__content">
+              <div class="bubble-modal__product">
+                {%- if product.featured_media -%}
+                  <img
+                    class="shop-the-look__product-image"
+                    loading="lazy"
+                    sizes="72px"
+                    {% render 'image-attributes', image: product.featured_media, sizes: '72,144,216,288' %}
+                  >
+                {%- endif -%}
+
+                <div class="shop-the-look__product-info">
+                  {%- if settings.show_vendor -%}
+                    <a
+                      class="shop-the-look__product-vendor heading heading--xsmall"
+                      href="{{ product.vendor | url_for_vendor | default: '#' }}"
+                    >
+                      {{- product.vendor -}}
+                    </a>
+                  {%- endif -%}
+
+                  <a href="{{ product.url | default: '#' }}" class="shop-the-look__product-title">
+                    {{- product.title -}}
+                  </a>
+
+                  <div class="shop-the-look__product-bottom-wrapper">
+                    {%- if product.price_varies -%}
+                      {%- capture price_min -%}{{ product.price_min | money }}{%- endcapture -%}
+                      <div class="price">
+                        <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                        {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
+                      </div>
+                    {%- else -%}
+                      <span class="price">
+                        <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                        {{- product.price | money -}}
+                      </span>
+                    {%- endif -%}
+
+                    {%- if product.available -%}
+                      {%- if product.variants.size == 1 -%}
+                        {%- capture form_id -%}{{ section.id }}_form_{% increment product_form_index %}{%- endcapture -%}
+                        {%- form 'product', product, id: form_id, is: 'product-form' -%}
+                          <input type="hidden" name="quantity" value="1">
+                          <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
+                          <button type="submit" class="shop-the-look__product-link link text--subdued">
+                            {{ 'collection.product.add_to_cart' | t }}
+                          </button>
+                        {%- endform -%}
+                      {%- else -%}
+                        <button
+                          is="toggle-button"
+                          class="shop-the-look__product-link link text--subdued"
+                          aria-controls="{{ section.id }}-bubble-drawer"
+                          aria-expanded="false"
+                        >
+                          {{- 'collection.product.quick_view' | t -}}
+                        </button>
+                      {%- endif -%}
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </modal-content>
+  {%- endif -%}
+
+  {%- if product != blank -%}
+    <quick-buy-popover
+      href="{{ product.url }}?view=quick-buy-popover"
+      id="{{ section.id }}-bubble-popover"
+      class="popover popover--quick-buy"
+    ></quick-buy-popover>
+
+    {%- if product.available and product.variants.size > 1 -%}
+      <quick-buy-drawer
+        href="{{ product.url }}?view=quick-buy-drawer"
+        id="{{ section.id }}-bubble-drawer"
+        class="drawer drawer--large drawer--quick-buy"
+      ></quick-buy-drawer>
+    {%- endif -%}
+  {%- endif -%}
+</video-bubble>

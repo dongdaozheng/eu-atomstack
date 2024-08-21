@@ -1,0 +1,169 @@
+{%- if request.design_mode != true -%}
+  <script src="{{ 'zalify-video-widgets.js' | asset_url }}" defer></script>
+{%- endif -%}
+
+<zalify-video-bubble>
+  <template>
+    { 
+      "bubble": {
+        "content": "{{ section.settings.context | replace: '\', '\\\\'  | replace: '"', '\"' }}", 
+        "shape": "{{ section.settings.shape }}",
+        "style": {
+          {% if section.settings.border_width > 0 %}
+            "border": "rgb({{ section.settings.border_color.red }}, {{ section.settings.border_color.green }}, {{ section.settings.border_color.blue }}) {{ section.settings.border_width }}px {{ section.settings.border_style }}"
+          {% endif %}
+        }
+      },
+      {%- if section.settings.preview_video_url != blank -%}
+        "previewVideoEmbed": {
+          "id": "{{ section.settings.preview_video_url.id }}",
+          "type": "{{ section.settings.preview_video_url.type }}"
+        },
+      {%- endif -%}
+      "previewVideoSources": [
+        {%- if section.settings.preview_video != blank %}
+          {%- for source in section.settings.preview_video.sources -%}
+            { "mimeType": "{{ source.mime_type }}", "url": "{{ source.url }}" }
+            {%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+        {%- endif -%}
+      ], 
+      "videoPosterUrl": "{%- if section.settings.video_poster != blank %}{{ section.settings.video_poster | image_url }}{% endif -%}", 
+      {%- if section.settings.main_video_url != blank -%}
+        "mainVideoEmbed": {
+          "id": "{{ section.settings.main_video_url.id }}",
+          "type": "{{ section.settings.main_video_url.type }}"
+        },
+      {%- endif -%}
+      "mainVideoSources": [
+        {%- if section.settings.main_video != blank %}
+          {%- for source in section.settings.main_video.sources -%}
+            { "mimeType": "{{ source.mime_type }}", "url": "{{ source.url }}" }
+            {%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+        {%- endif -%}
+      ]
+      {% if section.settings.product != blank %}
+        {%- assign product = section.settings.product -%}
+        
+        ,"product": {
+          {%- if settings.currency_code_enabled -%}
+            "price": "{{ product.price | money_with_currency }}",
+            {% if product.price < product.compare_at_price %}
+              "originalPrice": "{{ product.compare_at_price | money_with_currency }}",
+            {% endif %}
+          {%- else -%}
+            "price": "{{ product.price | money }}",
+            {% if product.price < product.compare_at_price %}
+              "originalPrice": "{{ product.compare_at_price | money }}",
+            {% endif %}
+          {%- endif -%}
+          "title": "{{- product.title | replace: '\', '\\\\'  | replace: '"', '\"' -}}",
+          "url":"{{- product.url -}}",
+          "mainImgUrl": "{{ product.featured_media | image_url: height: 240 }}",
+          "shopButtonContent": "{{ section.settings.shop_button_content | replace: '\', '\\\\'  | replace: '"', '\"' }}"
+        }
+      {% endif %}
+    }
+  </template>
+</zalify-video-bubble>
+
+<style>
+  #shopify-section-{{ section.id }} zalify-video-bubble::part(container){
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+    {% case section.settings.desktop_position %}
+      {% when 'top_left' %}
+        top: {{ section.settings.desktop_x_margin }}px;
+        left: {{ section.settings.desktop_y_margin }}px;
+      {% when 'top_right' %}
+        top: {{ section.settings.desktop_x_margin }}px;
+        right: {{ section.settings.desktop_y_margin }}px;
+      {% when 'middle_right' %}
+        top: 50%;
+        right: {{ section.settings.desktop_y_margin }}px;
+        transform: translateY(-50%);
+      {% when 'middle_left' %}
+        top: 50%;
+        left: {{ section.settings.desktop_x_margin }}px;
+        transform: translateY(-50%);
+      {%- when 'bottom_left' -%}
+        bottom: {{ section.settings.desktop_x_margin }}px;
+        left: {{ section.settings.desktop_y_margin }}px;
+      {% else %}
+        bottom: {{ section.settings.desktop_x_margin }}px;
+        right: {{ section.settings.desktop_y_margin }}px;
+    {% endcase %}
+    {% if section.settings.border_width > 0 %}
+      border: rgb({{ section.settings.border_color.red }}, {{ section.settings.border_color.green }}, {{ section.settings.border_color.blue }}) {{ section.settings.border_width }}px {{ section.settings.border_style }};
+    {% endif %}
+    border-radius: {{ section.settings.desktop_border_radius }}px;
+    width: {{ section.settings.desktop_width }}px;
+    height: {{ section.settings.desktop_height }}px;
+    --bubble-border-radius: {{ section.settings.desktop_border_radius }}px;
+    --bubble-font-size: {{ section.settings.desktop_font_size }}px;
+  }
+  #shopify-section-{{ section.id }} zalify-video-bubble::part(close-button) {
+    top: {{ section.settings.desktop_close_button_x_margin }}px;
+    {%- if section.settings.desktop_close_button_position == 'left' -%}
+      left: {{ section.settings.desktop_close_button_y_margin }}px;
+    {%- elsif section.settings.desktop_close_button_position == 'right' -%}
+      right: {{ section.settings.desktop_close_button_y_margin }}px;
+    {%- endif -%}
+  }
+  #shopify-section-{{ section.id }} zalify-video-bubble::part(header) {
+    {% if section.settings.text_color != 'rgba(0,0,0,0)' %}
+      color: rgb({{ section.settings.text_color.red }}, {{ section.settings.text_color.green }}, {{ section.settings.text_color.blue }});
+    {% endif %}
+  }
+  
+  @media screen and (max-width: 480px) {
+    #shopify-section-{{ section.id }} zalify-video-bubble::part(container){
+      top: unset;
+      right: unset;
+      bottom: unset;
+      left: unset;
+      transform: none;
+      {% case section.settings.mobile_position %}
+        {% when 'top_left' %}
+          top: {{ section.settings.mobile_x_margin }}px;
+          left: {{ section.settings.mobile_y_margin }}px;
+        {% when 'top_right' %}
+          top: {{ section.settings.mobile_x_margin }}px;
+          right: {{ section.settings.mobile_y_margin }}px;
+        {% when 'middle_right' %}
+          top: 50%;
+          right: {{ section.settings.mobile_y_margin }}px;
+          transform: translateY(-50%);
+        {% when 'middle_left' %}
+          top: 50%;
+          left: {{ section.settings.mobile_x_margin }}px;
+          transform: translateY(-50%);
+        {%- when 'bottom_left' -%}
+          bottom: {{ section.settings.mobile_x_margin }}px;
+          left: {{ section.settings.mobile_y_margin }}px;
+        {% else %}
+          bottom: {{ section.settings.mobile_x_margin }}px;
+          right: {{ section.settings.mobile_y_margin }}px;
+      {% endcase %}
+      width: {{ section.settings.mobile_width }}px;
+      height: {{ section.settings.mobile_height }}px;
+      border-radius: {{ section.settings.mobile_border_radius }}px;
+      --bubble-border-radius: {{ section.settings.mobile_border_radius }}px;
+      --bubble-font-size: {{ section.settings.mobile_font_size }}px;
+    }
+
+    #shopify-section-{{ section.id }} zalify-video-bubble::part(close-button) {
+      top: {{ section.settings.mobile_close_button_x_margin }}px;
+      {%- if section.settings.mobile_close_button_position == 'left' -%}
+        left: {{ section.settings.mobile_close_button_y_margin }}px;
+        right: unset;
+      {%- elsif section.settings.mobile_close_button_position == 'right' -%}
+        left: unset;
+        right: {{ section.settings.mobile_close_button_y_margin }}px;
+      {%- endif -%}
+    }
+  }
+</style>

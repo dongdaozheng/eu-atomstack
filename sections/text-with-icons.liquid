@@ -1,0 +1,428 @@
+{%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
+  {%- assign blends_with_background = false -%}
+{%- else -%}
+  {%- assign blends_with_background = true -%}
+{%- endif -%}
+
+{%- comment -%}
+  ------------------------------------------------------------------------------------------------------------------------
+  CSS.
+  ------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background == 'rgba(0,0,0,0)' -%}
+      {%- assign section_background = settings.background -%}
+    {%- else -%}
+      {%- assign section_background = section.settings.background -%}
+    {%- endif -%}
+
+    {%- if section.settings.text_color == 'rgba(0,0,0,0)' -%}
+      {%- assign heading_color = settings.heading_color -%}
+      {%- assign text_color = settings.text_color -%}
+    {%- else -%}
+      {%- assign heading_color = section.settings.text_color -%}
+      {%- assign text_color = section.settings.text_color -%}
+    {%- endif -%}
+
+    --heading-color: {{ heading_color.red }}, {{ heading_color.green }}, {{ heading_color.blue }};
+    --text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
+    --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
+    --vertical-breather: 40px; /* Inner spacing is smaller on this section */
+
+    --top-padding: {{ section.settings.mobile_top_padding }}px;
+    --bottom-padding: {{ section.settings.mobile_bottom_padding }}px;
+  }
+
+  {%- if section.settings.ignore_vertical_spacing -%}
+    #shopify-section-{{ section.id }} .section {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  {%- endif -%}
+
+  @media screen and (min-width: 741px) {
+    #shopify-section-{{ section.id }} {
+      --top-padding: {{ section.settings.desktop_top_padding }}px;
+      --bottom-padding: {{ section.settings.desktop_bottom_padding }}px;
+    }
+  }
+</style>
+
+{%- comment -%}
+  ------------------------------------------------------------------------------------------------------------------------
+  JavaScript: this section composes several custom elements.
+  ------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<section class="section {% unless blends_with_background %}section--flush{% endunless %}">
+  <div class="section__color-wrapper section--padding">
+    <div class="container {% unless blends_with_background or section.settings.ignore_vertical_spacing %}vertical-breather{% endunless %}">
+      <native-carousel class="text-with-icons">
+        <div class="text-with-icons__list hide-scrollbar">
+          {%- for block in section.blocks -%}
+            <native-carousel-item
+              {% unless forloop.first %}
+                hidden
+              {% endunless %}
+              id="block-{{ section.id }}-{{ block.id }}"
+              class="text-with-icons__item"
+              {{ block.shopify_attributes }}
+            >
+              <div class="text-with-icons__icon-wrapper">
+                {%- if block.settings.custom_icon != blank -%}
+                  {% capture custom_icon_width %}{{ block.settings.custom_icon_width | times: 2 }}{% endcapture %}
+                  <img
+                    class="text-with-icons__custom-icon"
+                    style="max-width: {{ block.settings.custom_icon_width }}px"
+                    width="{{ block.settings.custom_icon.width }}"
+                    height="{{ block.settings.custom_icon.height }}"
+                    src="{{ block.settings.custom_icon | image_url: width: custom_icon_width }}"
+                    alt="{{ block.settings.custom_icon.alt | escape }}"
+                    loading="lazy"
+                  >
+                {%- else -%}
+                  {%- render 'icon' with block.settings.icon -%}
+                {%- endif -%}
+              </div>
+
+              {%- if block.settings.title != blank or block.settings.content != blank -%}
+                <div class="text-with-icons__content-wrapper">
+                  {%- if block.settings.title != blank -%}
+                    <p class="heading heading--small">{{ block.settings.title | escape }}</p>
+                  {%- endif -%}
+
+                  {%- if block.settings.content != blank -%}
+                    {{- block.settings.content -}}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            </native-carousel-item>
+          {%- endfor -%}
+        </div>
+
+        {%- if section.blocks.size > 1 -%}
+          <page-dots class="text-with-icons__dots dots-nav dots-nav--centered hidden-lap-and-up">
+            {%- for block in section.blocks -%}
+              <button
+                class="dots-nav__item tap-area"
+                {% if forloop.first %}
+                  aria-current="true"
+                {% endif %}
+              >
+                <span class="visually-hidden">{{ 'general.accessibility.go_to_slide' | t: num: forloop.index }}</span>
+              </button>
+            {%- endfor -%}
+          </page-dots>
+        {%- endif -%}
+      </native-carousel>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:Text_with_icons",
+  "class": "shopify-section--text-with-icons",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "item",
+      "name": "t:Item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:Icon",
+          "options": [
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-store-pickup",
+              "label": "t:Store_pickup",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-donation",
+              "label": "t:Donation",
+              "group": "Shop"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-address",
+              "label": "t:Address",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Returns",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:World",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane",
+              "group": "Shipping"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment",
+              "group": "Payment & Security"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Support_operator",
+              "group": "Communication"
+            },
+            {
+              "value": "picto-virus",
+              "label": "t:Virus",
+              "group": "Health"
+            },
+            {
+              "value": "picto-mask",
+              "label": "t:Mask",
+              "group": "Health"
+            }
+          ],
+          "default": "picto-customer-support"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon",
+          "label": "t:Custom_icon",
+          "info": "t:100_x_100px_png_with_transparency_recommended"
+        },
+        {
+          "type": "range",
+          "id": "custom_icon_width",
+          "min": 40,
+          "max": 200,
+          "step": 5,
+          "unit": "px",
+          "label": "t:Custom_icon_width",
+          "info": "t:Only_impact_custom_icons",
+          "default": 50
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:Heading",
+          "default": "Your title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "t:Content",
+          "default": "<p>Short content about your store</p>"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "t:Background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:Text_color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "header",
+      "content": "t:Section_padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "ignore_vertical_spacing",
+      "label": "t:Ignore_vertical_spacing_in_global_configuration",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "desktop_top_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Desktop_top_padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "desktop_bottom_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Desktop_bottom_padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_top_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Mobile_top_padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_bottom_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Mobile_bottom_padding",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:Text_with_icons",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "title": "Secure payment",
+            "content": "<p>Your payment information is processed securely. We prioritise your privacy above all else.</p>"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "title": "Contact us",
+            "content": "<p>Need to contact us ? Just send us an e-mail at support@zalify.com</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

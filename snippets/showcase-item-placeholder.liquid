@@ -1,0 +1,23 @@
+<product-item
+  class="showcase-item"
+  {% if reveal %}
+    reveal
+  {% endif %}
+>
+  <div class="showcase-item__info {% if reduced_font_size %}text--small{% endif %}">
+    <div class="showcase-item-meta">
+      <div class="showcase-item__avatar">
+        {{- 'product-4' | placeholder_svg_tag: 'placeholder-background' -}}
+      </div>
+
+      <div class="showcase-item__title">
+        <h4 class="heading heading--small">{{ 'general.onboarding.product_title' | t }}</h4>
+        <p>{{ 'general.onboarding.product_description' | t }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-item__image-wrapper showcase-item__image-wrapper--placeholder">
+    {{- product_image | placeholder_svg_tag: 'showcase-image placeholder-background' -}}
+  </div>
+</product-item>

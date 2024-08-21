@@ -1,0 +1,39 @@
+<zalify-countdown
+  data-root-id="{{ id }}"
+  data-initial-end-time="{{ end_time }}"
+  data-design-mode="{{ request.design_mode }}"
+>
+  {%- if heading != blank -%}
+    <div class="countdown-header heading h2">
+      {{ heading | escape }}
+    </div>
+  {%- endif -%}
+
+  <div class="countdown-container">
+    <div class="countdown-item">
+      <div class="countdown-number">00</div>
+      <div class="countdown-label">{{ 'countdown.days' | t }}</div>
+    </div>
+    <div class="countdown-item">
+      <div class="countdown-number">:</div>
+    </div>
+    <div class="countdown-item">
+      <div class="countdown-number">00</div>
+      <div class="countdown-label">{{ 'countdown.hours' | t }}</div>
+    </div>
+    <div class="countdown-item">
+      <div class="countdown-number">:</div>
+    </div>
+    <div class="countdown-item">
+      <div class="countdown-number">00</div>
+      <div class="countdown-label">{{ 'countdown.mins' | t }}</div>
+    </div>
+    <div class="countdown-item">
+      <div class="countdown-number">:</div>
+    </div>
+    <div class="countdown-item">
+      <div class="countdown-number">00</div>
+      <div class="countdown-label">{{ 'countdown.secs' | t }}</div>
+    </div>
+  </div>
+</zalify-countdown>

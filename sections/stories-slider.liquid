@@ -1,0 +1,306 @@
+{%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
+  {%- assign blends_with_background = false -%}
+{%- else -%}
+  {%- assign blends_with_background = true -%}
+{%- endif -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background == 'rgba(0,0,0,0)' -%}
+      {%- assign section_background = settings.background -%}
+    {%- else -%}
+      {%- assign section_background = section.settings.background -%}
+    {%- endif -%}
+
+    {%- if section.settings.text_color == 'rgba(0,0,0,0)' -%}
+      {%- assign text_color = settings.text_color -%}
+    {%- else -%}
+      {%- assign text_color = section.settings.text_color -%}
+    {%- endif -%}
+
+    {%- case section.settings.shape -%}
+      {%- when 'circle' -%}
+        --item-border-radius: 50%;
+      {%- when 'square' -%}
+        --item-border-radius: var(--block-border-radius-reduced);
+    {%- endcase -%}
+
+    {%- case section.settings.spacing -%}
+      {%- when 'tight' -%}
+        --item-gap: 12px;
+      {%- when 'normal' -%}
+        --item-gap: 24px;
+      {%- when 'loose' -%}
+        --item-gap: 36px;
+    {%- endcase -%}
+
+    --text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
+   	--section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
+
+   	--top-padding: {{ section.settings.top_padding }}px;
+   	--bottom-padding: {{ section.settings.bottom_padding }}px;
+  }
+
+  {%- if section.settings.ignore_vertical_spacing -%}
+  	#shopify-section-{{ section.id }} .section {
+  		margin-top: 0;
+  		margin-bottom: 0;
+  	}
+  {%- endif -%}
+
+  {%- for block in section.blocks -%}
+    #block-{{ section.id }}-{{ block.id }} {
+      {%- if block.settings.background == 'rgba(0,0,0,0)' -%}
+        {%- assign block_background = section_background -%}
+      {%- else -%}
+        {%- assign block_background = block.settings.background -%}
+      {%- endif -%}
+
+      {%- if block.settings.outline_color == 'rgba(0,0,0,0)' -%}
+        {%- assign block_outline_color = section_background -%}
+      {%- else -%}
+        {%- assign block_outline_color = block.settings.outline_color -%}
+      {%- endif -%}
+
+      --item-background: {{ block_background.red }}, {{ block_background.green }}, {{ block_background.blue }};
+      --item-outline-color: {{ block_outline_color.red }}, {{ block_outline_color.green }}, {{ block_outline_color.blue }};
+    }
+  {%- endfor -%}
+</style>
+
+<section class="section {% unless blends_with_background %}section--flush{% endunless %} hidden-tablet-and-up">
+  <div class="section__color-wrapper section--padding">
+    <stories-slider class="stories-slider {% unless blends_with_background or section.settings.ignore_vertical_spacing %}vertical-breather{% endunless %}">
+      <div class="stories-slider__wrapper hide-scrollbar">
+        <div class="stories-slider__list">
+          {%- if section.blocks.size > 0 -%}
+            {%- for block in section.blocks -%}
+              <div id="block-{{ section.id }}-{{ block.id }}" class="stories-slider__item">
+                {% capture icon_size %}{{ section.settings.icon_size | plus: 8 }}{% endcapture %}
+
+                <a
+                  href="{{ block.settings.link_url | default: '#' }}"
+                  class="stories-slider__image-wrapper"
+                  style="height: {{ icon_size }}px; width: {{ icon_size }}px;"
+                  aria-describedby="{{ section.id }}-{{ block.id }}-image"
+                  {% unless block.settings.image != blank %}
+                    aria-label="Store {{ forloop.index }}"
+                  {% endunless %}
+                  {{ block.shopify_attributes }}
+                >
+                  <div class="stories-slider__image-wrapper-outline" aria-hidden="true"></div>
+
+                  {%- if block.settings.image != blank -%}
+                    <img
+                      id="{{ section.id }}-{{ block.id }}-image"
+                      class="stories-slider__image"
+                      loading="lazy"
+                      sizes="120px"
+                      alt="{{ block.settings.image.alt | escape }}"
+                      {% render 'image-attributes', image: block.settings.image, sizes: '120' %}
+                    >
+                  {%- else -%}
+                    {%- capture image_placeholder -%}product-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
+                    {{ image_placeholder | placeholder_svg_tag: 'stories-slider__image placeholder-background' }}
+                  {%- endif -%}
+                </a>
+                {%- if block.settings.label != blank -%}
+                  <div class="stories-slider__label">{{ block.settings.label | escape }}</div>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          {%- endif -%}
+        </div>
+      </div>
+    </stories-slider>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:Stories_slider",
+  "class": "shopify-section--stories-slider",
+  "blocks": [
+    {
+      "type": "story",
+      "name": "t:Story",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:Image",
+          "info": "t:60_x_60px_jpg_recommended"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "t:label",
+          "default": "Label"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "t:Link_url"
+        },
+        {
+          "type": "header",
+          "content": "t:Colors"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "t:Background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "outline_color",
+          "label": "t:Outline_color",
+          "default": "rgba(0,0,0,0)"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:This_section_is_only_available_on_mobile"
+    },
+    {
+      "type": "select",
+      "id": "shape",
+      "label": "t:Shape",
+      "options": [
+        {
+          "value": "circle",
+          "label": "t:Circle"
+        },
+        {
+          "value": "square",
+          "label": "t:Square"
+        }
+      ],
+      "default": "circle"
+    },
+    {
+      "type": "select",
+      "id": "spacing",
+      "label": "t:Spacing",
+      "options": [
+        {
+          "value": "tight",
+          "label": "t:Small"
+        },
+        {
+          "value": "normal",
+          "label": "t:Medium"
+        },
+        {
+          "value": "loose",
+          "label": "t:Large"
+        }
+      ],
+      "default": "tight"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 28,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Icon_size",
+      "default": 56
+    },
+    {
+      "type": "header",
+      "content": "t:Colors"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "t:Background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:Text",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "header",
+      "content": "t:Section_padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "ignore_vertical_spacing",
+      "label": "t:Ignore_vertical_spacing_in_global_configuration",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "top_padding",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Top_padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "bottom_padding",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Bottom_padding",
+      "default": 12
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:Stories_slider",
+      "blocks": [
+        {
+          "type": "story",
+          "settings": {
+            "label": "Story"
+          }
+        },
+        {
+          "type": "story",
+          "settings": {
+            "label": "Story"
+          }
+        },
+        {
+          "type": "story",
+          "settings": {
+            "label": "Story"
+          }
+        },
+        {
+          "type": "story",
+          "settings": {
+            "label": "Story"
+          }
+        },
+        {
+          "type": "story",
+          "settings": {
+            "label": "Story"
+          }
+        },
+        {
+          "type": "story",
+          "settings": {
+            "label": "Story"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

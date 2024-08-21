@@ -1,0 +1,94 @@
+{%- comment -%}
+  To render bundle selector. You must passed two parameters to this snippet:
+
+  - block: block settings
+  - bundle: bundle item info
+  - variant: current variant data
+{%- endcomment -%}
+
+{%- assign bundle_compare_at_price = variant.price | times: bundle.quantity -%}
+
+{%- assign bundle_discount_percentage = bundle.discount_percentage -%}
+{%- assign bundle_price_percentage = 100 | minus: bundle_discount_percentage | divided_by: 100 -%}
+{%- assign bundle_price = bundle_compare_at_price | times: bundle_price_percentage -%}
+
+<button
+  class="product-form__bundle--item"
+  data-quantity="{{ bundle.quantity }}"
+  {% if bundle.best_seller == true %}
+    best-seller
+  {% endif %}
+>
+  <span
+    class="label label--highlight {% if bundle.best_seller != true %}label--transparent{% endif %}"
+    {% if bundle.best_seller != true %}
+      aria-hidden="true"
+    {% endif %}
+  >
+    {{- 'product.general.best_seller' | t -}}
+  </span>
+  <h3 class="heading h5">{{ bundle.title }}</h3>
+  {%- if bundle_discount_percentage > 0 -%}
+    <p class="heading h6 bundle--item-rate">
+      {%- if settings.discount_mode == 'percentage' -%}
+        {%- assign savings = bundle.discount_percentage | append: '%' -%}
+      {%- else -%}
+        {%- assign savings = bundle_compare_at_price | minus: bundle_price | money_without_trailing_zeros -%}
+      {%- endif -%}
+
+      {{ 'collection.product.discount_html' | t: savings: savings }}
+    </p>
+  {%- endif -%}
+  {%- if bundle.icon != blank -%}
+    <div class="product-form__bundle--icon product-form__bundle--icon-{{ block.settings.icon_size }}">
+      {{ bundle.icon }}
+    </div>
+  {%- endif -%}
+  <div class="product-form__bundle--price">
+    <p class="product-form__bundle--discount">
+      {%- if bundle_discount_percentage <= 0 -%}
+        <span class="price">
+          <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+
+          {%- if settings.currency_code_enabled -%}
+            {{- bundle_price | money_with_currency -}}
+          {%- else -%}
+            {{- bundle_price | money -}}
+          {%- endif -%}
+        </span>
+      {%- else -%}
+        <span class="price price--compare">
+          <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+
+          {%- if settings.currency_code_enabled -%}
+            {{- bundle_compare_at_price | money_with_currency -}}
+          {%- else -%}
+            {{- bundle_compare_at_price | money -}}
+          {%- endif -%}
+        </span>
+        <span class="price price--highlight">
+          <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+
+          {%- if settings.currency_code_enabled -%}
+            {{- bundle_price | money_with_currency -}}
+          {%- else -%}
+            {{- bundle_price | money -}}
+          {%- endif -%}
+        </span>
+      {%- endif -%}
+    </p>
+    {%- if bundle_discount_percentage > 0 -%}
+      <p class="product-form__bundle--individual">
+        {%- assign single_price = bundle_price | divided_by: bundle.quantity -%}
+        {%- assign single_price_with_currency = single_price | money_with_currency -%}
+        {%- assign single_price_without_currency = single_price | money -%}
+
+        {%- if settings.currency_code_enabled -%}
+          {{- 'product.general.each_price' | t: price: single_price_with_currency -}}
+        {%- else -%}
+          {{- 'product.general.each_price' | t: price: single_price_without_currency -}}
+        {%- endif -%}
+      </p>
+    {%- endif -%}
+  </div>
+</button>

@@ -1,0 +1,41 @@
+<product-item
+  class="video-carousel-item"
+  {% if reveal %}
+    reveal
+  {% endif %}
+>
+  <div class="video-carousel-item__info {% if reduced_font_size %}text--small{% endif %}">
+    <div class="video-carousel-item__image-container">
+      <div class="placeholder-image" style="padding-bottom: 75%">
+        {{ 'image' | placeholder_svg_tag }}
+      </div>
+    </div>
+
+    <div class="video-carousel-item__content">
+      <div class="video-carousel-item__avatar">
+        {{ product_image | placeholder_svg_tag: 'placeholder-background' }}
+      </div>
+      <div class="video-carousel-item__title">
+        <a href="#" class="product-item__title">{{ 'general.onboarding.product_title' | t }}</a>
+
+        <div class="product-item__price-list-container">
+          <div class="price-list">
+            <span class="price">
+              <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+              {{- 5000 | money -}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-carousel-item__cta-wrapper">
+      <button
+        type="button"
+        class="product-item__cta button button--primary"
+      >
+        {{- 'collection.product.add_to_cart_short' | t -}}
+      </button>
+    </div>
+  </div>
+</product-item>

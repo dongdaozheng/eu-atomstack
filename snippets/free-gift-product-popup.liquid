@@ -1,0 +1,71 @@
+<div class="product-free-gift-popup">
+  {%- if title -%}
+    <div class="text--center">{{ title }}</div>
+  {%- endif -%}
+
+  {%- if main_image -%}
+    <img
+      class="product-free-gift-popup__image"
+      loading="lazy"
+      data-media-id="{{ main_image.id | escape }}"
+      {% render 'image-attributes', image: main_image, sizes: '500,600,700,800,900,1000,1100,1200' %}
+    >
+  {%- endif -%}
+
+  {%- form 'product', product, is: 'product-form' -%}
+    <div class="product-free-gift-popup__buttons">
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      <input type="hidden" name="quantity" class="product-free-gift-popup__quantity" value="{{ quantity }}">
+      <input type="hidden" disabled name="free_gift_product_popup" value="true">
+      <button
+        id="AddToCart"
+        type="submit"
+        is="loader-button"
+        data-use-primary
+        data-product-add-to-cart-button
+        data-button-content="{{ 'product.form.add_to_cart' | t | escape }}"
+        class="product-form__add-button button {% unless product.selected_or_first_available_variant.available %}button--ternary{% else %}button--primary{% endunless %}"
+      >
+        {%- if primary_button_icon_custom != blank -%}
+          <span class="loader-button__icon">
+            <img
+              width="auto"
+              height="24"
+              src="{{ primary_button_icon_custom | image_url: width: logo_size }}"
+              alt="{{ primary_button_icon_custom.alt | escape }}"
+              loading="lazy"
+            >
+          </span>
+        {%- elsif primary_button_icon_preset != blank -%}
+          <span class="loader-button__icon">
+            {%- render 'icon' with primary_button_icon_preset -%}
+          </span>
+        {%- endif -%}
+
+        {{ primary_button_text | escape }}
+      </button>
+
+      {% if secondary_button_enable %}
+        <button checkout is="loader-button" type="button" class="button button--secondary">
+          {%- if secondary_button_icon_custom != blank -%}
+            <span class="loader-button__icon">
+              <img
+                width="auto"
+                height="24"
+                src="{{ secondary_button_icon_custom | image_url: width: logo_size }}"
+                alt="{{ secondary_button_icon_custom.alt | escape }}"
+                loading="lazy"
+              >
+            </span>
+          {%- elsif secondary_button_icon_preset != blank -%}
+            <span class="loader-button__icon">
+              {%- render 'icon' with secondary_button_icon_preset -%}
+            </span>
+          {%- endif -%}
+
+          {{ secondary_button_text | escape }}
+        </button>
+      {% endif %}
+    </div>
+  {%- endform -%}
+</div>

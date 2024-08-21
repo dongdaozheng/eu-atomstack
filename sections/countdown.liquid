@@ -1,0 +1,170 @@
+{%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
+  {%- assign blends_with_background = false -%}
+{%- else -%}
+  {%- assign blends_with_background = true -%}
+{%- endif -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background == 'rgba(0,0,0,0)' -%}
+      {%- assign section_background = settings.background -%}
+    {%- else -%}
+      {%- assign section_background = section.settings.background -%}
+    {%- endif -%}
+
+    {%- if section.settings.text_color == 'rgba(0,0,0,0)' -%}
+      {%- assign text_color = settings.text_color -%}
+    {%- else -%}
+      {%- assign text_color = section.settings.text_color -%}
+    {%- endif -%}
+
+    --text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
+    --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
+
+    --top-padding: {{ section.settings.mobile_top_padding }}px;
+    --bottom-padding: {{ section.settings.mobile_bottom_padding }}px;
+
+    --heading-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
+    --heading-h2-font-size: {% if section.settings.heading_font_size == 'small' %}28px{% elsif section.settings.heading_font_size == 'medium' %}30px{% else %}32px{% endif %};
+  }
+
+  {%- if section.settings.ignore_vertical_spacing -%}
+    #shopify-section-{{ section.id }} .section {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  {%- endif -%}
+
+  @media screen and (min-width: 741px) {
+    #shopify-section-{{ section.id }} {
+      --top-padding: {{ section.settings.desktop_top_padding }}px;
+      --bottom-padding: {{ section.settings.desktop_bottom_padding }}px;
+    }
+  }
+</style>
+
+<section class="section {% unless blends_with_background %}section--flush{% endunless %}">
+  {% assign rootId = 'shopify-section-' | append: section.id | append: 'wrapper' %}
+
+  <div
+    data-end-time="{{ section.settings.end_time }}"
+    class="section__color-wrapper section--padding"
+    id="{{ rootId }}"
+  >
+    <div class="{% unless blends_with_background or section.settings.ignore_vertical_spacing %}vertical-breather{% endunless %}">
+      {% render 'countdown', subheading: section.settings.subheading, heading: section.settings.heading, id: rootId %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:Countdown",
+  "class": "shopify-section--countdown",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:Heading",
+      "default": "Monthly seconds sale"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_size",
+      "label": "t:Heading_size",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:Small"
+        },
+        {
+          "value": "medium",
+          "label": "t:Medium"
+        },
+        {
+          "value": "large",
+          "label": "t:Large"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "text",
+      "id": "end_time",
+      "label": "t:End_time",
+      "info": "t:Format_yyyy_mm_dd_hh_mm_ss"
+    },
+    {
+      "type": "header",
+      "content": "t:Colors"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "t:Background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:Text_color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "header",
+      "content": "t:Section_padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "ignore_vertical_spacing",
+      "label": "t:Ignore_vertical_spacing_in_global_configuration",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "desktop_top_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Desktop_top_padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "desktop_bottom_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Desktop_bottom_padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_top_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Mobile_top_padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_bottom_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Mobile_bottom_padding",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:Countdown"
+    }
+  ]
+}
+{% endschema %}

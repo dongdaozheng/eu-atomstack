@@ -1,0 +1,371 @@
+<style>
+  {%- if section.settings.enable -%}
+  	@media screen and (max-width: 740px) {
+  		body {
+    	 padding-bottom: 50px;
+    	}
+  	}
+  {%- endif -%}
+
+  #shopify-section-{{ section.id }} {
+  	{%- if section.settings.background == 'rgba(0,0,0,0)' -%}
+      {%- assign section_background = settings.background -%}
+    {%- else -%}
+      {%- assign section_background = section.settings.background -%}
+    {%- endif -%}
+
+  	{%- if section.settings.text_color == 'rgba(0,0,0,0)' -%}
+      {%- assign text_color = settings.text_color -%}
+    {%- else -%}
+      {%- assign text_color = section.settings.text_color -%}
+    {%- endif -%}
+
+  	--text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
+  	--section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
+  	--header-text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
+  	--header-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
+    --blocks-size: {{ section.blocks.size }};
+
+   	display: none;
+   	align-items: center;
+   	height: 50px;
+   	width: 100%;
+   	position: fixed;
+   	right: 0;
+   	bottom: 0;
+   	left: 0;
+   	background: rgb(var(--section-background));
+   	box-shadow: 0 -1px rgb(var(--border-color));
+   	z-index: 4;
+  }
+
+  @media screen and (max-width: 740px) {
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.enable -%}
+        display: flex;
+      {%- endif -%}
+    }
+  }
+</style>
+
+{%- if section.settings.enable -%}
+  <section class="footer-navigation">
+    <div class="footer-navigation__wrapper">
+      <nav class="footer-navigation__inline-navigation">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'navigation_item' -%}
+              <div
+                id="block-{{ section.id }}-{{ block.id }}"
+                class="footer-navigation__list"
+                {{ block.shopify_attributes }}
+              >
+                <a
+                  href="{{ block.settings.link }}"
+                  class="footer-navigation__item tap-area"
+                  aria-label="{{ block.settings.label | escape }}"
+                >
+                  {%- render 'icon' with block.settings.icon -%}
+                  <label for="block-{{ section.id }}-{{ block.id }}">{{ block.settings.label | escape }}</label>
+                </a>
+              </div>
+            {%- when 'cart' -%}
+              <div
+                id="block-{{ section.id }}-{{ block.id }}"
+                class="footer-navigation__list"
+                {{ block.shopify_attributes }}
+              >
+                <a
+                  href="{{ routes.cart_url }}"
+                  {% unless settings.cart_type == 'page' or request.page_type == 'cart' %}
+                    is="toggle-link" aria-controls="mini-cart" aria-expanded="false"
+                  {% endunless %}
+                  class="footer-navigation__item tap-area"
+                  aria-label="{{ 'header.general.cart' | t | escape }}"
+                  data-no-instant
+                >
+                  <span style="position: relative">
+                    {%- case settings.cart_icon -%}
+                      {%- when 'shopping_bag' -%}
+                        {%- render 'icon' with 'header-cart' -%}
+
+                      {%- when 'shopping_cart' -%}
+                        {%- render 'icon' with 'header-shopping-cart' -%}
+
+                      {%- when 'tote_bag' -%}
+                        {%- render 'icon' with 'header-tote-bag' -%}
+                    {%- endcase -%}
+
+                    <cart-count class="header__cart-count header__cart-count--floating bubble-count">
+                      {{- cart.item_count -}}
+                    </cart-count>
+                  </span>
+
+                  <label for="block-{{ section.id }}-{{ block.id }}">{{ 'header.general.cart' | t | escape }}</label>
+                </a>
+              </div>
+            {%- when 'search' -%}
+              <div
+                id="block-{{ section.id }}-{{ block.id }}"
+                class="footer-navigation__list"
+                {{ block.shopify_attributes }}
+              >
+                <a
+                  href="{{ routes.search_url }}"
+                  is="toggle-link"
+                  class="footer-navigation__item tap-area"
+                  aria-controls="search-drawer"
+                  aria-expanded="false"
+                  aria-label="{{ 'search.general.title' | t | escape }}"
+                >
+                  {%- render 'icon' with 'header-search' -%}
+                  <label for="block-{{ section.id }}-{{ block.id }}">{{ 'search.general.title' | t | escape }}</label>
+                </a>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </nav>
+    </div>
+  </section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:Footer_navigation",
+  "class": "shopify-section--footer-navigation",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "navigation_item",
+      "name": "t:Navigation_item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:Icon",
+          "options": [
+            {
+              "value": "picto-address",
+              "label": "t:Address"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat"
+            },
+            {
+              "value": "chevron",
+              "label": "t:Chevron"
+            },
+            {
+              "value": "chevron-back",
+              "label": "t:Chevron_back"
+            },
+            {
+              "value": "close",
+              "label": "t:Close"
+            },
+            {
+              "value": "comment",
+              "label": "t:Comment"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email"
+            },
+            {
+              "value": "form-error",
+              "label": "t:Error"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift"
+            },
+            {
+              "value": "header-hamburger",
+              "label": "t:Hamburger"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love"
+            },
+            {
+              "value": "minus-big",
+              "label": "t:Minus"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Operator"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane"
+            },
+            {
+              "value": "plus-big",
+              "label": "t:Plus"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Return_box"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield"
+            },
+            {
+              "value": "quick-buy-shopping-bag",
+              "label": "t:Shopping_bag"
+            },
+            {
+              "value": "quick-buy-shopping-cart",
+              "label": "t:Shopping_cart"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store"
+            },
+            {
+              "value": "form-success",
+              "label": "t:Success"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes"
+            },
+            {
+              "value": "quick-buy-tote-bag",
+              "label": "t:Tote_bag"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:Worldwide"
+            }
+          ],
+          "default": "header-hamburger"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "t:Label",
+          "default": "Label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:Link"
+        }
+      ]
+    },
+    {
+      "type": "search",
+      "name": "t:Search",
+      "limit": 1
+    },
+    {
+      "type": "cart",
+      "name": "t:Cart",
+      "limit": 1
+    }
+  ],
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:This_section_is_only_available_on_mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "t:Enable",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:Colors"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "t:Background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:Color",
+      "default": "rgba(0,0,0,0)"
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "navigation_item"
+      },
+      {
+        "type": "navigation_item"
+      },
+      {
+        "type": "navigation_item"
+      },
+      {
+        "type": "navigation_item"
+      }
+    ]
+  }
+}
+{% endschema %}

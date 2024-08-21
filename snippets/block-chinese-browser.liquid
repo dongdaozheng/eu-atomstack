@@ -1,0 +1,15 @@
+{% comment %}
+  IMPLEMENTATION NOTE: This code checks the language of the user's browser. If the language is Chinese (either Simplified or Traditional), the user will be redirected to a specified unavailable page.
+{% endcomment %}
+
+{% if request.design_mode == false
+  and settings.unavailable_page != blank
+  and request.path != settings.unavailable_page.url
+%}
+  <script type="text/javascript">
+    var language = navigator.language || navigator.browserLanguage;
+    if (language.indexOf('zh') > -1) {
+      document.location.href = '{{ settings.unavailable_page.url }}';
+    }
+  </script>
+{% endif %}

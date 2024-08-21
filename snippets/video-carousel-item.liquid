@@ -1,0 +1,358 @@
+{%- assign product = block.settings.product -%}
+{%- assign preview_video = block.settings.preview_video -%}
+{%- assign preview_video_url = block.settings.preview_video_url -%}
+{%- assign main_video = block.settings.main_video -%}
+{%- assign main_video_url = block.settings.main_video_url -%}
+
+<video-carousel-item
+  class="video-carousel-item__info {% if reduced_font_size %}text--small{% endif %}"
+  {% if product != blank and main_video != blank or main_video_url != blank %}
+    has-popup
+  {% endif %}
+>
+  <div class="video-carousel-item__image-container">
+    {%- if preview_video != blank -%}
+      <native-video
+        id="block-{{ block.id }}-{{ preview_video.id }}"
+        class="video-carousel-item__video video-wrapper video-wrapper--native video-wrapper--inert"
+        style="--aspect-ratio: {{ preview_video.aspect_ratio }}"
+        autoplay
+      >
+        <template>
+          {{-
+            preview_video
+            | video_tag: image_size: '400x', controls: false, autoplay: true, muted: true, loop: true
+          -}}
+        </template>
+      </native-video>
+    {%- elsif preview_video_url != blank -%}
+      <external-video
+        provider="{{ preview_video_url.type | escape }}"
+        class="video-wrapper video-wrapper--inert"
+        autoplay
+      >
+        <template>
+          {%- if preview_video_url.type == 'youtube' -%}
+            <iframe
+              title="{{ section.settings.title | escape }}"
+              src="https://www.youtube.com/embed/{{ preview_video_url.id }}?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist={{ preview_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}"
+              allow="autoplay; encrypted-media"
+              allowfullscreen="allowfullscreen"
+            ></iframe>
+          {%- elsif preview_video_url.type == 'vimeo' -%}
+            <iframe
+              title="{{ section.settings.title | escape }}"
+              src="https://player.vimeo.com/video/{{ preview_video_url.id }}?autoplay=1&autopause=1&background=1&loop=1&muted=1&transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}"
+              allow="autoplay; encrypted-media;"
+              allowfullscreen="allowfullscreen"
+            ></iframe>
+          {%- endif -%}
+        </template>
+      </external-video>
+    {%- else -%}
+      <div class="placeholder-image" style="padding-bottom: 75%">
+        {{ 'image' | placeholder_svg_tag }}
+      </div>
+    {%- endif -%}
+  </div>
+
+  {%- if section.settings.type == 'video_with_product' -%}
+    <div class="video-carousel-item__content">
+      <div class="video-carousel-item__avatar">
+        {%- if product != blank -%}
+          <img
+            class="video-carousel-item__avatar-image"
+            loading="lazy"
+            data-media-id="{{ product.featured_media.id | escape }}"
+            sizes="{{ sizes_attribute }}"
+            {% render 'image-attributes', image: product.featured_media, sizes: '36,48,72,96' %}
+          >
+        {%- else -%}
+          {{ 'product-1' | placeholder_svg_tag: 'placeholder-background' }}
+        {%- endif -%}
+      </div>
+
+      <div class="video-carousel-item__title">
+        <p class="product-item__title">
+          {%- if product != blank -%}
+            {{- product.title -}}
+          {%- else -%}
+            {{- 'general.onboarding.product_title' | t -}}
+          {%- endif -%}
+        </p>
+
+        <div class="product-item__price-list-container">
+          <div class="price-list">
+            {%- if product != blank -%}
+              {%- if product.price_varies and product.compare_at_price -%}
+                {%- assign cheapest_variant = product.variants | sort: 'price' | first -%}
+
+                {%- capture price_min -%}
+								{%- if settings.currency_code_enabled -%}
+									{{- cheapest_variant.price | money_with_currency -}}
+								{%- else -%}
+									{{- cheapest_variant.price | money -}}
+								{%- endif -%}
+							{%- endcapture -%}
+
+                {%- if cheapest_variant.price < cheapest_variant.compare_at_price -%}
+                  <span class="price price--highlight">
+                    <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                    {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
+                  </span>
+
+                  <span class="price price--compare">
+                    <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+
+                    {%- if settings.currency_code_enabled -%}
+                      {{- cheapest_variant.compare_at_price | money_with_currency -}}
+                    {%- else -%}
+                      {{- cheapest_variant.compare_at_price | money -}}
+                    {%- endif -%}
+                  </span>
+                {%- else -%}
+                  <span class="price">
+                    <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                    {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
+                  </span>
+                {%- endif -%}
+              {%- elsif product.price < product.compare_at_price -%}
+                <span class="price price--highlight">
+                  <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+
+                  {%- if settings.currency_code_enabled -%}
+                    {{- product.price | money_with_currency -}}
+                  {%- else -%}
+                    {{- product.price | money -}}
+                  {%- endif -%}
+                </span>
+
+                <span class="price price--compare">
+                  <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+                  {%- if settings.currency_code_enabled -%}
+                    {{- product.compare_at_price | money_with_currency -}}
+                  {%- else -%}
+                    {{- product.compare_at_price | money -}}
+                  {%- endif -%}
+                </span>
+              {%- elsif product.price_varies -%}
+                {%- capture price_min -%}
+								{%- if settings.currency_code_enabled -%}
+									{{ product.price_min | money_with_currency }}
+								{%- else -%}
+									{{ product.price_min | money }}
+								{%- endif -%}
+							{%- endcapture -%}
+
+                {%- capture price_max -%}
+								{%- if settings.currency_code_enabled -%}
+									{{- product.price_max | money_with_currency -}}
+								{%- else -%}
+									{{- product.price_max | money -}}
+								{%- endif -%}
+							{%- endcapture -%}
+
+                <span class="price">
+                  <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                  {{- 'collection.product.from_price_html' | t: price_min: price_min, price_max: price_max -}}
+                </span>
+              {%- else -%}
+                <span class="price">
+                  <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+
+                  {%- if settings.currency_code_enabled -%}
+                    {{- product.price | money_with_currency -}}
+                  {%- else -%}
+                    {{- product.price | money -}}
+                  {%- endif -%}
+                </span>
+              {%- endif -%}
+            {%- else -%}
+              <span class="price">
+                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                {{- 5000 | money -}}
+              </span>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-carousel-item__cta-wrapper">
+      <a
+        href="{{ product.url | default: '#' }}"
+        class="product-item__cta button button--primary"
+      >
+        {{- 'product.general.view_details' | t -}}
+      </a>
+    </div>
+  {%- endif -%}
+
+  {%- if product != blank and main_video != blank or main_video_url != blank -%}
+    <modal-content class="video-carousel-popup modal">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__content">
+        <div class="carousel-modal">
+          <button
+            type="button"
+            class="modal__close-button tap-area"
+            data-action="close"
+            title="{{ 'general.accessibility.close' | t | escape }}"
+          >
+            {%- render 'icon' with 'close' -%}
+          </button>
+
+          <button
+            type="button"
+            class="modal__close-button pswp__button pswp__button--close prev-next-button"
+            data-action="close"
+            title="{{ 'general.accessibility.close' | t | escape }}"
+          >
+            {% render 'icon' with 'close' %}
+          </button>
+
+          <div
+            class="carousel-modal__video-wrapper"
+            style="--aspect-ratio: {% if main_video != blank %}{{ main_video.aspect_ratio }}{% else %}1.7778{% endif %}"
+          >
+            {%- if main_video != blank -%}
+              <native-video style="--aspect-ratio: {{ main_video.aspect_ratio }}">
+                <div class="video-wrapper__poster">
+                  {%- if main_video.preview_image != blank -%}
+                    <img
+                      class="video-wrapper__poster-image"
+                      loading="lazy"
+                      sizes="(max-width: 740px) calc(100vw - 96px), (max-width: 999px) calc(100vw - 160px), 600px"
+                      {% render 'image-attributes',
+                        image: main_video.preview_image,
+                        sizes: '600,700,800,1000,1200,1400'
+                      %}
+                    >
+                  {%- endif -%}
+
+                  <div class="video-wrapper__poster-content">
+                    <button
+                      type="button"
+                      class="video-wrapper__play-button video-wrapper__play-button--large video-wrapper__play-button--ripple"
+                      title="{{ 'general.accessibility.play_video' | t | escape }}"
+                    >
+                      {%- render 'icon' with 'play', width: 72, height: 72 -%}
+                    </button>
+                  </div>
+                </div>
+
+                <template>
+                  {{-
+                    main_video
+                    | video_tag: image_size: '1024x', controls: true, autoplay: true, muted: false, loop: true
+                  -}}
+                </template>
+              </native-video>
+            {%- elsif main_video_url != blank -%}
+              <external-video
+                provider="{{ main_video_url.type | escape }}"
+                style="--aspect-ratio: 1.7778"
+              >
+                <div class="video-wrapper__poster">
+                  <div class="video-wrapper__poster-content">
+                    <button
+                      type="button"
+                      class="video-wrapper__play-button video-wrapper__play-button--large video-wrapper__play-button--ripple"
+                      title="{{ 'general.accessibility.play_video' | t | escape }}"
+                    >
+                      {%- render 'icon' with 'play', width: 72, height: 72 -%}
+                    </button>
+                  </div>
+                </div>
+
+                <template>
+                  {%- if main_video_url.type == 'youtube' -%}
+                    <iframe
+                      title="{{ section.settings.title | escape }}"
+                      src="https://www.youtube.com/embed/{{ main_video_url.id }}?playsinline=1&autoplay=1&playlist={{ main_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen="allowfullscreen"
+                    ></iframe>
+                  {%- elsif main_video_url.type == 'vimeo' -%}
+                    <iframe
+                      title="{{ section.settings.title | escape }}"
+                      src="https://player.vimeo.com/video/{{ main_video_url.id }}?autoplay=1&autopause=1&transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}"
+                      allow="autoplay; encrypted-media;"
+                      allowfullscreen="allowfullscreen"
+                    ></iframe>
+                  {%- endif -%}
+                </template>
+              </external-video>
+            {%- endif -%}
+          </div>
+
+          <div class="carousel-modal__content">
+            <div class="carousel-modal__product">
+              {%- if product.featured_media -%}
+                <img
+                  class="shop-the-look__product-image"
+                  loading="lazy"
+                  sizes="72px"
+                  {% render 'image-attributes', image: product.featured_media, sizes: '72,144,216,288' %}
+                >
+              {%- endif -%}
+
+              <div class="shop-the-look__product-info">
+                {%- if settings.show_vendor -%}
+                  <a
+                    class="shop-the-look__product-vendor heading heading--xsmall"
+                    href="{{ product.vendor | url_for_vendor | default: '#' }}"
+                  >
+                    {{- product.vendor -}}
+                  </a>
+                {%- endif -%}
+
+                <a href="{{ product.url | default: '#' }}" class="shop-the-look__product-title">
+                  {{- product.title -}}
+                </a>
+
+                <div class="shop-the-look__product-bottom-wrapper">
+                  {%- if product.price_varies -%}
+                    {%- capture price_min -%}{{ product.price_min | money }}{%- endcapture -%}
+                    <div class="price">
+                      <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                      {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
+                    </div>
+                  {%- else -%}
+                    <span class="price">
+                      <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                      {{- product.price | money -}}
+                    </span>
+                  {%- endif -%}
+
+                  {%- if product.available -%}
+                    {%- if product.variants.size == 1 -%}
+                      {%- capture form_id -%}{{ look_id }}_form_{% increment product_form_index %}{%- endcapture -%}
+                      {%- form 'product', product, id: form_id, is: 'product-form' -%}
+                        <input type="hidden" name="quantity" value="1">
+                        <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
+                        <button type="submit" class="shop-the-look__product-link link text--subdued">
+                          {{ 'collection.product.add_to_cart' | t }}
+                        </button>
+                      {%- endform -%}
+                    {%- else -%}
+                      <button
+                        is="toggle-button"
+                        class="shop-the-look__product-link link text--subdued"
+                        aria-controls="{{ look_id }}-{{ index }}-drawer"
+                        aria-expanded="false"
+                      >
+                        {{- 'collection.product.quick_view' | t -}}
+                      </button>
+                    {%- endif -%}
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </modal-content>
+  {%- endif -%}
+</video-carousel-item>

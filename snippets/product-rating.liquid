@@ -1,0 +1,181 @@
+{%- if settings.rating_app == 'judge_me_product_reviews' and product.metafields.reviews.rating.value != blank -%}
+  {% comment %}
+    https://support.judge.me/support/solutions/articles/44002295100-how-to-get-product-ratings-and-total-number-of-reviews-via-judge-me-metafields-reviews-rating-and-re
+  {% endcomment %}
+
+  {%- assign rating_decimal = 0 -%}
+  {%- assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1 -%}
+
+  {%- if decimal >= 0.3 and decimal <= 0.7 -%}
+    {%- assign rating_decimal = 0.5 -%}
+  {%- elsif decimal > 0.7 -%}
+    {%- assign rating_decimal = 1 -%}
+  {%- endif -%}
+
+  <div class="rating">
+    <div
+      class="rating__stars"
+      role="img"
+      aria-label="{{ 'general.accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}"
+    >
+      {%- assign rating_as_float = product.metafields.reviews.rating.value.rating | times: 1.0 -%}
+
+      {%- for i in (product.metafields.reviews.rating.value.scale_min..product.metafields.reviews.rating.value.scale_max) -%}
+        {%- if rating_as_float >= i -%}
+          {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--full' -%}
+        {%- else -%}
+          {%- if rating_decimal == 0.5 -%}
+            {%- render 'icon' with 'rating-star-half', class: 'rating__star rating__star--half' -%}
+          {%- elsif rating_decimal == 1 -%}
+            {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--full' -%}
+          {%- else -%}
+            {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--empty' -%}
+          {%- endif -%}
+
+          {%- assign rating_decimal = false -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <span class="rating__caption">
+      {{- 'product.general.reviews_count' | t: count: product.metafields.reviews.rating_count.value -}}
+    </span>
+  </div>
+{%- elsif settings.rating_app == 'loox_product_reviews_and_photos' and product.metafields.loox.avg_rating != blank -%}
+  {% comment %}
+    Documentation: https://help.loox.io/article/501-displaying-the-ratings-widget-on-your-store-pages
+  {% endcomment %}
+
+  {%- assign rating_decimal = 0 -%}
+  {%- assign decimal = product.metafields.loox.avg_rating | modulo: 1 -%}
+
+  {%- if decimal >= 0.3 and decimal <= 0.7 -%}
+    {%- assign rating_decimal = 0.5 -%}
+  {%- elsif decimal > 0.7 -%}
+    {%- assign rating_decimal = 1 -%}
+  {%- endif -%}
+
+  <div class="rating">
+    <div
+      class="rating__stars"
+      role="img"
+      aria-label="{{ 'general.accessibility.star_reviews_info' | t: rating_value: product.metafields.loox.avg_rating, rating_max: 5 }}"
+    >
+      {%- assign rating_as_float = product.metafields.loox.avg_rating | times: 1.0 -%}
+
+      {%- for i in (1..5) -%}
+        {%- if rating_as_float >= i -%}
+          {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--full' -%}
+        {%- else -%}
+          {%- if rating_decimal == 0.5 -%}
+            {%- render 'icon' with 'rating-star-half', class: 'rating__star rating__star--half' -%}
+          {%- elsif rating_decimal == 1 -%}
+            {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--full' -%}
+          {%- else -%}
+            {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--empty' -%}
+          {%- endif -%}
+
+          {%- assign rating_decimal = false -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <span class="rating__caption">
+      {{- 'product.general.reviews_count' | t: count: product.metafields.loox.num_reviews -}}
+    </span>
+  </div>
+{%- elsif settings.rating_app == 'product_reviews' and product.metafields.reviews.rating.value != blank -%}
+  {%- assign rating_decimal = 0 -%}
+  {%- assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1 -%}
+
+  {%- if decimal >= 0.3 and decimal <= 0.7 -%}
+    {%- assign rating_decimal = 0.5 -%}
+  {%- elsif decimal > 0.7 -%}
+    {%- assign rating_decimal = 1 -%}
+  {%- endif -%}
+
+  <div class="rating">
+    <div
+      class="rating__stars"
+      role="img"
+      aria-label="{{ 'general.accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}"
+    >
+      {%- assign rating_as_float = product.metafields.reviews.rating.value.rating | times: 1.0 -%}
+
+      {%- for i in (product.metafields.reviews.rating.value.scale_min..product.metafields.reviews.rating.value.scale_max) -%}
+        {%- if rating_as_float >= i -%}
+          {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--full' -%}
+        {%- else -%}
+          {%- if rating_decimal == 0.5 -%}
+            {%- render 'icon' with 'rating-star-half', class: 'rating__star rating__star--half' -%}
+          {%- elsif rating_decimal == 1 -%}
+            {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--full' -%}
+          {%- else -%}
+            {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--empty' -%}
+          {%- endif -%}
+
+          {%- assign rating_decimal = false -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <span class="rating__caption">
+      {{- 'product.general.reviews_count' | t: count: product.metafields.reviews.rating_count.value -}}
+    </span>
+  </div>
+{%- elsif settings.rating_app == 'ryviu' and product.metafields.ryviu.product_reviews_info != blank -%}
+  {%- assign rating_decimal = 0 -%}
+  {%- assign rating_count = product.metafields.ryviu.product_reviews_info | split: ';' | first -%}
+  {%- assign rating_score = product.metafields.ryviu.product_reviews_info | split: ';' | last -%}
+  {%- assign decimal = rating_score | modulo: 1 -%}
+
+  {%- if decimal >= 0.3 and decimal <= 0.7 -%}
+    {%- assign rating_decimal = 0.5 -%}
+  {%- elsif decimal > 0.7 -%}
+    {%- assign rating_decimal = 1 -%}
+  {%- endif -%}
+
+  <div class="rating">
+    <div
+      class="rating__stars"
+      role="img"
+      aria-label="{{ 'general.accessibility.star_reviews_info' | t: rating_value: rating_score, rating_max: 5 }}"
+    >
+      {%- assign rating_as_float = rating_score | times: 1.0 -%}
+
+      {%- for i in (1..5) -%}
+        {%- if rating_as_float >= i -%}
+          {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--full' -%}
+        {%- else -%}
+          {%- if rating_decimal == 0.5 -%}
+            {%- render 'icon' with 'rating-star-half', class: 'rating__star rating__star--half' -%}
+          {%- elsif rating_decimal == 1 -%}
+            {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--full' -%}
+          {%- else -%}
+            {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--empty' -%}
+          {%- endif -%}
+
+          {%- assign rating_decimal = false -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <span class="rating__caption">
+      {{- 'product.general.reviews_count' | t: count: rating_count -}}
+    </span>
+  </div>
+{%- elsif settings.show_rating_stars_even_if_there_is_no_rating == true -%}
+  <div class="rating">
+    <div
+      class="rating__stars"
+      role="img"
+      aria-label="{{ 'general.accessibility.star_reviews_info' | t: rating_value: 0, rating_max: 5 }}"
+    >
+      {%- for i in (1..5) -%}
+        {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--empty' -%}
+      {%- endfor -%}
+    </div>
+
+    <span class="rating__caption">{{ 'product.general.reviews_count' | t: count: 0 }}</span>
+  </div>
+{%- endif -%}

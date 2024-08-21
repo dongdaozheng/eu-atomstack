@@ -1,0 +1,134 @@
+{%- if section.settings.background_type == 'boxed' -%}
+  {%- assign is_boxed = true -%}
+{%- else -%}
+  {%- assign is_boxed = false -%}
+{%- endif -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background == 'rgba(0,0,0,0)' -%}
+      {%- assign background = settings.background | color_mix: settings.text_color, 85 -%}
+    {%- else -%}
+      {%- assign background = section.settings.background -%}
+    {%- endif -%}
+
+    --background: {{ background.red }}, {{ background.green }}, {{ background.blue }};
+
+    --top-padding: {{ section.settings.mobile_top_padding }}px;
+    --bottom-padding: {{ section.settings.mobile_bottom_padding }}px;
+  }
+
+  {%- if section.settings.ignore_vertical_spacing -%}
+    #shopify-section-{{ section.id }} .section {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  {%- endif -%}
+
+  @media screen and (min-width: 741px) {
+    #shopify-section-{{ section.id }} {
+      --top-padding: {{ section.settings.desktop_top_padding }}px;
+      --bottom-padding: {{ section.settings.desktop_bottom_padding }}px;
+    }
+  }
+</style>
+
+<section class="section {% unless is_boxed %}{% endunless %} section--padding">
+  <div
+    {% if is_boxed %}
+      class="container"
+    {% endif %}
+  >
+    <span class="divider__self"></span>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:Divider",
+  "class": "shopify-section--divider",
+  "settings": [
+    {
+      "type": "select",
+      "id": "background_type",
+      "label": "t:Background",
+      "options": [
+        {
+          "value": "full_width",
+          "label": "t:Full_width"
+        },
+        {
+          "value": "boxed",
+          "label": "t:Boxed"
+        }
+      ],
+      "default": "boxed"
+    },
+    {
+      "type": "header",
+      "content": "t:Colors"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "t:Background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "header",
+      "content": "t:Section_padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "ignore_vertical_spacing",
+      "label": "t:Ignore_vertical_spacing_in_global_configuration",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "desktop_top_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Desktop_top_padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "desktop_bottom_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Desktop_bottom_padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_top_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Mobile_top_padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_bottom_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:Mobile_bottom_padding",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:Divider"
+    }
+  ]
+}
+{% endschema %}

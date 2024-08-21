@@ -1,0 +1,2704 @@
+{%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
+{%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
+{%- assign free_gift_block = section.blocks | where: 'type', 'free_gift' | first -%}
+
+{%- capture look_id -%}product-{{ section.id }}-{{ block.id }}{%- endcapture -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --block-box-shadow: {% if section.settings.shadow_effect == 'none' %}none{% else %}var(--box-shadow-{{ section.settings.shadow_effect }}){% endif %};
+    --block-box-shadow-reduced: {% if section.settings.shadow_effect == 'none' %}none{% else %}var(--box-shadow-{{ section.settings.shadow_effect }}-reduced){% endif %};
+  }
+
+  {%- if free_gift_block != blank -%}
+    #product-free-gift-popup {
+      {%- if free_gift_block.settings.popup_primary_button_background == 'rgba(0,0,0,0)' -%}
+        {%- assign popup_primary_button_background = settings.secondary_button_background -%}
+      {%- else -%}
+        {%- assign popup_primary_button_background = free_gift_block.settings.popup_primary_button_background -%}
+      {%- endif -%}
+
+      {%- if free_gift_block.settings.popup_primary_button_text_color == 'rgba(0,0,0,0)' -%}
+        {%- assign popup_primary_button_text_color = settings.secondary_button_text_color -%}
+      {%- else -%}
+        {%- assign popup_primary_button_text_color = free_gift_block.settings.popup_primary_button_text_color -%}
+      {%- endif -%}
+
+      {%- if free_gift_block.settings.popup_secondary_button_background == 'rgba(0,0,0,0)' -%}
+        {%- assign popup_secondary_button_background = settings.primary_button_background -%}
+      {%- else -%}
+        {%- assign popup_secondary_button_background = free_gift_block.settings.popup_secondary_button_background -%}
+      {%- endif -%}
+
+      {%- if free_gift_block.settings.popup_secondary_button_text_color == 'rgba(0,0,0,0)' -%}
+        {%- assign popup_secondary_button_text_color = settings.primary_button_text_color -%}
+      {%- else -%}
+        {%- assign popup_secondary_button_text_color = free_gift_block.settings.popup_secondary_button_text_color -%}
+      {%- endif -%}
+
+      --primary-button-text-color: {{ popup_primary_button_text_color.red }}, {{ popup_primary_button_text_color.green }}, {{ popup_primary_button_text_color.blue }};
+      --primary-button-background: {{ popup_primary_button_background.red }}, {{ popup_primary_button_background.green }}, {{ popup_primary_button_background.blue }};
+      --secondary-button-background: {{ popup_secondary_button_background.red }}, {{ popup_secondary_button_background.green }}, {{ popup_secondary_button_background.blue }};
+      --secondary-button-text-color: {{ popup_secondary_button_text_color.red }}, {{ popup_secondary_button_text_color.green }}, {{ popup_secondary_button_text_color.blue }};
+    }
+  {%- endif -%}
+</style>
+
+<div
+  class="dynamic-theme-variables visually-hidden"
+  aria-hidden="true"
+  {% if variant_picker_block.settings.enable_dynamic_theme_color %}
+    enabled
+  {% endif %}
+  {% if variant_picker_block.settings.dynamic_theme_color_with_announcement_bar %}
+    enable-announcement-bar
+  {% endif %}
+  {% if variant_picker_block.settings.dynamic_theme_color_with_footer %}
+    enable-footer
+  {% endif %}
+></div>
+
+{%- unless template.suffix contains 'quick-buy' -%}
+  <section>
+    {%- if section.settings.show_sticky_add_to_cart and product.available -%}
+      {%- render 'product-sticky-form', product: product, free_gift: free_gift_block, look_id: look_id -%}
+    {%- endif -%}
+
+    <div class="container">
+      <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb text--xsmall text--subdued hidden-phone">
+        <ol class="breadcrumb__list" role="list">
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
+          </li>
+
+          {%- if collection -%}
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="{{ collection.url }}">{{- collection.title -}}</a>
+            </li>
+          {%- endif -%}
+
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__link" aria-current="page">{{ product.title }}</span>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- PRODUCT TOP PART -->
+      <div class="product product--thumbnails-{{ section.settings.desktop_thumbnails_position }}">
+        {%- render 'product-media', product: product -%}
+        {%- render 'product-info',
+          atc_button_icon_custom: buy_buttons_block.settings.atc_button_icon_custom,
+          atc_button_icon_preset: buy_buttons_block.settings.atc_button_icon_preset,
+          enable_dynamic_theme_color: variant_picker_block.settings.enable_dynamic_theme_color,
+          product: product,
+          update_url: true
+        -%}
+      </div>
+    </div>
+
+    <quick-buy-popover
+      href="{{ product.url }}?view=quick-buy-popover-without-view-details"
+      id="{{ look_id }}-popover"
+      class="popover popover--quick-buy"
+    >
+    </quick-buy-popover>
+  </section>
+{%- else -%}
+  {%- comment -%}
+    The quick shop HTML being very different, we render it here. On mobile and tablet/desktop, the product renders also quite differently, as it is in a drawer on tablet/desktop, and a popover on mobile.
+  {%- endcomment -%}
+
+  {%- capture quick_buy_product_info -%}
+    <div class="quick-buy-product">
+      {%- assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
+
+      {%- if template.suffix == 'quick-buy-drawer' -%}
+        <img loading="lazy" sizes="114px" class="quick-buy-product__image" {% render 'image-attributes', image: featured_media, sizes: '114,228,342' %}>
+      {%- else -%}
+        <img loading="lazy" sizes="65px" class="quick-buy-product__image" {% render 'image-attributes', image: featured_media, sizes: '65,130,195' %}>
+      {%- endif -%}
+
+      <div class="quick-buy-product__info {% if template.suffix == 'quick-buy-popover' or template.suffix == 'quick-buy-popover-without-view-details' %}text--small{% endif %}">
+        <product-meta form-id="product-form-{{ section.id }}-{{ product.id }}" unit-price-class="text--xsmall" class="product-item-meta">
+          {%- if section.settings.show_vendor -%}
+            {%- assign vendor_handle = product.vendor | handle -%}
+            {%- assign collection_for_vendor = collections[vendor_handle] -%}
+
+            {%- unless collection_for_vendor.empty? -%}
+              <a href="{{ collection_for_vendor.url }}" class="product-item-meta__vendor heading {% if template.suffix == 'quick-buy-drawer' %}heading--small{% else %}heading--xsmall{% endif %}">{{ product.vendor }}</a>
+            {%- else -%}
+              <a href="{{ product.vendor | url_for_vendor }}" class="product-item-meta__vendor heading {% if template.suffix == 'quick-buy-drawer' %}heading--small{% else %}heading--xsmall{% endif %}">{{ product.vendor }}</a>
+            {%- endunless -%}
+          {%- endif -%}
+
+          <a href="{{ product.url }}" class="product-item-meta__title">{{ product.title }}</a>
+
+          <div class="product-item-meta__price-list-container" role="region" aria-live="polite">
+            <div class="price-list" data-product-price-list>
+              {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+                <span class="price price--highlight">
+                  <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+
+                  {%- if settings.currency_code_enabled -%}
+                    {{- product.selected_or_first_available_variant.price | money_with_currency -}}
+                  {%- else -%}
+                    {{- product.selected_or_first_available_variant.price | money -}}
+                  {%- endif -%}
+                </span>
+
+                <span class="price price--compare">
+                  <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+
+                  {%- if settings.currency_code_enabled -%}
+                    {{- product.selected_or_first_available_variant.compare_at_price | money_with_currency -}}
+                  {%- else -%}
+                    {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+                  {%- endif -%}
+                </span>
+              {%- else -%}
+                <span class="price">
+                  <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+
+                  {%- if settings.currency_code_enabled -%}
+                    {{- product.selected_or_first_available_variant.price | money_with_currency -}}
+                  {%- else -%}
+                    {{- product.selected_or_first_available_variant.price | money -}}
+                  {%- endif -%}
+                </span>
+              {%- endif -%}
+
+              {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
+                <div class="price text--subdued text--xsmall">
+                  <div class="unit-price-measurement">
+                    <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money }}</span>
+                    <span class="unit-price-measurement__separator">/</span>
+
+                    {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
+                      <span class="unit-price-measurement__reference-value">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_value }}</span>
+                    {%- endif -%}
+
+                    <span class="unit-price-measurement__reference-unit">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}</span>
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+
+            {%- if template.suffix == 'quick-buy-popover' -%}
+              <a href="{{ product.url }}" class="link text--subdued">{{ 'product.general.view_details' | t }}</a>
+            {%- endif -%}
+          </div>
+        </product-meta>
+      </div>
+    </div>
+  {%- endcapture -%}
+
+  {%- if template.suffix == 'quick-buy-drawer' -%}
+    <quick-buy-drawer class="drawer drawer--large drawer--quick-buy">
+      <cart-notification hidden class="cart-notification cart-notification--drawer"></cart-notification>
+
+      <span class="drawer__overlay"></span>
+
+      <header class="drawer__header">
+        <p class="drawer__title heading h6">{{ 'product.form.choose_options' | t }}</p>
+
+        <button
+          type="button"
+          class="drawer__close-button tap-area"
+          data-action="close"
+          title="{{ 'general.accessibility.close' | t | escape }}"
+        >
+          {%- render 'icon' with 'close' -%}
+        </button>
+      </header>
+
+      <div class="drawer__content">
+        {{- quick_buy_product_info -}}
+        {%- render 'product-form',
+          atc_button_icon_custom: buy_buttons_block.settings.atc_button_icon_custom,
+          atc_button_icon_preset: buy_buttons_block.settings.atc_button_icon_preset,
+          enable_dynamic_theme_color: variant_picker_block.settings.enable_dynamic_theme_color,
+          product: product
+        -%}
+      </div>
+    </quick-buy-drawer>
+  {%- elsif template.suffix == 'quick-buy-popover' or template.suffix == 'quick-buy-popover-without-view-details' -%}
+    <quick-buy-popover class="popover popover--quick-buy">
+      <span class="popover__overlay"></span>
+
+      <header class="popover__header">
+        {{- quick_buy_product_info -}}
+
+        <button
+          type="button"
+          class="popover__close-button tap-area tap-area--large"
+          data-action="close"
+          title="{{ 'general.accessibility.close' | t | escape }}"
+        >
+          {%- render 'icon' with 'close' -%}
+        </button>
+      </header>
+
+      <div class="popover__content popover__content--no-padding">
+        {%- render 'product-form',
+          atc_button_icon_custom: buy_buttons_block.settings.atc_button_icon_custom,
+          atc_button_icon_preset: buy_buttons_block.settings.atc_button_icon_preset,
+          enable_dynamic_theme_color: variant_picker_block.settings.enable_dynamic_theme_color,
+          product: product
+        -%}
+      </div>
+    </quick-buy-popover>
+  {%- endif -%}
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "t:Product_page",
+  "class": "shopify-section--main-product",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "bundles",
+      "name": "t:Bundles",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:Shopify_does_not_natively_offers_a_way_to_create_a_set_of_bundles_to_goes_around_that_Zalify_offers_a_specific_metafield_configuration"
+        },
+        {
+          "type": "select",
+          "id": "icon_size",
+          "label": "t:Custom_icon_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:Small"
+            },
+            {
+              "value": "medium",
+              "label": "t:Medium"
+            },
+            {
+              "value": "large",
+              "label": "t:Large"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "select",
+          "id": "mobile_products_per_row",
+          "label": "t:Products_per_row_mobile",
+          "options": [
+            {
+              "value": "1",
+              "label": "t:1"
+            },
+            {
+              "value": "2",
+              "label": "t:2"
+            },
+            {
+              "value": "3",
+              "label": "t:3"
+            }
+          ],
+          "default": "3"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:Button",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:Create_link_to_your_contact_page_external_marketplace"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:Link"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:Text"
+        },
+        {
+          "type": "checkbox",
+          "id": "stretch",
+          "label": "t:Stretch_button",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "t:Background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "t:Text_color",
+          "default": "rgba(0,0,0,0)"
+        }
+      ]
+    },
+    {
+      "type": "buy_buttons",
+      "name": "t:Buy_buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_payment_button",
+          "label": "t:Show_dynamic_checkout_button",
+          "info": "t:Each_customer_will_see_their_preferred_payment_method_from_those_available_on_your_store_such_as_PayPal_or_Apple_Pay",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "atc_button_icon_custom",
+          "label": "t:Add_to_cart_icon_custom",
+          "info": "t:48px_x_48px_png_recommended_if_none_is_set_below_icon_will_be_used"
+        },
+        {
+          "type": "select",
+          "id": "atc_button_icon_preset",
+          "label": "t:Add_to_cart_icon_preset",
+          "options": [
+            {
+              "value": "",
+              "label": "t:None"
+            },
+            {
+              "value": "picto-address",
+              "label": "t:Address"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat"
+            },
+            {
+              "value": "chevron",
+              "label": "t:Chevron"
+            },
+            {
+              "value": "chevron-back",
+              "label": "t:Chevron_back"
+            },
+            {
+              "value": "close",
+              "label": "t:Close"
+            },
+            {
+              "value": "comment",
+              "label": "t:Comment"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email"
+            },
+            {
+              "value": "form-error",
+              "label": "t:Error"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love"
+            },
+            {
+              "value": "minus-big",
+              "label": "t:Minus"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Operator"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane"
+            },
+            {
+              "value": "plus-big",
+              "label": "t:Plus"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Return_box"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield"
+            },
+            {
+              "value": "quick-buy-shopping-bag",
+              "label": "t:Shopping_bag"
+            },
+            {
+              "value": "quick-buy-shopping-cart",
+              "label": "t:Shopping_cart"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store"
+            },
+            {
+              "value": "form-success",
+              "label": "t:Success"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes"
+            },
+            {
+              "value": "quick-buy-tote-bag",
+              "label": "t:Tote_bag"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:Worldwide"
+            }
+          ],
+          "default": "quick-buy-shopping-cart"
+        },
+        {
+          "type": "color",
+          "id": "atc_button_background",
+          "label": "t:Add_to_cart_background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "atc_button_text_color",
+          "label": "t:Add_to_cart_color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "buy_now_button_background",
+          "label": "t:Buy_now_background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "buy_now_button_text_color",
+          "label": "t:Buy_now_color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "header",
+          "content": "t:Image_uploader"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_image_uploader",
+          "label": "t:Enable",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "image_uploader_label",
+          "label": "t:Image_uploader_label",
+          "default": "<p>Drag & Drop your image or <u>Browse</u> </p>"
+        }
+      ]
+    },
+    {
+      "type": "accordion",
+      "name": "t:Collapsible_row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:Heading",
+          "info": "t:Include_a_heading_that_explains_the_content",
+          "default": "Collapsible row"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_custom",
+          "label": "t:Icon_custom",
+          "info": "t:48px_x_48px_png_recommended_if_none_is_set_below_icon_will_be_used"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:Icon_preset",
+          "options": [
+            {
+              "value": "",
+              "label": "t:None"
+            },
+            {
+              "value": "sixty-days",
+              "label": "t:60_Days"
+            },
+            {
+              "value": "picto-address",
+              "label": "t:Address"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat"
+            },
+            {
+              "value": "chevron",
+              "label": "t:Chevron"
+            },
+            {
+              "value": "chevron-back",
+              "label": "t:Chevron_back"
+            },
+            {
+              "value": "close",
+              "label": "t:Close"
+            },
+            {
+              "value": "comment",
+              "label": "t:Comment"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck"
+            },
+            {
+              "value": "donate",
+              "label": "t:Donate"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email"
+            },
+            {
+              "value": "form-error",
+              "label": "t:Error"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery"
+            },
+            {
+              "value": "flag",
+              "label": "t:Flag"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love"
+            },
+            {
+              "value": "minus-big",
+              "label": "t:Minus"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Operator"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane"
+            },
+            {
+              "value": "plus-big",
+              "label": "t:Plus"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Return_box"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield"
+            },
+            {
+              "value": "quick-buy-shopping-bag",
+              "label": "t:Shopping_bag"
+            },
+            {
+              "value": "quick-buy-shopping-cart",
+              "label": "t:Shopping_cart"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store"
+            },
+            {
+              "value": "form-success",
+              "label": "t:Success"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes"
+            },
+            {
+              "value": "quick-buy-tote-bag",
+              "label": "t:Tote_bag"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:Worldwide"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "type": "richtext",
+          "id": "row_content",
+          "label": "t:Row_content"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_product_description_first",
+          "label": "t:Show_product_description_first",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "liquid",
+      "name": "t:Custom_Liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid",
+          "label": "t:Liquid",
+          "info": "t:Add_app_snippets_or_other_Liquid_code_to_create_advanced_customizations"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "t:Description",
+      "limit": 1
+    },
+    {
+      "type": "divider",
+      "name": "t:Divider"
+    },
+    {
+      "type": "feature_with_icon",
+      "name": "t:Feature_with_icon",
+      "settings": [
+        {
+          "type": "text",
+          "id": "content",
+          "label": "t:Content",
+          "default": "Free shipping"
+        },
+        {
+          "type": "checkbox",
+          "id": "bold_text",
+          "label": "t:Bold_text",
+          "default": true
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_custom",
+          "label": "t:Icon_custom",
+          "info": "t:48px_x_48px_png_recommended_if_none_is_set_below_icon_will_be_used"
+        },
+        {
+          "type": "select",
+          "id": "icon_preset",
+          "label": "t:Icon_preset",
+          "options": [
+            {
+              "value": "",
+              "label": "t:None"
+            },
+            {
+              "value": "picto-address",
+              "label": "t:Address"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat"
+            },
+            {
+              "value": "chevron",
+              "label": "t:Chevron"
+            },
+            {
+              "value": "chevron-back",
+              "label": "t:Chevron_back"
+            },
+            {
+              "value": "close",
+              "label": "t:Close"
+            },
+            {
+              "value": "comment",
+              "label": "t:Comment"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email"
+            },
+            {
+              "value": "form-error",
+              "label": "t:Error"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love"
+            },
+            {
+              "value": "minus-big",
+              "label": "t:Minus"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Operator"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane"
+            },
+            {
+              "value": "plus-big",
+              "label": "t:Plus"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Return_box"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield"
+            },
+            {
+              "value": "quick-buy-shopping-bag",
+              "label": "t:Shopping_bag"
+            },
+            {
+              "value": "quick-buy-shopping-cart",
+              "label": "t:Shopping_cart"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store"
+            },
+            {
+              "value": "form-success",
+              "label": "t:Success"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes"
+            },
+            {
+              "value": "quick-buy-tote-bag",
+              "label": "t:Tote_bag"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:Worldwide"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "t:Colors"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "t:Background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "t:Text_color",
+          "default": "rgba(0,0,0,0)"
+        }
+      ]
+    },
+    {
+      "type": "free_gift",
+      "name": "t:Free_gift",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "type",
+          "label": "t:Layout",
+          "options": [
+            {
+              "value": "line_item",
+              "label": "t:Line_item_add_to_cart_automatically"
+            },
+            {
+              "value": "popup",
+              "label": "t:Popup_Add_to_cart_manually"
+            }
+          ],
+          "default": "line_item"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:Product"
+        },
+        {
+          "type": "range",
+          "id": "quantity",
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "default": 1,
+          "label": "t:Quantity"
+        },
+        {
+          "type": "checkbox",
+          "id": "fixed_quantity",
+          "label": "t:Fixed_quantity",
+          "info": "t:With_this_option_disabled_the_more_products_you_add_to_the_cart_the_more_free_gifts_you_get",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:Line_item_settings"
+        },
+        {
+          "type": "image_picker",
+          "id": "line_item_avatar",
+          "label": "t:Image",
+          "info": "t:30px_x_30px_recommended"
+        },
+        {
+          "type": "range",
+          "id": "line_item_avatar_border_width",
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "label": "t:Avatar_border_width",
+          "default": 0
+        },
+        {
+          "type": "select",
+          "id": "line_item_avatar_border_style",
+          "label": "t:Avatar_border_style",
+          "options": [
+            {
+              "value": "dotted",
+              "label": "t:Dotted"
+            },
+            {
+              "value": "dashed",
+              "label": "t:Dashed"
+            },
+            {
+              "value": "solid",
+              "label": "t:Solid"
+            },
+            {
+              "value": "double",
+              "label": "t:Double"
+            }
+          ],
+          "default": "solid"
+        },
+        {
+          "type": "color",
+          "id": "line_item_avatar_border_color",
+          "label": "t:Avatar_border_color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "header",
+          "content": "t:Popup_settings"
+        },
+        {
+          "type": "richtext",
+          "id": "popup_title",
+          "label": "t:Title",
+          "default": "<p>Enjoy (a) free gift(s) with every order! No special code needed, just order and wait for your surprise.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "popup_main_image",
+          "label": "t:Main_image",
+          "info": "t:Max_width_is_500px_min_width_is_100px_max_height_is_400px"
+        },
+        {
+          "type": "header",
+          "content": "t:Add_to_cart_button"
+        },
+        {
+          "type": "text",
+          "id": "popup_primary_button_text",
+          "label": "t:Text",
+          "default": "Yes, i want it"
+        },
+        {
+          "type": "image_picker",
+          "id": "popup_primary_button_icon_custom",
+          "label": "t:Icon_custom",
+          "info": "t:48px_x_48px_png_recommended_if_none_is_set_below_icon_will_be_used"
+        },
+        {
+          "type": "select",
+          "id": "popup_primary_button_icon_preset",
+          "label": "t:Icon_preset",
+          "options": [
+            {
+              "value": "",
+              "label": "t:None"
+            },
+            {
+              "value": "picto-address",
+              "label": "t:Address"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat"
+            },
+            {
+              "value": "chevron",
+              "label": "t:Chevron"
+            },
+            {
+              "value": "chevron-back",
+              "label": "t:Chevron_back"
+            },
+            {
+              "value": "close",
+              "label": "t:Close"
+            },
+            {
+              "value": "comment",
+              "label": "t:Comment"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email"
+            },
+            {
+              "value": "form-error",
+              "label": "t:Error"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love"
+            },
+            {
+              "value": "minus-big",
+              "label": "t:Minus"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Operator"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane"
+            },
+            {
+              "value": "plus-big",
+              "label": "t:Plus"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Return_box"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield"
+            },
+            {
+              "value": "quick-buy-shopping-bag",
+              "label": "t:Shopping_bag"
+            },
+            {
+              "value": "quick-buy-shopping-cart",
+              "label": "t:Shopping_cart"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store"
+            },
+            {
+              "value": "form-success",
+              "label": "t:Success"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes"
+            },
+            {
+              "value": "quick-buy-tote-bag",
+              "label": "t:Tote_bag"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:Worldwide"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "type": "color",
+          "id": "popup_primary_button_background",
+          "label": "t:Background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "popup_primary_button_text_color",
+          "label": "t:Text",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "header",
+          "content": "t:Checkout_button"
+        },
+        {
+          "type": "text",
+          "id": "popup_secondary_button_text",
+          "label": "t:Text",
+          "default": "Buy it now"
+        },
+        {
+          "type": "image_picker",
+          "id": "popup_secondary_button_icon_custom",
+          "label": "t:Icon_custom",
+          "info": "t:48px_x_48px_png_recommended_if_none_is_set_below_icon_will_be_used"
+        },
+        {
+          "type": "select",
+          "id": "popup_secondary_button_icon_preset",
+          "label": "t:Icon_preset",
+          "options": [
+            {
+              "value": "",
+              "label": "t:None"
+            },
+            {
+              "value": "picto-address",
+              "label": "t:Address"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat"
+            },
+            {
+              "value": "chevron",
+              "label": "t:Chevron"
+            },
+            {
+              "value": "chevron-back",
+              "label": "t:Chevron_back"
+            },
+            {
+              "value": "close",
+              "label": "t:Close"
+            },
+            {
+              "value": "comment",
+              "label": "t:Comment"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email"
+            },
+            {
+              "value": "form-error",
+              "label": "t:Error"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love"
+            },
+            {
+              "value": "minus-big",
+              "label": "t:Minus"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Operator"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane"
+            },
+            {
+              "value": "plus-big",
+              "label": "t:Plus"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Return_box"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield"
+            },
+            {
+              "value": "quick-buy-shopping-bag",
+              "label": "t:Shopping_bag"
+            },
+            {
+              "value": "quick-buy-shopping-cart",
+              "label": "t:Shopping_cart"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store"
+            },
+            {
+              "value": "form-success",
+              "label": "t:Success"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes"
+            },
+            {
+              "value": "quick-buy-tote-bag",
+              "label": "t:Tote_bag"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:Worldwide"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "type": "color",
+          "id": "popup_secondary_button_background",
+          "label": "t:Background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "popup_secondary_button_text_color",
+          "label": "t:Text",
+          "default": "rgba(0,0,0,0)"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "t:Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:Image"
+        },
+        {
+          "type": "select",
+          "id": "image_alignment",
+          "label": "t:Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:Left"
+            },
+            {
+              "value": "center",
+              "label": "t:Center"
+            },
+            {
+              "value": "right",
+              "label": "t:Right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "t:Link"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 50,
+          "max": 600,
+          "step": 10,
+          "unit": "px",
+          "label": "t:Width",
+          "default": 150
+        }
+      ]
+    },
+    {
+      "type": "inventory",
+      "name": "t:Inventory",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "low_inventory_threshold",
+          "label": "t:Low_inventory_threshold",
+          "info": "t:Use_low_stock_color_when_quantity_is_below_the_threshold_Choose_0_to_always_show_in_stock",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 0
+        },
+        {
+          "type": "checkbox",
+          "id": "always_show_inventory_quantity",
+          "label": "t:Always_show_inventory_quantity",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "line_item_property",
+      "name": "t:Line_item_property",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:Line_item_properties_are_used_to_collect_customization_information_for_an_item_added_to_the_cart"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "t:Label",
+          "default": "Your label"
+        },
+        {
+          "type": "select",
+          "id": "type",
+          "label": "t:Type",
+          "options": [
+            {
+              "value": "text",
+              "label": "t:Text"
+            },
+            {
+              "value": "checkbox",
+              "label": "t:Checkbox"
+            }
+          ],
+          "default": "text"
+        },
+        {
+          "type": "header",
+          "content": "t:Text",
+          "info": "t:Only_applicable_for_line_item_property_of_type_Text"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "t:Required",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "allow_long_text",
+          "label": "t:Allow_long_text",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:Checkbox",
+          "info": "t:Only_applicable_for_line_item_property_of_type_Checkbox"
+        },
+        {
+          "type": "text",
+          "id": "checked_value",
+          "label": "t:Checked_value",
+          "default": "Yes"
+        },
+        {
+          "type": "text",
+          "id": "unchecked_value",
+          "label": "t:Unchecked_value",
+          "default": "No"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "t:List",
+      "settings": [
+        {
+          "type": "header",
+          "content": "t:Item_1"
+        },
+        {
+          "type": "text",
+          "id": "item_1_heading",
+          "label": "t:Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "item_1_content",
+          "label": "t:Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "item_1_icon_custom",
+          "label": "t:Icon_custom",
+          "info": "t:24px_x_24px_png_recommended_If_none_is_set_below_icon_will_be_used"
+        },
+        {
+          "type": "select",
+          "id": "item_1_icon_preset",
+          "label": "t:Icon_preset",
+          "options": [
+            {
+              "value": "",
+              "label": "t:None"
+            },
+            {
+              "value": "sixty-days",
+              "label": "t:60_Days"
+            },
+            {
+              "value": "picto-address",
+              "label": "t:Address"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat"
+            },
+            {
+              "value": "chevron",
+              "label": "t:Chevron"
+            },
+            {
+              "value": "chevron-back",
+              "label": "t:Chevron_back"
+            },
+            {
+              "value": "close",
+              "label": "t:Close"
+            },
+            {
+              "value": "comment",
+              "label": "t:Comment"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck"
+            },
+            {
+              "value": "donate",
+              "label": "t:Donate"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email"
+            },
+            {
+              "value": "form-error",
+              "label": "t:Error"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery"
+            },
+            {
+              "value": "flag",
+              "label": "t:Flag"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love"
+            },
+            {
+              "value": "minus-big",
+              "label": "t:Minus"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Operator"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane"
+            },
+            {
+              "value": "plus-big",
+              "label": "t:Plus"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Return_box"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield"
+            },
+            {
+              "value": "quick-buy-shopping-bag",
+              "label": "t:Shopping_bag"
+            },
+            {
+              "value": "quick-buy-shopping-cart",
+              "label": "t:Shopping_cart"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store"
+            },
+            {
+              "value": "form-success",
+              "label": "t:Success"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes"
+            },
+            {
+              "value": "quick-buy-tote-bag",
+              "label": "t:Tote_bag"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:Worldwide"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "type": "header",
+          "content": "t:Item_2"
+        },
+        {
+          "type": "text",
+          "id": "item_2_heading",
+          "label": "t:Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "item_2_content",
+          "label": "t:Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "item_2_icon_custom",
+          "label": "t:Icon_custom",
+          "info": "t:24px_x_24px_png_recommended_If_none_is_set_below_icon_will_be_used"
+        },
+        {
+          "type": "select",
+          "id": "item_2_icon_preset",
+          "label": "t:Icon_preset",
+          "options": [
+            {
+              "value": "",
+              "label": "t:None"
+            },
+            {
+              "value": "sixty-days",
+              "label": "t:60_Days"
+            },
+            {
+              "value": "picto-address",
+              "label": "t:Address"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat"
+            },
+            {
+              "value": "chevron",
+              "label": "t:Chevron"
+            },
+            {
+              "value": "chevron-back",
+              "label": "t:Chevron_back"
+            },
+            {
+              "value": "close",
+              "label": "t:Close"
+            },
+            {
+              "value": "comment",
+              "label": "t:Comment"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck"
+            },
+            {
+              "value": "donate",
+              "label": "t:Donate"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email"
+            },
+            {
+              "value": "form-error",
+              "label": "t:Error"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery"
+            },
+            {
+              "value": "flag",
+              "label": "t:Flag"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love"
+            },
+            {
+              "value": "minus-big",
+              "label": "t:Minus"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Operator"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane"
+            },
+            {
+              "value": "plus-big",
+              "label": "t:Plus"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Return_box"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield"
+            },
+            {
+              "value": "quick-buy-shopping-bag",
+              "label": "t:Shopping_bag"
+            },
+            {
+              "value": "quick-buy-shopping-cart",
+              "label": "t:Shopping_cart"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store"
+            },
+            {
+              "value": "form-success",
+              "label": "t:Success"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes"
+            },
+            {
+              "value": "quick-buy-tote-bag",
+              "label": "t:Tote_bag"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:Worldwide"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "type": "header",
+          "content": "t:Item_3"
+        },
+        {
+          "type": "text",
+          "id": "item_3_heading",
+          "label": "t:Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "item_3_content",
+          "label": "t:Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "item_3_icon_custom",
+          "label": "t:Icon_custom",
+          "info": "t:24px_x_24px_png_recommended_If_none_is_set_below_icon_will_be_used"
+        },
+        {
+          "type": "select",
+          "id": "item_3_icon_preset",
+          "label": "t:Icon_preset",
+          "options": [
+            {
+              "value": "",
+              "label": "t:None"
+            },
+            {
+              "value": "sixty-days",
+              "label": "t:60_Days"
+            },
+            {
+              "value": "picto-address",
+              "label": "t:Address"
+            },
+            {
+              "value": "picto-address-pin",
+              "label": "t:Address_pin"
+            },
+            {
+              "value": "picto-box",
+              "label": "t:Box"
+            },
+            {
+              "value": "picto-chat",
+              "label": "t:Chat"
+            },
+            {
+              "value": "chevron",
+              "label": "t:Chevron"
+            },
+            {
+              "value": "chevron-back",
+              "label": "t:Chevron_back"
+            },
+            {
+              "value": "close",
+              "label": "t:Close"
+            },
+            {
+              "value": "comment",
+              "label": "t:Comment"
+            },
+            {
+              "value": "picto-coupon",
+              "label": "t:Coupon"
+            },
+            {
+              "value": "picto-credit-card",
+              "label": "t:Credit_card"
+            },
+            {
+              "value": "picto-customer-support",
+              "label": "t:Customer_support"
+            },
+            {
+              "value": "picto-delivery-truck",
+              "label": "t:Delivery_truck"
+            },
+            {
+              "value": "donate",
+              "label": "t:Donate"
+            },
+            {
+              "value": "picto-email",
+              "label": "t:Email"
+            },
+            {
+              "value": "form-error",
+              "label": "t:Error"
+            },
+            {
+              "value": "picto-fast-delivery",
+              "label": "t:Fast_delivery"
+            },
+            {
+              "value": "flag",
+              "label": "t:Flag"
+            },
+            {
+              "value": "picto-gift",
+              "label": "t:Gift"
+            },
+            {
+              "value": "picto-like",
+              "label": "t:Like"
+            },
+            {
+              "value": "picto-lock",
+              "label": "t:Lock"
+            },
+            {
+              "value": "picto-love",
+              "label": "t:Love"
+            },
+            {
+              "value": "minus-big",
+              "label": "t:Minus"
+            },
+            {
+              "value": "picto-mobile",
+              "label": "t:Mobile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "t:Operator"
+            },
+            {
+              "value": "picto-phone",
+              "label": "t:Phone"
+            },
+            {
+              "value": "picto-plane",
+              "label": "t:Plane"
+            },
+            {
+              "value": "plus-big",
+              "label": "t:Plus"
+            },
+            {
+              "value": "picto-return-box",
+              "label": "t:Return_box"
+            },
+            {
+              "value": "picto-secure-payment",
+              "label": "t:Secure_payment"
+            },
+            {
+              "value": "picto-send",
+              "label": "t:Send"
+            },
+            {
+              "value": "picto-shield",
+              "label": "t:Shield"
+            },
+            {
+              "value": "quick-buy-shopping-bag",
+              "label": "t:Shopping_bag"
+            },
+            {
+              "value": "quick-buy-shopping-cart",
+              "label": "t:Shopping_cart"
+            },
+            {
+              "value": "picto-store",
+              "label": "t:Store"
+            },
+            {
+              "value": "form-success",
+              "label": "t:Success"
+            },
+            {
+              "value": "picto-taxes",
+              "label": "t:Taxes"
+            },
+            {
+              "value": "quick-buy-tote-bag",
+              "label": "t:Tote_bag"
+            },
+            {
+              "value": "picto-warranty",
+              "label": "t:Warranty"
+            },
+            {
+              "value": "picto-worldwide",
+              "label": "t:Worldwide"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "type": "header",
+          "content": "t:Alignment"
+        },
+        {
+          "type": "checkbox",
+          "id": "remove_inner_padding",
+          "label": "t:Remove_inner_padding",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "box_alignment",
+          "label": "t:Box_alignment",
+          "options": [
+            {
+              "value": "row",
+              "label": "t:Row"
+            },
+            {
+              "value": "column",
+              "label": "t:Column"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "select",
+          "id": "icon_alignment",
+          "label": "t:Icon_alignment",
+          "options": [
+            {
+              "value": "top",
+              "label": "t:Top_Left"
+            },
+            {
+              "value": "middle",
+              "label": "t:Middle"
+            }
+          ],
+          "default": "middle"
+        },
+        {
+          "type": "header",
+          "content": "t:Colors"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "t:Background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "t:Text_color",
+          "default": "rgba(0,0,0,0)"
+        }
+      ]
+    },
+    {
+      "type": "meta",
+      "name": "t:Meta",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "include_variant_name",
+          "label": "t:Include_variant_name_in_title",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "order_timing",
+      "name": "t:Order_timing",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:Text",
+          "default": "Order will be fufilled within 8 hours."
+        },
+        {
+          "type": "range",
+          "id": "cycle_speed",
+          "min": 2,
+          "max": 10,
+          "step": 1,
+          "unit": "sec",
+          "label": "t:Change_message_every",
+          "default": 3
+        },
+        {
+          "type": "header",
+          "content": "t:Colors"
+        },
+        {
+          "type": "color",
+          "id": "prefix_color",
+          "label": "t:Prefix",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "t:Text",
+          "default": "rgba(0,0,0,0)"
+        }
+      ]
+    },
+    {
+      "type": "payment_icons",
+      "name": "t:Payment_icons",
+      "limit": 1
+    },
+    {
+      "type": "quantity_selector",
+      "name": "t:Quantity_selector",
+      "limit": 1
+    },
+    {
+      "type": "recommendations",
+      "name": "t:Recommendations",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:To_apply_custom_recommended_products_Zalify_offers_a_specific_metafield_configuration"
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "label": "t:Layout",
+          "options": [
+            {
+              "value": "carousel",
+              "label": "t:Carousel"
+            },
+            {
+              "value": "grid",
+              "label": "t:Grid"
+            },
+            {
+              "value": "variant_image",
+              "label": "t:Variant_image"
+            }
+          ],
+          "default": "grid"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:Heading",
+          "default": "Frequently bought together"
+        },
+        {
+          "type": "header",
+          "content": "t:Colors"
+        },
+        {
+          "type": "paragraph",
+          "content": "t:Only_affects_carousel_layout"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "t:Background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "t:Text_color",
+          "default": "rgba(0,0,0,0)"
+        }
+      ]
+    },
+    {
+      "type": "safe_tips",
+      "name": "t:Safe_tips",
+      "limit": 1
+    },
+    {
+      "type": "text",
+      "name": "t:Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:Text"
+        }
+      ]
+    },
+    {
+      "type": "variant_picker",
+      "name": "t:Variant_picker",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "hide_sold_out_variants",
+          "label": "t:Hide_sold_out_variants",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "selector_mode",
+          "label": "t:Selector_type",
+          "options": [
+            {
+              "value": "block",
+              "label": "t:Block"
+            },
+            {
+              "value": "dropdown",
+              "label": "t:Dropdown"
+            }
+          ],
+          "default": "block"
+        },
+        {
+          "type": "select",
+          "id": "color_mode",
+          "label": "t:Color_selector_type",
+          "info": "t:Variant_image_mode_requires_that_all_variant_have_an_associated_image",
+          "options": [
+            {
+              "value": "block",
+              "label": "t:Block"
+            },
+            {
+              "value": "dropdown",
+              "label": "t:Dropdown"
+            },
+            {
+              "value": "color",
+              "label": "t:Color_swatch"
+            },
+            {
+              "value": "variant_image",
+              "label": "t:Variant_image"
+            }
+          ],
+          "default": "color"
+        },
+        {
+          "type": "header",
+          "content": "t:Dynamic_theme_color"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_dynamic_theme_color",
+          "label": "t:Enable_dynamic_theme_color",
+          "info": "t:Change_theme_color_when_choosing_a_variant_color",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "dynamic_theme_color_with_announcement_bar",
+          "label": "t:Including_announcement_bar",
+          "info": "t:Will_change_text_and_background_color",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "dynamic_theme_color_with_footer",
+          "label": "t:Including_footer",
+          "info": "t:Will_change_text_and_background_color",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:Size_chart"
+        },
+        {
+          "type": "page",
+          "id": "size_chart_page",
+          "label": "t:Size_chart_page",
+          "info": "t:Feature_a_page_for_size_option"
+        },
+        {
+          "type": "select",
+          "id": "size_chart_icon",
+          "label": "t:Icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:None"
+            },
+            {
+              "value": "box-size-1",
+              "label": "t:Box_1"
+            },
+            {
+              "value": "box-size-2",
+              "label": "t:Box_2"
+            },
+            {
+              "value": "cloth-size-1",
+              "label": "t:Cloth_1"
+            },
+            {
+              "value": "cloth-size-2",
+              "label": "t:Cloth_2"
+            },
+            {
+              "value": "ruler-1",
+              "label": "t:Ruler_1"
+            },
+            {
+              "value": "ruler-2",
+              "label": "t:Ruler_2"
+            },
+            {
+              "value": "ruler-3",
+              "label": "t:Ruler_3"
+            }
+          ],
+          "default": "ruler-3"
+        },
+        {
+          "type": "checkbox",
+          "id": "size_chart_image",
+          "label": "t:First_display_the_size_chart_image_configured_by_metafield",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "t:Show_vendor",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sku",
+      "label": "t:Show_SKU",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_taxes_included",
+      "label": "t:Show_taxes_included",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_rating",
+      "label": "t:Show_product_rating",
+      "info": "t:To_display_a_rating_add_a_product_rating_app_such_as_product_reviews_or_ryviu",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sticky_add_to_cart",
+      "label": "t:Show_sticky_add_to_cart",
+      "info": "t:Will_be_hidden_if_no_Buy_buttons_block_is_added_onto_the_page",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sticky_quick_buy",
+      "label": "t:Show_sticky_quick_buy_on_mobile_instead_of_add_to_cart",
+      "info": "t:Only_works_if_sticky_add_to_cart_is_enabled",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_share_buttons",
+      "label": "t:Show_share_buttons",
+      "default": true
+    },
+    {
+      "type": "page",
+      "id": "help_page",
+      "label": "t:Help_page",
+      "info": "t:Feature_a_page_to_help_your_customers"
+    },
+    {
+      "type": "header",
+      "content": "t:Media"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:Shopify_does_not_natively_offers_a_way_to_create_a_set_of_images_per_variant"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:To_goes_around_that_Zalify_offers_a_hack_using_alt_tags"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:Learn_more_about_media_types"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_video_autoplay",
+      "label": "t:Enable_video_autoplay",
+      "info": "t:Video_are_muted_automatically_to_allow_autoplay",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_video_looping",
+      "label": "t:Enable_video_looping",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_image_zoom",
+      "label": "t:Enable_image_zoom",
+      "info": "t:Zoom_does_not_show_video_nor_3D_models",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_peeking_carousel_on_mobile",
+      "label": "t:Enable_peeking_carousel_on_mobile",
+      "info": "t:Allows_users_to_see_a_glimpse_of_the_adjacent_slides",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "adaptive_media_height",
+      "label": "t:Adaptive_media_height",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_thumbnails_on_mobile",
+      "label": "t:Show_thumbnails_on_mobile",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "always_hide_mobile_pagination_dots",
+      "label": "t:Always_hide_mobile_pagination_dots",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:Style"
+    },
+    {
+      "type": "select",
+      "id": "desktop_thumbnails_position",
+      "label": "t:Desktop_thumbnails_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:Left"
+        },
+        {
+          "value": "bottom",
+          "label": "t:Bottom"
+        }
+      ],
+      "default": "bottom"
+    },
+    {
+      "type": "select",
+      "id": "shadow_effect",
+      "label": "t:Shadow_effect",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:None"
+        },
+        {
+          "value": "small",
+          "label": "t:Small"
+        },
+        {
+          "value": "medium",
+          "label": "t:Medium"
+        },
+        {
+          "value": "large",
+          "label": "t:Large"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "select",
+      "id": "transition_effect",
+      "label": "t:Transition_effect",
+      "options": [
+        {
+          "value": "slide",
+          "label": "t:Slide"
+        },
+        {
+          "value": "fade",
+          "label": "t:Fade"
+        }
+      ],
+      "default": "slide"
+    }
+  ]
+}
+{% endschema %}

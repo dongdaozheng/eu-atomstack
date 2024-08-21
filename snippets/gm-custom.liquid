@@ -1,0 +1,82 @@
+<style>
+  body.gm-menu-installed .header__wrapper {
+    padding: 0 !important;
+  }
+
+  .gm-menu-installed .gm-menu:not(.gm-menu-mobile) {
+    position: unset !important;
+  }
+
+  .gm-menu-installed
+    .gm-menu:not(.gm-menu-mobile)
+    > .gm-item.gm-level-0.gm-has-submenu.gm-submenu-mega
+    > .gm-submenu.gm-mega
+    > .gm-grid {
+    max-width: calc(var(--container-max-width) - var(--container-gutter) * 2);
+    min-width: unset !important;
+    margin: 0 auto !important;
+  }
+
+  .gm-label.gm-sale-label,
+  .gm-label.gm-sold_out-label {
+    display: none;
+  }
+
+  .gm-product-name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+  }
+
+  .gm-custom-overlay.gm-active {
+    position: fixed;
+    inset: 0px;
+    z-index: -1;
+    background-color: rgba(33, 42, 47, 0.85);
+    transition: 0.3s ease-in;
+  }
+
+  .gm-products-carousel.no-heading {
+    padding-top: 12px !important;
+  }
+
+  .gm-heading > .gm-target[href] {
+    text-decoration: underline !important;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .header > .container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+</style>
+<script>
+  var check = false;
+  // var ga_interval = setInterval(checkApp, 100);
+
+  function checkApp() {
+    if (typeof GloboMenuConfig === 'object' && document.querySelectorAll('.gm-menu').length) {
+      check = true;
+      clearInterval(ga_interval);
+    }
+    if (check) {
+      var overlay_element = document.createElement('div');
+      overlay_element.className = 'gm-custom-overlay';
+
+      document.querySelector('store-header.header').after(overlay_element);
+
+      var menuItems = document.querySelectorAll('.gm-menu:not(.gm-menu-mobile) > .gm-item.gm-level-0.gm-has-submenu');
+      menuItems.forEach(function (menuItem) {
+        menuItem.addEventListener('mouseenter', function () {
+          document.querySelector('.gm-custom-overlay').classList.add('gm-active');
+        });
+
+        menuItem.addEventListener('mouseleave', function () {
+          document.querySelector('.gm-custom-overlay').classList.remove('gm-active');
+        });
+      });
+    }
+  }
+</script>

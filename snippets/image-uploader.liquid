@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="{{ 'filepond.min.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'filepond-plugin-image-preview.css' | asset_url }}">
+
+<script src="{{ 'filepond-plugin-image-preview.js' | asset_url }}" defer></script>
+<script src="{{ 'filepond.min.js' | asset_url }}" defer></script>
+<style>
+  .filepond--credits {
+    display: none;
+  }
+</style>
+<input type="file" name="properties[File]" accept="image/*" style="display: none;">
+<input type="file" class="image-uploader" accept="image/*" style="display: none;">
+
+<script>
+  const initFilePond = () => {
+    const fileElement = document.querySelector('input.image-uploader');
+    fileElement.style.removeProperty('display');
+
+    FilePond.registerPlugin(FilePondPluginImagePreview);
+    FilePond.create(fileElement, {
+      labelIdle: `{{ label }}`,
+      onaddfile(error, file) {
+        const fileInput = document.querySelector('input[name="properties[File]"]');
+        const dataTransfer = new DataTransfer();
+        dataTransfer.items.add(file.file);
+        fileInput.files = dataTransfer.files;
+      },
+      onremovefile(error, file) {
+        const fileInput = document.querySelector('input[name="properties[File]"]');
+        const dataTransfer = new DataTransfer();
+        fileInput.files = dataTransfer.files;
+      },
+    });
+  };
+
+  const awaitForFilePond = setInterval(() => {
+    if (typeof FilePond !== 'undefined') {
+      clearInterval(awaitForFilePond);
+      initFilePond();
+    }
+  }, 100);
+</script>

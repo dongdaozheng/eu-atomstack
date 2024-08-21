@@ -1,0 +1,27 @@
+{%- comment -%}
+  PayPal checkout button:
+
+  - class_name: custom class name
+  - form_id: product form ID
+  - total_price: total price
+{%- endcomment -%}
+
+{%- assign paypal_client_id = settings.paypal_client_id -%}
+
+{%- if paypal_client_id != blank -%}
+  <div
+    class="paypal-button-container paypal-button-{{ class_name }}"
+    {%- if form_id != blank -%}
+      form-id="{{ form_id }}"
+    {%- endif -%}
+  ></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initPaypalCheckoutBtn({
+        btnClass: '.paypal-button-{{ class_name }}',
+    		{% if total_price != blank %}totalPrice: '{{ total_price | divided_by: 100 }}',{% endif %}
+      });
+    });
+  </script>
+{%- endif -%}

@@ -1,0 +1,11 @@
+development:
+  ignore_files:
+    - node_modules/* 
+    - .gitignore 
+    - .eslintignore 
+    - .prettierignore 
+    - package.json
+    - package-lock.json
+    - yarn.lock
+    - .prettierrc
+    - README
