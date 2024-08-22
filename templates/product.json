@@ -167,7 +167,6 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
-            "split_image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-02.jpg",
             "mobile_image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
