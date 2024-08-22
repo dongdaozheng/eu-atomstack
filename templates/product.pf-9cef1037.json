@@ -185,7 +185,6 @@
           "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_e8112873-b4f5-4710-8e0e-e16aec88e26c.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",
@@ -288,7 +287,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_8afa6f07-e3e0-4d9a-8879-61f3ee654ad0.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",
