@@ -168,7 +168,6 @@
           "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_e8112873-b4f5-4710-8e0e-e16aec88e26c.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",
@@ -239,24 +238,6 @@
         "mobile_bottom_padding": 0
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "subheading": "",
-        "title": "You may also like",
-        "recommendations_count": 4,
-        "products": [
-
-        ],
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "ignore_vertical_spacing": false,
-        "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
-        "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
-      }
-    },
     "slideshow_PFUnp3": {
       "type": "slideshow",
       "blocks": {
@@ -264,7 +245,6 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_8afa6f07-e3e0-4d9a-8879-61f3ee654ad0.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",
@@ -293,13 +273,31 @@
         "cycle_speed": 20,
         "background": "rgba(0,0,0,0)"
       }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "You may also like",
+        "recommendations_count": 4,
+        "products": [
+
+        ],
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "ignore_vertical_spacing": false,
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 0,
+        "mobile_top_padding": 0,
+        "mobile_bottom_padding": 0
+      }
     }
   },
   "order": [
     "main",
     "slideshow_mJcCiy",
     "product-content",
-    "product-recommendations",
-    "slideshow_PFUnp3"
+    "slideshow_PFUnp3",
+    "product-recommendations"
   ]
 }
