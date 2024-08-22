@@ -154,42 +154,12 @@
         "transition_effect": "slide"
       }
     },
-    "slideshow_R9t3JB": {
-      "type": "slideshow",
-      "blocks": {
-        "image_YHEjNE": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
-            "split_image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-02.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
-            "text_position": "middle_center",
-            "mobile_text_position": "inherit",
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_YHEjNE"
-      ],
+    "image_link_pMJnzY": {
+      "type": "image-link",
       "settings": {
-        "section_height": "auto",
-        "background_type": "full_width",
-        "transition_type": "sweep",
-        "autoplay": false,
-        "cycle_speed": 20,
-        "background": "rgba(0,0,0,0)"
+        "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
+        "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
+        "link": "shopify:\/\/pages\/back-to-school"
       }
     },
     "video_carousel_Qrx4TN": {
@@ -357,24 +327,6 @@
         "mobile_bottom_padding": 0
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "subheading": "",
-        "title": "You may also like",
-        "recommendations_count": 4,
-        "products": [
-
-        ],
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
-        "ignore_vertical_spacing": false,
-        "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
-        "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
-      }
-    },
     "slideshow_LGwREA": {
       "type": "slideshow",
       "blocks": {
@@ -410,14 +362,32 @@
         "cycle_speed": 20,
         "background": "rgba(0,0,0,0)"
       }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "You may also like",
+        "recommendations_count": 4,
+        "products": [
+
+        ],
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "ignore_vertical_spacing": false,
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 0,
+        "mobile_top_padding": 0,
+        "mobile_bottom_padding": 0
+      }
     }
   },
   "order": [
     "main",
-    "slideshow_R9t3JB",
+    "image_link_pMJnzY",
     "video_carousel_Qrx4TN",
     "product-content",
-    "product-recommendations",
-    "slideshow_LGwREA"
+    "slideshow_LGwREA",
+    "product-recommendations"
   ]
 }
