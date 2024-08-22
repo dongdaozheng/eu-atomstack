@@ -308,7 +308,7 @@
           "type": "question",
           "settings": {
             "title": "Where do I get a replacement part out of warranty not offered on the website?",
-            "answer": "<p>For replacement parts not available on the website, please send an email to <a href=\"mailto:support@atomstack.com\">support@atomstack.com<\/a> with photos of the serial number on your laser machine, photos of the part itself, and a description. Make sure to include your original order number and current mailing information.<\/p>"
+            "answer": "<p>For replacement parts not available on the website, please send an email to <a href=\"mailto:support@eu.atomstack.com\">support@eu.atomstack.com<\/a> with photos of the serial number on your laser machine, photos of the part itself, and a description. Make sure to include your original order number and current mailing information.<\/p>"
           }
         },
         "bc0865e9-324c-4f25-b4bf-2e7046bec55a": {
@@ -321,7 +321,7 @@
           "type": "question",
           "settings": {
             "title": "Why do you sell three different styles of rotary axises? Which one is suitable for my application?",
-            "answer": "<p>We offer three different models of rotary drum kits, namely R1, R2, and R3, designed for different shapes of bottles with distinct advantages. R1, R2, and R3 cater to different needs; R1 is suitable for cylindrical engraving like cans or irregular objects, while R2 fits various standard bottle sizes. R3 PRO adds support columns for engraving irregularly shaped cups, like goblets. For more information on which rotary attachment suits you best, including setup, please refer to our blog or the <a href=\"\/collections\/rotary-roller\" title=\"Rotary Roller\">Rotary Roller<\/a> section on our website (<a href=\"https:\/\/atomstack.com\/\" title=\"AtomStack\">atomstack.com<\/a>).<\/p>"
+            "answer": "<p>We offer three different models of rotary drum kits, namely R1, R2, and R3, designed for different shapes of bottles with distinct advantages. R1, R2, and R3 cater to different needs; R1 is suitable for cylindrical engraving like cans or irregular objects, while R2 fits various standard bottle sizes. R3 PRO adds support columns for engraving irregularly shaped cups, like goblets. For more information on which rotary attachment suits you best, including setup, please refer to our blog or the <a href=\"\/collections\/rotary-roller\" title=\"Rotary Roller\">Rotary Roller<\/a> section on our website (<a href=\"https:\/\/eu.atomstack.com\/\" title=\"AtomStack\">eu.atomstack.com<\/a>).<\/p>"
           }
         },
         "5f47676d-e982-49e1-b2e6-3a8d710d5e73": {
@@ -432,7 +432,7 @@
           "type": "question",
           "settings": {
             "title": "Where do I get warranty if there’s any issues with my laser?",
-            "answer": "<p>If you face any difficulties while using our products, feel free to reach out to us at <a href=\"mailto:support@atomstack.com\">support@atomstack.com<\/a>. Please include a photo of the serial module on your laser, a photo of the part itself, and a description for our reference. If possible, provide video evidence of any malfunctions through your preferred file-sharing site. Don't forget to include your original order number and your current shipping information.<\/p>"
+            "answer": "<p>If you face any difficulties while using our products, feel free to reach out to us at <a href=\"mailto:support@eu.atomstack.com\">support@eu.atomstack.com<\/a>. Please include a photo of the serial module on your laser, a photo of the part itself, and a description for our reference. If possible, provide video evidence of any malfunctions through your preferred file-sharing site. Don't forget to include your original order number and your current shipping information.<\/p>"
           }
         },
         "38bd9714-39c2-43e6-b39d-6660bb1118ed": {
@@ -453,14 +453,14 @@
           "type": "question",
           "settings": {
             "title": "Where can I track my order?",
-            "answer": "<p>Once your order is confirmed, you will receive a tracking code within 72 hours. Please copy and paste this number into the assigned carrier's website (i.e. DHL, UPS, FedEx, etc.) or just track your order <a href=\"https:\/\/atomstack.com\/tools\/order_tracking\" title=\"AtomStack Track Order Page\">here<\/a>.<\/p>"
+            "answer": "<p>Once your order is confirmed, you will receive a tracking code within 72 hours. Please copy and paste this number into the assigned carrier's website (i.e. DHL, UPS, FedEx, etc.) or just track your order <a href=\"https:\/\/eu.atomstack.com\/tools\/order_tracking\" title=\"AtomStack Track Order Page\">here<\/a>.<\/p>"
           }
         },
         "dcb96446-9ca8-4a94-8c1c-a04e92432024": {
           "type": "question",
           "settings": {
             "title": "How can I receive an update on my order?",
-            "answer": "<p>Typically, you can expect to receive a confirmation email along with the tracking number within 72 hours of placing your order. If you have any inquiries, feel free to reach out to our customer support at <a href=\"mailto:official@atomstack.com\">official@atomstack.com<\/a>.<\/p>"
+            "answer": "<p>Typically, you can expect to receive a confirmation email along with the tracking number within 72 hours of placing your order. If you have any inquiries, feel free to reach out to our customer support at <a href=\"mailto:official@eu.atomstack.com\">official@eu.atomstack.com<\/a>.<\/p>"
           }
         },
         "4d5fd2b7-18bd-4219-a2d3-b8089ad5e4ab": {
@@ -474,7 +474,7 @@
           "type": "question",
           "settings": {
             "title": "How to initiate a return?",
-            "answer": "<p>If you wish to request a return, refund, or exchange, and if you need further clarification or have any questions, please feel free to reach out to us via email at <a href=\"mailto:official@atomstack.com\">official@atomstack.com<\/a>. We will keep you informed about the status of your return through Email, assuming we have your contact information on record. Please note that refurbished products are not eligible for return or exchange.<\/p>"
+            "answer": "<p>If you wish to request a return, refund, or exchange, and if you need further clarification or have any questions, please feel free to reach out to us via email at <a href=\"mailto:official@eu.atomstack.com\">official@eu.atomstack.com<\/a>. We will keep you informed about the status of your return through Email, assuming we have your contact information on record. Please note that refurbished products are not eligible for return or exchange.<\/p>"
           }
         },
         "d6627bf4-69ad-48e1-8122-7f68daff52d5": {
@@ -583,7 +583,7 @@
           "type": "question",
           "settings": {
             "title": "Can the laser be upgraded to higher power?",
-            "answer": "<p>Absolutely, you can choose to replace the laser module with a different one. However, please note that not all machines are compatible with module replacement. For specific details, please refer to the product information provided. Alternatively, you can reach out to us at <a href=\"mailto:support@atomstack.com\">support@atomstack.com<\/a> for consultation, and our team of skilled technicians will be happy to assist you.<\/p>"
+            "answer": "<p>Absolutely, you can choose to replace the laser module with a different one. However, please note that not all machines are compatible with module replacement. For specific details, please refer to the product information provided. Alternatively, you can reach out to us at <a href=\"mailto:support@eu.atomstack.com\">support@eu.atomstack.com<\/a> for consultation, and our team of skilled technicians will be happy to assist you.<\/p>"
           }
         },
         "8f2a8a4f-35d0-4dec-a540-45f0959815bf": {
@@ -658,7 +658,7 @@
           "type": "question",
           "settings": {
             "title": "How do I get in contact with the eBay or Amazon seller?",
-            "answer": "<p>If you are a customer from Amazon or eBay, please reach out to <a href=\"mailto:support@atomstack.com\">support@atomstack.com<\/a>.<\/p>"
+            "answer": "<p>If you are a customer from Amazon or eBay, please reach out to <a href=\"mailto:support@eu.atomstack.com\">support@eu.atomstack.com<\/a>.<\/p>"
           }
         },
         "2759aea8-0c61-4b68-8863-36822c5dda3b": {

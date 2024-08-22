@@ -32,7 +32,7 @@
         "title": "Way 1: Sign up & Subscribe to newsletter",
         "content": "<p>When you sign up for an account, you will automatically login and subscribe to the newsletter. You will receive <strong>400 points<\/strong> as a reward.<\/p>",
         "button_text": "Sign up now",
-        "button_link": "https:\/\/atomstack.com\/account\/register",
+        "button_link": "https:\/\/eu.atomstack.com\/account\/register",
         "background_type": "boxed",
         "text_width": "fill",
         "text_position": "center",
@@ -135,7 +135,7 @@
       "settings": {
         "subheading": "",
         "title": "Way 2: Share website on Facebook \/ Twitter",
-        "content": "<p>Click the \"<strong>Rewards<\/strong>\" button in the lower right corner of the website (lower left corner for mobile). You will see a pop up window. Then share some content about <a href=\"https:\/\/atomstack.com\" title=\"AtomStack\"><span style=\"text-decoration:underline\"><strong>AtomStack<\/strong><\/span><\/a> to Facebook or Twitter. You will receive <span style=\"text-decoration:underline\"><strong>200<\/strong><\/span><span style=\"text-decoration:underline\"> points<\/span> after posting content. (<span style=\"text-decoration:underline\">Total <\/span><span style=\"text-decoration:underline\"><strong>400<\/strong><\/span><span style=\"text-decoration:underline\"> points<\/span>)<\/p>",
+        "content": "<p>Click the \"<strong>Rewards<\/strong>\" button in the lower right corner of the website (lower left corner for mobile). You will see a pop up window. Then share some content about <a href=\"https:\/\/eu.atomstack.com\" title=\"AtomStack\"><span style=\"text-decoration:underline\"><strong>AtomStack<\/strong><\/span><\/a> to Facebook or Twitter. You will receive <span style=\"text-decoration:underline\"><strong>200<\/strong><\/span><span style=\"text-decoration:underline\"> points<\/span> after posting content. (<span style=\"text-decoration:underline\">Total <\/span><span style=\"text-decoration:underline\"><strong>400<\/strong><\/span><span style=\"text-decoration:underline\"> points<\/span>)<\/p>",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
@@ -240,7 +240,7 @@
       "settings": {
         "subheading": "",
         "title": "Way 3: Place an order",
-        "content": "<p>Place any order on <a href=\"https:\/\/atomstack.com\" title=\"AtomStack\"><strong>AtomStack<\/strong><\/a> and earn points. You can get 1 point for every $1 spent.<br\/>* Points earned for all orders are converted into U.S. dollars based on the exchange rate of the day.<\/p>",
+        "content": "<p>Place any order on <a href=\"https:\/\/eu.atomstack.com\" title=\"AtomStack\"><strong>AtomStack<\/strong><\/a> and earn points. You can get 1 point for every $1 spent.<br\/>* Points earned for all orders are converted into U.S. dollars based on the exchange rate of the day.<\/p>",
         "button_text": "Start Shopping",
         "button_link": "shopify:\/\/collections",
         "background_type": "boxed",
@@ -407,7 +407,7 @@
       "settings": {
         "subheading": "",
         "title": "Way 5: Post on social media",
-        "content": "<p>Post on social media to share our products or website, include some photos \/ videos, our official website link ( <a href=\"https:\/\/atomstack.com\" title=\"AtomStack\">atomstack.com<\/a> ) or product link, and tag our official account ( <a href=\"https:\/\/www.facebook.com\/Atomstack.official\" title=\"Atomstack Facebook Page\">@Atomstack.official<\/a> ). Then submit your post information to us for audit.<\/p><p>We will audit your post at <strong>0:00 AM<\/strong> (<span style=\"text-decoration:underline\"><em>UTC\/GMT -5:00<\/em><\/span>) every day. We judge based on multiple dimensions. If the audit passes, You will receive a reward.<\/p><p><em>* Each user will be rewarded with <\/em><span style=\"text-decoration:underline\"><em>1,000 points<\/em><\/span><em> for the <\/em><span style=\"text-decoration:underline\"><em>first time<\/em><\/span><em>, and from the second time onwards, they will be rewarded with <\/em><span style=\"text-decoration:underline\"><em>100 points<\/em><\/span><em> each time.<\/em><\/p>",
+        "content": "<p>Post on social media to share our products or website, include some photos \/ videos, our official website link ( <a href=\"https:\/\/eu.atomstack.com\" title=\"AtomStack\">eu.atomstack.com<\/a> ) or product link, and tag our official account ( <a href=\"https:\/\/www.facebook.com\/Atomstack.official\" title=\"Atomstack Facebook Page\">@Atomstack.official<\/a> ). Then submit your post information to us for audit.<\/p><p>We will audit your post at <strong>0:00 AM<\/strong> (<span style=\"text-decoration:underline\"><em>UTC\/GMT -5:00<\/em><\/span>) every day. We judge based on multiple dimensions. If the audit passes, You will receive a reward.<\/p><p><em>* Each user will be rewarded with <\/em><span style=\"text-decoration:underline\"><em>1,000 points<\/em><\/span><em> for the <\/em><span style=\"text-decoration:underline\"><em>first time<\/em><\/span><em>, and from the second time onwards, they will be rewarded with <\/em><span style=\"text-decoration:underline\"><em>100 points<\/em><\/span><em> each time.<\/em><\/p>",
         "button_text": "Submit a post",
         "button_link": "shopify:\/\/pages\/submit-post-info",
         "background_type": "boxed",
