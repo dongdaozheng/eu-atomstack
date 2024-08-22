@@ -12,8 +12,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
 <html class='no-js' lang='{{ request.locale.iso_code }}' dir='{{ direction }}'>
   <head>
-	{% render 'pandectes-rules' %}
-    
+    {% render 'pandectes-rules' %}
 
     <meta charset='UTF-8'>
     <meta
@@ -193,6 +192,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   {%- if settings.show_image_zoom -%}
     {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
   {%- endif -%}
+
+  {% render 'main-css' %}
 
   <body
     class='no-focus-outline {{ feature_classes }}'
