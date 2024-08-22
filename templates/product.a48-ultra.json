@@ -160,8 +160,9 @@
         "image_YHEjNE": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/back_to_school.png",
-            "mobile_image": "shopify:\/\/shop_images\/850-1212.png",
+            "image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
+            "split_image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-02.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",
@@ -381,7 +382,6 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_8afa6f07-e3e0-4d9a-8879-61f3ee654ad0.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",
