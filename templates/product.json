@@ -160,41 +160,12 @@
         "transition_effect": "slide"
       }
     },
-    "slideshow_9Ynmmn": {
-      "type": "slideshow",
-      "blocks": {
-        "image_6E3kJA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
-            "text_position": "middle_center",
-            "mobile_text_position": "inherit",
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_6E3kJA"
-      ],
+    "image_link_qAh8kq": {
+      "type": "image-link",
       "settings": {
-        "section_height": "auto",
-        "background_type": "full_width",
-        "transition_type": "sweep",
-        "autoplay": false,
-        "cycle_speed": 20,
-        "background": "rgba(0,0,0,0)"
+        "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
+        "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
+        "link": ""
       }
     },
     "product-content": {
@@ -295,7 +266,7 @@
   },
   "order": [
     "main",
-    "slideshow_9Ynmmn",
+    "image_link_qAh8kq",
     "product-content",
     "product-recommendations",
     "slideshow_8xxknf"
