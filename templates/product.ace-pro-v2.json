@@ -44,6 +44,12 @@
             "image_width": 600
           }
         },
+        "text_6c7NhE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Available in Europe, USA Local Warehouses<\/strong><br\/>● Upgraded version to 12W laser output from 10W<br\/>● 0.06mm High Precision for more vivid details<br\/>● Auto cross-positioning system, resume engraving after a power outage<br\/>● A solid choice for those new to engraving<br\/>● 18mm wood board, 15mm black acrylic in one pass<\/p>"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -100,6 +106,7 @@
         "image_Kg7z6M",
         "0de2f95e-4076-4ccc-8f7c-8ecb07eddda6",
         "942f73c8-e783-4874-a47e-e88b93ec9e7b",
+        "text_6c7NhE",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
