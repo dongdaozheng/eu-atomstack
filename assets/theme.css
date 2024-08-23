@@ -17437,3 +17437,6 @@ announcement-bar-item .tip {
     display: block;
   }
 }
+cart-notification {
+  display: none !important;
+}
