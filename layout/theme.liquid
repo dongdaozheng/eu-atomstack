@@ -11,8 +11,6 @@
   if (!visitCount) {
     visitCount = 0;
   }
-  visitCount++;
-  localStorage.setItem('visitCount', visitCount);
 
   const europeanCountryCodes = [
     'AL',
@@ -77,6 +75,8 @@
       const url = new URL(window.location.href);
       if (!europeanCountry) {
         window.location.href = `https://atomstack.com${url.pathname}`;
+        visitCount++;
+        localStorage.setItem('visitCount', visitCount);
       }
     } catch (error) {
       console.error('Error fetching IP address:', error);
