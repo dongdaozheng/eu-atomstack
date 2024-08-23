@@ -169,6 +169,16 @@
     },
     "1723794313b4ab2b68": {
       "type": "apps",
+      "blocks": {
+        "selleasy_lb_upsell_fbt_block_VCQQAF": {
+          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "selleasy_lb_upsell_fbt_block_VCQQAF"
+      ],
       "custom_css": [
 
       ],
