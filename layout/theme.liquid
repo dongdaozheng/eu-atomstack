@@ -6,6 +6,101 @@
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 
+<script>
+  let visitCount = localStorage.getItem('visitCount');
+  if (!visitCount) {
+    visitCount = 0;
+  }
+  visitCount++;
+  localStorage.setItem('visitCount', visitCount);
+
+  const europeanCountryCodes = [
+    'AL',
+    'AD',
+    'AM',
+    'AT',
+    'AZ',
+    'BY',
+    'BE',
+    'BA',
+    'BG',
+    'HR',
+    'CY',
+    'CZ',
+    'DK',
+    'EE',
+    'FI',
+    'FR',
+    'GE',
+    'DE',
+    'GR',
+    'HU',
+    'IS',
+    'IE',
+    'IT',
+    'KZ',
+    'XK',
+    'LV',
+    'LI',
+    'LT',
+    'LU',
+    'MT',
+    'MD',
+    'MC',
+    'ME',
+    'NL',
+    'MK',
+    'NO',
+    'PL',
+    'PT',
+    'RO',
+    'RU',
+    'SM',
+    'RS',
+    'SK',
+    'SI',
+    'ES',
+    'SE',
+    'CH',
+    'TR',
+    'UA',
+    'GB',
+    'VA',
+  ];
+
+  async function getIpAddress() {
+    try {
+      const response = await fetch('https://api.ipify.org?format=json');
+      const data = await response.json();
+      const ipDetails = await getIpDetails(data.ip);
+      const europeanCountry = isEuropeanCountry(ipDetails.country_code);
+      const url = new URL(window.location.href);
+      if (!europeanCountry) {
+        window.location.href = `https://atomstack.com${url.pathname}`;
+      }
+    } catch (error) {
+      console.error('Error fetching IP address:', error);
+    }
+  }
+
+  async function getIpDetails(ipAddress) {
+    try {
+      const response = await fetch(`https://api.ip.sb/geoip/${ipAddress}`);
+      return await response.json();
+    } catch (error) {
+      console.log('error', error);
+    }
+  }
+
+  function isEuropeanCountry(countryCode) {
+    return europeanCountryCodes.includes(countryCode);
+  }
+
+  if (!window.location.href.includes('127.0.0.1') && visitCount <= 2) {
+    getIpAddress();
+  }
+</script>
+
 <html class='no-js' lang='{{ request.locale.iso_code }}' dir='{{ direction }}'>
   <head>
     {% render 'pandectes-rules' %}
@@ -181,8 +276,8 @@
 
     <script src='{{ 'timesact.js' | asset_url }}' defer='defer'></script>
 
-    
-  {% include 'pagefly-app-header' %}</head>
+    {% include 'pagefly-app-header' %}
+  </head>
 
   {%- assign feature_classes = '' -%}
   {%- if settings.show_image_zoom -%}
