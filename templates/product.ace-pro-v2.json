@@ -378,46 +378,16 @@
         "mobile_bottom_padding": 0
       }
     },
-    "slideshow_gqTxgd": {
-      "type": "slideshow",
-      "blocks": {
-        "image_LJqUFn": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile.jpg",
-            "text_position": "middle_center",
-            "mobile_text_position": "inherit",
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_LJqUFn"
-      ],
-      "settings": {
-        "section_height": "auto",
-        "background_type": "full_width",
-        "transition_type": "sweep",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "rgba(0,0,0,0)"
-      }
-    },
     "product-content": {
       "type": "product-content",
       "blocks": {
+        "em_variant_description_app_embed_block_w6yUrG": {
+          "type": "shopify:\/\/apps\/em-variant-description\/blocks\/app-embed-block\/fde9eb2e-2dc6-4756-86f3-98c22a146066",
+          "settings": {
+            "main_heading": "Variant Description",
+            "product": "{{product}}"
+          }
+        },
         "app_content_bd83tX": {
           "type": "app_content",
           "settings": {
@@ -441,6 +411,7 @@
         }
       },
       "block_order": [
+        "em_variant_description_app_embed_block_w6yUrG",
         "app_content_bd83tX",
         "df886055-92be-4283-9c0a-9493f4a3fae5",
         "f2883553-07cc-4f77-861c-a9a0a4ca5601"
@@ -578,6 +549,43 @@
         "slide_video_border_style": "solid",
         "slide_video_border_color": "rgba(0,0,0,0)"
       }
+    },
+    "slideshow_gqTxgd": {
+      "type": "slideshow",
+      "blocks": {
+        "image_LJqUFn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile.jpg",
+            "text_position": "middle_center",
+            "mobile_text_position": "inherit",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_LJqUFn"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "background_type": "full_width",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -588,9 +596,9 @@
     "d8d7dc6c-18a2-4c65-9ecd-cb3436898745",
     "b87a5ebb-f01c-4834-95d4-e9090de093b1",
     "dd49b4fd-c202-46bb-9d7b-67c47035f050",
-    "slideshow_gqTxgd",
     "product-content",
     "product-recommendations",
-    "b9fa7398-9db6-4637-880e-0ed592f1f1e8"
+    "b9fa7398-9db6-4637-880e-0ed592f1f1e8",
+    "slideshow_gqTxgd"
   ]
 }
