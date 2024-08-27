@@ -1,0 +1,102 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "page_width": "large"
+      }
+    },
+    "payment_section_zdmaec": {
+      "type": "payment-section",
+      "settings": {
+      }
+    },
+    "update_faq_iVUzAm": {
+      "type": "update-faq",
+      "blocks": {
+        "question_VMgwyL": {
+          "type": "question",
+          "settings": {
+            "title": "About your shop",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "question_KprNQQ": {
+          "type": "question",
+          "settings": {
+            "title": "About your shop",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        },
+        "question_qppgqd": {
+          "type": "question",
+          "settings": {
+            "title": "About your shop",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_VMgwyL",
+        "question_KprNQQ",
+        "question_qppgqd"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
+    },
+    "contact_us_zHcFVn": {
+      "type": "contact-us",
+      "blocks": {
+        "contact_item_RaKqpd": {
+          "type": "contact-item",
+          "settings": {
+            "title": "Contact online Custmer service",
+            "image": "shopify:\/\/shop_images\/Group_53_612bdff6-ac96-45bf-92a1-06753132a365.png",
+            "link": ""
+          }
+        },
+        "contact_item_cTKbLN": {
+          "type": "contact-item",
+          "settings": {
+            "title": "Contact online Custmer service",
+            "image": "shopify:\/\/shop_images\/Group_53_612bdff6-ac96-45bf-92a1-06753132a365.png",
+            "link": ""
+          }
+        },
+        "contact_item_7P3e9X": {
+          "type": "contact-item",
+          "settings": {
+            "title": "Contact online Custmer service",
+            "image": "shopify:\/\/shop_images\/Group_53_612bdff6-ac96-45bf-92a1-06753132a365.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "contact_item_RaKqpd",
+        "contact_item_cTKbLN",
+        "contact_item_7P3e9X"
+      ],
+      "settings": {
+        "title": "Reach Out TO Us Anytime!"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "payment_section_zdmaec",
+    "update_faq_iVUzAm",
+    "contact_us_zHcFVn"
+  ]
+}

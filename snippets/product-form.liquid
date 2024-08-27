@@ -1521,7 +1521,7 @@
       {%- when 'buy_buttons' -%}
         {%- if request.page_type != 'password' -%}
           <style>
-            #shopify-section-{{ section.id }} .product-form__buy-buttons {
+            #shopify-section-{{ section.id }} .product-form__buy-button {
               {%- if buy_buttons_block.settings.show_payment_button -%}
                 {%- if buy_buttons_block.settings.atc_button_background == 'rgba(0,0,0,0)' -%}
                   {%- assign secondary_button_background = settings.secondary_button_background -%}
@@ -1561,7 +1561,7 @@
             }
           </style>
 
-          <div class='product-form__buy-buttons' {{ block.shopify_attributes }}>
+          <div class='product-form__buy-button' {{ block.shopify_attributes }}>
             {%- form 'product', product, is: 'product-form', id: product_form_id -%}
               <input type='hidden' disabled name='id' value='{{ product.selected_or_first_available_variant.id }}'>
 

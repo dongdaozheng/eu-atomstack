@@ -1,0 +1,97 @@
+.home-Introduction {
+  background: #f0f2f4;
+}
+.home-Introduction .container {
+  padding: 0;
+}
+.home-Introduction .container p {
+  padding: 0;
+  margin: 0;
+}
+.home-Introduction .container .title {
+  color: #000;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+}
+.home-Introduction .container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-Introduction .container .content .item-title {
+  color: #2b72ff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+.home-Introduction .container .content .item-desc {
+  color: #000;
+  font-family: "Open Sans";
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media (min-width: 1000px) {
+  .home-Introduction {
+    padding: 70px 0;
+  }
+  .home-Introduction .container {
+    padding: 0;
+    max-width: 1200px;
+  }
+  .home-Introduction .container .title {
+    max-width: 960px;
+    font-size: 48px;
+    margin-bottom: 44px;
+    line-height: 57px;
+  }
+  .home-Introduction .container .content {
+    display: flex;
+    justify-content: center;
+    column-gap: 77px;
+    align-items: center;
+  }
+  .home-Introduction .container .content .item-title {
+    font-size: 32px;
+  }
+  .home-Introduction .container .content .item-desc {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  .home-Introduction {
+    padding: 8.5333333333vw 0;
+  }
+  .home-Introduction .container {
+    padding: 0px 5.0666666667vw;
+  }
+  .home-Introduction .container .title {
+    font-size: 6vw;
+    margin-bottom: 8vw;
+    line-height: normal;
+    text-align: left;
+  }
+  .home-Introduction .container .content {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4.6666666667vw 5.3333333333vw;
+  }
+  .home-Introduction .container .content .item-title {
+    font-size: 4vw;
+    text-align: left;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  .home-Introduction .container .content .item-desc {
+    font-size: 2.6666666667vw;
+    text-align: left;
+    line-height: normal;
+  }
+}

@@ -6,6 +6,8 @@
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 
+<link rel='stylesheet' href='https://unpkg.com/swiper@8/swiper-bundle.min.css'>
+
 <script>
   let visitCount = localStorage.getItem('visitCount');
   if (!visitCount) {
@@ -73,10 +75,10 @@
       const ipDetails = await getIpDetails(data.ip);
       const europeanCountry = isEuropeanCountry(ipDetails.country_code);
       const url = new URL(window.location.href);
-      if (!europeanCountry) {
-        window.location.href = `https://atomstack.com${url.pathname}`;
+      if (europeanCountry) {
         visitCount++;
         localStorage.setItem('visitCount', visitCount);
+        window.location.href = `https://eu.atomstack.com${url.pathname}`;
       }
     } catch (error) {
       console.error('Error fetching IP address:', error);
@@ -103,8 +105,8 @@
 
 <html class='no-js' lang='{{ request.locale.iso_code }}' dir='{{ direction }}'>
   <head>
-    {% render 'pandectes-rules' %}
-
+	{% render 'pandectes-rules' %}
+    
     <meta charset='UTF-8'>
     <meta
       name='viewport'
@@ -284,8 +286,7 @@
     {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
   {%- endif -%}
 
-  {% render 'main-css' %}
-
+  <script src='https://unpkg.com/swiper@8/swiper-bundle.min.js'></script>
   <body
     class='no-focus-outline {{ feature_classes }}'
     data-instant-allow-query-string
@@ -486,6 +487,7 @@
         });
       </script>
     {% endif %}
+    <script src='{{ 'fixed-bug.js' | asset_url }}' defer></script>
   </body>
   {% render 'gm-custom' %}
 </html>

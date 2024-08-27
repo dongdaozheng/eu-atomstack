@@ -6,8 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
   document.documentElement.style.scrollPaddingTop = `${header.clientHeight + announcementBar.clientHeight}px`;
   //修复网站中产品页面侧边栏的bug
   const sidebar = document.querySelector('#sidebar');
-  const sidebarItem = sidebar.querySelectorAll('li');
-  sidebarItem.forEach((item) => {
+  const sidebarItem = sidebar?.querySelectorAll('li');
+  sidebarItem?.forEach((item) => {
     item.addEventListener('click', () => {
       const data = item.getAttribute('data-to-section');
       const section = document.querySelector(`[data-section-id=${data}]`);

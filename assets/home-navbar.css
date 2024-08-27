@@ -1,0 +1,94 @@
+.home-navbar {
+  background: rgba(0, 0, 0, 0.5);
+}
+.home-navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.home-navbar .container * {
+  padding: 0;
+  margin: 0;
+}
+.home-navbar .container .icon-wrapper {
+  display: flex;
+}
+.home-navbar .container .navbar-title {
+  color: #fff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+}
+.home-navbar .container .item {
+  display: flex;
+  align-items: center;
+}
+.home-navbar .container .item picture,
+.home-navbar .container .item img {
+  object-fit: contain;
+}
+.home-navbar .container .item p {
+  color: #ededed;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media (min-width: 1000px) {
+  .home-navbar .container {
+    max-width: 1200px;
+    height: 64px;
+  }
+  .home-navbar .container .icon-wrapper {
+    column-gap: 58px;
+    align-items: center;
+  }
+  .home-navbar .container .navbar-title {
+    font-size: 20px;
+  }
+  .home-navbar .container .item {
+    align-items: center;
+    column-gap: 20px;
+  }
+  .home-navbar .container .item picture,
+  .home-navbar .container .item img {
+    width: 30px;
+    height: 30px;
+  }
+  .home-navbar .container .item p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  .home-navbar {
+    height: 46.6666666667vw;
+    display: flex;
+    align-items: center;
+  }
+  .home-navbar .container {
+    padding: 0 5.3333333333vw;
+    flex-direction: column;
+    row-gap: 2.6666666667vw;
+    align-items: flex-start;
+  }
+  .home-navbar .container .icon-wrapper {
+    flex-direction: column;
+    column-gap: 58px;
+  }
+  .home-navbar .container .navbar-title {
+    font-size: 4.2666666667vw;
+    text-align: left;
+  }
+  .home-navbar .container .item {
+    column-gap: 2.6666666667vw;
+  }
+  .home-navbar .container .item picture,
+  .home-navbar .container .item img {
+    width: 4.8vw;
+    height: 4.8vw;
+  }
+  .home-navbar .container .item p {
+    font-size: 4.2666666667vw;
+  }
+}

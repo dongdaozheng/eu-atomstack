@@ -1,0 +1,115 @@
+#shopify-section-template--23155050676497__main > section > div > div.page-header > div,
+.page-header__text-wrapper.text-container {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.payment-section p,
+.payment-section h2,
+.payment-section h3 {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
+}
+.payment-section .sidebar {
+  flex-shrink: 0;
+}
+.payment-section a {
+  display: block;
+}
+
+@media (min-width: 1000px) {
+  .payment-section .container {
+    max-width: 1440px;
+    display: flex;
+    column-gap: 30px;
+  }
+  .payment-section .container h2 {
+    color: #333;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 32px;
+    margin-top: 120px !important;
+  }
+  .payment-section .block:nth-child(1) h2 {
+    margin-top: 0px !important;
+  }
+  .payment-section .line-block {
+    height: 0px;
+    transition: all 0.3s ease;
+    background-color: #2b72ff;
+    width: 100%;
+  }
+  .payment-section .sub-node {
+    margin-left: 20px;
+  }
+  .payment-section .sidebar {
+    display: flex;
+    column-gap: 12px;
+    font-size: 16px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 300;
+    height: fit-content;
+    position: sticky;
+    top: 120px;
+  }
+  .payment-section .sidebar a {
+    transition: all 0.3s ease;
+  }
+  .payment-section .sidebar a.active {
+    color: #2b72ff;
+  }
+  .payment-section .line {
+    width: 2px;
+    height: fit-content;
+    background-color: #dddddd;
+  }
+  .payment-section .link-wrapper,
+  .payment-section .sub-node {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .payment-section p {
+    color: #333;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+  .payment-section .payment-icons {
+    margin: 24px 0;
+  }
+  .payment-section h3 {
+    color: #333;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+  .payment-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px !important;
+  }
+  .payment-section .block:nth-child(1) h2 {
+    margin-top: 0px !important;
+  }
+  .payment-section h3 {
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+  }
+}

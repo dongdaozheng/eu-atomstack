@@ -10,10 +10,97 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     {%- assign direction = 'rtl' -%}
 {%- endcase -%}
 
+<link rel='stylesheet' href='https://unpkg.com/swiper@8/swiper-bundle.min.css'>
+
+<script>
+  const europeanCountryCodes = [
+    'AL',
+    'AD',
+    'AM',
+    'AT',
+    'AZ',
+    'BY',
+    'BE',
+    'BA',
+    'BG',
+    'HR',
+    'CY',
+    'CZ',
+    'DK',
+    'EE',
+    'FI',
+    'FR',
+    'GE',
+    'DE',
+    'GR',
+    'HU',
+    'IS',
+    'IE',
+    'IT',
+    'KZ',
+    'XK',
+    'LV',
+    'LI',
+    'LT',
+    'LU',
+    'MT',
+    'MD',
+    'MC',
+    'ME',
+    'NL',
+    'MK',
+    'NO',
+    'PL',
+    'PT',
+    'RO',
+    'RU',
+    'SM',
+    'RS',
+    'SK',
+    'SI',
+    'ES',
+    'SE',
+    'CH',
+    'TR',
+    'UA',
+    'GB',
+    'VA',
+  ];
+
+  async function getIpAddress() {
+    try {
+      const response = await fetch('https://api.ipify.org?format=json');
+      const data = await response.json();
+      const ipDetails = await getIpDetails(data.ip);
+      const europeanCountry = isEuropeanCountry(ipDetails.countryCode);
+      const url = new URL(window.location.href);
+      if (europeanCountry) {
+        window.location.href = `https://eu.atomstack.com${url.pathname}`;
+      }
+    } catch (error) {
+      console.error('Error fetching IP address:', error);
+    }
+  }
+
+  async function getIpDetails(ipAddress) {
+    try {
+      const response = await fetch(`http://ip-api.com/json/${ipAddress}`);
+      return await response.json();
+    } catch (error) {
+      console.log('error', error);
+    }
+  }
+
+  function isEuropeanCountry(countryCode) {
+    return europeanCountryCodes.includes(countryCode);
+  }
+
+  getIpAddress();
+</script>
+
 <html class='no-js' lang='{{ request.locale.iso_code }}' dir='{{ direction }}'>
   <head>
     {% render 'pandectes-rules' %}
-
     <meta charset='UTF-8'>
     <meta
       name='viewport'
@@ -193,8 +280,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
   {%- endif -%}
 
-  {% render 'main-css' %}
-
+  <script src='https://unpkg.com/swiper@8/swiper-bundle.min.js'></script>
   <body
     class='no-focus-outline {{ feature_classes }}'
     data-instant-allow-query-string

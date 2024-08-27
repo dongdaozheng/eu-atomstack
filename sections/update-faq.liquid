@@ -1,0 +1,96 @@
+<link rel='stylesheet' href='{{ 'update-faq.css' | asset_url }}'>
+
+<div class='update-faq'>
+  <div class='container'>
+    <h2 class='title' id='faqs'>{{ section.settings.title }}</h2>
+    <div class='faq-wrapper'>
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'category' -%}
+            <h2>
+              {{- block.settings.title | escape -}}
+            </h2>
+
+          {%- when 'question' -%}
+            <div class='faq__item'>
+              <button
+                is='toggle-button'
+                class='collapsible-toggle text--strong'
+                aria-controls='block-{{ section.id }}-{{ block.id }}'
+                aria-expanded='false'
+                itemprop='name'
+              >
+                Q: &nbsp;&nbsp;
+                {{- block.settings.title -}}
+                <span class='animated-plus'></span>
+              </button>
+
+              <collapsible-content
+                id='block-{{ section.id }}-{{ block.id }}'
+                class='collapsible anchor'
+                itemscope
+                itemprop='acceptedAnswer'
+                itemtype='https://schema.org/Answer'
+              >
+                <div class='collapsible__content text-container' itemprop='text'>
+                  <span>A:</span>
+                  {{ block.settings.answer }}
+                </div>
+              </collapsible-content>
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "update-faq",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:Heading",
+      "default": "FAQ"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "t:Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:Heading",
+          "default": "Category"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "t:Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:Question",
+          "default": "About your shop"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "t:Answer",
+          "default": "<p>Write content to help your customers to better understand your products or policies.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "update-faq"
+    }
+  ]
+}
+{% endschema %}

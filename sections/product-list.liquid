@@ -1,0 +1,123 @@
+<script src='{{ 'add-to-cart.js' | asset_url }}' defer></script>
+<link rel='stylesheet' href='{{ 'product-list.css' | asset_url }}'>
+<div class='product-list'>
+  <p class='product-list__title'>{{ section.settings.title }}</p>
+  <div class='wrapper'>
+    <div class='container'>
+      <div class='swiper swiper_{{ section.index }}'>
+        <div class='swiper-wrapper'>
+          {% for block in section.blocks %}
+            <div class='swiper-slide'>
+              <div class='tip'>{{ block.settings.tip }}</div>
+              <div class='product__img'>
+                <picture>
+                  <source media='(max-width: 1000px)' srcset='{{ block.settings.mb_img | image_url}}'>
+                  <source media='(min-width: 1000px)' srcset='{{ block.settings.pc_img | image_url}}'>
+                  <img
+                    src='{{ section.settings.pc_img | image_url }}'
+                    alt='img'
+                    width='100%'
+                    height='100%'
+                  >
+                </picture>
+              </div>
+              <div class='product__content'>
+                <h3 class='product__title'>{{ block.settings.title }}</h3>
+                <p class='product__desc'>{{ block.settings.desc }}</p>
+                <div class='price'>
+                  <span class='price__current'>{{ block.settings.product.price | money }}</span>
+                  <s class='price__original'>{{ block.settings.product.compare_at_price | money }}</s>
+                </div>
+                <add-to-cart class='add-to-cart'>
+                  <input
+                    data-variant='{{ block.settings.product.first_available_variant.id }}'
+                    type='hidden'
+                    name='id'
+                    value='{{ block.settings.product.first_available_variant.id }}'
+                  >
+                  <input data-quantity='1' min='1' type='hidden' id='quantity' name='quantity' value='1'>
+                  {% comment %} 判断是否还有库存 {% endcomment %}
+                  {% if block.settings.product.first_available_variant.available %}
+                    <button type='submit'>Add to cart</button>
+                  {% else %}
+                    <button disabled>Sold out</button>
+                  {% endif %}
+                </add-to-cart>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class='swiper-button'>
+        <div class='swiper-button-prev swiper-button-prev-product'></div>
+        <div class='swiper-button-next swiper-button-next-product'></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const swiper_{{ section.index }} = new Swiper('.swiper_{{ section.index }}', {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next-product',
+      prevEl: '.swiper-button-prev-product',
+    },
+  });
+</script>
+{% schema %}
+{
+  "name": "product-list",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "product"
+        },
+        {
+          "type": "text",
+          "id": "tip",
+          "label": "tip"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "desc",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "pc_img",
+          "label": "PC Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mb_img",
+          "label": "MB Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "product-list"
+    }
+  ]
+}
+{% endschema %}

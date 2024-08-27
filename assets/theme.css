@@ -2,6 +2,11 @@
  * NOTE: most of the CSS variables used are defined in the "css-variables.liquid" snippet file
  */
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
 @media screen and (max-width: 740px) {
   .hidden-phone {
     display: none !important;
@@ -12253,7 +12258,7 @@ free-gift-wrapper .free-gift-product-popup {
   position: relative;
 }
 
-.predictive-search__product-item svg {
+#predictive-search-products > ul > .predictive-search__product-item > a > svg {
   position: absolute;
   top: calc(50% - 7px);
   right: 0;
@@ -12265,7 +12270,7 @@ free-gift-wrapper .free-gift-product-popup {
 }
 
 @media screen and (pointer: fine) {
-  .predictive-search__product-item:hover svg {
+  #predictive-search-products > ul > .predictive-search__product-item:hover a > svg {
     opacity: 1;
     transform: translateX(0);
   }
@@ -13670,18 +13675,18 @@ shopify-payment-terms {
     padding-right: 24px;
   }
 
-  .popover--quick-buy .product-form > :first-child:not(.product-form__buy-buttons) {
+  .popover--quick-buy .product-form > :first-child:not(.product-form__buy-button) {
     padding-top: 16px;
   }
 
-  .popover--quick-buy .product-form__buy-buttons {
+  .popover--quick-buy .product-form__buy-button {
     margin-left: calc(-1 * var(--container-gutter));
     margin-right: calc(-1 * var(--container-gutter));
     padding: 16px;
     padding-bottom: max(16px, env(safe-area-inset-bottom, 0px) + 16px);
   }
 
-  .popover--quick-buy .product-form__buy-buttons:not(:only-child) {
+  .popover--quick-buy .product-form__buy-button:not(:only-child) {
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
@@ -17437,6 +17442,11 @@ announcement-bar-item .tip {
     display: block;
   }
 }
+
+product-payment-container button#AddToCart {
+  display: block !important;
+}
+
 cart-notification {
   display: none !important;
 }

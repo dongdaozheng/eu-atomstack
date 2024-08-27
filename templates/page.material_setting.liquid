@@ -1,347 +1,243 @@
- <style type="text/css">
-    body {
-      padding: 0px;
-      margin: 0px;
-    }
+<style type='text/css'>
+  .foot {
+    width: 18rem;
+    padding: 0.5rem;
+    margin: 0px auto;
+    margin-top: 35px;
+    border: 1px solid #c5c5c5;
+  }
 
-    * {
-      padding: 0;
-      margin: 0;
-      font-family: "OpenSans";
-    }
+  .foot-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 
-    p {
-      font-family: "OpenSans" !important;
-      margin-block-start: 0px;
-      margin-block-end: 0px;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-    }
+  .foot-table th {
+    width: auto;
+    padding: 24px 5px;
+    background-color: #f8f8f8;
+    font-size: 0.175rem;
+    font-weight: bold !important;
+    text-align: center;
+  }
 
-    img {
-      vertical-align: top !important;
-      /*让图片与其他行内元素对其*/
-    }
+  .foot-table td {
+    /* height: 80px; */
+    text-align: center;
+    background-color: #f5f5f5;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    padding: 10px 5px;
+    font-size: 0.175rem;
+  }
 
-    .banner {
-      width: 100%;
-      height: 7.5rem;
-    }
+  .foot-table tr {
+    margin-top: 5px;
+  }
 
-    .product-ul {
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      background-color: #1e53af;
-      margin-left: 0px !important;
-      list-style-type: none !important;
-      margin-bottom: 0px !important;
+  .foot-table td:last-of-type {
+    border-right: none;
+  }
+
+  .table-title {
+    background-color: rgb(27, 106, 239);
+    width: 100%;
+    /* height: .5875rem; */
+    text-align: center;
+    line-height: 47px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'OpenSans';
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    .item,
+    .foot {
+      width: 95% !important;
+      margin-top: 20px;
     }
 
     .product-ul li {
-      display: inline-block;
-      /* width: 2.75rem; */
-      padding: 0 8px;
-      height: 100%;
-      list-style: none;
-      line-height: 1rem;
-      text-align: center;
-      cursor: pointer;
-      color: #fff;
-      font-size: 15px;
-      font-family: "Times New Roman";
-      position: relative;
+      height: 40px;
+      margin-right: 5px;
+      line-height: normal;
     }
-    .product-ul li span {
-        white-space: nowrap;
-    }
-    .triangle {
-      width: 0;
-      height: 0;
-      border-top: 6px solid #fff;
-      border-right: 5px solid transparent;
-      border-left: 5px solid transparent;
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      display: none;
-    }
-
-    .product-info {
-      width: 100%;
-      /* height: 200px; */
-      height: auto;
-      background-color: #d1e1fc;
-    }
-
-    .bg {
-      color: white;
-      background-color: red;
-    }
-
-    .item {
-      width: 15rem;
-      margin: 0px auto;
-      /* justify-content: space-around; */
-      justify-content: center;
-      padding: .375rem 0px;
-
+    .product-ul {
+      font-size: 12px !important;
+      padding-top: 10px;
     }
 
     .flex-item {
-      display: flex !important;
-    }
-
-    .hidden {
-      display: none !important;
+      flex-wrap: wrap;
     }
 
     .product-img {
-      width: 1.625rem;
-      height: auto;
-      text-align: center;
-      cursor: pointer;
-      margin-right: .4375rem;
-    }
-    .product-img img {
-      width: 1.25rem;
-      height: 1.25rem;
-    }
-    .product-img img:hover {
-      border: 1px solid rgb(27, 106, 239);
-    }
-
-    .imgBorder {
-      border: 1px solid rgb(27, 106, 239);
+      min-width: 60px;
+      margin-right: 10px;
     }
 
     .product-img p {
-      font-size: 14px;
-      text-align: center;
-      padding-top: .1875rem;
-      white-space: nowrap;
+      padding-top: 0px;
+      font-size: 12px;
+    }
+
+    .product-img img {
+      width: 100%;
+      height: auto;
+      display: inherit;
     }
 
     .foot {
-      width: 18rem;
-      padding: .5rem;
-      margin: 0px auto;
-      margin-top: 35px;
-      border: 1px solid #c5c5c5;
+      padding: 10px !important;
     }
 
     .foot-table {
       width: 100%;
-      border-collapse: collapse;
     }
 
     .foot-table th {
-      width: auto;
-      padding: 24px 5px;
-      background-color: #f8f8f8;
-      font-size: .175rem;
-      font-weight: bold !important;
-      text-align: center;
-    }
-
-    .foot-table td {
-      /* height: 80px; */
-      text-align: center;
-      background-color: #f5f5f5;
-      border-right: 1px solid #fff;
-      border-top: 1px solid #fff;
+      width: 100px;
+      white-space: nowrap;
       padding: 10px 5px;
-      font-size: .175rem;
+      font-size: 0.6rem;
+    }
+    .foot-table td {
+      font-size: 0.6rem;
     }
 
-    .foot-table tr {
-      margin-top: 5px;
-    }
-   
-    .foot-table td:last-of-type {
-      border-right: none;
-    }
-
-    .table-title {
-      background-color: rgb(27, 106, 239);
+    .table-scroll {
       width: 100%;
-      /* height: .5875rem; */
-      text-align: center;
-      line-height: 47px;
-      font-size: 18px;
-      font-weight: bold;
-      font-family: "OpenSans";
-      color: #fff;
-      margin-bottom: 10px;
+      height: 500px;
+      overflow: scroll;
     }
-   @media screen and (max-width: 768px) {
-      .item ,.foot {
-        width: 95% !important;
-        margin-top: 20px;
-      }
-     
-      .product-ul li {
-        height: 40px;
-        margin-right: 5px;
-        line-height: normal;
-      }
-      .product-ul{
-        font-size: 12px !important;
-        padding-top: 10px;
-      }
+  }
+</style>
+<link rel='stylesheet' href='{{ 'material-setting.css' | asset_url }}'>
 
-      .flex-item {
-        flex-wrap: wrap;
-      }
-
-      .product-img {
-        min-width: 60px;
-        margin-right: 10px;
-      }
-
-      .product-img p {
-        padding-top: 0px;
-        font-size:12px;
-      }
-
-      .product-img img {
-        width: 100%;
-        height: auto;
-        display: inherit;
-      }
-
-      .foot {
-        padding: 10px !important;
-      }
-
-      .foot-table {
-        width: 100%;
-      }
-
-      .foot-table th {
-        width: 100px;
-        white-space: nowrap;
-        padding: 10px 5px;
-        font-size: .6rem;
-      }
-      .foot-table td {
-        font-size: .6rem;
-      }
-     
-      .table-scroll {
-        width: 100%;
-        height: 500px;
-        overflow: scroll;
-      }
-    }
-  </style>
-  <div id="Program">
-    <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/Material-Settings-banner.jpg?v=1673514656" width="100%" height="600" alt="">
-    <!-- <div class="banner"></div> -->
-    <ul class="product-ul">
+<div id='Program'>
+  <img
+    src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/Material-Settings-banner.jpg?v=1673514656'
+    width='100%'
+    height='600'
+    alt=''
+  >
+  <!-- <div class="banner"></div> -->
+  <div class='product-wrapper'>
+    <ul class='product-ul'>
       <li>
         <span>A Series</span>
-        <div class="triangle" style="display: block;"></div>
+        <div class='triangle' style='display: block;'></div>
       </li>
       <li>
         <span>P Series</span>
-        <div class="triangle"></div>
+        <div class='triangle'></div>
       </li>
       <li>
         <span>S Series</span>
-        <div class="triangle"></div>
+        <div class='triangle'></div>
       </li>
       <li>
         <span>X Series</span>
-        <div class="triangle"></div>
+        <div class='triangle'></div>
       </li>
     </ul>
-    <div class="product-info">
-      <div class="item flex-item">
-         <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/100x100.jpg?v=1677641245" class="imgBorder" />
-          <p>A30 Pro</p>
+    <div class='product-info'>
+      <div class='item flex-item swiper swiper-1'>
+        <div class='swiper-wrapper'>
+          <div class='product-img swiper-slide'>
+            <img
+              src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/100x100.jpg?v=1677641245'
+              class='imgBorder'
+            >
+            <p>A30 Pro</p>
+          </div>
+          <div class='product-img swiper-slide'>
+            <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A10-PRO_fedbed57-d2de-4742-bd89-ba79e3ced0ae.jpg?v=1673514761'>
+            <p>A10 Pro</p>
+          </div>
+          <div class='product-img swiper-slide'>
+            <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A20-PRO_ec6c56fe-8a0f-44af-abaa-d3013c63f440.jpg?v=1673514882'>
+            <p>A20 Pro</p>
+          </div>
+          <div class='product-img swiper-slide'>
+            <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-M30_1041a3d4-c5b5-481d-84eb-9b3c8d1f9909.jpg?v=1673514950'>
+            <p>A5 M30</p>
+          </div>
+          <div class='product-img swiper-slide'>
+            <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-M40_d9a732e4-a3fb-4465-977e-e02b6015d101.jpg?v=1673515039'>
+            <p>A5 M40</p>
+          </div>
+          <div class='product-img swiper-slide'>
+            <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-PRO_1567b9bc-b888-47f5-8d80-30a9803404fb.jpg?v=1673515098'>
+            <p>A5 Pro</p>
+          </div>
+          <div class='product-img swiper-slide'>
+            <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-PRO_4ec81aa7-c891-40d3-b4cd-cff32491b179.jpg?v=1673515180'>
+            <p>A5 Pro+</p>
+          </div>
+          <div class='product-img swiper-slide'>
+            <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-20W_30W_7fc5696d-ab7d-4115-981d-6b032b7335dc.jpg?v=1673515238'>
+            <p>A5 20W / 30W</p>
+          </div>
         </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A10-PRO_fedbed57-d2de-4742-bd89-ba79e3ced0ae.jpg?v=1673514761" />
-          <p>A10 Pro</p>
-        </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A20-PRO_ec6c56fe-8a0f-44af-abaa-d3013c63f440.jpg?v=1673514882" />
-          <p>A20 Pro</p>
-        </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-M30_1041a3d4-c5b5-481d-84eb-9b3c8d1f9909.jpg?v=1673514950" />
-          <p>A5 M30</p>
-        </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-M40_d9a732e4-a3fb-4465-977e-e02b6015d101.jpg?v=1673515039" />
-          <p>A5 M40</p>
-        </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-PRO_1567b9bc-b888-47f5-8d80-30a9803404fb.jpg?v=1673515098" />
-          <p>A5 Pro</p>
-        </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-PRO_4ec81aa7-c891-40d3-b4cd-cff32491b179.jpg?v=1673515180" />
-          <p>A5 Pro+</p>
-        </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/A5-20W_30W_7fc5696d-ab7d-4115-981d-6b032b7335dc.jpg?v=1673515238" />
-          <p>A5 20W / 30W</p>
+        <div class='swiper-button'>
+          <div class='swiper-button-prev swiper-button-prev-1'></div>
+          <div class='swiper-button-next swiper-button-next-1'></div>
         </div>
       </div>
-      <div class="item hidden">
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/P9-M50.jpg?v=1673515352" />
+      <div class='item hidden'>
+        <div class='product-img'>
+          <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/P9-M50.jpg?v=1673515352'>
           <p>P9 M50</p>
         </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/P9-M40.jpg?v=1673515398" />
+        <div class='product-img'>
+          <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/P9-M40.jpg?v=1673515398'>
           <p>P9 M40</p>
         </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/P7-M30.jpg?v=1673515302" />
+        <div class='product-img'>
+          <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/P7-M30.jpg?v=1673515302'>
           <p>P7 M30</p>
         </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/P7-M40.jpg?v=1673515522" />
+        <div class='product-img'>
+          <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/P7-M40.jpg?v=1673515522'>
           <p>P7 M40</p>
         </div>
       </div>
-      <div class="item hidden">
-        <div class="product-img">
-          <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/S30-PRO.jpg?v=1708400907" />
+      <div class='item hidden'>
+        <div class='product-img'>
+          <img src='https://cdn.shopify.com/s/files/1/0790/2586/4977/files/S30-PRO.jpg?v=1708400907'>
           <p>S30 Pro</p>
         </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/S20-PRO.jpg?v=1673515612" />
+        <div class='product-img'>
+          <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/S20-PRO.jpg?v=1673515612'>
           <p>S20 Pro</p>
         </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/S10-PRO.jpg?v=1673515600" />
+        <div class='product-img'>
+          <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/S10-PRO.jpg?v=1673515600'>
           <p>S10 Pro</p>
         </div>
       </div>
-      <div class="item hidden">
-        <div class="product-img">
-          <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/X30-PRO.jpg?v=1708400907" />
+      <div class='item hidden'>
+        <div class='product-img'>
+          <img src='https://cdn.shopify.com/s/files/1/0790/2586/4977/files/X30-PRO.jpg?v=1708400907'>
           <p>X30 Pro</p>
         </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/X20-PRO.jpg?v=1673515700" />
+        <div class='product-img'>
+          <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/X20-PRO.jpg?v=1673515700'>
           <p>X20 Pro</p>
         </div>
-        <div class="product-img">
-          <img src="https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/X7-PRO.jpg?v=1673515689" />
+        <div class='product-img'>
+          <img src='https://cdn.shopifycdn.net/s/files/1/0694/3034/6014/files/X7-PRO.jpg?v=1673515689'>
           <p>X7 Pro</p>
         </div>
       </div>
     </div>
-    <div class="foot">
-      <div class="table-title">A30 Pro</div>
-      <div class="table-scroll" style="width:100%">
-        <table class="foot-table" id="table1">
+  </div>
+  <div class='foot'>
+    <div class='table-title'>A30 Pro</div>
+    <div class='table-scroll' style='width:100%'>
+      <table class='foot-table' id='table1'>
         <thead>
           <tr>
             <th>Material Name</th>
@@ -355,56 +251,65 @@
             <th>Number of Passes</th>
           </tr>
         </thead>
-        <tbody id="tbody"></tbody>
+        <tbody id='tbody'></tbody>
       </table>
-      </div>
     </div>
-    <div style="padding: 25px;"></div>
   </div>
-  
-{{ 'material_setting_data.js'  | asset_url | script_tag }}
-{{ 'flexible.js'  | asset_url | script_tag }}
+  <div style='padding: 25px;'></div>
+</div>
+
+{{ 'material_setting_data.js' | asset_url | script_tag }}
+{{ 'flexible.js' | asset_url | script_tag }}
 <script>
-  var url =document.querySelector('.product-ul');
+  const swiper_1 = new Swiper('.swiper-1', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next-1`',
+      prevEl: '.swiper-button-prev-1',
+    },
+  });
+
+  var url = document.querySelector('.product-ul');
   var lis = url.querySelectorAll('li');
   // 获取三角图标元素
-  var triangle = document.querySelectorAll('.triangle')
+  var triangle = document.querySelectorAll('.triangle');
   // 获取li对应的产品元素
   var product = document.querySelector('.product-info');
   var items = product.querySelectorAll('.item');
 
   // 初始加载获取A系列产品
-  var productImg = document.querySelector('.flex-item')
+  var productImg = document.querySelector('.flex-item');
   var list = productImg.querySelectorAll('.product-img');
   setTable(list);
 
   function setTable(arr) {
-    let newArr = arr
+    let newArr = arr;
     for (let i = 0; i < newArr.length; i++) {
       newArr[i].setAttribute('index', i);
       let index;
 
       newArr[i].onclick = function () {
         for (var j = 0; j < newArr.length; j++) {
-          newArr[j].children[0].className = ""
+          newArr[j].children[0].className = '';
         }
         index = this.getAttribute('index');
-        newArr[index].children[0].className = "imgBorder"
+        newArr[index].children[0].className = 'imgBorder';
         // 获取选择的产品名称
-        let innerHTML = newArr[index].children[1].innerHTML
-        var title = document.querySelector(".table-title")
-        title.innerHTML = innerHTML
-        var key = ""
-        if (innerHTML == "A5 Pro+") {
-          key = "A5Pro1"
+        let innerHTML = newArr[index].children[1].innerHTML;
+        var title = document.querySelector('.table-title');
+        title.innerHTML = innerHTML;
+        var key = '';
+        if (innerHTML == 'A5 Pro+') {
+          key = 'A5Pro1';
         }
-        if (innerHTML == "A5 20W / 30W") {
-          key = "A520W30W"
+        if (innerHTML == 'A5 20W / 30W') {
+          key = 'A520W30W';
         } else {
-          key = innerHTML.replace(/\s*/g, ""); // 去除所有空格
+          key = innerHTML.replace(/\s*/g, ''); // 去除所有空格
         }
         bindTable(jsonData[key]);
-      }
+      };
     }
   }
 
@@ -415,29 +320,28 @@
     lis[i].onclick = function () {
       for (var j = 0; j < lis.length; j++) {
         triangle[j].style.display = 'none';
-        items[j].classList.remove("flex-item")
-        items[j].classList.add("hidden")
+        items[j].classList.remove('flex-item');
+        items[j].classList.add('hidden');
       }
       // 添加样式
       index = this.getAttribute('index');
       triangle[index].style.display = 'block';
-      items[index].classList.remove("hidden")
-      items[index].classList.add("flex-item")
+      items[index].classList.remove('hidden');
+      items[index].classList.add('flex-item');
       // 获取对应的产品
-      var productImg = items[index].querySelectorAll('.product-img')
-      setTable(productImg)
-    }
-
+      var productImg = items[index].querySelectorAll('.product-img');
+      setTable(productImg);
+    };
   }
   // 初始加载table
   bindTable(jsonData.A30Pro);
 
   function bindTable(arr) {
-    var tbody = document.querySelector('tbody')
-    var tableData = arr
-    var str = ""
+    var tbody = document.querySelector('tbody');
+    var tableData = arr;
+    var str = '';
     for (var i = 0; i < tableData.length; i++) {
-      let obj = tableData[i]
+      let obj = tableData[i];
       str += `
          <tr>
           <td style='background-color:${obj.color}'>
@@ -468,10 +372,10 @@
            <span>${obj.number}</span>
           </td>
        </tr>
-     `
+     `;
     }
-    tbody.innerHTML = str
-    mergeFunc("table1"); //合并重复行
+    tbody.innerHTML = str;
+    mergeFunc('table1'); //合并重复行
   }
   //合并相同行
   function mergeFunc(tableId) {
@@ -482,8 +386,12 @@
       //用于存储相同个数
       count = 1;
       for (var i = 0; i < tab.rows.length; i++) {
-        if (i > 0 && col > 0 && tab.rows[i].cells[col].innerHTML == tab.rows[i - 1].cells[col].innerHTML &&
-          tab.rows[i].cells[col - 1].innerHTML == tab.rows[i - 1].cells[col - 1].innerHTML) {
+        if (
+          i > 0 &&
+          col > 0 &&
+          tab.rows[i].cells[col].innerHTML == tab.rows[i - 1].cells[col].innerHTML &&
+          tab.rows[i].cells[col - 1].innerHTML == tab.rows[i - 1].cells[col - 1].innerHTML
+        ) {
           count++;
         } else if (i > 0 && col == 0 && tab.rows[i].cells[col].innerHTML == tab.rows[i - 1].cells[col].innerHTML) {
           count++;
@@ -492,14 +400,16 @@
             //合并
             start = i - count;
             tab.rows[start].cells[col].rowSpan = count;
-            for (var j = start + 1; j < i; j++) { //
+            for (var j = start + 1; j < i; j++) {
+              //
               tab.rows[j].removeChild(tab.rows[j].cells[col]);
             }
             count = 1;
           }
         }
       }
-      if (count > 1) { //合并，最后几行相同的情况下
+      if (count > 1) {
+        //合并，最后几行相同的情况下
         start = i - count;
         tab.rows[start].cells[col].rowSpan = count;
         for (var j = start + 1; j < i; j++) {

@@ -1,0 +1,131 @@
+@function vw($px-vw, $base-vw: 750px) {
+  @return calc(($px-vw * 100vw) / $base-vw);
+}
+
+#shopify-section-template--23155050676497__main > section > div > div.page-header > div,
+.page-header__text-wrapper.text-container {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.payment-section {
+  p,
+  h2,
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+  }
+  .sidebar {
+    flex-shrink: 0;
+  }
+  a {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .payment-section {
+    .container {
+      max-width: 1440px;
+      display: flex;
+      column-gap: 30px;
+
+      h2 {
+        color: #333;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 32px;
+        margin-top: 120px !important;
+      }
+    }
+    .block:nth-child(1) h2 {
+      margin-top: 0px !important;
+    }
+    .line-block {
+      height: 0px;
+      transition: all 0.3s ease;
+      background-color: #2b72ff;
+      width: 100%;
+    }
+
+    .sub-node {
+      margin-left: 20px;
+    }
+    .sidebar {
+      display: flex;
+      column-gap: 12px;
+      font-size: 16px;
+      color: #333333;
+      font-style: normal;
+      font-weight: 300;
+      height: fit-content;
+      position: sticky;
+      top: 120px;
+      a {
+        transition: all 0.3s ease;
+      }
+      a.active {
+        color: #2b72ff;
+      }
+    }
+    .line {
+      width: 2px;
+      height: fit-content;
+      background-color: #dddddd;
+    }
+    .link-wrapper,
+    .sub-node {
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+    }
+
+    p {
+      color: #333;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 12px;
+      margin-top: 12px;
+    }
+    .payment-icons {
+      margin: 24px 0;
+    }
+    h3 {
+      color: #333;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 12px;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+
+  .payment-section {
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      margin-top: 20px !important;
+    }
+
+    .block:nth-child(1) h2 {
+      margin-top: 0px !important;
+    }
+
+    h3 {
+      margin-top: 10px !important;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -9,3 +9,6 @@ development:
     - yarn.lock
     - .prettierrc
     - README
+    - scss
+    - gulpfile.js
+    - DS_Store

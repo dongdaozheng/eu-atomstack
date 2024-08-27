@@ -1,0 +1,134 @@
+<link rel='stylesheet' href='{{ 'payment-help.css' | asset_url }}'>
+
+<div class='payment-section'>
+  <div class='container'>
+    {% comment %} 侧边栏 {% endcomment %}
+    <div class='sidebar'>
+      <div class='line'>
+        <div class='line-block'></div>
+      </div>
+      <div class='link-wrapper'>
+        <a href='#payment-help'>Payment Help</a>
+        <a href='#payment-method'>Payment Method</a>
+        <div class='sub-node'>
+          <a href='#shopify-payments'>SHOPIFY PAYMENTS</a>
+          <a href='#klarna-installment'>Shop Pay & Klarna Installment</a>
+        </div>
+        <a href='#paypal'>PAYPAL</a>
+        <a href='#faqs'>FAQs</a>
+      </div>
+    </div>
+    <div class='wrapper'>
+      <div class='block'>
+        <h2 id='payment-help'>Payment Help</h2>
+        <p>
+          Payment Options for Your Favorite Products The AtomStack online store provides convenient payment methods for
+          a seamless shopping experience. Choose from credit card payments for fast and secure transactions, installment
+          plans for flexible budgeting, or our e-wallet option for quick checkout in just a few taps. Your payment
+          information is securely handled, and our customer support team is always available to assist you.
+        </p>
+      </div>
+      <div class='block'>
+        <h2 id='payment-method'>Payment Method</h2>
+        <div class='content'>
+          <h3 id='shopify-payments'>SHOPIFY PAYMENTS</h3>
+          <p>
+            We accept credit card payments (Visa, Mastercard, Maestro and American Express) as well as Apple Pay and
+            Google Pay payments via Shopify Payments.
+          </p>
+          <div class='payment-icons'>
+            {%- assign payment_methods_config = settings.payment_methods | newline_to_br | split: '<br />' -%}
+            <div class='payment-methods-list payment-methods-list--auto'>
+              {%- if payment_methods_config != blank -%}
+                {% for type in payment_methods_config %}
+                  {{ type | strip | payment_type_svg_tag }}
+                {% endfor %}
+              {%- else -%}
+                {% for type in shop.enabled_payment_types %}
+                  {{ type | payment_type_svg_tag }}
+                {% endfor %}
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+        <div class='content'>
+          <h3 id='klarna-installment'>Shop Pay & Klarna Installment</h3>
+          <p>
+            You now have the option to conveniently finance your AtomStack purchase through affordable installments. We
+            have partnered with Shop Pay Installment and Klarna Installment, two customer-friendly financing partners.
+            This solution is particularly popular among customers who intend to sell their creations, as it enables them
+            to use their AtomStack products to fund themselves. Currently, this installment option is exclusively
+            available for transactions made in USD.
+            <br>
+            * Shop Pay Installment is only available for users in the United States.
+            <br>
+            <br>
+            Klarna Installment is available for global users. During the Shop Pay checkout process, customers can choose
+            from the following installment payment plans: Four biweekly interest-free payments for orders ranging from
+            $50 to $999.99. Monthly payments for orders between $150 and $17,500. These monthly installment plans have
+            an interest rate of 10% to 36% APR and can be paid over three, six, or twelve months, depending on the
+            purchase amount. During the Klarna checkout process, the final total amount you pay may differ slightly from
+            the summary calculated by AtomStack because Klarna converts your currency to USD at the time of payment.
+            This incurs a certain conversion fee. However, Klarna does offer the option of free currency conversion,
+            depending on your Klarna account's credit rating. The specific installment amounts are determined by Shop
+            Pay Installment (powered by Affirm) or Klarna Installment, taking into account your purchase total and the
+            duration of the loan.
+          </p>
+        </div>
+      </div>
+      <div class='block'>
+        <h2 id='paypal'>PAYPAL</h2>
+        <p>
+          Customer can use PayPal balance, credit cards, debit cards to pay for their order(s), with or without PayPal
+          accounts. When paying without PayPal accounts, click ”Pay with Debit or Credit Card” button when checking out.
+          PayPal's services allow people to make financial transactions online by granting the ability to transfer funds
+          electronically between individuals and businesses. Through PayPal, users can send or receive payments for
+          online auctions on websites, purchase or sell goods and services, or donate money or receive donations. It is
+          not necessary to have a PayPal account to use the company's services. PayPal account users can set currency
+          conversion option in account settings.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const sidebar = document.querySelector('.payment-section .sidebar');
+  const nodes = document.querySelectorAll('.payment-section .block h2,.payment-section .block h3, .update-faq .title');
+  const line = document.querySelector('.payment-section .line');
+  const links = sidebar.querySelectorAll('a');
+  const lineBlock = line.querySelector('.line-block');
+  line.style.height = `${sidebar.clientHeight}px`;
+  let clickIndex = 0;
+  links.forEach((item, index) => {
+    if (index === 0) {
+      item.classList.add('active');
+      lineBlock.style.height = `${item.clientHeight}px`;
+    }
+    item.addEventListener('click', () => {
+      links.forEach((link) => link.classList.remove('active'));
+      clickIndex = index;
+      item.classList.add('active');
+      lineBlock.style.transform = `translateY(${item.offsetTop}px)`;
+    });
+  });
+  window.addEventListener('scroll', () => {
+    nodes.forEach((node, index) => {
+      if (window.scrollY >= node.offsetTop + 500) {
+        links.forEach((link) => link.classList.remove('active'));
+        links[index].classList.add('active');
+        lineBlock.style.transform = `translateY(${links[index].offsetTop}px)`;
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "payment-section",
+  "presets": [
+    {
+      "name": "payment-section"
+    }
+  ]
+}
+{% endschema %}

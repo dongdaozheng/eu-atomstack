@@ -1,32 +1,19 @@
+
 {% if section.settings.section_id.size > 0 %}
   <!-- PageFlyGlobalSection -->
   {% render 'pagefly-main-js' %}
   {% render 'pagefly-main-css' %}
   {% include section.settings.section_id %}
 {% else %}
-  {% if request.design_mode %}
-    <style>
-      .pf-ph {
-        font-size: 14px !important;
-        background: #fafafa;
-        padding: 20px;
-        text-align: center;
-        border: 1px solid #f0f0f0;
-        border-radius: 4px;
-        margin: 15px;
-      }
-      .pf-ph span {
-        display: block;
-        background: #e6f7ff;
-        padding: 8px 15px;
-        border: 1px solid #91d5ff;
-      }
-    </style>
-    <div class='pf-ph'>
-      <h3>PageFly Section</h3>
-      <span>No section selected. Please select your section from the list</span>
-    </div>
-  {% endif %}
+  
+    {% if request.design_mode %}
+      <style>.pf-ph{font-size:14px!important;background:#fafafa;padding:20px;text-align:center;border:1px solid #f0f0f0;border-radius:4px;margin:15px}.pf-ph span{display:block;background:#e6f7ff;padding:8px 15px;border:1px solid #91d5ff}</style>
+      <div class="pf-ph">
+        <h3>PageFly Section</h3>
+        <span>No section selected. Please select your section from the list</span>
+      </div>
+    {% endif %}
+  
 {% endif %}
 
 {% schema %}
@@ -43,42 +30,58 @@
           "value": ""
         },
         {
-          "label": "contact us",
-          "value": "pf-1c691249"
+          "label": "index-swiper",
+          "value": "pf-f5f0fde6"
         },
         {
-          "label": "FAQ",
-          "value": "pf-01b2796a"
+          "label": "Environmental friendly mobile",
+          "value": "pf-791b3d52"
         },
         {
-          "label": "Sidebar",
-          "value": "pf-0edbdbfd"
-        },
-        {
-          "label": "customer",
-          "value": "pf-ae478046"
-        },
-        {
-          "label": "customer service",
-          "value": "pf-b97e50bf"
-        },
-        {
-          "label": "Ace Pro V2 Video",
-          "value": "pf-8fc6293d"
-        },
-        {
-          "label": "sign up",
-          "value": "pf-ac4d7472"
+          "label": "Environmental friendly",
+          "value": "pf-79f245eb"
         },
         {
           "label": "customer-ipad",
-          "value": "pf-7418bdd2"
+          "value": "pf-5adee2c1"
+        },
+        {
+          "label": "sign up",
+          "value": "pf-488468ed"
+        },
+        {
+          "label": "customer1",
+          "value": "pf-7e2a2e77"
+        },
+        {
+          "label": "customer",
+          "value": "pf-fc3f2327"
+        },
+        {
+          "label": "contact us",
+          "value": "pf-12af0c33"
+        },
+        {
+          "label": "customer service",
+          "value": "pf-ba922cf9"
+        },
+        {
+          "label": "Sidebar",
+          "value": "pf-98e74fb9"
+        },
+        {
+          "label": "Ace Pro V2 Video",
+          "value": "pf-08c05695"
+        },
+        {
+          "label": "FAQ",
+          "value": "pf-2d820692"
         }
       ]
     },
     {
       "type": "paragraph",
-      "content": "Find and edit your section on the [section listing](https://atomstack-eu.myshopify.com/admin/apps/pagefly/sections)"
+      "content": "Find and edit your section on the [section listing](https://atomstack-official.myshopify.com/admin/apps/pagefly/sections)"
     },
     {
       "type": "paragraph",

@@ -1,0 +1,49 @@
+<link rel='stylesheet' href='{{ 'home-Introduction.css' | asset_url }}'>
+<div class='home-Introduction'>
+  <div class='container'>
+    <div class='title'>{{ section.settings.title }}</div>
+    <div class='content'>
+      {% for block in section.blocks %}
+        <div class='item'>
+          <p class='item-title'>{{ block.settings.title }}</p>
+          <p class='item-desc'>{{ block.settings.desc }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "home-Introduction",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "desc",
+          "label": "desc"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "home-Introduction"
+    }
+  ]
+}
+{% endschema %}

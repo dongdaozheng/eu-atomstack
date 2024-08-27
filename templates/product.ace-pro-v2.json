@@ -44,7 +44,7 @@
             "image_width": 600
           }
         },
-        "text_6c7NhE": {
+        "text_jJGHkQ": {
           "type": "text",
           "settings": {
             "text": "<p><strong>Big Upgrade, Small Budget<\/strong><br\/>● Upgraded 24W laser output for better cutting<br\/>● Increased precision, durability, and load capacity<br\/>● High productivity at 500mm\/s<br\/>● Auto cross-positioning system, auto-focus and resume engraving after a power outage<br\/>● Earn 499 points: Save $10 on your next purchase<\/p>"
@@ -70,6 +70,21 @@
           "settings": {
           }
         },
+        "mentis_product_grouping_group_product_cffdwg": {
+          "type": "shopify:\/\/apps\/mentis-product-grouping\/blocks\/group_product\/3fd8cb1c-20d6-4ebc-80c1-f61f58a3cec8",
+          "settings": {
+            "product": "{{product}}",
+            "group_style": "grid",
+            "top_spacing": 2,
+            "bottom_spacing": 6,
+            "box_size": 95,
+            "font_size": 12,
+            "bo_color": "#ececec",
+            "boh_color": "#000000",
+            "imgb_color": "#000000",
+            "activegb_color": "#334fb4"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -83,10 +98,32 @@
             "image_uploader_label": "<p>Drag & Drop your image or <span style=\"text-decoration:underline\">Browse<\/span> <\/p>"
           }
         },
+        "estimated_delivery_date_plus_delivery_coder_theme_9bRG6d": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
+          }
+        },
         "liquid_HCbqcR": {
           "type": "liquid",
           "settings": {
             "liquid": "<style>\n.svg-icon{display:inline !important;\nfill:#2c2c2c;}\n.file-download {border: 1px solid #c2c2c2; border-radius:4px;color:#2c2c2c; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:23px;padding:4px 10px;margin-right:8px;display:inline-flex;align-items:center;}\n.file-download:hover {border: 1px solid #285ee6;color: #285ee6;}\n.file-download:hover .svg-icon{fill:#285EE6 !important;}\n<\/style>\n<div><a target=\"_blank\" class=\"file-download\" href=\"{{ product.metafields.custom.user_guides.value }}\"><svg t=\"1712050487506\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"4428\" width=\"16\" height=\"16\"><path d=\"M332.32 464.112l144 160a47.952 47.952 0 0 0 71.36 0l144-160a48 48 0 0 0-71.36-64.224L560 466.912V176a48 48 0 1 0-96 0v290.912l-60.32-67.024a48 48 0 1 0-71.36 64.224zM880 560a48 48 0 0 0-48 48v192H192V608a48 48 0 1 0-96 0v240a48 48 0 0 0 48 48h736a48 48 0 0 0 48-48V608a48 48 0 0 0-48-48z\" p-id=\"4429\"><\/path><\/svg>&nbsp;User Guides<\/a>\n<\/div>"
+          }
+        },
+        "mega_better_price_app_block_bLak9P": {
+          "type": "shopify:\/\/apps\/mega-better-price\/blocks\/app-block\/7a5fb689-a902-4695-8f78-75bdd89e88e7",
+          "settings": {
+            "buttonType": "link",
+            "buttonText": "Found a better price on another site?",
+            "text_align": "left",
+            "overlay": true,
+            "animation": false,
+            "fontColor": "#c82424",
+            "bannerBackground": "#1c8e6e",
+            "popupFooterColor": "#4a4a4a",
+            "fontSize": 14,
+            "buttonWidth": 100,
+            "minPriceEnabled": false,
+            "minPrice": 0
           }
         },
         "4aa332b6-7a4c-4b19-af64-2e248ceea863": {
@@ -106,11 +143,14 @@
         "image_Kg7z6M",
         "0de2f95e-4076-4ccc-8f7c-8ecb07eddda6",
         "942f73c8-e783-4874-a47e-e88b93ec9e7b",
-        "text_6c7NhE",
+        "text_jJGHkQ",
         "variant_picker",
         "quantity_selector",
+        "mentis_product_grouping_group_product_cffdwg",
         "buy_buttons",
+        "estimated_delivery_date_plus_delivery_coder_theme_9bRG6d",
         "liquid_HCbqcR",
+        "mega_better_price_app_block_bLak9P",
         "4aa332b6-7a4c-4b19-af64-2e248ceea863",
         "1d0e3dfc-04dd-43e6-bf71-4931996d99f8"
       ],
@@ -143,7 +183,7 @@
         "transition_effect": "slide"
       }
     },
-    "image_link_6xHYGh": {
+    "image_link_Fc8D6e": {
       "type": "image-link",
       "settings": {
         "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
@@ -381,17 +421,17 @@
     "product-content": {
       "type": "product-content",
       "blocks": {
-        "em_variant_description_app_embed_block_w6yUrG": {
-          "type": "shopify:\/\/apps\/em-variant-description\/blocks\/app-embed-block\/fde9eb2e-2dc6-4756-86f3-98c22a146066",
-          "settings": {
-            "main_heading": "Variant Description",
-            "product": "{{product}}"
-          }
-        },
         "app_content_bd83tX": {
           "type": "app_content",
           "settings": {
             "title": "Description"
+          }
+        },
+        "em_variant_description_app_embed_block_cdB6Ej": {
+          "type": "shopify:\/\/apps\/em-variant-description\/blocks\/app-embed-block\/fde9eb2e-2dc6-4756-86f3-98c22a146066",
+          "settings": {
+            "main_heading": "",
+            "product": "{{product}}"
           }
         },
         "df886055-92be-4283-9c0a-9493f4a3fae5": {
@@ -411,8 +451,8 @@
         }
       },
       "block_order": [
-        "em_variant_description_app_embed_block_w6yUrG",
         "app_content_bd83tX",
+        "em_variant_description_app_embed_block_cdB6Ej",
         "df886055-92be-4283-9c0a-9493f4a3fae5",
         "f2883553-07cc-4f77-861c-a9a0a4ca5601"
       ],
@@ -557,7 +597,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_8afa6f07-e3e0-4d9a-8879-61f3ee654ad0.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",
@@ -583,14 +623,14 @@
         "background_type": "full_width",
         "transition_type": "sweep",
         "autoplay": true,
-        "cycle_speed": 5,
+        "cycle_speed": 20,
         "background": "rgba(0,0,0,0)"
       }
     }
   },
   "order": [
     "main",
-    "image_link_6xHYGh",
+    "image_link_Fc8D6e",
     "9b7e7078-c25e-4cc4-b1f1-b2c90909eb72",
     "pagefly_section_RKRC9Y",
     "d8d7dc6c-18a2-4c65-9ecd-cb3436898745",
