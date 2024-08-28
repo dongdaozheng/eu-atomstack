@@ -16,24 +16,24 @@
           "type": "column",
           "settings": {
             "link_list": "https:\/\/atomstack.com\/pages\/back-to-school",
-            "pc_img": "shopify:\/\/shop_images\/back_to_school-01.jpg",
-            "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg"
+            "pc_img": "shopify:\/\/shop_images\/back_to_school-eu-01.jpg",
+            "mb_img": "shopify:\/\/shop_images\/back_to_sachool-eu-02.jpg"
           }
         },
         "column_m4C4rx": {
           "type": "column",
           "settings": {
             "link_list": "https:\/\/atomstack.com\/products\/atomstack-ace-pro-v2",
-            "pc_img": "shopify:\/\/shop_images\/buy_one_get_one-us-01.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Buy_one_get_one_free-us-03.jpg"
+            "pc_img": "shopify:\/\/shop_images\/Buy_one_get_one_free-eu-01.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Buy_one_get_one_free-eu-03.jpg"
           }
         },
         "column_GfEzPd": {
           "type": "column",
           "settings": {
             "link_list": "",
-            "pc_img": "shopify:\/\/shop_images\/one_tree_planted.jpg",
-            "mb_img": "shopify:\/\/shop_images\/one_tree_pleanted-02.jpg"
+            "pc_img": "shopify:\/\/shop_images\/1920-650_2x_8ee3bbb6-79ed-4002-9379-24b1f3ae1478.jpg",
+            "mb_img": "shopify:\/\/shop_images\/850-1212_2x_74f371a9-28fa-4c83-9521-683f475f78df.jpg"
           }
         }
       },
@@ -51,21 +51,18 @@
         "block_Wp7Xdm": {
           "type": "block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/1_a85c6f31-5d0c-4598-b3d8-e1912a689b38.png",
             "text": "Fast Shipping"
           }
         },
         "block_RtKmeT": {
           "type": "block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/3_5ccb1d30-a09f-49e0-b8a0-76855ea347d4.png",
             "text": "12-month Warranty"
           }
         },
         "block_dhHmgt": {
           "type": "block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/2_fb908d30-097d-4b35-9e6b-f9ce37f7dc96.png",
             "text": "Get 2% of Your Order Back"
           }
         }
@@ -88,9 +85,7 @@
             "product": "atomstack-a70-max",
             "tip": "$700 Off",
             "title": "AtomStack A70\/X70 Max Laser Cutter",
-            "desc": "Go Big, Earn Big.",
-            "pc_img": "shopify:\/\/shop_images\/PC-A70_Max-390-224.png",
-            "mb_img": "shopify:\/\/shop_images\/MB-A70_Max-302-163.png"
+            "desc": "Go Big, Earn Big."
           }
         },
         "column_CN4f3t": {
@@ -99,9 +94,7 @@
             "product": "atomstack-a70-pro",
             "tip": "$700 Off",
             "title": "AtomStack A70\/ X70 Pro Laser Cutter",
-            "desc": "New Beast, 70W Superior Cutting Power",
-            "pc_img": "shopify:\/\/shop_images\/A70_pro_1759eee2-e7d9-46d7-bc11-6be42875fc8a.png",
-            "mb_img": "shopify:\/\/shop_images\/A70_Pro_-302-163.png"
+            "desc": "New Beast, 70W Superior Cutting Power"
           }
         },
         "column_bpA3iG": {
@@ -110,9 +103,7 @@
             "product": "atomstack-ace-a40-pro-v2-laser-engraver",
             "tip": "$400 Off",
             "title": "AtomStack A40 Pro V2 Laser Engraver with F60 Air Assist Kit",
-            "desc": "Big Upgrade, Small Budget",
-            "pc_img": "shopify:\/\/shop_images\/PC-A40_Pro.png",
-            "mb_img": "shopify:\/\/shop_images\/MB-A40_Pro-302-163.png"
+            "desc": "Big Upgrade, Small Budget"
           }
         },
         "column_gVamHN": {
@@ -121,9 +112,7 @@
             "product": "atomstack-a24-ultra",
             "tip": "$350 Off",
             "title": "AtomStack A24\/X24 Ultra Optical Power 24W Unibody Frame Laser Engraver",
-            "desc": "Installation-free，Class 1 Safety ",
-            "pc_img": "shopify:\/\/shop_images\/A24_ultra_f38d1ace-bf78-4ea2-acf4-34994c29368e.png",
-            "mb_img": "shopify:\/\/shop_images\/A24_ultra-302-163.png"
+            "desc": "Installation-free，Class 1 Safety "
           }
         }
       },
@@ -154,8 +143,6 @@
         "grid_8nWf4i": {
           "type": "grid",
           "settings": {
-            "pc_img": "shopify:\/\/shop_images\/Ace-Pro-V2_b2953394-0c55-4440-a8d7-a53800271f3a.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Ace-Pro-V2_4328d4d4-a079-45f0-b1b6-748ce3fc4fff.jpg",
             "link": "\/products\/atomstack-ace-pro-v2",
             "btn_text": "Buy Now",
             "title": "Ace Pro V2",
@@ -165,8 +152,6 @@
         "grid_Hi9wML": {
           "type": "grid",
           "settings": {
-            "pc_img": "shopify:\/\/shop_images\/Ace-Pro-V2_1064nm_31be67f3-f171-444a-b8ca-2ab0c9200d89.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Ace-Pro-V2_1064nm_82a057f2-85a3-4d64-b045-d54b1460cd39.jpg",
             "link": "\/products\/atomstack-a20-pro-1064nm",
             "btn_text": "Buy Now",
             "title": "20W Fiber Laser",
