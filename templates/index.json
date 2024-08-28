@@ -86,7 +86,7 @@
           "type": "column",
           "settings": {
             "product": "atomstack-a70-max",
-            "tip": "$700 Off",
+            "tip": "€630 Off",
             "title": "AtomStack A70\/X70 Max Laser Cutter",
             "desc": "Go Big, Earn Big."
           }
@@ -95,7 +95,7 @@
           "type": "column",
           "settings": {
             "product": "atomstack-a70-pro",
-            "tip": "$700 Off",
+            "tip": "€630 Off",
             "title": "AtomStack A70\/ X70 Pro Laser Cutter",
             "desc": "New Beast, 70W Superior Cutting Power"
           }
@@ -104,16 +104,26 @@
           "type": "column",
           "settings": {
             "product": "atomstack-ace-a40-pro-v2-laser-engraver",
-            "tip": "$400 Off",
+            "tip": "€360 Off",
             "title": "AtomStack A40 Pro V2 Laser Engraver with F60 Air Assist Kit",
             "desc": "Big Upgrade, Small Budget"
+          }
+        },
+        "column_Hd8P9F": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "tip": "",
+            "title": "",
+            "desc": ""
           }
         },
         "column_gVamHN": {
           "type": "column",
           "settings": {
             "product": "atomstack-a24-ultra",
-            "tip": "$350 Off",
+            "tip": "€310 Off",
             "title": "AtomStack A24\/X24 Ultra Optical Power 24W Unibody Frame Laser Engraver",
             "desc": "Installation-free，Class 1 Safety "
           }
@@ -123,6 +133,7 @@
         "column_tXnrPw",
         "column_CN4f3t",
         "column_bpA3iG",
+        "column_Hd8P9F",
         "column_gVamHN"
       ],
       "settings": {
