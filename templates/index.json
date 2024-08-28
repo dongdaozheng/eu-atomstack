@@ -51,18 +51,21 @@
         "block_Wp7Xdm": {
           "type": "block",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/fast_shipping.png",
             "text": "Fast Shipping"
           }
         },
         "block_RtKmeT": {
           "type": "block",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/12-month_warranty.png",
             "text": "12-month Warranty"
           }
         },
         "block_dhHmgt": {
           "type": "block",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/cash_back.png",
             "text": "Get 2% of Your Order Back"
           }
         }
