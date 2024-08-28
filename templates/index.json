@@ -88,7 +88,9 @@
             "product": "atomstack-a70-max",
             "tip": "€630 Off",
             "title": "AtomStack A70\/X70 Max Laser Cutter",
-            "desc": "Go Big, Earn Big."
+            "desc": "Go Big, Earn Big.",
+            "pc_img": "shopify:\/\/shop_images\/A70_Max.png",
+            "mb_img": "shopify:\/\/shop_images\/A70_Max_d93aeccd-f48c-4a3e-bd8f-b1dbc48d23eb.png"
           }
         },
         "column_CN4f3t": {
@@ -97,7 +99,9 @@
             "product": "atomstack-a70-pro",
             "tip": "€630 Off",
             "title": "AtomStack A70\/ X70 Pro Laser Cutter",
-            "desc": "New Beast, 70W Superior Cutting Power"
+            "desc": "New Beast, 70W Superior Cutting Power",
+            "pc_img": "shopify:\/\/shop_images\/A70_pro_6fe79c04-a996-407a-aebe-c8d8b6461ec6.png",
+            "mb_img": "shopify:\/\/shop_images\/A70_Pro_379699c1-1f68-4b09-bd5f-50c5fdd949db.png"
           }
         },
         "column_bpA3iG": {
@@ -106,17 +110,9 @@
             "product": "atomstack-ace-a40-pro-v2-laser-engraver",
             "tip": "€360 Off",
             "title": "AtomStack A40 Pro V2 Laser Engraver with F60 Air Assist Kit",
-            "desc": "Big Upgrade, Small Budget"
-          }
-        },
-        "column_Hd8P9F": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "tip": "",
-            "title": "",
-            "desc": ""
+            "desc": "Big Upgrade, Small Budget",
+            "pc_img": "shopify:\/\/shop_images\/PC-A40_Pro.png",
+            "mb_img": "shopify:\/\/shop_images\/A40_Pro.png"
           }
         },
         "column_gVamHN": {
@@ -125,7 +121,9 @@
             "product": "atomstack-a24-ultra",
             "tip": "€310 Off",
             "title": "AtomStack A24\/X24 Ultra Optical Power 24W Unibody Frame Laser Engraver",
-            "desc": "Installation-free，Class 1 Safety "
+            "desc": "Installation-free，Class 1 Safety ",
+            "pc_img": "shopify:\/\/shop_images\/A24_ultra_32192763-9e65-4a17-8967-0e425d2ef72c.png",
+            "mb_img": "shopify:\/\/shop_images\/A24_ultra_df76a05c-1f61-4c6a-afdb-623f2e81ad13.png"
           }
         }
       },
@@ -133,7 +131,6 @@
         "column_tXnrPw",
         "column_CN4f3t",
         "column_bpA3iG",
-        "column_Hd8P9F",
         "column_gVamHN"
       ],
       "settings": {
