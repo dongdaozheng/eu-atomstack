@@ -84,45 +84,10 @@
             "image_uploader_label": "<p>Drag & Drop your image or <span style=\"text-decoration:underline\">Browse<\/span> <\/p>"
           }
         },
-        "estimated_delivery_date_plus_delivery_coder_theme_fDNCfx": {
-          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
-          "settings": {
-          }
-        },
         "liquid_mwMhRG": {
           "type": "liquid",
           "settings": {
             "liquid": "<style>\n.svg-icon{display:inline !important;\nfill:#2c2c2c;}\n.file-download {border: 1px solid #c2c2c2; border-radius:4px;color:#2c2c2c; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:23px;padding:4px 10px;margin-right:8px;display:inline-flex;align-items:center;}\n.file-download:hover {border: 1px solid #285ee6;color: #285ee6;}\n.file-download:hover .svg-icon{fill:#285EE6 !important;}\n<\/style>\n<div><a class=\"file-download\" href=\"{{ product.metafields.custom.user_guides.value }}\"><svg t=\"1712050487506\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"4428\" width=\"16\" height=\"16\"><path d=\"M332.32 464.112l144 160a47.952 47.952 0 0 0 71.36 0l144-160a48 48 0 0 0-71.36-64.224L560 466.912V176a48 48 0 1 0-96 0v290.912l-60.32-67.024a48 48 0 1 0-71.36 64.224zM880 560a48 48 0 0 0-48 48v192H192V608a48 48 0 1 0-96 0v240a48 48 0 0 0 48 48h736a48 48 0 0 0 48-48V608a48 48 0 0 0-48-48z\" p-id=\"4429\"><\/path><\/svg>&nbsp;A48 Pro User Guides<\/a>\n<a class=\"file-download\" href=\"{{ product.metafields.custom.installation_manual.value }}\"><svg t=\"1712050487506\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"4428\" width=\"16\" height=\"16\"><path d=\"M332.32 464.112l144 160a47.952 47.952 0 0 0 71.36 0l144-160a48 48 0 0 0-71.36-64.224L560 466.912V176a48 48 0 1 0-96 0v290.912l-60.32-67.024a48 48 0 1 0-71.36 64.224zM880 560a48 48 0 0 0-48 48v192H192V608a48 48 0 1 0-96 0v240a48 48 0 0 0 48 48h736a48 48 0 0 0 48-48V608a48 48 0 0 0-48-48z\" p-id=\"4429\"><\/path><\/svg>&nbsp;B3 Installation Manual<\/a>\n<\/div>"
-          }
-        },
-        "mega_better_price_app_block_wpPnNx": {
-          "type": "shopify:\/\/apps\/mega-better-price\/blocks\/app-block\/7a5fb689-a902-4695-8f78-75bdd89e88e7",
-          "settings": {
-            "buttonType": "link",
-            "buttonText": "Found a better price on another site?",
-            "text_align": "left",
-            "overlay": true,
-            "animation": false,
-            "fontColor": "#c82424",
-            "bannerBackground": "#1c8e6e",
-            "popupFooterColor": "#4a4a4a",
-            "fontSize": 14,
-            "buttonWidth": 100,
-            "minPriceEnabled": false,
-            "minPrice": 0
-          }
-        },
-        "f141e0c6-598b-4112-a2e9-ea1b020d3db9": {
-          "type": "shopify:\/\/apps\/loloyal-com\/blocks\/boom-embed\/930ac91f-2bf2-4655-9ba0-574771f782d6",
-          "disabled": true,
-          "settings": {
-            "bm_span_value": "Get: {Points} points by buying this item, every 100 points worth $2 USD.",
-            "bm_span_font_color": "#2e9e7b",
-            "bm_span_font_size": 15,
-            "bm_span_font_weight": "600",
-            "bm_div_justify_content": "center",
-            "bm_span_flash_status": "visible",
-            "bm_span_flash_color": "linear-gradient(180deg, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 0.5) 100%)"
           }
         },
         "list_delivery_free_return": {
@@ -160,10 +125,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "estimated_delivery_date_plus_delivery_coder_theme_fDNCfx",
         "liquid_mwMhRG",
-        "mega_better_price_app_block_wpPnNx",
-        "f141e0c6-598b-4112-a2e9-ea1b020d3db9",
         "list_delivery_free_return",
         "a33b0886-6286-4ee7-af11-9ff9ba4f6c4a"
       ],
@@ -194,6 +156,7 @@
     },
     "image_link_pAGF4i": {
       "type": "image-link",
+      "disabled": true,
       "settings": {
         "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
         "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
@@ -365,41 +328,12 @@
         "mobile_bottom_padding": 0
       }
     },
-    "slideshow_LGwREA": {
-      "type": "slideshow",
-      "blocks": {
-        "image_anfqcF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_8afa6f07-e3e0-4d9a-8879-61f3ee654ad0.jpg",
-            "text_position": "middle_center",
-            "mobile_text_position": "inherit",
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_anfqcF"
-      ],
+    "image_link_WjWMwm": {
+      "type": "image-link",
       "settings": {
-        "section_height": "auto",
-        "background_type": "full_width",
-        "transition_type": "sweep",
-        "autoplay": false,
-        "cycle_speed": 20,
-        "background": "rgba(0,0,0,0)"
+        "pc_img": "shopify:\/\/shop_images\/1920-650_2x_8ee3bbb6-79ed-4002-9379-24b1f3ae1478.jpg",
+        "mb_img": "shopify:\/\/shop_images\/850-1212_2x_74f371a9-28fa-4c83-9521-683f475f78df.jpg",
+        "link": ""
       }
     },
     "product-recommendations": {
@@ -426,7 +360,7 @@
     "image_link_pAGF4i",
     "video_carousel_Qrx4TN",
     "product-content",
-    "slideshow_LGwREA",
+    "image_link_WjWMwm",
     "product-recommendations"
   ]
 }
