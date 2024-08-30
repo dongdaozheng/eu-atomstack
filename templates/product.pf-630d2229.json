@@ -209,6 +209,7 @@
         "2204da78-b237-421b-a82c-400900893ea0",
         "liquid_kzUXxL"
       ],
+      "disabled": true,
       "custom_css": [
         "@media screen and (min-width: 1000px) {.product-tabs__tab-item-wrapper .collapsible {overflow: visible !important; } .product-content__tabs:only-child {width: calc( var(--grid-column-width) * 14 + var(--grid-gap) * 14 ) !important; }}",
         ".rte img:not([style*=\"float\"]) {margin: 10px 0 !important;}"
@@ -248,6 +249,7 @@
       "block_order": [
         "image_8iVG3D"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "auto",
         "background_type": "full_width",
@@ -266,6 +268,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "You may also like",
