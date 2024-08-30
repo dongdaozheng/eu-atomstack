@@ -29,8 +29,8 @@
       "blocks": {
         "image_fhPKen": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/back_to_school.png",
             "subheading": "",
             "title": "",
             "link_text": "",
