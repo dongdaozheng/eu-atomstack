@@ -127,6 +127,7 @@
     },
     "image_link_WfxBAj": {
       "type": "image-link",
+      "disabled": true,
       "settings": {
         "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
         "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
@@ -169,41 +170,12 @@
         "mobile_bottom_padding": 0
       }
     },
-    "slideshow_awWgNk": {
-      "type": "slideshow",
-      "blocks": {
-        "image_ip6zT6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_8afa6f07-e3e0-4d9a-8879-61f3ee654ad0.jpg",
-            "text_position": "middle_center",
-            "mobile_text_position": "inherit",
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_ip6zT6"
-      ],
+    "image_link_gjxntk": {
+      "type": "image-link",
       "settings": {
-        "section_height": "auto",
-        "background_type": "full_width",
-        "transition_type": "sweep",
-        "autoplay": false,
-        "cycle_speed": 20,
-        "background": "rgba(0,0,0,0)"
+        "pc_img": "shopify:\/\/shop_images\/1920-650_2x_8ee3bbb6-79ed-4002-9379-24b1f3ae1478.jpg",
+        "mb_img": "shopify:\/\/shop_images\/850-1212_2x_74f371a9-28fa-4c83-9521-683f475f78df.jpg",
+        "link": ""
       }
     },
     "product-recommendations": {
@@ -229,7 +201,7 @@
     "main",
     "image_link_WfxBAj",
     "product-content",
-    "slideshow_awWgNk",
+    "image_link_gjxntk",
     "product-recommendations"
   ]
 }
