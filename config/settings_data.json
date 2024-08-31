@@ -508,6 +508,12 @@
         "settings": {
           "storefrontAccessToken": "4742884d772115f7ecf0959992bcb39a"
         }
+      },
+      "11532412952436166569": {
+        "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-inject\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   }
