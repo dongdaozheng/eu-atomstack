@@ -171,6 +171,7 @@
     },
     "image_link_McCq88": {
       "type": "image-link",
+      "disabled": true,
       "settings": {
         "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
         "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
