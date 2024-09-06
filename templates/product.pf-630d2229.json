@@ -12,6 +12,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "smile_io_smile_points_on_product_page_PNpwpc": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#121212",
+            "secondary_colour": "#f8f8f8",
+            "should_show_icon": true,
+            "earning_rate": 2
+          }
+        },
         "meta": {
           "type": "meta",
           "settings": {
@@ -123,6 +132,7 @@
         }
       },
       "block_order": [
+        "smile_io_smile_points_on_product_page_PNpwpc",
         "meta",
         "image_QXiJpq",
         "20ec0a8d-8587-4a53-a47c-66726894bb7e",
