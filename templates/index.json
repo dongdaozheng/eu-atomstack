@@ -14,11 +14,10 @@
       "blocks": {
         "column_QtE6aL": {
           "type": "column",
-          "disabled": true,
           "settings": {
-            "link_list": "https:\/\/atomstack.com\/pages\/back-to-school",
-            "pc_img": "shopify:\/\/shop_images\/back_to_school-eu-01.jpg",
-            "mb_img": "shopify:\/\/shop_images\/back_to_sachool-eu-02.jpg"
+            "link_list": "",
+            "pc_img": "shopify:\/\/shop_images\/K60_hurrican-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/K60_hurricane-01.jpg"
           }
         },
         "column_m4C4rx": {
