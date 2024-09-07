@@ -1250,8 +1250,48 @@
         "added": "Hinzugefügt",
         "added_with_quantity": "{{quantity}} hinzugefügt",
         "removed": "Entfernt",
-        "removed_with_quantity": "{{quantity}} entfernt"
+        "removed_with_quantity": "{{quantity}} entfernt",
+        "updated_at": "Deine Bestellung wurde am {{date}} aktualisiert",
+        "returned": "Zurückgegeben",
+        "returned_with_quantities": "{{delta}} von {{total}} zurückgegeben",
+        "removed_with_quantities": "{{delta}} von {{total}} entfernt",
+        "return_line_item_removed": "Aus Rückgabe entfernt",
+        "return_line_item_removed_with_quantities": "{{delta}} aus der Rückgabe entfernt"
+      },
+      "taxes": "Steuern",
+      "shop_pay": {
+        "order_completed_with": "Bestellung abgeschlossen mit",
+        "learn_more": "Mehr Informationen"
+      },
+      "duties": "Zollgebühren",
+      "title": "Bestellung {{name}}",
+      "total": "Gesamt",
+      "unit_price": "({{price}}\/Stück)",
+      "pagination": {
+        "load_more": "Weitere laden",
+        "load_more_accessibility_label": "Weitere Artikel laden",
+        "loading_accessibility_label": "Artikel werden geladen"
+      },
+      "tip": "Trinkgeld",
+      "ok_duties_tooltip": "Diese Bestellung wird aus einem anderen Land versendet. Das heißt, Gebühren wurden zu deiner Gesamtbestellsumme hinzugefügt.",
+      "error_duties_tooltip": "Diese Bestellung wird aus einem anderen Land versendet. Das heißt, eventuell fallen Zollgebühren und Steuern für die Zustellung an.",
+      "zero_duties_tooltip": "Diese Bestellung wird aus einem anderen Land versendet. Auf Bestellungen mit diesem Bestellwert werden keine Zollgebühren erhoben.",
+      "login_to_view_all_order_details": "Logge dich ein, um alle Bestelldetails einzusehen.",
+      "log_in": "Anmelden",
+      "logged_in_account_no_permission_to_order": "Du bist als {{email}} eingeloggt. Dieses Konto hat keine Berechtigung, diese Bestellung zu verwalten.",
+      "log_in_to_a_different_account": "Bei einem anderen Benutzerkonto einloggen",
+      "fees": {
+        "restocking_fee": "Wiedereinlagerungsgebühr",
+        "return_shipping_fee": "Rücksendungsversand"
+      },
+      "vat_invoices": {
+        "title": "MwSt.-Rechnungen"
       }
+    },
+    "addresses": {
+      "add_button": "Adresse hinzufügen",
+      "add_button_text": "Hinzufügen",
+      "add_button_accessibility_label": "Adresse hinzufügen"
     }
   },
   "pagefly": {
