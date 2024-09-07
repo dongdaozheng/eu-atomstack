@@ -2335,6 +2335,44 @@
         "order_updated_on": "Votre commande a été mise à jour le %{last_edited_at}.",
         "order_review_and_pay": "Votre commande a été mise à jour. Vérifiez et payez pour confirmer votre commande.",
         "pay_now": "Payez maintenant"
+      },
+      "tips": {
+        "title": "Ajouter un pourboire",
+        "description": "Montrez votre soutien à l'équipe sur %{shop_name}",
+        "presets_description": "Sélectionnez un pourcentage de pourboire",
+        "custom_label": "Conseil personnalisé",
+        "add_tip": "Ajouter un pourboire",
+        "update_tip": "Conseil de mise à jour",
+        "message": "Merci, nous l'apprécions.",
+        "preset_label": "%{tip_percent}%",
+        "no_tip_label": "Aucun"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Achat %{product_name}",
+          "one": "Achetez %{product_name} et %{count} autre article",
+          "other": "Achetez %{product_name} et %{count} autres articles"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "jour",
+            "other": "%{count} jours"
+          },
+          "week": {
+            "one": "semaine",
+            "other": "%{count} semaines"
+          },
+          "month": {
+            "one": "mois",
+            "other": "%{count} mois"
+          },
+          "year": {
+            "one": "année",
+            "other": "%{count} ans"
+          }
+        }
       }
     },
     "sentence": {
