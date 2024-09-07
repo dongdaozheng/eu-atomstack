@@ -1154,7 +1154,51 @@
         },
         "maximum_discount_code_limit_reached": "Du hast die maximale Anzahl an Rabattcodes erreicht. Entferne einen bestehenden Code, um <strong style=\"text-transform:uppercase\">%{code}<\/strong> zu nutzen.",
         "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> funktioniert derzeit nicht. Wende dich an uns, um Hilfe zu erhalten.",
-        "due_on_fulfillment": "Fällig bei Fulfillment"
+        "due_on_fulfillment": "Fällig bei Fulfillment",
+        "gift_card_masked": "•••• %{last_characters}",
+        "subscriptions": "Abonnements",
+        "duties_label": "Zollgebühren",
+        "duties_and_taxes_label": "Zollgebühren und Steuern",
+        "error_duties_tooltip": "Diese Bestellung wird aus einem anderen Land versendet. Das heißt, eventuell fallen Zollgebühren und Steuern für die Zustellung an.",
+        "may_be_charged_on_delivery": "Können bei Zustellung erhoben werden",
+        "total_updated_label_with_price": "Neuer Gesamtpreis: %{totalPrice}",
+        "recurring_payments": "Wiederkehrende Zahlungen",
+        "recurring_total_multiple_label": "Diese Betrag hat wiederkehrende Gebühren für mehrere Artikel.",
+        "updated_shipping_method": "Aktualisierte Versandart: %{shipping_method}",
+        "deferred_total_due_date_label": "Gesamtbetrag am {{date}} fällig",
+        "full_price": "Voller Preis: %{price}",
+        "custom_discount": "Benutzerdefinierter Rabatt",
+        "expand_component_information": {
+          "one": "%{count} Artikel anzeigen",
+          "other": "%{count} Artikel anzeigen"
+        },
+        "collapse_component_information": {
+          "one": "%{count} Artikel ausblenden",
+          "other": "%{count} Artikel ausblenden"
+        },
+        "component_quantity_title": "%{quantity} × %{product_title}",
+        "discount_discovery": {
+          "add_code": "Rabatt hinzufügen",
+          "merchandise_quantity_label": {
+            "one": "%{count} Artikel",
+            "other": "%{count} Artikel"
+          }
+        },
+        "alternative_payment_currency_total": "Berechnet als %{amount_due}"
+      },
+      "shipping": {
+        "title": "Versand",
+        "shipping_method_title": "Versand",
+        "shipping_method_one_time_purchase_group_title": "Einmaliger Kauf",
+        "shipping_method_subscription_group_title": "Abonnement",
+        "delivery_title": "Lieferung",
+        "shipping_method_first_shipment_group_title": {
+          "one": "Erste Lieferung",
+          "other": "Erste Lieferungen"
+        },
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Wiederkehrende Lieferung"
+        }
       }
     },
     "sentence": {
