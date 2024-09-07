@@ -2474,7 +2474,37 @@
         "open_twenty_four_hours": "Ouvert 24h\/24 et 7j\/7",
         "title": "Point de retrait",
         "or": "ou",
-        "search_button": "Recherche"
+        "search_button": "Recherche",
+        "paginator": {
+          "header": {
+            "one": "Affichage de %{first} - %{last} de %{count} points",
+            "other": "Affichage de %{first} - %{last} de %{count} points"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} de %{count} points",
+            "other": "%{pickup_point_index} de %{count} points"
+          },
+          "selected_page": {
+            "one": "%{first} - %{last} de %{count} points",
+            "other": "%{first} - %{last} de %{count} points"
+          },
+          "next_accessibility_label": "Page suivante",
+          "previous_accessibility_label": "Page précédente"
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} point de retrait à proximité de chez vous",
+          "other": "%{count} points de retrait à proximité de chez vous"
+        },
+        "change": "Changement",
+        "waiting_on_pickup_point_location_notice": "Recherche de points de retrait...",
+        "address_label": "Adresse",
+        "selector_tabs": "Sélecteur de point de retrait",
+        "selector_tab_map": "Carte",
+        "selector_tab_list": "Liste",
+        "could_not_resolve_address": "Votre adresse n'a pas pu être localisée. Réessayez ou utilisez une autre adresse",
+        "no_pickup_points_near_you": "Aucun point de retrait trouvé à proximité de l'adresse sélectionnée",
+        "no_pickup_points_near_location": "Aucun point de retrait trouvé à proximité de chez vous",
+        "no_pickup_points_found": "Aucun point de retrait trouvé"
       }
     },
     "sentence": {
