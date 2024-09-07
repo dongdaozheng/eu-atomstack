@@ -539,7 +539,29 @@
             "email_required": "Un e-mail est requis lorsque la marchandise est achetée avec un abonnement.",
             "email_domain_is_invalid": "Ce domaine spécifié ne peut pas être résolu.",
             "missing_contact_method": "Il manque une méthode de contact valide.",
-            "checkout_completion_target_is_missing": "L’objectif d’achèvement du paiement est manquant."
+            "checkout_completion_target_is_missing": "L’objectif d’achèvement du paiement est manquant.",
+            "invalid_customer_profile": "Un profil client non valide a été fourni.",
+            "customer_profile_access_restricted": "Le paiement n'est pas autorisé à accéder au profil client.",
+            "checkout_completion_target_is_invalid_proc": "Objectif d'achèvement du paiement non valide."
+          },
+          "delivery": {
+            "local_pickup_no_delivery_strategy_available": "Aucune stratégie de livraison de ramassage locale disponible trouvée.",
+            "origin_location_id_required": "Un identifiant de lieu d'origine est requis lorsque le mode de livraison RETAIL est demandé.",
+            "invalid_origin_location_id": "Impossible de trouver un emplacement correspondant à l'ID de l'emplacement d'origine.",
+            "origin_location_id_not_allowed": "Les méthodes de livraison demandées ne prennent pas en charge l'ID de lieu d'origine.",
+            "auto_fulfill_not_allowed": "Cette session n'est pas autorisée à remplacer le comportement d'exécution.",
+            "auto_fulfill_required": "L'exécution automatique est requise lorsque le mode de livraison AU DÉTAIL est demandé.",
+            "prefetch_shipping_rates_used": "Les tarifs d'expédition préextraits ne devraient jamais renvoyer de tarifs.",
+            "fulfillment_constraints_not_satisfied": "Une ou plusieurs contraintes d'exécution n'ont pas été satisfaites.",
+            "must_fulfill_from_constraint_not_satisfied": "Les contraintes d'exécution ne sont pas satisfaites car les articles ne peuvent pas être exécutés à partir des emplacements requis.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "Les contraintes d'exécution ne sont pas satisfaites car les articles ne peuvent pas être exécutés à partir du même emplacement.",
+            "only_one_delivery_line_allowed": "Le panier ne doit avoir qu’une seule ligne de livraison.",
+            "wrong_number_of_delivery_lines": "Une ligne de livraison doit être précisée pour chaque groupe de marchandises.",
+            "external_delivery_promise_error": "Erreur de récupération d'une promesse de livraison externe.",
+            "options_instructions_invalid": "Les instructions spécifiées ne correspondent pas au modèle attendu.",
+            "destination_address_required": "Une adresse de destination est requise pour continuer.",
+            "pickup_points_unavailable": "Les points de retrait ne sont actuellement pas disponibles.",
+            "local_pickup_delivery_line_detail_changed": "La stratégie actuelle de livraison par ramassage local doit être modifiée afin de continuer."
           }
         }
       }
