@@ -490,6 +490,18 @@
           "try_again_later": "Vérifiez votre connexion ou fermez cette fenêtre et réessayez dans quelques instants."
         },
         "return_to_store": "Revenir à {{shopName}}"
+      },
+      "address_management": {
+        "confirm_address_deletion": "Etes-vous sûr de vouloir supprimer l'adresse {{address}}?"
+      },
+      "general": {
+        "page_title": "Vérifier",
+        "error_page_title": "Erreur",
+        "skip_to_content": "Passer au contenu",
+        "breadcrumb": "Fil d'Ariane",
+        "continue_button_label": "Continuer",
+        "complete_purchase_button_label": "Commande complète",
+        "pay_now_button_label": "Payez maintenant"
       }
     },
     "sentence": {
@@ -642,6 +654,22 @@
         "updated": "Adresse mise à jour avec succès.",
         "error_updating": "Erreur lors de la mise à jour de l'adresse",
         "created": "Adresse créée avec succès"
+      },
+      "order": {
+        "financial_status": {
+          "pending": "En attente",
+          "paid": "Payé",
+          "unpaid": "Non rémunéré",
+          "voided": "Annulé",
+          "partially_paid": "Partiellement payé",
+          "partially_refunded": "Partiellement remboursé",
+          "refunded": "Remboursé",
+          "expired": "Expiré"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Réalisé",
+          "complete": "Complet"
+        }
       }
     },
     "filters": {
@@ -704,6 +732,12 @@
         "confirmation": "Vous vous êtes désabonné de notre liste de diffusion.",
         "disclaimer": "Vous ne recevrez plus de mises à jour marketing de notre part. Vous pouvez vous réabonner à tout moment.",
         "preview": "Vous avez un aperçu de ce que les clients verront lorsqu'ils se désabonneront."
+      }
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "immediately": "Prêt à être récupéré maintenant",
+        "next_day": "Prêt à être récupéré le lendemain"
       }
     }
   },
