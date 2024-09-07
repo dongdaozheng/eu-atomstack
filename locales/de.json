@@ -2139,7 +2139,33 @@
         "customer_information_hidden_fields_message": "Logge dich ein, um alle Kundeninformationen zu sehen.",
         "cancelled_title": "Deine Bestellung wurde storniert",
         "cancelled_description": "Deine Bestellung wurde am %{date} storniert. Kontaktiere uns, wenn du Fragen hast.",
-        "let_us_know": "Lass es uns wissen"
+        "let_us_know": "Lass es uns wissen",
+        "order_number_label": "Bestellnummer",
+        "customer_validation_error": "Gib eine gültige E-Mail-Adresse oder Bestellnummer ein.",
+        "customer_validation_error_phone": "Gib eine gültige Telefon- oder Bestellnummer ein.",
+        "login": "Anmelden",
+        "unfulfilled_items_title": "Vorbereitung auf den Versand",
+        "unfulfilled_items_description": "Wir bereiten diese Artikel gerade für den Versand vor.",
+        "marker": {
+          "current": "Derzeitiger Standort der Sendung",
+          "shipping": "Lieferadresse"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Derzeitiger Standort der Sendung",
+          "shipping": "Abholort"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Artikel in dieser Lieferung",
+          "unfulfilled_table_title": "Artikel in der Versandvorbereitung",
+          "product_image_label": "Produktbild",
+          "description_label": "Beschreibung",
+          "quantity_label": "Anzahl"
+        },
+        "order_updates_description_missing": "Du erhältst keine Versandaktualisierungen.",
+        "order_updates_subscribe_to_email_notifications": "Erhalte Versandaktualisierungen via E-Mail.",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Du erhältst Versandaktualisierungen per E-Mail oder SMS.",
+        "order_updates_subscribe_to_phone_notifications": "Erhalte per SMS Versandaktualisierungen.",
+        "order_updates_submit_subscription": "Eingabe"
       }
     },
     "sentence": {
