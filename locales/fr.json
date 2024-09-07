@@ -653,7 +653,10 @@
       "address": {
         "updated": "Adresse mise à jour avec succès.",
         "error_updating": "Erreur lors de la mise à jour de l'adresse",
-        "created": "Adresse créée avec succès"
+        "created": "Adresse créée avec succès",
+        "error_creating": "Erreur lors de la création de l'adresse.",
+        "deleted": "Adresse supprimée avec succès",
+        "error_deleting": "Erreur lors de la suppression de l'adresse."
       },
       "order": {
         "financial_status": {
@@ -664,11 +667,36 @@
           "partially_paid": "Partiellement payé",
           "partially_refunded": "Partiellement remboursé",
           "refunded": "Remboursé",
-          "expired": "Expiré"
+          "expired": "Expiré",
+          "authorized": "Autorisé"
         },
         "fulfillment_status": {
           "fulfilled": "Réalisé",
-          "complete": "Complet"
+          "complete": "Complet",
+          "partial": "Partiel",
+          "unfulfilled": "Insatisfait",
+          "restocked": "Réapprovisionné"
+        },
+        "transaction_status": {
+          "success": "Succès",
+          "pending": "En attente",
+          "failure": "Échec",
+          "error": "Erreur"
+        },
+        "cancel_reason": {
+          "declined": "Paiement refusé",
+          "inventory": "Articles indisponibles",
+          "fraud": "Commande frauduleuse"
+        },
+        "not_available": "Cette commande n'est pas disponible"
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "Ajouté %{delta}",
+          "increment_item": "Ajouté %{delta}",
+          "decrement_item": "Supprimé %{delta} de %{total}",
+          "decrement_fulfilled_line_item": "Renvoyé %{delta} sur %{total}",
+          "decrement_return_line_item": "Supprimé %{delta} du retour"
         }
       }
     },
