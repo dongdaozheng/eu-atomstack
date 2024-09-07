@@ -1513,8 +1513,62 @@
         "order_timeline": {
           "expand_events_label": "Details anzeigen",
           "expand_events_accessibility_label": "Details zu Bestellentwürfen anzeigen",
-          "hide_events_label": "Details ausblenden"
+          "hide_events_label": "Details ausblenden",
+          "hide_events_accessibility_label": "Details zu Bestellentwürfen ausblenden"
+        },
+        "subtitle": "Gesendet am {{date}}",
+        "title": "Bestellung {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Diese Zahlungsmethode steht bei zukünftigen Käufen an diesem Standort nicht mehr zur Verfügung.",
+          "description_with_replacement": "Wenn du diese Zahlungsmethode löschst, hat dies Auswirkungen auf vorautorisierte Zahlungen für diesen Standort. Ersetze sie mit einer alternativen Zahlungsmethode, um weiterhin Bestellungen zu erhalten."
+        },
+        "payment_details": {
+          "order_label": "Bestellung {{name}}",
+          "draft_label": "Bestellentwurf {{name}}"
         }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Bestellnummer hinzufügen",
+        "add_modal_title": "Bestellnummer hinzufügen",
+        "cancel": "Stornieren",
+        "close_modal_accessibility_label": "Bestellnummer-Modal schließen",
+        "discard": "Verwerfen",
+        "discard_changes_modal_title": "Änderungen verwerfen?",
+        "edit_accessibility_label": "Bestellnummer bearbeiten",
+        "edit_modal_title": "Bestellnummer bearbeiten",
+        "empty_state": "Keine Bestellnummer",
+        "modal_po_number_input_label": "Bestellnummer",
+        "modal_po_number_input_max_length_error": "Bestellnummern dürfen maximal {{maxLength}} Zeichen enthalten.",
+        "save": "Speichern",
+        "title": "Bestellnr. {{poNumber}}"
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "Beim Löschen dieser Adresse ist ein Problem aufgetreten. Versuche es erneut oder lade die Seite neu."
+      },
+      "addresses_loading_issue": {
+        "description": "Verbindungsfehler. Überprüfe deine Internetverbindung und versuche es erneut."
+      },
+      "banner_title": {
+        "one": "Es liegt {{count}} Fehler vor",
+        "other": "Es liegen {{count}} Fehler vor"
+      },
+      "failed_address_creation": {
+        "description": "Beim Erstellen deiner Adresse ist ein Problem aufgetreten. Versuche, diese Seite zu aktualisieren oder überprüfe deine Internetverbindung."
+      },
+      "failed_address_update": {
+        "description": "Beim Aktualisieren deiner Adresse ist ein Problem aufgetreten. Versuche, diese Seite zu aktualisieren oder überprüfe deine Internetverbindung."
+      },
+      "load_orders_error": {
+        "title": "Bestellungen können nicht geladen werden",
+        "description": "Versuche es erneut oder komme später zurück.",
+        "retry_button": "Erneut versuchen"
+      },
+      "load_paypal_error": {
+        "description": "Beim Laden von PayPal ist ein Fehler aufgetreten. Bitte versuche es erneut."
       }
     }
   },
