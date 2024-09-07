@@ -537,5 +537,15 @@
       "signup_form_success": "We will send you an email right before we open!",
       "password_link": "Enter using password"
     }
+  },
+  "customer_accounts": {
+    "order_details": {
+      "payment": {
+        "transactions": {
+          "details": "Détails",
+          "payment_details": "Détails de paiement"
+        }
+      }
+    }
   }
 }
