@@ -591,6 +591,60 @@
           "forgot_your_store_link_text": "\"Shop vergessen\"",
           "add_storefront": "Du kannst deine Website einrichten, indem du den Onlineshop-Kanal in deinem %{admin_link} hinzufügst. Wenn du Probleme beim Anmelden in deinem Shop hast, versuche es auf der Seite %{forgot_your_store_link}.",
           "admin_link_text": "Adminbereich"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Persönlich verkaufen",
+            "caption": "Erhalte Zugriff auf die Funktionen, die du brauchst, um dein Einzelhandelsgeschäft zu führen, ob du gerade erst beginnst oder dich vergrößern möchtest.",
+            "link_text": "Kostenlosen Test starten"
+          },
+          "open_a_store": {
+            "header": "Einen neuen Shopify-Shop eröffnen",
+            "caption": "Starte einen 3-tägigen kostenlosen Test und zahle danach 1 USD\/Monat für die nächsten drei Monate.",
+            "link_text": "Jetzt registrieren"
+          },
+          "editions": {
+            "header": "Shopify Editions ansehen",
+            "caption": "Mit über 100 Produktaktualisierungen kannst du produktiver, kreativer und leistungsstärker als Händler agieren, als du es dir jemals vorgestellt hast.",
+            "link_text": "Letzte Editions ansehen"
+          },
+          "store_owner": {
+            "header": "Bist du der Shop-Inhaber?",
+            "caption": "Hast du Probleme beim Anmelden in deinem Shop? Probiere die Funktion %{forgot_your_store_link} aus. Wenn du deinen Shop erneut aktivieren möchtest, wende dich an den %{shopify_support_link}.",
+            "shopify_support_link_text": "Shopify Support"
+          }
+        }
+      }
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Fehler beim Zurücksetzen des Passworts",
+        "no_account_found": "Kein Konto mit dieser E-Mail gefunden.",
+        "invalid_credentials": "Die E-Mail-Adresse oder das Passwort ist falsch.",
+        "denylisted_reset_password": "Auf dein Konto konnte nicht zugegriffen werden, da das aktuelle Passwort nicht sicher ist. Du erhältst eine E-Mail mit der Aufforderung, dein Passwort zu aktualisieren.",
+        "signup_disabled": "Erstellung von Kundenkonten wurde deaktiviert."
+      },
+      "address": {
+        "updated": "Adresse erfolgreich aktualisiert.",
+        "error_updating": "Fehler beim Aktualisieren der Adresse",
+        "created": "Adresse erfolgreich erstellt",
+        "error_creating": "Fehler beim Erstellen der Adresse.",
+        "deleted": "Adresse erfolgreich gelöscht",
+        "error_deleting": "Fehler beim Löschen der Adresse."
+      },
+      "order": {
+        "not_available": "Diese Bestellung ist nicht verfügbar",
+        "financial_status": {
+          "authorized": "Autorisiert"
+        }
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "%{delta} hinzugefügt",
+          "increment_item": "%{delta} hinzugefügt",
+          "decrement_item": "%{delta} von %{total} entfernt",
+          "decrement_fulfilled_line_item": "%{delta} von %{total} zurückgegeben",
+          "decrement_return_line_item": "%{delta} aus der Rückgabe entfernt"
         }
       }
     }
