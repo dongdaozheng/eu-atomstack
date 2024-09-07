@@ -746,7 +746,17 @@
         "payment_flexibility_terms_id_mismatch": "Incompatibilité d'identifiant des conditions de flexibilité de paiement",
         "order_edit_banner_single_item_return_line_item_removed": "Supprimé du retour",
         "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} supprimé du retour",
-        "order_edit_banner_updated_order_label": "Commande mise à jour"
+        "order_edit_banner_updated_order_label": "Commande mise à jour",
+        "alternative_payment_currency_total_notice": "Remarque : vous serez facturé %{amount_due}.",
+        "alternative_payment_currency_total_manual_payment_notice": "Remarque : le total converti est %{amount_due}.",
+        "waiting_on_taxes_message": "Si vos impôts ne sont pas calculés dans les prochaines secondes, actualisez la page.",
+        "waiting_on_taxes_notice": "Calcul des impôts",
+        "payment_method": "Mode de paiement",
+        "expired_payment_method": "Le mode de paiement sélectionné a expiré",
+        "payment_method_update_failed": "La mise à jour du mode de paiement a échoué.",
+        "proposed_gateway_unavailable": "La passerelle de paiement proposée n'est pas disponible",
+        "pay_in_installments_split_pay_short": "4 versements de %{amount}",
+        "gift_cards_unavailable": "Votre carte cadeau ne peut pas être appliquée à cette commande et a été supprimée"
       },
       "shipping": {
         "split_cart_shipping_label": "Méthode",
