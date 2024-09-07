@@ -1899,7 +1899,28 @@
         "redirecting_title": "Redirection…",
         "redirecting_notice": "Attendez pendant que nous vous redirigeons.",
         "redirecting_to_bank": "Redirection vers {{bank}}",
-        "complete_your_purchase_title": "Finalisez votre achat"
+        "complete_your_purchase_title": "Finalisez votre achat",
+        "continue_to_payment_gateway_notice": "Continuez vers le paiement pour ajouter vos informations de paiement.",
+        "continue_to_payment_gateway_button_label": "Continuer le paiement",
+        "complete_your_purchase_title_error": "Corrigez vos informations de paiement",
+        "continue_to_payment_gateway_notice_error": "Vos informations de paiement n'ont pas pu être vérifiées.",
+        "continue_to_payment_gateway_button_label_error": "Mettre à jour les informations de paiement",
+        "page_title": "Ordre de traitement",
+        "title": "Ordre de traitement",
+        "your_order_has_been_received_title": "Merci pour votre commande",
+        "you_will_receive_confirmation": "Nous recevons beaucoup de commandes en ce moment. Vous devriez bientôt recevoir une confirmation par e-mail ou par SMS. Si vous ne le recevez pas dans l'heure qui suit, faites-le-nous savoir.",
+        "you_will_not_be_charged": "Vous ne serez pas encore facturé",
+        "wait": {
+          "short": "Votre commande est en cours de traitement.",
+          "medium": {
+            "one": "Votre commande est en cours de traitement. Le temps d'attente estimé est de %{count} minute.",
+            "other": "Votre commande est en cours de traitement. Le temps d'attente estimé est de %{count} minutes."
+          },
+          "long": "Vous recevrez un e-mail dès que votre commande sera traitée. Le volume de commandes est actuellement élevé.",
+          "no_auto_refresh_html": "Si vous n'êtes pas automatiquement redirigé, %{link}.",
+          "refresh_this_page": "rafraîchir cette page"
+        },
+        "action_required": "Action requise"
       },
       "alternative_payment_method_banner": {
         "express_checkout": "Paiement express",
@@ -1909,6 +1930,11 @@
         "or_pay_with_credit_card": "Ou payer par carte de crédit",
         "show_more_options": "Afficher plus d'options",
         "hide_more_options": "Masquer plus d'options"
+      },
+      "failed_payment": {
+        "page_title": "Le paiement n'a pas pu être traité",
+        "title": "Le paiement n'a pas pu être traité",
+        "payment_not_processed_title": "Votre paiement n'a pas pu être traité"
       }
     },
     "sentence": {
