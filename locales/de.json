@@ -1569,7 +1569,53 @@
       },
       "load_paypal_error": {
         "description": "Beim Laden von PayPal ist ein Fehler aufgetreten. Bitte versuche es erneut."
+      },
+      "no_access": {
+        "back_to_authentication_link": "Bei einem anderen Konto einloggen",
+        "description": "Du bist bei {{shopName}} nicht als B2B-Kunde registriert",
+        "title": "Kein Zugriff"
+      },
+      "no_access_to_locations": {
+        "description": "Du hast keinen Zugriff auf Standorte"
+      },
+      "not_found": {
+        "description": "Überprüfe die URL oder versuche es in ein paar Minuten erneut.",
+        "title": "Beim Laden dieser Seite ist ein Problem aufgetreten"
+      },
+      "order_not_found": {
+        "description": "Diese Bestellung existiert nicht oder du hast keine Berechtigung, sie anzuzeigen.",
+        "title": "Bestellung nicht gefunden"
+      },
+      "profile_update_error": {
+        "description": "Beim Aktualisieren deines Profils ist ein Problem aufgetreten. Versuche, diese Seite zu aktualisieren oder überprüfe deine Internetverbindung."
+      },
+      "logout_everywhere": {
+        "description": "Beim Abmelden ist etwas schiefgelaufen. Bitte versuche es erneut."
+      },
+      "retry_action_label": "Erneut versuchen",
+      "load_extension_error": {
+        "title": "Fehler",
+        "description": "Aktualisiere diese Seite oder versuche es in ein paar Minuten noch einmal.",
+        "refresh_button": "Seite neu laden"
       }
+    },
+    "payment_methods": {
+      "title": "Zahlungsmethoden",
+      "add_payment_method_button": "Zahlungsmethode hinzufügen",
+      "add_payment_method_banner": "Zahlungsmethode für schnelleren Checkout oder vorab autorisierte Dienste hinzufügen",
+      "edit_payment_method_button_accessibility_label": "{{paymentMethodName}} mit den letzten Ziffern {{lastDigits}} bearbeiten",
+      "edit_payment_method_brand_button_accessibility_label": "{{paymentMethodName}} bearbeiten",
+      "no_payment_methods_banner": "Keine Zahlungsmethoden hinzugefügt",
+      "delete_payment_method_button": "Löschen",
+      "delete_payment_method_button_accessibility_label": "{{paymentMethodName}} löschen",
+      "back_button": "Zurück",
+      "back_button_accessibility_label": "Zurück zu {{paymentMethodStepTitle}}",
+      "generic_card": "Karte",
+      "expires_soon": "Diese Karte läuft bald ab",
+      "expired": "Diese Karte ist abgelaufen",
+      "card_update_consent": "Diese Zahlungsmethode wird für zukünftige Käufe gespeichert.",
+      "expiration_warning_button_accessibility_label": "Ablaufwarnung für {{paymentMethodName}} mit den letzten Ziffern {{lastDigits}} anzeigen",
+      "default": "Standard"
     }
   },
   "pagefly": {
