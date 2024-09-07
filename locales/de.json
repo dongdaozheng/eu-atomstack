@@ -500,7 +500,45 @@
         "continue_to_payment_method": "Weiter zur Zahlung",
         "continue_to_review": "Bestellung überprüfen",
         "back_to_cart": "Zurück zum Warenkorb",
-        "back_to_contact_information": "Zurück zu den Informationen"
+        "back_to_contact_information": "Zurück zu den Informationen",
+        "back_to_shipping_method": "Zurück zum Versand",
+        "back_to_payment_method": "Zurück zur Zahlung",
+        "choose_shipping_method": "Wähle eine Versandart aus",
+        "choose_payment_method": "Wähle eine Zahlungsmethode aus",
+        "choose_billing_address": "Wähle eine Rechnungsadresse aus",
+        "contact_us_html": "Kontaktiere uns für weitere Informationen",
+        "autocomplete_title": "Vorschläge",
+        "autocomplete_single_item": "1 Option verfügbar",
+        "autocomplete_multi_item": "{{number}} Optionen verfügbar",
+        "autocomplete_selection": "{{number}} von {{total}}",
+        "autocomplete_close": "Vorschläge schließen",
+        "forwarding_indicator": {
+          "new_window": "Öffnet ein neues Fenster.",
+          "external": "Öffnet externe Webseite.",
+          "external_and_new_window": "Öffnet externe Webseite in einem neuen Fenster."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Checkout"
+        },
+        "tooltip_accessibility_label": "Mehr Informationen",
+        "errors": {
+          "session_identifier_not_unique_error": "Mit deiner Bestellung ist etwas schiefgelaufen, bitte versuche erneut auszuchecken.",
+          "line_item_limit_reached": "Die maximale Anzahl an Positionen wurde erreicht.",
+          "only_empty_terms_accepted": "Für diese Bedingung sind nur leere Eingaben gültig.",
+          "session_is_already_finished": "Diese Checkout-Sitzung wurde bereits abgeschlossen.",
+          "merchandise": {
+            "only_value_constraint": "In der Merchandise-Artikel-Eingabe sind nur exakte Werte zulässig.",
+            "merchandise_not_found": "Produkt wurde nicht gefunden.",
+            "merchandise_variant_not_found": "Produktvariante wurde nicht gefunden.",
+            "merchandise_not_applicable": "Die Produktvariante kann nicht gekauft werden.",
+            "bundle_products_not_supported_for_b2b": "Gebündelte Artikel können nicht zu B2B-Bestellungen für diesen Standort hinzugefügt werden.",
+            "gift_card_quantity_mismatch": "Bei der Angabe von Geschenkgutscheincodes müssen die Positionsmenge und die Anzahl der Geschenkgutscheincodes übereinstimmen.",
+            "gift_card_not_supported": "Geschenkgutscheine werden in diesem Checkout nicht unterstützt.",
+            "gift_card_not_unique": "Der Geschenkgutschein mit dem Code {{code}} liegt in diesem Checkout mehr als einmal vor. Die Codes werden vor dem Vergleich formatiert.",
+            "gift_card_used": "Der Geschenkgutscheincode {{code}} ist bereits einem Geschenkgutschein zugewiesen. Die Codes werden vor dem Vergleich formatiert."
+          }
+        },
+        "qr_code": "QR-Code"
       }
     },
     "sentence": {
