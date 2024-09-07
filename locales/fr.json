@@ -525,7 +525,23 @@
           "step_one": "%{shop_name} - Paiement"
         },
         "tooltip_accessibility_label": "Plus d'informations",
-        "qr_code": "Code QR"
+        "qr_code": "Code QR",
+        "errors": {
+          "merchandise": {
+            "title_empty": "Le titre de la marchandise est vide."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "Le contact de l’entreprise n’a pas accès à l’entreprise.",
+            "customer_account_required": "Le client doit se connecter pour continuer.",
+            "company_location_required": "Le client doit choisir l'emplacement de l'entreprise pour continuer.",
+            "contact_info_does_not_match_customer_account": "Les informations client spécifiées doivent correspondre au compte client connecté.",
+            "phone_number_does_not_match_expected_pattern": "Le numéro de téléphone spécifié ne correspond pas au modèle attendu.",
+            "email_required": "Un e-mail est requis lorsque la marchandise est achetée avec un abonnement.",
+            "email_domain_is_invalid": "Ce domaine spécifié ne peut pas être résolu.",
+            "missing_contact_method": "Il manque une méthode de contact valide.",
+            "checkout_completion_target_is_missing": "L’objectif d’achèvement du paiement est manquant."
+          }
+        }
       }
     },
     "sentence": {
@@ -771,7 +787,10 @@
         "one": "Recherche : %{count} résultat trouvé pour \"%{terms}\"",
         "other": "Recherche : %{count} résultats trouvés pour \"%{terms}\""
       },
-      "collections": "Collections"
+      "collections": "Collections",
+      "not_found": "404 introuvable",
+      "challenge": "Défi",
+      "checkpoint": "Point de contrôle"
     },
     "email_marketing": {
       "open_tracking": {
@@ -828,7 +847,18 @@
     },
     "checkpoint": {
       "error": "La validation du captcha a échoué",
+      "submit_button_text": "Soumettre",
+      "message": "Résolvez Captcha pour continuer"
+    },
+    "challenge": {
+      "message": "Pour continuer, faites-nous savoir que vous n'êtes pas un robot.",
+      "error": "Votre réponse n'était pas correcte, veuillez réessayer.",
       "submit_button_text": "Soumettre"
+    },
+    "forms_captcha": {
+      "badge_text": "Protégé par hCaptcha",
+      "terms_link_text": "Termes",
+      "privacy_link_text": "Confidentialité"
     }
   },
   "pagefly": {
