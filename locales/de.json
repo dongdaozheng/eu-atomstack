@@ -1841,7 +1841,40 @@
         "other": "Cluster mit {{number}} Markern"
       },
       "expandSheet": "Erweitern",
-      "qrCode": "QR-Code"
+      "qrCode": "QR-Code",
+      "addFile": "Datei hinzufügen",
+      "dropzoneInvalidFileType": "Dateityp wird nicht unterstützt",
+      "dropzoneDraggedOver": "Datei zum Hochladen ablegen"
+    },
+    "profile_preview_bar": {
+      "customize_button": "Anpassen",
+      "hide_bar": "Leiste ausblenden",
+      "navigate_to_admin": "Zum Adminbereich navigieren",
+      "previewing": "Du siehst folgende Vorschau:",
+      "saved_at": "Gespeichert am {{date}} um {{time}}",
+      "viewing": "Du siehst Folgendes:",
+      "close_preview": "Vorschau schließen",
+      "not_available": "Profildaten nicht verfügbar",
+      "actions_button": "Aktionen"
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "log_out_everywhere": {
+        "title": "Überall abmelden",
+        "description": "Wenn du dein Gerät verloren hast und Bedenken bezüglich der Sicherheit hast, melde dich überall ab, um die Sicherheit deines Kontos sicherzustellen.",
+        "button": "Überall abmelden",
+        "warning_message": "Du wirst auch auf diesem Gerät abgemeldet."
+      },
+      "loading_accessibility_message": "Einstellungsseite laden"
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "Erweiterung {{extensionName}} auswählen",
+        "unselect": "Auswahl der Erweiterung {{extensionName}} aufheben",
+        "move_down": "Erweiterung zur nächsten Position verschieben",
+        "move_up": "Erweiterung zur vorherigen Position verschieben",
+        "remove": "Erweiterung entfernen"
+      }
     }
   },
   "pagefly": {
