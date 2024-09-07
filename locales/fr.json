@@ -2539,6 +2539,22 @@
         },
         "all_violations_content": "Appelez-nous ou {{emailLink}} pour mettre à jour ces informations et finaliser votre commande :",
         "all_violations_email_link": "e-mail"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "Il y a %{count} magasin avec un stock proche de %{address}",
+          "other": "Il y a %{count} magasins avec un stock proche de %{address}"
+        },
+        "toggle_location": "Changer ma position",
+        "or": "OU",
+        "cancel": "Annuler",
+        "your_location": "votre emplacement",
+        "search_button": "Trouver des magasins",
+        "no_stores_found": "Aucun magasin trouvé",
+        "could_not_resolve_address": "Votre adresse n'a pas pu être localisée. Réessayez ou utilisez une autre adresse",
+        "paginator": {
+          "accessibility_label": "Pagination de collecte locale"
+        }
       }
     },
     "sentence": {
