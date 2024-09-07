@@ -539,7 +539,20 @@
         "subscription_delivery_description": {
           "subscription_delivery_frequency": {
             "year": {
-              "other": "tous les %{count} ans"
+              "other": "tous les %{count} ans",
+              "one": "chaque année"
+            },
+            "day": {
+              "one": "tous les jours",
+              "other": "tous les %{count} jours"
+            },
+            "week": {
+              "one": "chaque semaine",
+              "other": "toutes les %{count} semaines"
+            },
+            "month": {
+              "one": "chaque mois",
+              "other": "tous les %{count} mois"
             }
           },
           "multiple_subscriptions_shipping_price_label": "%{shipping_price} par livraison",
@@ -550,8 +563,23 @@
           "prepaid_initial_order_discounted_with_renewal": "Premiers frais d'expédition %{discounted_shipping_price} %{prepaid_delivery_frequency}, puis %{shipping_price} %{billing_cycle}",
           "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Premiers frais d'expédition %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), puis %{shipping_price} %{billing_cycle}",
           "shipping_price_included": "Compris",
-          "recurring_order_shipping_price": "suivi de %{recurring_order_shipping_price}"
-        }
+          "recurring_order_shipping_price": "suivi de %{recurring_order_shipping_price}",
+          "prepaid_delivery_frequency": {
+            "one": "pour %{count} livraison",
+            "other": "pour %{count} livraisons"
+          }
+        },
+        "local_delivery": "Livraison locale",
+        "address_update": "Mettre à jour l'adresse",
+        "shipping_address_title": "Envoyez à",
+        "add_address": "Utiliser une autre adresse",
+        "add_delivery_instructions": "Ajouter des instructions de livraison",
+        "edit": "Modifier",
+        "delete": "Supprimer",
+        "address_more": "Plus d'actions pour cette adresse",
+        "address_edit": "Modifier l'adresse",
+        "address_delete": "Supprimer l'adresse",
+        "address_confirm": "Etes-vous sûr de vouloir supprimer cette adresse de votre compte?"
       },
       "shop_pay_external": {
         "errors": {
