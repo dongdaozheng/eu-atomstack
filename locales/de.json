@@ -828,11 +828,55 @@
           "four_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}, {{lineItemName4}} Menge {{lineItemQuantity4}}",
           "five_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}, {{lineItemName4}} Menge {{lineItemQuantity4}}, {{lineItemName5}} Menge {{lineItemQuantity5}}",
           "six_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}, {{lineItemName4}} Menge {{lineItemQuantity4}}, {{lineItemName5}} Menge {{lineItemQuantity5}}, {{lineItemName6}} Menge {{lineItemQuantity6}}",
-          "six_and_more_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}, {{lineItemName4}} Menge {{lineItemQuantity4}}, {{lineItemName5}} Menge {{lineItemQuantity5}}, {{lineItemName6}} Menge {{lineItemQuantity6}} und mehr"
+          "six_and_more_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}, {{lineItemName4}} Menge {{lineItemQuantity4}}, {{lineItemName5}} Menge {{lineItemQuantity5}}, {{lineItemName6}} Menge {{lineItemQuantity6}} und mehr",
+          "view_order_details": "Bestelldetails anzeigen",
+          "previous": "Vorherige",
+          "next": "Weiter"
         },
         "more_than_four_products_accessibility_label": "Bestellung beinhaltet {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}} und {{numberOfAdditionalProducts}} weitere Produkte",
         "plus_more_products": "+{{numberOfAdditionalProducts}} Produkte",
-        "plus_more": "+{{numberOfAdditionalProducts}}"
+        "plus_more": "+{{numberOfAdditionalProducts}}",
+        "items": {
+          "one": "{{count}} Artikel",
+          "other": "{{count}} Artikel"
+        },
+        "list_view": "Listenansicht anzeigen",
+        "order_link": "Bestellung {{name}} ansehen",
+        "order_number": "Bestellung {{name}}",
+        "no_filtered_results_description": "Filter entfernen oder anpassen, um deine Bestellungen zu sehen",
+        "no_filtered_results_title": "Keine Filterergebnisse",
+        "orders_title": "Bestätigt",
+        "pagination": {
+          "nav_accessibility_label": "Schaltflächen zur Bestellnavigation",
+          "next": "Weiter",
+          "next_accessibility_label": "Nächste Bestellungen",
+          "previous": "Zurück",
+          "previous_accessibility_label": "Vorherige Bestellungen",
+          "load_more": "Weitere laden",
+          "load_more_accessibility_label": "Weitere Bestellungen laden"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Bestellung anzeigen für Details",
+            "estimated_delivery": "Erwartet am {{date}}",
+            "last_updated": "Zuletzt aktualisiert am {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Vorauss. Zustellung am {{date}}",
+            "last_updated": "{{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "Zahlung überfällig",
+            "due": "Zahlung fällig am {{date}}",
+            "due_today": "Zahlung heute fällig",
+            "due_without_date": "Zahlung fällig",
+            "due_on_fulfillment": "Zahlung wird bei Fulfillment fällig",
+            "pay_to_confirm": "Zur Bestätigung zahlen",
+            "payment_not_due": "Die Zahlung ist noch nicht fällig"
+          }
+        }
       }
     },
     "date": {
