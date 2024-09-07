@@ -2202,12 +2202,42 @@
           "title": "Suivez sur votre téléphone"
         },
         "gift_card_resent_confirmation": {
-          "other": "Les cartes-cadeaux ont été renvoyées."
+          "other": "Les cartes-cadeaux ont été renvoyées.",
+          "one": "La carte cadeau a été renvoyée."
         },
         "gift_card_resend_failure": {
           "one": "Un problème est survenu lors du renvoi de votre carte cadeau. Réessayez ou contactez-nous.",
           "other": "Un problème est survenu lors du renvoi de vos cartes cadeaux. Réessayez ou contactez-nous."
-        }
+        },
+        "gift_card_confirmation_by_text_typ": {
+          "other": "Vous recevrez un SMS avec vos cartes cadeaux dans quelques minutes.",
+          "one": "Vous recevrez un SMS avec votre carte cadeau dans quelques minutes."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Vous recevrez un e-mail avec votre carte cadeau dans quelques minutes.",
+          "other": "Vous recevrez un e-mail avec vos cartes cadeaux dans quelques minutes."
+        },
+        "gift_card_email_title": {
+          "one": "La carte cadeau a été envoyée par email",
+          "other": "Les cartes cadeaux ont été envoyées par email"
+        },
+        "gift_card_text_title": {
+          "one": "La carte cadeau a été envoyée par SMS",
+          "other": "Les cartes cadeaux ont été envoyées par SMS"
+        },
+        "resend_gift_cards_by_email": "Renvoyer l'e-mail",
+        "resend_gift_cards_by_text": "Renvoyer le message texte",
+        "location_title": "Emplacement",
+        "thank_you_ready_for_picked_up": "Votre commande a été récupérée à %{address}.",
+        "ready_for_delivery": "Prêt pour la livraison",
+        "order_updates_subscribe_to_email_notifications_failed": "Nous ne pouvons pas stocker cet e-mail pour les mises à jour. Veuillez réessayer ou utiliser une autre adresse e-mail.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "L'e-mail que vous avez saisi existe déjà.",
+        "subscriptions_management": {
+          "title": "Abonnement",
+          "description": "Accédez à votre compte pour afficher et gérer vos abonnements.",
+          "button_label": "Gérez votre abonnement"
+        },
+        "manage_order_label": "Gérer votre commande"
       },
       "vaulted": {
         "change_button": "Changement"
@@ -2219,7 +2249,17 @@
         "checkout_a_different_way": "Commander autrement",
         "blocks": {
           "contact_method_title": "Contact",
-          "billing_address_title": "Facturation"
+          "billing_address_title": "Facturation",
+          "shipping_address_title": "Envoyez à",
+          "shipping_method_title": "Méthode d'expédition",
+          "payment_method_title": "Mode de paiement",
+          "change_link_label": "Changement",
+          "change_contact_method_link_label": "Modifier les coordonnées",
+          "change_billing_address_link_label": "Changer l'adresse de facturation",
+          "change_shipping_address_link_label": "Changer l'adresse de livraison",
+          "change_shipping_method_link_label": "Changer le mode d'expédition",
+          "change_payment_method_link_label": "Changer de mode de paiement",
+          "pick_up_in_store_shipping_method_html": "Retrait en magasin · %{location_name}"
         }
       }
     },
