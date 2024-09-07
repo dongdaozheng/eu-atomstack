@@ -2408,8 +2408,56 @@
       },
       "throttle": {
         "too_many_attempts": {
-          "message": "Zu viele Versuche"
+          "message": "Zu viele Versuche",
+          "description": "Bitte versuche es in ein paar Minuten erneut"
+        },
+        "line_to_check_out": "Du bist in der Schlange zum Checkout",
+        "cart_summary_heading": "Dein Warenkorb",
+        "merchandise": {
+          "sold_out": "Ausverkauft",
+          "available": "Verfügbar"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Ein Teil deines Warenkorbs ist ausverkauft und steht beim Checkout nicht zum Kauf zur Verfügung.",
+          "sold_out": {
+            "heading": "Dein Warenkorb ist ausverkauft",
+            "storefront_body": "Gehe zurück zum Shop, um weiter einzukaufen",
+            "no_storefront_body": "Leider ist der Artikel, den du kaufen möchtest, nicht mehr verfügbar.",
+            "link": "Zurück zum Shop"
+          }
+        },
+        "title": "Warteschlange",
+        "time_to_checkout_title": "Zeit für den Checkout – {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Ungefähre Wartezeit wird kalkuliert",
+          "less_than_one": "Geschätzte Wartezeit: Weniger als eine Minute",
+          "one": "Die geschätzte Wartezeit beträgt {{count}} Minute",
+          "other": "Die geschätzte Wartezeit beträgt {{count}} Minuten"
+        },
+        "last_checked": "(Zuletzt überprüft: {{time}})",
+        "footer": {
+          "heading": "Lade diese Seite nicht neu. Sie aktualisiert sich automatisch.",
+          "body": "Artikel in deinem Warenkorb werden nicht bis zum Abschluss des Checkouts reserviert."
         }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Bei der Verarbeitung deiner Anfrage ist ein Problem aufgetreten. Bitte wende dich an den Shop-Inhaber."
+      },
+      "no_address_location": {
+        "title": "Standort ohne Adresse",
+        "header": "Es gibt keine Versandadresse für diesen Standort",
+        "message": "Wende dich an uns, um eine Adresse für diesen Standort hinzuzufügen und den Checkout abzuschließen.",
+        "email_us_button_label": "Sende uns eine E-Mail",
+        "alt_header": "Fehlende Lieferadresse"
+      },
+      "order_errors": {
+        "creation_failure": "Es gab ein Problem beim Erstellen deiner Bestellung. Versuche es erneut oder wende dich an uns für weitere Details.",
+        "network_failure": "Deine Bestellung konnte aufgrund eines Netzwerkfehlers nicht eingereicht werden. Überprüfe deine Verbindung und versuche es erneut.",
+        "inventory_reservation_failure": "Einige Artikel sind nicht mehr lieferbar."
+      },
+      "session_errors": {
+        "session_not_unique": "Bei der Verarbeitung deiner Bestellung ist ein Problem aufgetreten. Aktualisiere diese Seite, um zum Shop zurückzukehren.",
+        "session_already_finished": "Diese Bestellung wurde bereits eingereicht. Du kannst zum Shop zurückkehren, um eine neue Bestellung aufzugeben."
       }
     },
     "sentence": {
