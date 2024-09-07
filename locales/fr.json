@@ -2200,6 +2200,26 @@
         "qr_code": {
           "send_link_to_phone": "Ou envoyez un lien sur votre téléphone",
           "title": "Suivez sur votre téléphone"
+        },
+        "gift_card_resent_confirmation": {
+          "other": "Les cartes-cadeaux ont été renvoyées."
+        },
+        "gift_card_resend_failure": {
+          "one": "Un problème est survenu lors du renvoi de votre carte cadeau. Réessayez ou contactez-nous.",
+          "other": "Un problème est survenu lors du renvoi de vos cartes cadeaux. Réessayez ou contactez-nous."
+        }
+      },
+      "vaulted": {
+        "change_button": "Changement"
+      },
+      "review": {
+        "title": "Revoir",
+        "review_title": "Réviser et payer",
+        "checkout_as_guest": "Commander en tant qu'invité",
+        "checkout_a_different_way": "Commander autrement",
+        "blocks": {
+          "contact_method_title": "Contact",
+          "billing_address_title": "Facturation"
         }
       }
     },
