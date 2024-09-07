@@ -556,7 +556,31 @@
         "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} total %{total_shop_price}",
         "receiver_payment_experience_hint": "Après avoir passé votre commande, vous recevrez les détails du paiement. Effectuez le paiement chez Multibanco ou en ligne dans les %{due_days} jours.",
         "billing_address_title": "Adresse de facturation",
-        "billing_address_description": "Sélectionnez l'adresse qui correspond à votre carte ou à votre mode de paiement."
+        "billing_address_description": "Sélectionnez l'adresse qui correspond à votre carte ou à votre mode de paiement.",
+        "billing_address_description_no_shipping_address": "Saisissez l'adresse qui correspond à votre carte ou à votre mode de paiement.",
+        "no_js_credit_card_fields_redirect_hint": "Vous serez redirigé pour ajouter vos informations de paiement.",
+        "card_fields_container_prefix": "Conteneur de terrain pour :",
+        "card_fields_unavailable_html": {
+          "one": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment.<br><a href=\"%{current_url}\">Actualisez cette page<\/a> ou réessayez plus tard.",
+          "other": "Les paiements par carte de crédit et de débit ne sont pas disponibles pour le moment.<br><a href=\"%{current_url}\">Actualisez cette page<\/a> ou essayez un autre mode de paiement."
+        },
+        "card_fields_processing_error": "Un problème est survenu lors du traitement du paiement. Essayez d'actualiser cette page ou vérifiez votre connexion Internet.",
+        "technical_error": "Les paiements ne peuvent pas être traités pour le moment en raison d'un problème technique. Réessayez dans quelques minutes.",
+        "no_method_error": "Ce magasin ne peut pas accepter les paiements pour le moment.",
+        "not_configured_error": "Ce magasin ne peut pas accepter les paiements pour le moment.",
+        "missing_credit_card_error": "Entrez les détails de votre carte pour finaliser le paiement",
+        "shop_pay_ideal_unavailable_error": "iDEAL n'est pas disponible pour cette commande. Choisissez un autre mode de paiement.",
+        "payment_method_not_available_for_shipping_address_error": "Mode de paiement non disponible pour l'adresse de livraison sélectionnée. Choisissez un autre mode de paiement.",
+        "billing_address_not_supported_for_payment_method_error": "Ce mode de paiement n'est pas disponible pour votre adresse de facturation et votre devise. Veuillez essayer un autre mode de paiement.",
+        "generic_incorrect_card_info": "Vos informations de paiement n'ont pas pu être vérifiées. Vérifiez les détails de votre carte et réessayez.",
+        "sofort_label": "Virement bancaire Sofort",
+        "paypal_label": "Paypal",
+        "paypal_wallet_label": "Portefeuille PayPal",
+        "shop_pay_installments_label": "Boutique Paiement échelonné",
+        "paypal_modal": {
+          "order_contains_subscriptions": "Abonnement",
+          "order_contains_fixed_selling_plans": "Le total peut ne pas inclure les taxes, les frais d'expédition, les frais reportés et certaines réductions. Continuez à payer pour le montant dû aujourd'hui."
+        }
       },
       "shipping": {
         "split_cart_shipping_label": "Méthode",
