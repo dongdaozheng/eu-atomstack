@@ -575,7 +575,43 @@
           "forgot_your_store_link_text": "j'ai oublié ton magasin",
           "add_storefront": "Vous pouvez configurer votre site Web en ajoutant le canal Boutique en ligne dans votre %{admin_link}. Si vous rencontrez des difficultés pour accéder à votre boutique, essayez la page %{forgot_your_store_link}.",
           "admin_link_text": "administrateur"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Vendre en personne",
+            "caption": "Bénéficiez des fonctionnalités dont vous avez besoin pour gérer votre magasin de détail, que vous débutiez ou que vous développiez votre activité.",
+            "link_text": "Commencer l'essai gratuit"
+          },
+          "open_a_store": {
+            "header": "Ouvrir une nouvelle boutique Shopify",
+            "caption": "Commencez un essai gratuit de 3 jours, puis continuez pour 1 $\/mois pendant les 3 mois suivants.",
+            "link_text": "Inscrivez-vous maintenant"
+          },
+          "editions": {
+            "header": "Découvrez les éditions Shopify",
+            "caption": "Avec plus de 100 mises à jour de produits, vous pouvez être plus productif, créatif et puissant dans le commerce que vous ne l'auriez jamais imaginé.",
+            "link_text": "Découvrez les dernières éditions"
+          },
+          "store_owner": {
+            "header": "Êtes-vous le propriétaire du magasin?",
+            "caption": "Avez-vous des difficultés à accéder à votre magasin? Essayez la fonctionnalité %{forgot_your_store_link}. Si vous souhaitez réactiver votre boutique, contactez %{shopify_support_link}.",
+            "shopify_support_link_text": "Assistance Shopify"
+          }
         }
+      }
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Erreur de réinitialisation du mot de passe",
+        "no_account_found": "Aucun compte trouvé avec cet email.",
+        "invalid_credentials": "Email ou mot de passe incorrect.",
+        "denylisted_reset_password": "Votre compte n'est pas accessible car le mot de passe actuel n'est pas sécurisé. Vous recevrez un email pour mettre à jour votre mot de passe.",
+        "signup_disabled": "La création de compte client a été désactivée."
+      },
+      "address": {
+        "updated": "Adresse mise à jour avec succès.",
+        "error_updating": "Erreur lors de la mise à jour de l'adresse",
+        "created": "Adresse créée avec succès"
       }
     }
   },
