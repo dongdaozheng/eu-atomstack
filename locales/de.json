@@ -668,9 +668,55 @@
             "tips_not_allowed_for_b2b": "Trinkgelder sind in B2B-Shops nicht zulässig.",
             "currency_change_reset": "Das Trinkgeld wurde aufgrund der Währungsumstellung zurückgesetzt.",
             "tips_not_allowed_for_deferred_purchase_options": "Trinkgelder für latente Kaufoptionen werden noch nicht unterstützt."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Dieser Bestellentwurf ist im aktuellen Shop nicht vorhanden.",
+            "staff_member_not_exist": "Dieser Mitarbeiter ist im aktuellen Shop nicht vorhanden.",
+            "location_not_exist": "Dieser Standort ist im aktuellen Shop nicht vorhanden.",
+            "point_of_sale_device_not_exist": "Dieses Verkaufsstellengerät ist im aktuellen Shop nicht vorhanden.",
+            "unresolvable_target_merchandise_lines": "Die vorgeschlagenen Verkaufszuweisungen sind im derzeitigen Verhandlungskontext unvereinbar."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "Das Angebot des Käufers muss nicht-verhandelbare Bedingungen enthalten.",
+            "invalid_signature": "Die Signatur für {{target_terms}} ist ungültig."
+          },
+          "inventory": {
+            "missing_quantity_value": "In den Bestandsreihen des Käufers fehlt das Mengenfeld.",
+            "changing_behavior_not_allowed": "Dieser Kunde hat nicht die Berechtigung, das Inventarverhalten zu ändern.",
+            "only_one_inventory_behavior_allowed": "Derzeit ist nur ein Inventarverhalten pro Checkout zulässig."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Das Ablehnen von Zöllen ist in diesem Checkout nicht zulässig."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "Die Einzelhandelszuordnung ist in diesem Checkout nicht zulässig.",
+            "retail_attribution_required": "Die Einzelhandelszuordnung ist in diesem Checkout erforderlich."
+          },
+          "captcha": {
+            "metadata_missing": "Das Abschließen einer Captcha-Validierung ist in diesem Checkout erforderlich.",
+            "metadata_mismatch": "Der angegebene Captcha-Anbieter und der Typ stimmen nicht mit den erwarteten Werten überein.",
+            "token_missing": "Ein Captcha-Token muss bereitgestellt werden, um den Checkout abzuschließen.",
+            "job_enqueue_failed": "Der Captcha-Validierungsvorgang konnte nicht zur Warteschlange hinzufügt werden.",
+            "job_already_queued": "Die Captcha-Validierung für dieses Captcha-Token wurde bereits zur Warteschlange hinzugefügt.",
+            "token_expired": "Das angegebene Captcha-Token ist abgelaufen. Schließe eine neue Captcha-Validierung ab, um mit dem Checkout fortzufahren.",
+            "token_invalid": "Das angegebene Captcha-Token ist ungültig. Schließe eine neue Captcha-Validierung ab, um mit dem Checkout fortzufahren.",
+            "token_not_valid_for_session": "Das angegebene Captcha-Token kann in diesem Checkout nicht verwendet werden."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Der erhaltene Betrag muss in der Shop-Währung vorliegen."
+          },
+          "checkout_source": {
+            "revoked": "Dieser Checkout ist nicht mehr verfügbar."
           }
         },
-        "qr_code": "QR-Code"
+        "qr_code": "QR-Code",
+        "full_price": "Voller Preis:",
+        "title": "Checkout – {{shopName}}",
+        "full_title": "{{pageTitle}} – {{shopName}} – Checkout",
+        "loading_title": "Checkout – {{shopName}}",
+        "display_name": "{{firstName}} {{lastName}}",
+        "google_map_title": "Google Maps",
+        "confirm_order_button_label": "Bestellung bestätigen"
       }
     },
     "sentence": {
