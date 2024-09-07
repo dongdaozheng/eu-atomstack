@@ -1276,9 +1276,47 @@
           "first_order_shipping_price_included": "Erste Bestellung inbegriffen, gefolgt von %{recurring_order_shipping_price}",
           "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} pro Zustellung), gefolgt von %{recurring_order_shipping_price}",
           "first_n_order_free": {
-            "one": "Die erste Bestellung ist kostenlos"
+            "one": "Die erste Bestellung ist kostenlos",
+            "other": "Die ersten %{count} Bestellungen sind kostenlos"
+          },
+          "free_for_first_n_order": {
+            "one": "Für die erste Bestellung",
+            "other": "Für die ersten %{count} Bestellungen"
           }
-        }
+        },
+        "one_time_purchase_shipping": "Einmaliger Versand",
+        "duties_and_taxes_title": "Zollgebühren und Steuern",
+        "shipping_information_required_notice": "Versandinformationen sind erforderlich. {{link}}.",
+        "shipping_information_redirect_link": "Gib deine Informationen hier ein",
+        "loading_progressive_rates": "Suche nach mehr Tarifen ...",
+        "no_other_methods_available": "Keine anderen Methoden verfügbar",
+        "duties_and_taxes_options": {
+          "ddu_title": "Bei Zustellung bezahlen",
+          "ddu_caption": "Es können zusätzliche Gebühren anfallen",
+          "ddp_title": "Sofort bezahlen",
+          "ddp_caption": "Keine zusätzlichen Gebühren bei der Zustellung"
+        },
+        "shipping_method_combinations": {
+          "without_separator": "%{firstMethod}, %{secondMethod}",
+          "with_separator": "%{rest}, %{current},",
+          "combination": "%{rest} und %{current}"
+        },
+        "shipping_used_as_billing_notice": "Diese wird auch als deine Rechnungsadresse für diese Bestellung verwendet.",
+        "address_update": "Adresse aktualisieren",
+        "shipping_address_title": "Versenden an",
+        "add_address": "Eine andere Adresse verwenden",
+        "add_delivery_instructions": "Zustellungsanweisungen hinzufügen",
+        "edit": "Bearbeiten",
+        "delete": "Löschen",
+        "address_more": "Mehr Aktionen für diese Adresse",
+        "address_edit": "Adresse bearbeiten",
+        "address_delete": "Adresse löschen",
+        "address_confirm": "Möchtest du diese Adresse wirklich aus deinem Konto löschen?",
+        "address_form": {
+          "add_address": "Adresse hinzufügen",
+          "save": "Speichern"
+        },
+        "address_default": "Als Standard festlegen"
       }
     },
     "sentence": {
