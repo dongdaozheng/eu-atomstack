@@ -1849,7 +1849,49 @@
         "transient_error": "Bei der Verarbeitung deiner Zahlung ist ein Problem aufgetreten. Versuche, diese Seite zu aktualisieren oder überprüfe deine Internetverbindung.",
         "selected_payment_method": "Deine Zahlungsmethode konnte nicht belastet werden und dir wurde nichts berechnet.Versuche es erneut oder verwende eine andere Zahlungsmethode.",
         "payment_method_billing_address": "Es gab ein Problem mit der Rechnungsadresse deiner ausgewählten Zahlungsmethode und Dir wurde nichts berechnet.Prüfe die Adresse und versuche es erneut oder verwende eine andere Zahlungsmethode.",
-        "processing_error_checkout_as_guest": "Bei der Verarbeitung deiner Zahlung ist ein Problem aufgetreten. Versuche es mit einer anderen Zahlungsmethode erneut oder {{checkout_as_guest_link}}."
+        "processing_error_checkout_as_guest": "Bei der Verarbeitung deiner Zahlung ist ein Problem aufgetreten. Versuche es mit einer anderen Zahlungsmethode erneut oder {{checkout_as_guest_link}}.",
+        "missing_shipping_address": "Deine Zahlung konnte nicht verarbeitet werden, da du keine Lieferadresse angegeben hast. Füge eine Lieferadresse hinzu und versuche es erneut.",
+        "invalid_shipping_address": "Deine Zahlung konnte nicht verarbeitet werden, da wir deine Lieferadresse nicht finden konnten. Überprüfe deine Lieferadresse und versuche es erneut.",
+        "successful_offsite_with_gift_card_error": "Bei der Verarbeitung deiner Zahlung mit Geschenkgutschein ist ein Problem aufgetreten. Versuche es erneut oder verwende eine andere Zahlungsmethode.",
+        "development_store_order_limit_reached": "Du hast das Limit für Development Shop-Bestellungen mit diesem Zahlungsabwickler erreicht. Du musst ein Test-Zahlungs-Gateway nutzen, um eine weitere Bestellung aufgeben zu können. Mehr Informationen über %{development_store_order_testing_docs_link}.",
+        "development_store_with_order_limit": "Du musst ein Test-Zahlungs-Gateway nutzen, um eine Testbestellung aufgeben zu können. Mehr Informationen über %{development_store_order_testing_docs_link}.",
+        "development_store_order_testing_docs_link": "Testen von Bestellungen in Development Shops",
+        "payment_above_threshold": "Der Zahlungsbetrag liegt über der Währungsgrenze für diese Region. Reduziere die Gesamtsumme und versuche es erneut"
+      },
+      "shipping_errors": {
+        "shipping_method": "Die Versandoptionen für deine Bestellung haben sich geändert. Prüfe deine Auswahl und versuche es erneut.",
+        "shipping_method_not_available": "Dein Warenkorb wurde aktualisiert und die von dir hinzugefügten Artikel können nicht an deine Adresse geliefert werden. Entferne die Artikel, um deine Bestellung abzuschließen.",
+        "shipping_method_not_available_generic": {
+          "one": "Deine Bestellung kann nicht an die ausgewählte Adresse versendet werden. Überprüfe deine Adresse auf ihre Richtigkeit und versuche es erneut oder wähle eine andere Adresse aus.",
+          "other": "Einige Artikel in deinem Warenkorb können nicht an die von dir angegebene Adresse versendet werden. Überprüfe deine Adresse auf ihre Richtigkeit und versuche es erneut oder wähle eine andere Adresse aus."
+        },
+        "shipping_method_not_available_updated": {
+          "one": "Der von dir hinzugefügte Artikel wird nicht an deinen Standort versendet. Entferne ihn vor dem Checkout, oder kontaktiere den Shop.",
+          "other": "Mindestens einer der von dir hinzugefügten Artikel wird nicht an deinen Standort versendet. Entferne ihn vor dem Checkout, oder kontaktiere den Shop."
+        },
+        "payment_method_not_supported": "Du kannst diese Zahlungsmethode für %{country} nicht verwenden. Bitte verwende eine andere Zahlungsmethode, um in dieses Land zu versenden.",
+        "empty_state": "Gib deine Lieferadresse ein, um verfügbare Versandarten anzuzeigen.",
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Artikel im Warenkorb entsprechen nicht den Preis- oder Gewichtsanforderungen, um sich für den Versand zu qualifizieren. Aktualisiere deinen Warenkorb und versuche es erneut.",
+        "title": "Versand nicht verfügbar"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Express Checkout",
+        "or": "ODER",
+        "or_pay_another_way": "Oder auf eine andere Weise bezahlen",
+        "show_more_options": "Weitere Optionen anzeigen",
+        "hide_more_options": "Weitere Optionen ausblenden",
+        "or_check_out_another_way": "Oder auf eine andere Weise auschecken",
+        "or_pay_with_credit_card": "Oder per Kreditkarte bezahlen"
+      },
+      "post_purchase": {
+        "page_title": "Nach dem Kauf",
+        "title": "Nach dem Kauf",
+        "escape_confirmation": "Du hast deine Bestellung bezahlt.",
+        "escape_action": "Bestellbestätigung anzeigen ›",
+        "components": {
+          "close": "Schließen",
+          "expand": "Mehr anzeigen"
+        }
       }
     },
     "sentence": {
