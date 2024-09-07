@@ -482,7 +482,14 @@
         "saved_credit_card_cvv_verification": "À des fins de vérification, veuillez saisir le code de sécurité de votre carte."
       },
       "shipping": {
-        "split_cart_shipping_label": "Méthode"
+        "split_cart_shipping_label": "Méthode",
+        "title": "Expédition",
+        "delivery_title": "Livraison",
+        "shipping_method_title": "Méthode d'expédition",
+        "shipping_method_one_time_purchase_group_title": "Achat unique",
+        "shipping_method_first_shipment_group_title": {
+          "one": "Premier envoi"
+        }
       },
       "shop_pay_external": {
         "errors": {
@@ -1128,7 +1135,28 @@
         "confirmation_number_label": "Confirmation #%{confirmation_number}",
         "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> n'a pas pu être utilisé avec vos remises existantes.",
         "percent_off_shipping": "%{percent} % de réduction sur les frais d'expédition",
-        "amount_off_shipping": "%{amount} de réduction sur les frais d'expédition"
+        "amount_off_shipping": "%{amount} de réduction sur les frais d'expédition",
+        "original_price": "Prix ​​d'origine",
+        "sale_price": "Prix ​​de vente",
+        "total_updated_label": "Prix ​​total mis à jour :",
+        "order_total_updated_label": "Total mis à jour",
+        "total_already_paid_label": "Payé",
+        "unit_price": {
+          "accessible_separator": "par",
+          "content_html": "%{price}%{accessible_separator}%{per_unit}"
+        },
+        "gift_card_ending": "Carte cadeau se terminant par %{last_characters}",
+        "estimated_tax_label": "Taxe estimée",
+        "multiple_shipping_lines_label": "Total des frais d'expédition",
+        "component_quantity_title": "%{quantity} × %{product_title}",
+        "discount_discovery": {
+          "add_code": "Ajouter une réduction",
+          "merchandise_quantity_label": {
+            "one": "%{count} élément",
+            "other": "%{count} éléments"
+          }
+        },
+        "alternative_payment_currency_total": "Facturé en %{amount_due}"
       },
       "deliverability": {
         "not_deliverable": {
