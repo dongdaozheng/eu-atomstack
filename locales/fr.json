@@ -2538,7 +2538,13 @@
           "UnhandledViolations": "Informations sur la commande"
         },
         "all_violations_content": "Appelez-nous ou {{emailLink}} pour mettre à jour ces informations et finaliser votre commande :",
-        "all_violations_email_link": "e-mail"
+        "all_violations_email_link": "e-mail",
+        "editable_shipping_address_violations_message_title": "Ajoutez ces informations pour finaliser votre commande :",
+        "editable_shipping_address_violations_message_footer": "Pour mettre à jour de manière permanente l'adresse de cet emplacement, {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "Contactez-nous",
+        "shipping_address_incomplete_title": "L'adresse de livraison est incomplète",
+        "calculating_shipping": "Les frais de port sont toujours en cours de calcul. Réessayez dans quelques secondes. Vous n’avez pas été facturé.",
+        "calculating_taxes": "Les taxes sont toujours en cours de calcul. Réessayez dans quelques secondes. Vous n'avez pas été accusé."
       },
       "local_pickup": {
         "location_information": {
@@ -2553,8 +2559,37 @@
         "no_stores_found": "Aucun magasin trouvé",
         "could_not_resolve_address": "Votre adresse n'a pas pu être localisée. Réessayez ou utilisez une autre adresse",
         "paginator": {
-          "accessibility_label": "Pagination de collecte locale"
+          "accessibility_label": "Pagination de collecte locale",
+          "previous": "Page précédente",
+          "next": "Page suivante",
+          "label": {
+            "one": "%{first} - %{last} du magasin %{count}",
+            "other": "%{first} - %{last} des %{count} magasins"
+          }
+        },
+        "location_address_search_label": "Adresse",
+        "reveal_more_label": {
+          "one": "Afficher %{count} emplacement supplémentaire",
+          "other": "Afficher %{count} emplacements supplémentaires"
         }
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Revoir",
+          "link_label": "{{partnerDisplayName}}Termes et conditions"
+        }
+      },
+      "online_store_chat": {
+        "title": "Questions? Discutez avec nous"
+      },
+      "captcha": {
+        "title": "Complétez le CAPTCHA pour continuer",
+        "errors": {
+          "not_solved": "Complétez le CAPTCHA pour continuer"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Votre commande n'a pas pu être traitée car votre code de réduction n'est plus disponible. Vérifiez le total de votre commande et réessayez."
       }
     },
     "sentence": {
