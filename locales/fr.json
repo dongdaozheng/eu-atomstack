@@ -1790,7 +1790,17 @@
         "gift_card_invalid": "La carte cadeau \"••••%{last_four_characters}\" n'est plus valable",
         "vaulting_agreement_blank": "Votre carte doit être sauvegardée car le paiement du solde de cette commande est dû ultérieurement.",
         "sms_marketing_phone_invalid": "Entrez un numéro de téléphone valide",
-        "address_suggestion_did_you_mean_html": "Vouliez-vous dire %{html}?"
+        "address_suggestion_did_you_mean_html": "Vouliez-vous dire %{html}?",
+        "address_zip_contains_emojis": "Le code postal ne peut pas contenir d'émojis",
+        "address_zip_contains_mathematical_symbols": "Le code postal ne peut pas contenir de symboles mathématiques",
+        "address_generic_blank": "Champ obligatoire",
+        "address_generic_invalid": "Entrée invalide",
+        "address_generic_error": "Erreur de champ",
+        "credit_card_name_blank": "Entrez votre nom exactement tel qu'il est écrit sur votre carte",
+        "credit_card_name_invalid": "Entrez votre nom exactement tel qu'il est écrit sur votre carte",
+        "credit_card_number_invalid": "Entrez un numéro de carte valide",
+        "credit_card_expiry_invalid": "Entrez une date d'expiration valide",
+        "credit_card_month_invalid": "Entrez un mois d'expiration valide"
       },
       "store_credit_errors": {
         "generic_error": "Il y a eu un problème avec votre crédit en magasin. Réessayez ou rechargez la page."
@@ -1801,8 +1811,20 @@
           "insufficient_funds": "Cette carte cadeau n'a plus de fonds",
           "expired": "Cette carte cadeau a expiré",
           "not_available": "Cette carte cadeau n'est plus disponible",
-          "invalid": "Entrez une carte cadeau valide"
+          "invalid": "Entrez une carte cadeau valide",
+          "currency_mismatch": "Seules les cartes cadeaux en %{shop_currency} sont acceptées",
+          "generic": "La carte cadeau n'a pas pu être ajoutée au paiement",
+          "throttle_limit_exceeded": "Vous avez dépassé le nombre maximum de tentatives. Réessayez plus tard.",
+          "no_longer_available": "Cette carte cadeau ne peut plus être utilisée avec ce paiement"
         }
+      },
+      "payment_errors": {
+        "amount_too_small": "Le montant minimum du paiement doit être supérieur à 0,50 USD. Veuillez réessayer avec un montant plus élevé.",
+        "method_not_available": "Le mode de paiement demandé n'est pas disponible. Choisissez un autre mode de paiement et réessayez.",
+        "available_methods_updated": "Les modes de paiement disponibles ont été mis à jour.",
+        "generic_error": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez un autre mode de paiement.",
+        "rejected_transaction": "Votre paiement a été refusé. Réessayez ou utilisez un autre mode de paiement.",
+        "credit_card_processing": "Votre paiement ne peut pas être traité pour des raisons techniques. Réessayez dans quelques minutes ou utilisez un autre mode de paiement."
       }
     },
     "sentence": {
