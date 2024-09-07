@@ -1197,8 +1197,40 @@
           "other": "Erste Lieferungen"
         },
         "shipping_method_recurring_shipments_group_title": {
-          "one": "Wiederkehrende Lieferung"
-        }
+          "one": "Wiederkehrende Lieferung",
+          "other": "Wiederkehrende Lieferungen"
+        },
+        "waiting_on_rate_notice": "Verfügbare Versandtarife werden abgerufen …",
+        "waiting_on_pickup_location_notice": "Verfügbare Abholorte werden abgerufen…",
+        "no_rates_for_cart_or_destination_notice": "Es sind keine Versandarten für deinen Warenkorb oder deine Adresse verfügbar",
+        "no_pickup_location_notice": "Mindestens eines deiner Produkte ist nicht zur Abholung bereit",
+        "no_rates_for_country_notice": "Für diese Adresse wurden keine Versandtarife gefunden.",
+        "no_rates_contact_notice": "Kontaktiere uns für weitere Informationen",
+        "subscription_shipping": "Abonnement-Versandkosten",
+        "subscription_local_delivery": "Abonnement für lokale Zustellung",
+        "subscription_pickup": "Abonnement für Abholung",
+        "free_rate_label": "Kostenlos",
+        "cheapest_rate_label": "Günstigste",
+        "please_enter_your_shipping_information_notice": "Bitte gib deine Lieferdaten ein.",
+        "estimated_delivery_date": {
+          "one": "%{count} Werktag",
+          "other": "%{count} Werktage"
+        },
+        "estimated_delivery_date_range": "%{minimum} bis %{maximum} Werktage",
+        "estimated_delivery_time": "Voraussichtliche Zustellung: %{time}",
+        "estimated_delivery_time_range": "Voraussichtliche Zustellung: %{min_time}–%{max_time}",
+        "delivery_date_range": "%{min_time}–%{max_time}",
+        "delivery_today": "Zustellung am selben Tag um %{time}",
+        "shipping_line_phone_label": "Mobilnummer (erforderlich)",
+        "shipping_line_phone": "Der Versanddienstleister kann diese Nummer verwenden, um dich zu kontaktieren.",
+        "shipping_line_delivery_phone_label": "Mobile Rufnummer",
+        "arrives_time": "Eingang %{time}",
+        "arrives_time_range": "Eingang %{min_time}–%{max_time}",
+        "estimated_time": "Voraussichtlich %{time}",
+        "estimated_time_range": "Voraussichtlich %{min_time}–%{max_time}",
+        "delivery_tomorrow": "Zustellung am nächsten Tag um %{time}",
+        "two_day_delivery": "2-Tages-Zustellung um %{time}",
+        "delivery": "Zustellung um %{time}"
       }
     },
     "sentence": {
