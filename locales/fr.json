@@ -962,6 +962,13 @@
           "default_message": {
             "one": "Le mode de livraison choisi n'est plus disponible pour cet article."
           }
+        },
+        "price_and_quantity_update": {
+          "description": "Les prix et quantités disponibles pour ces articles ont changé et sont mis à jour dans votre panier."
+        },
+        "out_of_stock": {
+          "description": "Ces articles ne sont plus disponibles et ont été supprimés de votre panier.",
+          "items_unavailable": "Certains articles ne sont plus disponibles et ont été supprimés de votre panier."
         }
       },
       "customer_account": {
@@ -980,6 +987,21 @@
         },
         "saved_address_option_link": "Utiliser une adresse enregistrée",
         "saved_address_modal_title": "Utiliser mon adresse enregistrée"
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Produit indisponible",
+          "other": "Produits indisponibles"
+        },
+        "products_not_available": {
+          "one": "Ce produit sera supprimé de votre panier car il n'est pas disponible dans votre pays\/région.",
+          "other": "Ces produits seront supprimés de votre panier car ils ne sont pas disponibles dans votre pays\/région."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Ce produit n'est pas disponible dans votre pays\/région.",
+          "other": "Ces produits ne sont pas disponibles dans votre pays\/région."
+        },
+        "unavailable_label": "Indisponible"
       }
     },
     "sentence": {
