@@ -2392,7 +2392,11 @@
       "customer_payment_methods": {
         "page_title": "Modes de paiement",
         "title": "Modes de paiement",
-        "update_card_button_label": "Mettre à jour la carte"
+        "update_card_button_label": "Mettre à jour la carte",
+        "delete_customer_mandate": {
+          "generic_error": "Un problème est survenu lors du traitement de votre demande.",
+          "success_message": "Votre mode de paiement a été supprimé avec succès"
+        }
       },
       "change_currency": {
         "currency_button_label": "%{currency} (%{currency_symbol})",
@@ -2409,6 +2413,24 @@
       },
       "change_cart_localization": {
         "verify_shipping_address": "Votre pays\/région a été mis à jour. Entrez votre adresse de livraison pour poursuivre la commande."
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "Trop de tentatives",
+          "description": "Veuillez réessayer dans quelques minutes"
+        },
+        "line_to_check_out": "Vous êtes en ligne pour vérifier",
+        "cart_summary_heading": "Votre panier",
+        "merchandise": {
+          "available": "Disponible",
+          "sold_out": "Épuisé"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Une partie de votre panier est épuisée et ne sera pas disponible à l'achat au moment du paiement.",
+          "sold_out": {
+            "heading": "Votre panier est épuisé"
+          }
+        }
       }
     },
     "sentence": {
