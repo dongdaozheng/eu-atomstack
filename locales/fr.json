@@ -2504,7 +2504,41 @@
         "could_not_resolve_address": "Votre adresse n'a pas pu être localisée. Réessayez ou utilisez une autre adresse",
         "no_pickup_points_near_you": "Aucun point de retrait trouvé à proximité de l'adresse sélectionnée",
         "no_pickup_points_near_location": "Aucun point de retrait trouvé à proximité de chez vous",
-        "no_pickup_points_found": "Aucun point de retrait trouvé"
+        "no_pickup_points_found": "Aucun point de retrait trouvé",
+        "geolocation": {
+          "shared_location_button": "Utiliser ma position",
+          "errors": {
+            "unsuported_by_browser": "L'obtention de la géolocalisation n'est pas prise en charge par votre navigateur. Réessayez ou utilisez un autre navigateur.",
+            "permission_not_allowed": "Autorisez le partage de votre position.",
+            "permission_denied": "Impossible d'obtenir votre position. Essayer à nouveau."
+          }
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Il y a eu un problème avec notre paiement",
+          "message": "Actualisez cette page ou réessayez dans quelques minutes",
+          "action": {
+            "cta": "Actualiser la page"
+          },
+          "request_id": "ID de demande : {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Retour au panier",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text} pour mettre à jour les quantités",
+        "subscription_changed": "Un de vos abonnements a changé.",
+        "company_location_changed": "Votre panier a été mis à jour. Vérifiez votre commande avant de la soumettre.",
+        "company_location_changed_product_removed": "Votre panier a été mis à jour car certains produits ne sont pas disponibles à cet emplacement. Vérifiez votre commande avant de la soumettre.",
+        "violations_title": "{{violation}}est manquant ou invalide",
+        "individual_violations_title": {
+          "DeliveryViolations": "Adresse de livraison",
+          "PaymentViolations": "Adresse de facturation",
+          "OtherViolations": "Informations sur la commande",
+          "UnhandledViolations": "Informations sur la commande"
+        },
+        "all_violations_content": "Appelez-nous ou {{emailLink}} pour mettre à jour ces informations et finaliser votre commande :",
+        "all_violations_email_link": "e-mail"
       }
     },
     "sentence": {
