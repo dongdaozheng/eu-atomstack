@@ -1364,7 +1364,41 @@
         "contact_list_title": "Leute",
         "contact_name": "Name",
         "contact_permissions": "Berechtigungen",
-        "contact_phone_number": "Telefonnummer"
+        "contact_phone_number": "Telefonnummer",
+        "location_picker_label": "Standortname",
+        "net_payment_terms_description": "{{name}}: Zahlungen innerhalb von {{numberOfDays}} Tagen fällig",
+        "payment_details_title": "Zahlungsdetails",
+        "payment_terms": "Zahlungsbedingungen",
+        "permissions_label": "Deine Berechtigungen",
+        "pagination": {
+          "load_more": "Weitere laden",
+          "load_more_accessibility_label": "Mehr Standorte laden"
+        },
+        "own_role_contact_name": "Du",
+        "location_picker_accessibility_label": "Standortname: {{locationName}}",
+        "deposit_percentage": "{{percentage}} Einlage",
+        "permissions_title": "Berechtigungen",
+        "section_title": "Standort",
+        "shipping_address_required": "Füge eine Lieferadresse zu diesem Standort hinzu, um Bestellungen aufgeben zu können.",
+        "tax_details_title": "Steuerdetails",
+        "tax_id": "Steuer-ID",
+        "tax_exemptions": "Steuerbefreiungen",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} weitere",
+        "multiple_tax_exemptions_and": "und",
+        "tax_exemptions_modal_close": "Schließen",
+        "staff_and_permissions_title": "Mitarbeiter und Berechtigungen",
+        "taxes_none": "Keine",
+        "tax_exemption_not_applicable": "N\/A",
+        "tax_exemptions_modal_button_accessibility_label": "Alle Steuerbefreiungen anzeigen"
+      },
+      "location_selection": {
+        "description": "Wenn du bereits Artikel in deinem Warenkorb hast, kann es Auswirkungen auf die Preise und Mengen dieser Artikel haben, wenn du den Standort wechselst.",
+        "list_accessibility_label": "Standortliste",
+        "list_item_accessibility_label": "{{name}}: {{address}}",
+        "list_item_without_address_accessibility_label": "{{name}}: Keine Adresse",
+        "list_loading_accessibility_message": "Standortliste wird geladen",
+        "list_loading_address_accessibility_message": "Adresse für {{locationName}} wird geladen",
+        "continue_to_store": "Weiter zum Shop"
       }
     }
   },
