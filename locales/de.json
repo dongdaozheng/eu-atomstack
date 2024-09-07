@@ -781,8 +781,42 @@
             "wordConnector": "{{previousWords}}, {{anotherWord}}",
             "lastWordConnector": "{{previousWords}} und {{lastWord}}",
             "twoWordConnector": "{{firstWord}} und {{secondWord}}"
+          },
+          "or": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}} oder {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} oder {{secondWord}}"
+          },
+          "narrow": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}}, {{lastWord}}",
+            "twoWordConnector": "{{firstWord}}, {{secondWord}}"
           }
+        },
+        "map": {
+          "cluster_title": {
+            "one": "Cluster mit {{number}} Marker",
+            "other": "Cluster mit {{number}} Markern"
+          }
+        },
+        "sheet": {
+          "expand": "Erweitern"
+        },
+        "dropzone": {
+          "add_file": "Datei hinzufügen",
+          "invalid_file_type": "Dateityp wird nicht unterstützt",
+          "dragged_over": "Datei zum Hochladen ablegen"
         }
+      },
+      "contact": {
+        "title": "Information",
+        "address_title": "Adresse",
+        "delivery_option_title": "Zustellmethode",
+        "contact_method_title": "Kontakt",
+        "email_label": "E-Mail",
+        "email_placeholder": "E-Mail",
+        "email_or_phone_label": "E-Mail oder Mobiltelefonnummer",
+        "shipping_used_as_billing_notice": "Diese wird auch als deine Rechnungsadresse für diese Bestellung verwendet."
       }
     },
     "sentence": {
