@@ -614,7 +614,45 @@
         "subscription_heading": "Contrat d'abonnement",
         "subscription_agreement_label_html": "Je comprends que j'accepte un abonnement. Il sera renouvelé au prix et à la fréquence indiqués jusqu'à son terme ou jusqu'à ce qu'il soit\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">annulé<\/a>.",
         "purchase_options_agreement_label": "Un ou plusieurs articles de votre panier constituent un achat différé ou récurrent. En poursuivant votre paiement, vous acceptez que votre mode de paiement soit automatiquement facturé au prix et à la fréquence indiqués sur cette page jusqu'à ce qu'il se termine ou que vous l'annuliez. Toutes les annulations sont soumises au %{cancellation_policy_label}.",
-        "purchase_options_agreement_label_html": "Je comprends qu'un ou plusieurs articles de mon panier constituent un achat différé ou récurrent. En continuant, j'accepte le\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">politique d'annulation<\/a>\net vous autorise à débiter mon mode de paiement aux prix, fréquences et dates indiqués sur cette page jusqu'à mon\nla commande est exécutée ou j'annule, si cela est autorisé."
+        "purchase_options_agreement_label_html": "Je comprends qu'un ou plusieurs articles de mon panier constituent un achat différé ou récurrent. En continuant, j'accepte le\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">politique d'annulation<\/a>\net vous autorise à débiter mon mode de paiement aux prix, fréquences et dates indiqués sur cette page jusqu'à mon\nla commande est exécutée ou j'annule, si cela est autorisé.",
+        "brand_not_available": "Ce magasin n'accepte pas {{brand}}. Veuillez utiliser une autre carte pour payer.",
+        "shipping_rate_updated": "Les méthodes d'expédition disponibles ont été mises à jour. Confirmez votre choix avant de procéder au paiement.",
+        "billing_address_invalid_phone": "Mettez à jour le numéro de téléphone dans votre adresse de facturation pour {{label}} {{last_digits}} pour continuer.",
+        "billing_address_invalid_phone_no_card": "Mettez à jour le numéro de téléphone dans votre adresse de facturation pour continuer.",
+        "preview_not_available": {
+          "title": "Aperçu non disponible",
+          "content": "Ne vous inquiétez pas, ce paiement express fonctionne pour vos clients.",
+          "button": "D'accord"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Entrez une date d'émission valide",
+              "issue_number": "Entrez un numéro de problème valide"
+            },
+            "invalid": {
+              "verification_value": "Entrez un CVV ou un code de sécurité valide"
+            }
+          }
+        },
+        "saved_credit_card_actions": {
+          "delete": "Supprimer"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "Afficher toutes les cartes enregistrées",
+          "done": "Fait",
+          "cancel": "Annuler"
+        },
+        "add_credit_card_modal": {
+          "title": "Ajouter une carte",
+          "save": "Sauvegarder",
+          "cancel": "Annuler"
+        },
+        "delete_credit_card_modal": {
+          "title": "Supprimer la carte",
+          "confirmation": "Êtes-vous sûr de vouloir supprimer le {{brandName}} se terminant par {{lastDigits}}?",
+          "cancel": "Annuler"
+        }
       },
       "shipping": {
         "split_cart_shipping_label": "Méthode",
