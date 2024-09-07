@@ -721,7 +721,24 @@
             "reference": "Référence",
             "amount": "Montant"
           }
-        }
+        },
+        "gift_card_store_credit": {
+          "add_label": "Ajouter une carte-cadeau ou un crédit en magasin",
+          "manage_label": "Gérer les cartes cadeaux ou le crédit en magasin"
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "Confirmation de paiement personnalisée sur place"
+        },
+        "markets_pro_disclaimer_label": "En cliquant ci-dessous et en complétant votre commande, vous acceptez d'acheter votre ou vos articles auprès de Global-e en tant que marchand officiel pour cette transaction, sur %{markets_pro_terms} et %{privacy_policy} de Global-e. Global-e est un fournisseur de services d'exécution international pour %{shop_name}",
+        "markets_pro_disclaimer_terms_and_conditions": "Termes et conditions",
+        "markets_pro_disclaimer_privacy_policy": "politique de confidentialité",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Conditions générales du commerçant officiel",
+        "markets_pro_disclaimer_privacy_policy_title": "Politique de confidentialité du commerçant officiel",
+        "purchase_order_number": {
+          "title": "Numéro de bon de commande",
+          "label": "Numéro de bon de commande (facultatif)"
+        },
+        "payment_flexibility_terms_id_mismatch": "Incompatibilité d'identifiant des conditions de flexibilité de paiement"
       },
       "shipping": {
         "split_cart_shipping_label": "Méthode",
@@ -1611,6 +1628,17 @@
         "additional_information": {
           "title": "Informations Complémentaires"
         }
+      },
+      "billing": {
+        "billing_address_title": "Facturer à",
+        "same_as_shipping": "Identique à l'adresse de livraison",
+        "add_address": "Utiliser une autre adresse",
+        "edit": "Modifier",
+        "delete": "Supprimer",
+        "address_more": "Plus d'actions pour cette adresse",
+        "address_edit": "Modifier l'adresse",
+        "address_delete": "Supprimer l'adresse",
+        "address_confirm": "Etes-vous sûr de vouloir supprimer cette adresse de votre compte?"
       }
     },
     "sentence": {
