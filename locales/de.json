@@ -603,7 +603,39 @@
           "tax": {
             "new_tax_must_be_accepted": "Zum Fortfahren muss eine neue Steuerreihe im Angebot des Verkäufers akzeptiert werden.",
             "unresolvable_tax_terms": "Die vorgeschlagenen Bedingungen sind im derzeitigen Verhandlungskontext unvereinbar.",
-            "delivery_price_is_abstract": "Der zugehörige Zustellungspreis ist abstrakt."
+            "delivery_price_is_abstract": "Der zugehörige Zustellungspreis ist abstrakt.",
+            "tax_inclusivity_mismatch": "Verhandle mit dem konkretem Wert totalTaxAndDutyAmount oder totalAmountIncludedInTarget neu.",
+            "tax_exemption_not_supported": "Steuerbefreiungen werden in der aktuellen Verhandlungssitzung nicht unterstützt.",
+            "delivery_tax_exemption_not_supported": "Steuerbefreiungen für Zustellungsreihen werden derzeit nicht unterstützt.",
+            "proposed_allocations_required": "Das Feld \"Vorgeschlagene Zuweisungen\" fehlt.",
+            "merchandise_terms_must_be_defined": "Die Merchandise-Artikel-Bedingungen müssen definiert werden.",
+            "delivery_terms_must_be_defined": "Die Zustellungsbedingungen müssen definiert werden.",
+            "merchandise_discount_terms_must_be_defined": "Die Bedingungen für den Rabatt auf Merchandise-Artikel müssen definiert werden.",
+            "delivery_discount_terms_must_be_defined": "Die Bedingungen für den Rabatt auf Zustellungen müssen definiert werden.",
+            "allocated_required": "Das Feld \"Zugewiesen\" fehlt.",
+            "value_required": "Das Feld \"Wert\" fehlt.",
+            "line_splits_not_supported": "Das Feld \"Merchandise-Artikel-Reihen\" muss so geteilt werden, dass jede Reihe jeweils eine einzelne Reihenkomponente im Angebot des Verkäufers ausmacht."
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "Manuelle Zahlungen sind in B2B-Shops nicht zulässig.",
+            "positive_amount_expected": "Der zu zahlende Betrag muss größer als 0 sein.",
+            "total_amount_mismatch": "Der zu zahlende Gesamtbetrag stimmt nicht mit der Summe der Zahlungen überein.",
+            "subscription_terms_not_accepted": "Die Abonnementbedingungen wurden nicht akzeptiert.",
+            "missing_session_id": "Es fehlen die Kreditkarten-Sitzungsinformationen.",
+            "gateway_not_supported": "Das Zahlungs-Gateway unterstützt die Speicherung der Zahlungsmethode nicht.",
+            "credit_card_last_name_required": "\"Nachname\" kann nicht gleich Null sein.",
+            "credit_card_update_failed": "Die Aktualisierung der Kreditkarte ist fehlgeschlagen.",
+            "installments_amount_invalid": "Ungültiger Betrag für Installments-Transaktion.",
+            "installments_test_mode_not_allowed": "Testmodus ist nicht zulässig.",
+            "installments_gift_card_not_allowed": "Installments lässt die Verwendung von Geschenkgutscheinen nicht zu.",
+            "installments_unsupported_currency": "Installments unterstützt diese Währung nicht.",
+            "installments_unsupported_shipping": "Installments unterstützt den Versand an diese Adresse nicht.",
+            "installments_unsupported_billing": "Installments unterstützt diese Rechnungsadresse nicht.",
+            "installments_unsupported_subscriptions": "Installments unterstützt keine Abonnements.",
+            "installments_ineligible_line_item": "Installments ist bei einer Position in diesem Kauf deaktiviert.",
+            "shop_cash_not_allowed": "Shop Cash ist ohne Shop Pay nicht zulässig.",
+            "shop_cash_unsupported_checkout_source": "Shop Cash unterstützt diesen Checkout nicht.",
+            "shop_cash_gift_card_not_allowed": "Shop Cash lässt den Kauf von Geschenkgutscheinen nicht zu."
           }
         },
         "qr_code": "QR-Code"
