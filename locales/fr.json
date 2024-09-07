@@ -2170,7 +2170,37 @@
           "quantity_label": "Quantité"
         },
         "order_updates_description_missing": "Vous ne recevez pas de mises à jour d'expédition.",
-        "order_updates_subscribe_to_email_notifications": "Recevez des mises à jour d'expédition par e-mail"
+        "order_updates_subscribe_to_email_notifications": "Recevez des mises à jour d'expédition par e-mail",
+        "shop_qr_with_sms_upsell": {
+          "sms": {
+            "title": "Ou envoyez un lien sur votre téléphone"
+          },
+          "qr_code": {
+            "title": "Scannez avec votre téléphone"
+          }
+        },
+        "view_business_customer_account": "Voir le compte",
+        "breadcrumbs_submitted": "Soumis",
+        "breadcrumbs_in_review": "En revue",
+        "breadcrumbs_confirmed": "Confirmé",
+        "missing_shipping_address_banner": {
+          "title": "La commande n'a pas d'adresse de livraison",
+          "text_html": "%{contact_us} pour ajouter votre adresse",
+          "contact_us": "Contactez-nous"
+        },
+        "first_payment_complete": "Premier paiement terminé",
+        "in_store_purchase": "Achat en magasin",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Recevez des mises à jour sur l'expédition par e-mail ou par SMS",
+        "order_updates_subscribe_to_phone_notifications": "Recevez des mises à jour d'expédition par SMS",
+        "order_updates_submit_subscription": "Soumettre",
+        "track_shipment": "Suivre l'expédition",
+        "other_options": "Autres options",
+        "delivery_information_label": "Informations de livraison :",
+        "gift_card_sent_confirmation": "Cartes cadeaux envoyées",
+        "qr_code": {
+          "send_link_to_phone": "Ou envoyez un lien sur votre téléphone",
+          "title": "Suivez sur votre téléphone"
+        }
       }
     },
     "sentence": {
