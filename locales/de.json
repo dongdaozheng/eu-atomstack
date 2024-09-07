@@ -798,7 +798,31 @@
   "customer_accounts": {
     "orders": {
       "order_status": {
-        "delivered": "Angekommen {{date}}"
+        "delivered": "Angekommen {{date}}",
+        "attempted_delivery_label": "Versuchte Zustellung",
+        "attempted_delivery_description": "Der Zustellversuch war nicht erfolgreich.",
+        "confirmed_description": "Wir haben deine Bestellung erhalten.",
+        "attempted_to_deliver_label": "Versuchte Zustellung",
+        "canceled_description": "Deine Bestellung wurde am {{date}} storniert.",
+        "on_its_way_description": "Diese Lieferung ist unterwegs.",
+        "out_for_delivery_description": "Diese Lieferung wird zugestellt.",
+        "preparing_for_shipping_label": "Vorbereitung auf den Versand",
+        "preparing_for_shipping_description": "Diese Artikel werden für den Versand vorbereitet.",
+        "ready_for_pickup_label": "Abholbereit",
+        "ready_for_pickup_description": "Diese Artikel sind abholbereit. Bitte bringe deine Bestellbestätigung zur Abholung der Bestellung mit.",
+        "picked_up_label": "Abgeholt",
+        "picked_up_description": "Diese Artikel wurden abgeholt.",
+        "ready_for_pickup_location": "Deine Bestellung steht am Standort zur Abholung bereit",
+        "canceled_label": "Storniert",
+        "canceled_title": "Deine Bestellung wurde storniert",
+        "come_back": "Besuche diese Seite, um dich über den aktuellen Lieferstatus deiner Sendung zu informieren.",
+        "company_tracking_number": "{{company}} Trackingnummer:",
+        "confirmed_label": "Bestätigt",
+        "confirmed_title": "Deine Bestellung wurde bestätigt",
+        "delivered_description": "Diese Lieferung wurde zugestellt.",
+        "confirmed_description_digital": "Du erhältst eine E-Mail, sobald deine Bestellung bereit ist.",
+        "confirmed_description_pickup": "Du erhältst eine E-Mail, wenn deine Bestellung zur Abholung bereit ist.",
+        "confirmed_description_gift_card_text": "Du erhältst eine SMS, sobald deine Bestellung bereit ist."
       },
       "list_layout_accessibility_label": "Layout-Optionen",
       "list_title": "Bestellungen",
@@ -920,9 +944,15 @@
             "end_date": "Enddatum",
             "title": "Bestelldatum",
             "today": "Heute",
-            "last_7_days": "Letzte 7 Tage"
+            "last_7_days": "Letzte 7 Tage",
+            "last_30_days": "Letzte 30 Tage",
+            "last_90_days": "Letzte 90 Tage",
+            "last_365_days": "Letzte 12 Monate",
+            "custom": "Benutzerdefiniert"
           }
-        }
+        },
+        "table_view": "Tabellenansicht anzeigen",
+        "show_order_actions_accessibility_label": "Bestellaktionen für Bestellung {{name}} zeigen"
       }
     },
     "date": {
