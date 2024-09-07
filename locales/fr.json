@@ -675,7 +675,17 @@
             "metadata_missing": "Remplir un captcha est requis pour cette commande.",
             "metadata_mismatch": "Le fournisseur et le type de captcha fournis ne correspondent pas aux valeurs attendues.",
             "token_missing": "Un jeton captcha doit être fourni pour finaliser cette commande.",
-            "job_enqueue_failed": "La tâche de validation captcha n'a pas pu être mise en file d'attente."
+            "job_enqueue_failed": "La tâche de validation captcha n'a pas pu être mise en file d'attente.",
+            "job_already_queued": "La validation Captcha a déjà été mise en file d'attente pour ce jeton captcha.",
+            "token_expired": "Le jeton captcha fourni a expiré. Complétez un nouveau captcha pour continuer le paiement.",
+            "token_invalid": "Le jeton captcha fourni n'était pas valide. Complétez un nouveau captcha pour continuer le paiement.",
+            "token_not_valid_for_session": "Le captcha fourni ne peut pas être utilisé avec cette commande."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Le montant reçu doit être dans la devise du magasin."
+          },
+          "checkout_source": {
+            "revoked": "Cette caisse n'est plus disponible."
           }
         },
         "continue_to_review": "Vérifier la commande",
@@ -697,7 +707,11 @@
         "continue_to_payment_plans_button_label": "Continuer vers les plans de paiement",
         "back_button_label": "Retour",
         "choose_delivery_strategy": "Choisissez un mode de livraison",
-        "autocomplete_zero_item": "Aucun article disponible"
+        "autocomplete_zero_item": "Aucun article disponible",
+        "full_price": "Plein tarif :",
+        "title": "Paiement - {{shopName}}",
+        "full_title": "{{pageTitle}}- {{shopName}} - Paiement",
+        "loading_title": "Paiement - {{shopName}}"
       }
     },
     "sentence": {
