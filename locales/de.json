@@ -924,7 +924,35 @@
         "quantity_column_header": "Anzahl",
         "price_column_header": "Preis",
         "status_column_header": "Status",
-        "removed_from_cart_notice": "Aus dem Warenkorb entfernt"
+        "removed_from_cart_notice": "Aus dem Warenkorb entfernt",
+        "sold_out_label": "Ausverkauft",
+        "reduced_label": "Reduziert",
+        "reduced_with_quantity_label": "Nur %{quantity_available} übrig",
+        "remove_from_cart_button_label": "Aus dem Warenkorb entfernen",
+        "continue_shopping_button_label": "Fortfahren",
+        "go_back_to_cart_button_label": "Zurück zu meinem Warenkorb",
+        "remove": "Entfernen",
+        "return_to_store_label": "Zurück zum Laden",
+        "item_label": {
+          "one": "{{count}} Artikel",
+          "other": "{{count}} Artikel"
+        },
+        "continue_cta_label": "Checkout fortsetzen",
+        "empty_cart_label": "Dein Warenkorb ist leer",
+        "quantity_update": {
+          "page_title": "Mengenaktualisierung",
+          "title": "Mengenaktualisierung",
+          "description": "Die verfügbare Menge dieser Artikel hat sich geändert und wurde in deinem Warenkorb aktualisiert."
+        },
+        "unpurchasable_product": {
+          "title": "Nicht gekauftes Produkt",
+          "header": "Einige Artikel wurden aus deinem Warenkorb entfernt",
+          "message": "Diese Artikel sind nicht für B2B-Bestellungen verfügbar.",
+          "status_column_header": "Nicht verfügbar"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Nicht gekauftes Produkt"
+        }
       }
     },
     "sentence": {
