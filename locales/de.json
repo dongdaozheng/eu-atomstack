@@ -1734,8 +1734,44 @@
           "with_pending_orders_and_subscriptions": "Wenn du diese Zahlungsmethode löscht, hat dies Auswirkungen auf vorautorisierte Zahlungen. Diese Zahlungsmethode wird weiterhin bei ausstehenden Beträgen für existierende Bestellungen belastet, jedoch erhältst du keine Abonnementbestellungen mehr. Füge eine alternative Zahlungsmethode hinzu, um weiterhin Abonnementbestellungen zu erhalten.",
           "with_pending_orders": "Wenn du diese Zahlungsmethode löscht, wird sie aus deinem Konto entfernt und steht bei zukünftigen Käufen nicht mehr zur Verfügung. Sie wird weiterhin bei ausstehenden Beträgen für existierende Bestellungen belastet.",
           "with_subscriptions": "Wenn du diese Zahlungsmethode löscht, hat dies Auswirkungen auf vorautorisierte Zahlungen. Füge eine alternative Zahlungsmethode hinzu, um weiterhin Bestellungen zu erhalten."
+        },
+        "error_when_deleting": "Es tut uns leid, etwas ist schiefgelaufen und wir konnten diese Zahlungsmethode nicht löschen. Bitte versuche es später erneut oder aktualisiere die Seite.",
+        "delete_and_replace_button": "Löschen und ersetzen",
+        "delete_and_replace_button_accessibility_label": "Lösche {{currentPaymentMethodName}} und ersetze sie mit {{newPaymentMethodName}}.",
+        "deleted_successfully": "Zahlungsmethode erfolgreich gelöscht.",
+        "loading_available_payment_methods_accessibility_label": "Verfügbare Zahlungsmethoden werden geladen"
+      },
+      "add_payment_method": {
+        "title": "Zahlungsmethode hinzufügen",
+        "payment_method_added_confirmation": "Zahlungsmethode hinzugefügt",
+        "billing_address": {
+          "title": "Rechnungsadresse",
+          "add_billing_address_button": "Neue Option hinzufügen",
+          "add_billing_address_button_accessibility_label": "Neue Rechnungsadresse hinzufügen",
+          "choose_billing_address_from_list_button": "Aus Liste auswählen",
+          "choose_billing_address_from_list_button_accessibility_label": "Wähle eine Rechnungsadresse aus der Liste aus",
+          "missing_billing_address_error_message": "Bitte eine Rechnungsadresse angeben",
+          "default_checkbox": "Als Standard-Zahlungsmethode festlegen"
         }
       }
+    },
+    "payment_method_brands": {
+      "visa": "Visa",
+      "mastercard": "Mastercard",
+      "americanexpress": "American Express",
+      "discover": "Entdecken",
+      "dinersclub": "Diners Club",
+      "jcb": "JCB",
+      "shoppay": "Shop Pay",
+      "applepay": "Apple Pay",
+      "elo": "Elo",
+      "visaelectron": "Visa Electron",
+      "maestro": "Maestro",
+      "forbrugsforeningen": "Forbrugsforeningen",
+      "dankort": "Dankort",
+      "hipercard": "Hipercard",
+      "unionpay": "UnionPay",
+      "laser": "Laser"
     }
   },
   "pagefly": {
