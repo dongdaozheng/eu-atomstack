@@ -1040,7 +1040,14 @@
       "manage_accessiblity_label": "Bestellung {{orderId}} verwalten",
       "group_title_label": "Teil von: {{groupTitle}}",
       "havent_received_your_delivery": "Hast du deine Lieferung nicht erhalten?",
-      "didnt_pick_up_order": "Hast du deine Bestellung nicht abgeholt?"
+      "didnt_pick_up_order": "Hast du deine Bestellung nicht abgeholt?",
+      "let_us_know": "Lasse es uns wissen",
+      "contact_us": "kontaktiere uns.",
+      "if_you_didnt_receive_this": "Falls du diese Lieferung nicht erhalten hast,",
+      "if_not_received": {
+        "one": "Falls sie nicht erhalten wurde,",
+        "other": "Falls sie nicht erhalten wurden,"
+      }
     },
     "date": {
       "range": "{{startDate}}–{{endDate}}",
@@ -1120,6 +1127,39 @@
         }
       },
       "add_button": "Hinzufügen"
+    },
+    "order_details": {
+      "addresses_section_title": "Rechnungsstellung und Versand",
+      "shipment_timeline": {
+        "expand_events_label": "Details anzeigen",
+        "expand_events_accessibility_label": "Details zur Lieferung der Bestellung anzeigen",
+        "hide_events_label": "Details ausblenden",
+        "hide_events_accessibility_label": "Details zur Lieferung der Bestellung ausblenden"
+      },
+      "billing_address": "Rechnungsadresse",
+      "card_ending_with": "endet mit {{lastDigits}}",
+      "contact": "Kontakt",
+      "fully_refunded_label": "ZURÜCKERSTATTET",
+      "discount": "Rabatt",
+      "company": "Unternehmen",
+      "order_details": "Bestelldetails",
+      "contact_information": "Kontaktinformationen",
+      "order_details_skeleton_accessibility_label": "Logge dich ein, um alle Bestelldetails einzusehen.",
+      "group_title_label": "Teil von: {{groupTitle}}",
+      "hide_items": "Artikel ausblenden",
+      "loading": "Bestelldetails werden geladen",
+      "loading_finished_accessibility_message": "Bestelldetails wurden geladen",
+      "location": "Standort",
+      "no_data": "Keine",
+      "mobile_summary_toggle_button": {
+        "open": "Bestellübersicht anzeigen",
+        "closed": "Bestellübersicht verbergen"
+      },
+      "image_gallery": {
+        "product_name_and_quantity": "{{quantity}} Stück {{productName}}",
+        "next": "Nächste Artikel anzeigen",
+        "previous": "Vorherige Artikel anzeigen"
+      }
     }
   },
   "pagefly": {
