@@ -1398,7 +1398,29 @@
         "list_item_without_address_accessibility_label": "{{name}}: Keine Adresse",
         "list_loading_accessibility_message": "Standortliste wird geladen",
         "list_loading_address_accessibility_message": "Adresse für {{locationName}} wird geladen",
-        "continue_to_store": "Weiter zum Shop"
+        "continue_to_store": "Weiter zum Shop",
+        "list_loading_finished_accessibility_message": "Standortliste wurde geladen",
+        "loading_store_accessibility_message": "Zum Shop",
+        "selection_cancel_button": "Abbrechen",
+        "selection_confirmation_button": "Standort auswählen",
+        "title": "Für welche Standorte kaufst du ein?",
+        "no_location_title": "Nur private Bestellungen",
+        "no_location_description": "Du verfügst nicht mehr über die Berechtigung, Bestellungen für {{company}} aufzugeben. Du kannst weiterhin private Bestellungen aufgeben.",
+        "no_locations_found": "Keine Standorte gefunden",
+        "search": "Suche nach Standort",
+        "search_location_title": "Standort auswählen",
+        "clear_search": "Suche zurücksetzen",
+        "try_new_search": "Eine neue Suchanfrage starten"
+      },
+      "addresses": {
+        "add_billing_address_button": "Rechnungsadresse hinzufügen",
+        "add_billing_address_section_accessibility_label": "Rechnungsadresse hinzufügen",
+        "add_shipping_address_button": "Lieferadresse hinzufügen",
+        "add_shipping_address_section_accessibility_label": "Lieferadresse hinzufügen",
+        "billing_address_card_title": "Rechnungsadresse",
+        "cancel_adding_billing_address_accessibility_label": "Hinzufügen der Rechnungsadresse abbrechen",
+        "cancel_adding_shipping_address_accessibility_label": "Hinzufügen der Lieferadresse abbrechen",
+        "save_new_billing_address_accessibility_label": "Rechnungsadresse speichern"
       }
     }
   },
