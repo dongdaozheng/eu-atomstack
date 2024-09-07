@@ -598,7 +598,17 @@
             "shopify_support_link_text": "Assistance Shopify"
           }
         }
-      }
+      },
+      "email_domain_invalid": "le fournisseur n'est pas pris en charge",
+      "invalid_for_country": "n'est pas valide pour %{country}",
+      "invalid_for_country_and_province": "n'est pas valide pour %{province} et %{country}",
+      "invalid_province_in_country": "n'est pas une province valide dans %{country}",
+      "invalid_state_in_country": "n'est pas un état valide dans %{country}",
+      "invalid_region_in_country": "n'est pas une région valide dans %{country}",
+      "less_than_or_equal_to": "doit être inférieur ou égal à %{count}",
+      "not_supported": "n'est pas pris en charge",
+      "full_name_required": "Entrez un prénom et un nom",
+      "invalid_for_card_type": "n'est pas valide"
     },
     "notices": {
       "customer": {
@@ -613,6 +623,30 @@
         "error_updating": "Erreur lors de la mise à jour de l'adresse",
         "created": "Adresse créée avec succès"
       }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "En stock",
+          "out_of_stock": "En rupture de stock"
+        }
+      },
+      "boolean": {
+        "true_label": "Oui",
+        "false_label": "Non"
+      }
+    },
+    "search": {
+      "error": "Un problème est survenu lors du chargement de vos résultats de recherche. Veuillez actualiser la page ou réessayer plus tard.",
+      "sorting": {
+        "relevance": "Pertinence",
+        "price_ascending": "Prix, bas à haut",
+        "price_descending": "Prix, du haut au bas"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "Erreur - %{title}",
+      "products": "Produits"
     }
   },
   "pagefly": {
