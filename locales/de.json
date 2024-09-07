@@ -1890,8 +1890,34 @@
         "escape_action": "Bestellbestätigung anzeigen ›",
         "components": {
           "close": "Schließen",
-          "expand": "Mehr anzeigen"
+          "expand": "Mehr anzeigen",
+          "processing": "Wird bearbeitet ...",
+          "submit": "Senden"
         }
+      },
+      "processing": {
+        "redirecting_page_title": "Weiterleitung…",
+        "redirecting_title": "Weiterleitung…",
+        "redirecting_notice": "Warte, während wir dich weiterleiten.",
+        "complete_your_purchase_title": "Schließe deinen Einkauf ab",
+        "continue_to_payment_gateway_notice": "Fahre mit der Zahlung fort, um deine Zahlungsinformationen hinzuzufügen.",
+        "continue_to_payment_gateway_button_label": "Weiter zur Zahlung",
+        "complete_your_purchase_title_error": "Korrigiere bitte deine Zahlungsinformationen",
+        "redirecting_to_bank": "Du wirst zu {{bank}} weitergeleitet",
+        "continue_to_payment_gateway_notice_error": "Deine Zahlungsinformationen konnten nicht verifiziert werden.",
+        "continue_to_payment_gateway_button_label_error": "Zahlungsinformationen aktualisieren",
+        "page_title": "Bestellung wird bearbeitet",
+        "title": "Bestellung wird bearbeitet",
+        "your_order_has_been_received_title": "Vielen Dank für deine Bestellung",
+        "you_will_receive_confirmation": "Wir bekommen gerade sehr viele Bestellungen herein. Du solltest deine Bestätigung in Kürze per E-Mail oder per SMS erhalten. Wenn du diese nicht in der nächsten Stunde erhalten solltest, dann gib uns Bescheid.",
+        "wait": {
+          "short": "Deine Bestellung wird bearbeitet.",
+          "medium": {
+            "one": "Deine Bestellung wird bearbeitet. Die geschätzte Wartezeit beträgt %{count} Minute.",
+            "other": "Deine Bestellung wird bearbeitet. Die geschätzte Wartezeit beträgt %{count} Minuten."
+          }
+        },
+        "you_will_not_be_charged": "Dir wird noch nichts berechnet"
       }
     },
     "sentence": {
