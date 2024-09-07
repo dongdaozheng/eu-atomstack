@@ -1230,7 +1230,55 @@
         "estimated_time_range": "Voraussichtlich %{min_time}–%{max_time}",
         "delivery_tomorrow": "Zustellung am nächsten Tag um %{time}",
         "two_day_delivery": "2-Tages-Zustellung um %{time}",
-        "delivery": "Zustellung um %{time}"
+        "delivery": "Zustellung um %{time}",
+        "other_method": {
+          "zero": "Keine anderen Methoden verfügbar",
+          "one": "%{count} andere Methode verfügbar unter",
+          "other": "%{count} andere Methoden verfügbar beginnend bei"
+        },
+        "shipping_rate_discounted_amount": "Vorher: %{original_amount}. Nachher: %{amount}",
+        "shipping_line_delivery_phone": "Du erhältst gegebenenfalls aktuelle Informationen zur Zustellung.",
+        "optional_shipping_line_delivery_instructions_label": "Zustellungsanweisungen (optional)",
+        "shipping_line_delivery_instructions": "Gib erforderliche Informationen wie Türcodes oder Anweisungen zur Abgabe ein.",
+        "local_delivery": "Lokale Zustellung",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "für %{count} Zustellung",
+            "other": "für %{count} Zustellungen"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "jeden Tag",
+              "other": "alle %{count} Tage"
+            },
+            "week": {
+              "one": "jede Woche",
+              "other": "alle %{count} Wochen"
+            },
+            "month": {
+              "one": "jeden Monat",
+              "other": "alle %{count} Monate"
+            },
+            "year": {
+              "one": "jedes Jahr",
+              "other": "alle %{count} Jahre"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} pro Lieferung",
+          "prepaid_shipping_price_label": "%{shipping_price} pro Lieferung x %{delivery_interval_count}",
+          "initial_order_discounted": "Kosten für den Erstversand %{discounted_shipping_cost}, anschließend %{frequency_description}",
+          "prepaid_initial_order_discounted": "Kosten für den Erstversand %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Kosten für den Erstversand %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Kosten für den Erstversand %{discounted_shipping_price} %{prepaid_delivery_frequency}, anschließend %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Kosten für den Erstversand %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), anschließend %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Enthalten",
+          "recurring_order_shipping_price": "Gefolgt von %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "Erste Bestellung inbegriffen, gefolgt von %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} pro Zustellung), gefolgt von %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Die erste Bestellung ist kostenlos"
+          }
+        }
       }
     },
     "sentence": {
