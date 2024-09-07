@@ -2267,7 +2267,59 @@
         "accept_marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten",
         "accept_sms_checkbox_label": "Neuigkeiten und Angebote via Textnachricht erhalten",
         "post_accept_marketing_checkbox_label": "Du hast ein Abonnement für Neuigkeiten und Angebote per E-Mail abgeschlossen",
-        "pending_accept_marketing_checkbox_label": "Überprüfe deine E-Mails, um dein Abonnement für Neuigkeiten und Angebote zu bestätigen"
+        "pending_accept_marketing_checkbox_label": "Überprüfe deine E-Mails, um dein Abonnement für Neuigkeiten und Angebote zu bestätigen",
+        "unsubscribe": {
+          "title": "Du hast dich abgemeldet",
+          "description": "Du wirst keine Warenkorb-Erinnerungen mehr von uns erhalten."
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Datenschutzerklärung",
+            "terms_of_service": "Allgemeinen Geschäftsbedingungen",
+            "description_html": "Wenn du dich für den Erhalt von Textnachrichten registrierst, erhältst du über die angegebene Telefonnummer wiederkehrende automatisierte Marketing-Nachrichten, einschließlich Warenkorb-Erinnerungen. Die Einwilligung stellt keine Einkaufsbedingung dar. Antworte mit dem Wort STOPPEN, um das Abo abzubestellen. Antworte mit dem Wort HILFE, um Unterstützung anzufordern. Die Häufigkeit der Nachrichten variiert. Es fallen u. U. Gebühren für die Nachrichten und Datennutzung an. Schau dir unsere %{privacy_policy_link} und %{terms_of_service_link} an.",
+            "description_transactional_html": "Du erhältst möglicherweise Textnachrichten zu Bestellbestätigungen und Versandaktualisierungen. Antworte mit dem Wort STOPPEN, um das Abo abzubestellen. Antworte mit dem Wort HILFE, um Unterstützung anzufordern. Die Häufigkeit der Nachrichten variiert. Es fallen u. U. Gebühren für die Nachrichten und Datennutzung an. Schau dir unsere %{privacy_policy_modal_link} und %{terms_of_service_modal_link} an."
+          },
+          "mobile_phone_number": "Mobiltelefonnummer",
+          "get_offers_by_text": "Angebote per Textnachricht erhalten"
+        },
+        "disclaimer": {
+          "privacy_policy": "Datenschutzerklärung",
+          "terms_of_service": "Allgemeine Geschäftsbedingungen"
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Anmeldung für Neuigkeiten und Angebote von diesem Shop"
+      },
+      "shop_policies": {
+        "refund_policy": "Widerrufsrecht",
+        "privacy_policy": "Datenschutzerklärung",
+        "terms_of_service": "AGB",
+        "legal_notice": "Impressum",
+        "shipping_policy": "Versand",
+        "terms_of_sale": "Verkaufsbedingungen",
+        "subscription_policy": "Abonnement-Richtlinien",
+        "purchase_options_policy": "Richtlinie für Kaufoptionen",
+        "contact_information": "Kontaktinformationen",
+        "purchase_options_cancellation_policy": "Stornierungsrichtlinie"
+      },
+      "notifications": {
+        "title": "Benachrichtigungen"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Für die Bestellung %{order_name} zu zahlender Betrag",
+        "changes_summary": {
+          "added": {
+            "one": "Hinzugefügt",
+            "other": "%{count} hinzugefügt"
+          },
+          "removed": "Entfernt",
+          "subtracted": "%{count} entfernt"
+        }
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Geschäftsbedingungen des eingetragenen Händlers",
+        "privacy_policy": "Datenschutzerklärung des eingetragenen Händlers"
+      },
+      "markets": {
+        "invalid_market_manager_error": "Deine Kontaktinformationen überprüfen, bevor du die Zahlung abschließt"
       }
     },
     "sentence": {
