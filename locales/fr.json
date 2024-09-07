@@ -636,7 +636,8 @@
           }
         },
         "saved_credit_card_actions": {
-          "delete": "Supprimer"
+          "delete": "Supprimer",
+          "edit": "Modifier"
         },
         "saved_credit_cards_modal": {
           "view_all_label": "Afficher toutes les cartes enregistrées",
@@ -652,7 +653,25 @@
           "title": "Supprimer la carte",
           "confirmation": "Êtes-vous sûr de vouloir supprimer le {{brandName}} se terminant par {{lastDigits}}?",
           "cancel": "Annuler"
-        }
+        },
+        "clear": "Clair",
+        "billing_must_match_shipping_notice": "L’adresse de facturation de votre mode de paiement doit correspondre à l’adresse de livraison.",
+        "same_billing_address_checkbox_label": "Utiliser l'adresse de livraison comme adresse de facturation",
+        "location_billing_address_label": "Adresse de facturation de l'emplacement",
+        "fact_billing_address_label": "Adresse de facturation",
+        "location_shipping_address_label": "Adresse de livraison du lieu",
+        "use_order_billing_address_label": "Utiliser l'adresse de facturation de la commande",
+        "use_location_billing_address_label": "Utiliser l'adresse de facturation de l'emplacement",
+        "use_location_shipping_address_label": "Utiliser l'adresse de livraison du lieu",
+        "no_working_method_error": "Ce magasin ne peut pas accepter les paiements pour le moment. Actualisez cette page ou revenez plus tard.",
+        "simulated_checkout": "Aperçu à venir",
+        "vaulting_agreement_label": "Enregistrez mes informations de paiement avec %{company} pour un paiement plus rapide.",
+        "business_customer_vaulting_payment_label": "Enregistrez cette carte lors du paiement et autorisez %{company} à la débiter pour de futurs achats pour cet emplacement. Tous les contacts affectés à cet emplacement peuvent utiliser la carte.",
+        "purchase_options_and_vaulting_agreement_label": "Un ou plusieurs articles de votre panier sont un achat différé ou par abonnement. En poursuivant votre paiement, vous acceptez que votre mode de paiement soit automatiquement facturé au prix et à la fréquence indiqués sur cette page jusqu'à ce qu'il se termine ou que vous l'annuliez. Toutes les annulations sont soumises au %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "politique d'annulation",
+        "use_different_credit_card_label": "Utiliser une autre carte",
+        "saved_credit_card": "Votre carte de crédit enregistrée",
+        "saved_credit_card_info": "Quatre derniers chiffres"
       },
       "shipping": {
         "split_cart_shipping_label": "Méthode",
