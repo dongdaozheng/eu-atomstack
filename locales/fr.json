@@ -1082,7 +1082,33 @@
         "gift_card_has_been_applied": "La carte cadeau a été appliquée",
         "gift_card_has_been_removed": "La carte cadeau a été supprimée",
         "gift_card_subscriptions_notice": "Les cartes cadeaux ne s'appliqueront que sur votre premier paiement",
-        "discount_already_applied": "Une remise a été appliquée sur cette commande. Vous ne pouvez pas ajouter une autre remise."
+        "discount_already_applied": "Une remise a été appliquée sur cette commande. Vous ne pouvez pas ajouter une autre remise.",
+        "deferred_payment_info": {
+          "due_on_fulfillment_title": "Le paiement de %{amount_due} est dû à l'exécution",
+          "due_on_receipt_title": "Le paiement de %{amount_due} est dû à réception"
+        },
+        "deferred_balance_info": {
+          "title": "Le solde de {{amount_due}} est dû le {{due_at}}",
+          "due_on_fulfillment_title": "Le solde de {{amount_due}} est dû à l'exécution"
+        },
+        "payment_terms_totals": {
+          "due_today": "Total dû aujourd'hui",
+          "due_later": "Total dû %{due_at}",
+          "due_on_fulfillment": "Total dû à l'exécution",
+          "due_on_receipt": "Total dû à réception",
+          "due_later_checkout_to_draft": "Total à payer plus tard",
+          "total_paid": "Total payé"
+        },
+        "paid_label": "Payé",
+        "payment_due_label": "Paiement dû",
+        "vat_label_html": "Dont %{amount} de taxes",
+        "duties_included_label": "Le total comprend les taxes et droits. Pas de frais supplémentaires à la livraison.",
+        "discount_and_gift_card_savings_notice": "Après %{discount_amount} de remises et %{gift_card_amount} de cartes cadeaux",
+        "discount_savings_notice": "Après %{discount_amount} de remises",
+        "gift_card_savings_notice": "Après %{gift_card_amount} en cartes cadeaux",
+        "cost_table_title": "Résumé des coûts",
+        "description_label": "Description",
+        "price_label": "Prix"
       },
       "deliverability": {
         "not_deliverable": {
