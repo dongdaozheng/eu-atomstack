@@ -567,6 +567,16 @@
           "prepaid_delivery_frequency": {
             "one": "pour %{count} livraison",
             "other": "pour %{count} livraisons"
+          },
+          "first_order_shipping_price_included": "Première commande incluse, suivie de %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} par livraison), suivi de %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Première commande gratuite",
+            "other": "Premières %{count} commandes gratuites"
+          },
+          "free_for_first_n_order": {
+            "one": "Pour la première commande",
+            "other": "Pour les %{count} premières commandes"
           }
         },
         "local_delivery": "Livraison locale",
@@ -579,7 +589,25 @@
         "address_more": "Plus d'actions pour cette adresse",
         "address_edit": "Modifier l'adresse",
         "address_delete": "Supprimer l'adresse",
-        "address_confirm": "Etes-vous sûr de vouloir supprimer cette adresse de votre compte?"
+        "address_confirm": "Etes-vous sûr de vouloir supprimer cette adresse de votre compte?",
+        "one_time_purchase_shipping": "Expédition unique",
+        "duties_and_taxes_title": "Droits et taxes",
+        "shipping_information_required_notice": "Les informations d’expédition sont requises. {{link}}.",
+        "shipping_information_redirect_link": "Entrez vos informations ici",
+        "address_default": "Définir par défaut",
+        "address_form": {
+          "add_address": "Ajouter une adresse",
+          "save": "Sauvegarder",
+          "cancel": "Annuler",
+          "generic_error": "Un problème est survenu lors de l'enregistrement de votre adresse. Veuillez réessayer.",
+          "one_time_address_subtitle": "Utiliser une adresse unique pour cette commande"
+        },
+        "different_shipping_method_summary": "Entrez une adresse de livraison différente pour afficher les méthodes d'expédition disponibles",
+        "invalid_shipping_method_summary": "Entrez une adresse de livraison valide pour afficher les méthodes d'expédition disponibles",
+        "method_summary": {
+          "incomplete_address_entered": "Entrez une adresse de livraison complète pour afficher les méthodes d'expédition disponibles",
+          "incomplete_address_selected": "Sélectionnez une adresse de livraison complète pour afficher les méthodes d'expédition disponibles"
+        }
       },
       "shop_pay_external": {
         "errors": {
