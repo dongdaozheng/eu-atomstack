@@ -2124,7 +2124,27 @@
         "login_reorder_link_text": {
           "one": "achète aussi ce produit",
           "other": "achète aussi ces produits"
-        }
+        },
+        "delivered_local_description_html": "Je n'ai pas reçu votre commande? %{let_us_know}.",
+        "choose_payment_method_later": "Choisissez le mode de paiement plus tard",
+        "picked_up_title": "Votre commande a été récupérée",
+        "picked_up_description_html": "Votre commande a été récupérée à %{location_name} le %{date}.",
+        "contact_us": "Contactez-nous",
+        "contact_us_lowercase": "Contactez-nous",
+        "contact_us_html": "Besoin d'aide? %{contact_us}",
+        "updated_time": "Mis à jour il y a %{time_ago}",
+        "failure": "Non livré",
+        "failed_title": "Votre commande n'a pas pu être livrée",
+        "out_for_delivery_local_description_html": "Votre commande arrivera bientôt.",
+        "attempted_delivery": "Tentative de livraison",
+        "attempted_delivery_title": "Une tentative a été faite pour livrer votre commande",
+        "attempted_delivery_description_html": "Une tentative a été faite pour livrer votre commande, mais sans succès. %{contact_us} pour organiser une autre tentative de livraison.",
+        "attempted_delivery_local_title": "Livraison manquée",
+        "attempted_delivery_local_description_html": "Nous n'avons pas pu livrer votre commande. Pour planifier une autre livraison, %{contact_us}.",
+        "delivered": "Livré",
+        "delivered_title": "Votre commande a été livrée",
+        "delivered_description_html": "Votre commande a été livrée à l'adresse que vous avez indiquée. Si vous ne l'avez pas reçu, ou si vous rencontrez d'autres problèmes, %{contact_us}.",
+        "delivered_local_title": "Votre commande a été livrée"
       }
     },
     "sentence": {
