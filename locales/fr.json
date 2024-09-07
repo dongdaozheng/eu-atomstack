@@ -2903,7 +2903,17 @@
         "view_lines_limit_reached": "Les lignes doivent être inférieures à %{limit}",
         "merchandise_line_transformers": {
           "run_error": "Une erreur s'est produite dans votre panier."
-        }
+        },
+        "changed": "Panier modifié",
+        "items_changed": "Un ou plusieurs éléments ont changé.",
+        "product_sold_out": "Le produit '%{name}' est déjà épuisé.",
+        "variant_not_found": "Impossible de trouver une variante",
+        "variant_requires_selling_plan": "La variante ne peut être achetée qu'avec un plan de vente.",
+        "selling_plan_not_available_for_company_locations": "Un seul achat unique est disponible pour les commandes B2B",
+        "digital_product_not_available_for_company_locations": "Cet article ne peut pas être ajouté à une commande B2B",
+        "selling_plan_not_applicable": "Impossible d'appliquer le plan de vente à la variante",
+        "shipping_address_not_required": "Ce panier ne nécessite pas d'expédition",
+        "shipping_address_invalid": "Un problème est survenu lors du calcul de vos tarifs d'expédition. Continuez à payer pour choisir un tarif d'expédition avant de finaliser votre commande."
       }
     },
     "filters": {
