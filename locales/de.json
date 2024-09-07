@@ -753,6 +753,34 @@
             "friday": "Fr",
             "saturday": "Sa",
             "sunday": "So"
+          },
+          "months": {
+            "january": "Januar",
+            "february": "Februar",
+            "march": "März",
+            "april": "April",
+            "may": "Mai",
+            "june": "Juni",
+            "july": "Juli",
+            "august": "August",
+            "september": "September",
+            "october": "Oktober",
+            "november": "November",
+            "december": "Dezember"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "Vormonat anzeigen, {{month}} {{year}}",
+          "show_next_month": "Nächsten Monat anzeigen, {{month}} {{year}}",
+          "range_start": "Bereichsbeginn",
+          "in_range": "Im Bereich",
+          "range_end": "Bereichsende"
+        },
+        "list_formatter": {
+          "and": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}} und {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} und {{secondWord}}"
           }
         }
       }
