@@ -479,7 +479,22 @@
           "apply_another_gift_card_label": "Appliquer une autre carte cadeau",
           "gift_card_label": "Carte cadeau %{identifiant}"
         },
-        "saved_credit_card_cvv_verification": "À des fins de vérification, veuillez saisir le code de sécurité de votre carte."
+        "saved_credit_card_cvv_verification": "À des fins de vérification, veuillez saisir le code de sécurité de votre carte.",
+        "network_card_payment_options": "Choisissez un réseau de cartes",
+        "amazon_payments_label": "Amazon Payer",
+        "amazon_payments_login_hint": "Il vous sera demandé de vous connecter avec Amazon.",
+        "amazon_payments_logout": "Se déconnecter d'Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "Le mode de paiement sélectionné n'a pas pu être utilisé. Sélectionnez une autre méthode ou contactez votre banque ou l'émetteur de votre carte.",
+        "amazon_payments_abandoned_mfa_challenge": "Votre paiement n'a pas pu être finalisé. Essayez un autre mode de paiement ou contactez votre banque ou l'émetteur de votre carte.",
+        "amazon_payments_could_not_enqueue_authorize": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez un autre mode de paiement.",
+        "title": "Paiement",
+        "amount_left_to_pay_label": "Paiement dû :",
+        "discount_button_action_label": "Appliquer le code de réduction",
+        "gift_card_code_label": "Code de la carte cadeau",
+        "apply_gift_card_button_label": "Appliquer",
+        "gift_card_balance_label": "Équilibre:",
+        "supported_card_brands_more_label": "et plus encore…",
+        "detected_card_brand": "Marque de carte détectée : {brand}"
       },
       "shipping": {
         "split_cart_shipping_label": "Méthode",
@@ -633,7 +648,11 @@
           "with_separator": "%{rest}, %{current},",
           "combination": "%{rest} et %{current}"
         },
-        "shipping_used_as_billing_notice": "Celle-ci sera également utilisée comme adresse de facturation pour cette commande."
+        "shipping_used_as_billing_notice": "Celle-ci sera également utilisée comme adresse de facturation pour cette commande.",
+        "split_shipping_option_lowest_price": "Prix ​​le plus bas",
+        "split_shipping_option_fastest": "Le plus rapide",
+        "split_shipping_option_recommended": "Recommandé",
+        "split_shipping_option_custom": "Coutume"
       },
       "shop_pay_external": {
         "errors": {
@@ -1349,6 +1368,11 @@
             "other": "Ces articles seront supprimés de votre panier car aucun mode de livraison n'est disponible pour votre adresse."
           },
           "label": "Pas de livraison"
+        }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Informations Complémentaires"
         }
       }
     },
