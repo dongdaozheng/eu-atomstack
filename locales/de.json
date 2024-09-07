@@ -554,7 +554,45 @@
       "too_short": "ist zu kurz (Untergrenze sind %{count} Zeichen)",
       "too_long": "ist zu lang (Obergrenze sind %{count} Zeichen)",
       "password_mismatch": "muss mit dem angegebenen Passwort übereinstimmen",
-      "contains_spaces": "beginnt oder endet mit einem Leerzeichen."
+      "contains_spaces": "beginnt oder endet mit einem Leerzeichen.",
+      "email_domain_invalid": "Anbieter wird nicht unterstützt",
+      "invalid_for_country": "ist nicht gültig für %{country}",
+      "invalid_for_country_and_province": "ist nicht gültig für %{province} und %{country}",
+      "invalid_province_in_country": "ist keine gültige Provinz in %{country}",
+      "invalid_state_in_country": "ist kein gültiger Staat in %{country}",
+      "invalid_region_in_country": "ist keine gültige Region in %{country}",
+      "less_than_or_equal_to": "muss kleiner oder gleich %{count} sein",
+      "not_supported": "wird nicht unterstützt",
+      "full_name_required": "Gib Vor- und Nachnamen ein.",
+      "invalid_for_card_type": "ist für diesen Kartentyp nicht gültig",
+      "invalid_type": "Es tut uns leid, wir haben keine Karten dieser Art akzeptieren",
+      "invalid_format": "ist keine Kreditkartennummer",
+      "expired": "Kreditkarte ist abgelaufen",
+      "invalid_start_date_or_issue_number_for_debit": "Ein gültiges Anfangsdatum oder eine Ausgabenummer ist erforderlich",
+      "invalid_expiry_year": "ist kein gültiges Ablaufjahr",
+      "reset_password_html": "Diese E-Mail Adresse ist bereits vergeben. Wenn es sich um dein Benutzerkonto handelt kannst du <a href=\"\/account\/login#recover\">ein neues Passwort anfordern<\/a>",
+      "verify_email": "Wir haben eine E-Mail an %{customer_email} geschickt, bitte klicke auf den enthaltenen Link, um deine E-Mail-Adresse zu bestätigen.",
+      "product_not_available": "Produkt ist nicht für diesen Kunden veröffentlicht.",
+      "shop_404": {
+        "title": "Erstelle eine E-Commerce-Website und verkaufe online! E-Commerce-Software von Shopify",
+        "heros": {
+          "store_unavailable": "Tut uns leid, dieser Shop ist derzeit nicht verfügbar.",
+          "store_not_exist": "Dieser Shop existiert nicht.",
+          "no_storefront": "Dieser Shop hat noch keine Website."
+        },
+        "links": {
+          "explore_other_stores": "Andere Shops entdecken",
+          "start_free_trial": "Jetzt kostenlos testen"
+        },
+        "owner_ctas": {
+          "header": "Bist du der Shop-Inhaber?",
+          "fix_domain": "Schließe die Einrichtung deiner neuen Webadresse ab, gehe zu %{domain_settings_link}. Klicke auf &quot;Domain verbinden&quot; und gib Folgendes ein: %{domain}.<br>Wenn du Probleme beim Anmelden in deinem Shop hast, versuche es auf der Seite %{forgot_your_store_link}.",
+          "fix_domain_link_text": "deinen Domain-Einstellungen",
+          "forgot_your_store_link_text": "\"Shop vergessen\"",
+          "add_storefront": "Du kannst deine Website einrichten, indem du den Onlineshop-Kanal in deinem %{admin_link} hinzufügst. Wenn du Probleme beim Anmelden in deinem Shop hast, versuche es auf der Seite %{forgot_your_store_link}.",
+          "admin_link_text": "Adminbereich"
+        }
+      }
     }
   },
   "customer_accounts": {
