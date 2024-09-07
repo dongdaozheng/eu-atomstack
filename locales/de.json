@@ -770,7 +770,15 @@
         },
         "alternative_payment_currency_total_notice": "Hinweis: Dir werden %{amount_due} berechnet",
         "waiting_on_taxes_message": "Wenn deine Steuern nicht innerhalb der nächsten Sekunden berechnet werden, aktualisiere die Seite.",
-        "alternative_payment_currency_total_manual_payment_notice": "Hinweise: %{amount_due} insgesamt umgerechnet."
+        "alternative_payment_currency_total_manual_payment_notice": "Hinweise: %{amount_due} insgesamt umgerechnet.",
+        "waiting_on_taxes_notice": "Steuern werden berechnet",
+        "payment_method": "Zahlungsmethode",
+        "expired_payment_method": "Die ausgewählte Zahlungsmethode ist abgelaufen",
+        "proposed_gateway_unavailable": "Das vorgeschlagene Zahlungs-Gateway ist nicht verfügbar",
+        "pay_in_installments_split_pay_short": "4 Zahlungen über %{amount}",
+        "payment_method_update_failed": "Aktualisierung der Zahlungsmethode fehlgeschlagen.",
+        "gift_cards_unavailable": "Dein Geschenkgutschein kann nicht für diese Bestellung verwendet werden und wurde entfernt",
+        "payment_flexibility_terms_id_mismatch": "ID der Zahlungsflexibilitätsbedingungen stimmt nicht überein"
       },
       "address_management": {
         "confirm_address_deletion": "Bist du dir sicher, dass du die Adresse {{address}} löschen möchtest?"
@@ -1652,6 +1660,38 @@
         "additional_information": {
           "title": "Zusätzliche Informationen"
         }
+      },
+      "billing": {
+        "billing_address_title": "Rechnung an",
+        "same_as_shipping": "Mit der Lieferadresse identisch",
+        "add_address": "Eine andere Adresse verwenden",
+        "edit": "Bearbeiten",
+        "delete": "Löschen",
+        "address_more": "Mehr Aktionen für diese Adresse",
+        "address_edit": "Adresse bearbeiten",
+        "address_delete": "Adresse löschen",
+        "address_confirm": "Möchtest du diese Adresse wirklich aus deinem Konto löschen?",
+        "address_form": {
+          "add_address": "Adresse hinzufügen",
+          "save": "Speichern",
+          "cancel": "Abbrechen"
+        }
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Aktuelles Guthaben: %{amount}",
+        "credit_card_expires_on_notice": "Gültig bis %{month}\/%{year}",
+        "express_payment_gateway_label": "Express",
+        "manual_payment_gateway_label": "Manuell",
+        "billing_address_title": "Rechnungsadresse",
+        "free_label": "Kostenlos"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "Gib eine gültige Telefonnummer ein",
+        "handle_email_invalid": "Gib eine gültige E-Mail-Adresse ein",
+        "email_invalid": "Gib eine gültige E-Mail-Adresse ein"
+      },
+      "company_location": {
+        "location_title": "Standort"
       }
     },
     "sentence": {
