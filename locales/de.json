@@ -1468,8 +1468,52 @@
             "title": "Zahlbar bis",
             "title_with_date": "Zahlung fällig am {{date}}",
             "title_due_on_receipt": "Zahlung noch nicht fällig",
-            "title_due_on_fulfillment": "Zahlung wird bei Fulfillment fällig"
-          }
+            "title_due_on_fulfillment": "Zahlung wird bei Fulfillment fällig",
+            "description_overdue": "Deine Zahlung ist im Verzug.",
+            "description_partially_paid": "Diese Bestellung wurde teilweise bezahlt. Du hast noch ein Restguthaben.",
+            "description_authorized": "Die Zahlung wird zum Fälligkeitsdatum über die von dir gewählte Zahlungsmethode abgewickelt, du kannst aber auch sofort bezahlen.",
+            "description_due_on_receipt": "Du erhältst eine Rechnung, sobald die Zahlung fällig ist.",
+            "description_due_on_fulfillment": "Die Zahlung wird fällig, sobald alle Artikel in dieser Bestellung ausgeführt wurden.",
+            "description_waiting_for_manual_payment": "Für diese Bestellung steht eine Zahlung aus. Das Guthaben wird nach Erhalt der Zahlung aktualisiert.",
+            "description_due_on_receipt_partially_paid": "Diese Bestellung wurde teilweise bezahlt. Du hast noch ein Restguthaben. Du erhältst eine Rechnung, sobald die Zahlung fällig ist.",
+            "description_due_on_fulfillment_partially_paid": "Diese Bestellung wurde teilweise bezahlt. Du hast noch ein Restguthaben. Die Zahlung wird fällig, sobald alle Artikel in dieser Bestellung ausgeführt wurden."
+          },
+          "draft": {
+            "description": "Die Zahlungsdetails werden festgelegt, wenn die Bestellung bestätigt wurde.",
+            "title": "Die Zahlung ist noch nicht fällig.",
+            "in_review": {
+              "description": "Die Zahlungsdetails werden festgelegt, wenn die Bestellung bestätigt wurde.",
+              "title": "Die Zahlung ist noch nicht fällig"
+            },
+            "submitted": {
+              "description": "Führe die Zahlung aus, um diese Bestellung zu bestätigen.",
+              "title": "Zur Bestätigung zahlen"
+            }
+          },
+          "paid": {
+            "description": "Deine Bestellung wurde vollständig bezahlt.",
+            "title": "Bezahlt",
+            "title_with_date": "Bezahlt am {{date}}"
+          },
+          "refund": {
+            "title": "Zurückerstattet",
+            "title_with_date": "Zurückerstattet am {{date}}",
+            "description_full_refund": "Du hast eine vollständige Rückerstattung für diese Bestellung erhalten.",
+            "description_single_refund": "Du hast eine teilweise Rückerstattung für diese Bestellung erhalten.",
+            "description_multiple_refunds": "Du hast eine Teilrückerstattung für diese Bestellung erhalten."
+          },
+          "pay_now": "Sofort bezahlen",
+          "title": "Zahlungsstatus",
+          "canceled": {
+            "title": "Zahlung storniert",
+            "description": "Dir wurde nichts berechnet."
+          },
+          "pay_now_accessibility_label": "Jetzt für Bestellung {{orderName}} bezahlen"
+        },
+        "order_timeline": {
+          "expand_events_label": "Details anzeigen",
+          "expand_events_accessibility_label": "Details zu Bestellentwürfen anzeigen",
+          "hide_events_label": "Details ausblenden"
         }
       }
     }
