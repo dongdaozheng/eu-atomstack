@@ -2614,7 +2614,37 @@
             "instructions": "{{walletName}}n'est actuellement pas disponible pour votre commande. Pour continuer votre achat, choisissez une autre méthode de paiement."
           },
           "generic": "Un problème est survenu avec {{walletName}}. Réessayez ou utilisez un autre mode de paiement.",
-          "discount_code": "Impossible d'appliquer ce code de réduction. Veuillez vérifier votre code et réessayer."
+          "discount_code": "Impossible d'appliquer ce code de réduction. Veuillez vérifier votre code et réessayer.",
+          "invalid": {
+            "billing_address": "Entrez une adresse de facturation valide",
+            "shipping_option": "Choisissez une option d'expédition valide",
+            "email": "Entrez un email valide",
+            "zone": "Entrez un état\/province valide",
+            "postal_code": "Entrez un code postal valide",
+            "phone": "Entrez un numéro de téléphone valide",
+            "reduction_code": "Entrez un code de réduction ou une carte cadeau valide",
+            "billing_must_match_shipping": "Doit correspondre à l'adresse de livraison",
+            "shipping_address": "Entrez une adresse de livraison valide"
+          },
+          "missing": {
+            "first_name": "Entrez un prénom",
+            "last_name": "Entrez un nom de famille"
+          },
+          "terminal": "Un problème est survenu avec {{walletName}}. Veuillez utiliser un autre mode de paiement.",
+          "detour": {
+            "stock_problems": "Certains articles ne sont plus disponibles. Fermez {{walletName}} et réessayez.",
+            "price_change": "Les prix de certains articles ont changé. Fermez {{walletName}} pour vérifier votre commande et réessayez.",
+            "queue": "Vous avez été placé dans une file d'attente pour passer à la caisse. Fermez {{walletName}} pour continuer."
+          },
+          "unsupported": {
+            "address": "Le commerçant ne peut pas livrer à cette adresse",
+            "wallet_is_unavailable": "{{walletName}}ne peut pas être utilisé avec cette adresse. Sélectionnez une autre adresse ou fermez {{walletName}} pour finaliser votre achat",
+            "postal_code": "Cet emplacement n'est pas pris en charge"
+          },
+          "outdated": {
+            "shipping_method": "Les options d'expédition ont changé pour votre commande. Vérifiez votre sélection.",
+            "payment_terms": "Les conditions de paiement ont changé. Veuillez vérifier votre commande"
+          }
         }
       }
     },
