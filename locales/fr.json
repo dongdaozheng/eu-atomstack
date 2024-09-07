@@ -1085,7 +1085,10 @@
         "discount_already_applied": "Une remise a été appliquée sur cette commande. Vous ne pouvez pas ajouter une autre remise.",
         "deferred_payment_info": {
           "due_on_fulfillment_title": "Le paiement de %{amount_due} est dû à l'exécution",
-          "due_on_receipt_title": "Le paiement de %{amount_due} est dû à réception"
+          "due_on_receipt_title": "Le paiement de %{amount_due} est dû à réception",
+          "title": "Le paiement de %{amount_due} est dû le %{due_at}",
+          "description_html": "Pour des questions sur votre commande, %{contact_us}.",
+          "paid_today": "Total payé aujourd'hui"
         },
         "deferred_balance_info": {
           "title": "Le solde de {{amount_due}} est dû le {{due_at}}",
@@ -1108,7 +1111,24 @@
         "gift_card_savings_notice": "Après %{gift_card_amount} en cartes cadeaux",
         "cost_table_title": "Résumé des coûts",
         "description_label": "Description",
-        "price_label": "Prix"
+        "price_label": "Prix",
+        "pickup_label": "Retrait en magasin",
+        "no_pickup_location": "Il n’y a pas de lieux de ramassage disponibles.",
+        "tip_label": "Conseil",
+        "calculating_shipping": "Calculateur…",
+        "calculating": "Calculateur…",
+        "shipping_default_value": "Calculé à l'étape suivante",
+        "shipping_discount_title": "Remise sur les frais d'expédition",
+        "shipping_pending_value": "—",
+        "shipping_pending_message": "Pas encore disponible",
+        "shipping_policy_link": "Frais d'expédition",
+        "recurring_subtotal_label": "Sous-total récurrent",
+        "recurring_total_label": "Total récurrent",
+        "recurring_total_tooltip": "N'inclut pas les frais d'expédition, les taxes, les droits ou toute réduction applicable.",
+        "confirmation_number_label": "Confirmation #%{confirmation_number}",
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> n'a pas pu être utilisé avec vos remises existantes.",
+        "percent_off_shipping": "%{percent} % de réduction sur les frais d'expédition",
+        "amount_off_shipping": "%{amount} de réduction sur les frais d'expédition"
       },
       "deliverability": {
         "not_deliverable": {
