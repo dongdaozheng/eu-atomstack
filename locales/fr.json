@@ -2287,7 +2287,43 @@
             "description_html": "En vous inscrivant par SMS, vous acceptez de recevoir des messages marketing automatisés récurrents, y compris des rappels de panier, au numéro de téléphone fourni. Le consentement n'est pas une condition d'achat. Répondez STOP pour vous désabonner. Répondez HELP pour obtenir de l'aide. La fréquence des messages varie. Des frais de messagerie et de données peuvent s'appliquer. Consultez nos %{privacy_policy_link} et %{terms_of_service_link}.",
             "description_transactional_html": "Vous pouvez recevoir des messages texte liés à la confirmation de commande et aux mises à jour d'expédition. Répondez STOP pour vous désabonner. Répondez HELP pour obtenir de l'aide. La fréquence des messages varie. Des frais de messagerie et de données peuvent s'appliquer. Consultez nos %{privacy_policy_modal_link} et %{terms_of_service_modal_link}."
           },
-          "mobile_phone_number": "Numéro de téléphone portable"
+          "mobile_phone_number": "Numéro de téléphone portable",
+          "get_offers_by_text": "Recevez des offres par SMS"
+        },
+        "unsubscribe": {
+          "title": "Vous vous êtes désabonné",
+          "description": "Vous ne recevrez plus de rappels de panier de notre part."
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Inscrivez-moi pour recevoir les actualités et les offres de ce magasin"
+      },
+      "shop_policies": {
+        "refund_policy": "Politique de remboursement",
+        "privacy_policy": "Politique de confidentialité",
+        "terms_of_service": "Conditions d'utilisation",
+        "legal_notice": "Mentions légales",
+        "shipping_policy": "Politique d'expédition",
+        "terms_of_sale": "Conditions de vente",
+        "subscription_policy": "Politique d'abonnement",
+        "purchase_options_policy": "Politique d'options d'achat",
+        "contact_information": "Coordonnées",
+        "purchase_options_cancellation_policy": "Politique d'annulation"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Conditions générales du commerçant officiel",
+        "privacy_policy": "Politique de confidentialité du commerçant officiel"
+      },
+      "markets": {
+        "invalid_market_manager_error": "Vérifiez vos coordonnées avant de finaliser le paiement"
+      },
+      "notifications": {
+        "title": "Notifications"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Montant à payer pour la commande %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "Ajouté"
+          }
         }
       }
     },
