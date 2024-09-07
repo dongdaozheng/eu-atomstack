@@ -1045,7 +1045,29 @@
         "discount_placeholder": "Code de réduction",
         "discount_code_applied": "Code de réduction appliqué",
         "gift_card_applied": "Carte cadeau appliquée",
-        "enter_shipping_address": "Entrez l'adresse de livraison"
+        "enter_shipping_address": "Entrez l'adresse de livraison",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> le code de réduction n'est pas valable pour les articles de votre panier",
+        "discount_requires_customer_notice": "Saisissez vos informations de livraison pour appliquer le code de réduction <strong style=\"text-transform:uppercase\">%{code}<\/strong>",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> le code de réduction n'est pas disponible pour le moment",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> le code de réduction nécessite un client éligible",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> le code de réduction n'est pas disponible pour votre adresse de livraison",
+        "customer_already_used_once_per_customer_discount_notice": "Le code de réduction <strong style=\"text-transform:uppercase\">%{code}<\/strong> a déjà été utilisé",
+        "subtotal_label": "Total",
+        "subtotal_label_with_quantity": {
+          "one": "Sous-total (%{count} élément)",
+          "other": "Sous-total (%{count} éléments)"
+        },
+        "shipping_label": "Expédition",
+        "taxes_label": "Impôts",
+        "estimated_taxes_label": "Taxes estimées",
+        "information_estimated_taxes_label": "Taxes (estimées)",
+        "estimated_taxes_finalization_tooltip_content": "La taxe finale et le total seront confirmés par e-mail ou par SMS après avoir passé votre commande.",
+        "order_total_label": "Total de la commande",
+        "total_savings": "Économies totales",
+        "total_label": "Total",
+        "total_outstanding_label": "Montant à payer",
+        "partial_total_label": "Total",
+        "free_total_label": "Gratuit"
       }
     },
     "sentence": {
