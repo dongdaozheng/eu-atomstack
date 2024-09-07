@@ -2501,9 +2501,39 @@
           "shared_location_button": "Meinen Standort verwenden",
           "errors": {
             "unsuported_by_browser": "Das Abrufen der Geolocation wird von deinem Browser nicht unterstützt. Versuche es erneut oder verwende einen anderen Browser.",
-            "permission_not_allowed": "Genehmige die Freigabe deines Standorts."
+            "permission_not_allowed": "Genehmige die Freigabe deines Standorts.",
+            "permission_denied": "Dein Standort konnte nicht abgerufen werden. Versuche es noch einmal."
           }
         }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Es gab ein Problem mit unserem Checkout",
+          "message": "Aktualisiere diese Seite oder versuche es in ein paar Minuten noch einmal",
+          "action": {
+            "cta": "Seite neu laden"
+          },
+          "request_id": "Anfrage-ID: {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Kehre zum Warenkorb zurück",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text}, um die Mengen zu aktualisieren",
+        "subscription_changed": "Eins deiner Abonnements hat sich geändert.",
+        "company_location_changed": "Dein Warenkorb wurde aktualisiert. Überprüfe deine Bestellung, bevor du sie aufgibst.",
+        "company_location_changed_product_removed": "Dein Warenkorb wurde aktualisiert, da einige Produkte an diesem Standort nicht verfügbar sind. Überprüfe deine Bestellung, bevor du sie aufgibst.",
+        "violations_title": "{{violation}} fehlt oder ist ungültig",
+        "individual_violations_title": {
+          "DeliveryViolations": "Lieferadresse",
+          "PaymentViolations": "Rechnungsadresse",
+          "OtherViolations": "Bestellinformationen",
+          "UnhandledViolations": "Bestellinformationen"
+        },
+        "all_violations_content": "Rufe uns an oder {{emailLink}}, um diese Informationen zu aktualisieren und deine Bestellung abzuschließen:",
+        "all_violations_email_link": "sende uns eine E-Mail",
+        "editable_shipping_address_violations_message_title": "Füge diese Informationen hinzu, um deine Bestellung abzuschließen:",
+        "editable_shipping_address_violations_message_footer": "Um die Adresse für diesen Standort dauerhaft zu aktualisieren, {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "kontaktiere uns"
       }
     },
     "sentence": {
