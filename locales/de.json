@@ -731,8 +731,46 @@
           "with_quantities": "{{delta}} von {{quantity}} zurückgegeben"
         },
         "order_edit_banner_items_return_line_item_removed": {
-          "in_full": "Aus Rückgabe entfernt"
-        }
+          "in_full": "Aus Rückgabe entfernt",
+          "with_quantities": "{{delta}} aus der Rückgabe entfernt"
+        },
+        "order_edit_banner_single_item_added": "Hinzugefügt",
+        "order_edit_banner_multiple_items_added": "{{amount}} hinzugefügt",
+        "order_edit_banner_single_item_removed": "Entfernt",
+        "order_edit_banner_multiple_items_removed": "{{amount}} entfernt",
+        "order_edit_banner_single_item_returned": "Zurückgegeben",
+        "order_edit_banner_multiple_items_returned": "{{amount}} zurückgegeben",
+        "order_edit_banner_updated_order_label": "Aktualisierte Bestellung",
+        "order_edit_banner_single_item_return_line_item_removed": "Aus Rückgabe entfernt",
+        "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} aus der Rückgabe entfernt",
+        "gift_card_wrapper": {
+          "heading": "Geschenkgutschein",
+          "apply_gift_card_label": "Geschenkgutschein anwenden",
+          "payment_tag": "Geschenkgutschein",
+          "apply_another_gift_card_label": "Weiteren Geschenkgutschein anwenden",
+          "gift_card_label": "Geschenkgutschein: %{identifier}",
+          "add_label": "Einen Geschenkgutschein hinzufügen",
+          "manage_label": "Geschenkgutscheine verwalten"
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "Bestätigung der benutzerdefinierten Onsite-Zahlung"
+        },
+        "gift_card_store_credit": {
+          "add_label": "Einen Geschenkgutschein oder Shop-Guthaben hinzufügen",
+          "manage_label": "Geschenkgutscheine oder Shop-Guthaben verwalten"
+        },
+        "markets_pro_disclaimer_label": "Indem du unten klickst und deine Bestellung abschließt, stimmst du dem Kauf eines Artikels (von Artikeln) von Global-e als eingetragenen Händler für diese Transaktion mit den %{markets_pro_terms} und der %{privacy_policy} von Global-e zu. Global-e ist ein internationaler Fulfillmentdienstanbieter für %{shop_name}",
+        "markets_pro_disclaimer_terms_and_conditions": "Geschäftsbedingungen",
+        "markets_pro_disclaimer_privacy_policy": "Datenschutzerklärung",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Geschäftsbedingungen des eingetragenen Händlers",
+        "markets_pro_disclaimer_privacy_policy_title": "Datenschutzerklärung des eingetragenen Händlers",
+        "purchase_order_number": {
+          "title": "Bestellnummer",
+          "label": "Bestellnummer (optional)"
+        },
+        "alternative_payment_currency_total_notice": "Hinweis: Dir werden %{amount_due} berechnet",
+        "waiting_on_taxes_message": "Wenn deine Steuern nicht innerhalb der nächsten Sekunden berechnet werden, aktualisiere die Seite.",
+        "alternative_payment_currency_total_manual_payment_notice": "Hinweise: %{amount_due} insgesamt umgerechnet."
       },
       "address_management": {
         "confirm_address_deletion": "Bist du dir sicher, dass du die Adresse {{address}} löschen möchtest?"
