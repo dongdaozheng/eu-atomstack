@@ -488,8 +488,32 @@
         "shipping_method_title": "Méthode d'expédition",
         "shipping_method_one_time_purchase_group_title": "Achat unique",
         "shipping_method_first_shipment_group_title": {
-          "one": "Premier envoi"
-        }
+          "one": "Premier envoi",
+          "other": "Premières expéditions"
+        },
+        "no_pickup_location_notice": "Au moins un de vos produits n'est pas disponible en retrait",
+        "no_rates_for_country_notice": "Aucun tarif d'expédition trouvé pour cette adresse.",
+        "no_rates_contact_notice": "Contactez-nous pour plus d'informations",
+        "free_rate_label": "Gratuit",
+        "cheapest_rate_label": "Le moins cher",
+        "please_enter_your_shipping_information_notice": "Veuillez saisir vos informations d'expédition.",
+        "estimated_delivery_date": {
+          "one": "%{count} jour ouvrable",
+          "other": "%{count} jours ouvrés"
+        },
+        "estimated_delivery_date_range": "%{minimum} à %{maximum} jours ouvrés",
+        "delivery_date_range": "%{min_time}–%{max_time}",
+        "shipping_method_subscription_group_title": "Abonnement",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Expédition récurrente",
+          "other": "Expéditions récurrentes"
+        },
+        "subscription_shipping": "Expédition de l'abonnement",
+        "subscription_local_delivery": "Livraison locale par abonnement",
+        "subscription_pickup": "Récupération de l'abonnement",
+        "waiting_on_rate_notice": "Obtenir les tarifs d’expédition disponibles…",
+        "waiting_on_pickup_location_notice": "Obtenir des lieux de prise en charge disponibles…",
+        "no_rates_for_cart_or_destination_notice": "Il n'y a aucune méthode d'expédition disponible pour votre panier ou votre adresse"
       },
       "shop_pay_external": {
         "errors": {
