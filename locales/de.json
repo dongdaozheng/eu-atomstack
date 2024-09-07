@@ -1314,9 +1314,43 @@
         "address_confirm": "Möchtest du diese Adresse wirklich aus deinem Konto löschen?",
         "address_form": {
           "add_address": "Adresse hinzufügen",
-          "save": "Speichern"
+          "save": "Speichern",
+          "cancel": "Abbrechen",
+          "generic_error": "Beim Speichern deiner Adresse ist ein Problem aufgetreten. Bitte versuche es erneut.",
+          "one_time_address_subtitle": "Eine einmalige Adresse für diese Bestellung verwenden"
         },
-        "address_default": "Als Standard festlegen"
+        "address_default": "Als Standard festlegen",
+        "different_shipping_method_summary": "Gib eine andere Lieferadresse ein, um verfügbare Versandarten anzuzeigen",
+        "invalid_shipping_method_summary": "Gib eine gültige Lieferadresse ein, um verfügbare Versandarten anzuzeigen.",
+        "method_summary": {
+          "incomplete_address_entered": "Gib eine vollständige Lieferadresse ein, um verfügbare Versandarten anzuzeigen.",
+          "incomplete_address_selected": "Wähle eine vollständige Lieferadresse aus, um verfügbare Versandarten anzuzeigen."
+        },
+        "local_pickup": {
+          "search_address": "Nach Adresse suchen",
+          "rollup_title": "Shop-Standort"
+        },
+        "missing_shipping_address": "Lieferadresse fehlt",
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} Artikel",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} weitere",
+        "split_shipping_merchandise_shipment_number": "Lieferung %{number} von %{total}",
+        "pre_order_ships_now": "Wird jetzt versendet",
+        "pre_order_ships_later": "Wird später versendet",
+        "pre_order_ships_date": "Wird am %{date} versendet",
+        "split_shipping_shipped_by_shop": "Versand durch %{shop_name}",
+        "split_shipping_multiple_shipment_label": "Mehrere Lieferungen",
+        "split_shipping_shipping_label": "Art",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} Lieferungen",
+        "split_shipping_multiple_shipment_notice": "Deine Bestellung wird in mehreren Lieferungen zugestellt",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Deine Bestellung wird in %{quantity} Lieferungen zugestellt",
+        "split_shipping_more_shipping_options": "Weitere Versandoptionen",
+        "split_shipping_shipment_number": "Lieferung %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "Menge: %{quantity}",
+        "split_shipping_merchandise_quantity_label_inline": "%{merchandise_title} ×%{quantity}",
+        "split_shipping_option_free": "Kostenfreier Versand",
+        "split_shipping_option_lowest_price": "Niedrigster Preis",
+        "split_shipping_option_fastest": "Am schnellsten",
+        "split_shipping_option_recommended": "Empfohlen"
       }
     },
     "sentence": {
