@@ -476,6 +476,31 @@
     "checkout": {
       "payment": {
         "payment_method_not_available_for_shipping_address_error": "Für die ausgewählte Lieferadresse ist keine Zahlungsmethode verfügbar. Wählen Sie eine andere Zahlungsmethode."
+      },
+      "address_management": {
+        "confirm_address_deletion": "Bist du dir sicher, dass du die Adresse {{address}} löschen möchtest?"
+      },
+      "general": {
+        "page_title": "Checkout",
+        "error_page_title": "Fehler",
+        "skip_to_content": "Direkt zum Inhalt",
+        "breadcrumb": "Breadcrumb",
+        "continue_button_label": "Weiter",
+        "complete_purchase_button_label": "Kaufen",
+        "pay_now_button_label": "Jetzt bezahlen",
+        "authenticate_purchase_button_label": "Zahlung authentifizieren",
+        "edit_link_label": "Bearbeiten",
+        "all_rights_reserved": "Alle Rechte vorbehalten %{shop_name}",
+        "print_policies_link_label": "Drucken",
+        "cart": "Warenkorb",
+        "close_modal_label": "Schließen",
+        "close_notice_label": "Schließen",
+        "expand_notice_label": "Mehr anzeigen",
+        "continue_to_shipping_method": "Weiter zum Versand",
+        "continue_to_payment_method": "Weiter zur Zahlung",
+        "continue_to_review": "Bestellung überprüfen",
+        "back_to_cart": "Zurück zum Warenkorb",
+        "back_to_contact_information": "Zurück zu den Informationen"
       }
     },
     "sentence": {
