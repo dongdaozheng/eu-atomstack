@@ -2144,7 +2144,33 @@
         "delivered": "Livré",
         "delivered_title": "Votre commande a été livrée",
         "delivered_description_html": "Votre commande a été livrée à l'adresse que vous avez indiquée. Si vous ne l'avez pas reçu, ou si vous rencontrez d'autres problèmes, %{contact_us}.",
-        "delivered_local_title": "Votre commande a été livrée"
+        "delivered_local_title": "Votre commande a été livrée",
+        "customer_information_hidden_fields_message": "Connectez-vous pour afficher toutes les informations client.",
+        "cancelled_title": "Votre commande a été annulée",
+        "cancelled_description": "Votre commande a été annulée le %{date}. Contactez-nous si vous avez des questions.",
+        "order_number_label": "Numéro de commande",
+        "customer_validation_error": "Entrez un e-mail ou un numéro de commande valide.",
+        "customer_validation_error_phone": "Entrez un numéro de téléphone ou de commande valide.",
+        "login": "Se connecter",
+        "unfulfilled_items_title": "Préparation de l'expédition",
+        "unfulfilled_items_description": "Nous préparons actuellement ces articles pour l'expédition.",
+        "marker": {
+          "current": "Lieu d'expédition actuel",
+          "shipping": "Adresse de livraison"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Lieu d'expédition actuel",
+          "shipping": "Lieu de prise en charge"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Articles de cet envoi",
+          "unfulfilled_table_title": "Articles en préparation pour l'expédition",
+          "product_image_label": "Image du produit",
+          "description_label": "Description",
+          "quantity_label": "Quantité"
+        },
+        "order_updates_description_missing": "Vous ne recevez pas de mises à jour d'expédition.",
+        "order_updates_subscribe_to_email_notifications": "Recevez des mises à jour d'expédition par e-mail"
       }
     },
     "sentence": {
