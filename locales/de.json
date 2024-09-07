@@ -837,9 +837,47 @@
         "delete": "Löschen"
       },
       "dismiss_toast": "Verwerfen",
-      "document_title": "{{sectionName}} – {{shopName}} – Konto"
+      "document_title": "{{sectionName}} – {{shopName}} – Konto",
+      "generic_accessibility_label": "{{label}}: {{value}}",
+      "go_to_store_link": "Zum Shop",
+      "loading_message": "Wird geladen",
+      "log_out_link": "Abmelden",
+      "logout_overlay_label": "Abmeldung läuft ...",
+      "nav_label_accessibility_label": "Hauptmenü",
+      "navigation_accessibility_message": "Du hast zu {{sectionName}} navigiert",
+      "open_menu_accessibility_label": "Hauptmenü öffnen",
+      "orders_link_label": "Bestellungen",
+      "shop_logo_accessibility_label": "{{shopName}}-Logo",
+      "subscriptions_link_label": "Abonnements",
+      "settings_link": "Einstellungen"
     },
-    "enable_javascript": "Um dein Konto anzuzeigen, aktiviere JavaScript in deinen Browser-Einstellungen oder logge dich über einen anderen Browser ein."
+    "enable_javascript": "Um dein Konto anzuzeigen, aktiviere JavaScript in deinen Browser-Einstellungen oder logge dich über einen anderen Browser ein.",
+    "account_information": {
+      "loading_accessibility_message": "Kontoinformationen werden geladen",
+      "loading_finished_accessibility_message": "Kontoinformationen wurden geladen",
+      "profile_card": {
+        "cancel": "Abbrechen",
+        "cancel_accessibility_label": "Bearbeitung des Profils abbrechen",
+        "edit": "Bearbeiten",
+        "edit_accessibility_label": "Profil bearbeiten",
+        "email_help_text": "Für den Login verwendete E-Mail kann nicht geändert werden",
+        "first_name": "Vorname",
+        "last_name": "Nachname",
+        "phone_number_help_text": "Für den Login verwendete Telefonnummer kann nicht geändert werden",
+        "save": "Speichern",
+        "save_accessibility_label": "Profil speichern",
+        "title": "Profil",
+        "no_name_provided_accessibility_label": "Kein Name hinzugefügt"
+      },
+      "profile_update_confirmation_message": "Profil wurde aktualisiert",
+      "title": "Profil",
+      "people": {
+        "pagination": {
+          "load_more": "Weitere laden",
+          "load_more_accessibility_label": "Weitere Personen laden"
+        }
+      }
+    }
   },
   "pagefly": {
     "products": {
