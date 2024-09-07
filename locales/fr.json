@@ -580,6 +580,30 @@
         "paypal_modal": {
           "order_contains_subscriptions": "Abonnement",
           "order_contains_fixed_selling_plans": "Le total peut ne pas inclure les taxes, les frais d'expédition, les frais reportés et certaines réductions. Continuez à payer pour le montant dû aujourd'hui."
+        },
+        "klarna_label": "Klarna",
+        "klarna_pay_later_label": "Payez plus tard avec Klarna",
+        "klarna_pay_now_label": "Payez maintenant avec Klarna",
+        "bancontact_label": "Bancontact",
+        "giropay_label": "Giropay",
+        "multibanco_label": "Multibanco",
+        "eps_label": "eps-überweisung",
+        "klarna_slice_it_label": "Financer avec Klarna",
+        "ideal_label": "idéal",
+        "bank_picker_label": "Banque",
+        "purchase_options_agreement_label_wallets": "En poursuivant votre paiement, vous acceptez les futurs frais indiqués sur cette page et les conditions d'annulation.",
+        "change_currency_section_description": "Sélectionnez une option de devise",
+        "no_real_orders_dev_store": "Ce magasin ne peut pas accepter de vraies commandes ou de vrais paiements.",
+        "waiting_on_payment_methods": "Obtenir les modes de paiement disponibles...",
+        "apple_pay_payment_error": "Votre paiement n'a pas pu être finalisé. Réessayez ou utilisez un autre mode de paiement.",
+        "taxes_not_included": "Taxes en sus",
+        "no_taxes_banner_content": "Aucune taxe ne sera facturée sur cette commande. Une fois le paiement encaissé, les taxes ne peuvent plus être ajoutées.",
+        "paypal": {
+          "connect": "Cliquez pour connecter votre compte PayPal"
+        },
+        "apple": {
+          "connect": "Cliquez pour connecter votre compte Apple Pay",
+          "not_available": "Apple Pay n'est pas disponible dans ce navigateur. Pour connecter votre compte Apple Pay, vous devrez utiliser Safari sur un appareil Apple."
         }
       },
       "shipping": {
