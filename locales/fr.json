@@ -705,6 +705,22 @@
         "order_edit_banner_items_removed": {
           "in_full": "Supprimé",
           "with_quantities": "Suppression de {{delta}} de {{quantity}}"
+        },
+        "google": {
+          "connect": "Cliquez pour vous connecter à votre compte Google Pay",
+          "error_authorizing": "Erreur lors de l'autorisation du paiement"
+        },
+        "account_connected": "Compte connecté.",
+        "mor_disclaimer_html": "En cliquant ci-dessous et en complétant votre commande, vous acceptez d'acheter votre ou vos articles auprès de Global-e en tant que marchand officiel.\npour cette transaction, selon les <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Conditions générales<\/a> de Global-e\net <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Politique de confidentialité<\/a>. Global-e est une société internationale\nfournisseur de services de traitement des commandes à %{shop_name}",
+        "pending_payment": {
+          "due_notice": "Votre paiement de %{amount_due} est dû le %{due_date}.",
+          "multibanco": {
+            "buyer_action_info": "Votre paiement de %{amount_due} est dû.",
+            "instruction_html": "Effectuez votre paiement chez Multibanco ou en ligne en utilisant les détails ci-dessous. Pour des questions ou pour mettre à jour les détails de paiement, %{contact_us}.",
+            "entity": "Entité",
+            "reference": "Référence",
+            "amount": "Montant"
+          }
         }
       },
       "shipping": {
