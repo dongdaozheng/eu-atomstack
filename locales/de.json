@@ -533,7 +533,40 @@
         "expiry_long": "(Läuft ab: %{month}\/%{year})",
         "payment_method_saved": "Zahlungsmethode gespeichert",
         "card_vaulted_company_location": "Karte für diesen Standort gespeichert",
-        "paypal_disconnect": "Verbindung trennen"
+        "paypal_disconnect": "Verbindung trennen",
+        "saved_by_payment_method": "Abgespeichert mit %{payment_method}",
+        "pay_with_payment_method": "Bezahlung via %{payment_method}",
+        "same_billing_address_label": "Mit der Lieferadresse identisch",
+        "different_billing_address_label": "Eine andere Rechnungsadresse verwenden",
+        "free_order_notice_html": "Deine Bestellung ist <strong>kostenlos<\/strong>. Keine Zahlung notwendig.",
+        "express_checkout_free_order": "Für eine kostenlose Bestellung wird dir nichts in Rechnung gestellt",
+        "different_credit_card_label": "Verwende eine andere Kreditkarte",
+        "billing_address_associated_with_mandate": "Adresse verwenden, die mit der Zahlungsmethode assoziiert ist",
+        "billing_address_associated_with_mandate_info": "Wenn du deine Rechnungsadresse ändern möchtest, entferne deine Kreditkartendaten und gib sie erneut ein.",
+        "expiry_short": "(Läuft ab: %{month}\/%{year})",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Deine Bestellung wird von deinem Gutschein abgedeckt.",
+          "other": "Deine Bestellung wird von deinen Gutscheinen abgedeckt."
+        },
+        "offsite_gateway_redirect_hint": "Nachdem du “%{button_label}” geklickt hast, wirst du zu %{gateway_label} weitergeleitet, um deinen Einkauf sicher abzuschließen.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} insgesamt %{total_shop_price}",
+        "billing_address_title": "Rechnungsadresse",
+        "billing_address_description": "Wähle die mit deiner Karte oder Zahlungsmethode verknüpfte Adresse aus.",
+        "billing_address_description_no_shipping_address": "Gib die mit deiner Karte oder Zahlungsmethode verknüpfte Adresse ein.",
+        "no_js_credit_card_fields_redirect_hint": "Du wirst weitergeleitet, um deine Zahlungsinformationen hinzuzufügen.",
+        "card_fields_container_prefix": "Rahmen für das Feld:",
+        "receiver_payment_experience_hint": "Nachdem du deine Bestellung aufgegeben hast, erhältst du die Zahlungsdetails. Führe die Zahlung innerhalb von %{due_days} Tagen bei Multibanco oder online aus.",
+        "card_fields_unavailable_html": {
+          "one": "Kredit- und Debitkartenzahlungen sind momentan nicht verfügbar.<br>Bitte <a href=\"%{current_url}\">lade diese Seite neu<\/a> oder versuche es später noch einmal.",
+          "other": "Kredit- und Debitkartenzahlungen sind momentan nicht verfügbar.<br>Bitte <a href=\"%{current_url}\">lade diese Seite neu<\/a> oder probiere eine andere Zahlungsmethode."
+        },
+        "card_fields_processing_error": "Bei der Verarbeitung der Zahlung ist ein Problem aufgetreten. Versuche, diese Seite zu aktualisieren oder überprüfe deine Internetverbindung.",
+        "technical_error": "Zahlungen können derzeit aus technischen Gründen nicht bearbeitet werden. Versuche es in ein paar Minuten noch einmal.",
+        "no_method_error": "Dieser Shop kann zurzeit keine Zahlungen akzeptieren.",
+        "not_configured_error": "Dieser Shop kann zurzeit keine Zahlungen akzeptieren.",
+        "missing_credit_card_error": "Gib deine Kartendaten ein, um die Zahlung abzuschließen",
+        "billing_address_not_supported_for_payment_method_error": "Diese Zahlungsmethode steht für deine Rechnungsadresse und Währung nicht zur Verfügung. Bitte versuche es mit einer anderen Zahlungsmethode.",
+        "shop_pay_ideal_unavailable_error": "iDEAL ist für diese Bestellung nicht verfügbar. Wähle eine andere Zahlungsmethode aus."
       },
       "address_management": {
         "confirm_address_deletion": "Bist du dir sicher, dass du die Adresse {{address}} löschen möchtest?"
