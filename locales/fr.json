@@ -1824,7 +1824,27 @@
         "available_methods_updated": "Les modes de paiement disponibles ont été mis à jour.",
         "generic_error": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez un autre mode de paiement.",
         "rejected_transaction": "Votre paiement a été refusé. Réessayez ou utilisez un autre mode de paiement.",
-        "credit_card_processing": "Votre paiement ne peut pas être traité pour des raisons techniques. Réessayez dans quelques minutes ou utilisez un autre mode de paiement."
+        "credit_card_processing": "Votre paiement ne peut pas être traité pour des raisons techniques. Réessayez dans quelques minutes ou utilisez un autre mode de paiement.",
+        "checkout_amount_changed": "Votre paiement n'a pas pu être traité car le montant dû au moment du paiement a changé. Veuillez vérifier votre commande et réessayer.",
+        "deferred_payment_not_allowed": "Les paiements différés ne sont pas autorisés. Veuillez vérifier votre commande et réessayer.",
+        "deferred_payment_required": "Cette commande nécessite un paiement différé. Veuillez vérifier votre commande et réessayer.",
+        "deferred_amount_changed": "Votre paiement n'a pas pu être traité car le montant du paiement différé a changé. Veuillez vérifier votre commande et réessayer.",
+        "deferred_date_changed": "Votre paiement n'a pas pu être traité car la date de paiement différé a changé. Veuillez vérifier votre commande et réessayer.",
+        "order_total_changed": "Le total de votre commande a changé. Vérifiez et réessayez.",
+        "payment_processing": "Votre paiement ne peut pas être traité pour des raisons techniques. Réessayez ou utilisez un autre mode de paiement.",
+        "payment_processing_no_retry": "Votre paiement ne peut pas être traité pour des raisons techniques. Veuillez essayer un autre mode de paiement.",
+        "paypal_zero_amount": "Vous ne pouvez pas utiliser PayPal pour les commandes %{amount}. Confirmez que votre commande est correcte et payez sans PayPal.",
+        "paypal_invalid_token": "PayPal n'était pas disponible. Réessayez ou utilisez une autre option de paiement.",
+        "pay_later_failed": "Une erreur s'est produite lors du traitement de votre paiement avec Payer plus tard. Choisissez un autre mode de paiement et réessayez.",
+        "three_d_secure_failed": "Votre paiement n'a pas pu être vérifié. Réessayez ou utilisez un autre mode de paiement.",
+        "three_d_secure_failed_duplicate": "L'authentification 3D Secure de la carte bancaire a échoué car une autre est déjà en cours.",
+        "three_d_secure_throttled": "Trop de tentatives ; veuillez patienter avant de réessayer",
+        "subscription_agreement_blank": "Pour acheter un abonnement, vos informations de paiement doivent être enregistrées. Pour continuer, confirmez que vous acceptez ou supprimez les articles d'abonnement de votre commande.",
+        "insufficient_funds": "Votre paiement a été refusé en raison de fonds insuffisants. Réessayez ou utilisez un autre mode de paiement.",
+        "multiple_deferred_payment_not_allowed": "Un seul paiement différé autorisé par demande. Veuillez vérifier votre demande et réessayer.",
+        "shipping_must_match_billing": "L'adresse de facturation doit correspondre à l'adresse de livraison. Veuillez utiliser un autre mode de paiement.",
+        "decision_rule_block": "Un problème est survenu lors du traitement de votre paiement. Veuillez contacter le propriétaire du magasin.",
+        "pick_up_card": "Votre carte a été refusée. Réessayez ou utilisez un autre mode de paiement."
       }
     },
     "sentence": {
