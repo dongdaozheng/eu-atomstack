@@ -1094,7 +1094,29 @@
         "vat_label_html": "inkl. %{amount} MwSt",
         "estimated_taxes_finalization_tooltip_content": "Die endgültige Steuer und der Gesamtbetrag werden per E-Mail oder SMS bestätigt, nachdem du die Bestellung aufgegeben hast.",
         "order_total_label": "Gesamtbestellwert",
-        "total_savings": "Gesamtersparnisse"
+        "total_savings": "Gesamtersparnisse",
+        "discount_and_gift_card_savings_notice": "Nach %{discount_amount} Rabatt und %{gift_card_amount} in Form von Geschenkgutscheinen",
+        "discount_savings_notice": "Nach %{discount_amount} Rabatt",
+        "gift_card_savings_notice": "Nach %{gift_card_amount} in Form von Geschenkgutscheinen",
+        "cost_table_title": "Kostenüberblick",
+        "description_label": "Beschreibung",
+        "price_label": "Preis",
+        "quantity_label": "Anzahl",
+        "price_per_item": {
+          "accessibility_label": "%{price} pro Artikel",
+          "label": "%{price}\/Stück"
+        },
+        "duties_included_label": "Gesamtbetrag enthält Steuern und Zollgebühren. Keine zusätzlichen Gebühren bei Zustellung.",
+        "product_change_label": "Ändern",
+        "product_image_label": "Produktbild",
+        "scroll_order_summary": "Für weitere Artikel scrollen",
+        "expand_order_summary_short": "Anzeigen",
+        "collapse_order_summary_short": "Ausblenden",
+        "expand_order_summary": "Bestellübersicht anzeigen",
+        "collapse_order_summary": "Bestellübersicht verbergen",
+        "total_updated_label": "Neuer Gesamtpreis:",
+        "original_price": "Ursprünglicher Preis",
+        "sale_price": "Verkaufspreis"
       }
     },
     "sentence": {
