@@ -1987,7 +1987,27 @@
         "gift_card_confirmation_by_text": "Wenn du sie nicht erhalten hast, sende die Textnachricht erneut oder kontaktiere uns.",
         "gift_card_confirmation_by_email": "Wenn du sie nicht erhalten hast, sende die E-Mail erneut oder kontaktiere uns.",
         "gift_card_title": "Geschenkgutscheine",
-        "estimated_delivery": "Derzeitige voraussichtliche Zustellung: "
+        "estimated_delivery": "Derzeitige voraussichtliche Zustellung: ",
+        "thank_you_title": "Deine Bestellung wurde bestätigt",
+        "thank_you_confirmed_order_with_email": "Du erhältst zur Bestätigung in Kürze eine E-Mail mit deiner Bestellnummer.",
+        "thank_you_confirmed_order_with_phone": "Du erhältst zur Bestätigung in Kürze eine SMS mit deiner Bestellnummer.",
+        "thank_you_confirmed_order_with_email_and_phone": "Du erhältst zur Bestätigung in Kürze eine E-Mail mit deiner Bestellnummer.",
+        "resend_gift_cards": "Geschenkgutscheine erneut senden",
+        "thank_you_title_payment": "Deine Zahlung ist bestätigt.",
+        "thank_you_title_review": "Deine Bestellung wurde zur Prüfung gesendet",
+        "thank_you_title_payments_app_pending_default": "Deine Zahlung wird verarbeitet",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Deine Bestellung wurde empfangen",
+        "thank_you_title_payments_app_failed_pending_payment": "Deine Zahlung konnte nicht verarbeitet werden.",
+        "thank_you_confirmed_order_with_missing": "Kontaktiere uns per E-Mail oder Telefon, um eine Bestellbestätigung zu erhalten.",
+        "thank_you_confirmed_order_with_email_pick_up": "Du erhältst eine E-Mail, sobald deine Bestellung zur Abholung bereit ist.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Du erhältst eine SMS, sobald deine Bestellung zur Abholung bereit ist.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Du erhältst eine E-Mail, sobald deine Bestellung zur Abholung bereit ist.",
+        "thank_you_confirmed_order_with_email_payment": "Du hast eine Zahlung für deine Bestellung %{date} vorgenommen.",
+        "thank_you_confirmed_order_with_phone_payment": "Du hast eine Zahlung für deine Bestellung %{date} vorgenommen.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Du hast eine Zahlung für deine Bestellung %{date} vorgenommen.",
+        "thank_you_confirmed_order_with_draft": "Wir lassen es dich wissen, falls wir weitere Informationen benötigen oder wenn deine Bestellung bestätigt wurde.",
+        "thank_you_confirmed_order_with_missing_payment": "Kontaktiere uns per E-Mail oder Telefon, um eine Bestellbestätigung zu erhalten.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Kontaktiere uns per E-Mail oder Telefon, um eine Bestellbestätigung zu erhalten."
       }
     },
     "sentence": {
