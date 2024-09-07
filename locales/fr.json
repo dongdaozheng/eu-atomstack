@@ -658,6 +658,24 @@
             "allocations_mismatch": "L'allocation de remise attendue ne correspond pas à l'allocation de remise réelle.",
             "discount_code_not_honoured": "<strong style=\"text-transform:uppercase\">%{discount_rejection_message}<\/strong>",
             "discount_title_too_long": "Le titre de la remise ne peut pas comporter plus de 255 caractères."
+          },
+          "inventory": {
+            "missing_quantity_value": "Le champ Quantité est manquant dans les lignes de stock de l'acheteur.",
+            "changing_behavior_not_allowed": "Ce client n'est pas autorisé à modifier le comportement de l'inventaire.",
+            "only_one_inventory_behavior_allowed": "Actuellement, un seul comportement d'inventaire est autorisé par paiement."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Le refus des droits n'est pas autorisé pour cette caisse."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "L'attribution au détail n'est pas autorisée pour ce paiement.",
+            "retail_attribution_required": "L'attribution au détail est requise pour ce paiement."
+          },
+          "captcha": {
+            "metadata_missing": "Remplir un captcha est requis pour cette commande.",
+            "metadata_mismatch": "Le fournisseur et le type de captcha fournis ne correspondent pas aux valeurs attendues.",
+            "token_missing": "Un jeton captcha doit être fourni pour finaliser cette commande.",
+            "job_enqueue_failed": "La tâche de validation captcha n'a pas pu être mise en file d'attente."
           }
         },
         "continue_to_review": "Vérifier la commande",
@@ -669,7 +687,17 @@
         "choose_payment_method": "Choisissez un mode de paiement",
         "choose_billing_address": "Choisissez une adresse de facturation",
         "contact_us_html": "Contactez-nous pour plus d'informations",
-        "autocomplete_title": "Suggestions"
+        "autocomplete_title": "Suggestions",
+        "display_name": "{{firstName}}{{lastName}}",
+        "google_map_title": "Carte Google",
+        "confirm_order_button_label": "Confirmer la commande",
+        "submit_order_button_label": "Soumettre la commande",
+        "submit_for_review_button_label": "Soumettre pour examen",
+        "submit_for_review_notice_label": "Le paiement ne sera dû qu'après examen de votre commande",
+        "continue_to_payment_plans_button_label": "Continuer vers les plans de paiement",
+        "back_button_label": "Retour",
+        "choose_delivery_strategy": "Choisissez un mode de livraison",
+        "autocomplete_zero_item": "Aucun article disponible"
       }
     },
     "sentence": {
