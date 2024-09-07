@@ -2259,7 +2259,35 @@
           "change_shipping_address_link_label": "Changer l'adresse de livraison",
           "change_shipping_method_link_label": "Changer le mode d'expédition",
           "change_payment_method_link_label": "Changer de mode de paiement",
-          "pick_up_in_store_shipping_method_html": "Retrait en magasin · %{location_name}"
+          "pick_up_in_store_shipping_method_html": "Retrait en magasin · %{location_name}",
+          "purchase_order_number_title": "Numéro de bon de commande",
+          "change_purchase_order_number_label": "Changer le numéro de bon de commande",
+          "change_delivery_method_link_label": "Changer le mode de livraison",
+          "no_address": "(Pas d'adresse)",
+          "no_purchase_order_number": "(Pas de numéro de bon de commande)",
+          "due_after_order_reviewed_html": "À payer après examen de la commande",
+          "review_title_free_order": "Vérifiez et complétez votre commande",
+          "payment_method_saved_company_location": "Enregistrer la carte pour cet emplacement"
+        },
+        "block_title": "Vérifiez vos informations"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Envoyez-moi des nouvelles et des offres",
+        "post_accept_marketing_checkbox_label": "Vous êtes abonné pour recevoir des actualités et des offres par email",
+        "pending_accept_marketing_checkbox_label": "Vérifiez votre messagerie pour confirmer votre abonnement aux actualités et offres",
+        "accept_sms_checkbox_label": "Envoyez-moi des nouvelles et des offres",
+        "disclaimer": {
+          "privacy_policy": "politique de confidentialité",
+          "terms_of_service": "Conditions d'utilisation"
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "politique de confidentialité",
+            "terms_of_service": "Conditions d'utilisation",
+            "description_html": "En vous inscrivant par SMS, vous acceptez de recevoir des messages marketing automatisés récurrents, y compris des rappels de panier, au numéro de téléphone fourni. Le consentement n'est pas une condition d'achat. Répondez STOP pour vous désabonner. Répondez HELP pour obtenir de l'aide. La fréquence des messages varie. Des frais de messagerie et de données peuvent s'appliquer. Consultez nos %{privacy_policy_link} et %{terms_of_service_link}.",
+            "description_transactional_html": "Vous pouvez recevoir des messages texte liés à la confirmation de commande et aux mises à jour d'expédition. Répondez STOP pour vous désabonner. Répondez HELP pour obtenir de l'aide. La fréquence des messages varie. Des frais de messagerie et de données peuvent s'appliquer. Consultez nos %{privacy_policy_modal_link} et %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "Numéro de téléphone portable"
         }
       }
     },
