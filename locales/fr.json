@@ -1156,7 +1156,33 @@
             "other": "%{count} éléments"
           }
         },
-        "alternative_payment_currency_total": "Facturé en %{amount_due}"
+        "alternative_payment_currency_total": "Facturé en %{amount_due}",
+        "price_per_item": {
+          "accessibility_label": "%{price} par article",
+          "label": "%{price}\/ch"
+        },
+        "quantity_label": "Quantité",
+        "product_change_label": "Changement",
+        "product_image_label": "Image du produit",
+        "scroll_order_summary": "Faites défiler pour plus d'articles",
+        "expand_order_summary_short": "Montrer",
+        "collapse_order_summary_short": "Cacher",
+        "expand_order_summary": "Afficher le récapitulatif de la commande",
+        "collapse_order_summary": "Masquer le récapitulatif de la commande",
+        "updated_shipping_method": "Mode d'expédition mis à jour : %{shipping_method}",
+        "recurring_payments": "Paiements récurrents",
+        "recurring_total_multiple_label": "Cette commande comporte des frais récurrents pour plusieurs articles.",
+        "deferred_total_due_date_label": "Total dû {{date}}",
+        "full_price": "Plein tarif : %{price}",
+        "custom_discount": "Remise personnalisée",
+        "expand_component_information": {
+          "one": "Afficher %{count} élément",
+          "other": "Afficher %{count} éléments"
+        },
+        "collapse_component_information": {
+          "one": "Masquer %{count} élément",
+          "other": "Masquer %{count} éléments"
+        }
       },
       "deliverability": {
         "not_deliverable": {
