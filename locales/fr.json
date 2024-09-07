@@ -686,9 +686,13 @@
         "cancel_reason": {
           "declined": "Paiement refusé",
           "inventory": "Articles indisponibles",
-          "fraud": "Commande frauduleuse"
+          "fraud": "Commande frauduleuse",
+          "customer": "Commande modifiée\/annulée par le client",
+          "staff": "Erreur du personnel",
+          "other": "Autre"
         },
-        "not_available": "Cette commande n'est pas disponible"
+        "not_available": "Cette commande n'est pas disponible",
+        "cash_on_delivery": "Paiement à la livraison (COD)"
       },
       "line_item": {
         "item_status": {
@@ -698,6 +702,15 @@
           "decrement_fulfilled_line_item": "Renvoyé %{delta} sur %{total}",
           "decrement_return_line_item": "Supprimé %{delta} du retour"
         }
+      },
+      "storefront": {
+        "invalid_password": "Mot de passe incorrect, veuillez réessayer."
+      },
+      "tags": {
+        "add_articles": "Affiner la recherche aux articles ayant également la balise %{tag}",
+        "add_products": "Limiter la sélection aux produits correspondant à la balise %{tag}",
+        "remove_articles": "Élargir la recherche aux articles qui ne sont pas balisés %{tag}",
+        "remove_products": "Supprimer la balise %{tag}"
       }
     },
     "filters": {
@@ -722,7 +735,19 @@
     },
     "page_titles": {
       "blog_or_article_with_error": "Erreur - %{title}",
-      "products": "Produits"
+      "products": "Produits",
+      "shopping_cart": "Votre panier",
+      "account": "Compte",
+      "create_account": "Créer un compte",
+      "reset_account": "Réinitialiser le compte",
+      "addresses": "Adresses",
+      "order": "Commande %{name}",
+      "search": "Recherche",
+      "search_results": {
+        "one": "Recherche : %{count} résultat trouvé pour \"%{terms}\"",
+        "other": "Recherche : %{count} résultats trouvés pour \"%{terms}\""
+      },
+      "collections": "Collections"
     },
     "email_marketing": {
       "open_tracking": {
@@ -754,7 +779,8 @@
       },
       "subscribed": {
         "disclaimer": "Vous pouvez vous désinscrire à tout moment.",
-        "unsubscribe": "Se désabonner"
+        "unsubscribe": "Se désabonner",
+        "confirmation": "Merci de vous être abonné à notre liste de diffusion."
       },
       "unsubscribed": {
         "confirmation": "Vous vous êtes désabonné de notre liste de diffusion.",
