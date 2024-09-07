@@ -1159,7 +1159,61 @@
         "product_name_and_quantity": "{{quantity}} Stück {{productName}}",
         "next": "Nächste Artikel anzeigen",
         "previous": "Vorherige Artikel anzeigen"
-      }
+      },
+      "payment": {
+        "status_in_review": "Zahlung fällig nach der Überprüfung",
+        "status_unpaid": "Zahlung fällig am {{date}}",
+        "title": "Zahlung",
+        "card_payment_details": "endet mit {{lastDigits}} – {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "endet mit {{lastDigits}} – {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Mit Shop Pay Installments bezahlt",
+          "view_schedule": "Plan anzeigen"
+        },
+        "manual_payment_methods": {
+          "money_order": "Geldbrief – {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Nachnahme (COD) – {{formattedTransactionAmount}}",
+          "bank_deposit": "Bankeinlage – {{formattedTransactionAmount}}",
+          "manual": "Manuell – {{formattedTransactionAmount}}"
+        },
+        "store_credit_payment_details": "Shop-Guthaben – {{formattedTransactionAmount}}",
+        "transactions": {
+          "show_all": "Alle anzeigen",
+          "show_less": "Weniger anzeigen"
+        },
+        "emv_details": {
+          "auth": "AUTH",
+          "aid": "AID",
+          "source": "SOURCE"
+        }
+      },
+      "not_applicable": "N. z.",
+      "partially_refunded_label": "TEILWEISE ZURÜCKERSTATTET",
+      "no_data_provided": "-",
+      "no_data_provided_accessibility_label": "{{fieldName}} ist leer",
+      "paid_amount": "Bezahlt",
+      "refunded_amount": "Zurückerstattet",
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "Mit Shop Pay Installments bezahlt",
+        "description": "Behalte deine Zahlungsplanung mit den Erinnerungen in der Shop-App im Griff.",
+        "payment_reminders_button": "Zahlungserinnerungen erhalten",
+        "desktop_qr_code_content": {
+          "title": "Nach Erinnerungen scannen",
+          "description": "Erinnerungen für deine Raten bei Shop erhalten."
+        }
+      },
+      "returns": {
+        "expand_events_label": "Details anzeigen",
+        "hide_events_label": "Details ausblenden",
+        "ineligible_return_message": "Keine Artikel in dieser Bestellung können zurückgegeben werden.",
+        "ineligible_return_message_when_returned": "Es können keine zusätzlichen Artikel in dieser Bestellung zurückgegeben werden."
+      },
+      "request_return_failed": "Bei der Verarbeitung deiner Anfrage ist ein Problem aufgetreten. Bitte versuche es erneut.",
+      "marketing_section_title": "Neuigkeiten und Angebote",
+      "marketing_description": "Du erhältst Marketing-E-Mails. Du kannst dich jederzeit wieder abmelden.",
+      "marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten",
+      "marketing_checkmark_label": "Du hast ein Abonnement zum Erhalt von Neuigkeiten und Angebote per E-Mail abgeschlossen",
+      "remaining_amount": "Verbleibend"
     }
   },
   "pagefly": {
