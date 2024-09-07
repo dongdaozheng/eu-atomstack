@@ -1067,7 +1067,35 @@
         "total_label": "Total",
         "total_outstanding_label": "Montant à payer",
         "partial_total_label": "Total",
-        "free_total_label": "Gratuit"
+        "free_total_label": "Gratuit",
+        "title": "Récapitulatif de la commande",
+        "group_title_label": "Une partie de \"%{group_title}\"",
+        "order_name_label": "Commande %{name}",
+        "shopping_cart_label": "Panier",
+        "discount_title": "Rabais",
+        "free_shipping_discount_label": "Livraison gratuite",
+        "applied_free_shipping_discount_label": "Appliqué",
+        "apply_discount_button_label": "Appliquer",
+        "applied_discount_message": "%{amount} de réduction sur le prix total de la commande",
+        "discount_has_been_applied": "La réduction a été appliquée",
+        "discount_has_been_removed": "La réduction a été supprimée",
+        "gift_card_has_been_applied": "La carte cadeau a été appliquée",
+        "gift_card_has_been_removed": "La carte cadeau a été supprimée",
+        "gift_card_subscriptions_notice": "Les cartes cadeaux ne s'appliqueront que sur votre premier paiement",
+        "discount_already_applied": "Une remise a été appliquée sur cette commande. Vous ne pouvez pas ajouter une autre remise."
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Aucune livraison disponible pour %{count} article",
+            "other": "Aucune livraison disponible pour %{count} articles"
+          },
+          "message": {
+            "one": "Cet article sera supprimé de votre panier car aucun mode de livraison n'est disponible pour votre adresse.",
+            "other": "Ces articles seront supprimés de votre panier car aucun mode de livraison n'est disponible pour votre adresse."
+          },
+          "label": "Pas de livraison"
+        }
       }
     },
     "sentence": {
