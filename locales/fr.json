@@ -899,7 +899,19 @@
         "pick_up_from_store": "Retrait en magasin",
         "pick_up_locations": "Emplacements des magasins",
         "pick_up_in_one_hour": "Généralement prêt en 1 heure",
-        "pick_up_in_two_hours": "Généralement prêt en 2 heures"
+        "pick_up_in_two_hours": "Généralement prêt en 2 heures",
+        "pick_up_in_four_hours": "Généralement prêt en 4 heures",
+        "pick_up_in_twenty_four_hours": "Généralement prêt en 24 heures",
+        "pick_up_in_two_to_four_days": "Généralement prêt en 2 à 4 jours",
+        "pick_up_in_five_or_more_days": "Généralement prêt en 5+ jours",
+        "pick_up_in_zero_to_two_hours": "Prêt à être récupéré dans 2 heures",
+        "pick_up_in_two_to_four_hours": "Prêt à être récupéré dans 4 heures",
+        "pick_up_immediately": "Prêt à être récupéré maintenant",
+        "pick_up_next_day": "Prêt à être récupéré le lendemain",
+        "pickup_point_method_definition": "Expédier au point de retrait",
+        "retail_method_definition": "Expédition au détail",
+        "none_method_definition": "Pas d'expédition",
+        "subscription_pickup_information": "Ce mode de livraison s'appliquera à tous les articles de cette commande et à toutes les commandes futures de cet abonnement."
       },
       "stock": {
         "price_column_header": "Prix",
@@ -928,6 +940,16 @@
           "title": "Produit inachetable",
           "header": "Certains articles ont été supprimés de votre panier"
         }
+      },
+      "customer_account": {
+        "not_user_label": "Pas %{first_name}?",
+        "have_an_account_label": "Avoir un compte?",
+        "sign_in_link_label": "Se connecter",
+        "sign_out_link_label": "Se déconnecter",
+        "save_my_information_label": "Enregistrez ces informations pour la prochaine fois",
+        "invalid_address": "L'adresse sélectionnée n'est pas valide. %{update_address_link} ou sélectionnez une autre adresse.",
+        "incomplete_address": "L'adresse sélectionnée est incomplète. %{update_address_link} ou sélectionnez une autre adresse.",
+        "rollup_label": "Compte"
       }
     },
     "sentence": {
