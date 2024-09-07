@@ -737,7 +737,35 @@
         "full_price": "Plein tarif :",
         "title": "Paiement - {{shopName}}",
         "full_title": "{{pageTitle}}- {{shopName}} - Paiement",
-        "loading_title": "Paiement - {{shopName}}"
+        "loading_title": "Paiement - {{shopName}}",
+        "dates": {
+          "weekdays": {
+            "tuesday": "Mardi",
+            "wednesday": "Mercredi",
+            "thursday": "Jeudi",
+            "friday": "Vendredi",
+            "saturday": "Samedi",
+            "sunday": "Dimanche",
+            "monday": "Lundi"
+          },
+          "weekdays_abbreviation": {
+            "monday": "Mo",
+            "tuesday": "Ma",
+            "wednesday": "Nous",
+            "thursday": "Ème"
+          }
+        },
+        "autocomplete_powered_by_google": "Propulsé par {{brandName}}",
+        "submit": "Soumettre",
+        "processing": "Traitement…",
+        "stepper": {
+          "increase": "Augmenter {{type}}",
+          "decrease": "Diminuer {{type}}",
+          "minimum_reached": "Minimum de {{value}} atteint",
+          "maximum_reached": "Maximum de {{value}} atteint"
+        },
+        "remove_item": "Supprimer %{label}",
+        "remove_tag": "Supprimer la balise"
       }
     },
     "sentence": {
