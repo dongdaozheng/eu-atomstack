@@ -604,7 +604,17 @@
         "apple": {
           "connect": "Cliquez pour connecter votre compte Apple Pay",
           "not_available": "Apple Pay n'est pas disponible dans ce navigateur. Pour connecter votre compte Apple Pay, vous devrez utiliser Safari sur un appareil Apple."
-        }
+        },
+        "afterpay_label": "Après-paiement",
+        "cashapppay_label": "Paiement par application en espèces",
+        "purchase_options_card_update_agreement_label_html": "En mettant à jour votre mode de paiement, vous autorisez les paiements pour tout achat récurrent ou différé conformément aux <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">politiques d'annulation<\/a> de ce magasin.",
+        "subscription_card_update_agreement_label": "La modification du mode de paiement mettra à jour votre abonnement et vos futurs paiements récurrents.",
+        "subscription_agreement_label": "Un ou plusieurs articles de votre panier sont un achat différé ou par abonnement. En poursuivant votre paiement, vous acceptez que votre mode de paiement soit automatiquement facturé au prix et à la fréquence indiqués sur cette page jusqu'à ce qu'il se termine ou que vous l'annuliez. Toutes les annulations sont soumises au %{cancelled}.",
+        "subscription_agreement_cancelled": "politique d'annulation",
+        "subscription_heading": "Contrat d'abonnement",
+        "subscription_agreement_label_html": "Je comprends que j'accepte un abonnement. Il sera renouvelé au prix et à la fréquence indiqués jusqu'à son terme ou jusqu'à ce qu'il soit\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">annulé<\/a>.",
+        "purchase_options_agreement_label": "Un ou plusieurs articles de votre panier constituent un achat différé ou récurrent. En poursuivant votre paiement, vous acceptez que votre mode de paiement soit automatiquement facturé au prix et à la fréquence indiqués sur cette page jusqu'à ce qu'il se termine ou que vous l'annuliez. Toutes les annulations sont soumises au %{cancellation_policy_label}.",
+        "purchase_options_agreement_label_html": "Je comprends qu'un ou plusieurs articles de mon panier constituent un achat différé ou récurrent. En continuant, j'accepte le\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">politique d'annulation<\/a>\net vous autorise à débiter mon mode de paiement aux prix, fréquences et dates indiqués sur cette page jusqu'à mon\nla commande est exécutée ou j'annule, si cela est autorisé."
       },
       "shipping": {
         "split_cart_shipping_label": "Méthode",
