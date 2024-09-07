@@ -1116,7 +1116,45 @@
         "collapse_order_summary": "Bestellübersicht verbergen",
         "total_updated_label": "Neuer Gesamtpreis:",
         "original_price": "Ursprünglicher Preis",
-        "sale_price": "Verkaufspreis"
+        "sale_price": "Verkaufspreis",
+        "order_total_updated_label": "Aktualisierte Gesamtsumme",
+        "total_already_paid_label": "Bezahlt",
+        "unit_price": {
+          "accessible_separator": "pro",
+          "content_html": "%{price}%{accessible_separator}%{per_unit}"
+        },
+        "gift_card_ending": "Geschenkgutschein mit Endung %{last_characters}",
+        "estimated_tax_label": "Geschätzte Steuer",
+        "multiple_shipping_lines_label": "Gesamtversandkosten",
+        "recurring_subtotal_label": "Wiederkehrende Zwischensumme",
+        "recurring_total_label": "Wiederkehrende Gesamtsumme",
+        "recurring_total_tooltip": "Beinhaltet keine Versandkosten, Steuern, Zollgebühren oder anwendbaren Rabatte.",
+        "confirmation_number_label": "Bestätigungsnr. %{confirmation_number}",
+        "deferred_payment_info": {
+          "title": "Zahlung von %{amount_due} ist am %{due_at} fällig",
+          "description_html": "Wende dich an %{contact_us}, wenn du Fragen zu deiner Bestellung hast.",
+          "paid_today": "Gesamtbetrag heute bezahlt",
+          "due_on_fulfillment_title": "Die Zahlung über %{amount_due} wird bei Fulfillment fällig",
+          "due_on_receipt_title": "Zahlung von %{amount_due} ist fällig bei Erhalt"
+        },
+        "percent_off_shipping": "%{percent} % auf Versand",
+        "amount_off_shipping": "%{amount} Rabatt auf Versand",
+        "higher_value_discount_applied": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> konnte nicht mit deinen vorhandenen Rabatten verwendet werden.",
+        "deferred_balance_info": {
+          "title": "Das Guthaben von {{amount_due}} ist am {{due_at}} fällig",
+          "due_on_fulfillment_title": "Das Guthaben von {{amount_due}} ist bei Fulfillment fällig"
+        },
+        "payment_terms_totals": {
+          "due_today": "Gesamtbetrag heute fällig",
+          "due_later": "Gesamtbetrag am %{due_at} fällig",
+          "due_later_checkout_to_draft": "Gesamtbetrag später fällig",
+          "due_on_fulfillment": "Gesamtbetrag fällig bei Fulfillment",
+          "due_on_receipt": "Gesamtsumme fällig bei Erhalt",
+          "total_paid": "Bezahlte Gesamtsumme"
+        },
+        "maximum_discount_code_limit_reached": "Du hast die maximale Anzahl an Rabattcodes erreicht. Entferne einen bestehenden Code, um <strong style=\"text-transform:uppercase\">%{code}<\/strong> zu nutzen.",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> funktioniert derzeit nicht. Wende dich an uns, um Hilfe zu erhalten.",
+        "due_on_fulfillment": "Fällig bei Fulfillment"
       }
     },
     "sentence": {
