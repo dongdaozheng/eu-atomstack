@@ -607,7 +607,33 @@
         "method_summary": {
           "incomplete_address_entered": "Entrez une adresse de livraison complète pour afficher les méthodes d'expédition disponibles",
           "incomplete_address_selected": "Sélectionnez une adresse de livraison complète pour afficher les méthodes d'expédition disponibles"
-        }
+        },
+        "local_pickup": {
+          "search_address": "Rechercher une adresse",
+          "rollup_title": "Emplacement du magasin"
+        },
+        "missing_shipping_address": "L'adresse de livraison est manquante",
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} éléments",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} plus",
+        "split_shipping_merchandise_shipment_number": "Expédition %{number} de %{total}",
+        "pre_order_ships_now": "Expédié maintenant",
+        "pre_order_ships_later": "Expédié plus tard",
+        "pre_order_ships_date": "Expédié %{date}",
+        "split_shipping_shipped_by_shop": "Expédié par %{shop_name}",
+        "loading_progressive_rates": "Vous recherchez plus de tarifs…",
+        "no_other_methods_available": "Aucune autre méthode disponible",
+        "duties_and_taxes_options": {
+          "ddu_title": "Payer à la livraison",
+          "ddu_caption": "Des frais supplémentaires peuvent s'appliquer",
+          "ddp_title": "Payez maintenant",
+          "ddp_caption": "Pas de frais supplémentaires à la livraison"
+        },
+        "shipping_method_combinations": {
+          "without_separator": "%{firstMethod}, %{secondMethod}",
+          "with_separator": "%{rest}, %{current},",
+          "combination": "%{rest} et %{current}"
+        },
+        "shipping_used_as_billing_notice": "Celle-ci sera également utilisée comme adresse de facturation pour cette commande."
       },
       "shop_pay_external": {
         "errors": {
