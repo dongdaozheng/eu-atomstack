@@ -678,13 +678,61 @@
         "saved_credit_card_info": "Die letzten vier Ziffern",
         "saved_credit_cards_modal": {
           "view_all_label": "Alle gespeicherten Karten anzeigen",
-          "done": "Fertig"
+          "done": "Fertig",
+          "cancel": "Schließen"
         },
         "saved_credit_card_actions": {
           "edit": "Bearbeiten",
           "delete": "Löschen"
         },
-        "saved_credit_card_cvv_verification": "Bitte gib zur Verifizierung den Sicherheitscode deiner Karte ein."
+        "saved_credit_card_cvv_verification": "Bitte gib zur Verifizierung den Sicherheitscode deiner Karte ein.",
+        "add_credit_card_modal": {
+          "title": "Karte hinzufügen",
+          "cancel": "Schließen",
+          "save": "Speichern"
+        },
+        "delete_credit_card_modal": {
+          "title": "Karte löschen",
+          "confirmation": "Möchtest du das folgende Element wirklich löschen: {{brandName}} mit den letzten Ziffern {{lastDigits}}?",
+          "cancel": "Schließen",
+          "delete": "Löschen"
+        },
+        "edit_credit_card_modal": {
+          "title": "Karte bearbeiten",
+          "done": "Fertig",
+          "cancel": "Schließen",
+          "description": "Du kannst nur die Rechnungsadresse deiner Karte bearbeiten.",
+          "fields": {
+            "default": "Als Standard festlegen",
+            "card_number": "Kartennummer",
+            "expiry": "Ablaufdatum",
+            "security_code": "Sicherheitscode",
+            "name": "Name des Karteninhabers",
+            "billing": "Rechnung an"
+          }
+        },
+        "expired_cards_info": {
+          "one": "Es gibt %{count} abgelaufene Karte, die du in deinem Konto anzeigen und bearbeiten kannst.",
+          "other": "Es gibt %{count} abgelaufene Karten, die du anzeigen und in deinem Konto bearbeiten kannst."
+        },
+        "local_payment_method_receiver_notice": "Nachdem du deine Bestellung aufgegeben hast, erhältst du die Zahlungsdetails. Führe die Zahlung innerhalb von {{dueDays}} Tagen an einem Geldautomaten oder online aus.",
+        "order_edit_banner_title": "Zahlung von {{amount_owed}} erforderlich",
+        "order_edit_banner_subtitle": "Deine Bestellung {{order_number}} wurde aktualisiert. Überprüfe diese Änderungen und bezahle anschließend, um deine Bestellung zu bestätigen.",
+        "order_edit_banner_items_added": {
+          "one": "Hinzugefügt",
+          "other": "%{count} hinzugefügt"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Entfernt",
+          "with_quantities": "{{delta}} von {{quantity}} entfernt"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "{{quantity}} zurückgegeben",
+          "with_quantities": "{{delta}} von {{quantity}} zurückgegeben"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Aus Rückgabe entfernt"
+        }
       },
       "address_management": {
         "confirm_address_deletion": "Bist du dir sicher, dass du die Adresse {{address}} löschen möchtest?"
