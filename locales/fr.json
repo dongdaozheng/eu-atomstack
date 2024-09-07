@@ -608,7 +608,27 @@
       "less_than_or_equal_to": "doit être inférieur ou égal à %{count}",
       "not_supported": "n'est pas pris en charge",
       "full_name_required": "Entrez un prénom et un nom",
-      "invalid_for_card_type": "n'est pas valide"
+      "invalid_for_card_type": "n'est pas valide",
+      "gift_card_disabled": "La carte cadeau est désactivée",
+      "gift_card_expired": "La carte cadeau est expirée",
+      "invalid": "n'est pas valide",
+      "bad_domain": "contient un nom de domaine invalide",
+      "taken": "a déjà été pris",
+      "contains_html_tags": "ne peut pas contenir de balises HTML",
+      "too_short": "est trop court (le minimum est de %{count} caractères)",
+      "too_long": "est trop long (le maximum est de %{count} caractères)",
+      "password_mismatch": "doit correspondre au mot de passe fourni",
+      "contains_spaces": "commence ou se termine par des espaces.",
+      "invalid_email": "doit être une adresse e-mail valide",
+      "discount_disabled": "Cette réduction a été désactivée",
+      "discount_expired": "Cette réduction n'est plus valable",
+      "discount_limit_reached": "Cette réduction a atteint sa limite d'utilisation",
+      "discount_not_found": "Impossible de trouver une réduction valide correspondant au code saisi",
+      "customer_already_used_once_per_customer_discount_notice": "Cette réduction a atteint sa limite d'utilisation",
+      "gift_card_already_applied": "Le code a déjà été appliqué à votre paiement",
+      "gift_card_code_invalid": "Le code n'est pas valide",
+      "gift_card_currency_mismatch": "Votre carte cadeau est en %{gift_card_currency}. Contactez-nous pour le faire rééditer en %{checkout_currency}.",
+      "gift_card_depleted": "Il n'y a plus de fonds sur cette carte cadeau"
     },
     "notices": {
       "customer": {
