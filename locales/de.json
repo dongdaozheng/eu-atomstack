@@ -2888,7 +2888,31 @@
         "empty_update": "kann leeren Warenkorb nicht aktualisieren",
         "less_than_minimum": "Dieser Artikel hat ein Minimum von %{min}.",
         "more_than_maximum": "Dieser Artikel hat ein Maximum von %{max}.",
-        "not_respect_step": "Du kannst diesen Artikel nur in Abstufungen von %{step} hinzufügen."
+        "not_respect_step": "Du kannst diesen Artikel nur in Abstufungen von %{step} hinzufügen.",
+        "missing_parameters": "keine gültigen ID- oder Zeilenparameter",
+        "generic_error": "Warenkorb-Fehler",
+        "too_many_line_items_error": "Dein Warenkorb darf nicht mehr als %{max} artikel.",
+        "link_expired": "Link abgelaufen",
+        "link_no_longer_exists": "Link existiert nicht mehr.",
+        "stock_problems_html": "Einer oder mehrere Artikel sind nicht mehr verfügbar. Wir haben einen <a href='%{link}'>aktualisierten Warenkorb<\/a> erstellt.",
+        "changed": "Warenkorb geändert",
+        "items_changed": "Einer oder mehrere Artikel wurden geändert.",
+        "product_sold_out": "Das Produkt '%{name}' ist bereits ausverkauft.",
+        "product_not_available": "Produkt ist nicht verfügbar",
+        "variant_not_found": "Kann Variante nicht finden",
+        "variant_requires_selling_plan": "Variante kann nur mit einem Verkaufsplan erworben werden.",
+        "shipping_address_not_required": "Dieser Warenkorb erfordert keinen Versand",
+        "shipping_address_invalid": "Bei der Berechnung deiner Versandtarife ist ein Problem aufgetreten. Fahre mit dem Checkout fort, um einen Versandtarif zu wählen, bevor du deine Bestellung abschließen.",
+        "selling_plan_not_applicable": "Verkaufsplan kann nicht auf Variante angewandt werden",
+        "selling_plan_not_available_for_company_locations": "Nur einmalige Käufe sind für B2B-Bestellungen verfügbar",
+        "digital_product_not_available_for_company_locations": "Dieser Artikel kann nicht zu einer B2B-Bestellung hinzugefügt werden.",
+        "bundle_requires_components": "Das Bundle-Produkt \"%{name}\" kann nicht zum Warenkorb hinzugefügt werden.",
+        "gift_card_with_components_not_supported": "Das Bundle-Produkt \"%{name}\" kann nicht zum Warenkorb hinzugefügt werden.",
+        "gift_card_price_must_be_greater_than_zero": "Das Bundle-Produkt \"%{name}\" kann nicht zum Warenkorb hinzugefügt werden.",
+        "view_lines_limit_reached": "Zeilen müssen weniger als %{limit} Zeichen enthalten",
+        "merchandise_line_transformers": {
+          "run_error": "In deinem Warenkorb ist ein Fehler aufgetreten."
+        }
       }
     },
     "email_marketing": {
@@ -2997,6 +3021,9 @@
         "immediately": "Jetzt zur Abholung bereit",
         "next_day": "Abholbereit am nächsten Tag"
       }
+    },
+    "cart": {
+      "discounts_with_count": "%{count} Rabatte wurden berechnet"
     }
   },
   "customer_accounts": {
