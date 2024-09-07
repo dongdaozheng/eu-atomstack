@@ -2230,6 +2230,44 @@
           "one": "Beim erneuten Senden deines Geschenkgutscheins ist ein Problem aufgetreten. Versuche es erneut oder wende dich an uns.",
           "other": "Beim erneuten Senden deiner Geschenkgutscheine ist ein Problem aufgetreten. Versuche es erneut oder wende dich an uns."
         }
+      },
+      "review": {
+        "title": "Überprüfung",
+        "review_title": "Überprüfen und bezahlen",
+        "checkout_as_guest": "Als Gast auschecken",
+        "blocks": {
+          "contact_method_title": "Kontakt",
+          "billing_address_title": "Rechnung an",
+          "shipping_address_title": "Liefern an",
+          "shipping_method_title": "Versandart",
+          "payment_method_title": "Zahlungsmethode",
+          "change_link_label": "Ändern",
+          "change_contact_method_link_label": "Kontaktdaten ändern",
+          "change_billing_address_link_label": "Rechnungsadresse ändern",
+          "change_shipping_address_link_label": "Lieferadresse ändern",
+          "change_shipping_method_link_label": "Versandart ändern",
+          "change_payment_method_link_label": "Zahlungsmethode ändern",
+          "pick_up_in_store_shipping_method_html": "Abholung im Shop · %{location_name}",
+          "purchase_order_number_title": "Bestellnummer",
+          "change_purchase_order_number_label": "Bestellnummer ändern",
+          "change_delivery_method_link_label": "Zustellmethode ändern",
+          "no_address": "(Keine Adresse)",
+          "no_purchase_order_number": "(Keine Bestellnummer)",
+          "due_after_order_reviewed_html": "Fällig, sobald Bestellung überprüft wurde",
+          "review_title_free_order": "Bestellung überprüfen und abschließen",
+          "payment_method_saved_company_location": "Karte für diesen Standort speichern"
+        },
+        "checkout_a_different_way": "Andere Checkout-Option verwenden",
+        "block_title": "Überprüfe deine Daten"
+      },
+      "vaulted": {
+        "change_button": "Ändern"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Neuigkeiten und Angebote via E-Mail erhalten",
+        "accept_sms_checkbox_label": "Neuigkeiten und Angebote via Textnachricht erhalten",
+        "post_accept_marketing_checkbox_label": "Du hast ein Abonnement für Neuigkeiten und Angebote per E-Mail abgeschlossen",
+        "pending_accept_marketing_checkbox_label": "Überprüfe deine E-Mails, um dein Abonnement für Neuigkeiten und Angebote zu bestätigen"
       }
     },
     "sentence": {
