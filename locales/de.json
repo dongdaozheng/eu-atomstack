@@ -1915,9 +1915,37 @@
           "medium": {
             "one": "Deine Bestellung wird bearbeitet. Die geschätzte Wartezeit beträgt %{count} Minute.",
             "other": "Deine Bestellung wird bearbeitet. Die geschätzte Wartezeit beträgt %{count} Minuten."
+          },
+          "long": "Du erhältst eine E-Mail, sobald deine Bestellung bearbeitet worden ist. Wir verzeichnen derzeit eine große Anzahl an Bestellungen.",
+          "no_auto_refresh_html": "Wenn du nicht automatisch weitergeleitet wirst, %{link}.",
+          "refresh_this_page": "lade die Seite erneut"
+        },
+        "you_will_not_be_charged": "Dir wird noch nichts berechnet",
+        "action_required": "Aktion erforderlich"
+      },
+      "failed_payment": {
+        "page_title": "Zahlung konnte nicht verarbeitet werden",
+        "title": "Zahlung konnte nicht verarbeitet werden",
+        "payment_not_processed_title": "Deine Zahlung konnte nicht verarbeitet werden.",
+        "payment_not_processed_text": "Dir wurde nichts berechnet. Kehre zu deinem Warenkorb zurück, um deinen Einkauf abzuschließen.",
+        "return_to_cart_button_label": "Zurück zum Warenkorb"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Kreditkarte",
+        "bank_deposit_label": "Banküberweisung",
+        "cash_on_delivery_label": "Nachnahme",
+        "money_order_label": "Geldanweisung",
+        "debit_card_label": "Debitkarte",
+        "deferred_payment_label": "Zahlungsmethode später auswählen",
+        "generic_payment_terms": "Für dich gelten die Bedingungen \"{{translatedName}}\". Deine Zahlung ist am {{dueDate}} fällig.",
+        "login_prompt": {
+          "no_access": {
+            "message": "{{logIn}} bei einem Konto ein, das Zugriff auf diesen Standort hat, um gespeicherte Zahlungsmethoden hinzuzufügen oder zu verwenden.",
+            "link": "Logge dich"
           }
         },
-        "you_will_not_be_charged": "Dir wird noch nichts berechnet"
+        "direct_payment_terms": "Für dich gelten die Bedingungen \"{{translatedName}}\". Deine Karte wird am {{dueDate}} belastet.",
+        "fixed_payment_label": "Deine Zahlung ist fällig am {{dueDate}}."
       }
     },
     "sentence": {
