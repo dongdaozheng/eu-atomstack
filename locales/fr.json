@@ -960,15 +960,33 @@
             "other": "%{delivery_method} n'est plus disponible pour ces éléments."
           },
           "default_message": {
-            "one": "Le mode de livraison choisi n'est plus disponible pour cet article."
+            "one": "Le mode de livraison choisi n'est plus disponible pour cet article.",
+            "other": "Le mode de livraison choisi n'est plus disponible pour ces articles."
           }
         },
         "price_and_quantity_update": {
-          "description": "Les prix et quantités disponibles pour ces articles ont changé et sont mis à jour dans votre panier."
+          "description": "Les prix et quantités disponibles pour ces articles ont changé et sont mis à jour dans votre panier.",
+          "title": "Mise à jour des prix et des quantités"
         },
         "out_of_stock": {
           "description": "Ces articles ne sont plus disponibles et ont été supprimés de votre panier.",
           "items_unavailable": "Certains articles ne sont plus disponibles et ont été supprimés de votre panier."
+        },
+        "unshippable_product": {
+          "title": "Aucune livraison disponible",
+          "header": {
+            "one": "Aucune livraison disponible pour %{count} article",
+            "other": "Aucune livraison disponible pour %{count} articles"
+          },
+          "message": {
+            "one": "Cet article sera supprimé de votre panier car aucun mode de livraison n'est disponible pour votre adresse.",
+            "other": "Ces articles seront supprimés de votre panier car aucun mode de livraison n'est disponible pour votre adresse."
+          },
+          "status_column_header": "Pas de livraison"
+        },
+        "price_update": {
+          "title": "Mise à jour des prix",
+          "description": "Les prix de ces articles ont changé et sont mis à jour dans votre panier."
         }
       },
       "customer_account": {
@@ -1002,6 +1020,32 @@
           "other": "Ces produits ne sont pas disponibles dans votre pays\/région."
         },
         "unavailable_label": "Indisponible"
+      },
+      "order_summary": {
+        "gift_card_title": "Carte cadeau",
+        "gift_card_label": "Carte cadeau",
+        "gift_card_placeholder": "Carte cadeau",
+        "gift_card_and_discount_title": "Code de réduction ou carte cadeau",
+        "gift_card_and_discount_label": "Code de réduction ou carte cadeau",
+        "gift_card_and_discount_placeholder": "Code de réduction ou carte cadeau",
+        "remove_gift_card_label": "Carte cadeau claire",
+        "remove_discount_label": "Supprimer la remise",
+        "return_restocking_fee_label": "Frais de réapprovisionnement",
+        "return_shipping_fee_label": "Frais de retour",
+        "discount_title_stacking": {
+          "one": "Rabais",
+          "other": "Réductions"
+        },
+        "discount_order_stacking": {
+          "one": "Remise sur la commande",
+          "other": "Remises sur les commandes"
+        },
+        "discount_label": "Code de réduction",
+        "discount_not_found": "Impossible de trouver une réduction valide correspondant au code saisi",
+        "discount_placeholder": "Code de réduction",
+        "discount_code_applied": "Code de réduction appliqué",
+        "gift_card_applied": "Carte cadeau appliquée",
+        "enter_shipping_address": "Entrez l'adresse de livraison"
       }
     },
     "sentence": {
