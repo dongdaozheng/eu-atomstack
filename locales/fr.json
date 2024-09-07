@@ -791,8 +791,20 @@
     "store_availability": {
       "pick_up_time": {
         "immediately": "Prêt à être récupéré maintenant",
-        "next_day": "Prêt à être récupéré le lendemain"
+        "next_day": "Prêt à être récupéré le lendemain",
+        "one_hour": "Généralement prêt en 1 heure",
+        "two_hours": "Généralement prêt en 2 heures",
+        "four_hours": "Généralement prêt en 4 heures",
+        "twenty_four_hours": "Généralement prêt en 24 heures",
+        "two_to_four_days": "Généralement prêt en 2 à 4 jours",
+        "five_or_more_days": "Généralement prêt en 5+ jours",
+        "zero_to_two_hours": "Généralement prêt en 2 heures",
+        "two_to_four_hours": "Généralement prêt en 4 heures"
       }
+    },
+    "checkpoint": {
+      "error": "La validation du captcha a échoué",
+      "submit_button_text": "Soumettre"
     }
   },
   "pagefly": {
