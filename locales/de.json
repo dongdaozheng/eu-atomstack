@@ -635,8 +635,38 @@
       "order": {
         "not_available": "Diese Bestellung ist nicht verfügbar",
         "financial_status": {
-          "authorized": "Autorisiert"
-        }
+          "authorized": "Autorisiert",
+          "pending": "Ausstehend",
+          "paid": "Bezahlt",
+          "unpaid": "Unbezahlt",
+          "voided": "Storniert",
+          "partially_paid": "Teilweise bezahlt",
+          "partially_refunded": "Teilweise erstattet",
+          "refunded": "Zurückerstattet",
+          "expired": "Abgelaufen"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Erfüllt",
+          "complete": "Vollständig",
+          "partial": "Teilweise",
+          "unfulfilled": "Nicht ausgeführt",
+          "restocked": "Wieder verfügbar"
+        },
+        "transaction_status": {
+          "success": "Erfolg",
+          "pending": "Ausstehend",
+          "failure": "Störungsmeldung",
+          "error": "Fehler"
+        },
+        "cancel_reason": {
+          "declined": "Bezahlung abgelehnt",
+          "inventory": "Artikel nicht verfügbar",
+          "fraud": "Falsche Bestellung",
+          "customer": "Bestellung vom Kunden geändert\/storniert",
+          "other": "Sonstiges",
+          "staff": "Mitarbeiterfehler"
+        },
+        "cash_on_delivery": "Nachnahme (COD)"
       },
       "line_item": {
         "item_status": {
@@ -646,6 +676,20 @@
           "decrement_fulfilled_line_item": "%{delta} von %{total} zurückgegeben",
           "decrement_return_line_item": "%{delta} aus der Rückgabe entfernt"
         }
+      },
+      "storefront": {
+        "invalid_password": "Passwort inkorrekt, bitte erneut versuchen."
+      },
+      "tags": {
+        "add_articles": "Die Suche auf Artikel begrenzen, die auch das Tag %{tag} haben",
+        "add_products": "Die Auswahl auf Produkte begrenzen, die mit dem Tag %{tag} übereinstimmen",
+        "remove_articles": "Die Suche auf Produkte ausweiten, die nicht mit %{tag} getaggt sind",
+        "remove_products": "Tag %{tag} entfernen"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Vielen Dank, dass du dich für unsere Mailingliste angemeldet hast."
       }
     }
   },
