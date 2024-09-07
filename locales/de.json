@@ -2165,7 +2165,71 @@
         "order_updates_subscribe_to_email_notifications": "Erhalte Versandaktualisierungen via E-Mail.",
         "order_updates_subscribe_to_email_or_phone_notifications": "Du erhältst Versandaktualisierungen per E-Mail oder SMS.",
         "order_updates_subscribe_to_phone_notifications": "Erhalte per SMS Versandaktualisierungen.",
-        "order_updates_submit_subscription": "Eingabe"
+        "order_updates_submit_subscription": "Eingabe",
+        "track_shipment": "Sendung verfolgen",
+        "other_options": "Weitere Optionen",
+        "delivery_information_label": "Informationen zur Zustellung:",
+        "gift_card_sent_confirmation": "Geschenkgutschein gesendet",
+        "qr_code": {
+          "title": "Auf dem Telefon verfolgen",
+          "send_link_to_phone": "Oder sende einen Link an dein Telefon"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Mit deinem Mobiltelefon scannen"
+          },
+          "sms": {
+            "title": "Oder einen Link an dein Telefon senden"
+          }
+        },
+        "view_business_customer_account": "Konto ansehen",
+        "breadcrumbs_submitted": "Gesendet",
+        "breadcrumbs_in_review": "Ausstehend",
+        "breadcrumbs_confirmed": "Bestätigt",
+        "missing_shipping_address_banner": {
+          "title": "Bestellung hat keine Lieferadresse",
+          "text_html": "%{contact_us}, um deine Adresse hinzuzufügen",
+          "contact_us": "Kontaktiere uns"
+        },
+        "first_payment_complete": "Erste Zahlung abgeschlossen",
+        "in_store_purchase": "Kauf im Shop",
+        "location_title": "Standort",
+        "thank_you_ready_for_picked_up": "Deine Bestellung wurde am Standort %{address} abgeholt.",
+        "ready_for_delivery": "Für die Zustellung bereit",
+        "order_updates_subscribe_to_email_notifications_failed": "Wir können diese E-Mail-Adresse nicht für Aktualisierungen speichern. Bitte versuche es erneut oder verwende eine andere E-Mail-Adresse.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "Die von dir eingegebene E-Mail-Adresse existiert bereits.",
+        "subscriptions_management": {
+          "title": "Abonnement",
+          "description": "Gehe zu deinem Konto, um deine Abonnements anzuzeigen und zu verwalten.",
+          "button_label": "Dein Abonnement verwalten"
+        },
+        "manage_order_label": "Bestellung verwalten",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Du erhältst in einigen Minuten eine Textnachricht mit deinem Geschenkgutschein.",
+          "other": "Du erhältst in einigen Minuten eine Textnachricht mit deinen Geschenkgutscheinen."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Du erhältst in einigen Minuten eine E-Mail mit deinem Geschenkgutschein.",
+          "other": "Du erhältst in einigen Minuten eine E-Mail mit deinen Geschenkgutscheinen."
+        },
+        "gift_card_email_title": {
+          "one": "Geschenkgutschein wurde per E-Mail gesendet",
+          "other": "Geschenkgutscheine wurden per E-Mail gesendet"
+        },
+        "gift_card_text_title": {
+          "one": "Geschenkgutschein wurde per Textnachricht gesendet",
+          "other": "Geschenkgutscheine wurden per Textnachricht gesendet"
+        },
+        "resend_gift_cards_by_email": "E-Mail erneut senden",
+        "resend_gift_cards_by_text": "Textnachricht erneut senden",
+        "gift_card_resent_confirmation": {
+          "one": "Geschenkgutschein wurde erneut gesendet.",
+          "other": "Geschenkgutscheine wurden erneut gesendet."
+        },
+        "gift_card_resend_failure": {
+          "one": "Beim erneuten Senden deines Geschenkgutscheins ist ein Problem aufgetreten. Versuche es erneut oder wende dich an uns.",
+          "other": "Beim erneuten Senden deiner Geschenkgutscheine ist ein Problem aufgetreten. Versuche es erneut oder wende dich an uns."
+        }
       }
     },
     "sentence": {
