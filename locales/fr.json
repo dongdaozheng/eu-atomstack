@@ -477,7 +477,12 @@
       "payment": {
         "gift_card_wrapper": {
           "apply_another_gift_card_label": "Appliquer une autre carte cadeau",
-          "gift_card_label": "Carte cadeau %{identifiant}"
+          "gift_card_label": "Carte cadeau %{identifier}",
+          "heading": "Carte cadeau",
+          "apply_gift_card_label": "Appliquer une carte cadeau",
+          "payment_tag": "Carte cadeau",
+          "add_label": "Ajouter une carte cadeau",
+          "manage_label": "Gérer les cartes cadeaux"
         },
         "saved_credit_card_cvv_verification": "À des fins de vérification, veuillez saisir le code de sécurité de votre carte.",
         "network_card_payment_options": "Choisissez un réseau de cartes",
@@ -738,7 +743,10 @@
           "title": "Numéro de bon de commande",
           "label": "Numéro de bon de commande (facultatif)"
         },
-        "payment_flexibility_terms_id_mismatch": "Incompatibilité d'identifiant des conditions de flexibilité de paiement"
+        "payment_flexibility_terms_id_mismatch": "Incompatibilité d'identifiant des conditions de flexibilité de paiement",
+        "order_edit_banner_single_item_return_line_item_removed": "Supprimé du retour",
+        "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} supprimé du retour",
+        "order_edit_banner_updated_order_label": "Commande mise à jour"
       },
       "shipping": {
         "split_cart_shipping_label": "Méthode",
@@ -1638,7 +1646,23 @@
         "address_more": "Plus d'actions pour cette adresse",
         "address_edit": "Modifier l'adresse",
         "address_delete": "Supprimer l'adresse",
-        "address_confirm": "Etes-vous sûr de vouloir supprimer cette adresse de votre compte?"
+        "address_confirm": "Etes-vous sûr de vouloir supprimer cette adresse de votre compte?",
+        "address_form": {
+          "add_address": "Ajouter une adresse",
+          "save": "Sauvegarder",
+          "cancel": "Annuler"
+        }
+      },
+      "company_location": {
+        "location_title": "Emplacement"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Solde actuel %{amount}",
+        "credit_card_expires_on_notice": "Expire le %{month}\/%{year}",
+        "express_payment_gateway_label": "Exprimer",
+        "manual_payment_gateway_label": "Manuel",
+        "billing_address_title": "Adresse de facturation",
+        "free_label": "Gratuit"
       }
     },
     "sentence": {
