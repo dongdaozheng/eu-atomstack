@@ -648,7 +648,15 @@
             "saved_payment_methods_cvv_verification_disabled": "Le mode de paiement sélectionné nécessite une vérification CVV qui n'est pas activée pour cette boutique. Sélectionnez un autre mode de paiement.",
             "store_credit_not_enabled": "Le crédit de magasin n'est pas activé pour cette boutique.",
             "store_credit_account_not_found": "Compte de crédit du magasin introuvable.",
-            "store_credit_account_mismatch": "Le compte de crédit du magasin ne correspond pas à l'identité de l'acheteur."
+            "store_credit_account_mismatch": "Le compte de crédit du magasin ne correspond pas à l'identité de l'acheteur.",
+            "store_credit_mismatched_currency": "La devise du compte de crédit du magasin ne correspond pas à la devise du paiement.",
+            "store_credit_insufficient_funds": "Il n'y a pas suffisamment de fonds sur le compte de crédit du magasin.",
+            "store_credit_buying_gift_card": "Vous ne pouvez pas utiliser le crédit du magasin pour acheter une carte-cadeau.",
+            "gift_cards_not_allowed_for_b2b": "Les cartes cadeaux ne sont pas autorisées dans les magasins B2B.",
+            "method_required": "Un mode de paiement doit être proposé.",
+            "paypal_express_address_invalid": "PayPal a renvoyé une adresse invalide.",
+            "shop_cash_unsupported_currency": "Shop Cash ne prend pas en charge cette devise.",
+            "market_manager_blocks_wallet_payments": "Le mode de paiement n'est pas pris en charge par le gestionnaire de marché."
           },
           "discount": {
             "discounts_not_allowed_for_b2b": "Les réductions ne sont pas autorisées dans les magasins B2B.",
@@ -686,6 +694,24 @@
           },
           "checkout_source": {
             "revoked": "Cette caisse n'est plus disponible."
+          },
+          "tip": {
+            "tips_not_allowed_for_b2b": "Les pourboires ne sont pas autorisés dans les magasins B2B.",
+            "currency_change_reset": "Le pourboire a été réinitialisé en raison d'un changement de devise.",
+            "tips_not_allowed_for_deferred_purchase_options": "Les pourboires ne sont pas encore pris en charge pour les options d’achat différé.",
+            "not_accepted_by_shop": "La boutique n’accepte pas les pourboires.",
+            "only_one_tip_line_allowed": "Les lignes de conseils multiples ne sont pas prises en charge."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Ce brouillon de commande n'existe pas dans la boutique actuelle.",
+            "staff_member_not_exist": "Ce personnel n'existe pas dans la boutique actuelle.",
+            "location_not_exist": "Cet emplacement n'existe pas dans la boutique actuelle.",
+            "point_of_sale_device_not_exist": "Ce dispositif de point de vente n'existe pas dans la boutique actuelle.",
+            "unresolvable_target_merchandise_lines": "Les attributions de vente proposées sont insolubles compte tenu du contexte actuel des négociations."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "La proposition de votre acheteur doit contenir des termes non négociables.",
+            "invalid_signature": "La signature pour {{target_terms}} n'est pas valide."
           }
         },
         "continue_to_review": "Vérifier la commande",
