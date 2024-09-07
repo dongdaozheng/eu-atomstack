@@ -716,7 +716,45 @@
         "loading_title": "Checkout – {{shopName}}",
         "display_name": "{{firstName}} {{lastName}}",
         "google_map_title": "Google Maps",
-        "confirm_order_button_label": "Bestellung bestätigen"
+        "confirm_order_button_label": "Bestellung bestätigen",
+        "submit_order_button_label": "Bestellung senden",
+        "submit_for_review_button_label": "Zur Prüfung einreichen",
+        "submit_for_review_notice_label": "Die Zahlung ist erst fällig, sobald deine Bestellung überprüft wurde",
+        "continue_to_payment_plans_button_label": "Weiter zu den Zahlungsplänen",
+        "back_button_label": "Rückgabe",
+        "choose_delivery_strategy": "Wähle eine Zustellmethode",
+        "autocomplete_zero_item": "Keine Artikel verfügbar",
+        "autocomplete_powered_by_google": "Unterstützt von {{brandName}}",
+        "submit": "Absenden",
+        "processing": "Wird bearbeitet ...",
+        "stepper": {
+          "increase": "{{type}} erhöhen",
+          "decrease": "{{type}} senken",
+          "minimum_reached": "Minimum von {{value}} wurde erreicht",
+          "maximum_reached": "Maximum von {{value}} wurde erreicht"
+        },
+        "remove_item": "%{label} entfernen",
+        "remove_tag": "Tag entfernen",
+        "dates": {
+          "weekdays": {
+            "monday": "Montag",
+            "tuesday": "Dienstag",
+            "wednesday": "Mittwoch",
+            "thursday": "Donnerstag",
+            "friday": "Freitag",
+            "saturday": "Samstag",
+            "sunday": "Sonntag"
+          },
+          "weekdays_abbreviation": {
+            "monday": "Mo",
+            "tuesday": "Di",
+            "wednesday": "Mi",
+            "thursday": "Do",
+            "friday": "Fr",
+            "saturday": "Sa",
+            "sunday": "So"
+          }
+        }
       }
     },
     "sentence": {
