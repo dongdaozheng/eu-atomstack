@@ -1982,7 +1982,27 @@
         "customer_information_title": "Détails de la commande",
         "contact_information_title": "Coordonnées",
         "billing_address_title": "Adresse de facturation",
-        "company_location_title": "Emplacement"
+        "company_location_title": "Emplacement",
+        "shipping_address_title": "Adresse de livraison",
+        "shipping_address_map_title": "Carte Google affichant le point précis de l'adresse de livraison : %{address}",
+        "payment_method_title": "Mode de paiement",
+        "shipping_method_title": "Méthode d'expédition",
+        "tracking_number": "Numéro de suivi :",
+        "company_tracking_number": "%{company} numéro de suivi :",
+        "estimated_arrival": "Date de livraison estimée :",
+        "estimated_delivery": "Estimation de livraison actuelle :",
+        "re-order": "Récommander les mêmes articles",
+        "confirmed": "Confirmé",
+        "thank_you_confirmed_order_with_email": "Vous recevrez sous peu un e-mail de confirmation avec votre numéro de commande.",
+        "thank_you_confirmed_order_with_phone": "Vous recevrez sous peu un SMS de confirmation avec votre numéro de commande.",
+        "thank_you_confirmed_order_with_email_and_phone": "Vous recevrez sous peu un e-mail de confirmation avec votre numéro de commande.",
+        "thank_you_confirmed_order_with_email_payment": "Vous avez effectué un paiement sur votre commande %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Vous avez effectué un paiement sur votre commande %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Vous avez effectué un paiement sur votre commande %{date}.",
+        "thank_you_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque votre commande sera prête à être récupérée.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Vous recevrez un SMS lorsque votre commande sera prête à être récupérée.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Vous recevrez un e-mail lorsque votre commande sera prête à être récupérée.",
+        "thank_you_confirmed_order_with_missing": "Contactez-nous par email ou par téléphone pour recevoir une confirmation de commande."
       }
     },
     "sentence": {
