@@ -728,7 +728,22 @@
     },
     "page_titles": {
       "products": "Produkte",
-      "blog_or_article_with_error": "Fehler – %{title}"
+      "blog_or_article_with_error": "Fehler – %{title}",
+      "shopping_cart": "Dein Warenkorb",
+      "account": "Konto",
+      "create_account": "Konto erstellen",
+      "reset_account": "Konto zurücksetzen",
+      "addresses": "Adressen",
+      "order": "Bestellung %{name}",
+      "search": "Suchen",
+      "collections": "Kollektionen",
+      "search_results": {
+        "one": "Suche: %{count} Ergebnis gefunden für \"%{terms}\"",
+        "other": "Suche: %{count} Ergebnisse gefunden für \"%{terms}\""
+      },
+      "not_found": "404 Nicht gefunden",
+      "challenge": "Herausforderung",
+      "checkpoint": "Checkpoint"
     },
     "filters": {
       "availability": {
@@ -749,6 +764,33 @@
         "price_descending": "Preis (absteigend)"
       },
       "error": "Beim Laden deiner Suchergebnisse ist ein Problem aufgetreten. Lade die Seite neu oder versuche es später noch einmal."
+    },
+    "challenge": {
+      "message": "Um fortzufahren, lass uns wissen, dass du kein Roboter bist.",
+      "error": "Deine Antwort war nicht korrekt, bitte versuche es noch einmal.",
+      "submit_button_text": "Senden"
+    },
+    "checkpoint": {
+      "message": "Captcha bearbeiten, um fortzufahren",
+      "error": "Captcha-Validierung fehlgeschlagen.",
+      "submit_button_text": "Senden"
+    },
+    "forms_captcha": {
+      "badge_text": "Durch hCaptcha geschützt",
+      "terms_link_text": "Allgemeine Geschäftsbedingungen",
+      "privacy_link_text": "Datenschutz"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Gewöhnlich fertig in 1 Stunde",
+        "two_hours": "Gewöhnlich fertig in 2 Stunden",
+        "four_hours": "Gewöhnlich fertig in 4 Stunden",
+        "twenty_four_hours": "Gewöhnlich fertig in 24 Stunden",
+        "two_to_four_days": "Gewöhnlich fertig in 2 - 4 Tagen",
+        "five_or_more_days": "Gewöhnlich fertig in 5 oder mehr Tagen",
+        "zero_to_two_hours": "Gewöhnlich fertig in 2 Stunden",
+        "two_to_four_hours": "Gewöhnlich fertig in 4 Stunden"
+      }
     }
   },
   "customer_accounts": {
