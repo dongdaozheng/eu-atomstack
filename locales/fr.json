@@ -900,6 +900,34 @@
         "pick_up_locations": "Emplacements des magasins",
         "pick_up_in_one_hour": "Généralement prêt en 1 heure",
         "pick_up_in_two_hours": "Généralement prêt en 2 heures"
+      },
+      "stock": {
+        "price_column_header": "Prix",
+        "status_column_header": "Statut",
+        "removed_from_cart_notice": "Retiré du panier",
+        "sold_out_label": "Épuisé",
+        "reduced_label": "Réduit",
+        "reduced_with_quantity_label": "Il ne reste que %{quantity_available}",
+        "remove_from_cart_button_label": "Supprimer du panier",
+        "continue_shopping_button_label": "Continuer",
+        "go_back_to_cart_button_label": "Retourner à mon panier",
+        "remove": "Retirer",
+        "return_to_store_label": "Retour au magasin",
+        "continue_cta_label": "Continuer la commande",
+        "item_label": {
+          "one": "{{count}}article",
+          "other": "{{count}}articles"
+        },
+        "empty_cart_label": "Votre panier est vide",
+        "quantity_update": {
+          "page_title": "Mise à jour de la quantité",
+          "title": "Mise à jour de la quantité",
+          "description": "Les quantités disponibles pour ces articles ont changé et sont mises à jour dans votre panier."
+        },
+        "unpurchasable_product": {
+          "title": "Produit inachetable",
+          "header": "Certains articles ont été supprimés de votre panier"
+        }
       }
     },
     "sentence": {
