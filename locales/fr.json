@@ -2886,7 +2886,24 @@
         "only_n_items_available": "Vous pouvez uniquement ajouter %{count} %{name} au panier.",
         "too_many_items_in_cart": "Vous ne pouvez pas ajouter plus de %{name} au panier.",
         "less_than_minimum": "Cet élément a un minimum de %{min}.",
-        "more_than_maximum": "Cet élément a un maximum de %{max}."
+        "more_than_maximum": "Cet élément a un maximum de %{max}.",
+        "not_respect_step": "Vous ne pouvez ajouter cet élément que par incréments de %{step}.",
+        "all_items_in_cart": "Tous les %{count} %{name} sont dans votre panier.",
+        "empty_update": "impossible de mettre à jour le panier vide",
+        "missing_parameters": "aucun identifiant ou paramètre de ligne valide",
+        "generic_error": "Erreur de panier",
+        "product_not_available": "Le produit n'est pas disponible",
+        "too_many_line_items_error": "Votre panier ne peut pas contenir plus de %{max} articles.",
+        "link_expired": "Lien expiré",
+        "link_no_longer_exists": "Le lien n'existe plus.",
+        "stock_problems_html": "Un ou plusieurs articles ne sont plus disponibles. Nous avons fourni un <a href='%{link}'>panier mis à jour<\/a>.",
+        "bundle_requires_components": "Le produit groupé '%{name}' ne peut pas être ajouté au panier.",
+        "gift_card_with_components_not_supported": "Le produit groupé '%{name}' ne peut pas être ajouté au panier.",
+        "gift_card_price_must_be_greater_than_zero": "Le produit groupé '%{name}' ne peut pas être ajouté au panier.",
+        "view_lines_limit_reached": "Les lignes doivent être inférieures à %{limit}",
+        "merchandise_line_transformers": {
+          "run_error": "Une erreur s'est produite dans votre panier."
+        }
       }
     },
     "filters": {
@@ -2995,6 +3012,9 @@
       "badge_text": "Protégé par hCaptcha",
       "terms_link_text": "Termes",
       "privacy_link_text": "Confidentialité"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} réductions ont été appliquées"
     }
   },
   "pagefly": {
