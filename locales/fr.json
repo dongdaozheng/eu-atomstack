@@ -2002,7 +2002,27 @@
         "thank_you_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque votre commande sera prête à être récupérée.",
         "thank_you_confirmed_order_with_phone_pick_up": "Vous recevrez un SMS lorsque votre commande sera prête à être récupérée.",
         "thank_you_confirmed_order_with_email_and_phone_pick_up": "Vous recevrez un e-mail lorsque votre commande sera prête à être récupérée.",
-        "thank_you_confirmed_order_with_missing": "Contactez-nous par email ou par téléphone pour recevoir une confirmation de commande."
+        "thank_you_confirmed_order_with_missing": "Contactez-nous par email ou par téléphone pour recevoir une confirmation de commande.",
+        "gift_card_confirmation_by_text": "Si vous ne l’avez pas reçu, renvoyez le SMS ou contactez-nous.",
+        "gift_card_confirmation_by_email": "Si vous ne l'avez pas reçu, renvoyez l'e-mail ou contactez-nous.",
+        "gift_card_title": "Cartes cadeaux",
+        "resend_gift_cards": "Renvoyer les cartes cadeaux",
+        "thank_you_title": "Votre commande est confirmée",
+        "thank_you_title_payment": "Votre paiement est confirmé",
+        "thank_you_title_review": "Votre commande a été soumise pour examen",
+        "thank_you_title_payments_app_pending_default": "Votre paiement est en cours de traitement",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Votre commande a été reçue",
+        "thank_you_title_payments_app_failed_pending_payment": "Votre paiement n'a pas pu être traité",
+        "thank_you_confirmed_order_with_missing_payment": "Contactez-nous par email ou par téléphone pour recevoir une confirmation de commande.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Contactez-nous par email ou par téléphone pour recevoir une confirmation de commande.",
+        "thank_you_confirmed_order_with_draft": "Nous vous ferons savoir si nous avons besoin de plus d’informations ou lorsque votre commande sera confirmée.",
+        "thank_you_confirmed_order_with_draft_payment": "Nous vous ferons savoir si nous avons besoin de plus d’informations ou lorsque votre commande sera confirmée.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Nous vous ferons savoir si nous avons besoin de plus d’informations ou lorsque votre commande sera confirmée.",
+        "thank_you_payments_app_failed_pending_payment": "Votre commande n'a pas été facturée. Revenez à votre panier pour vérifier votre commande et payer à nouveau.",
+        "thank_you_payments_app_failed_pending_payment_payment": "Votre commande n'a pas été facturée. Revenez à votre panier pour vérifier votre commande et payer à nouveau.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "Votre commande n'a pas été facturée. Revenez à votre panier pour vérifier votre commande et payer à nouveau.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Contactez-nous par email ou par téléphone pour recevoir une confirmation de commande.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Contactez-nous par email ou par téléphone pour recevoir une confirmation de commande."
       }
     },
     "sentence": {
