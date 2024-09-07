@@ -822,7 +822,60 @@
         "delivered_description": "Diese Lieferung wurde zugestellt.",
         "confirmed_description_digital": "Du erhältst eine E-Mail, sobald deine Bestellung bereit ist.",
         "confirmed_description_pickup": "Du erhältst eine E-Mail, wenn deine Bestellung zur Abholung bereit ist.",
-        "confirmed_description_gift_card_text": "Du erhältst eine SMS, sobald deine Bestellung bereit ist."
+        "confirmed_description_gift_card_text": "Du erhältst eine SMS, sobald deine Bestellung bereit ist.",
+        "delivered_label": "Zugestellt",
+        "delivered_title": "Deine Lieferung wurde zugestellt",
+        "delivered_description_gift_card": {
+          "one": "Geschenkgutschein wurde per E-Mail gesendet.",
+          "other": "Geschenkgutscheine wurden per E-Mail gesendet."
+        },
+        "gift_card_label": {
+          "one": "Geschenkgutschein",
+          "other": "Geschenkgutscheine"
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Geschenkgutschein wurde per SMS gesendet.",
+          "other": "Geschenkgutscheine wurden per SMS gesendet."
+        },
+        "complete_label": "Abgeschlossen",
+        "delivered_description_digital": {
+          "one": "Dieser Artikel wurde abgeschlossen.",
+          "other": "Diese Artikel wurden abgeschlossen."
+        },
+        "gift_card_resend": {
+          "one": "E-Mail erneut senden",
+          "other": "E-Mails erneut senden"
+        },
+        "gift_card_resend_description": {
+          "one": "Falls du sie nicht erhalten hast, sende die E-Mail erneut oder",
+          "other": "Falls du sie nicht erhalten hast, sende die E-Mails erneut oder"
+        },
+        "gift_card_resend_text": {
+          "one": "SMS erneut senden",
+          "other": "SMS-Nachrichten erneut senden"
+        },
+        "gift_resend_success": {
+          "one": "Geschenkgutschein erneut gesendet",
+          "other": "Geschenkgutscheine erneut gesendet"
+        },
+        "gift_resend_failure": {
+          "one": "Beim erneuten Senden deines Geschenkgutscheins ist ein Problem aufgetreten. Versuche es erneut oder wende dich an uns.",
+          "other": "Beim erneuten Senden deiner Geschenkgutscheine ist ein Problem aufgetreten. Versuche es erneut oder wende dich an uns."
+        },
+        "estimated_delivery": "Erwartet am {{date}}",
+        "confirmed_gift_card_additional_description": {
+          "one": "Der Geschenkgutschein wird in einer separaten E-Mail versendet.",
+          "other": "Jeder Geschenkgutschein wird in einer separaten E-Mail versendet."
+        },
+        "gift_card_resend_description_text": {
+          "one": "Falls du sie nicht erhalten hast, sende die SMS erneut oder",
+          "other": "Falls du sie nicht erhalten hast, sende die SMS-Nachrichten erneut oder"
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Der Geschenkgutschein wird in einer separaten SMS versendet.",
+          "other": "Jeder Geschenkgutschein wird in einer separaten SMS versendet."
+        },
+        "status_timestamp": "Aktualisiert am {{date}}"
       },
       "list_layout_accessibility_label": "Layout-Optionen",
       "list_title": "Bestellungen",
