@@ -598,7 +598,49 @@
         "purchase_options_agreement_label": "Ein oder mehrere Artikel in deinem Warenkorb sind ein ausstehender oder wiederkehrender Kauf. Indem du mit deiner Zahlung fortfährst, stimmst du zu, dass deine Zahlungsmethode automatisch zu dem Preis und mit der Häufigkeit, die auf dieser Seite aufgeführt sind, belastet wird, bis die Zahlungsmethode endet oder du sie kündigst. Alle Kündigungen unterliegen der %{cancellation_policy_label}.",
         "purchase_options_agreement_label_html": "Ich verstehe, dass es sich bei einem Artikel oder mehreren Artikeln in meinem Warenkorb um einen ausstehenden oder wiederkehrenden Kauf handelt. Durch das Fortfahren stimme ich der\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">Kündigungsrichtlinie<\/a>\nzu und autorisiere die Belastung meiner Zahlungsmethode zu den auf dieser Seite angegebenen Preisen, Häufigkeiten und Daten, bis meine Bestellung ausgeführt wurde oder bis ich die Bestellung, sofern möglich, storniere.\n",
         "subscription_heading": "Abonnementvereinbarung",
-        "purchase_options_agreement_label_wallets": "Indem du mit deiner Zahlung fortfährst, stimmst du den auf dieser Seite aufgeführten zukünftigen Gebühren und der Kündigungsrichtlinie zu."
+        "purchase_options_agreement_label_wallets": "Indem du mit deiner Zahlung fortfährst, stimmst du den auf dieser Seite aufgeführten zukünftigen Gebühren und der Kündigungsrichtlinie zu.",
+        "waiting_on_payment_methods": "Abfrage der verfügbaren Zahlungsmethoden...",
+        "apple_pay_payment_error": "Deine Zahlung konnte nicht abgeschlossen werden. Versuche es erneut oder mit einer anderen Zahlungsmethode.",
+        "taxes_not_included": "Steuern nicht inbegriffen",
+        "no_taxes_banner_content": "Auf diese Bestellung werden keine Steuern erhoben. Nachdem du die Zahlung erhalten hast, können keine Steuern mehr hinzugefügt werden.",
+        "paypal": {
+          "connect": "Klicke hier, um dein PayPal-Konto zu verbinden"
+        },
+        "apple": {
+          "connect": "Klicke hier, um dein Apple Pay-Konto zu verbinden",
+          "not_available": "Apple Pay ist in diesem Browser nicht verfügbar. Wenn du dein Apple Pay-Konto verbinden möchtest, nutze bitte Safari auf einem Apple-Gerät."
+        },
+        "account_connected": "Konto verbunden.",
+        "google": {
+          "connect": "Hier klicken, um dich mit deinem Google Pay-Konto zu verbinden",
+          "error_authorizing": "Fehler bei der Zahlungsautorisierung"
+        },
+        "mor_disclaimer_html": "Indem du unten klickst und deine Bestellung abschließt, stimmst du dem Kauf eines Artikels (von Artikeln) von Global-e als eingetragener Händler \nfür diese Transaktion mit den <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Geschäftsbedingungen<\/a>\nund der <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Datenschutzerklärung<\/a> von Global-e zu. Global-e ist ein internationaler\nFulfillmentdienstanbieter für %{shop_name}\n",
+        "pending_payment": {
+          "due_notice": "Deine Zahlung über %{amount_due} ist am %{due_date} fällig.",
+          "multibanco": {
+            "instruction_html": "Führe anhand der Details unten die Zahlung bei Multibanco oder online aus. Bei Fragen oder zum Aktualisieren deiner Zahlungsdetails %{contact_us}.",
+            "entity": "Entität",
+            "reference": "Referenz",
+            "amount": "Betrag",
+            "find_nearest_atm": "Geldautomat in deiner Nähe finden",
+            "buyer_action_info": "Deine Zahlung über %{amount_due} ist fällig."
+          }
+        },
+        "update_payment_method": "Zahlungsmethode aktualisieren",
+        "order_covered_by_store_credit_notice": "Deine Bestellung wird von deinem Shop-Guthaben abgedeckt.",
+        "order_covered_by_redeemables_notice": "Deine Bestellung ist abgedeckt.",
+        "store_credit": {
+          "label": "Shop-Guthaben",
+          "apply_label": "Shop-Guthaben anwenden",
+          "add_label": "Shop-Guthaben hinzufügen",
+          "manage_label": "Shop-Guthaben verwalten",
+          "buying_gift_card": "Du kannst kein Shop-Guthaben verwenden, um einen Geschenkgutschein zu kaufen",
+          "no_fixed_selling_plans": "Du kannst Shop-Guthaben nicht für Optionen für den Kauf mit Zahlungsaufschub verwenden"
+        },
+        "clear": "Löschen",
+        "billing_must_match_shipping_notice": "Die Rechnungsadresse deiner Zahlungsmethode muss mit der Lieferadresse übereinstimmen.",
+        "same_billing_address_checkbox_label": "Lieferadresse als Rechnungsadresse verwenden"
       },
       "address_management": {
         "confirm_address_deletion": "Bist du dir sicher, dass du die Adresse {{address}} löschen möchtest?"
