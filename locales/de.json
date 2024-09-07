@@ -1805,7 +1805,43 @@
       "august": "August",
       "september": "September",
       "october": "Oktober",
-      "november": "November"
+      "november": "November",
+      "december": "Dezember",
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag",
+      "mondayAbbreviation": "Mo",
+      "tuesdayAbbreviation": "Di",
+      "wednesdayAbbreviation": "Mi",
+      "thursdayAbbreviation": "Do",
+      "fridayAbbreviation": "Fr",
+      "saturdayAbbreviation": "Sa",
+      "sundayAbbreviation": "So",
+      "showNextMonth": "Nächsten Monat anzeigen, {{month}} {{year}}",
+      "showPreviousMonth": "Vormonat anzeigen, {{month}} {{year}}",
+      "rangeStart": "Bereichsbeginn",
+      "inRange": "Im Bereich",
+      "rangeEnd": "Bereichsende",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} Artikel verfügbar",
+        "other": "{{count}} Artikel verfügbar"
+      },
+      "removeItem": "{{label}} entfernen",
+      "removeTag": "Tag entfernen",
+      "month": {
+        "one": "Monat",
+        "other": "Monate"
+      },
+      "mapClusterTitle": {
+        "one": "Cluster mit {{number}} Marker",
+        "other": "Cluster mit {{number}} Markern"
+      },
+      "expandSheet": "Erweitern",
+      "qrCode": "QR-Code"
     }
   },
   "pagefly": {
