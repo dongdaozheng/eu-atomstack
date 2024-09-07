@@ -1819,7 +1819,7 @@
         }
       },
       "payment_errors": {
-        "amount_too_small": "Le montant minimum du paiement doit être supérieur à 0,50 USD. Veuillez réessayer avec un montant plus élevé.",
+        "amount_too_small": "Le montant minimum du paiement doit être supérieur à 0,50 USD. Veuillez réessayer avec un montant plus élevé.",
         "method_not_available": "Le mode de paiement demandé n'est pas disponible. Choisissez un autre mode de paiement et réessayez.",
         "available_methods_updated": "Les modes de paiement disponibles ont été mis à jour.",
         "generic_error": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez un autre mode de paiement.",
