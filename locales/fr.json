@@ -647,6 +647,44 @@
     "page_titles": {
       "blog_or_article_with_error": "Erreur - %{title}",
       "products": "Produits"
+    },
+    "email_marketing": {
+      "open_tracking": {
+        "opt_out": {
+          "visibility": "Nous ne verrons pas si vous avez ouvert vos e-mails.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Inscrivez-vous<\/a> pour recevoir par e-mail le suivi des ouvertures.",
+          "preview_bar": "Vous avez un aperçu de ce que les clients verront lorsqu'ils désactiveront le suivi des ouvertures d'e-mails.",
+          "opted_out_html": "<b>Vous avez désactivé le suivi des ouvertures de courrier électronique.<\/b>"
+        },
+        "no_longer_track": {
+          "status_html": "<b>Nous ne suivons plus les ouvertures d'e-mails.<\/b>",
+          "privacy_policy": "Après l'envoi de cet e-mail, nous avons mis à jour notre politique de confidentialité et nous ne suivons plus les ouvertures."
+        },
+        "track": {
+          "status_html": "<b>Le suivi de l'ouverture des e-mails est signalé.<\/b>",
+          "visibility": "Nous verrons uniquement si vous avez ouvert l’e-mail, dans le cadre du taux d’ouverture total des e-mails."
+        },
+        "updated_policy": {
+          "status_html": "<b>Le suivi de l'ouverture des e-mails est signalé.<\/b>",
+          "visibility": "Nous avons mis à jour notre politique et suivons désormais l'ouverture des e-mails. Les taux d'ouverture des e-mails seront signalés de manière anonyme. Nous verrons uniquement si vous avez ouvert un e-mail dans le cadre du taux d’ouverture total des e-mails.",
+          "opt_out_html": "Si vous ne souhaitez pas partager ces informations, vous pouvez <a style='text-decoration:underline;' href='%{link}'>vous désinscrire.<\/a>"
+        },
+        "opt_in": {
+          "opted_in_html": "<b>Vous avez activé le suivi des ouvertures par e-mail.<\/b>",
+          "visibility": "Les taux d'ouverture des e-mails seront signalés de manière anonyme. Nous verrons uniquement si vous avez ouvert un e-mail dans le cadre d’un taux d’ouverture d’e-mail agrégé.",
+          "opt_out_html": "Vous pouvez <a style='text-decoration:underline;' href='%{link}'>désactiver<\/a> le suivi des ouvertures de courrier électronique si vous ne souhaitez pas partager ces informations.",
+          "preview_bar": "Vous avez un aperçu de ce que les clients verront lorsqu'ils choisiront le suivi des ouvertures par e-mail."
+        }
+      },
+      "subscribed": {
+        "disclaimer": "Vous pouvez vous désinscrire à tout moment.",
+        "unsubscribe": "Se désabonner"
+      },
+      "unsubscribed": {
+        "confirmation": "Vous vous êtes désabonné de notre liste de diffusion.",
+        "disclaimer": "Vous ne recevrez plus de mises à jour marketing de notre part. Vous pouvez vous réabonner à tout moment.",
+        "preview": "Vous avez un aperçu de ce que les clients verront lorsqu'ils se désabonneront."
+      }
     }
   },
   "pagefly": {
