@@ -475,7 +475,35 @@
   "shopify": {
     "checkout": {
       "payment": {
-        "payment_method_not_available_for_shipping_address_error": "Für die ausgewählte Lieferadresse ist keine Zahlungsmethode verfügbar. Wählen Sie eine andere Zahlungsmethode."
+        "payment_method_not_available_for_shipping_address_error": "Für die ausgewählte Lieferadresse ist keine Zahlungsmethode verfügbar. Wählen Sie eine andere Zahlungsmethode.",
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "Du wirst gebeten, dich bei Amazon anzumelden.",
+        "amazon_payments_logout": "Bei Amazon Pay ausloggen",
+        "amazon_payments_failed_mfa_challenge": "Die ausgewählte Zahlungsmethode konnte nicht verwendet werden. Wähle eine andere Methode aus oder wende dich an deine Bank oder deinen Kartenaussteller.",
+        "amazon_payments_abandoned_mfa_challenge": "Deine Zahlung konnte nicht abgeschlossen werden. Versuche es mit einer anderen Zahlungsmethode oder wende dich an deine Bank oder deinen Kartenaussteller.",
+        "amazon_payments_could_not_enqueue_authorize": "Bei der Verarbeitung deiner Zahlung ist ein Problem aufgetreten. Versuche es erneut oder mit einer anderen Zahlungsmethode.",
+        "title": "Zahlung",
+        "network_card_payment_options": "Ein Kartennetzwerk auswählen",
+        "amount_left_to_pay_label": "Betrag",
+        "discount_button_action_label": "Rabattcode nutzen",
+        "gift_card_code_label": "Gutscheincode",
+        "apply_gift_card_button_label": "Anwenden",
+        "gift_card_balance_label": "Balance:",
+        "supported_card_brands_more_label": "und mehr …",
+        "detected_card_brand": "Erkannte Kartenmarke: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "Speichere deine Kreditkarte",
+        "credit_card_vaulting_sign_in_banner_info": "Logge dich ein oder erstelle ein Konto, um deine Kreditkarteninformationen für zukünftige Käufe zu speichern.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Einloggen",
+        "card_number_label": "Kartennummer",
+        "card_number_placeholder": "Kartennummer",
+        "card_pay_with": "Zahle mit:",
+        "card_security_notice": "Alle Transaktionen sind sicher und verschlüsselt.",
+        "name_on_card_label": "Name des Karteninhabers",
+        "name_on_card_placeholder": "Name des Karteninhabers",
+        "card_information_notice": "Alle Transaktionen sind sicher und verschlüsselt. Kreditkarteninformationen werden niemals gespeichert.",
+        "card_security_vault_notice": "Für zukünftige Zahlungen benötigen wir deine Details. Alle Transaktionen sind sicher und verschlüsselt.",
+        "ftd_vault_credit_card_label": "Diese Kreditkarte in meinem Konto speichern, um den Checkout zu beschleunigen",
+        "card_nickname_label": "Spitzname (optional)"
       },
       "address_management": {
         "confirm_address_deletion": "Bist du dir sicher, dass du die Adresse {{address}} löschen möchtest?"
@@ -1350,7 +1378,13 @@
         "split_shipping_option_free": "Kostenfreier Versand",
         "split_shipping_option_lowest_price": "Niedrigster Preis",
         "split_shipping_option_fastest": "Am schnellsten",
-        "split_shipping_option_recommended": "Empfohlen"
+        "split_shipping_option_recommended": "Empfohlen",
+        "split_shipping_option_custom": "Benutzerdefiniert"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Zusätzliche Informationen"
+        }
       }
     },
     "sentence": {
