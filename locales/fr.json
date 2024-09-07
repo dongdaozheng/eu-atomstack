@@ -724,7 +724,8 @@
             "instruction_html": "Effectuez votre paiement chez Multibanco ou en ligne en utilisant les détails ci-dessous. Pour des questions ou pour mettre à jour les détails de paiement, %{contact_us}.",
             "entity": "Entité",
             "reference": "Référence",
-            "amount": "Montant"
+            "amount": "Montant",
+            "find_nearest_atm": "Trouver le guichet automatique le plus proche"
           }
         },
         "gift_card_store_credit": {
@@ -756,7 +757,18 @@
         "payment_method_update_failed": "La mise à jour du mode de paiement a échoué.",
         "proposed_gateway_unavailable": "La passerelle de paiement proposée n'est pas disponible",
         "pay_in_installments_split_pay_short": "4 versements de %{amount}",
-        "gift_cards_unavailable": "Votre carte cadeau ne peut pas être appliquée à cette commande et a été supprimée"
+        "gift_cards_unavailable": "Votre carte cadeau ne peut pas être appliquée à cette commande et a été supprimée",
+        "update_payment_method": "Mettre à jour le mode de paiement",
+        "order_covered_by_store_credit_notice": "Votre commande est couverte par votre crédit magasin.",
+        "order_covered_by_redeemables_notice": "Votre commande est couverte.",
+        "store_credit": {
+          "label": "Crédit en magasin",
+          "apply_label": "Appliquer un crédit en magasin",
+          "add_label": "Ajouter du crédit en magasin",
+          "manage_label": "Gérer le crédit du magasin",
+          "buying_gift_card": "Vous ne pouvez pas utiliser le crédit du magasin pour acheter une carte-cadeau",
+          "no_fixed_selling_plans": "Vous ne pouvez pas utiliser le crédit en magasin avec les options d'achat différé"
+        }
       },
       "shipping": {
         "split_cart_shipping_label": "Méthode",
@@ -1673,6 +1685,18 @@
         "manual_payment_gateway_label": "Manuel",
         "billing_address_title": "Adresse de facturation",
         "free_label": "Gratuit"
+      },
+      "field_errors": {
+        "address_address1_contains_html_tags": "L'adresse 1 ne peut pas contenir de balises HTML.",
+        "address_address1_contains_mathematical_symbols": "La première ligne d'adresse ne peut pas contenir de symboles mathématiques",
+        "address_address2_blank": "Entrez dans un appartement, une suite, etc.",
+        "address_address2_too_long": "La deuxième ligne d'adresse est trop longue (maximum 255 caractères)",
+        "address_address2_contains_emojis": "L'adresse 2 ne peut pas contenir d'emojis",
+        "address_address2_contains_html_tags": "Address2 ne peut pas contenir de balises HTML.",
+        "address_address2_contains_mathematical_symbols": "La deuxième ligne d'adresse ne peut pas contenir de symboles mathématiques",
+        "address_city_blank": "Entrez une ville",
+        "address_city_too_long": "La ville est trop longue (255 caractères maximum)",
+        "address_city_contains_emojis": "La ville ne peut pas contenir d'émojis"
       }
     },
     "sentence": {
