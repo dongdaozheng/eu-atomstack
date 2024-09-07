@@ -951,7 +951,8 @@
       "shop_pay_external": {
         "errors": {
           "problem_loading": "Il y a un problème lors du chargement de Shop Pay",
-          "try_again_later": "Vérifiez votre connexion ou fermez cette fenêtre et réessayez dans quelques instants."
+          "try_again_later": "Vérifiez votre connexion ou fermez cette fenêtre et réessayez dans quelques instants.",
+          "checkout_has_expired": "Votre paiement a expiré. Fermez cette fenêtre et réessayez à partir de {{shopName}}."
         },
         "return_to_store": "Revenir à {{shopName}}"
       },
@@ -2590,6 +2591,31 @@
       },
       "discount_errors": {
         "generic_error": "Votre commande n'a pas pu être traitée car votre code de réduction n'est plus disponible. Vérifiez le total de votre commande et réessayez."
+      },
+      "wallets": {
+        "return_to_store": "Retour au magasin",
+        "return_to_checkout": "Retour à la caisse",
+        "redirect_hint": "Il vous sera demandé de vous connecter avec {{walletName}}.",
+        "logged_in": "Connecté à {{email}}",
+        "shipping_line_label": "Expédition",
+        "connect_shipping_methods": "{{method1}}et {{method2}}",
+        "payment_in_progress_title": "Paiement en cours",
+        "payment_in_progress_body": "Votre paiement est en cours de traitement. Votre commande sera bientôt finalisée.",
+        "call_to_action": "Payer avec {{walletName}}",
+        "redirection_notice": "Après avoir cliqué sur « {{buttonLabel}} », vous serez redirigé vers {{walletName}} pour finaliser votre achat en toute sécurité.",
+        "errors": {
+          "unavailable": {
+            "title": "{{walletName}}pas disponible",
+            "description": "{{walletName}}n’était pas disponible. Utilisez un autre mode de paiement ou réessayez plus tard.",
+            "instructions": "Un problème est survenu avec {{walletName}}. Retournez au magasin pour réessayer ou vérifiez d'une autre manière.",
+            "unavailable_for_country": "{{walletName}}n’est pas disponible dans {{countryName}}. Sélectionnez un autre mode de paiement pour finaliser votre achat"
+          },
+          "unavailable_terminal": {
+            "instructions": "{{walletName}}n'est actuellement pas disponible pour votre commande. Pour continuer votre achat, choisissez une autre méthode de paiement."
+          },
+          "generic": "Un problème est survenu avec {{walletName}}. Réessayez ou utilisez un autre mode de paiement.",
+          "discount_code": "Impossible d'appliquer ce code de réduction. Veuillez vérifier votre code et réessayer."
+        }
       }
     },
     "sentence": {
