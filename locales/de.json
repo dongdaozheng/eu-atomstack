@@ -521,8 +521,40 @@
     "collections": {
       "sorting": {
         "manual": "Ausgewählt",
-        "best_selling": "meistverkauft"
+        "best_selling": "meistverkauft",
+        "az": "Alphabetisch, A-Z",
+        "za": "Alphabetisch, Z-A",
+        "price_ascending": "Preis, niedrig nach hoch",
+        "price_descending": "Preis, hoch nach niedrig",
+        "date_ascending": "Datum, alt zu neu",
+        "date_descending": "Datum, neu zu alt"
       }
+    },
+    "errors": {
+      "blank": "darf nicht leer sein",
+      "credit_card_session_expired": "Die Kreditkartenautorisierung ist abgelaufen, bitte gib deine Zahlungsinformationen erneut ein. deine Karte wurde nicht belastet.",
+      "empty": "darf nicht leer sein",
+      "blocked_address": "Dieser Standort wird nicht unterstützt",
+      "invalid_email": "muss gültige E-Mail-Adresse sein",
+      "discount_disabled": "Dieser Rabatt wurde deaktiviert",
+      "discount_expired": "Dieser Rabatt ist nicht mehr gültig",
+      "discount_limit_reached": "Dieser Rabatt hat seine Nutzungsgrenze erreicht",
+      "discount_not_found": "Konnte keinen gültigen Rabatt finden, der zu dem eingegebenen Code gehört",
+      "customer_already_used_once_per_customer_discount_notice": "Dieser Rabatt hat seine Nutzungsgrenze erreicht",
+      "gift_card_already_applied": "Der Code wurde bereits auf deine Bestellung angewendet",
+      "gift_card_code_invalid": "Ungültiger Code",
+      "gift_card_currency_mismatch": "Dein Geschenkgutschein ist in %{gift_card_currency}. Kontaktiere uns, um ihn in %{checkout_currency} ausstellen zu lassen.",
+      "gift_card_depleted": "Es befindet sich kein Guthaben mehr auf dieser Geschenkkarte",
+      "gift_card_disabled": "Geschenkkarte ist gesperrt",
+      "gift_card_expired": "Geschenkkarte ist abgelaufen",
+      "invalid": "ist ungültig",
+      "bad_domain": "enthält einen ungültigen Domain-Namen",
+      "taken": "wurde bereits in Anspruch genommen",
+      "contains_html_tags": "darf keine HTML-Tags enthalten",
+      "too_short": "ist zu kurz (Untergrenze sind %{count} Zeichen)",
+      "too_long": "ist zu lang (Obergrenze sind %{count} Zeichen)",
+      "password_mismatch": "muss mit dem angegebenen Passwort übereinstimmen",
+      "contains_spaces": "beginnt oder endet mit einem Leerzeichen."
     }
   },
   "customer_accounts": {
