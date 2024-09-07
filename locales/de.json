@@ -1031,8 +1031,38 @@
           "other": "Rabatte"
         },
         "discount_order_stacking": {
-          "one": "Bestellungsrabatt"
-        }
+          "one": "Bestellungsrabatt",
+          "other": "Bestellungsrabatte"
+        },
+        "discount_label": "Rabattcode",
+        "discount_placeholder": "Rabattcode",
+        "gift_card_title": "Geschenkkarte",
+        "gift_card_label": "Geschenkkarte",
+        "gift_card_placeholder": "Geschenkkarte",
+        "discount_not_found": "Konnte keinen gültigen Rabatt finden, der zu dem eingegebenen Code gehört",
+        "enter_shipping_address": "Lieferadresse eingeben",
+        "discount_code_applied": "Rabattcode angewendet",
+        "gift_card_applied": "Geschenkgutschein angewendet",
+        "gift_card_and_discount_title": "Rabattcode oder Geschenkgutschein",
+        "gift_card_and_discount_label": "Rabattcode oder Geschenkgutschein",
+        "gift_card_and_discount_placeholder": "Rabattcode oder Geschenkgutschein",
+        "remove_gift_card_label": "Geschenkkarte löschen",
+        "remove_discount_label": "Rabatt entfernen",
+        "free_shipping_discount_label": "Kostenfreier Versand",
+        "apply_discount_button_label": "Anwenden",
+        "applied_free_shipping_discount_label": "Angewendet",
+        "return_restocking_fee_label": "Wiedereinlagerungsgebühr",
+        "return_shipping_fee_label": "Rücksendungsversand",
+        "applied_discount_message": "%{amount} Rabatt auf den Gesamtpreis",
+        "discount_has_been_applied": "Der Rabatt wurde genutzt",
+        "discount_has_been_removed": "Der Rabatt wurde gestrichen",
+        "gift_card_has_been_applied": "Die Geschenkkarte wurde genutzt",
+        "gift_card_has_been_removed": "Der Geschenkgutschein wurde gestrichen",
+        "discount_already_applied": "Auf diese Bestellung wurde ein Rabatt gewährt. Du kannst keinen weiteren Rabatt hinzufügen.",
+        "cart_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> ist für die Artikel in deinem Warenkorb nicht gültig",
+        "discount_requires_customer_notice": "Gib deine Versandinformationen ein, um den Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> zu übernehmen",
+        "customer_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">%{code}<\/strong> ist derzeit für dich nicht verfügbar",
+        "gift_card_subscriptions_notice": "Geschenkgutscheine werden nur für deine erste Zahlung gültig sein"
       }
     },
     "sentence": {
