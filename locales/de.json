@@ -2458,6 +2458,52 @@
       "session_errors": {
         "session_not_unique": "Bei der Verarbeitung deiner Bestellung ist ein Problem aufgetreten. Aktualisiere diese Seite, um zum Shop zurückzukehren.",
         "session_already_finished": "Diese Bestellung wurde bereits eingereicht. Du kannst zum Shop zurückkehren, um eine neue Bestellung aufzugeben."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "Geschlossen",
+        "business_hours": "Öffnungszeiten",
+        "title": "Abholstation",
+        "or": "oder",
+        "search_button": "Suchen",
+        "selector_tabs": "Auswahl der Abholpunkte",
+        "selector_tab_map": "Karte",
+        "no_business_hours": "Keine Öffnungszeiten verfügbar",
+        "open_twenty_four_hours": "Rund um die Uhr geöffnet",
+        "address_label": "Adresse",
+        "selector_tab_list": "Liste",
+        "could_not_resolve_address": "Deine Adresse konnte nicht geortet werden. Versuche es erneut oder verwende eine andere Adresse",
+        "no_pickup_points_near_you": "Keine Abholpunkte in der Nähe der ausgewählten Adresse gefunden",
+        "no_pickup_points_near_location": "Keine Abholpunkte in der Nähe deines Standorts gefunden",
+        "no_pickup_points_found": "Keine Abholstandorte gefunden",
+        "paginator": {
+          "next_accessibility_label": "Nächste Seite",
+          "previous_accessibility_label": "Vorherige Seite",
+          "header": {
+            "one": "%{first} - %{last} von %{count} Standort anzeigen",
+            "other": "%{first} - %{last} von %{count} Standorten anzeigen"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} Standort von %{count}",
+            "other": "%{pickup_point_index} Standorte von %{count}"
+          },
+          "selected_page": {
+            "one": "%{first}–%{last} Standort von %{count}",
+            "other": "%{first}–%{last} Standorte von %{count}"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} Abholpunkt in der Nähe deines Standorts gefunden",
+          "other": "%{count} Abholpunkte in der Nähe deines Standorts gefunden"
+        },
+        "change": "Ändern",
+        "waiting_on_pickup_point_location_notice": "Suche nach Abholpunkten ...",
+        "geolocation": {
+          "shared_location_button": "Meinen Standort verwenden",
+          "errors": {
+            "unsuported_by_browser": "Das Abrufen der Geolocation wird von deinem Browser nicht unterstützt. Versuche es erneut oder verwende einen anderen Browser.",
+            "permission_not_allowed": "Genehmige die Freigabe deines Standorts."
+          }
+        }
       }
     },
     "sentence": {
