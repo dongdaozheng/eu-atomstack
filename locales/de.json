@@ -2365,8 +2365,50 @@
       "subscriptions": {
         "recurring_total_intervals": {
           "day": {
-            "one": "Tag"
+            "one": "Tag",
+            "other": "%{count} Tage"
+          },
+          "week": {
+            "one": "Woche",
+            "other": "%{count} Wochen"
+          },
+          "month": {
+            "one": "Monat",
+            "other": "%{count} Monate"
+          },
+          "year": {
+            "one": "Jahr",
+            "other": "%{count} Jahre"
           }
+        },
+        "recurring_totals": "%{total_price} jede\/n\/s %{interval}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Erste Zahlung %{total_price}",
+            "other": "Erste %{count} Zahlungen von je %{total_price}"
+          },
+          "following_cycles": ", anschließend %{total_price} alle bzw. jede\/n %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount": "Erste Zahlung %{total_price_with_discount}, anschließend %{recurring_total}",
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", anschließend %{count} Zahlung über %{total_price}",
+            "other": ", anschließend %{count} Zahlungen über je %{total_price}"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Zahlungsmethoden",
+        "title": "Zahlungsmethoden",
+        "update_card_button_label": "Karte aktualisieren",
+        "delete_customer_mandate": {
+          "generic_error": "Bei der Verarbeitung deiner Anfrage ist ein Problem aufgetreten.",
+          "success_message": "Deine Zahlungsmethode wurde erfolgreich gelöscht"
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "Zu viele Versuche"
         }
       }
     },
