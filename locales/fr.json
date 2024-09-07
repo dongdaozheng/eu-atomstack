@@ -513,7 +513,17 @@
         "subscription_pickup": "Récupération de l'abonnement",
         "waiting_on_rate_notice": "Obtenir les tarifs d’expédition disponibles…",
         "waiting_on_pickup_location_notice": "Obtenir des lieux de prise en charge disponibles…",
-        "no_rates_for_cart_or_destination_notice": "Il n'y a aucune méthode d'expédition disponible pour votre panier ou votre adresse"
+        "no_rates_for_cart_or_destination_notice": "Il n'y a aucune méthode d'expédition disponible pour votre panier ou votre adresse",
+        "estimated_delivery_time": "% de livraison estimé{time}",
+        "estimated_delivery_time_range": "Livraison estimée %{min_time}–%{max_time}",
+        "delivery_today": "Livraison le jour même %{time}",
+        "delivery_tomorrow": "Livraison le lendemain %{time}",
+        "two_day_delivery": "Livraison sous 2 jours %{time}",
+        "delivery": "Livraison %{time}",
+        "arrives_time": "Arrive %{time}",
+        "arrives_time_range": "Arrive %{min_time}–%{max_time}",
+        "estimated_time": "% estimé{time}",
+        "estimated_time_range": "% estimé{min_time}–%{max_time}"
       },
       "shop_pay_external": {
         "errors": {
@@ -1206,7 +1216,17 @@
         "collapse_component_information": {
           "one": "Masquer %{count} élément",
           "other": "Masquer %{count} éléments"
-        }
+        },
+        "maximum_discount_code_limit_reached": "Vous avez atteint le nombre maximum de codes de réduction. Supprimez un code existant pour utiliser <strong style=\"text-transform:uppercase\">%{code}<\/strong>.",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> ne fonctionne pas pour le moment. Contactez-nous pour obtenir de l'aide.",
+        "due_on_fulfillment": "Due à l'exécution",
+        "gift_card_masked": "•••• %{last_characters}",
+        "subscriptions": "Abonnements",
+        "duties_label": "Devoirs",
+        "duties_and_taxes_label": "Droits et taxes",
+        "error_duties_tooltip": "Cette commande est expédiée depuis un autre pays, des droits et taxes peuvent donc être facturés à la livraison.",
+        "may_be_charged_on_delivery": "Peut être facturé à la livraison",
+        "total_updated_label_with_price": "Prix ​​total mis à jour : %{totalPrice}"
       },
       "deliverability": {
         "not_deliverable": {
