@@ -799,6 +799,40 @@
     "orders": {
       "order_status": {
         "delivered": "Angekommen {{date}}"
+      },
+      "list_layout_accessibility_label": "Layout-Optionen",
+      "list_title": "Bestellungen",
+      "order_list": {
+        "column_headers": {
+          "total": "Gesamt",
+          "items": "Artikel",
+          "order": "Bestellung"
+        },
+        "delivered": "Zugestellt am {{date}}",
+        "empty_state_order_source_description": "Hier werden nur Bestellungen angezeigt, die von {{email}} aufgegeben wurden.",
+        "order_status_and_message": "{{orderStatus}} bis {{message}}",
+        "empty_state_subtitle": "Gehe zum Shop, um eine Bestellung aufzugeben.",
+        "empty_state_title": "Noch keine Bestellungen",
+        "estimated_delivery": "Erwartet am {{date}}",
+        "one_images_accessibility_label": "Die Bestellung enthält {{lineItemName1}}",
+        "two_images_accessibility_label": "Die Bestellung enthält {{lineItemName1}}, {{lineItemName2}}",
+        "three_images_accessibility_label": "Die Bestellung enthält {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}",
+        "four_images_accessibility_label": "Die Bestellung enthält {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}, {{lineItemName4}}",
+        "estimated_shortform": "Ca. {{date}}",
+        "empty_state_title_for_pending_orders": "Keine ausstehenden Bestellungen",
+        "more_than_three_products_accessibility_label": "Bestellung beinhaltet {{lineItemName1}}, {{lineItemName2}} und {{numberOfAdditionalProducts}} weitere Produkte",
+        "carousel": {
+          "one_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}, {{lineItemName4}} Menge {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}, {{lineItemName4}} Menge {{lineItemQuantity4}}, {{lineItemName5}} Menge {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}, {{lineItemName4}} Menge {{lineItemQuantity4}}, {{lineItemName5}} Menge {{lineItemQuantity5}}, {{lineItemName6}} Menge {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Bestellung enthält {{lineItemName1}} Menge {{lineItemQuantity1}}, {{lineItemName2}} Menge {{lineItemQuantity2}}, {{lineItemName3}} Menge {{lineItemQuantity3}}, {{lineItemName4}} Menge {{lineItemQuantity4}}, {{lineItemName5}} Menge {{lineItemQuantity5}}, {{lineItemName6}} Menge {{lineItemQuantity6}} und mehr"
+        },
+        "more_than_four_products_accessibility_label": "Bestellung beinhaltet {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}} und {{numberOfAdditionalProducts}} weitere Produkte",
+        "plus_more_products": "+{{numberOfAdditionalProducts}} Produkte",
+        "plus_more": "+{{numberOfAdditionalProducts}}"
       }
     },
     "date": {
@@ -874,9 +908,11 @@
       "people": {
         "pagination": {
           "load_more": "Weitere laden",
-          "load_more_accessibility_label": "Weitere Personen laden"
+          "load_more_accessibility_label": "Weitere Personen laden",
+          "loading_accessibility_label": "Personen werden geladen"
         }
-      }
+      },
+      "add_button": "Hinzufügen"
     }
   },
   "pagefly": {
