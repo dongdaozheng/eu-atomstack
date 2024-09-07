@@ -1420,7 +1420,57 @@
         "billing_address_card_title": "Rechnungsadresse",
         "cancel_adding_billing_address_accessibility_label": "Hinzufügen der Rechnungsadresse abbrechen",
         "cancel_adding_shipping_address_accessibility_label": "Hinzufügen der Lieferadresse abbrechen",
-        "save_new_billing_address_accessibility_label": "Rechnungsadresse speichern"
+        "save_new_billing_address_accessibility_label": "Rechnungsadresse speichern",
+        "save_new_shipping_address_accessibility_label": "Lieferadresse speichern",
+        "shipping_address_card_title": "Lieferadresse"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Alle ausblenden",
+          "show_all": "Alle anzeigen",
+          "hide_all_accessibility_label": "Alle Bestellungen ausblenden, die überprüft werden",
+          "show_all_accessibility_label": "Alle Bestellungen anzeigen, die überprüft werden",
+          "title": "Ausstehend",
+          "show_all_orders_in_review": "Alle Bestellungen anzeigen, die überprüft werden",
+          "show_less_orders_in_review": "Weniger Bestellungen bei der Überprüfung anzeigen",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "Du hast keine ausstehenden Bestellungen",
+            "pending_orders": {
+              "one": "Du hast {{count}} ausstehende Bestellung",
+              "other": "Du hast {{count}} ausstehende Bestellungen"
+            },
+            "more_than_pagination_length": "Du hast mehr als {{count}} ausstehende Bestellungen"
+          },
+          "pagination": {
+            "nav_accessibility_label": "Navigationsschaltflächen für Bestellungen in Prüfung"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}}+"
+        },
+        "order_list_column_headers_location": "Standort",
+        "order_list_column_headers_contact": "Kontakt",
+        "removed_company_contact_tooltip": "Aus Unternehmen entfernt"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "Bestätigt am {{date}} von der Bestellung {{draftOrderName}}",
+        "loading": "Bestelldetails werden geladen",
+        "loading_finished_accessibility_message": "Bestelldetails wurden geladen",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "Deine Zahlung ist seit {{count}} Tag überfällig",
+              "other": "Deine Zahlung ist seit {{count}} Tagen überfällig"
+            },
+            "banner_due": {
+              "one": "Deine Zahlung ist in {{count}} Tag fällig",
+              "other": "Deine Zahlung ist in {{count}} Tagen fällig"
+            },
+            "banner_due_today": "Deine Zahlung ist heute fällig",
+            "title": "Zahlbar bis",
+            "title_with_date": "Zahlung fällig am {{date}}",
+            "title_due_on_receipt": "Zahlung noch nicht fällig",
+            "title_due_on_fulfillment": "Zahlung wird bei Fulfillment fällig"
+          }
+        }
       }
     }
   },
