@@ -477,6 +477,52 @@
       "payment": {
         "payment_method_not_available_for_shipping_address_error": "Für die ausgewählte Lieferadresse ist keine Zahlungsmethode verfügbar. Wählen Sie eine andere Zahlungsmethode."
       }
+    },
+    "sentence": {
+      "words_connector": ", ",
+      "two_words_connector": " und ",
+      "last_word_connector": " und "
+    },
+    "pagination": {
+      "previous": "Vorherige",
+      "next": "Nächste"
+    },
+    "links": {
+      "powered_by_shopify": "Powered by Shopify",
+      "learn_more": "Mehr erfahren"
+    },
+    "feed": {
+      "more": "Mehr"
+    },
+    "attributes": {
+      "email": "E-Mail",
+      "password": "Passwort",
+      "password_confirmation": "die Passwortbestätigung",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "body": "Nachricht",
+      "signature": "Adresse"
+    },
+    "addresses": {
+      "zip_code": "Postleitzahl",
+      "postal_code": "Postleitzahl",
+      "postcode": "Postleitzahl",
+      "pincode": "Postleitzahl",
+      "region": "Region",
+      "prefecture": "Präfektur",
+      "province": "Provinz",
+      "state": "Bundesland",
+      "state_and_territory": "Staat\/Territorium",
+      "county": "Provinz",
+      "emirate": "Emirate",
+      "governorate": "Governorate",
+      "confirm": "Bist du sicher, dass du diese Adresse löschen möchtest?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Ausgewählt",
+        "best_selling": "meistverkauft"
+      }
     }
   },
   "customer_accounts": {
