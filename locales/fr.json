@@ -1960,7 +1960,29 @@
         "order_due_on_receipt_choose_later": "Votre paiement sera dû à réception.",
         "order_deposit_due_now": "{{depositAmount}}est dû aujourd'hui. Le solde est aux conditions {{translatedName}} et est dû le {{dueDate}}.",
         "order_deposit_due_on_fulfillment": "{{depositAmount}}est dû aujourd'hui. Le solde sera dû une fois votre commande exécutée.",
-        "draft_order_payment_due_later_no_terms": "Votre paiement sera dû une fois votre commande confirmée."
+        "draft_order_payment_due_later_no_terms": "Votre paiement sera dû une fois votre commande confirmée.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Votre carte sera débitée une fois votre commande confirmée.",
+        "draft_order_payment_due_later_terms": "Vous serez à {{translatedName}} conditions une fois votre commande confirmée.",
+        "draft_order_payment_due_on_fulfillment": "Votre paiement sera dû une fois votre commande confirmée et exécutée.",
+        "draft_order_deposit_due_later": "{{depositAmount}}sera dû lorsque votre commande sera confirmée. Le solde sera aux conditions {{translatedName}}.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}}sera dû lorsque votre commande sera confirmée. Le solde sera réglé une fois votre commande exécutée."
+      },
+      "thank_you": {
+        "title": "Merci pour votre achat!",
+        "confirmation_email_sent_text": "Un email de confirmation a été envoyé à %{email}",
+        "return_to_store_link_label": "Continuer vos achats",
+        "print_link_label": "Imprimer le reçu",
+        "payment_information_title": "Informations de paiement",
+        "shipping_information_title": "Informations d'expédition",
+        "page_title": "Merci, %{display_name} !",
+        "page_title_no_name": "Merci!",
+        "purchase_order_number_title": "Numéro de bon de commande #%{purchase_order_number}",
+        "cancelled_page_title": "Commande annulée",
+        "failed_pending_payment_page_title": "Il y a un problème avec votre paiement",
+        "customer_information_title": "Détails de la commande",
+        "contact_information_title": "Coordonnées",
+        "billing_address_title": "Adresse de facturation",
+        "company_location_title": "Emplacement"
       }
     },
     "sentence": {
