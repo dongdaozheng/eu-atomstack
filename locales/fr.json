@@ -2428,9 +2428,53 @@
         "inventory": {
           "partial_inventory_banner": "Une partie de votre panier est épuisée et ne sera pas disponible à l'achat au moment du paiement.",
           "sold_out": {
-            "heading": "Votre panier est épuisé"
+            "heading": "Votre panier est épuisé",
+            "storefront_body": "Retournez au magasin pour continuer vos achats",
+            "no_storefront_body": "Malheureusement, l'article que vous souhaitez acheter n'est plus disponible.",
+            "link": "Retour au magasin"
           }
+        },
+        "title": "File d'attente",
+        "time_to_checkout_title": "Il est temps de vérifier - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Calculer le temps d'attente estimé",
+          "less_than_one": "Temps d'attente estimé : moins d'une minute",
+          "one": "Temps d'attente estimé : {{count}} minute",
+          "other": "Temps d'attente estimé : {{count}} minutes"
+        },
+        "last_checked": "(Dernière vérification : {{time}})",
+        "footer": {
+          "heading": "N'actualisez pas cette page, elle sera mise à jour automatiquement.",
+          "body": "Les articles de votre panier ne sont pas réservés tant que vous n'avez pas finalisé votre commande."
         }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Un problème est survenu lors du traitement de votre demande, veuillez contacter le propriétaire du magasin."
+      },
+      "no_address_location": {
+        "title": "Emplacement sans adresse",
+        "header": "Vous n'avez pas d'adresse de livraison pour cet emplacement",
+        "alt_header": "Adresse de livraison manquante",
+        "message": "Contactez-nous pour ajouter une adresse pour cet emplacement afin de finaliser le paiement.",
+        "email_us_button_label": "Envoyez-nous un email"
+      },
+      "order_errors": {
+        "creation_failure": "Un problème est survenu lors de la création de votre commande. Réessayez ou contactez-nous pour plus de détails.",
+        "network_failure": "Votre commande n'a pas pu être soumise en raison d'une erreur réseau. Vérifiez votre connexion et réessayez.",
+        "inventory_reservation_failure": "Certains articles ne sont plus disponibles."
+      },
+      "session_errors": {
+        "session_not_unique": "Un problème est survenu lors du traitement de votre commande. Actualisez cette page pour revenir au magasin.",
+        "session_already_finished": "Cette commande a déjà été soumise. Vous pouvez revenir au magasin pour démarrer une nouvelle commande."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "Fermé",
+        "business_hours": "Horaires d'ouverture",
+        "no_business_hours": "Aucune heure d'ouverture disponible",
+        "open_twenty_four_hours": "Ouvert 24h\/24 et 7j\/7",
+        "title": "Point de retrait",
+        "or": "ou",
+        "search_button": "Recherche"
       }
     },
     "sentence": {
