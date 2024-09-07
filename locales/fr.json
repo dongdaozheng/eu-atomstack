@@ -1736,7 +1736,27 @@
         "address_zip_not_supported": "Cet emplacement n'est pas pris en charge",
         "address_zip_invalid_for_country": "Entrez un code postal valide pour %{country}",
         "address_zip_invalid_for_province": "Entrez un code postal valide pour %{province}",
-        "address_zip_invalid_for_country_and_province": "Entrez un code postal valide pour %{province}, %{country}"
+        "address_zip_invalid_for_country_and_province": "Entrez un code postal valide pour %{province}, %{country}",
+        "handle_phone_invalid": "Entrez un numéro de téléphone valide",
+        "handle_email_invalid": "Entrez un email valide",
+        "email_invalid": "Entrez un email valide",
+        "email_or_phone_blank": "Entrez un e-mail ou un numéro de téléphone",
+        "email_or_phone_invalid": "Entrez un email valide ou un numéro de téléphone portable",
+        "address_first_name_blank": "Entrez un prénom",
+        "address_first_name_too_long": "Le prénom est trop long (maximum 255 caractères)",
+        "address_first_name_contains_emojis": "Le prénom ne peut pas contenir d'émojis",
+        "address_first_name_contains_html_tags": "Le prénom ne peut pas contenir de balises HTML.",
+        "address_first_name_contains_url": "Le prénom ne peut pas contenir d'URL",
+        "credit_card_year_invalid": "Entrez une année d'expiration valide",
+        "credit_card_start_invalid": "Entrez une date de début de carte valide",
+        "credit_card_start_month_invalid": "Entrez un mois de début de carte valide",
+        "credit_card_start_year_invalid": "Entrez une année de début de carte valide",
+        "credit_card_number_blank": "Entrez un numéro de carte",
+        "credit_card_verification_value_blank": "Entrez le CVV ou le code de sécurité sur votre carte",
+        "delivery_line_detail_changed": "Certains détails de livraison peuvent avoir changé. Vérifiez votre mode d'expédition et réessayez.",
+        "delivery_zone_not_found": "La zone spécifiée n'a pas été trouvée dans le pays spécifié.",
+        "reduction_code_code_not_found": "Entrez un code de réduction ou une carte cadeau valide",
+        "reduction_code_discount_not_found": "Entrez un code de réduction valide"
       }
     },
     "sentence": {
