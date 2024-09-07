@@ -1660,7 +1660,41 @@
         "credit_card_details_accessibility_label": "endet auf {{lastDigits}}",
         "billing_title": "Rechnungsadresse",
         "card_info_title": "Karteninformationen",
-        "credit_card_details": "{{creditCardBrand}} •••• {{lastDigits}}"
+        "credit_card_details": "{{creditCardBrand}} •••• {{lastDigits}}",
+        "payment_method_expiring_on": "Läuft am {{expiryDate}} ab",
+        "preauthorized_payments": "Vorautorisierte Zahlungen",
+        "close_payment_modal": "Schließen",
+        "close_payment_modal_accessibility_label": "Zahlungsmethodendetails-Modal schließen",
+        "payment_method_not_found_error": "Zahlungsmethode kann nicht gefunden werden",
+        "payment_details_loading": "Zahlungsmethodendetails werden geladen",
+        "pre_authorized_payments": "Vorautorisierte Zahlungen",
+        "total_amount_of_subscription_line_items_left": "und {{total}} weitere",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "{{totalItems}} Artikel insgesamt, {{totalItemsToDisplay}} Artikel werden angezeigt.",
+        "payment_method_expired_on": "Abgelaufen am {{expiryDate}}",
+        "next_payment_due": "Nächste Zahlung fällig am {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "Bearbeiten",
+        "edit_payment_method_button_accessibility_label": "Zahlungsmethode bearbeiten, die auf {{lastDigits}} endet",
+        "loading_shop_pay": "Shop Pay wird geladen",
+        "invalid_payment_method": "Ungültige Zahlungsmethode",
+        "invalid_payment_method_message": "Verwende eine neue Kreditkarte, um weiterhin eingehende Bestellungen zu erhalten.",
+        "replace_payment_method": "Zahlungsmethode ersetzen",
+        "checkout_card_banner": "Diese Zahlungsmethode kann nur für vorab autorisierte Zahlungen verwendet werden. Sie wird am Checkout nicht angezeigt, wenn du in diesem Shop eingeloggt bist.",
+        "default_checkbox": "Als Standard festlegen",
+        "default_checkbox_accessibility_label": "Diese Zahlungsmethode als Standard festlegen"
+      },
+      "edit_payment_method": {
+        "title": "Zahlungsmethode bearbeiten",
+        "save_payment_method_button": "Speichern",
+        "cancel_edit_payment_method_button": "Abbrechen",
+        "payment_method_updated_toast": "Zahlungsmethode aktualisiert",
+        "billing_address": "Rechnungsadresse",
+        "billing_address_add_new": "Neue Option hinzufügen",
+        "billing_address_choose_from_list": "Aus Liste auswählen",
+        "future_purchases_notice": "Diese Zahlungsmethode wird für zukünftige Käufe gespeichert.",
+        "generic_error": "Beim Aktualisieren ist ein Problem aufgetreten. Bitte versuche es erneut."
+      },
+      "card_fields": {
+        "card_number_label": "Kartennummer"
       }
     }
   },
