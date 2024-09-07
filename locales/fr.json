@@ -491,6 +491,38 @@
         },
         "return_to_store": "Revenir à {{shopName}}"
       }
+    },
+    "sentence": {
+      "words_connector": ",",
+      "two_words_connector": "et",
+      "last_word_connector": ", et"
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant"
+    },
+    "links": {
+      "powered_by_shopify": "Propulsé par Shopify",
+      "learn_more": "Apprendre encore plus"
+    },
+    "feed": {
+      "more": "Plus"
+    },
+    "attributes": {
+      "email": "e-mail",
+      "password": "mot de passe",
+      "password_confirmation": "La confirmation du mot de passe",
+      "first_name": "prénom",
+      "last_name": "nom de famille",
+      "body": "corps",
+      "signature": "Adresse"
+    },
+    "addresses": {
+      "zip_code": "Code postal",
+      "postal_code": "Code Postal",
+      "postcode": "Code postal",
+      "pincode": "Code PIN",
+      "region": "Région"
     }
   },
   "pagefly": {
