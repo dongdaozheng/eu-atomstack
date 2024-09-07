@@ -1327,6 +1327,44 @@
         "default": "Adresse bearbeiten",
         "billing": "Rechnungsadresse bearbeiten",
         "shipping": "Lieferadresse bearbeiten"
+      },
+      "save_new_address_accessibility_label": "Adresse speichern",
+      "title": "Adressen",
+      "billing_address_dropdown_placeholder": "Rechnungsadresse"
+    },
+    "address_form": {
+      "auto_complete_close_accessibility_label": "Vorschläge schließen",
+      "auto_complete_title": "Vorschläge",
+      "billing_address": "Als Rechnungsadresse verwenden",
+      "cancel": "Abbrechen",
+      "attention": "Adressat",
+      "attention_help_text": "Der Name einer Person oder Abteilung",
+      "attention_company": "Unternehmen\/Empfänger",
+      "cancel_accessibility_label": "Bearbeitung der Adresse {{address}} abbrechen",
+      "creation_success_notification": "Adresse hinzugefügt",
+      "default_address": "Das ist meine Standardadresse",
+      "default_address_creation_success_notification": "Standardadresse hinzugefügt",
+      "default_address_update_success_notification": "Standardadresse aktualisiert",
+      "loading_add_form_accessibility_message": "Neues Adressformular wird geladen",
+      "loading_edit_form_accessibility_message": "Formular zur Bearbeitung der Adresse wird geladen",
+      "loading_finished_accessibility_message": "Adressformular wurde geladen",
+      "save": "Speichern",
+      "loading_form_accessibility_message": "Adressformular wird geladen",
+      "save_accessibility_label": "Adresse {{address}} speichern",
+      "section_title_accessibility_label": "Adresse hinzufügen",
+      "update_success_notification": "Adresse wurde aktualisiert"
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "Unternehmensname",
+        "company_card_section_accessibility_label": "Unternehmen"
+      },
+      "locations": {
+        "contact_email": "E-Mail",
+        "contact_list_title": "Leute",
+        "contact_name": "Name",
+        "contact_permissions": "Berechtigungen",
+        "contact_phone_number": "Telefonnummer"
       }
     }
   },
