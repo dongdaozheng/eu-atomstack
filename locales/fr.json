@@ -752,7 +752,19 @@
             "monday": "Mo",
             "tuesday": "Ma",
             "wednesday": "Nous",
-            "thursday": "Ème"
+            "thursday": "Ème",
+            "friday": "Fr",
+            "saturday": "Sa",
+            "sunday": "Su"
+          },
+          "months": {
+            "january": "Janvier",
+            "february": "Février",
+            "march": "Mars",
+            "april": "Avril",
+            "may": "Peut",
+            "june": "Juin",
+            "july": "Juillet"
           }
         },
         "autocomplete_powered_by_google": "Propulsé par {{brandName}}",
