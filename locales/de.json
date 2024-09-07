@@ -1778,10 +1778,48 @@
         "payment_gateway_unsupported_for_deferred_purchase_options": "Diese Zahlungsmethode ist für ausstehende Kaufoptionen nicht verfügbar.",
         "payment_gateway_unsupported_for_development_store_html": "Du musst ein Test-Zahlungs-Gateway nutzen, um eine Testbestellung aufgeben zu können. Erfahre mehr über <a href=\"%{docs_link}\">Testen von Bestellungen in Development Shops<\/a>.",
         "payment_gateway_unsupported_for_order_above_maximum_orders_html": "Du hast das Limit für Development Shop-Bestellungen mit diesem Zahlungsabwickler erreicht. Du musst ein Test-Zahlungs-Gateway nutzen, um eine weitere Bestellung aufgeben zu können. Erfahre mehr über <a href=\"%{docs_link}\">Testen von Bestellungen in Development Shops<\/a>.",
-        "payment_gateway_missing": "Wähle eine Zahlungsmethode aus."
+        "payment_gateway_missing": "Wähle eine Zahlungsmethode aus.",
+        "physical_gift_card_invalid_quantity": "Physische Geschenkgutscheine müssen eine Menge aufweisen, die der Nummer der Geschenkgutschein-Codes entspricht.",
+        "physical_gift_card_duplicate_code": "Die Position \"Geschenkgutschein\" enthält einen doppelten Code.",
+        "physical_gift_card_invalid_code": "Der Code des Geschenkgutscheins ist ungültig.",
+        "email_blank": "E-Mail-Adresse eingeben",
+        "phone_blank": "Eine Telefonnummer eingeben",
+        "address_country_invalid": "Wähle ein Land\/eine Region aus der Liste aus",
+        "address_zip_invalid": "Gib eine gültige Postleitzahl ein",
+        "gift_card_invalid": "Geschenkgutschein \"••••%{last_four_characters}\" ist nicht mehr gültig",
+        "vaulting_agreement_blank": "Deine Karte muss gespeichert werden, da die Zahlung für das Guthaben dieser Bestellung später fällig ist.",
+        "sms_marketing_phone_invalid": "Gib eine gültige Telefonnummer ein",
+        "address_suggestion_did_you_mean_html": "Meintest du %{html}?"
       },
       "company_location": {
         "location_title": "Standort"
+      },
+      "store_credit_errors": {
+        "generic_error": "Es ist ein Problem mit deinem Shop-Guthaben aufgetreten. Versuche es noch einmal oder lade die Seite neu."
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "Der Geschenkgutschein wurde bereits zu deiner Bestellung hinzugefügt",
+          "insufficient_funds": "Auf diesem Geschenkgutschein ist kein Guthaben mehr",
+          "expired": "Dieser Geschenkgutschein ist abgelaufen",
+          "not_available": "Dieser Geschenkgutschein ist nicht mehr verfügbar",
+          "invalid": "Gib einen gültigen Geschenkgutschein ein",
+          "currency_mismatch": "Nur Geschenkgutscheine in %{shop_currency} werden akzeptiert",
+          "generic": "Der Geschenkgutschein konnte nicht zum Checkout hinzugefügt werden",
+          "throttle_limit_exceeded": "Du hast die maximale Anzahl an Versuchen überschritten. Versuche es später noch einmal.",
+          "no_longer_available": "Dieser Geschenkgutschein kann nicht mehr bei diesem Checkout verwendet werden"
+        }
+      },
+      "payment_errors": {
+        "generic_error": "Bei der Verarbeitung deiner Zahlung ist ein Problem aufgetreten. Versuche es erneut oder mit einer anderen Zahlungsmethode.",
+        "rejected_transaction": "Deine Zahlung wurde abgelehnt. Versuche es erneut oder mit einer anderen Zahlungsmethode.",
+        "credit_card_processing": "Deine Zahlung kann aus technischen Gründen nicht bearbeitet werden. Versuche es in ein paar Minuten erneut oder verwende eine andere Zahlungsmethode.",
+        "checkout_amount_changed": "Deine Zahlung konnte nicht verarbeitet werden, da sich beim Checkout fällige Betrag geändert hat. Bitte überprüfe deine Bestellung und versuche es erneut.",
+        "deferred_payment_not_allowed": "Es sind keine ausstehenden Zahlungen zulässig. Bitte überprüfe deine Bestellung und versuche es erneut.",
+        "deferred_payment_required": "Für diese Bestellung ist eine ausstehende Zahlung erforderlich. Bitte überprüfe deine Bestellung und versuche es erneut.",
+        "method_not_available": "Die angefragte Zahlungsmethode ist nicht verfügbar. Wähle eine andere Zahlungsmethode aus und versuche es erneut.",
+        "available_methods_updated": "Verfügbare Zahlungsmethoden wurden aktualisiert.",
+        "amount_too_small": "Der Mindestzahlungsbetrag muss größer als 0,50 € sein. Bitte versuch es mit einem höheren Betrag nochmals."
       }
     },
     "sentence": {
