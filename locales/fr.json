@@ -528,7 +528,13 @@
         "qr_code": "Code QR",
         "errors": {
           "merchandise": {
-            "title_empty": "Le titre de la marchandise est vide."
+            "title_empty": "Le titre de la marchandise est vide.",
+            "only_value_constraint": "Seules les valeurs exactes sont autorisées dans la saisie des marchandises.",
+            "merchandise_not_found": "Produit introuvable.",
+            "merchandise_variant_not_found": "Variante de produit introuvable.",
+            "merchandise_not_applicable": "La variante du produit ne peut pas être achetée.",
+            "bundle_products_not_supported_for_b2b": "Les articles groupés ne peuvent pas être ajoutés aux commandes B2B pour cet emplacement.",
+            "gift_card_quantity_mismatch": "Lors de la spécification des codes de carte-cadeau, la quantité de l'élément de campagne et le nombre de codes de carte-cadeau doivent correspondre."
           },
           "buyer_identity": {
             "business_customer_does_not_match_company": "Le contact de l’entreprise n’a pas accès à l’entreprise.",
@@ -562,8 +568,22 @@
             "destination_address_required": "Une adresse de destination est requise pour continuer.",
             "pickup_points_unavailable": "Les points de retrait ne sont actuellement pas disponibles.",
             "local_pickup_delivery_line_detail_changed": "La stratégie actuelle de livraison par ramassage local doit être modifiée afin de continuer."
-          }
-        }
+          },
+          "only_empty_terms_accepted": "Cette politique n'accepte que les termes vides.",
+          "session_identifier_not_unique_error": "Un problème s'est produit avec votre commande, veuillez réessayer de procéder à la vérification.",
+          "line_item_limit_reached": "Le nombre maximum d'éléments de campagne a été atteint.",
+          "session_is_already_finished": "Cette session de paiement a déjà été finalisée."
+        },
+        "continue_to_review": "Vérifier la commande",
+        "back_to_cart": "Retour au panier",
+        "back_to_contact_information": "Retour aux informations",
+        "back_to_shipping_method": "Retour à l'expédition",
+        "back_to_payment_method": "Retour au paiement",
+        "choose_shipping_method": "Choisissez un mode d'expédition",
+        "choose_payment_method": "Choisissez un mode de paiement",
+        "choose_billing_address": "Choisissez une adresse de facturation",
+        "contact_us_html": "Contactez-nous pour plus d'informations",
+        "autocomplete_title": "Suggestions"
       }
     },
     "sentence": {
