@@ -1291,7 +1291,43 @@
     "addresses": {
       "add_button": "Adresse hinzufügen",
       "add_button_text": "Hinzufügen",
-      "add_button_accessibility_label": "Adresse hinzufügen"
+      "add_button_accessibility_label": "Adresse hinzufügen",
+      "address_deleted_notification": "Adresse wurde gelöscht",
+      "cancel_adding_address_accessibility_label": "Hinzufügen der Adresse abbrechen",
+      "cancel_deletion_button": "Abbrechen",
+      "cancel_deletion_button_accessibility_label": "Löschen der {{address}} abbrechen",
+      "default_address": {
+        "title": "Standardadresse",
+        "title_accessibility_label": "Standardadresse: {{address}}"
+      },
+      "add_address_banner": "Adressen hinzufügen, die beim Checkout verwendet werden sollen",
+      "back_button": "Zurück",
+      "back_button_accessibility_label": "Zurück zur Bearbeitung der Adresse {{address}}",
+      "no_addresses_banner": "Keine Adressen hinzugefügt",
+      "delete_button": "Löschen",
+      "delete_button_accessibility_label": "{{address}} löschen",
+      "delete_confirmation_button": "Adresse löschen",
+      "delete_confirmation_button_accessibility_label": "{{address}} löschen",
+      "delete_confirmation_message": "Adresse löschen? Vorhandene Bestellungen sind nicht betroffen.",
+      "edit_button": "Bearbeiten",
+      "edit_button_accessibility_label": "{{address}} bearbeiten",
+      "edit_section_accessibility_label": "{{address}} bearbeiten",
+      "delete_confirmation_title": "Adresse löschen?",
+      "delete_confirmation_description": "Vorhandene Bestellungen sind nicht betroffen.",
+      "loading_accessibility_message": "Adresse wird geladen",
+      "loading_addresses_accessibility_message": "Adressen werden geladen",
+      "loading_billing_accessibility_message": "Rechnungsadresse wird geladen",
+      "loading_finished_accessibility_message": "Eine neue Seite an Adressen wurde geladen",
+      "loading_shipping_accessibility_message": "Lieferadresse wird geladen",
+      "pagination": {
+        "load_more": "Weitere laden",
+        "load_more_accessibility_label": "Weitere Adressen laden"
+      },
+      "edit_modal_title": {
+        "default": "Adresse bearbeiten",
+        "billing": "Rechnungsadresse bearbeiten",
+        "shipping": "Lieferadresse bearbeiten"
+      }
     }
   },
   "pagefly": {
