@@ -1854,7 +1854,17 @@
         "processing_error": "Un problème est survenu lors du traitement de votre paiement. Réessayez ou utilisez un autre mode de paiement.",
         "processing_error_checkout_as_guest": "Un problème est survenu lors du traitement de votre paiement. Réessayez avec un autre mode de paiement ou {{checkout_as_guest_link}}.",
         "selected_payment_method": "Un problème est survenu avec le mode de paiement sélectionné et vous n'avez pas été facturé. Réessayez ou utilisez un autre mode de paiement.",
-        "payment_method_billing_address": "Un problème est survenu avec l'adresse de facturation du mode de paiement sélectionné et vous n'avez pas été facturé. Vérifiez l'adresse et réessayez ou utilisez un autre mode de paiement."
+        "payment_method_billing_address": "Un problème est survenu avec l'adresse de facturation du mode de paiement sélectionné et vous n'avez pas été facturé. Vérifiez l'adresse et réessayez ou utilisez un autre mode de paiement.",
+        "call_issuer": "Votre carte a été refusée. Utilisez un autre mode de paiement ou contactez votre banque pour plus d'informations.",
+        "test_mode_live_card": "Ce magasin ne peut pas accepter de vraies commandes ou de vrais paiements.",
+        "transient_error": "Un problème est survenu lors du traitement de votre paiement. Essayez d'actualiser cette page ou vérifiez votre connexion Internet.",
+        "missing_shipping_address": "Votre paiement n'a pas pu être traité car votre adresse de livraison est manquante. Ajoutez une adresse de livraison et réessayez.",
+        "invalid_shipping_address": "Votre paiement n’a pas pu être traité car nous n’avons pas trouvé votre adresse de livraison. Vérifiez votre adresse de livraison et réessayez.",
+        "successful_offsite_with_gift_card_error": "Un problème est survenu lors du traitement de votre paiement par carte-cadeau. Réessayez ou utilisez un autre mode de paiement.",
+        "development_store_order_limit_reached": "Vous avez atteint la limite de commandes dans les magasins de développement avec ce processeur de paiement. Pour passer une autre commande, vous devrez utiliser une passerelle de paiement test. En savoir plus sur %{development_store_order_testing_docs_link}.",
+        "development_store_with_order_limit": "Pour passer une commande test, vous devrez utiliser une passerelle de paiement test. En savoir plus sur %{development_store_order_testing_docs_link}.",
+        "development_store_order_testing_docs_link": "tester les commandes dans les magasins de développement",
+        "payment_above_threshold": "Le montant du paiement est supérieur à la limite monétaire pour cette région. Réduisez le total et réessayez"
       },
       "shipping_errors": {
         "shipping_method": "Les options d'expédition ont changé pour votre commande. Vérifiez votre sélection et réessayez.",
