@@ -2645,7 +2645,30 @@
             "last_name": "Gib einen Nachnamen ein",
             "address1": "Gib eine Adresse ein",
             "address2": "Gib eine Wohnung, ein Zimmer usw. ein",
-            "city": "Gib eine Stadt ein"
+            "city": "Gib eine Stadt ein",
+            "province": "Wähle ein Bundesland\/einen Kanton aus",
+            "country": "Wähle ein Land\/eine Region aus",
+            "zip": "Gib eine Postleitzahl ein",
+            "phone": "Eine Telefonnummer eingeben"
+          },
+          "formatting": {
+            "name_contains_emojis": "Emoji aus deinem Namen löschen",
+            "postal_code_contains_emoji": "Emoji aus deiner Postleitzahl löschen",
+            "first_name_too_long": "Vorname enthält zu viele Buchstaben",
+            "last_name_too_long": "Nachname enthält zu viele Buchstaben"
+          },
+          "select_different_shipping_address_to_resolve_errors": "Deine Lieferadresse ist ungültig. Wähle eine andere Adresse aus oder verwende eine neue."
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Reduziere die Größe der Anmerkung auf 5000 oder weniger Zeichen."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Preis für Geschenkgutschein muss höher als 0 sein.",
+            "subtotal_limit_reached": "Die maximale Menge an Positionen wurde erreicht.",
+            "gift_card_price_must_not_exceed_limit": "Preis des Geschenkgutscheins darf %{gift_card_limit} nicht überschreiten."
           }
         }
       }
@@ -2857,6 +2880,15 @@
         "add_products": "Die Auswahl auf Produkte begrenzen, die mit dem Tag %{tag} übereinstimmen",
         "remove_articles": "Die Suche auf Produkte ausweiten, die nicht mit %{tag} getaggt sind",
         "remove_products": "Tag %{tag} entfernen"
+      },
+      "cart": {
+        "only_n_items_available": "Du kannst dem Warenkorb nur %{count} %{name} hinzufügen.",
+        "too_many_items_in_cart": "Du kannst keine weiteren %{name}-Produkte in den Warenkorb legen.",
+        "all_items_in_cart": "Alle %{count} %{name} befinden sich in deinem Warenkorb.",
+        "empty_update": "kann leeren Warenkorb nicht aktualisieren",
+        "less_than_minimum": "Dieser Artikel hat ein Minimum von %{min}.",
+        "more_than_maximum": "Dieser Artikel hat ein Maximum von %{max}.",
+        "not_respect_step": "Du kannst diesen Artikel nur in Abstufungen von %{step} hinzufügen."
       }
     },
     "email_marketing": {
