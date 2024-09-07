@@ -548,7 +548,35 @@
       "blank": "ne peut pas être vide",
       "blocked_address": "Cet emplacement n'est pas pris en charge",
       "credit_card_session_expired": "L'autorisation de carte de crédit a expiré, veuillez saisir à nouveau vos informations de paiement. Votre carte n'a pas été débitée.",
-      "empty": "ne peut pas être vide"
+      "empty": "ne peut pas être vide",
+      "invalid_type": "désolé, nous n'acceptons pas les cartes de ce type",
+      "invalid_format": "le format n'est pas valide",
+      "expired": "a expiré",
+      "invalid_start_date_or_issue_number_for_debit": "une date de début ou un numéro de problème valide est requis",
+      "invalid_expiry_year": "n'est pas une année d'expiration valide",
+      "reset_password_html": "Cette adresse email est déjà associée à un compte. Si ce compte est le vôtre, vous pouvez <a href=\"\/account\/login#recover\">réinitialiser votre mot de passe<\/a>",
+      "verify_email": "Nous avons envoyé un e-mail à %{customer_email}, veuillez cliquer sur le lien inclus pour vérifier votre adresse e-mail.",
+      "product_not_available": "le produit n'est pas publié pour ce client.",
+      "shop_404": {
+        "title": "Créez un site Web de commerce électronique et vendez en ligne ! Logiciel de commerce électronique par Shopify",
+        "heros": {
+          "store_unavailable": "Désolé, cette boutique est actuellement indisponible.",
+          "store_not_exist": "Ce magasin n'existe pas.",
+          "no_storefront": "Ce magasin n'a pas encore de site Internet."
+        },
+        "links": {
+          "explore_other_stores": "Découvrez d'autres magasins",
+          "start_free_trial": "Commencez un essai gratuit"
+        },
+        "owner_ctas": {
+          "header": "Êtes-vous le propriétaire du magasin?",
+          "fix_domain": "Terminez la configuration de votre nouvelle adresse Web, accédez à %{domain_settings_link}. Cliquez sur « Connecter le domaine » et saisissez : %{domain}.<br>Si vous rencontrez des difficultés pour accéder à votre boutique, essayez la page %{forgot_your_store_link}.",
+          "fix_domain_link_text": "les paramètres de votre domaine",
+          "forgot_your_store_link_text": "j'ai oublié ton magasin",
+          "add_storefront": "Vous pouvez configurer votre site Web en ajoutant le canal Boutique en ligne dans votre %{admin_link}. Si vous rencontrez des difficultés pour accéder à votre boutique, essayez la page %{forgot_your_store_link}.",
+          "admin_link_text": "administrateur"
+        }
+      }
     }
   },
   "pagefly": {
