@@ -1776,7 +1776,33 @@
         "payment_gateway_incompatible_with_multi_currency": "Pour effectuer ce paiement dans votre devise locale, vous devez payer par carte de crédit.",
         "payment_gateway_unsupported_for_subscriptions": "Ce mode de paiement n'est pas disponible pour les commandes d'abonnement.",
         "payment_gateway_unsupported_for_deferred_purchase_options": "Ce mode de paiement n'est pas disponible pour les options d'achat différé.",
-        "payment_gateway_unsupported_for_country": "Ce mode de paiement n'est pas disponible pour votre pays de livraison."
+        "payment_gateway_unsupported_for_country": "Ce mode de paiement n'est pas disponible pour votre pays de livraison.",
+        "payment_gateway_unsupported_for_development_store_html": "Pour passer une commande test, vous devrez utiliser une passerelle de paiement test. En savoir plus sur les <a href=\"%{docs_link}\">tests des commandes dans les magasins de développement<\/a>.",
+        "payment_gateway_unsupported_for_order_above_maximum_orders_html": "Vous avez atteint la limite de commandes dans les magasins de développement avec ce processeur de paiement. Pour passer une autre commande, vous devrez utiliser une passerelle de paiement test. En savoir plus sur les <a href=\"%{docs_link}\">tests des commandes dans les magasins de développement<\/a>.",
+        "purchase_options_agreement_blank": "Pour poursuivre votre achat, acceptez les conditions d’achat différé ou récurrent.",
+        "physical_gift_card_invalid_quantity": "Les éléments de campagne de cartes-cadeaux physiques doivent avoir une quantité qui correspond au nombre de codes de carte-cadeau.",
+        "physical_gift_card_duplicate_code": "L'élément de campagne de carte-cadeau physique contient un code en double.",
+        "physical_gift_card_invalid_code": "Le code physique de la carte-cadeau n’est pas valide.",
+        "email_blank": "Entrez un email",
+        "phone_blank": "Entrez un numéro de téléphone",
+        "address_country_invalid": "Sélectionnez un pays\/une région dans la liste",
+        "address_zip_invalid": "Entrez un code postal valide",
+        "gift_card_invalid": "La carte cadeau \"••••%{last_four_characters}\" n'est plus valable",
+        "vaulting_agreement_blank": "Votre carte doit être sauvegardée car le paiement du solde de cette commande est dû ultérieurement.",
+        "sms_marketing_phone_invalid": "Entrez un numéro de téléphone valide",
+        "address_suggestion_did_you_mean_html": "Vouliez-vous dire %{html}?"
+      },
+      "store_credit_errors": {
+        "generic_error": "Il y a eu un problème avec votre crédit en magasin. Réessayez ou rechargez la page."
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "La carte cadeau a déjà été appliquée à votre commande",
+          "insufficient_funds": "Cette carte cadeau n'a plus de fonds",
+          "expired": "Cette carte cadeau a expiré",
+          "not_available": "Cette carte cadeau n'est plus disponible",
+          "invalid": "Entrez une carte cadeau valide"
+        }
       }
     },
     "sentence": {
