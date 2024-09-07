@@ -2533,7 +2533,75 @@
         "all_violations_email_link": "sende uns eine E-Mail",
         "editable_shipping_address_violations_message_title": "Füge diese Informationen hinzu, um deine Bestellung abzuschließen:",
         "editable_shipping_address_violations_message_footer": "Um die Adresse für diesen Standort dauerhaft zu aktualisieren, {{emailLink}}.",
-        "editable_shipping_address_violations_email_link": "kontaktiere uns"
+        "editable_shipping_address_violations_email_link": "kontaktiere uns",
+        "shipping_address_incomplete_title": "Lieferadresse ist unvollständig",
+        "calculating_shipping": "Die Versandkosten werden noch berechnet.Versuche es in ein paar Sekunden erneut.Dir wurde nichts berechnet.",
+        "calculating_taxes": "Steuern werden noch berechnet. Versuche es in ein paar Sekunden erneut. Dir wurde nichts berechnet."
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Überprüfung",
+          "link_label": "Geschäftsbedingungen von {{partnerDisplayName}}"
+        }
+      },
+      "online_store_chat": {
+        "title": "Fragen? Chatte mit uns"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "Es ist %{count} Shop mit verfügbarem Lagerbestand in der Nähe von %{address}",
+          "other": "Es sind %{count} Shops mit verfügbarem Lagerbestand in der Nähe von %{address}"
+        },
+        "toggle_location": "Meinen Standort wechseln",
+        "location_address_search_label": "Adresse",
+        "or": "ODER",
+        "cancel": "Abbrechen",
+        "your_location": "dein Standort",
+        "search_button": "Shops suchen",
+        "no_stores_found": "Keine Shops gefunden",
+        "could_not_resolve_address": "Deine Adresse konnte nicht geortet werden. Versuche es erneut oder verwende eine andere Adresse",
+        "paginator": {
+          "accessibility_label": "Seitennummerierung für lokale Abholung",
+          "previous": "Vorherige Seite",
+          "next": "Nächste Seite",
+          "label": {
+            "one": "%{first}–%{last} von %{count} Shop",
+            "other": "%{first}–%{last} von %{count} Shops"
+          }
+        },
+        "reveal_more_label": {
+          "one": "%{count} weiteren Standort anzeigen",
+          "other": "%{count} weitere Standorte anzeigen"
+        }
+      },
+      "captcha": {
+        "title": "CAPTCHA zum Fortfahren abschließen",
+        "errors": {
+          "not_solved": "CAPTCHA zum Fortfahren abschließen"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Deine Bestellung konnte nicht bearbeitet werden, weil dein Rabattcode nicht mehr verfügbar ist. Prüfe deinen Gesamtbestellwert und versuche es erneut."
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "Beim Laden von Shop Pay ist ein Problem aufgetreten",
+          "try_again_later": "Überprüfe deine Verbindung oder schließe dieses Fenster und versuche es in ein paar Minuten noch einmal.",
+          "checkout_has_expired": "Dein Checkout ist abgelaufen. Schließe dieses Fenster und versuche erneut, bei {{shopName}} auszuchecken."
+        },
+        "return_to_store": "Zurück zu {{shopName}}"
+      },
+      "wallets": {
+        "return_to_store": "Zurück zum Laden",
+        "redirect_hint": "Du wirst gebeten, dich bei {{walletName}} anzumelden.",
+        "logged_in": "Mit {{email}} verbunden",
+        "shipping_line_label": "Versand",
+        "connect_shipping_methods": "{{method1}} und {{method2}}",
+        "payment_in_progress_title": "Zahlung wird verarbeitet",
+        "payment_in_progress_body": "Deine Zahlung wird verarbeitet. Deine Bestellung ist in Kürze abgeschlossen.",
+        "call_to_action": "Mit {{walletName}} bezahlen",
+        "redirection_notice": "Nachdem du auf \"{{buttonLabel}}\" geklickt hast, wirst du zu {{walletName}} weitergeleitet, um deinen Einkauf sicher abzuschließen.",
+        "return_to_checkout": "Zurück zum Checkout"
       }
     },
     "sentence": {
