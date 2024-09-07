@@ -875,6 +875,52 @@
             "due_on_fulfillment": "Zahlung wird bei Fulfillment fällig",
             "pay_to_confirm": "Zur Bestätigung zahlen",
             "payment_not_due": "Die Zahlung ist noch nicht fällig"
+          },
+          "table_view": {
+            "overdue": "Überfällig",
+            "due": "Fällig am {{date}}",
+            "due_today": "Heute fällig",
+            "paid": "Bezahlt",
+            "due_without_date": "Fällig",
+            "due_on_fulfillment": "Fällig bei Fulfillment",
+            "pay_to_confirm": "Zur Bestätigung zahlen",
+            "payment_not_due": "Noch nicht fällig"
+          }
+        },
+        "sort_by": "Sortieren nach: {{option}}",
+        "sort_hide_options_accessibility_label": "Sortieroptionen für bestätigte Bestellungen ausblenden.",
+        "sort_show_options_accessibility_label": "Sortieroptionen für bestätigte Bestellungen anzeigen.",
+        "sort_title": "Sortieren",
+        "sort": {
+          "date": {
+            "newest": "Neueste–Älteste",
+            "oldest": "Älteste–Neueste"
+          },
+          "location": {
+            "ascending": "Standort (A–Z)",
+            "descending": "Standort (Z–A)"
+          },
+          "order_number": {
+            "ascending": "Bestellnummer (niedrig bis hoch)",
+            "descending": "Bestellnummer (hoch bis niedrig)"
+          },
+          "order_total": {
+            "ascending": "Gesamtbestellwert (niedrig bis hoch)",
+            "descending": "Gesamtbestellwert (hoch bis niedrig)"
+          }
+        },
+        "sort_currently_sorted_by_accessibility_label": "Aktuell sortiert nach: {{option}}",
+        "filter_title": "Filter",
+        "filter": {
+          "clear_section": "Bereich löschen",
+          "clear_all": "Alles löschen",
+          "apply": "Anwenden",
+          "date": {
+            "start_date": "Startdatum",
+            "end_date": "Enddatum",
+            "title": "Bestelldatum",
+            "today": "Heute",
+            "last_7_days": "Letzte 7 Tage"
           }
         }
       }
