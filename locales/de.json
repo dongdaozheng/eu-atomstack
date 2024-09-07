@@ -689,8 +689,66 @@
     },
     "email_marketing": {
       "subscribed": {
-        "confirmation": "Vielen Dank, dass du dich für unsere Mailingliste angemeldet hast."
+        "confirmation": "Vielen Dank, dass du dich für unsere Mailingliste angemeldet hast.",
+        "disclaimer": "Du kannst dich jederzeit wieder abmelden.",
+        "unsubscribe": "Abmelden"
+      },
+      "unsubscribed": {
+        "confirmation": "Du hast dich von unserer Mailingliste abgemeldet.",
+        "disclaimer": "Du erhältst von uns keine Marketing-Updates mehr. Du kannst dich jederzeit wieder anmelden.",
+        "preview": "Du siehst eine Vorschau dessen, was Kunden beim Abmelden sehen."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Du hast Tracking geöffneter E-Mails aktiviert.<\/b>",
+          "visibility": "E-Mail-Öffnungsraten werden anonym aufgezeichnet. Wir sehen nur als Teil einer zusammengefassten E-Mail-Öffnungsrate, ob du eine E-Mail geöffnet hast.",
+          "opt_out_html": "Du kannst das Tracking geöffneter E-Mails <a style='text-decoration:underline;' href='%{link}'>deaktivieren<\/a>, wenn du diese Informationen nicht teilen möchtest.",
+          "preview_bar": "Du siehst eine Vorschau dessen, was Kunden angezeigt wird, wenn sie die Nachverfolgung geöffneter E-Mails aktivieren."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Du hast Tracking geöffneter E-Mails deaktiviert.<\/b>",
+          "visibility": "Wir können nicht sehen, ob du unsere E-Mails geöffnet hast.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Aktiviere<\/a> das Tracking geöffneter E-Mails.",
+          "preview_bar": "Du siehst eine Vorschau dessen, was Kunden angezeigt wird, wenn sie die Nachverfolgung geöffneter E-Mails deaktivieren."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Wir verfolgen nicht mehr nach, ob du E-Mails öffnest.<\/b>",
+          "privacy_policy": "Nachdem diese E-Mail versendet wurde, haben wir unsere Datenschutzerklärung aktualisiert und verfolgen keine geöffneten E-Mails mehr nach."
+        },
+        "track": {
+          "status_html": "<b>Tracking geöffneter E-Mails wird übermittelt.<\/b>",
+          "visibility": "Wir sehen nur als Teil der zusammengefassten E-Mail-Öffnungsrate, ob du die E-Mail geöffnet hast."
+        },
+        "updated_policy": {
+          "status_html": "<b>Tracking geöffneter E-Mails wird übermittelt.<\/b>",
+          "visibility": "Wir haben unsere Datenschutzerklärung aktualisiert und verfolgen geöffnete E-Mails nach. E-Mail-Öffnungsraten werden anonym aufgezeichnet. Wir sehen nur als Teil der zusammengefassten E-Mail-Öffnungsrate, ob du eine E-Mail geöffnet hast.",
+          "opt_out_html": "Wenn du diese Informationen nicht teilen möchtest, kannst du das <a style='text-decoration:underline;' href='%{link}'>Abonnement kündigen<\/a>."
+        }
       }
+    },
+    "page_titles": {
+      "products": "Produkte",
+      "blog_or_article_with_error": "Fehler – %{title}"
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "Auf Lager",
+          "out_of_stock": "Nicht vorrätig"
+        }
+      },
+      "boolean": {
+        "true_label": "Ja",
+        "false_label": "Nein"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Relevanz",
+        "price_ascending": "Preis (aufsteigend)",
+        "price_descending": "Preis (absteigend)"
+      },
+      "error": "Beim Laden deiner Suchergebnisse ist ein Problem aufgetreten. Lade die Seite neu oder versuche es später noch einmal."
     }
   },
   "customer_accounts": {
