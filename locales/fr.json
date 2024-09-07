@@ -1934,7 +1934,33 @@
       "failed_payment": {
         "page_title": "Le paiement n'a pas pu être traité",
         "title": "Le paiement n'a pas pu être traité",
-        "payment_not_processed_title": "Votre paiement n'a pas pu être traité"
+        "payment_not_processed_title": "Votre paiement n'a pas pu être traité",
+        "payment_not_processed_text": "Vous n’avez pas été facturé. Retournez à votre panier pour finaliser votre achat.",
+        "return_to_cart_button_label": "Retour au panier"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Carte de crédit",
+        "bank_deposit_label": "Dépôt bancaire",
+        "cash_on_delivery_label": "Paiement à la livraison (COD)",
+        "money_order_label": "Mandat postal",
+        "debit_card_label": "Carte de débit",
+        "deferred_payment_label": "Choisissez le mode de paiement plus tard",
+        "fixed_payment_label": "Votre paiement sera dû le {{dueDate}}.",
+        "generic_payment_terms": "Vous êtes en conditions {{translatedName}}. Votre paiement sera dû le {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "{{logIn}}à un compte ayant accès à cet emplacement pour ajouter ou utiliser des modes de paiement enregistrés.",
+            "link": "Se connecter"
+          }
+        },
+        "direct_payment_terms": "Vous êtes en conditions {{translatedName}}. Votre carte sera débitée le {{dueDate}}.",
+        "fixed_direct_payment_terms": "Votre carte sera débitée le {{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "Votre paiement sera dû une fois votre commande exécutée.",
+        "order_due_on_fulfillment_payment": "Votre carte sera débitée une fois votre commande exécutée.",
+        "order_due_on_receipt_choose_later": "Votre paiement sera dû à réception.",
+        "order_deposit_due_now": "{{depositAmount}}est dû aujourd'hui. Le solde est aux conditions {{translatedName}} et est dû le {{dueDate}}.",
+        "order_deposit_due_on_fulfillment": "{{depositAmount}}est dû aujourd'hui. Le solde sera dû une fois votre commande exécutée.",
+        "draft_order_payment_due_later_no_terms": "Votre paiement sera dû une fois votre commande confirmée."
       }
     },
     "sentence": {
