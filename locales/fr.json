@@ -587,7 +587,10 @@
             "options_instructions_invalid": "Les instructions spécifiées ne correspondent pas au modèle attendu.",
             "destination_address_required": "Une adresse de destination est requise pour continuer.",
             "pickup_points_unavailable": "Les points de retrait ne sont actuellement pas disponibles.",
-            "local_pickup_delivery_line_detail_changed": "La stratégie actuelle de livraison par ramassage local doit être modifiée afin de continuer."
+            "local_pickup_delivery_line_detail_changed": "La stratégie actuelle de livraison par ramassage local doit être modifiée afin de continuer.",
+            "delivery_strategy_conditions_not_satisfied": "Des stratégies de livraison sont disponibles pour cet emplacement, mais leurs conditions ne sont pas satisfaites.",
+            "out_of_stock_at_origin_location": "Pas de stock sur le lieu d'origine.",
+            "invalid_signature": "Signature de réduction invalide."
           },
           "only_empty_terms_accepted": "Cette politique n'accepte que les termes vides.",
           "session_identifier_not_unique_error": "Un problème s'est produit avec votre commande, veuillez réessayer de procéder à la vérification.",
@@ -635,7 +638,26 @@
             "installments_unsupported_shipping": "Les versements ne prennent pas en charge l'expédition à cette adresse.",
             "installments_unsupported_billing": "Les versements ne prennent pas en charge cette adresse de facturation.",
             "installments_unsupported_subscriptions": "Les versements ne prennent pas en charge les abonnements.",
-            "installments_ineligible_line_item": "Les versements sont désactivés pour un élément de campagne de cet achat."
+            "installments_ineligible_line_item": "Les versements sont désactivés pour un élément de campagne de cet achat.",
+            "invalid_card_source": "Cette session n'est pas autorisée à utiliser cette source de carte.",
+            "wallet_content_missing": "Le contenu du portefeuille est manquant.",
+            "payment_instrument_not_found": "Impossible de trouver le mode de paiement",
+            "unauthorized_capture_method": "La configuration du mode de capture des paiements n'est pas autorisée.",
+            "saved_payment_methods_not_allowed": "Les méthodes de paiement enregistrées ne sont pas autorisées.",
+            "saved_payment_methods_not_enabled": "Les méthodes de paiement enregistrées ne sont pas activées pour cette boutique.",
+            "saved_payment_methods_cvv_verification_disabled": "Le mode de paiement sélectionné nécessite une vérification CVV qui n'est pas activée pour cette boutique. Sélectionnez un autre mode de paiement.",
+            "store_credit_not_enabled": "Le crédit de magasin n'est pas activé pour cette boutique.",
+            "store_credit_account_not_found": "Compte de crédit du magasin introuvable.",
+            "store_credit_account_mismatch": "Le compte de crédit du magasin ne correspond pas à l'identité de l'acheteur."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "Les réductions ne sont pas autorisées dans les magasins B2B.",
+            "custom_discount_not_honoured": "La remise personnalisée fournie n'a pas été honorée.",
+            "unsupported_expectation": "La ligne de remise fournie contenait une attente que la politique ne pouvait pas interpréter.",
+            "additional_requested_discount_code_discarded": "La réduction supplémentaire sur le code demandée a été rejetée.",
+            "allocations_mismatch": "L'allocation de remise attendue ne correspond pas à l'allocation de remise réelle.",
+            "discount_code_not_honoured": "<strong style=\"text-transform:uppercase\">%{discount_rejection_message}<\/strong>",
+            "discount_title_too_long": "Le titre de la remise ne peut pas comporter plus de 255 caractères."
           }
         },
         "continue_to_review": "Vérifier la commande",
