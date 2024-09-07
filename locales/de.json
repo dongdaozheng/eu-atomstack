@@ -1615,7 +1615,53 @@
       "expired": "Diese Karte ist abgelaufen",
       "card_update_consent": "Diese Zahlungsmethode wird für zukünftige Käufe gespeichert.",
       "expiration_warning_button_accessibility_label": "Ablaufwarnung für {{paymentMethodName}} mit den letzten Ziffern {{lastDigits}} anzeigen",
-      "default": "Standard"
+      "default": "Standard",
+      "digital_wallet_title": "Digitale Brieftasche",
+      "credit_or_debit_card_title": "Kredit- oder Debitkarte",
+      "google_pay": {
+        "errors": {
+          "generic": "Es ist ein Problem mit Google Pay aufgetreten. Versuche es erneut oder verwende eine andere Zahlungsmethode.",
+          "missing_billing_address": "Google Pay erfordert eine Rechnungsadresse. Bitte füge eine zu deinem Konto hinzu."
+        },
+        "loading": "Google Pay wird geladen"
+      },
+      "apple_pay": {
+        "loading": "Apple Pay wird geladen",
+        "errors": {
+          "generic": "Es ist ein Problem mit Apple Pay aufgetreten. Versuche es erneut oder verwende eine andere Zahlungsmethode.",
+          "not_available": "Apple Pay ist auf diesem Gerät nicht verfügbar.",
+          "missing_billing_address": "Apple Pay erfordert eine Rechnungsadresse. Bitte füge eine zu deinem Konto hinzu."
+        }
+      },
+      "store_credit": {
+        "label": "Shop-Guthaben",
+        "accesibility_label": "Shop-Guthaben – {{formattedBalance}}",
+        "expirable_amounts_button": "Verfallbare Beträge anzeigen",
+        "details_modal": {
+          "title": "Verfallbares Shop-Guthaben",
+          "balance_label": "Guthaben",
+          "expiration_date_label": "Ablaufdatum",
+          "amount_label": "Menge",
+          "expirable_balance_info": "Ein Teil deines Guthabens verfällt an einem Datum, das in der Zukunft liegt",
+          "expirable_amount_label": "Verfallbarer Gesamtbetrag",
+          "date_label": "Datum",
+          "expirable_amounts_info": "Beträge, die früher verfallen, werden beim Checkout zuerst angewendet",
+          "expired_amounts_button": "Verfallene Beträge anzeigen",
+          "pagination": {
+            "load_more_label": "Weitere laden",
+            "load_more_accessibility_label": "Weitere verfallbare Beträge laden"
+          },
+          "expirable_amounts_button": "Anzeigen"
+        },
+        "expirable_amounts_label": "Transaktionen mit Ablaufdatum"
+      },
+      "payment_details": {
+        "title": "Details zu Zahlungsmethoden",
+        "credit_card_details_accessibility_label": "endet auf {{lastDigits}}",
+        "billing_title": "Rechnungsadresse",
+        "card_info_title": "Karteninformationen",
+        "credit_card_details": "{{creditCardBrand}} •••• {{lastDigits}}"
+      }
     }
   },
   "pagefly": {
