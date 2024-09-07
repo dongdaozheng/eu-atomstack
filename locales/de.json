@@ -875,7 +875,32 @@
           "one": "Der Geschenkgutschein wird in einer separaten SMS versendet.",
           "other": "Jeder Geschenkgutschein wird in einer separaten SMS versendet."
         },
-        "status_timestamp": "Aktualisiert am {{date}}"
+        "status_timestamp": "Aktualisiert am {{date}}",
+        "in_review_description": "Wir lassen es dich wissen, falls wir weitere Informationen benötigen oder wenn deine Bestellung bestätigt wurde.",
+        "in_review_label": "Ausstehend",
+        "in_review_title": "Deine Bestellung wird überprüft",
+        "no_tracking_number": "Für diese Lieferung gibt es keine Trackingnummer.",
+        "on_its_way_label": "Unterwegs",
+        "on_its_way_title": "Deine Lieferung befindet sich auf dem Weg",
+        "last_updated": "Zuletzt aktualisiert am {{date}}",
+        "multiple_shipments_label": "Mehrere Lieferungen",
+        "buy_with_prime_logo_accessibility_label": "Amazon Buy with Prime Logo",
+        "multiple_statuses_label": "Mehrere Bestellstatus",
+        "out_for_delivery_label": "Zustellung läuft",
+        "out_for_delivery_title": "Die Zustellung deiner Lieferung läuft",
+        "resume_tracking": "Tracking fortsetzen",
+        "submitted_label": "Gesendet",
+        "track_shipment": "Lieferung verfolgen",
+        "request_return": "Rückgabe anfragen",
+        "submitted_description": "Überprüfe die Bestellung und die Zahlungsdetails.",
+        "view_order_for_details": "Bestellung anzeigen für Details",
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Mit Amazon verwalten",
+            "new_window_disclaimer": "(öffnet ein neues Fenster)"
+          }
+        },
+        "there_was_a_problem_label": "Es ist ein Problem aufgetreten"
       },
       "list_layout_accessibility_label": "Layout-Optionen",
       "list_title": "Bestellungen",
@@ -1006,7 +1031,16 @@
         },
         "table_view": "Tabellenansicht anzeigen",
         "show_order_actions_accessibility_label": "Bestellaktionen für Bestellung {{name}} zeigen"
-      }
+      },
+      "status_mark_as_delivered": "Als zugestellt markieren",
+      "status_title": "Bestellstatus",
+      "buy_again": "Erneut kaufen",
+      "buy_again_accessibility_label": "Für Bestellung {{orderId}} erneut kaufen",
+      "manage": "Verwalten",
+      "manage_accessiblity_label": "Bestellung {{orderId}} verwalten",
+      "group_title_label": "Teil von: {{groupTitle}}",
+      "havent_received_your_delivery": "Hast du deine Lieferung nicht erhalten?",
+      "didnt_pick_up_order": "Hast du deine Bestellung nicht abgeholt?"
     },
     "date": {
       "range": "{{startDate}}–{{endDate}}",
