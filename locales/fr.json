@@ -764,7 +764,12 @@
             "april": "Avril",
             "may": "Peut",
             "june": "Juin",
-            "july": "Juillet"
+            "july": "Juillet",
+            "august": "Août",
+            "september": "Septembre",
+            "october": "Octobre",
+            "november": "Novembre",
+            "december": "Décembre"
           }
         },
         "autocomplete_powered_by_google": "Propulsé par {{brandName}}",
@@ -808,6 +813,13 @@
           "add_file": "Ajouter un fichier",
           "invalid_file_type": "Type de fichier non pris en charge",
           "dragged_over": "Déposer le fichier à télécharger"
+        },
+        "datepicker": {
+          "show_previous_month": "Afficher le mois précédent, {{month}} {{year}}",
+          "show_next_month": "Afficher le mois prochain, {{month}} {{year}}",
+          "range_start": "Début de gamme",
+          "in_range": "À portée",
+          "range_end": "Fin de plage"
         }
       },
       "contact": {
@@ -825,7 +837,17 @@
         "new_address_label": "Utiliser une nouvelle adresse",
         "first_name_label": "Prénom",
         "optional_first_name_label": "Prénom (facultatif)",
-        "last_name_label": "Nom de famille"
+        "last_name_label": "Nom de famille",
+        "company_label": "Entreprise",
+        "company_attention_label": "Entreprise\/Attention",
+        "optional_company_attention_label": "Entreprise\/Attention (facultatif)",
+        "optional_company_label": "Entreprise (facultatif)",
+        "address1_label": "Adresse",
+        "address2_label": "Appartement, suite, etc.",
+        "optional_address2_label": "Appartement, suite, etc. (facultatif)",
+        "city_label": "Ville",
+        "country_label": "Pays\/Région",
+        "country_code": "Code pays\/région"
       }
     },
     "sentence": {
