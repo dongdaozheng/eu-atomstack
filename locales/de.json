@@ -1771,7 +1771,41 @@
       "dankort": "Dankort",
       "hipercard": "Hipercard",
       "unionpay": "UnionPay",
-      "laser": "Laser"
+      "laser": "Laser",
+      "googlepay": "Google Pay",
+      "paypal": "PayPal",
+      "storecredit": "Shop-Guthaben"
+    },
+    "shop_policies": {
+      "legal_notice": "Impressum",
+      "privacy_policy": "Datenschutzerklärung",
+      "refund_policy": "Widerrufsrecht",
+      "shipping_policy": "Versandbedingungen",
+      "subscription_policy": "Abonnement-Richtlinien",
+      "terms_of_sale": "Terms of sale",
+      "terms_of_service": "Allgemeine Geschäftsbedingungen"
+    },
+    "ui_components": {
+      "closeNotification": "Schließen",
+      "expandNotification": "Mehr anzeigen",
+      "closeModal": "Schließen",
+      "submit": "Senden",
+      "processing": "Wird bearbeitet ...",
+      "increase": "{{type}} erhöhen",
+      "decrease": "{{type}} senken",
+      "minimumReached": "Minimum von {{value}} wurde erreicht",
+      "maximumReached": "Maximum von {{value}} wurde erreicht",
+      "january": "Januar",
+      "february": "Februar",
+      "march": "März",
+      "april": "April",
+      "may": "Mai",
+      "june": "Juni",
+      "july": "Juli",
+      "august": "August",
+      "september": "September",
+      "october": "Oktober",
+      "november": "November"
     }
   },
   "pagefly": {
