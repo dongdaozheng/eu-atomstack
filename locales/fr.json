@@ -657,7 +657,8 @@
         "delete_credit_card_modal": {
           "title": "Supprimer la carte",
           "confirmation": "Êtes-vous sûr de vouloir supprimer le {{brandName}} se terminant par {{lastDigits}}?",
-          "cancel": "Annuler"
+          "cancel": "Annuler",
+          "delete": "Supprimer"
         },
         "clear": "Clair",
         "billing_must_match_shipping_notice": "L’adresse de facturation de votre mode de paiement doit correspondre à l’adresse de livraison.",
@@ -693,8 +694,17 @@
         "order_edit_banner_multiple_items_returned": "Renvoyé {{amount}}",
         "edit_credit_card_modal": {
           "fields": {
-            "billing": "Facturer à"
-          }
+            "billing": "Facturer à",
+            "default": "Définir par défaut",
+            "card_number": "Numéro de carte",
+            "expiry": "Date d'expiration",
+            "security_code": "Code de sécurité",
+            "name": "Nom sur la carte"
+          },
+          "title": "Modifier la carte",
+          "done": "Fait",
+          "cancel": "Annuler",
+          "description": "Vous pouvez uniquement modifier l'adresse de facturation de votre carte."
         },
         "expired_cards_info": {
           "one": "Il y a %{count} carte expirée, que vous pouvez consulter et modifier dans votre compte.",
@@ -1696,7 +1706,17 @@
         "address_address2_contains_mathematical_symbols": "La deuxième ligne d'adresse ne peut pas contenir de symboles mathématiques",
         "address_city_blank": "Entrez une ville",
         "address_city_too_long": "La ville est trop longue (255 caractères maximum)",
-        "address_city_contains_emojis": "La ville ne peut pas contenir d'émojis"
+        "address_city_contains_emojis": "La ville ne peut pas contenir d'émojis",
+        "address_first_name_contains_mathematical_symbols": "Le prénom ne peut pas contenir de symboles mathématiques",
+        "address_last_name_blank": "Entrez un nom de famille",
+        "address_last_name_too_long": "Le nom de famille est trop long (maximum 255 caractères)",
+        "address_last_name_contains_emojis": "Le nom de famille ne peut pas contenir d'émojis",
+        "address_last_name_contains_html_tags": "Le nom de famille ne peut pas contenir de balises HTML.",
+        "address_last_name_contains_url": "Le nom de famille ne peut pas contenir d'URL",
+        "address_last_name_contains_mathematical_symbols": "Le nom de famille ne peut pas contenir de symboles mathématiques",
+        "address_address1_blank": "Entrez une adresse",
+        "address_address1_too_long": "La première ligne d'adresse est trop longue (maximum 255 caractères)",
+        "address_address1_contains_emojis": "L'adresse 1 ne peut pas contenir d'émojis"
       }
     },
     "sentence": {
