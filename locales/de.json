@@ -568,6 +568,42 @@
             "customer_profile_access_restricted": "Der Checkout hat keine Berechtigung, auf das Kundenprofil zuzugreifen.",
             "checkout_completion_target_is_invalid_proc": "Ungültiges Ziel für den Checkout-Abschluss.",
             "company_location_required": "Der Kunde muss zum Fortfahren einen Unternehmensstandort auswählen."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "Der Warenkorb darf nur über eine Zustellungsreihe verfügen.",
+            "wrong_number_of_delivery_lines": "Für jede Merchandise-Artikel-Gruppe muss eine Zustellungsreihe angegeben werden.",
+            "external_delivery_promise_error": "Externer Fehler bei der Abfrage des Zustellungsdatums.",
+            "options_instructions_invalid": "Die angegebenen Anweisungen entsprechen nicht dem erwarteten Muster.",
+            "destination_address_required": "Zum Fortfahren ist eine Zieladresse ist erforderlich.",
+            "pickup_points_unavailable": "Abholstandorte sind derzeit nicht verfügbar.",
+            "local_pickup_delivery_line_detail_changed": "Zum Fortfahren muss die derzeitige Zustellungsstrategie für die lokale Abholung geändert werden.",
+            "local_pickup_no_delivery_strategy_available": "Es wurde keine verfügbare Zustellungsstrategie für die lokale Abholung gefunden.",
+            "origin_location_id_required": "Eine Herkunftsstandort-ID ist erforderlich, wenn die Zustellmethode EINZELHANDEL angefordert wird.",
+            "invalid_origin_location_id": "Es konnte kein Standort gefunden werden, der mit der Herkunftsstandort-ID übereinstimmt.",
+            "origin_location_id_not_allowed": "Die angeforderten Zustellmethoden unterstützen keine Herkunftsstandort-ID.",
+            "auto_fulfill_not_allowed": "Diese Sitzung ist nicht dazu autorisiert, das Fulfillment-Verhalten zu überschreiben.",
+            "auto_fulfill_required": "Die automatische Ausführung ist erforderlich, wenn die Zustellmethode EINZELHANDEL angefordert wird.",
+            "prefetch_shipping_rates_used": "Vorab abgerufene Versandtarife dürfen keine Rückgabekosten sein.",
+            "fulfillment_constraints_not_satisfied": "Eine oder mehrere Fulfillment-Bedingungen wurden nicht erfüllt.",
+            "must_fulfill_from_constraint_not_satisfied": "Die Fulfillment-Bedingungen wurden nicht erfüllt, da die Artikel nicht in den erforderlichen Standorten ausgeführt werden können.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "Die Fulfillment-Bedingungen wurden nicht erfüllt, da die Artikel nicht im selben Standort ausgeführt werden können.",
+            "delivery_strategy_conditions_not_satisfied": "Für diesen Standort sind Zustellungsstrategien verfügbar, deren Bedingungen jedoch nicht erfüllt wurden.",
+            "out_of_stock_at_origin_location": "Kein Lagerbestand am Herkunftsstandort.",
+            "invalid_signature": "Ungültige Rabattsignatur."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "Rabatte sind in B2B-Shops nicht zulässig.",
+            "custom_discount_not_honoured": "Der bereitgestellte Kundenrabatt wurde nicht gewährt.",
+            "unsupported_expectation": "Die angegebene Rabattreihe enthielt einen Erwartungswert, der von der Richtlinie nicht interpretiert werden konnte.",
+            "additional_requested_discount_code_discarded": "Der angeforderte zusätzliche Rabattcode wurde verworfen.",
+            "allocations_mismatch": "Die erwartete Rabattzuweisung stimmt nicht mit der tatsächlichen Rabattzuweisung überein.",
+            "discount_code_not_honoured": "<strong style=\"text-transform:uppercase\">%{discount_rejection_message}<\/strong>",
+            "discount_title_too_long": "Der Rabatttitel darf maximal 255 Zeichen enthalten."
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "Zum Fortfahren muss eine neue Steuerreihe im Angebot des Verkäufers akzeptiert werden.",
+            "unresolvable_tax_terms": "Die vorgeschlagenen Bedingungen sind im derzeitigen Verhandlungskontext unvereinbar.",
+            "delivery_price_is_abstract": "Der zugehörige Zustellungspreis ist abstrakt."
           }
         },
         "qr_code": "QR-Code"
