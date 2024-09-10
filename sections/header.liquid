@@ -24,8 +24,8 @@
       position: relative;
     {%- endif -%}
 
-    top: {% if section.settings.enable_sticky_header %}calc(var(--enable-sticky-announcement-bar) * var(--announcement-bar-height, 0px)){% else %}0{% endif %};
-    z-index: 6;
+    top: {% if section.settings.enable_sticky_header %}calc(var(--enable-sticky-announcement-bar) * var(--announcement-bar-height, 0px) + var(--toggle-country-navigation-height, 0px)){% else %}0{% endif %};
+    z-index: 9;
   }
 
   {%- if request.page_type == 'index' and section.settings.enable_transparent_header -%}
@@ -108,6 +108,8 @@
   {%- endif -%}
 </style>
 
+<link rel='stylesheet' href='{{ 'header.css' | asset_url }}'>
+
 <store-header
   {% if section.settings.enable_sticky_header %}
     sticky
@@ -115,17 +117,17 @@
   {% if request.page_type == 'index' and section.settings.enable_transparent_header %}
     transparent
   {% endif %}
-  class="header {% if settings.background == settings.header_background %}header--bordered{% endif %} {% if request.page_type == 'index' and section.settings.enable_transparent_header %}header--transparent{% endif %}"
-  role="banner"
+  class='header {% if settings.background == settings.header_background %}header--bordered{% endif %} {% if request.page_type == 'index' and section.settings.enable_transparent_header %}header--transparent{% endif %}'
+  role='banner'
 >
   {%- assign menu = section.settings.navigation_menu -%}
-  <div class="container">
-    <div class="header__wrapper">
+  <div class='container'>
+    <div class='header__wrapper'>
       <!-- LEFT PART -->
       <nav
-        class="header__inline-navigation"
+        class='header__inline-navigation'
         {% unless section.settings.header_layout == 'logo_center_search_open' %}
-          role="navigation"
+          role='navigation'
         {% endunless %}
       >
         {%- if menu.links.size > 0
@@ -136,53 +138,53 @@
           {%- render 'desktop-menu', menu: menu -%}
         {%- endif -%}
 
-        <div class="header__icon-list {% if section.settings.header_layout == 'logo_center_search_open' %}hidden-desk{% endif %}">
+        <div class='header__icon-list {% if section.settings.header_layout == 'logo_center_search_open' %}hidden-desk{% endif %}'>
           {%- if menu.links.size > 0 -%}
             <button
-              is="toggle-button"
-              class="header__icon-wrapper tap-area {% unless section.settings.header_layout == 'drawer' %}hidden-desk{% endunless %}"
-              aria-controls="mobile-menu-drawer"
-              aria-expanded="false"
+              is='toggle-button'
+              class='header__icon-wrapper tap-area {% unless section.settings.header_layout == 'drawer' %}hidden-desk{% endunless %}'
+              aria-controls='mobile-menu-drawer'
+              aria-expanded='false'
             >
-              <span class="visually-hidden">{{ 'header.general.navigation' | t }}</span>
+              <span class='visually-hidden'>{{ 'header.general.navigation' | t }}</span>
               {%- render 'icon' with 'header-hamburger' -%}
             </button>
           {%- endif -%}
 
           <a
-            href="{{ routes.search_url }}"
-            is="toggle-link"
-            class="header__icon-wrapper tap-area {% if section.settings.header_layout == 'logo_center_search_open' %}hidden-lap{% endif %} hidden-desk"
-            aria-controls="search-drawer"
-            aria-expanded="false"
-            aria-label="{{ 'search.general.title' | t | escape }}"
+            href='{{ routes.search_url }}'
+            is='toggle-link'
+            class='header__icon-wrapper tap-area {% if section.settings.header_layout == 'logo_center_search_open' %}hidden-lap{% endif %} hidden-desk'
+            aria-controls='search-drawer'
+            aria-expanded='false'
+            aria-label='{{ 'search.general.title' | t | escape }}'
           >
             {%- render 'icon' with 'header-search' -%}
           </a>
         </div>
 
         {%- if section.settings.header_layout == 'logo_center_search_open' -%}
-          <div class="header__search-bar predictive-search hidden-pocket">
-            <form class="predictive-search__form" action="{{ routes.search_url }}" method="get" role="search">
-              <input type="hidden" name="type" value="product">
-              <input type="hidden" name="options[prefix]" value="last">
+          <div class='header__search-bar predictive-search hidden-pocket'>
+            <form class='predictive-search__form' action='{{ routes.search_url }}' method='get' role='search'>
+              <input type='hidden' name='type' value='product'>
+              <input type='hidden' name='options[prefix]' value='last'>
               <input
-                type="hidden"
-                name="options[unavailable_products]"
-                value="{{ settings.search_unavailable_products }}"
+                type='hidden'
+                name='options[unavailable_products]'
+                value='{{ settings.search_unavailable_products }}'
               >
 
               {%- render 'icon' with 'header-search' -%}
               <input
-                class="predictive-search__input"
-                is="predictive-search-input"
-                type="text"
-                name="q"
-                autocomplete="off"
-                autocorrect="off"
-                aria-controls="search-drawer"
-                aria-label="{{ 'search.general.title' | t }}"
-                placeholder="{{ 'search.general.search_placeholder' | t }}"
+                class='predictive-search__input'
+                is='predictive-search-input'
+                type='text'
+                name='q'
+                autocomplete='off'
+                autocorrect='off'
+                aria-controls='search-drawer'
+                aria-label='{{ 'search.general.title' | t }}'
+                placeholder='{{ 'search.general.search_placeholder' | t }}'
               >
             </form>
           </div>
@@ -208,13 +210,13 @@
       {%- endcapture -%}
 
       {%- if request.page_type == 'index' -%}
-        <h1 class="header__logo">{{ logo }}</h1>
+        <h1 class='header__logo'>{{ logo }}</h1>
       {%- else -%}
-        <span class="header__logo">{{ logo }}</span>
+        <span class='header__logo'>{{ logo }}</span>
       {%- endif -%}
 
       <!-- SECONDARY LINKS PART -->
-      <div class="header__secondary-links">
+      <div class='header__secondary-links'>
         {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
           {%- assign country_selector = true -%}
         {%- endif -%}
@@ -226,16 +228,16 @@
         {%- if locale_selector or country_selector -%}
           {%- form 'localization', id: 'header-localization-form', class: 'header__cross-border hidden-pocket' -%}
             {%- if country_selector -%}
-              <div class="popover-container">
-                <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
-                <span class="visually-hidden">{{ 'header.general.country' | t }}</span>
+              <div class='popover-container'>
+                <input type='hidden' name='country_code' value='{{ localization.country.iso_code }}'>
+                <span class='visually-hidden'>{{ 'header.general.country' | t }}</span>
 
                 <button
-                  type="button"
-                  is="toggle-button"
-                  class="popover-button text--small"
-                  aria-expanded="false"
-                  aria-controls="header-localization-form-currency"
+                  type='button'
+                  is='toggle-button'
+                  class='popover-button text--small'
+                  aria-expanded='false'
+                  aria-controls='header-localization-form-currency'
                 >
                   {{- localization.country.name }} ({{ localization.country.currency.iso_code }}
                   {% if localization.country.currency.symbol %}{{ localization.country.currency.symbol }}{%- endif -%}
@@ -243,35 +245,35 @@
                   {%- render 'icon' with 'chevron', width: 9, height: 6, inline: true -%}
                 </button>
 
-                <popover-content id="header-localization-form-currency" class="popover">
-                  <span class="popover__overlay"></span>
+                <popover-content id='header-localization-form-currency' class='popover'>
+                  <span class='popover__overlay'></span>
 
-                  <header class="popover__header">
-                    <span class="popover__title heading h6">{{- 'header.general.country' | t -}}</span>
+                  <header class='popover__header'>
+                    <span class='popover__title heading h6'>{{- 'header.general.country' | t -}}</span>
 
                     <button
-                      type="button"
-                      class="popover__close-button tap-area tap-area--large"
-                      data-action="close"
-                      title="{{ 'general.accessibility.close' | t | escape }}"
+                      type='button'
+                      class='popover__close-button tap-area tap-area--large'
+                      data-action='close'
+                      title='{{ 'general.accessibility.close' | t | escape }}'
                     >
                       {%- render 'icon' with 'close' -%}
                     </button>
                   </header>
 
-                  <div class="popover__content popover__content--restrict">
-                    <div class="popover__choice-list">
+                  <div class='popover__content popover__content--restrict'>
+                    <div class='popover__choice-list'>
                       {%- for country in localization.available_countries -%}
                         <button
-                          type="submit"
-                          name="country_code"
-                          value="{{ country.iso_code }}"
-                          class="popover__choice-item"
+                          type='submit'
+                          name='country_code'
+                          value='{{ country.iso_code }}'
+                          class='popover__choice-item'
                         >
                           <span
-                            class="popover__choice-label {% if section.settings.show_country_flag %}popover__choice-label-country{% endif %}"
+                            class='popover__choice-label {% if section.settings.show_country_flag %}popover__choice-label-country{% endif %}'
                             {% if country.iso_code == localization.country.iso_code %}
-                              aria-current="true"
+                              aria-current='true'
                             {% endif %}
                           >
                             {%- if section.settings.show_country_flag -%}
@@ -290,50 +292,50 @@
             {%- endif -%}
 
             {%- if locale_selector -%}
-              <div class="popover-container">
-                <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
-                <span class="visually-hidden">{{ 'header.general.language' | t }}</span>
+              <div class='popover-container'>
+                <input type='hidden' name='locale_code' value='{{ localization.language.iso_code }}'>
+                <span class='visually-hidden'>{{ 'header.general.language' | t }}</span>
 
                 <button
-                  type="button"
-                  is="toggle-button"
-                  class="popover-button text--small"
-                  aria-expanded="false"
-                  aria-controls="header-localization-form-locale"
+                  type='button'
+                  is='toggle-button'
+                  class='popover-button text--small'
+                  aria-expanded='false'
+                  aria-controls='header-localization-form-locale'
                 >
                   {{- localization.language.endonym_name | capitalize -}}
                   {%- render 'icon' with 'chevron', width: 9, height: 6, inline: true -%}
                 </button>
 
-                <popover-content id="header-localization-form-locale" class="popover">
-                  <span class="popover__overlay"></span>
+                <popover-content id='header-localization-form-locale' class='popover'>
+                  <span class='popover__overlay'></span>
 
-                  <header class="popover__header">
-                    <span class="popover__title heading h6">{{- 'header.general.language' | t -}}</span>
+                  <header class='popover__header'>
+                    <span class='popover__title heading h6'>{{- 'header.general.language' | t -}}</span>
 
                     <button
-                      type="button"
-                      class="popover__close-button tap-area tap-area--large"
-                      data-action="close"
-                      title="{{ 'general.accessibility.close' | t | escape }}"
+                      type='button'
+                      class='popover__close-button tap-area tap-area--large'
+                      data-action='close'
+                      title='{{ 'general.accessibility.close' | t | escape }}'
                     >
                       {%- render 'icon' with 'close' -%}
                     </button>
                   </header>
 
-                  <div class="popover__content">
-                    <div class="popover__choice-list">
+                  <div class='popover__content'>
+                    <div class='popover__choice-list'>
                       {%- for language in localization.available_languages -%}
                         <button
-                          type="submit"
-                          name="locale_code"
-                          value="{{ language.iso_code }}"
-                          class="popover__choice-item"
+                          type='submit'
+                          name='locale_code'
+                          value='{{ language.iso_code }}'
+                          class='popover__choice-item'
                         >
                           <span
-                            class="popover__choice-label"
+                            class='popover__choice-label'
                             {% if language.iso_code == localization.language.iso_code %}
-                              aria-current="true"
+                              aria-current='true'
                             {% endif %}
                           >
                             {{- language.endonym_name | capitalize -}}
@@ -348,28 +350,28 @@
           {%- endform -%}
         {%- endif -%}
 
-        <div class="header__icon-list">
+        <div class='header__icon-list'>
           {%- comment -%}
             IMPLEMENTATION NOTE: this icon is hidden by the "popup" section if it is disabled.
           {%- endcomment -%}
           <button
-            is="toggle-button"
-            class="header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}"
-            aria-controls="newsletter-popup"
-            aria-expanded="false"
+            is='toggle-button'
+            class='header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}'
+            aria-controls='newsletter-popup'
+            aria-expanded='false'
           >
-            <span class="visually-hidden">{{ 'header.general.newsletter' | t }}</span>
+            <span class='visually-hidden'>{{ 'header.general.newsletter' | t }}</span>
             {%- render 'icon' with 'header-email' -%}
           </button>
 
           {%- if section.settings.header_layout != 'logo_center_search_open' -%}
             <a
-              href="{{ routes.search_url }}"
-              is="toggle-link"
-              class="header__icon-wrapper tap-area hidden-pocket hidden-lap {% unless section.settings.show_icons %}hidden-desk{% endunless %}"
-              aria-label="{{ 'search.general.title' | t | escape }}"
-              aria-controls="search-drawer"
-              aria-expanded="false"
+              href='{{ routes.search_url }}'
+              is='toggle-link'
+              class='header__icon-wrapper tap-area hidden-pocket hidden-lap {% unless section.settings.show_icons %}hidden-desk{% endunless %}'
+              aria-label='{{ 'search.general.title' | t | escape }}'
+              aria-controls='search-drawer'
+              aria-expanded='false'
             >
               {%- render 'icon' with 'header-search' -%}
             </a>
@@ -377,9 +379,9 @@
 
           {%- if shop.customer_accounts_enabled -%}
             <a
-              href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
-              class="header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}"
-              aria-label="{% if customer %}{{ 'header.general.account' | t | escape }}{% else %}{{ 'header.general.login' | t | escape }}{% endif %}"
+              href='{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}'
+              class='header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}'
+              aria-label='{% if customer %}{{ 'header.general.account' | t | escape }}{% else %}{{ 'header.general.login' | t | escape }}{% endif %}'
             >
               {% if customer %}
                 {%- render 'icon' with 'header-customer-logged-in' -%}
@@ -390,12 +392,12 @@
           {%- endif -%}
 
           <a
-            href="{{ routes.cart_url }}"
+            href='{{ routes.cart_url }}'
             {% unless settings.cart_type == 'page' or request.page_type == 'cart' %}
-              is="toggle-link" aria-controls="mini-cart" aria-expanded="false"
+              is='toggle-link' aria-controls='mini-cart' aria-expanded='false'
             {% endunless %}
-            class="header__icon-wrapper tap-area {% unless section.settings.show_icons %}hidden-desk{% endunless %}"
-            aria-label="{{ 'header.general.cart' | t | escape }}"
+            class='header__icon-wrapper tap-area {% unless section.settings.show_icons %}hidden-desk{% endunless %}'
+            aria-label='{{ 'header.general.cart' | t | escape }}'
             data-no-instant
           >
             {%- case settings.cart_icon -%}
@@ -409,14 +411,14 @@
                 {%- render 'icon' with 'header-tote-bag' -%}
             {%- endcase -%}
 
-            <cart-count class="header__cart-count header__cart-count--floating bubble-count">
+            <cart-count class='header__cart-count header__cart-count--floating bubble-count'>
               {{- cart.item_count -}}
             </cart-count>
           </a>
         </div>
 
         {%- unless section.settings.show_icons -%}
-          <ul class="header__linklist list--unstyled hidden-pocket hidden-lap" role="list">
+          <ul class='header__linklist list--unstyled hidden-pocket hidden-lap' role='list'>
             {%- comment -%}
               <!-- NOTE: There is really not enough space to fit this, so this is commented by default in Liquid -->
               <li  class="header__linklist-item">
@@ -425,16 +427,16 @@
             {%- endcomment -%}
 
             {%- if section.settings.header_layout != 'logo_center_search_open' -%}
-              <li class="header__linklist-item">
-                <a href="{{ routes.search_url }}" is="toggle-link" aria-controls="search-drawer" aria-expanded="false">
+              <li class='header__linklist-item'>
+                <a href='{{ routes.search_url }}' is='toggle-link' aria-controls='search-drawer' aria-expanded='false'>
                   {{- 'search.general.title' | t | escape -}}
                 </a>
               </li>
             {%- endif -%}
 
             {%- if shop.customer_accounts_enabled -%}
-              <li class="header__linklist-item">
-                <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
+              <li class='header__linklist-item'>
+                <a href='{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}'>
                   {%- if customer -%}
                     {{ 'header.general.account' | t }}
                   {%- else -%}
@@ -444,16 +446,16 @@
               </li>
             {%- endif -%}
 
-            <li class="header__linklist-item">
+            <li class='header__linklist-item'>
               <a
-                href="{{ routes.cart_url }}"
+                href='{{ routes.cart_url }}'
                 {% unless settings.cart_type == 'page' %}
-                  is="toggle-link" aria-controls="mini-cart" aria-expanded="false"
+                  is='toggle-link' aria-controls='mini-cart' aria-expanded='false'
                 {% endunless %}
                 data-no-instant
               >
                 {{- 'header.general.cart' | t | escape -}}
-                <cart-count class="header__cart-count bubble-count">{{ cart.item_count }}</cart-count>
+                <cart-count class='header__cart-count bubble-count'>{{ cart.item_count }}</cart-count>
               </a>
             </li>
           </ul>
@@ -462,7 +464,7 @@
     </div>
 
     {%- if menu.links.size > 0 and section.settings.header_layout == 'logo_center_search_open' -%}
-      <nav class="header__bottom-navigation hidden-pocket hidden-lap" role="navigation">
+      <nav class='header__bottom-navigation hidden-pocket hidden-lap' role='navigation'>
         {% render 'desktop-menu', menu: menu, bottom_navigation: true %}
       </nav>
     {%- endif -%}
@@ -478,7 +480,7 @@
 <cart-notification
   global
   hidden
-  class="cart-notification {% unless section.settings.enable_sticky_header %}cart-notification--fixed{% endunless %}"
+  class='cart-notification {% unless section.settings.enable_sticky_header %}cart-notification--fixed{% endunless %}'
 ></cart-notification>
 
 {%- comment -%}
@@ -507,12 +509,12 @@
     document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
     document.documentElement.style.setProperty(
       '--header-height-without-bottom-nav',
-      headerHeightWithoutBottomNav + 'px'
+      headerHeightWithoutBottomNav + 'px',
     );
   })();
 </script>
 
-<script type="application/ld+json">
+<script type='application/ld+json'>
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -690,181 +692,174 @@
   ],
   "blocks": [
     {
-      "type": "mega_menu",
-      "name": "t:Mega_menu",
+      "type": "menu-product",
+      "name": "menu-product",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_bar_img",
+          "label": "product bar img"
+        },
+        {
+          "type": "text",
+          "id": "product_type",
+          "label": "product type"
+        },
+        {
+          "type": "text",
+          "id": "product_view",
+          "label": "product view"
+        },
+        {
+          "type": "text",
+          "id": "product_accessories_view",
+          "label": "product accessories view"
+        },
+        {
+          "type": "text",
+          "id": "product_accessories_type",
+          "label": "product accessories type",
+          "default": "Accessories"
+        },
+        {
+          "type": "text",
+          "id": "product_url_1",
+          "label": "product url 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image_1",
+          "label": "product image 1"
+        },
+        {
+          "type": "text",
+          "id": "product_name_1",
+          "label": "product name 1"
+        },
+
+        {
+          "type": "text",
+          "id": "product_url_2",
+          "label": "product url 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image_2",
+          "label": "product image 2"
+        },
+        {
+          "type": "text",
+          "id": "product_name_2",
+          "label": "product name 2"
+        },
+        {
+          "type": "text",
+          "id": "product_url_3",
+          "label": "product url 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image_3",
+          "label": "product image 3"
+        },
+        {
+          "type": "text",
+          "id": "product_name_3",
+          "label": "product name 3"
+        },
+        {
+          "type": "text",
+          "id": "product_url_4",
+          "label": "product url 4"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image_4",
+          "label": "product image 4"
+        },
+        {
+          "type": "text",
+          "id": "product_name_4",
+          "label": "product name 4"
+        },
+        {
+          "type": "text",
+          "id": "product_url_5",
+          "label": "product url 5"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image_5",
+          "label": "product image 5"
+        },
+        {
+          "type": "text",
+          "id": "product_name_5",
+          "label": "product name 5"
+        },
+        {
+          "type": "text",
+          "id": "product_desc_1",
+          "label": "product desc 1"
+        },
+        {
+          "type": "text",
+          "id": "product_desc_2",
+          "label": "product desc 2"
+        },
+        {
+          "type": "text",
+          "id": "product_desc_3",
+          "label": "product desc 3"
+        },
+        {
+          "type": "text",
+          "id": "product_desc_4",
+          "label": "product desc 4"
+        },
+        {
+          "type": "text",
+          "id": "product_desc_5",
+          "label": "product desc 5"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "collection"
+        },
+
+        {
+          "type": "number",
+          "id": "product_grid_columns",
+          "label": "product grid columns",
+          "default": 3
+        }
+      ]
+    },
+    {
+      "type": "menu-accessories",
+      "name": "menu-accessories",
       "settings": [
         {
           "type": "text",
-          "id": "menu_item",
-          "label": "t:Menu_item",
-          "info": "t:Enter_menu_item_to_apply_a_mega_menu_dropdown"
-        },
-        {
-          "type": "select",
-          "id": "images_position",
-          "label": "t:Images_position",
-          "info": "t:When_featuring_4_images_or_more_we_recommend_to_not_use_any_dropdown_links_to_keep_the_navigation_easy_to_use",
-          "options": [
-            {
-              "value": "left",
-              "label": "t:Left"
-            },
-            {
-              "value": "right",
-              "label": "t:Right"
-            }
-          ],
-          "default": "right"
-        },
-        {
-          "type": "header",
-          "content": "t:Image_1"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_1",
-          "label": "t:Image",
-          "info": "t:560_x_420px_jpg_recommended"
+          "id": "product_type",
+          "label": "product type"
         },
         {
           "type": "text",
-          "id": "image_1_heading",
-          "label": "t:Heading"
+          "id": "product_view",
+          "label": "product view"
         },
         {
-          "type": "text",
-          "id": "image_1_text",
-          "label": "t:Text"
+          "type": "collection",
+          "id": "collection",
+          "label": "collection"
         },
         {
-          "type": "url",
-          "id": "image_1_link",
-          "label": "t:Link"
-        },
-        {
-          "type": "header",
-          "content": "t:Image_2"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_2",
-          "label": "t:Image",
-          "info": "t:560_x_420px_jpg_recommended"
-        },
-        {
-          "type": "text",
-          "id": "image_2_heading",
-          "label": "t:Heading"
-        },
-        {
-          "type": "text",
-          "id": "image_2_text",
-          "label": "t:Text"
-        },
-        {
-          "type": "url",
-          "id": "image_2_link",
-          "label": "t:Link"
-        },
-        {
-          "type": "header",
-          "content": "t:Image_3"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_3",
-          "label": "t:Image",
-          "info": "t:560_x_420px_jpg_recommended"
-        },
-        {
-          "type": "text",
-          "id": "image_3_heading",
-          "label": "t:Heading"
-        },
-        {
-          "type": "text",
-          "id": "image_3_text",
-          "label": "t:Text"
-        },
-        {
-          "type": "url",
-          "id": "image_3_link",
-          "label": "t:Link"
-        },
-        {
-          "type": "header",
-          "content": "t:Image_4"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_4",
-          "label": "t:Image",
-          "info": "t:560_x_420px_jpg_recommended"
-        },
-        {
-          "type": "text",
-          "id": "image_4_heading",
-          "label": "t:Heading"
-        },
-        {
-          "type": "text",
-          "id": "image_4_text",
-          "label": "t:Text"
-        },
-        {
-          "type": "url",
-          "id": "image_4_link",
-          "label": "t:Link"
-        },
-        {
-          "type": "header",
-          "content": "t:Image_5"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_5",
-          "label": "t:Image",
-          "info": "t:560_x_420px_jpg_recommended"
-        },
-        {
-          "type": "text",
-          "id": "image_5_heading",
-          "label": "t:Heading"
-        },
-        {
-          "type": "text",
-          "id": "image_5_text",
-          "label": "t:Text"
-        },
-        {
-          "type": "url",
-          "id": "image_5_link",
-          "label": "t:Link"
-        },
-        {
-          "type": "header",
-          "content": "t:Image_6"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_6",
-          "label": "t:Image",
-          "info": "t:560_x_420px_jpg_recommended"
-        },
-        {
-          "type": "text",
-          "id": "image_6_heading",
-          "label": "t:Heading"
-        },
-        {
-          "type": "text",
-          "id": "image_6_text",
-          "label": "t:Text"
-        },
-        {
-          "type": "url",
-          "id": "image_6_link",
-          "label": "t:Link"
+          "type": "number",
+          "id": "product_grid_columns",
+          "label": "product grid columns",
+          "default": 4
         }
       ]
     }

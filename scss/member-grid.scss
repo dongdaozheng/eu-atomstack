@@ -1,0 +1,122 @@
+@function vw($px-vw, $base-vw: 750px) {
+  @return calc(($px-vw * 100vw) / $base-vw);
+}
+
+@media (max-width: 1000px) {
+  .member-grid {
+    padding: vw(50px) 0px;
+    .member-banner {
+      margin-bottom: vw(20px);
+      position: relative;
+      .btn {
+        width: vw(140px);
+        height: vw(48px);
+        border-radius: vw(90px);
+        background: #2b72ff;
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: vw(16px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: vw(46px);
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 50%;
+        bottom: vw(55px);
+        transform: translateX(-50%);
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .member-grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: vw(20px);
+      .member-grid-item {
+        position: relative;
+      }
+      .block-btn {
+        display: block;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: vw(33px);
+        color: #2b72ff;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: vw(16px);
+        font-style: normal;
+        font-weight: 600;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .member-grid {
+    padding: 50px 0px;
+    .member-banner {
+      margin-bottom: 14px;
+      position: relative;
+      .btn {
+        height: 48px;
+        width: 140px;
+        border-radius: 3px;
+        background: #2b72ff;
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 46px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 50%;
+        bottom: 70px;
+        transform: translateX(-50%);
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .member-grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 14px;
+      .member-grid-item {
+        position: relative;
+        overflow: hidden;
+        img {
+          transform: scale(1);
+          transition: all 0.3s ease;
+        }
+        &:hover {
+          img {
+            transform: scale(1.03);
+          }
+        }
+      }
+      .block-btn {
+        display: block;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 40px;
+        color: #2b72ff;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}

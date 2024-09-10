@@ -1,0 +1,121 @@
+@function vw($px-vw, $base-vw: 750px) {
+  @return calc(($px-vw * 100vw) / $base-vw);
+}
+
+.home-form {
+  .title {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 1000px) {
+  .home-form {
+    background: #f1f2f4;
+    padding: 45px 0px;
+    .container {
+      display: flex;
+      column-gap: 96px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 0px;
+    }
+
+    form {
+      background: #fff;
+      overflow: hidden;
+      display: block;
+      border-radius: 110.84px;
+      width: 600px;
+      margin-top: 0px;
+      font-family: "Open Sans";
+
+      &::placeholder {
+        color: #7e7e7e;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+      }
+
+      input {
+        width: 450px;
+        height: 60px;
+        flex-shrink: 0;
+        border: none;
+        border-radius: 110.84px 0px 0px 110.84px;
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        padding: 20px;
+        &:focus {
+          border: none;
+          box-shadow: none;
+        }
+      }
+      button {
+        width: 150px;
+        border-radius: 0px 110.84px 110.84px 0px;
+        background: #2b72ff;
+        text-align: center;
+        color: #ffffff;
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        height: 68px;
+        right: 0px !important;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .home-form {
+    padding: vw(40px) 0px;
+    background-color: #f1f2f4;
+    .title {
+      font-size: vw(32px);
+      margin-bottom: vw(24px);
+    }
+    form {
+      .input {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        border-radius: vw(100px);
+        overflow: hidden;
+        input {
+          padding: vw(20px);
+          border: none;
+          height: vw(58px);
+          background-color: #ffffff;
+          &:focus {
+            box-shadow: none;
+            border: none;
+          }
+        }
+        button {
+          width: vw(144px);
+          background-color: #2b72ff;
+          position: static;
+          height: vw(58px);
+          line-height: vw(62px);
+          text-align: center;
+          text-transform: uppercase;
+          font-size: vw(18px);
+          transform: none;
+          color: #fff;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

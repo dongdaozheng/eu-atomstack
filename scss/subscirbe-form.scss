@@ -1,0 +1,123 @@
+@function vw($px-vw, $base-vw: 750px) {
+  @return calc(($px-vw * 100vw) / $base-vw);
+}
+
+.subscirbe-form {
+  background: #f8f8f8;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .title {
+    color: #333;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .desc {
+    color: #333;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+@media (min-width: 1000px) {
+  .subscirbe-form {
+    padding: 60px 0px;
+    .title {
+      font-size: 52px;
+      margin-bottom: 24px;
+    }
+    .desc {
+      font-size: 24px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .input {
+      height: 96px;
+      display: flex;
+      input {
+        flex: 1;
+        border-radius: 6px 0px 0px 6px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        background: #fff;
+        padding: 20px;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        color: #333;
+        &::placeholder {
+          color: #ddd;
+        }
+      }
+      button {
+        width: 248px;
+        height: 100%;
+        border-radius: 0px 6px 6px 0px;
+        background: #2b72ff;
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        text-align: center;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .subscirbe-form {
+    padding: vw(60px) 0px;
+    .title {
+      font-size: vw(48px);
+      margin-bottom: vw(24px);
+    }
+    .desc {
+      font-size: vw(28px);
+      margin-bottom: vw(48px);
+    }
+    .input {
+      flex-direction: column;
+      input {
+        border: vw(2px) solid #ddd;
+        margin-bottom: vw(24px);
+        padding: vw(40px);
+        font-family: "Open Sans";
+        font-size: vw(48px);
+        font-style: normal;
+        font-weight: 700;
+        color: #333;
+        border-radius: vw(12px);
+        &::placeholder {
+          color: #ddd;
+        }
+      }
+      button {
+        width: 100%;
+        height: vw(160px);
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: vw(48px);
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        border-radius: vw(12px);
+        background: #2b72ff;
+      }
+    }
+  }
+}

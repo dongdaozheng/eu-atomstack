@@ -111,6 +111,35 @@
             </h2>
           {% endunless %}
 
+          {%- if section.settings.show_product_rating -%}
+            <a href='#looxReviews' class="looxReviews">
+              <div
+                class='loox-rating'
+                data-id='{{ product.id }}'
+                data-rating='{{ product.metafields.loox.avg_rating }}'
+                data-raters='{{ product.metafields.loox.num_reviews }}'
+              ></div>
+            </a>
+            {% comment %}
+              <a
+                href='{% if featured %}{{ product.url }}{% endif %}#product-{{ product.id }}-reviews-pocket'
+                is='review-link'
+                data-smooth-scroll
+                class='product-meta__reviews-badge hidden-lap-and-up'
+              >
+                {%- render 'product-rating', product: product -%}
+              </a>
+              <a
+                href='{% if featured %}{{ product.url }}{% endif %}#product-{{ product.id }}-tabs'
+                is='review-link'
+                data-smooth-scroll
+                class='product-meta__reviews-badge hidden-pocket'
+              >
+                {%- render 'product-rating', product: product -%}
+              </a>
+            {% endcomment %}
+          {%- endif -%}
+
           <div class='product-meta__price-list-container' role='region' aria-live='polite'>
             <div class='price-list' data-product-price-list>
               {%- if product.selected_or_first_available_variant.compare_at_price
@@ -222,25 +251,6 @@
 
           {%- if section.settings.show_product_rating or section.settings.show_sku -%}
             <div class='product-meta__reference'>
-              {%- if section.settings.show_product_rating -%}
-                <a
-                  href='{% if featured %}{{ product.url }}{% endif %}#product-{{ product.id }}-reviews-pocket'
-                  is='review-link'
-                  data-smooth-scroll
-                  class='product-meta__reviews-badge hidden-lap-and-up'
-                >
-                  {%- render 'product-rating', product: product -%}
-                </a>
-                <a
-                  href='{% if featured %}{{ product.url }}{% endif %}#product-{{ product.id }}-tabs'
-                  is='review-link'
-                  data-smooth-scroll
-                  class='product-meta__reviews-badge hidden-pocket'
-                >
-                  {%- render 'product-rating', product: product -%}
-                </a>
-              {%- endif -%}
-
               {%- if section.settings.show_sku -%}
                 <span
                   class='product-meta__sku text--subdued text--xxsmall'
@@ -1590,9 +1600,9 @@
 
               <product-payment-container
                 form-id='{{ product_form_id }}'
-                {% if update_url %}
+                {% comment %} {% if update_url %}
                   id='MainPaymentContainer'
-                {% endif %}
+                {% endif %} {% endcomment %}
                 class='product-form__payment-container'
                 {{ block.shopify_attributes }}
               >

@@ -18,6 +18,15 @@
             "include_variant_name": false
           }
         },
+        "smile_io_smile_points_on_product_page_tWRhMh": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#121212",
+            "secondary_colour": "#f8f8f8",
+            "should_show_icon": true,
+            "earning_rate": 2
+          }
+        },
         "image_3eyRjh": {
           "type": "image",
           "disabled": true,
@@ -142,6 +151,7 @@
       },
       "block_order": [
         "meta",
+        "smile_io_smile_points_on_product_page_tWRhMh",
         "image_3eyRjh",
         "0de2f95e-4076-4ccc-8f7c-8ecb07eddda6",
         "942f73c8-e783-4874-a47e-e88b93ec9e7b",
@@ -164,7 +174,7 @@
         "show_vendor": false,
         "show_sku": false,
         "show_taxes_included": false,
-        "show_product_rating": false,
+        "show_product_rating": true,
         "show_sticky_add_to_cart": true,
         "show_sticky_quick_buy": false,
         "show_share_buttons": false,
@@ -183,6 +193,7 @@
     },
     "image_link_wDwqNp": {
       "type": "image-link",
+      "disabled": true,
       "settings": {
         "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
         "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
@@ -425,6 +436,7 @@
         },
         "f2883553-07cc-4f77-861c-a9a0a4ca5601": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "title": "Reviews",
             "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"
@@ -432,10 +444,9 @@
         },
         "liquid_9Qnte9": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
             "title": "Reviews",
-            "liquid": "<div id=\"looxReviews\" data-limit=\"4\" data-product-id=\"{{ product.id }}\"><\/div>"
+            "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
           }
         },
         "df886055-92be-4283-9c0a-9493f4a3fae5": {
@@ -490,8 +501,8 @@
         "image_cWr8GY": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_e8112873-b4f5-4710-8e0e-e16aec88e26c.jpg",
+            "image": "shopify:\/\/shop_images\/one_tree_planted.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/one_tree_pleanted-02.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",

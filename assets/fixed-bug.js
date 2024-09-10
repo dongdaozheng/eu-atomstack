@@ -17,3 +17,11 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+const pathname = window.location.pathname;
+
+if (pathname.includes('atomstack-hurricane')) {
+  document.documentElement.setAttribute('id', 'special');
+} else {
+  document.documentElement.removeAttribute('id', 'special');
+}

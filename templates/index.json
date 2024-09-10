@@ -12,32 +12,41 @@
     "image_swiper_C8FxNQ": {
       "type": "image-swiper",
       "blocks": {
+        "column_GGFHhd": {
+          "type": "column",
+          "settings": {
+            "link_list": "https:\/\/atomstack.com\/pages\/presale-subscription",
+            "pc_img": "shopify:\/\/shop_images\/K60_banner.jpg",
+            "mb_img": "shopify:\/\/shop_images\/K60_-_-750-1080.jpg"
+          }
+        },
         "column_QtE6aL": {
           "type": "column",
           "settings": {
-            "link_list": "",
-            "pc_img": "shopify:\/\/shop_images\/K60_hurricane_teaser-1.jpg",
-            "mb_img": "shopify:\/\/shop_images\/K60_hurricane_teaser-01.jpg"
+            "link_list": "https:\/\/atomstack.com\/pages\/atomstack-member-day",
+            "pc_img": "shopify:\/\/shop_images\/member_day-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/member_day-2.jpg"
           }
         },
         "column_m4C4rx": {
           "type": "column",
           "settings": {
-            "link_list": "https:\/\/atomstack.com\/products\/atomstack-ace-pro-v2",
-            "pc_img": "shopify:\/\/shop_images\/Buy_one_get_one_free-eu-01.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Buy_one_get_one_free-eu-03.jpg"
+            "link_list": "https:\/\/atomstack.com\/products\/atomstack-ace-a40-pro-v2-laser-engraver",
+            "pc_img": "shopify:\/\/shop_images\/buy_one_get_one-us-01.jpg",
+            "mb_img": "shopify:\/\/shop_images\/a40_pro_v2_laser_engraver.jpg"
           }
         },
         "column_GfEzPd": {
           "type": "column",
           "settings": {
             "link_list": "",
-            "pc_img": "shopify:\/\/shop_images\/1920-650_2x_8ee3bbb6-79ed-4002-9379-24b1f3ae1478.jpg",
-            "mb_img": "shopify:\/\/shop_images\/850-1212_2x_74f371a9-28fa-4c83-9521-683f475f78df.jpg"
+            "pc_img": "shopify:\/\/shop_images\/one_tree_planted.jpg",
+            "mb_img": "shopify:\/\/shop_images\/one_tree_planted_11cccc84-fe24-4fea-a230-aa4d3e7996bc.jpg"
           }
         }
       },
       "block_order": [
+        "column_GGFHhd",
         "column_QtE6aL",
         "column_m4C4rx",
         "column_GfEzPd"
@@ -51,21 +60,21 @@
         "block_Wp7Xdm": {
           "type": "block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/fast_shipping.png",
+            "icon": "shopify:\/\/shop_images\/1_a85c6f31-5d0c-4598-b3d8-e1912a689b38.png",
             "text": "Fast Shipping"
           }
         },
         "block_RtKmeT": {
           "type": "block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/12-month_warranty.png",
+            "icon": "shopify:\/\/shop_images\/3_5ccb1d30-a09f-49e0-b8a0-76855ea347d4.png",
             "text": "12-month Warranty"
           }
         },
         "block_dhHmgt": {
           "type": "block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/cash_back.png",
+            "icon": "shopify:\/\/shop_images\/2_fb908d30-097d-4b35-9e6b-f9ce37f7dc96.png",
             "text": "Get 2% of Your Order Back"
           }
         }
@@ -75,8 +84,9 @@
         "block_RtKmeT",
         "block_dhHmgt"
       ],
+      "disabled": true,
       "settings": {
-        "title": "The Only Official Brand Website"
+        "title": "The Only Official Brand Website"
       }
     },
     "product_list_frDj3x": {
@@ -85,45 +95,49 @@
         "column_tXnrPw": {
           "type": "column",
           "settings": {
+            "link": "\/products\/atomstack-a70-max",
             "product": "atomstack-a70-max",
-            "tip": "€630 Off",
+            "tip": "$700 Off",
             "title": "AtomStack A70\/X70 Max Laser Cutter",
-            "desc": "Go Big, Earn Big.",
-            "pc_img": "shopify:\/\/shop_images\/A70_Max.png",
-            "mb_img": "shopify:\/\/shop_images\/A70_Max_d93aeccd-f48c-4a3e-bd8f-b1dbc48d23eb.png"
+            "desc": "Go Big, Earn Big.",
+            "pc_img": "shopify:\/\/shop_images\/PC-A70_Max-390-224.png",
+            "mb_img": "shopify:\/\/shop_images\/MB-A70_Max-302-163.png"
           }
         },
         "column_CN4f3t": {
           "type": "column",
           "settings": {
+            "link": "\/products\/atomstack-a70-pro",
             "product": "atomstack-a70-pro",
-            "tip": "€630 Off",
+            "tip": "$700 Off",
             "title": "AtomStack A70\/ X70 Pro Laser Cutter",
-            "desc": "New Beast, 70W Superior Cutting Power",
-            "pc_img": "shopify:\/\/shop_images\/A70_pro_6fe79c04-a996-407a-aebe-c8d8b6461ec6.png",
-            "mb_img": "shopify:\/\/shop_images\/A70_Pro_379699c1-1f68-4b09-bd5f-50c5fdd949db.png"
+            "desc": "New Beast, 70W Superior Cutting Power",
+            "pc_img": "shopify:\/\/shop_images\/A70_pro_1759eee2-e7d9-46d7-bc11-6be42875fc8a.png",
+            "mb_img": "shopify:\/\/shop_images\/A70_Pro_-302-163.png"
           }
         },
         "column_bpA3iG": {
           "type": "column",
           "settings": {
+            "link": "\/products\/atomstack-ace-a40-pro-v2-laser-engraver",
             "product": "atomstack-ace-a40-pro-v2-laser-engraver",
-            "tip": "€360 Off",
+            "tip": "$400 Off",
             "title": "AtomStack A40 Pro V2 Laser Engraver with F60 Air Assist Kit",
-            "desc": "Big Upgrade, Small Budget",
+            "desc": "Big Upgrade, Small Budget",
             "pc_img": "shopify:\/\/shop_images\/PC-A40_Pro.png",
-            "mb_img": "shopify:\/\/shop_images\/A40_Pro.png"
+            "mb_img": "shopify:\/\/shop_images\/MB-A40_Pro-302-163.png"
           }
         },
         "column_gVamHN": {
           "type": "column",
           "settings": {
+            "link": "\/products\/atomstack-a24-ultra",
             "product": "atomstack-a24-ultra",
-            "tip": "€310 Off",
+            "tip": "$350 Off",
             "title": "AtomStack A24\/X24 Ultra Optical Power 24W Unibody Frame Laser Engraver",
-            "desc": "Installation-free，Class 1 Safety ",
-            "pc_img": "shopify:\/\/shop_images\/A24_ultra_32192763-9e65-4a17-8967-0e425d2ef72c.png",
-            "mb_img": "shopify:\/\/shop_images\/A24_ultra_df76a05c-1f61-4c6a-afdb-623f2e81ad13.png"
+            "desc": "Installation-free，Class 1 Safety",
+            "pc_img": "shopify:\/\/shop_images\/A24_ultra_f38d1ace-bf78-4ea2-acf4-34994c29368e.png",
+            "mb_img": "shopify:\/\/shop_images\/A24_ultra-302-163.png"
           }
         }
       },
@@ -133,6 +147,7 @@
         "column_bpA3iG",
         "column_gVamHN"
       ],
+      "disabled": true,
       "settings": {
         "title": "Best Seller"
       }
@@ -144,33 +159,33 @@
           "type": "grid",
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/A70-MAX.jpg",
-            "mb_img": "shopify:\/\/shop_images\/A70-MAX_95947886-0702-4af9-9099-e806e06a0855.jpg",
-            "link": "\/products\/atomstack-a70-max",
-            "btn_text": "Buy Now",
-            "title": "A70 Max Laser",
-            "desc": "Go big, Earn big, the perfect machine for Woodworking."
+            "mb_img": "shopify:\/\/shop_images\/1_abd49d58-9876-442c-b6a0-c204f87b07e5.jpg",
+            "link": "",
+            "btn_text": "",
+            "title": "",
+            "desc": ""
           }
         },
         "grid_8nWf4i": {
           "type": "grid",
           "settings": {
-            "pc_img": "shopify:\/\/shop_images\/Ace-Pro-V2-1.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Ace-Pro-V2_aca2988b-edcd-4636-bedb-442127b94afd.jpg",
-            "link": "\/products\/atomstack-ace-pro-v2",
-            "btn_text": "Buy Now",
-            "title": "Ace Pro V2",
-            "desc": "Enhanced Precision, Accelerated Speed"
+            "pc_img": "shopify:\/\/shop_images\/Ace-Pro-V2_b2953394-0c55-4440-a8d7-a53800271f3a.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Ace-Pro-V2_4328d4d4-a079-45f0-b1b6-748ce3fc4fff.jpg",
+            "link": "",
+            "btn_text": "",
+            "title": "",
+            "desc": ""
           }
         },
         "grid_Hi9wML": {
           "type": "grid",
           "settings": {
-            "pc_img": "shopify:\/\/shop_images\/Ace-Pro-V2_1064nm_8e024206-7f6e-4917-8562-59f894e199e2.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Ace-Pro-V2_1064nm_24548ac0-e4e2-4f00-9e27-15dd2de027c3.jpg",
-            "link": "\/products\/atomstack-a20-pro-1064nm",
-            "btn_text": "Buy Now",
-            "title": "20W Fiber Laser",
-            "desc": "Multi-material Application"
+            "pc_img": "shopify:\/\/shop_images\/Ace-Pro-V2_1064nm_31be67f3-f171-444a-b8ca-2ab0c9200d89.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Ace-Pro-V2_1064nm_82a057f2-85a3-4d64-b045-d54b1460cd39.jpg",
+            "link": "",
+            "btn_text": "",
+            "title": "",
+            "desc": ""
           }
         }
       },
@@ -180,7 +195,235 @@
         "grid_Hi9wML"
       ],
       "settings": {
-        "title": "Explore the AtomStack leading laser cutter and engravers"
+        "title": "<p>Explore the AtomStack leading laser cutter and engravers<\/p>",
+        "subtitle": "Quickly choose the product that suits you best",
+        "link": "\/products\/atomstack-a70-max",
+        "text_link": "Quickly choose the product that suits you best",
+        "padding_top": 120,
+        "padding_bottom": 120,
+        "grid_num": 2
+      }
+    },
+    "grid_image_i7dMqM": {
+      "type": "grid-image",
+      "blocks": {
+        "grid_iqKGaB": {
+          "type": "grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/A24_Ultra-3_c4c4edba-180f-43de-b726-bf6136f8fc76.webp",
+            "mb_img": "shopify:\/\/shop_images\/wooden-cabinet-made-with-atomstack-laser-cutter.png",
+            "corner_mark": "$99"
+          }
+        },
+        "grid_Ktxxdk": {
+          "type": "grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/A24_Ultra-3_c4c4edba-180f-43de-b726-bf6136f8fc76.webp",
+            "mb_img": "shopify:\/\/shop_images\/wooden-cabinet-made-with-atomstack-laser-cutter.png",
+            "corner_mark": "$99"
+          }
+        },
+        "grid_gJQcUG": {
+          "type": "grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/A24_Ultra-3_c4c4edba-180f-43de-b726-bf6136f8fc76.webp",
+            "mb_img": "shopify:\/\/shop_images\/wooden-cabinet-made-with-atomstack-laser-cutter.png",
+            "corner_mark": "$99"
+          }
+        },
+        "grid_kN4gAb": {
+          "type": "grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/A24_Ultra-3_c4c4edba-180f-43de-b726-bf6136f8fc76.webp",
+            "mb_img": "shopify:\/\/shop_images\/wooden-cabinet-made-with-atomstack-laser-cutter.png",
+            "corner_mark": "$99"
+          }
+        },
+        "grid_MkQaxF": {
+          "type": "grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/A24_Ultra-3_c4c4edba-180f-43de-b726-bf6136f8fc76.webp",
+            "mb_img": "shopify:\/\/shop_images\/wooden-cabinet-made-with-atomstack-laser-cutter.png",
+            "corner_mark": ""
+          }
+        },
+        "grid_CNNzEE": {
+          "type": "grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/A24_Ultra-3_c4c4edba-180f-43de-b726-bf6136f8fc76.webp",
+            "mb_img": "shopify:\/\/shop_images\/wooden-cabinet-made-with-atomstack-laser-cutter.png",
+            "corner_mark": ""
+          }
+        }
+      },
+      "block_order": [
+        "grid_iqKGaB",
+        "grid_Ktxxdk",
+        "grid_gJQcUG",
+        "grid_kN4gAb",
+        "grid_MkQaxF",
+        "grid_CNNzEE"
+      ],
+      "settings": {
+        "pc_img": "shopify:\/\/shop_images\/assemble-the-cabinet-1.png",
+        "mb_img": "shopify:\/\/shop_images\/assemble-the-cabinet-1.png",
+        "title": "Making money has never been this easy",
+        "padding_top": 0,
+        "padding_bottom": 150,
+        "grid_columns": 6,
+        "grid_rows": 1
+      }
+    },
+    "home_grid_N4PcPb": {
+      "type": "home-grid",
+      "blocks": {
+        "grid_Y9qRF9": {
+          "type": "grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/christas-laser-engraving-crafts-made-with-atomstack.png",
+            "mb_img": "shopify:\/\/shop_images\/1_abd49d58-9876-442c-b6a0-c204f87b07e5.jpg",
+            "link": "\/products\/atomstack-a70-max",
+            "btn_text": "Explore the solution",
+            "title": "Woodworking Solutions",
+            "desc": "Through woodworking, the cost can be recovered in as little as one month."
+          }
+        },
+        "grid_mkXjaG": {
+          "type": "grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/christas-laser-engraving-crafts-made-with-atomstack.png",
+            "mb_img": "shopify:\/\/shop_images\/1_abd49d58-9876-442c-b6a0-c204f87b07e5.jpg",
+            "link": "\/products\/atomstack-a70-max",
+            "btn_text": "Explore the solution",
+            "title": "Woodworking Solutions",
+            "desc": "Through woodworking, the cost can be recovered in as little as one month."
+          }
+        }
+      },
+      "block_order": [
+        "grid_Y9qRF9",
+        "grid_mkXjaG"
+      ],
+      "custom_css": [
+        ".home-grid .container .content .item:nth-child(1) {grid-column: 1\/1;}"
+      ],
+      "settings": {
+        "title": "<p>Earn more profit with lower costs<\/p>",
+        "subtitle": "",
+        "link": "",
+        "text_link": "",
+        "padding_top": 0,
+        "padding_bottom": 120,
+        "grid_num": 2
+      }
+    },
+    "grid_swiper_Ny3GrL": {
+      "type": "grid-swiper",
+      "blocks": {
+        "column_QKRqVV": {
+          "type": "column",
+          "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/metal-coating_095354e5-48f4-48ea-b2cd-101285b0a351.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/metal-coating.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/gas-mixture-tube.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/pro-13-2_5633e398-78e5-48f3-8d10-40807c3a0ac9.png",
+            "pc_img_4": "shopify:\/\/shop_images\/pro-13-4-1.png",
+            "mb_img_4": "shopify:\/\/shop_images\/pro-6-1.png",
+            "pc_img_5": "shopify:\/\/shop_images\/pro-14-1.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/pro-2-1_57f691a4-d518-43e7-bfd6-34706024ca7a.jpg"
+          }
+        },
+        "column_YnkAkf": {
+          "type": "column",
+          "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/metal-coating_095354e5-48f4-48ea-b2cd-101285b0a351.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/metal-coating.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/gas-mixture-tube.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/pro-13-2_5633e398-78e5-48f3-8d10-40807c3a0ac9.png",
+            "pc_img_4": "shopify:\/\/shop_images\/pro-13-4-1.png",
+            "mb_img_4": "shopify:\/\/shop_images\/pro-6-1.png",
+            "pc_img_5": "shopify:\/\/shop_images\/pro-14-1.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/pro-2-1_57f691a4-d518-43e7-bfd6-34706024ca7a.jpg"
+          }
+        },
+        "column_H3UWmj": {
+          "type": "column",
+          "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/metal-coating_095354e5-48f4-48ea-b2cd-101285b0a351.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/metal-coating.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/gas-mixture-tube.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/pro-13-2_5633e398-78e5-48f3-8d10-40807c3a0ac9.png",
+            "pc_img_4": "shopify:\/\/shop_images\/pro-13-4-1.png",
+            "mb_img_4": "shopify:\/\/shop_images\/pro-6-1.png",
+            "pc_img_5": "shopify:\/\/shop_images\/pro-14-1.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/pro-2-1_57f691a4-d518-43e7-bfd6-34706024ca7a.jpg"
+          }
+        },
+        "column_344N7z": {
+          "type": "column",
+          "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/metal-coating_095354e5-48f4-48ea-b2cd-101285b0a351.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/metal-coating.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/gas-mixture-tube.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/pro-13-2_5633e398-78e5-48f3-8d10-40807c3a0ac9.png",
+            "pc_img_4": "shopify:\/\/shop_images\/pro-13-4-1.png",
+            "mb_img_4": "shopify:\/\/shop_images\/pro-6-1.png",
+            "pc_img_5": "shopify:\/\/shop_images\/pro-14-1.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/pro-2-1_57f691a4-d518-43e7-bfd6-34706024ca7a.jpg"
+          }
+        },
+        "column_3a7Pfg": {
+          "type": "column",
+          "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/metal-coating_095354e5-48f4-48ea-b2cd-101285b0a351.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/metal-coating.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/gas-mixture-tube.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/pro-13-2_5633e398-78e5-48f3-8d10-40807c3a0ac9.png",
+            "pc_img_4": "shopify:\/\/shop_images\/pro-13-4-1.png",
+            "mb_img_4": "shopify:\/\/shop_images\/pro-6-1.png",
+            "pc_img_5": "shopify:\/\/shop_images\/pro-14-1.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/pro-2-1_57f691a4-d518-43e7-bfd6-34706024ca7a.jpg"
+          }
+        },
+        "column_FBxaRm": {
+          "type": "column",
+          "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/metal-coating_095354e5-48f4-48ea-b2cd-101285b0a351.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/metal-coating.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/how-does-a-co2-laser-engraver-work.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/gas-mixture-tube.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/pro-13-2_5633e398-78e5-48f3-8d10-40807c3a0ac9.png",
+            "pc_img_4": "shopify:\/\/shop_images\/pro-13-4-1.png",
+            "mb_img_4": "shopify:\/\/shop_images\/pro-6-1.png",
+            "pc_img_5": "shopify:\/\/shop_images\/pro-14-1.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/pro-2-1_57f691a4-d518-43e7-bfd6-34706024ca7a.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "column_QKRqVV",
+        "column_YnkAkf",
+        "column_H3UWmj",
+        "column_344N7z",
+        "column_3a7Pfg",
+        "column_FBxaRm"
+      ],
+      "settings": {
+        "button": "Acrylic,Wood,Leather,Coated Metal,Glass,Rock",
+        "title": "title",
+        "padding_top": 0,
+        "padding_bottom": 120
       }
     },
     "home_introduction_eUpqAU": {
@@ -197,7 +440,7 @@
           "type": "block",
           "settings": {
             "desc": "5 Years of Innovation in Laser Engraving Technology",
-            "title": "5 Yeas of Innovation"
+            "title": "5 Years of Innovation"
           }
         },
         "block_b8hMtb": {
@@ -213,13 +456,40 @@
             "desc": "300,000+ Products Sold Worldwide",
             "title": "300,000+"
           }
+        },
+        "grid_GGc8Bz": {
+          "type": "grid",
+          "settings": {
+            "title": "Jack yong",
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS.",
+            "image": "shopify:\/\/shop_images\/christa-early-laser-engraving-craft_a350f0ae-5a39-4c6c-b084-3245f0330763.png"
+          }
+        },
+        "grid_KtGyMK": {
+          "type": "grid",
+          "settings": {
+            "title": "Jack yong",
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS.",
+            "image": "shopify:\/\/shop_images\/christa-early-laser-engraving-craft_a350f0ae-5a39-4c6c-b084-3245f0330763.png"
+          }
+        },
+        "grid_Lgwk46": {
+          "type": "grid",
+          "settings": {
+            "title": "Jack yong",
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS.",
+            "image": "shopify:\/\/shop_images\/christa-early-laser-engraving-craft_a350f0ae-5a39-4c6c-b084-3245f0330763.png"
+          }
         }
       },
       "block_order": [
         "block_ATkA8n",
         "block_Cg8rYq",
         "block_b8hMtb",
-        "block_YEcrNn"
+        "block_YEcrNn",
+        "grid_GGc8Bz",
+        "grid_KtGyMK",
+        "grid_Lgwk46"
       ],
       "settings": {
         "title": "We assist 200,000+ professional users\u2028worldwide in creating exciting products"
@@ -227,6 +497,46 @@
     },
     "pagefly-home": {
       "type": "pagefly-home",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "grid_image_text_WnPLYH": {
+      "type": "grid-image-text",
+      "blocks": {
+        "grid_gXGWmL": {
+          "type": "grid",
+          "settings": {
+            "title": "Jack yong",
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS."
+          }
+        },
+        "grid_cXFBYf": {
+          "type": "grid",
+          "settings": {
+            "title": "Jack yong",
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS."
+          }
+        },
+        "grid_PcGyN9": {
+          "type": "grid",
+          "settings": {
+            "title": "Jack yong",
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS."
+          }
+        }
+      },
+      "block_order": [
+        "grid_gXGWmL",
+        "grid_cXFBYf",
+        "grid_PcGyN9"
+      ],
+      "settings": {
+        "title": "Learn about the makers' stories"
+      }
+    },
+    "home_form_ytWiYM": {
+      "type": "home-form",
       "settings": {
       }
     }
@@ -236,7 +546,12 @@
     "home_navbar_eWQEDE",
     "product_list_frDj3x",
     "home_grid_zFcbFX",
+    "grid_image_i7dMqM",
+    "home_grid_N4PcPb",
+    "grid_swiper_Ny3GrL",
     "home_introduction_eUpqAU",
-    "pagefly-home"
+    "pagefly-home",
+    "grid_image_text_WnPLYH",
+    "home_form_ytWiYM"
   ]
 }

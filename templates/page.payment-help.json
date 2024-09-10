@@ -27,66 +27,58 @@
         "question_VMgwyL": {
           "type": "question",
           "settings": {
-            "title": "About your shop",
-            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+            "title": "Are there any additional fees for currency exchange?",
+            "answer": "<p>When you make a payment for your order through PayPal, the amount will be settled in US dollars. For customers in non-US regions using our website, they will see the product prices and shipping fees displayed in their local currency. However, during the final checkout process, these amounts will be converted to US dollars based on the latest real-time exchange rate for payment. So, rest assured, we'll handle the currency conversion for you (FREE), making it convenient to shop from anywhere in the world!<\/p><p>When using Shopify Payments for checkout, the orders are settled in the local currency. This means that customers in different regions will have their orders processed and charged in their respective local currencies. So, whether you're paying in Euros, Pounds, Yen, or any other supported currency, you can complete your transaction seamlessly without worrying about currency conversions. We've got you covered with a hassle-free payment experience through Shopify Payments!<\/p>"
           }
         },
         "question_KprNQQ": {
           "type": "question",
           "settings": {
-            "title": "About your shop",
-            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
-          }
-        },
-        "question_qppgqd": {
-          "type": "question",
-          "settings": {
-            "title": "About your shop",
-            "answer": "<p>Write content to help your customers to better understand your products or policies.<\/p>"
+            "title": "What can I do if the payment for my order is declined?",
+            "answer": "<p>If the payment has been declined, please place the order again as we’re not able to reinstate the order. To help ensure your order is not declined when placing new orders, please check the information listed below:<\/p>"
           }
         }
       },
       "block_order": [
         "question_VMgwyL",
-        "question_KprNQQ",
-        "question_qppgqd"
+        "question_KprNQQ"
       ],
       "settings": {
         "title": "FAQ"
       }
     },
-    "contact_us_zHcFVn": {
+    "contact_us_TcfU7y": {
       "type": "contact-us",
       "blocks": {
-        "contact_item_RaKqpd": {
+        "contact_item_T9rYwQ": {
           "type": "contact-item",
           "settings": {
             "title": "Contact online Custmer service",
-            "image": "shopify:\/\/shop_images\/Group_53_612bdff6-ac96-45bf-92a1-06753132a365.png",
+            "image": "shopify:\/\/shop_images\/contact.png",
             "link": ""
           }
         },
-        "contact_item_cTKbLN": {
+        "contact_item_V3CAQm": {
           "type": "contact-item",
           "settings": {
-            "title": "Contact online Custmer service",
-            "image": "shopify:\/\/shop_images\/Group_53_612bdff6-ac96-45bf-92a1-06753132a365.png",
+            "title": "Join facebook group",
+            "image": "shopify:\/\/shop_images\/facebook.png",
             "link": ""
           }
         },
-        "contact_item_7P3e9X": {
+        "contact_item_xHnai8": {
           "type": "contact-item",
           "settings": {
-            "title": "Contact online Custmer service",
-            "image": "shopify:\/\/shop_images\/Group_53_612bdff6-ac96-45bf-92a1-06753132a365.png",
+            "title": "Join a reddit topic",
+            "image": "shopify:\/\/shop_images\/reddit.png",
             "link": ""
           }
         }
       },
       "block_order": [
-        "contact_item_RaKqpd",
-        "contact_item_cTKbLN",
-        "contact_item_7P3e9X"
+        "contact_item_T9rYwQ",
+        "contact_item_V3CAQm",
+        "contact_item_xHnai8"
       ],
       "settings": {
         "title": "Reach Out TO Us Anytime!"
@@ -97,6 +89,6 @@
     "main",
     "payment_section_zdmaec",
     "update_faq_iVUzAm",
-    "contact_us_zHcFVn"
+    "contact_us_TcfU7y"
   ]
 }

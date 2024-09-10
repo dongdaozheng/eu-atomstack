@@ -45,8 +45,8 @@
 </style>
 
 <div
-  class="dynamic-theme-variables visually-hidden"
-  aria-hidden="true"
+  class='dynamic-theme-variables visually-hidden'
+  aria-hidden='true'
   {% if variant_picker_block.settings.enable_dynamic_theme_color %}
     enabled
   {% endif %}
@@ -64,27 +64,27 @@
       {%- render 'product-sticky-form', product: product, free_gift: free_gift_block, look_id: look_id -%}
     {%- endif -%}
 
-    <div class="container">
-      <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb text--xsmall text--subdued hidden-phone">
-        <ol class="breadcrumb__list" role="list">
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
+    <div class='container'>
+      <nav aria-label='{{ 'general.breadcrumb.title' | t }}' class='breadcrumb text--xsmall text--subdued hidden-phone'>
+        <ol class='breadcrumb__list' role='list'>
+          <li class='breadcrumb__item'>
+            <a class='breadcrumb__link' href='{{ routes.root_url }}'>{{ 'general.breadcrumb.home' | t }}</a>
           </li>
 
           {%- if collection -%}
-            <li class="breadcrumb__item">
-              <a class="breadcrumb__link" href="{{ collection.url }}">{{- collection.title -}}</a>
+            <li class='breadcrumb__item'>
+              <a class='breadcrumb__link' href='{{ collection.url }}'>{{- collection.title -}}</a>
             </li>
           {%- endif -%}
 
-          <li class="breadcrumb__item">
-            <span class="breadcrumb__link" aria-current="page">{{ product.title }}</span>
+          <li class='breadcrumb__item'>
+            <span class='breadcrumb__link' aria-current='page'>{{ product.title }}</span>
           </li>
         </ol>
       </nav>
 
       <!-- PRODUCT TOP PART -->
-      <div class="product product--thumbnails-{{ section.settings.desktop_thumbnails_position }}">
+      <div class='product product--thumbnails-{{ section.settings.desktop_thumbnails_position }}'>
         {%- render 'product-media', product: product -%}
         {%- render 'product-info',
           atc_button_icon_custom: buy_buttons_block.settings.atc_button_icon_custom,
@@ -97,11 +97,10 @@
     </div>
 
     <quick-buy-popover
-      href="{{ product.url }}?view=quick-buy-popover-without-view-details"
-      id="{{ look_id }}-popover"
-      class="popover popover--quick-buy"
-    >
-    </quick-buy-popover>
+      href='{{ product.url }}?view=quick-buy-popover-without-view-details'
+      id='{{ look_id }}-popover'
+      class='popover popover--quick-buy'
+    ></quick-buy-popover>
   </section>
 {%- else -%}
   {%- comment -%}
@@ -193,25 +192,25 @@
   {%- endcapture -%}
 
   {%- if template.suffix == 'quick-buy-drawer' -%}
-    <quick-buy-drawer class="drawer drawer--large drawer--quick-buy">
-      <cart-notification hidden class="cart-notification cart-notification--drawer"></cart-notification>
+    <quick-buy-drawer class='drawer drawer--large drawer--quick-buy'>
+      <cart-notification hidden class='cart-notification cart-notification--drawer'></cart-notification>
 
-      <span class="drawer__overlay"></span>
+      <span class='drawer__overlay'></span>
 
-      <header class="drawer__header">
-        <p class="drawer__title heading h6">{{ 'product.form.choose_options' | t }}</p>
+      <header class='drawer__header'>
+        <p class='drawer__title heading h6'>{{ 'product.form.choose_options' | t }}</p>
 
         <button
-          type="button"
-          class="drawer__close-button tap-area"
-          data-action="close"
-          title="{{ 'general.accessibility.close' | t | escape }}"
+          type='button'
+          class='drawer__close-button tap-area'
+          data-action='close'
+          title='{{ 'general.accessibility.close' | t | escape }}'
         >
           {%- render 'icon' with 'close' -%}
         </button>
       </header>
 
-      <div class="drawer__content">
+      <div class='drawer__content'>
         {{- quick_buy_product_info -}}
         {%- render 'product-form',
           atc_button_icon_custom: buy_buttons_block.settings.atc_button_icon_custom,
@@ -222,23 +221,23 @@
       </div>
     </quick-buy-drawer>
   {%- elsif template.suffix == 'quick-buy-popover' or template.suffix == 'quick-buy-popover-without-view-details' -%}
-    <quick-buy-popover class="popover popover--quick-buy">
-      <span class="popover__overlay"></span>
+    <quick-buy-popover class='popover popover--quick-buy'>
+      <span class='popover__overlay'></span>
 
-      <header class="popover__header">
+      <header class='popover__header'>
         {{- quick_buy_product_info -}}
 
         <button
-          type="button"
-          class="popover__close-button tap-area tap-area--large"
-          data-action="close"
-          title="{{ 'general.accessibility.close' | t | escape }}"
+          type='button'
+          class='popover__close-button tap-area tap-area--large'
+          data-action='close'
+          title='{{ 'general.accessibility.close' | t | escape }}'
         >
           {%- render 'icon' with 'close' -%}
         </button>
       </header>
 
-      <div class="popover__content popover__content--no-padding">
+      <div class='popover__content popover__content--no-padding'>
         {%- render 'product-form',
           atc_button_icon_custom: buy_buttons_block.settings.atc_button_icon_custom,
           atc_button_icon_preset: buy_buttons_block.settings.atc_button_icon_preset,
@@ -2550,7 +2549,7 @@
       "id": "show_product_rating",
       "label": "t:Show_product_rating",
       "info": "t:To_display_a_rating_add_a_product_rating_app_such_as_product_reviews_or_ryviu",
-      "default": false
+      "default": true
     },
     {
       "type": "checkbox",

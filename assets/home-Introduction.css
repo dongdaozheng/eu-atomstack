@@ -1,9 +1,6 @@
 .home-Introduction {
   background: #f0f2f4;
 }
-.home-Introduction .container {
-  padding: 0;
-}
 .home-Introduction .container p {
   padding: 0;
   margin: 0;
@@ -35,14 +32,23 @@
   font-style: normal;
   font-weight: 400;
 }
+.home-Introduction .container .grid-title {
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+}
+.home-Introduction .container .grid-desc {
+  color: rgba(0, 0, 0, 0.93);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
 
 @media (min-width: 1000px) {
   .home-Introduction {
-    padding: 70px 0;
-  }
-  .home-Introduction .container {
-    padding: 0;
-    max-width: 1200px;
+    padding: 70px 0 50px;
   }
   .home-Introduction .container .title {
     max-width: 960px;
@@ -61,6 +67,34 @@
   }
   .home-Introduction .container .content .item-desc {
     font-size: 14px;
+  }
+  .home-Introduction .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 56px;
+    gap: 20px;
+  }
+  .home-Introduction .grid-container .grid-item {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+    border-radius: 6px;
+  }
+  .home-Introduction .grid-container .grid-item img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 23px auto 20px;
+    border-radius: 50%;
+  }
+  .home-Introduction .grid-container .grid-item .grid-title {
+    font-size: 18px;
+  }
+  .home-Introduction .grid-container .grid-item .grid-desc {
+    font-size: 16px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 1000px) {
@@ -93,5 +127,31 @@
     font-size: 2.6666666667vw;
     text-align: left;
     line-height: normal;
+  }
+  .home-Introduction .container .grid-container {
+    margin-top: 6.6666666667vw;
+    display: flex;
+    overflow: auto;
+    column-gap: 2.6666666667vw;
+  }
+  .home-Introduction .container .grid-container .grid-item {
+    width: 47.7333333333vw;
+    flex-shrink: 0;
+    background-color: #fff;
+  }
+  .home-Introduction .container .grid-container .grid-item img {
+    width: 10.6666666667vw;
+    height: 10.6666666667vw;
+    margin: 6.2666666667vw auto 3.7333333333vw;
+    display: block;
+    border-radius: 50%;
+  }
+  .home-Introduction .container .grid-container .grid-item .grid-title {
+    font-size: 2.6666666667vw;
+    margin-bottom: 1.3333333333vw;
+  }
+  .home-Introduction .container .grid-container .grid-item .grid-desc {
+    font-size: 2.1333333333vw;
+    padding: 1.3333333333vw;
   }
 }

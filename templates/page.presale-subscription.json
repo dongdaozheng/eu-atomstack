@@ -9,13 +9,23 @@
 */
 {
   "sections": {
-    "pf-2cedd887": {
-      "type": "pf-2cedd887",
+    "main": {
+      "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_title": true,
+        "page_width": "large"
+      }
+    },
+    "presale_subscription_EjxPx7": {
+      "type": "presale-subscription",
+      "settings": {
+        "title": ""
       }
     }
   },
   "order": [
-    "pf-2cedd887"
+    "main",
+    "presale_subscription_EjxPx7"
   ]
 }

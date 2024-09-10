@@ -1,0 +1,116 @@
+@media (max-width: 1000px) {
+  .member-grid {
+    padding: 6.6666666667vw 0px;
+  }
+  .member-grid .member-banner {
+    margin-bottom: 2.6666666667vw;
+    position: relative;
+  }
+  .member-grid .member-banner .btn {
+    width: 18.6666666667vw;
+    height: 6.4vw;
+    border-radius: 12vw;
+    background: #2b72ff;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 2.1333333333vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 6.1333333333vw;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 50%;
+    bottom: 7.3333333333vw;
+    transform: translateX(-50%);
+  }
+  .member-grid .member-banner .btn:hover {
+    opacity: 0.8;
+  }
+  .member-grid .member-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2.6666666667vw;
+  }
+  .member-grid .member-grid-container .member-grid-item {
+    position: relative;
+  }
+  .member-grid .member-grid-container .block-btn {
+    display: block;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 4.4vw;
+    color: #2b72ff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 2.1333333333vw;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration-line: underline;
+  }
+}
+@media (min-width: 1000px) {
+  .member-grid {
+    padding: 50px 0px;
+  }
+  .member-grid .member-banner {
+    margin-bottom: 14px;
+    position: relative;
+  }
+  .member-grid .member-banner .btn {
+    height: 48px;
+    width: 140px;
+    border-radius: 3px;
+    background: #2b72ff;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+  }
+  .member-grid .member-banner .btn:hover {
+    opacity: 0.8;
+  }
+  .member-grid .member-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .member-grid .member-grid-container .member-grid-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .member-grid .member-grid-container .member-grid-item img {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  .member-grid .member-grid-container .member-grid-item:hover img {
+    transform: scale(1.03);
+  }
+  .member-grid .member-grid-container .block-btn {
+    display: block;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 40px;
+    color: #2b72ff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration-line: underline;
+  }
+}

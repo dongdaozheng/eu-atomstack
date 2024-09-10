@@ -1,0 +1,91 @@
+.presale-subscription .img {
+  position: relative;
+  width: 100%;
+  height: 878px;
+  display: block;
+  background: url(https://cdn.shopify.com/s/files/1/0790/2586/4977/files/mb-banner.jpg?v=1725329036) no-repeat center/cover;
+}
+.presale-subscription form {
+  position: absolute;
+  top: 691px;
+  background: #fff;
+  overflow: hidden;
+  display: block;
+  border-radius: 110.84px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  font-family: "Open Sans";
+}
+.presale-subscription form::placeholder {
+  color: #7e7e7e;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+}
+.presale-subscription form input {
+  width: 450px;
+  height: 60px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 110.84px 0px 0px 110.84px;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  padding: 20px;
+}
+.presale-subscription form input:focus {
+  border: none;
+  box-shadow: none;
+}
+.presale-subscription form button {
+  width: 150px;
+  border-radius: 0px 110.84px 110.84px 0px;
+  background: #2b72ff;
+  text-align: center;
+  color: #ffffff;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  height: 68px;
+  right: 0px !important;
+}
+.presale-subscription .content {
+  background: #000;
+  padding: 57px 0px;
+}
+.presale-subscription .content ul,
+.presale-subscription .content li {
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .presale-subscription .img {
+    width: 100%;
+    height: 144vw;
+    background: url(https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pc-banner.jpg?v=1725329036) no-repeat center/cover;
+  }
+  .presale-subscription form {
+    width: 90.6666666667vw;
+    top: 49.3333333333vw;
+  }
+  .presale-subscription form button {
+    width: 20vw;
+    font-size: 2.6666666667vw;
+  }
+  .presale-subscription form input {
+    width: 64vw;
+    height: 9.0666666667vw;
+    font-size: 2.6666666667vw;
+  }
+  .presale-subscription .content {
+    background: #000;
+    padding: 7.6vw 0px;
+  }
+  .presale-subscription .content ul,
+  .presale-subscription .content li {
+    color: #fff;
+    padding-left: 10px;
+  }
+}

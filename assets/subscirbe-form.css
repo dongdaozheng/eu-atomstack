@@ -1,0 +1,117 @@
+.subscirbe-form {
+  background: #f8f8f8;
+}
+.subscirbe-form p {
+  margin: 0;
+  padding: 0;
+}
+.subscirbe-form .title {
+  color: #333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.subscirbe-form .desc {
+  color: #333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media (min-width: 1000px) {
+  .subscirbe-form {
+    padding: 60px 0px;
+  }
+  .subscirbe-form .title {
+    font-size: 52px;
+    margin-bottom: 24px;
+  }
+  .subscirbe-form .desc {
+    font-size: 24px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .subscirbe-form .input {
+    height: 96px;
+    display: flex;
+  }
+  .subscirbe-form .input input {
+    flex: 1;
+    border-radius: 6px 0px 0px 6px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    background: #fff;
+    padding: 20px;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #333;
+  }
+  .subscirbe-form .input input::placeholder {
+    color: #ddd;
+  }
+  .subscirbe-form .input button {
+    width: 248px;
+    height: 100%;
+    border-radius: 0px 6px 6px 0px;
+    background: #2b72ff;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  .subscirbe-form .input button:hover {
+    opacity: 0.8;
+  }
+}
+@media (max-width: 1000px) {
+  .subscirbe-form {
+    padding: 8vw 0px;
+  }
+  .subscirbe-form .title {
+    font-size: 6.4vw;
+    margin-bottom: 3.2vw;
+  }
+  .subscirbe-form .desc {
+    font-size: 3.7333333333vw;
+    margin-bottom: 6.4vw;
+  }
+  .subscirbe-form .input {
+    flex-direction: column;
+  }
+  .subscirbe-form .input input {
+    border: 0.2666666667vw solid #ddd;
+    margin-bottom: 3.2vw;
+    padding: 5.3333333333vw;
+    font-family: "Open Sans";
+    font-size: 6.4vw;
+    font-style: normal;
+    font-weight: 700;
+    color: #333;
+    border-radius: 1.6vw;
+  }
+  .subscirbe-form .input input::placeholder {
+    color: #ddd;
+  }
+  .subscirbe-form .input button {
+    width: 100%;
+    height: 21.3333333333vw;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 6.4vw;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 1.6vw;
+    background: #2b72ff;
+  }
+}

@@ -1,0 +1,51 @@
+<link rel='stylesheet' href='{{ 'subscirbe-form.css' | asset_url }}'>
+
+<div class='subscirbe-form'>
+  <div class='container'>
+    <p class='title'>{{ section.settings.title }}</p>
+    <p class='desc'>{{ section.settings.description }}</p>
+    {%- form 'customer', id: 'footer-newsletter', class: 'newsletter-form form' -%}
+      {%- if form.posted_successfully? -%}
+        <div class='form__banner banner banner--success'>
+          <span class='banner__ribbon'>{% render 'icon' with 'form-success' %}</span>
+          <p class='banner__content'>{{ 'footer.newsletter.success' | t }}</p>
+        </div>
+      {%- else -%}
+        <div class='input'>
+          <input
+            type='email'
+            id='footer[contact][email]'
+            name='contact[email]'
+            placeholder='Please enter email'
+            autocomplete='off'
+            required
+          >
+          <button type='submit'>Sign Up</button>
+        </div>
+      {%- endif -%}
+    {%- endform -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "subscirbe-form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "subscirbe-form"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,117 @@
+.three-columns p {
+  margin: 0px;
+  padding: 0px;
+}
+.three-columns .title {
+  color: #333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.three-columns .content-title {
+  color: #333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.three-columns .content-desc {
+  color: #333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.three-columns img {
+  background: #ddd;
+}
+
+@media (min-width: 1000px) {
+  .three-columns {
+    background: #f8f8f8;
+    padding: 60px 0px;
+  }
+  .three-columns .title {
+    margin-bottom: 32px;
+    font-size: 52px;
+  }
+  .three-columns .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+  }
+  .three-columns .content {
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.3s ease;
+  }
+  .three-columns .content picture,
+  .three-columns .content img {
+    display: block;
+    width: 100%;
+    height: 464px;
+    object-fit: cover;
+  }
+  .three-columns .content:hover {
+    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.5);
+  }
+  .three-columns .content:hover .content-title,
+  .three-columns .content:hover .content-desc {
+    color: #2b72ff;
+  }
+  .three-columns .content-wrapper {
+    padding: 24px;
+  }
+  .three-columns .content-wrapper .content-title {
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  .three-columns .content-wrapper .content-desc {
+    margin-top: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-align: left;
+  }
+}
+@media (max-width: 1000px) {
+  .three-columns {
+    padding: 8vw 0px;
+    background: #f8f8f8;
+  }
+  .three-columns .title {
+    font-size: 6.4vw;
+    margin-bottom: 6.4vw;
+  }
+  .three-columns .content {
+    background: #fff;
+    border-radius: 1.6vw;
+    overflow: hidden;
+  }
+  .three-columns .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6.4vw;
+  }
+  .three-columns picture,
+  .three-columns img {
+    display: block;
+    width: 100%;
+    height: 91.2vw;
+    margin-bottom: 3.2vw;
+  }
+  .three-columns .content-title {
+    font-size: 4.2666666667vw;
+    margin-bottom: 1.3333333333vw;
+  }
+  .three-columns .content-desc {
+    font-size: 3.7333333333vw;
+    text-align: left;
+  }
+  .three-columns .content-wrapper {
+    padding: 3.2vw;
+  }
+}

@@ -1,0 +1,110 @@
+.home-form .title {
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1000px) {
+  .home-form {
+    background: #f1f2f4;
+    padding: 45px 0px;
+  }
+  .home-form .container {
+    display: flex;
+    column-gap: 96px;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-form .title {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+  .home-form form {
+    background: #fff;
+    overflow: hidden;
+    display: block;
+    border-radius: 110.84px;
+    width: 600px;
+    margin-top: 0px;
+    font-family: "Open Sans";
+  }
+  .home-form form::placeholder {
+    color: #7e7e7e;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+  }
+  .home-form form input {
+    width: 450px;
+    height: 60px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 110.84px 0px 0px 110.84px;
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    padding: 20px;
+  }
+  .home-form form input:focus {
+    border: none;
+    box-shadow: none;
+  }
+  .home-form form button {
+    width: 150px;
+    border-radius: 0px 110.84px 110.84px 0px;
+    background: #2b72ff;
+    text-align: center;
+    color: #ffffff;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    height: 68px;
+    right: 0px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .home-form {
+    padding: 5.3333333333vw 0px;
+    background-color: #f1f2f4;
+  }
+  .home-form .title {
+    font-size: 4.2666666667vw;
+    margin-bottom: 3.2vw;
+  }
+  .home-form form .input {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 13.3333333333vw;
+    overflow: hidden;
+  }
+  .home-form form .input input {
+    padding: 2.6666666667vw;
+    border: none;
+    height: 7.7333333333vw;
+    background-color: #ffffff;
+  }
+  .home-form form .input input:focus {
+    box-shadow: none;
+    border: none;
+  }
+  .home-form form .input button {
+    width: 19.2vw;
+    background-color: #2b72ff;
+    position: static;
+    height: 7.7333333333vw;
+    line-height: 8.2666666667vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4vw;
+    transform: none;
+    color: #fff;
+  }
+  .home-form form .input button::before {
+    display: none;
+  }
+}

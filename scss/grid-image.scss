@@ -1,0 +1,81 @@
+@function vw($px-vw, $base-vw: 750px) {
+  @return calc(($px-vw * 100vw) / $base-vw);
+}
+
+.grid-image {
+  .title {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .corner-mark {
+    position: absolute;
+    top: 0px;
+    background: url("corner-mark.png") no-repeat center/cover;
+    color: #fff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1000px) {
+  .grid-image {
+    .title {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .main-image {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 20px;
+    }
+    .content {
+      display: grid;
+      gap: 20px;
+    }
+    .item {
+      position: relative;
+      .corner-mark {
+        right: 10px;
+        width: 50px;
+        height: 47px;
+        font-size: 25.676px;
+        text-align: center;
+        line-height: 35px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .grid-image {
+    padding: vw(60px) 0px;
+    .title {
+      font-size: vw(56px);
+      margin-bottom: vw(20px);
+      text-align: left;
+    }
+    .main-image {
+      margin-bottom: vw(20px);
+    }
+    .content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: vw(20px);
+      .item {
+        position: relative;
+        .corner-mark {
+          right: vw(10px);
+          width: vw(50px);
+          height: vw(47px);
+          font-size: vw(24px);
+          text-align: center;
+          line-height: vw(35px);
+        }
+      }
+    }
+  }
+}

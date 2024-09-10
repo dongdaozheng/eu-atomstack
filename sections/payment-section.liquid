@@ -1,23 +1,22 @@
 <link rel='stylesheet' href='{{ 'payment-help.css' | asset_url }}'>
 
 <div class='payment-section'>
-  <div class='container'>
-    {% comment %} 侧边栏 {% endcomment %}
-    <div class='sidebar'>
-      <div class='line'>
-        <div class='line-block'></div>
-      </div>
-      <div class='link-wrapper'>
-        <a href='#payment-help'>Payment Help</a>
-        <a href='#payment-method'>Payment Method</a>
-        <div class='sub-node'>
-          <a href='#shopify-payments'>SHOPIFY PAYMENTS</a>
-          <a href='#klarna-installment'>Shop Pay & Klarna Installment</a>
-        </div>
-        <a href='#paypal'>PAYPAL</a>
-        <a href='#faqs'>FAQs</a>
-      </div>
+  <div class='sidebar'>
+    <div class='line'>
+      <div class='line-block'></div>
     </div>
+    <div class='link-wrapper'>
+      <a href='#payment-help'>Payment Help</a>
+      <a href='#payment-method'>Payment Method</a>
+      <div class='sub-node'>
+        <a href='#shopify-payments'>SHOPIFY PAYMENTS</a>
+        <a href='#klarna-installment'>Shop Pay & Klarna Installment</a>
+      </div>
+      <a href='#paypal'>PAYPAL</a>
+      <a href='#faqs'>FAQs</a>
+    </div>
+  </div>
+  <div class='container'>
     <div class='wrapper'>
       <div class='block'>
         <h2 id='payment-help'>Payment Help</h2>
@@ -92,32 +91,37 @@
   </div>
 </div>
 <script>
-  const sidebar = document.querySelector('.payment-section .sidebar');
-  const nodes = document.querySelectorAll('.payment-section .block h2,.payment-section .block h3, .update-faq .title');
-  const line = document.querySelector('.payment-section .line');
-  const links = sidebar.querySelectorAll('a');
-  const lineBlock = line.querySelector('.line-block');
-  line.style.height = `${sidebar.clientHeight}px`;
-  let clickIndex = 0;
-  links.forEach((item, index) => {
-    if (index === 0) {
-      item.classList.add('active');
-      lineBlock.style.height = `${item.clientHeight}px`;
-    }
-    item.addEventListener('click', () => {
-      links.forEach((link) => link.classList.remove('active'));
-      clickIndex = index;
-      item.classList.add('active');
-      lineBlock.style.transform = `translateY(${item.offsetTop}px)`;
-    });
-  });
-  window.addEventListener('scroll', () => {
-    nodes.forEach((node, index) => {
-      if (window.scrollY >= node.offsetTop + 500) {
-        links.forEach((link) => link.classList.remove('active'));
-        links[index].classList.add('active');
-        lineBlock.style.transform = `translateY(${links[index].offsetTop}px)`;
+  window.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.querySelector('.payment-section .sidebar');
+    const nodes = document.querySelectorAll('.payment-section .block h2,.payment-section .block h3,.update-faq .title');
+    const line = document.querySelector('.payment-section .line');
+    const links = sidebar.querySelectorAll('a');
+    const lineBlock = line.querySelector('.line-block');
+    const announcementBar = document.querySelector('announcement-bar');
+    const header = document.querySelector('store-header');
+    line.style.height = `${sidebar.clientHeight}px`;
+    let clickIndex = 0;
+
+    links.forEach((item, index) => {
+      if (index === 0) {
+        item.classList.add('active');
+        lineBlock.style.height = `${item.clientHeight}px`;
       }
+      item.addEventListener('click', () => {
+        links.forEach((link) => link.classList.remove('active'));
+        clickIndex = index;
+        item.classList.add('active');
+        lineBlock.style.transform = `translateY(${item.offsetTop}px)`;
+      });
+    });
+    window.addEventListener('scroll', () => {
+      nodes.forEach((node, index) => {
+        if (window.scrollY + 127 >= node.offsetTop) {
+          links.forEach((link) => link.classList.remove('active'));
+          links[index].classList.add('active');
+          lineBlock.style.transform = `translateY(${links[index].offsetTop}px)`;
+        }
+      });
     });
   });
 </script>

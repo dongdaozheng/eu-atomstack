@@ -1,0 +1,77 @@
+<link rel='stylesheet' href='{{ 'presale-subscription.css' | asset_url }}'>
+
+<div class='presale-subscription'>
+  <div class='img'>
+    <div class='footer__item-content'>
+      {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
+        {%- if form.posted_successfully? -%}
+          <div class='form__banner banner banner--success'>
+            <span class='banner__ribbon'>{% render 'icon' with 'form-success' %}</span>
+            <p class='banner__content'>{{ 'footer.newsletter.success' | t }}</p>
+          </div>
+        {%- else -%}
+          {% comment %}
+            {%- if form.errors -%}
+              <div class='form__banner banner banner--error'>
+                <span class='banner__ribbon'>{% render 'icon' with 'form-error' %}</span>
+                <p class='banner__content'>
+                  {{ form.errors.translated_fields.email }}
+                  {{ form.errors.messages.email }}
+                </p>
+              </div>
+            {%- endif -%}
+          {% endcomment %}
+
+          <div class='input'>
+            <input
+              type='email'
+              id='footer[contact][email]'
+              name='contact[email]'
+              class='input__field input__field--text'
+              placeholder='Please enter email'
+              autocomplete='off'
+              required
+            >
+            <button type='submit' class='input__submit-icon tap-area'>Subscribe</button>
+          </div>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
+  </div>
+
+  <div class='content'>
+    <div class='container'>
+      <ul>
+        1. Your Exclusive Benefits for Our Upcoming Launch:
+        <li>Priority Access — Be among the first to receive our revolutionary CO2 laser cutter.</li>
+        <li>Early Updates — Stay ahead with insider information and updates before the public launch.</li>
+      </ul>
+      <ul>
+        2. Stay tuned for the full reveal of ATOMSTACK Hurricane:
+        <li>9.2~9.12: Sneak Peek</li>
+        <li>9.12~10.12: Pre-order</li>
+        <li>10.13~10.23: Final Payment</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+  
+</script>
+{% schema %}
+{
+  "name": "presale-subscription",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "presale-subscription"
+    }
+  ]
+}
+{% endschema %}

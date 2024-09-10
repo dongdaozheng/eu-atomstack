@@ -4,10 +4,9 @@
 
 @media (min-width: 1000px) {
   .update-faq {
+    padding: 60px 0px;
     .container {
-      padding-left: 330px;
       h2.title {
-        margin-top: 120px !important;
         color: #333;
         font-family: "Open Sans";
         font-size: 52px;
@@ -15,6 +14,7 @@
         font-weight: 700;
         line-height: normal;
         margin-bottom: 44px;
+        text-align: center;
       }
       .faq__item .collapsible-toggle,
       .collapsible__content {
@@ -22,16 +22,19 @@
         padding-right: 0px;
       }
       button {
-        color: #2b72ff;
         font-family: "Open Sans";
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
+        &[aria-expanded="true"] {
+          color: #2b72ff;
+        }
       }
       .text-container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         column-gap: 23px;
+        flex-direction: column;
         span {
           font-family: "Open Sans";
           font-size: 24px;
@@ -40,13 +43,13 @@
           color: #333333;
         }
         p {
-          margin-top: 3px;
           font-family: "Open Sans";
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
           color: #666;
+          text-align: left;
         }
       }
     }
@@ -54,12 +57,24 @@
 }
 @media (max-width: 1000px) {
   .update-faq {
+    padding: vw(60px) 0px;
     h2.title {
       text-align: center;
-      margin-top: 20px !important;
+      font-family: "Open Sans";
+    }
+    p {
+      text-align: left;
+    }
+    .faq__item {
+      padding-left: 0px;
+      padding-right: 0px;
     }
     button {
-      color: #2b72ff;
+      font-family: "Open Sans";
+
+      &[aria-expanded="true"] {
+        color: #2b72ff;
+      }
     }
   }
 }

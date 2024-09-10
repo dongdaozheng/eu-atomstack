@@ -18,7 +18,7 @@
             "include_variant_name": false
           }
         },
-        "smile_io_smile_points_on_product_page_4HWkNn": {
+        "smile_io_smile_points_on_product_page_y4RtYp": {
           "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
           "settings": {
             "primary_colour": "#121212",
@@ -93,10 +93,45 @@
             "image_uploader_label": "<p>Drag & Drop your image or <span style=\"text-decoration:underline\">Browse<\/span> <\/p>"
           }
         },
+        "estimated_delivery_date_plus_delivery_coder_theme_fDNCfx": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
+          }
+        },
         "liquid_mwMhRG": {
           "type": "liquid",
           "settings": {
             "liquid": "<style>\n.svg-icon{display:inline !important;\nfill:#2c2c2c;}\n.file-download {border: 1px solid #c2c2c2; border-radius:4px;color:#2c2c2c; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:23px;padding:4px 10px;margin-right:8px;display:inline-flex;align-items:center;}\n.file-download:hover {border: 1px solid #285ee6;color: #285ee6;}\n.file-download:hover .svg-icon{fill:#285EE6 !important;}\n<\/style>\n<div><a class=\"file-download\" href=\"{{ product.metafields.custom.user_guides.value }}\"><svg t=\"1712050487506\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"4428\" width=\"16\" height=\"16\"><path d=\"M332.32 464.112l144 160a47.952 47.952 0 0 0 71.36 0l144-160a48 48 0 0 0-71.36-64.224L560 466.912V176a48 48 0 1 0-96 0v290.912l-60.32-67.024a48 48 0 1 0-71.36 64.224zM880 560a48 48 0 0 0-48 48v192H192V608a48 48 0 1 0-96 0v240a48 48 0 0 0 48 48h736a48 48 0 0 0 48-48V608a48 48 0 0 0-48-48z\" p-id=\"4429\"><\/path><\/svg>&nbsp;A48 Pro User Guides<\/a>\n<a class=\"file-download\" href=\"{{ product.metafields.custom.installation_manual.value }}\"><svg t=\"1712050487506\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"4428\" width=\"16\" height=\"16\"><path d=\"M332.32 464.112l144 160a47.952 47.952 0 0 0 71.36 0l144-160a48 48 0 0 0-71.36-64.224L560 466.912V176a48 48 0 1 0-96 0v290.912l-60.32-67.024a48 48 0 1 0-71.36 64.224zM880 560a48 48 0 0 0-48 48v192H192V608a48 48 0 1 0-96 0v240a48 48 0 0 0 48 48h736a48 48 0 0 0 48-48V608a48 48 0 0 0-48-48z\" p-id=\"4429\"><\/path><\/svg>&nbsp;B3 Installation Manual<\/a>\n<\/div>"
+          }
+        },
+        "mega_better_price_app_block_wpPnNx": {
+          "type": "shopify:\/\/apps\/mega-better-price\/blocks\/app-block\/7a5fb689-a902-4695-8f78-75bdd89e88e7",
+          "settings": {
+            "buttonType": "link",
+            "buttonText": "Found a better price on another site?",
+            "text_align": "left",
+            "overlay": true,
+            "animation": false,
+            "fontColor": "#c82424",
+            "bannerBackground": "#1c8e6e",
+            "popupFooterColor": "#4a4a4a",
+            "fontSize": 14,
+            "buttonWidth": 100,
+            "minPriceEnabled": false,
+            "minPrice": 0
+          }
+        },
+        "f141e0c6-598b-4112-a2e9-ea1b020d3db9": {
+          "type": "shopify:\/\/apps\/loloyal-com\/blocks\/boom-embed\/930ac91f-2bf2-4655-9ba0-574771f782d6",
+          "disabled": true,
+          "settings": {
+            "bm_span_value": "Get: {Points} points by buying this item, every 100 points worth $2 USD.",
+            "bm_span_font_color": "#2e9e7b",
+            "bm_span_font_size": 15,
+            "bm_span_font_weight": "600",
+            "bm_div_justify_content": "center",
+            "bm_span_flash_status": "visible",
+            "bm_span_flash_color": "linear-gradient(180deg, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 0.5) 100%)"
           }
         },
         "list_delivery_free_return": {
@@ -127,7 +162,7 @@
       },
       "block_order": [
         "meta",
-        "smile_io_smile_points_on_product_page_4HWkNn",
+        "smile_io_smile_points_on_product_page_y4RtYp",
         "image_ax8Att",
         "71d1f91a-419d-41fd-8f48-7093f643bd53",
         "b1721951-efc2-40a7-a703-ce64f2bd4239",
@@ -135,7 +170,10 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "estimated_delivery_date_plus_delivery_coder_theme_fDNCfx",
         "liquid_mwMhRG",
+        "mega_better_price_app_block_wpPnNx",
+        "f141e0c6-598b-4112-a2e9-ea1b020d3db9",
         "list_delivery_free_return",
         "a33b0886-6286-4ee7-af11-9ff9ba4f6c4a"
       ],
@@ -147,7 +185,7 @@
         "show_vendor": false,
         "show_sku": false,
         "show_taxes_included": false,
-        "show_product_rating": false,
+        "show_product_rating": true,
         "show_sticky_add_to_cart": true,
         "show_sticky_quick_buy": false,
         "show_share_buttons": false,
@@ -162,6 +200,23 @@
         "desktop_thumbnails_position": "bottom",
         "shadow_effect": "large",
         "transition_effect": "slide"
+      }
+    },
+    "1725438123f4505789": {
+      "type": "apps",
+      "blocks": {
+        "selleasy_lb_upsell_fbt_block_4Ugm86": {
+          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "selleasy_lb_upsell_fbt_block_4Ugm86"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
       }
     },
     "image_link_pAGF4i": {
@@ -318,7 +373,7 @@
           "type": "liquid",
           "settings": {
             "title": "Reviews",
-            "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"
+            "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
           }
         }
       },
@@ -338,12 +393,41 @@
         "mobile_bottom_padding": 0
       }
     },
-    "image_link_WjWMwm": {
-      "type": "image-link",
+    "slideshow_LGwREA": {
+      "type": "slideshow",
+      "blocks": {
+        "image_anfqcF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/one_tree_planted.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/one_tree_pleanted-02.jpg",
+            "text_position": "middle_center",
+            "mobile_text_position": "inherit",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_anfqcF"
+      ],
       "settings": {
-        "pc_img": "shopify:\/\/shop_images\/1920-650_2x_8ee3bbb6-79ed-4002-9379-24b1f3ae1478.jpg",
-        "mb_img": "shopify:\/\/shop_images\/850-1212_2x_74f371a9-28fa-4c83-9521-683f475f78df.jpg",
-        "link": ""
+        "section_height": "auto",
+        "background_type": "full_width",
+        "transition_type": "sweep",
+        "autoplay": false,
+        "cycle_speed": 20,
+        "background": "rgba(0,0,0,0)"
       }
     },
     "product-recommendations": {
@@ -367,10 +451,11 @@
   },
   "order": [
     "main",
+    "1725438123f4505789",
     "image_link_pAGF4i",
     "video_carousel_Qrx4TN",
     "product-content",
-    "image_link_WjWMwm",
+    "slideshow_LGwREA",
     "product-recommendations"
   ]
 }

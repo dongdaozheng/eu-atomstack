@@ -1,0 +1,66 @@
+<link rel='stylesheet' href='{{ 'grid-image-text.css' | asset_url }}'>
+
+<div class='grid-image-text'>
+  <p class='title'>{{ section.settings.title }}</p>
+  <div class='container'>
+    {% for block in section.blocks %}
+      <div class='grid-item'>
+        <img src='{{ block.settings.image | image_url }}' alt='' width='100%' height='100%'>
+        <div class='content'>
+          <div class='account'>
+            <img src='{{ block.settings.image_account | image_url }}' alt='' width='100%' height='100%'>
+            <p class='account-title'>{{ block.settings.title }}</p>
+          </div>
+          <p class='desc'>{{ block.settings.desc }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "grid-image-text",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "grid",
+      "name": "grid",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "text",
+          "id": "desc",
+          "label": "desc"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_account",
+          "label": "image account"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "grid-image-text"
+    }
+  ]
+}
+{% endschema %}

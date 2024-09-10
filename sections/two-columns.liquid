@@ -1,0 +1,49 @@
+<link rel='stylesheet' href='{{ 'two-columns.css' | asset_url }}'>
+
+<div class='two-columns'>
+  <p class='title'>{{ section.settings.title }}</p>
+  <div class='container'>
+    {% for block in section.blocks %}
+      <div class='content'>
+        <p class='content-title'>{{ block.settings.title }}</p>
+        <div class='content-desc'>{{ block.settings.desc }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "two-columns",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "text",
+          "id": "desc",
+          "label": "desc"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "two-columns"
+    }
+  ]
+}
+{% endschema %}

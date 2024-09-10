@@ -12,3 +12,5 @@ development:
     - scss
     - gulpfile.js
     - DS_Store
+    - .vscode
+    - sitemap

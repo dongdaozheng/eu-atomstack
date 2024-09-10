@@ -1,175 +1,239 @@
-<desktop-navigation>
-  <ul
-    class='header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %} live'
-    role='list'
-  >
-    {%- for link in menu.links -%}
-      {%- assign link_title_downcase = link.title | strip | downcase -%}
-      {%- assign mega_menu_block = '' -%}
-      {%- assign mega_menu_images = '' -%}
+<desktop-navigation class='nav'>
+  <ul class='nav-bar'>
+    <li class='product'>
+      Product
+      <div class='container-wrapper'>
+        <div class='container'>
+          <div class='left'>
+            <ul class='list'>
+              {% for block in section.blocks %}
+                {% if block.type == 'menu-product' %}
+                  <li>
+                    <img width='100%' height='100%' src='{{ block.settings.product_bar_img | image_url}}' alt=''>
+                    <p>{{ block.settings.product_type }}</p>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          <div class='right'>
+            {% for block in section.blocks %}
+              {% if block.type == 'menu-product' %}
+                <div class='product-wrapper '>
+                  {%- capture item -%}
+                {%- for i in (1..block.settings.product_grid_columns) -%}
+                {%- capture product_url -%}product_url_{{ i }}{%- endcapture -%}
+                {%- capture product_image -%}product_image_{{ i }}{%- endcapture -%}
+                {%- capture product_name -%}product_name_{{ i }}{%- endcapture -%}
+                {%- capture product_desc -%}product_desc_{{ i }}{%- endcapture -%}
+                {% if  block.settings[product_name] != blank %}
+                  <a href="{{ block.settings[product_url] }}" >
+                    <img src="{{ block.settings[product_image] | image_url }}" class='item-image' loading="lazy" alt="" width="100%" height="100%">
+                    <p class="item-name">{{ block.settings[product_name]}}</p>
+                    <p class="item-desc">{{block.settings[product_desc] }}</p>
+                  </a> 
+                  {% endif %} 
+                {%- endfor -%}
+              {%- endcapture -%}
 
-      {%- for block in section.blocks -%}
-        {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
-
-        {%- if menu_item_downcase == link_title_downcase -%}
-          {%- assign mega_menu_block = block -%}
-          {%- break -%}
-        {%- endif -%}
-      {%- endfor -%}
-
-      <li
-        class='header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}'
-        data-item-title='{{ link.title | escape }}'
-      >
-        <a
-          class='header__linklist-link link--animated'
-          href='{{ link.url }}'
-          {% if link.links.size > 0 or mega_menu_block != '' %}
-            aria-controls='desktop-menu-{{ forloop.index }}' aria-expanded='false'
-          {% endif %}
-        >
-          {{- link.title -}}
-          {% if link.links.size > 0 or mega_menu_images != blank %}
-            {%- render 'icon' with 'chevron', width: 9, height: 6, inline: true -%}
-          {% endif %}
-        </a>
-
-        {%- if mega_menu_block != '' -%}
-          {%- assign images_count = 0 -%}
-
-          {%- capture mega_menu_images -%}
-            {%- for i in (1..6) -%}
-              {%- capture image_setting -%}image_{{ i }}{%- endcapture -%}
-
-              {%- if mega_menu_block.settings[image_setting] != blank -%}
-                {%- assign images_count = images_count | plus: 1 -%}
-
-                {%- capture image_heading_setting -%}image_{{ i }}_heading{%- endcapture -%}
-                {%- capture image_text_setting -%}image_{{ i }}_text{%- endcapture -%}
-                {%- capture image_link_setting -%}image_{{ i }}_link{%- endcapture -%}
-
-                {%- capture image_push -%}
-                  <div class="mega-menu__image-wrapper">
-                    <img class="mega-menu__image" loading="lazy" sizes="240px" {% render 'image-attributes', image: mega_menu_block.settings[image_setting], sizes: '240,480,720' %}>
-                  </div>
-
-                  {%- if mega_menu_block.settings[image_heading_setting] != '' -%}
-                    <p class="mega-menu__heading heading heading--small">{{ mega_menu_block.settings[image_heading_setting] }}</p>
-                  {%- endif -%}
-
-                  {%- if mega_menu_block.settings[image_text_setting] != '' -%}
-                    <span class="mega-menu__text">{{ mega_menu_block.settings[image_text_setting] }}</span>
-                  {%- endif -%}
-                {%- endcapture -%}
-
-                {%- if mega_menu_block.settings[image_link_setting] != blank -%}
-                  <a href="{{ mega_menu_block.settings[image_link_setting] }}" class="mega-menu__image-push image-zoom">
-                    {{- image_push -}}
-                  </a>
-                {%- else -%}
-                  <div class="mega-menu__image-push image-zoom">
-                    {{- image_push -}}
-                  </div>
-                {%- endif -%}
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endcapture -%}
-
-          {%- if link.links.size > 0 or mega_menu_images != blank -%}
-            <div
-              hidden
-              id='desktop-menu-{{ forloop.index }}'
-              class='mega-menu'
-              {{ mega_menu_block.shopify_attributes }}
-            >
-              <div class='container'>
-                <div class='mega-menu__inner'>
-                  {%- if mega_menu_block.settings.images_position == 'left' and mega_menu_images != blank -%}
-                    <div class='mega-menu__images-wrapper {% if images_count >= 3 %}mega-menu__images-wrapper--tight{% endif %}'>
-                      {{- mega_menu_images -}}
+                  {% if item != blank %}
+                    <div class='top'>
+                      <p>{{ block.settings.product_type }}</p>
+                      <a href='{{ block.settings.product_view}}'>View All</a>
                     </div>
-                  {%- endif -%}
 
-                  {%- if link.links.size > 0 -%}
-                    <div class='mega-menu__columns-wrapper'>
-                      {%- for sub_link in link.links -%}
-                        <div class='mega-menu__column'>
-                          {%- if sub_link.url == '#' -%}
-                            <span class='mega-menu__title heading heading--small'>{{ sub_link.title }}</span>
-                          {%- else -%}
-                            <a href='{{ sub_link.url }}' class='mega-menu__title heading heading--small'>
-                              {{- sub_link.title -}}
-                            </a>
-                          {%- endif -%}
-
-                          {%- if sub_link.links.size > 0 -%}
-                            <ul class='linklist list--unstyled' role='list'>
-                              {%- for sub_sub_link in sub_link.links -%}
-                                <li class='linklist__item'>
-                                  <a href='{{ sub_sub_link.url }}' class='link--faded'>{{ sub_sub_link.title }}</a>
-                                </li>
-                              {%- endfor -%}
-                            </ul>
-                          {%- endif -%}
-                        </div>
-                      {%- endfor -%}
+                    <div
+                      class='menu-product'
+                    >
+                      {{ item }}
                     </div>
-                  {%- endif -%}
-
-                  {%- if mega_menu_block.settings.images_position == 'right' and mega_menu_images != blank -%}
-                    <div class='mega-menu__images-wrapper {% if images_count >= 3 %}mega-menu__images-wrapper--tight{% endif %}'>
-                      {{- mega_menu_images -}}
-                    </div>
-                  {%- endif -%}
-                </div>
-              </div>
-            </div>
-          {%- endif -%}
-        {%- elsif link.links.size > 0 -%}
-          <ul
-            hidden
-            id='desktop-menu-{{ forloop.index }}'
-            class='nav-dropdown {% if link.levels == 1 %}nav-dropdown--restrict{% endif %} list--unstyled'
-            role='list'
-          >
-            {%- for sub_link in link.links -%}
-              <li class='nav-dropdown__item {% if sub_link.links.size > 0 %}has-dropdown{% endif %}'>
-                <a
-                  class='nav-dropdown__link link--faded'
-                  href='{{ sub_link.url }}'
-                  {% if sub_link.links.size > 0 %}
-                    aria-controls='desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}'
-                    aria-expanded='false'
                   {% endif %}
-                >
-                  {{- sub_link.title -}}
 
-                  {%- if sub_link.links.size > 0 -%}
-                    {% render 'icon' with 'dropdown-arrow-right', direction_aware: true %}
-                  {%- endif -%}
-                </a>
+                  <div class='product-collection'>
+                    <div class='top'>
+                      <p>{{ block.settings.product_accessories_type }}</p>
+                      <a href='{{ block.settings.product_accessories_view }}'>View All</a>
+                    </div>
+                    {%- assign collection_handle = block.settings.collection -%}
+                    {% assign collection = collections[collection_handle] %}
 
-                {%- if sub_link.links.size > 0 -%}
-                  <ul
-                    hidden
-                    id='desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}'
-                    class='nav-dropdown list--unstyled'
-                    role='list'
-                  >
-                    {%- for sub_sub_link in sub_link.links -%}
-                      <li class='nav-dropdown__item'>
-                        <a class='nav-dropdown__link link--faded' href='{{ sub_sub_link.url }}'>
-                          {{- sub_sub_link.title -}}
-                        </a>
-                      </li>
-                    {%- endfor -%}
-                  </ul>
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
+                    <ul class='collection-list'>
+                      {% for product in collection.products %}
+                        <li>
+                          <a href='/products/{{ product.handle }}'>
+                            <img
+                              src='{{ product.featured_image | image_url }}'
+                              class='item-image'
+                              loading='lazyt'
+                              width='100%'
+                              height='100%'
+                            >
+                            <p class='item-name'>{{ product.title }}</p>
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class='accessories'>
+      Accessories
+      <div class='container-wrapper'>
+        <div class='container'>
+          <div class='left'>
+            <ul class='list'>
+              {% for block in section.blocks %}
+                {% if block.type == 'menu-accessories' %}
+                  <li>
+                    {{ block.settings.product_type }}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          <div class='right'>
+            {% for block in section.blocks %}
+              {% if block.type == 'menu-accessories' %}
+                <div class='product-wrapper '>
+                  <div class='product-collection'>
+                    <div class='top'>
+                      <p>{{ block.settings.product_type }}</p>
+                      <a href='{{ block.settings.product_view}}'>View All</a>
+                    </div>
+                    {%- assign collection_handle = block.settings.collection -%}
+                    {% assign collection = collections[collection_handle] %}
+
+                    <ul class='collection-list'>
+                      {% for product in collection.products %}
+                        <li>
+                          <a href='/products/{{ product.handle }}'>
+                            <img
+                              src='{{ product.featured_image | image_url }}'
+                              class='item-image'
+                              loading='lazyt'
+                              width='100%'
+                              height='100%'
+                            >
+                            <p class='item-name'>{{ product.title }}</p>
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </li>
+    {% comment %} <li class='materials'><a href=''>Materials</a></li> {% endcomment %}
+    <li class='solution'>
+      Solution
+      <div class='container-wrapper'>
+        <div class='container'>
+          <ul>
+            <li><a href='https://atomstack.com/pages/small-business'>Small business</a></li>
+            {% comment %}
+              <li><a href=''>Small business</a></li>
+              <li><a href=''>Small business</a></li>
+            {% endcomment %}
           </ul>
-        {%- endif -%}
-      </li>
-    {%- endfor -%}
+        </div>
+      </div>
+    </li>
+    <li class='learn'>
+      Learn
+      <div class='container-wrapper'>
+        <div class='container'>
+          <ul>
+            <p class='learn-title'>
+              {% render 'svg-1' %}
+              For beginner
+            </p>
+            <li><a href='https://atomstack.com/pages/beginner-guide'>Beginner Guide</a></li>
+          </ul>
+          <div class='segmentation'></div>
+
+          <ul>
+            <p class='learn-title'>
+              {% render 'svg-2' %}
+              Download
+            </p>
+            <li>
+              <a href='/pages/software-guide'>Software Guide</a>
+            </li>
+            <li><a href='/pages/machine-guide'>Machine Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class='support'>
+      Support
+      <div class='container-wrapper'>
+        <div class='container'>
+          <ul>
+            <p>Explore Support</p>
+            <li><a href=''>Hurricane</a></li>
+            <li><a href=''>Max</a></li>
+            <li><a href=''>Ace Pro V2</a></li>
+            <li><a href=''>Unibody Laser</a></li>
+            <li><a href=''>Pro</a></li>
+          </ul>
+          <ul>
+            <p>Hlep Center</p>
+            <li><a href='/pages/product-support'>Product Support</a></li>
+            <li><a href='/pages/model-comparison'>Machine Comparison</a></li>
+            <li><a href='/pages/atomstack-studio-software'>Softwrare</a></li>
+            <li><a href='/pages/payment-help'>Paryrnent Help</a></li>
+            <li><a href='/pages/faqs'>FAQ</a></li>
+          </ul>
+          <ul>
+            <p>Material Setting</p>
+            <li><a href='/pages/material-setting'>material setting</a></li>
+          </ul>
+          <ul>
+            <p>Order Tracking</p>
+            <li><a href='/tools/order_tracking'>order tracking</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class='community'>
+      Community
+      <div class='container-wrapper'>
+        <div class='wrapper-content'>
+          <div class='left'>
+            <img src='{{ 'official.png' |  asset_url  }}' alt='' width='100%' height='100%'>
+            <p class='title'>Facebook Official Groups</p>
+            <p class='desc'>Stay up to date with the latest news and brand events.</p>
+            <div class='btn'>
+              <a
+                href='https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fatomstack3d'
+                target='_blank'
+              >
+                Join
+              </a>
+            </div>
+          </div>
+          <div class='line-community'></div>
+          <div class='right'>
+            <img src='{{ 'reddit.png' |  asset_url  }}' alt='' width='100%' height='100%'>
+            <p class='title'>r/AtomstackLaser</p>
+            <p class='desc'>Join the official atomstack community on reddit.</p>
+            <div class='btn'>
+              <a href='https://www.reddit.com/r/AtomstackLaser/' target='_blank'>Join</a>
+            </div>
+          </div>
+        </div>
+        <p class='subtitle'>Connect with like-minded friends and get help through the community.</p>
+      </div>
+    </li>
+    <div class='line'></div>
   </ul>
 </desktop-navigation>

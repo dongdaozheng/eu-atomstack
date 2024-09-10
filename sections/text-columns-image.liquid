@@ -1,0 +1,94 @@
+<link rel='stylesheet' href='{{ 'text-columns-image.css' | asset_url }}'>
+
+<div class='text-columns-image'>
+  <p class='title'>{{ section.settings.title }}</p>
+
+  <div class='container'>
+    {% for block in section.blocks %}
+      <div class='column'>
+        <p class='column-title'>{{ block.settings.title }}</p>
+        {{ block.settings.li }}
+      </div>
+    {% endfor %}
+
+    <div class='image'>
+      <picture>
+        <source media='(max-width: 1000px)' srcset='{{ section.settings.mb_img | image_url}}'>
+        <source media='(min-width: 1000px)' srcset='{{ section.settings.pc_img | image_url}}'>
+        <img
+          src='{{ section.settings.pc_img | image_url }}'
+          alt='img'
+          width='100%'
+          height='100%'
+        >
+      </picture>
+      <div class='image-content'>
+        <p>{{ section.settings.image_title }}</p>
+        <a href='{{ section.settings.link }}'>
+          learn more
+          <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'>
+            <path d="M5.5 5.5L11 11L5.5 16.5" stroke="#2B72FF" stroke-width="0.916667" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 5.5L16.5 11L11 16.5" stroke="#2B72FF" stroke-width="0.916667" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "text-columns-image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    },
+    {
+      "type": "image_picker",
+      "id": "pc_img",
+      "label": "PC Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_img",
+      "label": "MB Image"
+    },
+    {
+      "type": "text",
+      "id": "image_title",
+      "label": "image title"
+    },
+    {
+      "type": "text",
+      "id": "link",
+      "label": "link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "content",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "html",
+          "id": "li",
+          "label": "list"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "text-columns-image"
+    }
+  ]
+}
+{% endschema %}

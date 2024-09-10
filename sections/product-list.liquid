@@ -10,19 +10,23 @@
             <div class='swiper-slide'>
               <div class='tip'>{{ block.settings.tip }}</div>
               <div class='product__img'>
-                <picture>
-                  <source media='(max-width: 1000px)' srcset='{{ block.settings.mb_img | image_url}}'>
-                  <source media='(min-width: 1000px)' srcset='{{ block.settings.pc_img | image_url}}'>
-                  <img
-                    src='{{ section.settings.pc_img | image_url }}'
-                    alt='img'
-                    width='100%'
-                    height='100%'
-                  >
-                </picture>
+                <a href='{{ block.settings.link }}' target='_blank'>
+                  <picture>
+                    <source media='(max-width: 1000px)' srcset='{{ block.settings.mb_img | image_url}}'>
+                    <source media='(min-width: 1000px)' srcset='{{ block.settings.pc_img | image_url}}'>
+                    <img
+                      src='{{ block.settings.pc_img | image_url }}'
+                      alt='img'
+                      width='100%'
+                      height='100%'
+                    >
+                  </picture>
+                </a>
               </div>
               <div class='product__content'>
-                <h3 class='product__title'>{{ block.settings.title }}</h3>
+                <a href='{{ block.settings.link }}' target='_blank'>
+                  <h3 class='product__title'>{{ block.settings.title }}</h3>
+                </a>
                 <p class='product__desc'>{{ block.settings.desc }}</p>
                 <div class='price'>
                   <span class='price__current'>{{ block.settings.product.price | money }}</span>
@@ -81,6 +85,11 @@
       "type": "column",
       "name": "product",
       "settings": [
+        {
+          "type": "text",
+          "id": "link",
+          "label": "link"
+        },
         {
           "type": "product",
           "id": "product",

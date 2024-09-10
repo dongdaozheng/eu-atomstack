@@ -1,0 +1,125 @@
+@function vw($px-vw, $base-vw: 750px) {
+  @return calc(($px-vw * 100vw) / $base-vw);
+}
+.swiper-showcase {
+  .title {
+    color: #333;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .content-desc {
+    color: #333;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  img {
+    background: #ddd;
+  }
+  .container {
+    display: flex;
+  }
+}
+@media (min-width: 1000px) {
+  .swiper-showcase {
+    padding: 60px 0px;
+    .title {
+      font-size: 52px;
+      margin-bottom: 32px;
+    }
+    .bar-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      row-gap: 20px;
+      border-right: 1px solid #dddddd;
+    }
+    .content-title {
+      display: none;
+    }
+    .bar-text {
+      color: #333;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      cursor: pointer;
+    }
+    .active .bar-text {
+      color: #2b72ff;
+    }
+    .container {
+      display: flex;
+      column-gap: 20px;
+      .bar-wrapper {
+        flex-shrink: 0;
+        width: 340px;
+      }
+      .content-wrapper {
+        flex: 1;
+        .content-img {
+          margin-bottom: 20px;
+        }
+        .content {
+          display: none;
+          &.active {
+            display: block;
+          }
+        }
+        picture,
+        img {
+          height: 220px;
+          display: block;
+        }
+        .content-desc {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .swiper-showcase {
+    padding: vw(120px) 0px;
+    .title {
+      font-size: vw(48px);
+      margin-bottom: vw(48px);
+    }
+    .container {
+      display: flex;
+      .bar-wrapper {
+        display: none;
+      }
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: vw(24px);
+        picture,
+        img {
+          width: 100%;
+          height: vw(440px);
+          margin-bottom: vw(24px);
+          display: block;
+        }
+        .content-title {
+          color: #333;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: vw(32px);
+          font-style: normal;
+          font-weight: 400;
+        }
+        .content-desc {
+          font-size: vw(28px);
+        }
+      }
+    }
+  }
+}

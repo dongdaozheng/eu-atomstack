@@ -1,0 +1,40 @@
+<link rel='stylesheet' href='{{ 'home-form.css' | asset_url }}'>
+
+<div class='home-form'>
+  <div class='container'>
+    <p class='title'>GET IN TOUCH WITH US:</p>
+    <div class='form'>
+      {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
+        {%- if form.posted_successfully? -%}
+          <div class='form__banner banner banner--success'>
+            <span class='banner__ribbon'>{% render 'icon' with 'form-success' %}</span>
+            <p class='banner__content'>{{ 'footer.newsletter.success' | t }}</p>
+          </div>
+        {%- else -%}
+          <div class='input'>
+            <input
+              type='email'
+              id='footer[contact][email]'
+              name='contact[email]'
+              class='input__field input__field--text'
+              placeholder='Please enter email'
+              autocomplete='off'
+              required
+            >
+            <button type='submit' class='input__submit-icon tap-area'>Subscribe</button>
+          </div>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "home-form",
+  "presets": [
+    {
+      "name": "home-form"
+    }
+  ]
+}
+{% endschema %}

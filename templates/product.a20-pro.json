@@ -18,6 +18,15 @@
             "include_variant_name": false
           }
         },
+        "smile_io_smile_points_on_product_page_UXkPEN": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#121212",
+            "secondary_colour": "#f8f8f8",
+            "should_show_icon": true,
+            "earning_rate": 2
+          }
+        },
         "image_yPDTq4": {
           "type": "image",
           "disabled": true,
@@ -141,6 +150,7 @@
       },
       "block_order": [
         "meta",
+        "smile_io_smile_points_on_product_page_UXkPEN",
         "image_yPDTq4",
         "18801782-72cd-4434-9ed2-385b4c820362",
         "b393127c-5eb8-47ff-9091-82aad84eea7f",
@@ -167,7 +177,7 @@
         "show_vendor": false,
         "show_sku": false,
         "show_taxes_included": false,
-        "show_product_rating": false,
+        "show_product_rating": true,
         "show_sticky_add_to_cart": true,
         "show_sticky_quick_buy": false,
         "show_share_buttons": false,
@@ -186,6 +196,7 @@
     },
     "image_link_ikXnpP": {
       "type": "image-link",
+      "disabled": true,
       "settings": {
         "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
         "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
@@ -455,8 +466,8 @@
         "image_KMd4ij": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_e8112873-b4f5-4710-8e0e-e16aec88e26c.jpg",
+            "image": "shopify:\/\/shop_images\/one_tree_planted.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/one_tree_pleanted-02.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",

@@ -1,0 +1,133 @@
+<link rel='stylesheet' href='{{ 'grid-image.css' | asset_url }}'>
+<div class='grid-image grid-image-{{ section.id }}'>
+  <div class='container'>
+    <div class='title'>{{ section.settings.title }}</div>
+    {% if section.settings.pc_img != blank %}
+      <div class='main-image'>
+        <picture>
+          <source media='(max-width: 1000px)' srcset='{{ section.settings.mb_img | image_url}}'>
+          <source media='(min-width: 1000px)' srcset='{{ section.settings.pc_img | image_url}}'>
+          <img
+            src='{{ section.settings.pc_img | image_url }}'
+            alt='img'
+            width='100%'
+            height='100%'
+            loading='lazy'
+          >
+        </picture>
+      </div>
+    {% endif %}
+    <div class='content'>
+      {% for block in section.blocks %}
+        <div class='item'>
+          <picture>
+            <source media='(max-width: 1000px)' srcset='{{ block.settings.mb_img | image_url}}'>
+            <source media='(min-width: 1000px)' srcset='{{ block.settings.pc_img | image_url}}'>
+            <img
+              src='{{ block.settings.pc_img | image_url }}'
+              alt='img'
+              width='100%'
+              height='100%'
+              loading='lazy'
+            >
+          </picture>
+          <div class='corner-mark'>{{ block.settings.corner_mark }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+  @media (min-width: 1000px) {
+    .grid-image-{{ section.id }} {
+      padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+    }
+    .grid-image-{{ section.id }} .content {
+        grid-template-columns: repeat({{ section.settings.grid_columns }}, 1fr);
+        grid-template-rows: repeat({{ section.settings.grid_rows }}, 1fr);
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "grid-image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "pc_img",
+      "label": "PC Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_img",
+      "label": "MB Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 10,
+      "unit": "px",
+      "label": "padding top",
+      "default": 150
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 160,
+      "step": 10,
+      "unit": "px",
+      "label": "padding bottom",
+      "default": 150
+    },
+    {
+      "type": "number",
+      "id": "grid_columns",
+      "label": "grid columns",
+      "default": 6
+    },
+    {
+      "type": "number",
+      "id": "grid_rows",
+      "label": "grid rows",
+      "default": 2
+    }
+  ],
+  "blocks": [
+    {
+      "type": "grid",
+      "name": "grid",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "pc_img",
+          "label": "PC Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mb_img",
+          "label": "MB Image"
+        },
+        {
+          "type": "text",
+          "id": "corner_mark",
+          "label": "Corner mark",
+          "default": "$99"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "grid-image"
+    }
+  ]
+}
+{% endschema %}

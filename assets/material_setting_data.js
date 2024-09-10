@@ -1,377 +1,5 @@
 var jsonData = {
-  A30Pro: [
-    {
-      name: 'Basswood',
-      software: 'LightBurn',
-      thickness: '-',
-      quality: 0.1,
-      processing: 'Engraving',
-      speed: 6000,
-      max: '20%',
-      mode: 'Threshold',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Basswood',
-      software: 'LightBurn',
-      thickness: '14mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 600,
-      max: '80%',
-      mode: '-',
-      number: 9,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Basswood',
-      software: 'LightBurn',
-      thickness: '11mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 130,
-      max: '80%',
-      mode: '-',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Basswood',
-      software: 'LaserGRBL',
-      thickness: '-',
-      quality: 10,
-      processing: 'Engraving',
-      speed: 6000,
-      max: 200,
-      mode: '-',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Basswood',
-      software: 'LaserGRBL',
-      thickness: '14mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 600,
-      max: 800,
-      mode: '-',
-      number: 9,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Basswood',
-      software: 'LaserGRBL',
-      thickness: '11mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 130,
-      max: 800,
-      mode: '-',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Yellow peach wood',
-      software: 'LightBurn',
-      thickness: '-',
-      quality: 0.1,
-      processing: 'Engraving',
-      speed: 7000,
-      max: '15%',
-      mode: 'Threshold',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Yellow peach wood',
-      software: 'LaserGRBL',
-      thickness: '-',
-      quality: 10,
-      processing: 'Engraving',
-      speed: 7000,
-      max: 150,
-      mode: '-',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Pine',
-      software: 'LightBurn',
-      thickness: '-',
-      quality: 0.1,
-      processing: 'Engraving',
-      speed: 5000,
-      max: '20%',
-      mode: 'Jarvis',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Pine',
-      software: 'LightBurn',
-      thickness: '15mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 600,
-      max: '80%',
-      mode: '-',
-      number: 10,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Pine',
-      software: 'LightBurn',
-      thickness: '12mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 100,
-      max: '80%',
-      mode: '-',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Pine',
-      software: 'LaserGRBL',
-      thickness: '-',
-      quality: 10,
-      processing: 'Engraving',
-      speed: 5000,
-      max: 200,
-      mode: '-',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Pine',
-      software: 'LaserGRBL',
-      thickness: '15mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 600,
-      max: 800,
-      mode: '-',
-      number: 10,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Pine',
-      software: 'LaserGRBL',
-      thickness: '12mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 100,
-      max: 800,
-      mode: '-',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Paulownia wood',
-      software: 'LightBurn',
-      thickness: '-',
-      quality: 0.1,
-      processing: 'Engraving',
-      speed: 7000,
-      max: '45%',
-      mode: 'Threshold',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Paulownia wood',
-      software: 'LightBurn',
-      thickness: '14mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 200,
-      max: '80%',
-      mode: '-',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Paulownia wood',
-      software: 'LightBurn',
-      thickness: '20mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 750,
-      max: '70%',
-      mode: '-',
-      number: 9,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Paulownia wood',
-      software: 'LaserGRBL',
-      thickness: '-',
-      quality: 10,
-      processing: 'Engraving',
-      speed: 7000,
-      max: 450,
-      mode: '-',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Paulownia wood',
-      software: 'LaserGRBL',
-      thickness: '20mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 750,
-      max: 700,
-      mode: '-',
-      number: 9,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Paulownia wood',
-      software: 'LaserGRBL',
-      thickness: '14mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 200,
-      max: 800,
-      mode: '-',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Cork wood',
-      software: 'LightBurn',
-      thickness: '15mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 500,
-      max: '100%',
-      mode: '-',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Cork wood',
-      software: 'LaserGRBL',
-      thickness: '15mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 500,
-      max: 1000,
-      mode: '-',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Bamboo',
-      software: 'LightBurn',
-      thickness: '-',
-      quality: 0.1,
-      processing: 'Engraving',
-      speed: 7000,
-      max: '50%',
-      mode: 'Threshold',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Bamboo',
-      software: 'LightBurn',
-      thickness: '5mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 400,
-      max: '80%',
-      mode: '-',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Bamboo',
-      software: 'LaserGRBL',
-      thickness: '-',
-      quality: 10,
-      processing: 'Engraving',
-      speed: 7000,
-      max: 500,
-      mode: '-',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Bamboo',
-      software: 'LaserGRBL',
-      thickness: '5mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 400,
-      max: 800,
-      mode: '-',
-      number: 1,
-      color: '#f8f8f8',
-    },
-    {
-      name: 'Leather',
-      software: 'LightBurn',
-      thickness: '-',
-      quality: 0.1,
-      processing: 'Engraving',
-      speed: 6000,
-      max: '20%',
-      mode: 'Threshold',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Leather',
-      software: 'LightBurn',
-      thickness: '5mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 1000,
-      max: '60%',
-      mode: '-',
-      number: 5,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Leather',
-      software: 'LaserGRBL',
-      thickness: '-',
-      quality: 10,
-      processing: 'Engraving',
-      speed: 6000,
-      max: 200,
-      mode: '-',
-      number: 1,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Leather',
-      software: 'LaserGRBL',
-      thickness: '5mm',
-      quality: '-',
-      processing: 'Cutting',
-      speed: 1000,
-      max: 600,
-      mode: '-',
-      number: 5,
-      color: '#d1e1fc',
-    },
-    {
-      name: 'Denim',
-      software: 'LightBurn',
-      thickness: '-',
-      quality: 0.1,
-      processing: 'Engraving',
-      speed: 3000,
-      max: '20%',
-      mode: 'Threshold',
-      number: 1,
-      color: '#f8f8f8',
-    },
+  A70Max: [
     {
       name: 'Ceramics',
       software: 'LightBurn',
@@ -382,7 +10,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -394,7 +21,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -406,7 +32,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramic tile',
@@ -418,7 +43,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramic tile',
@@ -430,7 +54,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Alumina',
@@ -442,7 +65,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Alumina',
@@ -454,7 +76,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -466,7 +87,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -478,7 +98,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -490,7 +109,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -502,7 +120,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -514,7 +131,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -526,7 +142,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -538,7 +153,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -550,7 +164,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -562,7 +175,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -574,7 +186,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -586,7 +197,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Translucent Acrylic',
@@ -598,7 +208,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Translucent Acrylic',
@@ -610,7 +219,6 @@ var jsonData = {
       max: 130,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Two color plate',
@@ -622,7 +230,6 @@ var jsonData = {
       max: '12%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Two color plate',
@@ -634,7 +241,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Plastic',
@@ -646,7 +252,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -658,7 +263,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -670,7 +274,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 7,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -682,7 +285,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Resin',
@@ -694,7 +296,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Resin',
@@ -706,7 +307,6 @@ var jsonData = {
       max: 130,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'High density\nfoam board',
@@ -718,7 +318,6 @@ var jsonData = {
       max: '9%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'High density\nfoam board',
@@ -730,7 +329,6 @@ var jsonData = {
       max: 90,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rubber',
@@ -742,7 +340,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rubber',
@@ -754,7 +351,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -766,7 +362,6 @@ var jsonData = {
       max: '15%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -778,7 +373,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -790,7 +384,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -802,7 +395,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Office paper',
@@ -814,7 +406,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Office paper',
@@ -826,7 +417,6 @@ var jsonData = {
       max: 130,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glutinous rice paper',
@@ -838,7 +428,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glutinous rice paper',
@@ -850,7 +439,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Drywall',
@@ -862,7 +450,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Drywall',
@@ -874,7 +461,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Carton',
@@ -886,7 +472,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Carton',
@@ -898,7 +483,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -910,7 +494,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -922,7 +505,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -934,7 +516,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -946,7 +527,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -958,7 +538,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -970,7 +549,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -982,7 +560,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -994,7 +571,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -1006,7 +582,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 7,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -1018,7 +593,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rock',
@@ -1030,7 +604,6 @@ var jsonData = {
       max: '60%',
       mode: 'Filled',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rock',
@@ -1042,7 +615,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Crystal Stone',
@@ -1054,7 +626,6 @@ var jsonData = {
       max: '25%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Crystal Stone',
@@ -1066,7 +637,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'PCB Board',
@@ -1078,7 +648,6 @@ var jsonData = {
       max: '55%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'PCB Board',
@@ -1090,7 +659,6 @@ var jsonData = {
       max: 550,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -1102,7 +670,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -1114,7 +681,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -1126,7 +692,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -1138,7 +703,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel\nSheet',
@@ -1150,7 +714,6 @@ var jsonData = {
       max: '60%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: '-',
@@ -1162,7 +725,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Galvanized iron',
@@ -1174,7 +736,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Galvanized iron',
@@ -1186,7 +747,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Iron sheet',
@@ -1198,7 +758,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Iron sheet',
@@ -1210,7 +769,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brass',
@@ -1222,7 +780,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Brass',
@@ -1234,7 +791,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Transparent Polycarbonate',
@@ -1246,7 +802,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Transparent Polycarbonate',
@@ -1258,7 +813,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Wrench (chrome- vanadium alloy)',
@@ -1270,7 +824,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Wrench (chrome- vanadium alloy)',
@@ -1282,7 +835,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cobble Stone',
@@ -1294,7 +846,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cobble Stone',
@@ -1306,7 +857,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'EVa Foam',
@@ -1318,7 +868,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'EVa Foam',
@@ -1330,7 +879,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
   ],
   A20Pro: [
@@ -1344,7 +892,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -1356,7 +903,6 @@ var jsonData = {
       max: '75%',
       mode: '-',
       number: 6,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -1368,7 +914,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -1380,7 +925,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -1392,7 +936,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -1404,7 +947,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Paulownia Wood',
@@ -1416,7 +958,6 @@ var jsonData = {
       max: '45%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -1428,7 +969,6 @@ var jsonData = {
       max: '70%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -1440,7 +980,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -1452,7 +991,6 @@ var jsonData = {
       max: 350,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -1464,7 +1002,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 6,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -1476,7 +1013,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cork Wood',
@@ -1488,7 +1024,6 @@ var jsonData = {
       max: '70%',
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -1500,7 +1035,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -1512,7 +1046,6 @@ var jsonData = {
       max: 850,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -1524,7 +1057,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Yellow Peach Wood',
@@ -1536,7 +1068,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Yellow Peach Wood',
@@ -1548,7 +1079,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -1560,7 +1090,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -1572,7 +1101,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -1584,7 +1112,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -1596,7 +1123,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -1608,7 +1134,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -1620,7 +1145,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -1632,7 +1156,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -1644,7 +1167,6 @@ var jsonData = {
       max: '65%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -1656,7 +1178,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -1668,7 +1189,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -1680,7 +1200,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 8,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -1692,7 +1211,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Translucent Acrylic',
@@ -1704,7 +1222,6 @@ var jsonData = {
       max: '13%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -1716,7 +1233,6 @@ var jsonData = {
       max: '15%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -1728,7 +1244,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -1740,7 +1255,6 @@ var jsonData = {
       max: 140,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -1752,7 +1266,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Office Paper',
@@ -1764,7 +1277,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Office Paper',
@@ -1776,7 +1288,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Oil Painting Paper',
@@ -1788,7 +1299,6 @@ var jsonData = {
       max: '23%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Oil Painting Paper',
@@ -1800,7 +1310,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -1812,7 +1321,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -1824,7 +1332,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -1836,7 +1343,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -1848,7 +1354,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -1860,7 +1365,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -1872,7 +1376,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel Sheet',
@@ -1884,7 +1387,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Stainless Steel Sheet',
@@ -1896,7 +1398,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -1908,7 +1409,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -1920,7 +1420,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -1932,7 +1431,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -1944,7 +1442,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -1956,7 +1453,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -1968,7 +1464,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -1980,7 +1475,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -1992,7 +1486,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -2004,7 +1497,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -2016,7 +1508,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics',
@@ -2028,7 +1519,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -2040,7 +1530,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics Tile',
@@ -2052,7 +1541,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics Tile',
@@ -2064,7 +1552,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Alumina',
@@ -2076,7 +1563,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Alumina',
@@ -2088,7 +1574,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -2100,7 +1585,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -2112,7 +1596,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -2124,7 +1607,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -2136,7 +1618,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -2148,7 +1629,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Plastic',
@@ -2160,7 +1640,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Carton',
@@ -2172,7 +1651,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Carton',
@@ -2184,7 +1662,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -2196,7 +1673,6 @@ var jsonData = {
       max: '20%',
       mode: 'Atkinson',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -2208,7 +1684,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 4,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -2220,7 +1695,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -2232,7 +1706,6 @@ var jsonData = {
       max: 180,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -2244,7 +1717,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -2256,7 +1728,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Galvanized Iron',
@@ -2268,7 +1739,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Galvanized Iron',
@@ -2280,7 +1750,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rock',
@@ -2292,7 +1761,6 @@ var jsonData = {
       max: '60%',
       mode: 'Filled',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rock',
@@ -2304,7 +1772,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Crystal Stone',
@@ -2316,7 +1783,6 @@ var jsonData = {
       max: '65%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cobblestone',
@@ -2328,7 +1794,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cobblestone',
@@ -2340,7 +1805,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'PCB Board',
@@ -2352,7 +1816,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'PCB Board',
@@ -2364,7 +1827,6 @@ var jsonData = {
       max: 650,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'High Density Foam Board',
@@ -2376,7 +1838,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'High Density Foam Board',
@@ -2388,7 +1849,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mahogany',
@@ -2400,7 +1860,6 @@ var jsonData = {
       max: '35%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mahogany',
@@ -2412,7 +1871,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Two Color Plate',
@@ -2424,7 +1882,6 @@ var jsonData = {
       max: '12%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Two Color Plate',
@@ -2436,7 +1893,6 @@ var jsonData = {
       max: 100,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Resin',
@@ -2448,7 +1904,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Resin',
@@ -2460,7 +1915,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Artificial Beef Bone',
@@ -2472,7 +1926,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Artificial Beef Bone',
@@ -2484,7 +1937,6 @@ var jsonData = {
       max: 240,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rubber',
@@ -2496,7 +1948,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rubber',
@@ -2508,7 +1959,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Iron Sheet',
@@ -2520,7 +1970,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Iron Sheet',
@@ -2532,7 +1981,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Artificial Agate',
@@ -2544,7 +1992,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Artificial Agate',
@@ -2556,7 +2003,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   A10Pro: [
@@ -2570,10 +2016,8 @@ var jsonData = {
       max: '25%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
-      color: '#d1e1fc',
       name: 'Basswood',
       software: 'LightBurn',
       thickness: '5mm',
@@ -2585,7 +2029,6 @@ var jsonData = {
       number: 5,
     },
     {
-      color: '#d1e1fc',
       name: 'Basswood',
       software: 'LightBurn',
       thickness: '5mm',
@@ -2597,7 +2040,6 @@ var jsonData = {
       number: 8,
     },
     {
-      color: '#d1e1fc',
       name: 'Basswood',
       software: 'LaserGRBL',
       thickness: '-',
@@ -2609,7 +2051,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#d1e1fc',
       name: 'Basswood',
       software: 'LaserGRBL',
       thickness: '5mm',
@@ -2621,7 +2062,6 @@ var jsonData = {
       number: 10,
     },
     {
-      color: '#f8f8f8',
       name: 'Paulownia Wood',
       software: 'LightBurn',
       thickness: '-',
@@ -2633,7 +2073,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Paulownia Wood',
       software: 'LightBurn',
       thickness: '8mm',
@@ -2645,7 +2084,6 @@ var jsonData = {
       number: 8,
     },
     {
-      color: '#f8f8f8',
       name: 'Paulownia Wood',
       software: 'LaserGRBL',
       thickness: '-',
@@ -2657,7 +2095,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Paulownia Wood',
       software: 'LaserGRBL',
       thickness: '8mm',
@@ -2669,7 +2106,6 @@ var jsonData = {
       number: 10,
     },
     {
-      color: '#d1e1fc',
       name: 'Cork Wood',
       software: 'LightBurn',
       thickness: '10mm',
@@ -2681,7 +2117,6 @@ var jsonData = {
       number: 10,
     },
     {
-      color: '#d1e1fc',
       name: 'Cork Wood',
       software: 'LaserGRBL',
       thickness: '10mm',
@@ -2693,7 +2128,6 @@ var jsonData = {
       number: 10,
     },
     {
-      color: '#f8f8f8',
       name: 'Bamboo',
       software: 'LightBurn',
       thickness: '-',
@@ -2705,7 +2139,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Bamboo',
       software: 'LightBurn',
       thickness: '2mm',
@@ -2717,7 +2150,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Bamboo',
       software: 'LaserGRBL',
       thickness: '-',
@@ -2729,7 +2161,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Bamboo',
       software: 'LaserGRBL',
       thickness: '2mm',
@@ -2741,7 +2172,6 @@ var jsonData = {
       number: 8,
     },
     {
-      color: '#d1e1fc',
       name: 'Opaque Acrylic',
       software: 'LightBurn',
       thickness: '-',
@@ -2753,7 +2183,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#d1e1fc',
       name: 'Opaque Acrylic',
       software: 'LightBurn',
       thickness: '10mm',
@@ -2765,7 +2194,6 @@ var jsonData = {
       number: 5,
     },
     {
-      color: '#d1e1fc',
       name: 'Opaque Acrylic',
       software: 'LaserGRBL',
       thickness: '-',
@@ -2777,7 +2205,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#d1e1fc',
       name: 'Opaque Acrylic',
       software: 'LaserGRBL',
       thickness: '10mm',
@@ -2789,7 +2216,6 @@ var jsonData = {
       number: 10,
     },
     {
-      color: '#f8f8f8',
       name: 'Kraft Paper',
       software: 'LightBurn',
       thickness: '-',
@@ -2801,7 +2227,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Kraft Paper',
       software: 'LightBurn',
       thickness: '0.2mm',
@@ -2813,7 +2238,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Kraft Paper',
       software: 'LaserGRBL',
       thickness: '-',
@@ -2825,7 +2249,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Kraft Paper',
       software: 'LaserGRBL',
       thickness: '0.2mm',
@@ -2837,7 +2260,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#d1e1fc',
       name: 'Office Paper',
       software: 'LightBurn',
       thickness: '-',
@@ -2849,7 +2271,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#d1e1fc',
       name: 'Office Paper',
       software: 'LaserGRBL',
       thickness: '-',
@@ -2861,7 +2282,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Oil Painting Paper',
       software: 'LightBurn',
       thickness: '-',
@@ -2873,7 +2293,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#f8f8f8',
       name: 'Oil Painting Paper',
       software: 'LaserGRBL',
       thickness: '-',
@@ -2885,7 +2304,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#d1e1fc',
       name: 'Leather',
       software: 'LightBurn',
       thickness: '-',
@@ -2897,7 +2315,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#d1e1fc',
       name: 'Leather',
       software: 'LightBurn',
       thickness: '2mm',
@@ -2909,7 +2326,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#d1e1fc',
       name: 'Leather',
       software: 'LaserGRBL',
       thickness: '-',
@@ -2921,7 +2337,6 @@ var jsonData = {
       number: 1,
     },
     {
-      color: '#d1e1fc',
       name: 'Leather',
       software: 'LaserGRBL',
       thickness: '2mm',
@@ -2942,7 +2357,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -2954,7 +2368,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -2966,7 +2379,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -2978,7 +2390,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -2990,7 +2401,6 @@ var jsonData = {
       max: '25%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -3002,7 +2412,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 8,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -3014,7 +2423,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -3026,7 +2434,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 6,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -3038,7 +2445,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics',
@@ -3050,7 +2456,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics Tile',
@@ -3062,7 +2467,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics Tile',
@@ -3074,7 +2478,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Alumina',
@@ -3086,7 +2489,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Alumina',
@@ -3098,7 +2500,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -3110,7 +2511,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -3122,7 +2522,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -3134,7 +2533,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -3146,7 +2544,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Plastic',
@@ -3158,7 +2555,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -3170,7 +2566,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Carton',
@@ -3182,7 +2577,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Carton',
@@ -3194,7 +2588,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -3206,7 +2599,6 @@ var jsonData = {
       max: '20%',
       mode: 'Atkinson',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -3218,7 +2610,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Galvanized Iron',
@@ -3230,7 +2621,6 @@ var jsonData = {
       max: '80%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Galvanized Iron',
@@ -3242,7 +2632,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rock',
@@ -3254,7 +2643,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rock',
@@ -3266,7 +2654,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Crystal Stone',
@@ -3278,7 +2665,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Crystal Stone',
@@ -3290,7 +2676,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'PCB Board',
@@ -3302,7 +2687,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'PCB Board',
@@ -3314,7 +2698,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   A5M30: [
@@ -3328,7 +2711,6 @@ var jsonData = {
       max: '-',
       mode: 'Threshold',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3340,7 +2722,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3352,7 +2733,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3364,7 +2744,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3376,7 +2755,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3388,7 +2766,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3400,7 +2777,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3412,7 +2788,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Hardwood',
@@ -3424,7 +2799,6 @@ var jsonData = {
       max: '-',
       mode: 'Jarvis',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3436,7 +2810,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3448,7 +2821,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3460,7 +2832,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3472,7 +2843,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3484,7 +2854,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3496,7 +2865,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3508,7 +2876,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -3520,7 +2887,6 @@ var jsonData = {
       max: '-',
       mode: 'Jarvis',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -3532,7 +2898,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -3544,7 +2909,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -3556,7 +2920,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -3568,7 +2931,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -3580,7 +2942,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -3592,7 +2953,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -3604,7 +2964,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -3616,7 +2975,6 @@ var jsonData = {
       max: '-',
       mode: 'Threshold',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -3628,7 +2986,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -3640,7 +2997,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -3652,7 +3008,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -3664,7 +3019,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -3676,7 +3030,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -3688,7 +3041,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -3700,7 +3052,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -3712,7 +3063,6 @@ var jsonData = {
       max: '-',
       mode: 'Jarvis',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -3724,7 +3074,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -3736,7 +3085,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -3748,7 +3096,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -3760,7 +3107,6 @@ var jsonData = {
       max: 280,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -3772,7 +3118,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -3784,7 +3129,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -3796,7 +3140,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -3808,7 +3151,6 @@ var jsonData = {
       max: '-',
       mode: 'Jarvis',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -3820,7 +3162,6 @@ var jsonData = {
       max: 450,
       mode: '-',
       number: '-',
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -3832,7 +3173,6 @@ var jsonData = {
       max: '-',
       mode: 'Threshold',
       number: '-',
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -3844,7 +3184,6 @@ var jsonData = {
       max: 230,
       mode: '-',
       number: '-',
-      color: '#d1e1fc',
     },
   ],
   A5M40: [
@@ -3858,7 +3197,6 @@ var jsonData = {
       max: '60%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3870,7 +3208,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3882,7 +3219,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3894,7 +3230,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3906,7 +3241,6 @@ var jsonData = {
       max: 550,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3918,7 +3252,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3930,7 +3263,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -3942,7 +3274,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Hardwood',
@@ -3954,7 +3285,6 @@ var jsonData = {
       max: '50%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3966,7 +3296,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3978,7 +3307,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -3990,7 +3318,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4002,7 +3329,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4014,7 +3340,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4026,7 +3351,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4038,7 +3362,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -4050,7 +3373,6 @@ var jsonData = {
       max: '50%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4062,7 +3384,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4074,7 +3395,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4086,7 +3406,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4098,7 +3417,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4110,7 +3428,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4122,7 +3439,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4134,7 +3450,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -4146,7 +3461,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4158,7 +3472,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4170,7 +3483,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4182,7 +3494,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4194,7 +3505,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4206,7 +3516,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4218,7 +3527,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4230,7 +3538,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -4242,7 +3549,6 @@ var jsonData = {
       max: '28%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4254,7 +3560,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4266,7 +3571,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4278,7 +3582,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4290,7 +3593,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4302,7 +3604,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -4314,7 +3615,6 @@ var jsonData = {
       max: '35%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -4326,7 +3626,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -4338,7 +3637,6 @@ var jsonData = {
       max: '18%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -4350,7 +3648,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -4362,7 +3659,6 @@ var jsonData = {
       max: '18%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -4374,7 +3670,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel',
@@ -4386,7 +3681,6 @@ var jsonData = {
       max: '100%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Stainless Steel',
@@ -4398,7 +3692,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   A5Pro: [
@@ -4412,7 +3705,6 @@ var jsonData = {
       max: '70%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4424,7 +3716,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4436,7 +3727,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4448,7 +3738,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4460,7 +3749,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4472,7 +3760,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4484,7 +3771,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4496,7 +3782,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Hardwood',
@@ -4508,7 +3793,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4520,7 +3804,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4532,7 +3815,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4544,7 +3826,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4556,7 +3837,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4568,7 +3848,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4580,7 +3859,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -4592,7 +3870,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -4604,7 +3881,6 @@ var jsonData = {
       max: '80%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4616,7 +3892,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4628,7 +3903,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4640,7 +3914,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4652,7 +3925,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4664,7 +3936,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4676,7 +3947,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -4688,7 +3958,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -4700,7 +3969,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4712,7 +3980,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4724,7 +3991,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4736,7 +4002,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4748,7 +4013,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4760,7 +4024,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4772,7 +4035,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -4784,7 +4046,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -4796,7 +4057,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4808,7 +4068,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4820,7 +4079,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4832,7 +4090,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4844,7 +4101,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4856,7 +4112,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -4868,7 +4123,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -4880,7 +4134,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -4892,7 +4145,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -4904,7 +4156,6 @@ var jsonData = {
       max: '20%',
       mode: 'Atkinson',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -4916,7 +4167,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Stainless Steel',
@@ -4928,7 +4178,6 @@ var jsonData = {
       max: '100%',
       mode: 'Atkinson',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel',
@@ -4940,7 +4189,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
   ],
   A5Pro1: [
@@ -4954,7 +4202,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4966,7 +4213,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4978,7 +4224,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -4990,7 +4235,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5002,7 +4246,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5014,7 +4257,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5026,7 +4268,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5038,7 +4279,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Hardwood',
@@ -5050,7 +4290,6 @@ var jsonData = {
       max: '70%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5062,7 +4301,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5074,7 +4312,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5086,7 +4323,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5098,7 +4334,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5110,7 +4345,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5122,7 +4356,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5134,7 +4367,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -5146,7 +4378,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5158,7 +4389,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5170,7 +4400,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5182,7 +4411,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5194,7 +4422,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5206,7 +4433,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5218,7 +4444,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5230,7 +4455,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -5242,7 +4466,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5254,7 +4477,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5266,7 +4488,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5278,7 +4499,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5290,7 +4510,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5302,7 +4521,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5314,7 +4532,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5326,7 +4543,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -5338,7 +4554,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5350,7 +4565,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5362,7 +4576,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5374,7 +4587,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5386,7 +4598,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5398,7 +4609,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5410,7 +4620,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -5422,7 +4631,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -5434,7 +4642,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -5446,7 +4653,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -5458,7 +4664,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -5470,7 +4675,6 @@ var jsonData = {
       max: '25%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -5482,7 +4686,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel',
@@ -5494,7 +4697,6 @@ var jsonData = {
       max: '100%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Stainless Steel',
@@ -5506,7 +4708,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   A520W30W: [
@@ -5520,7 +4721,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5532,7 +4732,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5544,7 +4743,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5556,7 +4754,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5568,7 +4765,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5580,7 +4776,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5592,7 +4787,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -5604,7 +4798,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Hardwood',
@@ -5616,7 +4809,6 @@ var jsonData = {
       max: '80%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5628,7 +4820,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5640,7 +4831,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5652,7 +4842,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5664,7 +4853,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5676,7 +4864,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5688,7 +4875,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -5700,7 +4886,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -5712,7 +4897,6 @@ var jsonData = {
       max: '80%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5724,7 +4908,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5736,7 +4919,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5748,7 +4930,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5760,7 +4941,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5772,7 +4952,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5784,7 +4963,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -5796,7 +4974,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -5808,7 +4985,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5820,7 +4996,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5832,7 +5007,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5844,7 +5018,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5856,7 +5029,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5868,7 +5040,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5880,7 +5051,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -5892,7 +5062,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -5904,7 +5073,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5916,7 +5084,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5928,7 +5095,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5940,7 +5106,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5952,7 +5117,6 @@ var jsonData = {
       max: 280,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5964,7 +5128,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5976,7 +5139,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -5988,7 +5150,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -6000,7 +5161,6 @@ var jsonData = {
       max: '70%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -6012,7 +5172,6 @@ var jsonData = {
       max: 450,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -6024,7 +5183,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -6036,7 +5194,6 @@ var jsonData = {
       max: 230,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   P9M50: [
@@ -6050,7 +5207,6 @@ var jsonData = {
       max: '25%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6062,7 +5218,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6074,7 +5229,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6086,7 +5240,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6098,7 +5251,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6110,7 +5262,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6122,7 +5273,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6134,7 +5284,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Hardwood',
@@ -6146,7 +5295,6 @@ var jsonData = {
       max: '25%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6158,7 +5306,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6170,7 +5317,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6182,7 +5328,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6194,7 +5339,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6206,7 +5350,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6218,7 +5361,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6230,7 +5372,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -6242,7 +5383,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6254,7 +5394,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6266,7 +5405,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6278,7 +5416,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6290,7 +5427,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6302,7 +5438,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6314,7 +5449,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6326,7 +5460,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -6338,7 +5471,6 @@ var jsonData = {
       max: '25%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6350,7 +5482,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6362,7 +5493,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6374,7 +5504,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6386,7 +5515,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6398,7 +5526,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6410,7 +5537,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6422,7 +5548,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -6434,7 +5559,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -6446,7 +5570,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -6458,7 +5581,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -6470,7 +5592,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -6482,7 +5603,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -6494,7 +5614,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -6506,7 +5625,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -6518,7 +5636,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -6530,7 +5647,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -6542,7 +5658,6 @@ var jsonData = {
       max: 180,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -6554,7 +5669,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -6566,7 +5680,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics',
@@ -6578,7 +5691,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -6590,7 +5702,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -6602,7 +5713,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -6614,7 +5724,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel',
@@ -6626,7 +5735,6 @@ var jsonData = {
       max: '100%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Stainless Steel',
@@ -6638,7 +5746,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   P9M40: [
@@ -6652,7 +5759,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6664,7 +5770,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6676,7 +5781,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6688,7 +5792,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6700,7 +5803,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6712,7 +5814,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6724,7 +5825,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -6736,7 +5836,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Hardwood',
@@ -6748,7 +5847,6 @@ var jsonData = {
       max: '70%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6760,7 +5858,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6772,7 +5869,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6784,7 +5880,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6796,7 +5891,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6808,7 +5902,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6820,7 +5913,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -6832,7 +5924,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -6844,7 +5935,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6856,7 +5946,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6868,7 +5957,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6880,7 +5968,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6892,7 +5979,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6904,7 +5990,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6916,7 +6001,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -6928,7 +6012,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -6940,7 +6023,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6952,7 +6034,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6964,7 +6045,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6976,7 +6056,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -6988,7 +6067,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7000,7 +6078,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7012,7 +6089,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7024,7 +6100,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -7036,7 +6111,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7048,7 +6122,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7060,7 +6133,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7072,7 +6144,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7084,7 +6155,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7096,7 +6166,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7108,7 +6177,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -7120,7 +6188,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -7132,7 +6199,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -7144,7 +6210,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -7156,7 +6221,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -7168,7 +6232,6 @@ var jsonData = {
       max: '25%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -7180,7 +6243,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel',
@@ -7192,7 +6254,6 @@ var jsonData = {
       max: '100%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Stainless Steel',
@@ -7204,7 +6265,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   P7M40: [
@@ -7218,7 +6278,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7230,7 +6289,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7242,7 +6300,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7254,7 +6311,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7266,7 +6322,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7278,7 +6333,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7290,7 +6344,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7302,7 +6355,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Hardwood',
@@ -7314,7 +6366,6 @@ var jsonData = {
       max: '70%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7326,7 +6377,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7338,7 +6388,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7350,7 +6399,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7362,7 +6410,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7374,7 +6421,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7386,7 +6432,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7398,7 +6443,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -7410,7 +6454,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -7422,7 +6465,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -7434,7 +6476,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -7446,7 +6487,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -7458,7 +6498,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -7470,7 +6509,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -7482,7 +6520,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -7494,7 +6531,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -7506,7 +6542,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7518,7 +6553,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7530,7 +6564,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7542,7 +6575,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7554,7 +6586,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7566,7 +6597,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7578,7 +6608,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -7590,7 +6619,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -7602,7 +6630,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7614,7 +6641,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7626,7 +6652,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7638,7 +6663,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7650,7 +6674,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7662,7 +6685,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -7674,7 +6696,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -7686,7 +6707,6 @@ var jsonData = {
       max: '60%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -7698,7 +6718,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -7710,7 +6729,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -7722,7 +6740,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -7734,7 +6751,6 @@ var jsonData = {
       max: '25%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -7746,7 +6762,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel',
@@ -7758,7 +6773,6 @@ var jsonData = {
       max: '100%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Stainless Steel',
@@ -7770,7 +6784,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   P7M30: [
@@ -7784,7 +6797,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7796,7 +6808,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7808,7 +6819,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7820,7 +6830,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7832,7 +6841,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7844,7 +6852,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7856,7 +6863,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -7868,7 +6874,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Hardwood',
@@ -7880,7 +6885,6 @@ var jsonData = {
       max: '80%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7892,7 +6896,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7904,7 +6907,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7916,7 +6918,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7928,7 +6929,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7940,7 +6940,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7952,7 +6951,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Hardwood',
@@ -7964,7 +6962,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -7976,7 +6973,6 @@ var jsonData = {
       max: '80%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -7988,7 +6984,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -8000,7 +6995,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -8012,7 +7006,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -8024,7 +7017,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -8036,7 +7028,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -8048,7 +7039,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -8060,7 +7050,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -8072,7 +7061,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8084,7 +7072,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8096,7 +7083,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8108,7 +7094,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8120,7 +7105,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8132,7 +7116,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8144,7 +7127,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8156,7 +7138,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 5,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -8168,7 +7149,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -8180,7 +7160,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -8192,7 +7171,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -8204,7 +7182,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -8216,7 +7193,6 @@ var jsonData = {
       max: 280,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -8228,7 +7204,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -8240,7 +7215,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -8252,7 +7226,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -8264,7 +7237,6 @@ var jsonData = {
       max: '70%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -8276,7 +7248,6 @@ var jsonData = {
       max: 450,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -8288,7 +7259,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -8300,7 +7270,6 @@ var jsonData = {
       max: 230,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   S30Pro: [
@@ -8314,7 +7283,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -8326,7 +7294,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 9,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -8338,7 +7305,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -8350,7 +7316,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -8362,7 +7327,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 9,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -8374,7 +7338,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Yellow peach wood',
@@ -8386,7 +7349,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Yellow peach wood',
@@ -8398,7 +7360,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -8410,7 +7371,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -8422,7 +7382,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -8434,7 +7393,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -8446,7 +7404,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -8458,7 +7415,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -8470,7 +7426,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Paulownia wood',
@@ -8482,7 +7437,6 @@ var jsonData = {
       max: '45%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -8494,7 +7448,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -8506,7 +7459,6 @@ var jsonData = {
       max: '70%',
       mode: '-',
       number: 9,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -8518,7 +7470,6 @@ var jsonData = {
       max: 450,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -8530,7 +7481,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 9,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -8542,7 +7492,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cork wood',
@@ -8554,7 +7503,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork wood',
@@ -8566,7 +7514,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -8578,7 +7525,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -8590,7 +7536,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -8602,7 +7547,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -8614,7 +7558,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -8626,7 +7569,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -8638,7 +7580,6 @@ var jsonData = {
       max: '60%',
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -8650,7 +7591,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -8662,7 +7602,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -8674,7 +7613,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics',
@@ -8686,7 +7624,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -8698,7 +7635,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -8710,7 +7646,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramic tile',
@@ -8722,7 +7657,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramic tile',
@@ -8734,7 +7668,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Alumina',
@@ -8746,7 +7679,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Alumina',
@@ -8758,7 +7690,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -8770,7 +7701,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -8782,7 +7712,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -8794,7 +7723,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -8806,7 +7734,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -8818,7 +7745,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -8830,7 +7756,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8842,7 +7767,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8854,7 +7778,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8866,7 +7789,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8878,7 +7800,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -8890,7 +7811,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Translucent Acrylic',
@@ -8902,7 +7822,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Translucent Acrylic',
@@ -8914,7 +7833,6 @@ var jsonData = {
       max: 130,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Two color plate',
@@ -8926,7 +7844,6 @@ var jsonData = {
       max: '12%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Two color plate',
@@ -8938,7 +7855,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Plastic',
@@ -8950,7 +7866,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -8962,7 +7877,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -8974,7 +7888,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 7,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -8986,7 +7899,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Resin',
@@ -8998,7 +7910,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Resin',
@@ -9010,7 +7921,6 @@ var jsonData = {
       max: 130,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'High density\nfoam board',
@@ -9022,7 +7932,6 @@ var jsonData = {
       max: '9%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'High density\nfoam board',
@@ -9034,7 +7943,6 @@ var jsonData = {
       max: 90,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rubber',
@@ -9046,7 +7954,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rubber',
@@ -9058,7 +7965,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -9070,7 +7976,6 @@ var jsonData = {
       max: '15%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -9082,7 +7987,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -9094,7 +7998,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -9106,7 +8009,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Office paper',
@@ -9118,7 +8020,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Office paper',
@@ -9130,7 +8031,6 @@ var jsonData = {
       max: 130,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glutinous rice paper',
@@ -9142,7 +8042,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glutinous rice paper',
@@ -9154,7 +8053,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Drywall',
@@ -9166,7 +8064,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Drywall',
@@ -9178,7 +8075,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Carton',
@@ -9190,7 +8086,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Carton',
@@ -9202,7 +8097,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -9214,7 +8108,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -9226,7 +8119,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -9238,7 +8130,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -9250,7 +8141,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -9262,7 +8152,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -9274,7 +8163,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -9286,7 +8174,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -9298,7 +8185,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -9310,7 +8196,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 7,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -9322,7 +8207,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rock',
@@ -9334,7 +8218,6 @@ var jsonData = {
       max: '60%',
       mode: 'Filled',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rock',
@@ -9346,7 +8229,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Crystal Stone',
@@ -9358,7 +8240,6 @@ var jsonData = {
       max: '25%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Crystal Stone',
@@ -9370,7 +8251,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'PCB Board',
@@ -9382,7 +8262,6 @@ var jsonData = {
       max: '55%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'PCB Board',
@@ -9394,7 +8273,6 @@ var jsonData = {
       max: 550,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -9406,7 +8284,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -9418,7 +8295,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -9430,7 +8306,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -9442,7 +8317,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel\nSheet',
@@ -9454,7 +8328,6 @@ var jsonData = {
       max: '60%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: '-',
@@ -9466,7 +8339,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Galvanized iron',
@@ -9478,7 +8350,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Galvanized iron',
@@ -9490,7 +8361,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Iron sheet',
@@ -9502,7 +8372,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Iron sheet',
@@ -9514,7 +8383,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brass',
@@ -9526,7 +8394,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Brass',
@@ -9538,7 +8405,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Transparent Polycarbonate',
@@ -9550,7 +8416,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Transparent Polycarbonate',
@@ -9562,7 +8427,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Wrench (chrome- vanadium alloy)',
@@ -9574,7 +8438,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Wrench (chrome- vanadium alloy)',
@@ -9586,7 +8449,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cobble Stone',
@@ -9598,7 +8460,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cobble Stone',
@@ -9610,7 +8471,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'EVa Foam',
@@ -9622,7 +8482,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'EVa Foam',
@@ -9634,7 +8493,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
   ],
   S20Pro: [
@@ -9648,7 +8506,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -9660,7 +8517,6 @@ var jsonData = {
       max: '75%',
       mode: '-',
       number: 6,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -9672,7 +8528,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -9684,7 +8539,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -9696,7 +8550,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -9708,7 +8561,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Paulownia Wood',
@@ -9720,7 +8572,6 @@ var jsonData = {
       max: '45%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -9732,7 +8583,6 @@ var jsonData = {
       max: '70%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -9744,7 +8594,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -9756,7 +8605,6 @@ var jsonData = {
       max: 350,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -9768,7 +8616,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 6,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -9780,7 +8627,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cork Wood',
@@ -9792,7 +8638,6 @@ var jsonData = {
       max: '70%',
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -9804,7 +8649,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -9816,7 +8660,6 @@ var jsonData = {
       max: 850,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -9828,7 +8671,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Yellow Peach Wood',
@@ -9840,7 +8682,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Yellow Peach Wood',
@@ -9852,7 +8693,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -9864,7 +8704,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -9876,7 +8715,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -9888,7 +8726,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -9900,7 +8737,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -9912,7 +8748,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -9924,7 +8759,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -9936,7 +8770,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -9948,7 +8781,6 @@ var jsonData = {
       max: '65%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -9960,7 +8792,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -9972,7 +8803,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -9984,7 +8814,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 8,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -9996,7 +8825,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Translucent Acrylic',
@@ -10008,7 +8836,6 @@ var jsonData = {
       max: '13%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -10020,7 +8847,6 @@ var jsonData = {
       max: '15%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -10032,7 +8858,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -10044,7 +8869,6 @@ var jsonData = {
       max: 140,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -10056,7 +8880,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Office Paper',
@@ -10068,7 +8891,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Office Paper',
@@ -10080,7 +8902,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Oil Painting Paper',
@@ -10092,7 +8913,6 @@ var jsonData = {
       max: '23%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Oil Painting Paper',
@@ -10104,7 +8924,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -10116,7 +8935,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -10128,7 +8946,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -10140,7 +8957,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -10152,7 +8968,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -10164,7 +8979,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -10176,7 +8990,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel Sheet',
@@ -10188,7 +9001,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Stainless Steel Sheet',
@@ -10200,7 +9012,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -10212,7 +9023,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -10224,7 +9034,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -10236,7 +9045,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -10248,7 +9056,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -10260,7 +9067,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -10272,7 +9078,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -10284,7 +9089,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -10296,7 +9100,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -10308,7 +9111,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -10320,7 +9122,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics',
@@ -10332,7 +9133,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -10344,7 +9144,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics Tile',
@@ -10356,7 +9155,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics Tile',
@@ -10368,7 +9166,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Alumina',
@@ -10380,7 +9177,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Alumina',
@@ -10392,7 +9188,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -10404,7 +9199,6 @@ var jsonData = {
       max: '-',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -10416,7 +9210,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -10428,7 +9221,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -10440,7 +9232,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -10452,7 +9243,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Plastic',
@@ -10464,7 +9254,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Carton',
@@ -10476,7 +9265,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Carton',
@@ -10488,7 +9276,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -10500,7 +9287,6 @@ var jsonData = {
       max: '20%',
       mode: 'Atkinson',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -10512,7 +9298,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 4,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -10524,7 +9309,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -10536,7 +9320,6 @@ var jsonData = {
       max: 180,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -10548,7 +9331,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 7,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -10560,7 +9342,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Galvanized Iron',
@@ -10572,7 +9353,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Galvanized Iron',
@@ -10584,7 +9364,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rock',
@@ -10596,7 +9375,6 @@ var jsonData = {
       max: '60%',
       mode: 'Filled',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rock',
@@ -10608,7 +9386,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Crystal Stone',
@@ -10620,7 +9397,6 @@ var jsonData = {
       max: '65%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cobblestone',
@@ -10632,7 +9408,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cobblestone',
@@ -10644,7 +9419,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'PCB Board',
@@ -10656,7 +9430,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'PCB Board',
@@ -10668,7 +9441,6 @@ var jsonData = {
       max: 650,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'High Density Foam Board',
@@ -10680,7 +9452,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'High Density Foam Board',
@@ -10692,7 +9463,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mahogany',
@@ -10704,7 +9474,6 @@ var jsonData = {
       max: '35%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mahogany',
@@ -10716,7 +9485,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Two Color Plate',
@@ -10728,7 +9496,6 @@ var jsonData = {
       max: '12%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Two Color Plate',
@@ -10740,7 +9507,6 @@ var jsonData = {
       max: 100,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Resin',
@@ -10752,7 +9518,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Resin',
@@ -10764,7 +9529,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Artificial Beef Bone',
@@ -10776,7 +9540,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Artificial Beef Bone',
@@ -10788,7 +9551,6 @@ var jsonData = {
       max: 240,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rubber',
@@ -10800,7 +9562,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rubber',
@@ -10812,7 +9573,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Iron Sheet',
@@ -10824,7 +9584,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Iron Sheet',
@@ -10836,7 +9595,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Artificial Agate',
@@ -10848,7 +9606,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Artificial Agate',
@@ -10860,7 +9617,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
   ],
   S10Pro: [
@@ -10874,7 +9630,6 @@ var jsonData = {
       max: '25%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -10886,7 +9641,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -10898,7 +9652,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 8,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -10910,7 +9663,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -10922,7 +9674,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Paulownia Wood',
@@ -10934,7 +9685,6 @@ var jsonData = {
       max: '50%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -10946,7 +9696,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 8,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -10958,7 +9707,6 @@ var jsonData = {
       max: '50%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -10970,7 +9718,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Cork Wood',
@@ -10982,7 +9729,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -10994,7 +9740,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -11006,7 +9751,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -11018,7 +9762,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -11030,7 +9773,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -11042,7 +9784,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 8,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -11054,7 +9795,6 @@ var jsonData = {
       max: '25%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -11066,7 +9806,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -11078,7 +9817,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -11090,7 +9828,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -11102,7 +9839,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -11114,7 +9850,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -11126,7 +9861,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -11138,7 +9872,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Office Paper',
@@ -11150,7 +9883,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Office Paper',
@@ -11162,7 +9894,6 @@ var jsonData = {
       max: 350,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Oil Painting Paper',
@@ -11174,7 +9905,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Oil Painting Paper',
@@ -11186,7 +9916,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -11198,7 +9927,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -11210,7 +9938,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -11222,7 +9949,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -11234,7 +9960,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -11246,7 +9971,6 @@ var jsonData = {
       max: 180,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -11258,7 +9982,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -11270,7 +9993,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -11282,7 +10004,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -11294,7 +10015,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel',
@@ -11306,7 +10026,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -11318,7 +10037,6 @@ var jsonData = {
       max: '25%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -11330,7 +10048,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 8,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -11342,7 +10059,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -11354,7 +10070,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 6,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics',
@@ -11366,7 +10081,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -11378,7 +10092,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics Tile',
@@ -11390,7 +10103,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics Tile',
@@ -11402,7 +10114,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Alumina',
@@ -11414,7 +10125,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Alumina',
@@ -11426,7 +10136,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -11438,7 +10147,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -11450,7 +10158,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Plastic',
@@ -11462,7 +10169,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -11474,7 +10180,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -11486,7 +10191,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -11498,7 +10202,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Carton',
@@ -11510,7 +10213,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Carton',
@@ -11522,7 +10224,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -11534,7 +10235,6 @@ var jsonData = {
       max: '20%',
       mode: 'Atkinson',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -11546,7 +10246,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Galvanized Iron',
@@ -11558,7 +10257,6 @@ var jsonData = {
       max: '80%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Galvanized Iron',
@@ -11570,7 +10268,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rock',
@@ -11582,7 +10279,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rock',
@@ -11594,7 +10290,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Crystal Stone',
@@ -11606,7 +10301,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Crystal Stone',
@@ -11618,7 +10312,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'PCB Board',
@@ -11630,7 +10323,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'PCB Board',
@@ -11642,7 +10334,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
   ],
   X30Pro: [
@@ -11656,7 +10347,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -11668,7 +10358,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 9,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -11680,7 +10369,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -11692,7 +10380,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -11704,7 +10391,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 9,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -11716,7 +10402,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Yellow peach wood',
@@ -11728,7 +10413,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Yellow peach wood',
@@ -11740,7 +10424,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -11752,7 +10435,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -11764,7 +10446,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -11776,7 +10457,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -11788,7 +10468,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -11800,7 +10479,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -11812,7 +10490,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Paulownia wood',
@@ -11824,7 +10501,6 @@ var jsonData = {
       max: '45%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -11836,7 +10512,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -11848,7 +10523,6 @@ var jsonData = {
       max: '70%',
       mode: '-',
       number: 9,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -11860,7 +10534,6 @@ var jsonData = {
       max: 450,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -11872,7 +10545,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 9,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia wood',
@@ -11884,7 +10556,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cork wood',
@@ -11896,7 +10567,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork wood',
@@ -11908,7 +10578,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -11920,7 +10589,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -11932,7 +10600,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -11944,7 +10611,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -11956,7 +10622,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -11968,7 +10633,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -11980,7 +10644,6 @@ var jsonData = {
       max: '60%',
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -11992,7 +10655,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -12004,7 +10666,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -12016,7 +10677,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics',
@@ -12028,7 +10688,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -12040,7 +10699,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -12052,7 +10710,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramic tile',
@@ -12064,7 +10721,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramic tile',
@@ -12076,7 +10732,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Alumina',
@@ -12088,7 +10743,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Alumina',
@@ -12100,7 +10754,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -12112,7 +10765,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -12124,7 +10776,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -12136,7 +10787,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -12148,7 +10798,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -12160,7 +10809,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -12172,7 +10820,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -12184,7 +10831,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -12196,7 +10842,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -12208,7 +10853,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -12220,7 +10864,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -12232,7 +10875,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Translucent Acrylic',
@@ -12244,7 +10886,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Translucent Acrylic',
@@ -12256,7 +10897,6 @@ var jsonData = {
       max: 130,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Two color plate',
@@ -12268,7 +10908,6 @@ var jsonData = {
       max: '12%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Two color plate',
@@ -12280,7 +10919,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Plastic',
@@ -12292,7 +10930,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -12304,7 +10941,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -12316,7 +10952,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 7,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -12328,7 +10963,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Resin',
@@ -12340,7 +10974,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Resin',
@@ -12352,7 +10985,6 @@ var jsonData = {
       max: 130,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'High density\nfoam board',
@@ -12364,7 +10996,6 @@ var jsonData = {
       max: '9%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'High density\nfoam board',
@@ -12376,7 +11007,6 @@ var jsonData = {
       max: 90,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rubber',
@@ -12388,7 +11018,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rubber',
@@ -12400,7 +11029,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -12412,7 +11040,6 @@ var jsonData = {
       max: '15%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -12424,7 +11051,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -12436,7 +11062,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -12448,7 +11073,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Office paper',
@@ -12460,7 +11084,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Office paper',
@@ -12472,7 +11095,6 @@ var jsonData = {
       max: 130,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glutinous rice paper',
@@ -12484,7 +11106,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glutinous rice paper',
@@ -12496,7 +11117,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Drywall',
@@ -12508,7 +11128,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Drywall',
@@ -12520,7 +11139,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Carton',
@@ -12532,7 +11150,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Carton',
@@ -12544,7 +11161,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -12556,7 +11172,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -12568,7 +11183,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -12580,7 +11194,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -12592,7 +11205,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -12604,7 +11216,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -12616,7 +11227,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -12628,7 +11238,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -12640,7 +11249,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -12652,7 +11260,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 7,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -12664,7 +11271,6 @@ var jsonData = {
       max: '-',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rock',
@@ -12676,7 +11282,6 @@ var jsonData = {
       max: '60%',
       mode: 'Filled',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rock',
@@ -12688,7 +11293,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Crystal Stone',
@@ -12700,7 +11304,6 @@ var jsonData = {
       max: '25%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Crystal Stone',
@@ -12712,7 +11315,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'PCB Board',
@@ -12724,7 +11326,6 @@ var jsonData = {
       max: '55%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'PCB Board',
@@ -12736,7 +11337,6 @@ var jsonData = {
       max: 550,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -12748,7 +11348,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -12760,7 +11359,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -12772,7 +11370,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -12784,7 +11381,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel\nSheet',
@@ -12796,7 +11392,6 @@ var jsonData = {
       max: '60%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: '-',
@@ -12808,7 +11403,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Galvanized iron',
@@ -12820,7 +11414,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Galvanized iron',
@@ -12832,7 +11425,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Iron sheet',
@@ -12844,7 +11436,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Iron sheet',
@@ -12856,7 +11447,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brass',
@@ -12868,7 +11458,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Brass',
@@ -12880,7 +11469,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Transparent Polycarbonate',
@@ -12892,7 +11480,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Transparent Polycarbonate',
@@ -12904,7 +11491,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Wrench (chrome- vanadium alloy)',
@@ -12916,7 +11502,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Wrench (chrome- vanadium alloy)',
@@ -12928,7 +11513,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cobble Stone',
@@ -12940,7 +11524,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cobble Stone',
@@ -12952,7 +11535,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'EVa Foam',
@@ -12964,7 +11546,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'EVa Foam',
@@ -12976,7 +11557,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
   ],
   X20Pro: [
@@ -12990,7 +11570,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -13002,7 +11581,6 @@ var jsonData = {
       max: '75%',
       mode: '-',
       number: 6,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -13014,7 +11592,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -13026,7 +11603,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -13038,7 +11614,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -13050,7 +11625,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Paulownia Wood',
@@ -13062,7 +11636,6 @@ var jsonData = {
       max: '45%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -13074,7 +11647,6 @@ var jsonData = {
       max: '70%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -13086,7 +11658,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -13098,7 +11669,6 @@ var jsonData = {
       max: 350,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -13110,7 +11680,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 6,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -13122,7 +11691,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cork Wood',
@@ -13134,7 +11702,6 @@ var jsonData = {
       max: '70%',
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -13146,7 +11713,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -13158,7 +11724,6 @@ var jsonData = {
       max: 850,
       mode: '-',
       number: 2,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -13170,7 +11735,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Yellow Peach Wood',
@@ -13182,7 +11746,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Yellow Peach Wood',
@@ -13194,7 +11757,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -13206,7 +11768,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -13218,7 +11779,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -13230,7 +11790,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -13242,7 +11801,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -13254,7 +11812,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 3,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -13266,7 +11823,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -13278,7 +11834,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -13290,7 +11845,6 @@ var jsonData = {
       max: '65%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -13302,7 +11856,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -13314,7 +11867,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -13326,7 +11878,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 8,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -13338,7 +11889,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Translucent Acrylic',
@@ -13350,7 +11900,6 @@ var jsonData = {
       max: '13%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -13362,7 +11911,6 @@ var jsonData = {
       max: '15%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -13374,7 +11922,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -13386,7 +11933,6 @@ var jsonData = {
       max: 140,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -13398,7 +11944,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Office Paper',
@@ -13410,7 +11955,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Office Paper',
@@ -13422,7 +11966,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Oil Painting Paper',
@@ -13434,7 +11977,6 @@ var jsonData = {
       max: '23%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Oil Painting Paper',
@@ -13446,7 +11988,6 @@ var jsonData = {
       max: 250,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -13458,7 +11999,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -13470,7 +12010,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -13482,7 +12021,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -13494,7 +12032,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -13506,7 +12043,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -13518,7 +12054,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel Sheet',
@@ -13530,7 +12065,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Stainless Steel Sheet',
@@ -13542,7 +12076,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -13554,7 +12087,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -13566,7 +12098,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -13578,7 +12109,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -13590,7 +12120,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -13602,7 +12131,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -13614,7 +12142,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -13626,7 +12153,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -13638,7 +12164,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -13650,7 +12175,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -13662,7 +12186,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics',
@@ -13674,7 +12197,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -13686,7 +12208,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics Tile',
@@ -13698,7 +12219,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics Tile',
@@ -13710,7 +12230,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Alumina',
@@ -13722,7 +12241,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Alumina',
@@ -13734,7 +12252,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -13746,7 +12263,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -13758,7 +12274,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -13770,7 +12285,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -13782,7 +12296,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -13794,7 +12307,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Plastic',
@@ -13806,7 +12318,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Carton',
@@ -13818,7 +12329,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Carton',
@@ -13830,7 +12340,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -13842,7 +12351,6 @@ var jsonData = {
       max: '20%',
       mode: 'Atkinson',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -13854,7 +12362,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 4,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -13866,7 +12373,6 @@ var jsonData = {
       max: '100%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -13878,7 +12384,6 @@ var jsonData = {
       max: 180,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -13890,7 +12395,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 7,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -13902,7 +12406,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Galvanized Iron',
@@ -13914,7 +12417,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Galvanized Iron',
@@ -13926,7 +12428,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rock',
@@ -13938,7 +12439,6 @@ var jsonData = {
       max: '60%',
       mode: 'Filled',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rock',
@@ -13950,7 +12450,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Crystal Stone',
@@ -13962,7 +12461,6 @@ var jsonData = {
       max: '65%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Cobblestone',
@@ -13974,7 +12472,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Cobblestone',
@@ -13986,7 +12483,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'PCB Board',
@@ -13998,7 +12494,6 @@ var jsonData = {
       max: '60%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'PCB Board',
@@ -14010,7 +12505,6 @@ var jsonData = {
       max: 650,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'High Density Foam Board',
@@ -14022,7 +12516,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'High Density Foam Board',
@@ -14034,7 +12527,6 @@ var jsonData = {
       max: 120,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mahogany',
@@ -14046,7 +12538,6 @@ var jsonData = {
       max: '35%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mahogany',
@@ -14058,7 +12549,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Two Color Plate',
@@ -14070,7 +12560,6 @@ var jsonData = {
       max: '12%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Two Color Plate',
@@ -14082,7 +12571,6 @@ var jsonData = {
       max: 100,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Resin',
@@ -14094,7 +12582,6 @@ var jsonData = {
       max: '13%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Resin',
@@ -14106,7 +12593,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Artificial Beef Bone',
@@ -14118,7 +12604,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Artificial Beef Bone',
@@ -14130,7 +12615,6 @@ var jsonData = {
       max: 240,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rubber',
@@ -14142,7 +12626,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rubber',
@@ -14154,7 +12637,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Iron Sheet',
@@ -14166,7 +12648,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Iron Sheet',
@@ -14178,7 +12659,6 @@ var jsonData = {
       max: 500,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Artificial Agate',
@@ -14190,7 +12670,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Artificial Agate',
@@ -14202,7 +12681,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
   ],
   X7Pro: [
@@ -14216,7 +12694,6 @@ var jsonData = {
       max: '25%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -14228,7 +12705,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -14240,7 +12716,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 8,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -14252,7 +12727,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Basswood',
@@ -14264,7 +12738,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Paulownia Wood',
@@ -14276,7 +12749,6 @@ var jsonData = {
       max: '50%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -14288,7 +12760,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 8,
-      color: '#f8f8f8',
     },
     {
       name: 'Paulownia Wood',
@@ -14300,7 +12771,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#f8f8f8',
     },
     {
       name: 'Cork Wood',
@@ -14312,7 +12782,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Cork Wood',
@@ -14324,7 +12793,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Bamboo',
@@ -14336,7 +12804,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -14348,7 +12815,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -14360,7 +12826,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Bamboo',
@@ -14372,7 +12837,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 8,
-      color: '#f8f8f8',
     },
     {
       name: 'Opaque Acrylic',
@@ -14384,7 +12848,6 @@ var jsonData = {
       max: '25%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -14396,7 +12859,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 5,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -14408,7 +12870,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Opaque Acrylic',
@@ -14420,7 +12881,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 10,
-      color: '#d1e1fc',
     },
     {
       name: 'Kraft Paper',
@@ -14432,7 +12892,6 @@ var jsonData = {
       max: '20%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -14444,7 +12903,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -14456,7 +12914,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Kraft Paper',
@@ -14468,7 +12925,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Office Paper',
@@ -14480,7 +12936,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Office Paper',
@@ -14492,7 +12947,6 @@ var jsonData = {
       max: 350,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Oil Painting Paper',
@@ -14504,7 +12958,6 @@ var jsonData = {
       max: '30%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Oil Painting Paper',
@@ -14516,7 +12969,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirrors',
@@ -14528,7 +12980,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirrors',
@@ -14540,7 +12991,6 @@ var jsonData = {
       max: 150,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Leather',
@@ -14552,7 +13002,6 @@ var jsonData = {
       max: '15%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -14564,7 +13013,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -14576,7 +13024,6 @@ var jsonData = {
       max: 180,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Leather',
@@ -14588,7 +13035,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -14600,7 +13046,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Mirror Stainless Steel',
@@ -14612,7 +13057,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Brushed Stainless Steel',
@@ -14624,7 +13068,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Stainless Steel',
@@ -14636,7 +13079,6 @@ var jsonData = {
       max: 1000,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Pine',
@@ -14648,7 +13090,6 @@ var jsonData = {
       max: '25%',
       mode: 'Jarvis',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -14660,7 +13101,6 @@ var jsonData = {
       max: '80%',
       mode: '-',
       number: 8,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -14672,7 +13112,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Pine',
@@ -14684,7 +13123,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 6,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics',
@@ -14696,7 +13134,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics',
@@ -14708,7 +13145,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Ceramics Tile',
@@ -14720,7 +13156,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Ceramics Tile',
@@ -14732,7 +13167,6 @@ var jsonData = {
       max: 600,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Alumina',
@@ -14744,7 +13178,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Alumina',
@@ -14756,7 +13189,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Glass',
@@ -14768,7 +13200,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Glass',
@@ -14780,7 +13211,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Plastic',
@@ -14792,7 +13222,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Plastic',
@@ -14804,7 +13233,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Denim',
@@ -14816,7 +13244,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Denim',
@@ -14828,7 +13255,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Carton',
@@ -14840,7 +13266,6 @@ var jsonData = {
       max: '50%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Carton',
@@ -14852,7 +13277,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'MDF',
@@ -14864,7 +13288,6 @@ var jsonData = {
       max: '20%',
       mode: 'Atkinson',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'MDF',
@@ -14876,7 +13299,6 @@ var jsonData = {
       max: 300,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Galvanized Iron',
@@ -14888,7 +13310,6 @@ var jsonData = {
       max: '80%',
       mode: 'Jarvis',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Galvanized Iron',
@@ -14900,7 +13321,6 @@ var jsonData = {
       max: 800,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Rock',
@@ -14912,7 +13332,6 @@ var jsonData = {
       max: '80%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Rock',
@@ -14924,7 +13343,6 @@ var jsonData = {
       max: 700,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'Crystal Stone',
@@ -14936,7 +13354,6 @@ var jsonData = {
       max: '20%',
       mode: 'Threshold',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'Crystal Stone',
@@ -14948,7 +13365,6 @@ var jsonData = {
       max: 200,
       mode: '-',
       number: 1,
-      color: '#d1e1fc',
     },
     {
       name: 'PCB Board',
@@ -14960,7 +13376,6 @@ var jsonData = {
       max: '70%',
       mode: 'Threshold',
       number: 1,
-      color: '#f8f8f8',
     },
     {
       name: 'PCB Board',
@@ -14972,7 +13387,6 @@ var jsonData = {
       max: 400,
       mode: '-',
       number: 1,
-      color: '#f8f8f8',
     },
   ],
 };

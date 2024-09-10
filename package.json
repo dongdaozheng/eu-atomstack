@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "shopify theme dev --store=atomstack-official.myshopify.com --port=8080",
+    "dev": "shopify theme dev --store=atomstack-official.myshopify.com",
     "gulp": "gulp"
   },
   "author": "",

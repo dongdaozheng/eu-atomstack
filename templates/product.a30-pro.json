@@ -18,6 +18,14 @@
             "include_variant_name": false
           }
         },
+        "smile_io_smile_points_on_product_page_nFTEdk": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#121212",
+            "secondary_colour": "#f8f8f8",
+            "should_show_icon": true
+          }
+        },
         "image_9LyQ3c": {
           "type": "image",
           "disabled": true,
@@ -143,6 +151,7 @@
       },
       "block_order": [
         "meta",
+        "smile_io_smile_points_on_product_page_nFTEdk",
         "image_9LyQ3c",
         "3d15ae3a-f9cc-4b2a-991f-58d763600250",
         "796b3181-6e42-429f-811a-187cf8273222",
@@ -188,6 +197,7 @@
     },
     "image_link_tU3KKK": {
       "type": "image-link",
+      "disabled": true,
       "settings": {
         "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
         "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
@@ -478,7 +488,7 @@
           "type": "liquid",
           "settings": {
             "title": "Reviews",
-            "liquid": "<div id=\"looxReviews\" data-limit=\"4\" data-product-id=\"{{ product.id }}\"><\/div>"
+            "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
           }
         }
       },
@@ -551,8 +561,8 @@
         "image_3tXFgQ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-PC_5f5fc3ab-5ce1-4074-b4b8-e5b0dbe78cfb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/atomstack_x_one_tree_planted-mobile_8afa6f07-e3e0-4d9a-8879-61f3ee654ad0.jpg",
+            "image": "shopify:\/\/shop_images\/one_tree_planted.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/one_tree_pleanted-02.jpg",
             "text_position": "middle_center",
             "mobile_text_position": "inherit",
             "subheading": "",

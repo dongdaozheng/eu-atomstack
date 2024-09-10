@@ -10113,7 +10113,6 @@ product-item .color-swatch__item {
 .header__wrapper {
   display: flex;
   align-items: center;
-  padding: 20px 0;
 }
 
 .header__inline-navigation {
@@ -10133,12 +10132,6 @@ product-item .color-swatch__item {
 @media screen and (max-width: 740px) {
   .header__logo-text {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 741px) {
-  .header__wrapper {
-    padding: calc(27px - var(--reduce-header-padding) * 6px) 0;
   }
 }
 
@@ -17448,5 +17441,54 @@ product-payment-container button#AddToCart {
 }
 
 cart-notification {
+  display: none !important;
+}
+
+.upsellWrapper {
+  background-position: right bottom !important;
+  background-repeat: no-repeat !important;
+}
+
+.product-meta__title {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.looxReviews {
+  margin-bottom: 20px;
+  display: block;
+}
+#email_127490549,
+input.needsclick {
+  border: 0px !important;
+  border-bottom: 1px solid !important;
+  border-radius: 0px !important;
+}
+#email_127490549:focus-visible,
+input.needsclick:focus-visible {
+  outline-width: 0px !important;
+  outline: none !important;
+}
+
+.needsclick.klaviyo-form.klaviyo-form-version-cid_1.go417382439.kl-private-reset-css-Xuajs1 > div:nth-child(2) {
+  width: 458px !important;
+  min-width: 458px !important;
+}
+
+.rp-micro-app-dummy-icon-container.rp-micro-app-label-icon-container {
+  width: auto !important;
+  height: auto !important;
+  height: auto !important ;
+  padding: 0px !important;
+  right: 16px !important;
+  bottom: 16px !important;
+}
+
+.product-meta__label-list.label-list span {
+  background-color: #ffaa2b;
+}
+
+#special .needsclick.kl-teaser-SaJyRz.kl-private-reset-css-Xuajs1,
+#special .needsclick.kl-private-reset-css-Xuajs1 {
   display: none !important;
 }

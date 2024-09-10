@@ -18,6 +18,15 @@
             "include_variant_name": false
           }
         },
+        "smile_io_smile_points_on_product_page_MDN4GK": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#121212",
+            "secondary_colour": "#f8f8f8",
+            "should_show_icon": true,
+            "earning_rate": 2
+          }
+        },
         "image_4chXy4": {
           "type": "image",
           "disabled": true,
@@ -164,6 +173,7 @@
       },
       "block_order": [
         "meta",
+        "smile_io_smile_points_on_product_page_MDN4GK",
         "image_4chXy4",
         "20ec0a8d-8587-4a53-a47c-66726894bb7e",
         "71d1f91a-419d-41fd-8f48-7093f643bd53",
@@ -188,7 +198,7 @@
         "show_vendor": false,
         "show_sku": false,
         "show_taxes_included": false,
-        "show_product_rating": false,
+        "show_product_rating": true,
         "show_sticky_add_to_cart": true,
         "show_sticky_quick_buy": false,
         "show_share_buttons": false,
@@ -282,6 +292,7 @@
         },
         "2204da78-b237-421b-a82c-400900893ea0": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "title": "Reviews",
             "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"
@@ -328,6 +339,30 @@
       "type": "pf-9cef1037",
       "settings": {
       }
+    },
+    "17252468112a1d5fa9": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_hYJaqG": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_hYJaqG"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
     }
   },
   "order": [
@@ -336,6 +371,7 @@
     "slideshow_Et89GE",
     "product-content",
     "product-recommendations",
-    "pf-9cef1037"
+    "pf-9cef1037",
+    "17252468112a1d5fa9"
   ]
 }

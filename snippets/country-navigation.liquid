@@ -1,0 +1,72 @@
+<toggle-navigation>
+  <div class='container'>
+    <div class='toggle-country'>
+      <a class='contact-us'>
+        Contact us
+        {% render 'arrows' %}
+      </a>
+      <div class='select-country'>
+        <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'>
+          <circle cx="10" cy="10" r="9.5" stroke="#333333"/>
+          <path d="M14.8337 10C14.8337 12.696 14.2498 15.1119 13.3304 16.8358C12.3995 18.5811 11.1985 19.5 10.0003 19.5C8.80212 19.5 7.60112 18.5811 6.67027 16.8358C5.75087 15.1119 5.16699 12.696 5.16699 10C5.16699 7.30403 5.75087 4.88809 6.67027 3.16423C7.60112 1.41888 8.80212 0.5 10.0003 0.5C11.1985 0.5 12.3995 1.41888 13.3304 3.16423C14.2498 4.88809 14.8337 7.30403 14.8337 10Z" stroke="#333333"/>
+          <path d="M1.3335 6.66666H18.6668" stroke="#333333"/>
+          <path d="M1.3335 13.3333H18.6668" stroke="#333333"/>
+        </svg>
+        <p>United States / English</p>
+      </div>
+    </div>
+  </div>
+  <div class='toggle-country-popup'>
+    <div class='popup-content'>
+      <div class='mb-arrows'>
+        {% render 'arrows' %}
+      </div>
+      <div class='title'>
+        Select Your Country / Region
+        <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'>
+          <path d="M19 1L0.999998 19" stroke="#191919" stroke-width="2"/>
+          <path d="M19 19L1 1" stroke="#191919" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class='content'>
+        <ul>
+          <p>North America</p>
+          <div class='li-wrapper'>
+            <li data-language='us'>
+              <span>United Stated</span>
+              <span>English / $USD</span>
+            </li>
+          </div>
+        </ul>
+        <ul>
+          <p>Europe</p>
+          <div class='li-wrapper'>
+            <li data-language='eu'>
+              <span>Europe</span>
+              <span>English / €EUR</span>
+            </li>
+            <li data-language='fr'>
+              <span>Deutschland</span>
+              <span>Deutsch / €EUR</span>
+            </li>
+            <li data-language='de'>
+              <span>France</span>
+              <span>Français / €EUR</span>
+            </li>
+            <li data-language='it'>
+              <span>Italy</span>
+              <span>Italian / €EUR</span>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</toggle-navigation>
+<style>
+  @media (min-width: 1000px) {
+    :root {
+      --toggle-country-navigation-height: 40px;
+    }
+  }
+</style>

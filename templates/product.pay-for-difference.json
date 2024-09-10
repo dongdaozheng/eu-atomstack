@@ -56,6 +56,19 @@
             "image_uploader_label": "<p>Drag & Drop your image or <span style=\"text-decoration:underline\">Browse<\/span> <\/p>"
           }
         },
+        "f141e0c6-598b-4112-a2e9-ea1b020d3db9": {
+          "type": "shopify:\/\/apps\/loloyal-com\/blocks\/boom-embed\/930ac91f-2bf2-4655-9ba0-574771f782d6",
+          "disabled": true,
+          "settings": {
+            "bm_span_value": "Get: {Points} points by buying this item, every 100 points worth $2 USD.",
+            "bm_span_font_color": "#2e9e7b",
+            "bm_span_font_size": 15,
+            "bm_span_font_weight": "600",
+            "bm_div_justify_content": "center",
+            "bm_span_flash_status": "visible",
+            "bm_span_flash_color": "linear-gradient(180deg, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 0.5) 100%)"
+          }
+        },
         "list_delivery_free_return": {
           "type": "list",
           "settings": {
@@ -107,6 +120,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "f141e0c6-598b-4112-a2e9-ea1b020d3db9",
         "list_delivery_free_return",
         "b13910f6-1a31-4062-9d9c-7893debb103d",
         "a33b0886-6286-4ee7-af11-9ff9ba4f6c4a"
@@ -159,6 +173,7 @@
         },
         "2204da78-b237-421b-a82c-400900893ea0": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "title": "Reviews",
             "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"

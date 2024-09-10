@@ -3,78 +3,360 @@ body {
   margin: 0px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "OpenSans";
+#Program .swiper-button-prev,
+#Program .swiper-button-next {
+  z-index: 1;
 }
-
-p {
-  font-family: "OpenSans" !important;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-.banner {
+#Program .swiper-button-prev::after,
+#Program .swiper-button-next::after {
+  content: "";
+  display: block;
   width: 100%;
-  height: 7.5rem;
+  height: 100%;
+  background: url("arrows.png") no-repeat center/cover;
 }
-
+#Program .swiper-button-prev::after {
+  transform: rotate(180deg);
+}
 #Program .product-wrapper {
   background-color: #ffffff;
-  padding: 120px 60px;
+}
+#Program .product-wrapper .title {
+  color: #333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
 }
 #Program .product-ul {
-  max-width: 1440px;
+  margin: auto;
+}
+#Program .product-ul ul {
   display: flex;
-  padding: 12px 0px;
   justify-content: center;
   align-items: center;
-  gap: 120px;
-  align-self: stretch;
   background-color: #f8f8f8;
-  border-radius: 15px;
-  margin: auto;
-  margin-bottom: 24px !important;
 }
 #Program .product-ul li {
   list-style: none;
+}
+#Program .product-ul li.active span {
+  color: #2b72ff;
+}
+#Program .product-ul li span {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#Program .product-ul li span:hover {
+  color: #2b72ff;
 }
 #Program .product-ul span {
   color: #333;
   text-align: center;
   font-family: "Open Sans";
-  font-size: 20px;
   font-style: normal;
   font-weight: 700;
 }
 #Program .product-info {
-  max-width: 1440px;
   margin: auto;
 }
 #Program .product-info .item {
   display: flex;
   justify-content: center;
-  max-width: 1440px;
+  max-width: fit-content;
 }
 #Program .product-info .item p {
   text-align: center;
   color: #333;
   text-align: center;
-  font-size: 16px;
   font-style: normal;
   font-weight: 700;
 }
+#Program .product-info .item.hidden {
+  display: none;
+}
 #Program .product-info .product-img {
-  width: 268px;
   flex-wrap: nowrap;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: all 0.3s ease;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
 }
 #Program .product-info .product-img img {
-  width: 220px;
   margin: auto;
+}
+#Program .product-info .product-img:hover, #Program .product-info .product-img.active {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.5);
+}
+#Program .product-info .product-img:hover p, #Program .product-info .product-img.active p {
+  color: #2b72ff;
+}
+#Program .foot {
+  background: #f8f8f8;
+}
+#Program .foot .foot-title {
+  color: #333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+}
+#Program .foot .table-title {
+  background-color: #ffffff;
+  border-bottom: none;
+  color: #333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+}
+#Program .foot .foot-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#Program .foot .table-scroll {
+  overflow: hidden;
+  position: relative;
+}
+#Program .foot .table-scroll.table-scroll-show {
+  max-height: fit-content;
+}
+#Program .foot .hidden-bar {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: 5;
+}
+#Program .foot .hidden-bar svg {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  position: absolute;
+  animation: move 1s ease infinite;
+  cursor: pointer;
+}
+#Program .foot .hidden-bar svg.rotate {
+  transform: rotate(180deg) translateX(50%);
+  animation: none;
+}
+#Program .foot .foot-table th {
+  width: auto;
+  background-color: #fff;
+  text-align: center;
+  color: #333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#Program .foot .foot-table th:last-child {
+  border-right: none;
+}
+#Program .foot .foot-table td {
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#Program .foot .foot-table td:last-of-type {
+  border-right: none;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, 0px);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+  100% {
+    transform: translate(-50%, 0px);
+  }
+}
+@media (min-width: 900px) {
+  #Program .swiper-pagination {
+    display: none;
+  }
+  #Program .mb-title {
+    display: none;
+  }
+  #Program .swiper-button-prev,
+  #Program .swiper-button-next {
+    width: 36px;
+    height: 36px;
+  }
+  #Program .product-wrapper {
+    padding: 120px 0px 40px;
+  }
+  #Program .product-wrapper .title {
+    font-size: 52px;
+    margin-bottom: 32px;
+  }
+  #Program .product-ul {
+    width: 100%;
+    max-width: var(--container-max-width);
+    padding-left: var(--container-gutter);
+    padding-right: var(--container-gutter);
+    margin: auto;
+    margin-bottom: 24px !important;
+  }
+  #Program .product-ul ul {
+    padding: 12px 0px;
+    column-gap: 120px;
+    border-radius: 15px;
+  }
+  #Program .product-ul span {
+    font-size: 20px;
+  }
+  #Program .product-info .item p {
+    font-size: 16px;
+  }
+  #Program .product-info .product-img {
+    width: 268px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+  }
+  #Program .product-info .product-img img {
+    width: 220px;
+    margin: auto;
+  }
+  #Program .product-info .product-img p {
+    margin-top: 24px;
+  }
+  #Program .foot {
+    padding: 60px 0px;
+  }
+  #Program .foot .foot-title {
+    font-size: 52px;
+    margin-bottom: 32px;
+  }
+  #Program .foot .table-title {
+    padding: 24px 0px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    font-size: 24px;
+    border-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  #Program .foot .table-scroll {
+    max-height: 760px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  #Program .foot .hidden-bar {
+    height: 100px;
+    border-radius: 0px 0px 6px 6px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  }
+  #Program .foot .hidden-bar svg {
+    width: 48px;
+    height: 48px;
+  }
+  #Program .foot .foot-table th {
+    width: auto;
+    padding: 24px 10px;
+    border-right: 1px solid #ddd;
+    font-size: 16px;
+  }
+  #Program .foot .foot-table td {
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #Program .foot .foot-table tr {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 900px) {
+  #Program .mb-title {
+    margin-top: 8vw;
+    color: #333;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 4.6666666667vw;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  #Program .product-wrapper {
+    padding: 2.6666666667vw 0px 4vw;
+  }
+  #Program .product-wrapper .product-ul {
+    margin-bottom: 2.6666666667vw;
+  }
+  #Program .product-wrapper .title {
+    display: none;
+  }
+  #Program .product-wrapper ul {
+    padding: 1.6vw 4.8vw;
+    justify-content: space-between;
+  }
+  #Program .product-wrapper ul li {
+    font-size: 3.2vw;
+  }
+  #Program .swiper {
+    padding-bottom: 13.3333333333vw;
+  }
+  #Program .swiper .swiper-button {
+    display: none;
+  }
+  #Program .product-img {
+    width: 40vw;
+  }
+  #Program .foot {
+    padding: 8vw 0px;
+  }
+  #Program .foot .foot-title {
+    margin-bottom: 3.2vw;
+    font-size: 4.6666666667vw;
+  }
+  #Program .foot .table-title {
+    padding: 6.4vw 0px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    font-size: 3.2vw;
+    border-radius: 1.6vw;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  #Program .foot .table-scroll {
+    border: 1px solid #ddd;
+    border-radius: 1.6vw;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    overflow: overlay;
+    max-height: 133.3333333333vw;
+  }
+  #Program .foot .hidden-bar {
+    display: none;
+  }
+  #Program .foot .foot-table th {
+    width: auto;
+    padding: 6.4vw 2.6666666667vw;
+    border-right: 1px solid #ddd;
+    font-size: 3.2vw;
+  }
+  #Program .foot .foot-table td {
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 2.6666666667vw;
+    font-size: 3.2vw;
+  }
+  #Program .foot .foot-table tr {
+    margin-top: 1.3333333333vw;
+  }
 }

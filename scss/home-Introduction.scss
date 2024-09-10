@@ -5,7 +5,6 @@
 .home-Introduction {
   background: #f0f2f4;
   .container {
-    padding: 0;
     p {
       padding: 0;
       margin: 0;
@@ -37,15 +36,25 @@
         font-weight: 400;
       }
     }
+    .grid-title {
+      color: #000;
+      text-align: center;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+    }
+    .grid-desc {
+      color: rgba(0, 0, 0, 0.93);
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+    }
   }
 }
 @media (min-width: 1000px) {
   .home-Introduction {
-    padding: 70px 0;
+    padding: 70px 0 50px;
     .container {
-      padding: 0;
-      max-width: 1200px;
-
       .title {
         max-width: 960px;
         font-size: 48px;
@@ -62,6 +71,36 @@
         }
         .item-desc {
           font-size: 14px;
+        }
+      }
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      margin-top: 56px;
+      gap: 20px;
+      .grid-item {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 33px;
+        border-radius: 6px;
+
+        img {
+          width: 120px;
+          height: 120px;
+          display: block;
+          margin: 23px auto 20px;
+          border-radius: 50%;
+        }
+
+        .grid-title {
+          font-size: 18px;
+        }
+        .grid-desc {
+          font-size: 16px;
+          margin-top: 20px;
         }
       }
     }
@@ -96,6 +135,32 @@
           font-size: vw(20px);
           text-align: left;
           line-height: normal;
+        }
+      }
+      .grid-container {
+        margin-top: vw(50px);
+        display: flex;
+        overflow: auto;
+        column-gap: vw(20px);
+        .grid-item {
+          width: vw(358px);
+          flex-shrink: 0;
+          background-color: #fff;
+          img {
+            width: vw(80px);
+            height: vw(80px);
+            margin: vw(47px) auto vw(28px);
+            display: block;
+            border-radius: 50%;
+          }
+          .grid-title {
+            font-size: vw(20px);
+            margin-bottom: vw(10px);
+          }
+          .grid-desc {
+            font-size: vw(16px);
+            padding: vw(10px);
+          }
         }
       }
     }

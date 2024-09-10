@@ -1,0 +1,117 @@
+<link rel='stylesheet' href='{{ 'swiper-showcase.css' | asset_url }}'>
+<div class='swiper-showcase'>
+  <p class='title'>{{ section.settings.title }}</p>
+  <div class='container'>
+    <div class='bar-wrapper'>
+      {% for block in section.blocks %}
+        {% if block.type == 'bar' %}
+          <div class='bar'>
+            <div class='bar-text'>{{ block.settings.text }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class='content-wrapper'>
+      {% for block in section.blocks %}
+        {% if block.type == 'content' %}
+          <p class='content-title'>{{ block.settings.title }}</p>
+          <div class='content'>
+            <div class='content-img'>
+              <picture>
+                <source media='(max-width: 1000px)' srcset='{{ block.settings.mb_img | image_url}}'>
+                <source media='(min-width: 1000px)' srcset='{{ block.settings.pc_img | image_url}}'>
+                <img
+                  src='{{ block.settings.pc_img | image_url }}'
+                  alt='img'
+                  width='100%'
+                  height='100%'
+                >
+              </picture>
+            </div>
+            <div class='content-desc'>{{ block.settings.desc }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+  let activeIndex = 0;
+  const barWrapper = document.querySelector('.bar-wrapper');
+  const contentWrapper = document.querySelector('.content-wrapper');
+  const barList = barWrapper.querySelectorAll('.bar');
+  const contentList = contentWrapper.querySelectorAll('.content');
+  contentList[activeIndex].classList.add('active');
+  barList[activeIndex].classList.add('active');
+
+  barList.forEach((bar, index) => {
+    bar.addEventListener('click', () => {
+      activeIndex = index;
+      barList.forEach((item) => {
+        item.classList.remove('active');
+      });
+      console.log('index', bar);
+      bar.classList.add('active');
+      contentList.forEach((item) => {
+        item.classList.remove('active');
+      });
+      contentList[index].classList.add('active');
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "swiper-showcase",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "bar",
+      "name": "bar",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "text"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "text",
+          "id": "desc",
+          "label": "desc"
+        },
+        {
+          "type": "image_picker",
+          "id": "pc_img",
+          "label": "PC Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mb_img",
+          "label": "MB Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "swiper-showcase"
+    }
+  ]
+}
+{% endschema %}

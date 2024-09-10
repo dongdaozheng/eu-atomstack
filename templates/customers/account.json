@@ -1,1 +1,52 @@
-{"sections":{"main":{"type":"main-customers-account","blocks":{"orders":{"type":"orders","settings":{}}},"block_order":["orders"],"settings":{}}},"order":["main"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "172544789950cb0511": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_points_on_account_page_hNCAVG": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-account-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#121212",
+            "secondary_colour": "#F8F8F8",
+            "show_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_points_on_account_page_hNCAVG"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "main": {
+      "type": "main-customers-account",
+      "blocks": {
+        "orders": {
+          "type": "orders",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "orders"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "172544789950cb0511",
+    "main"
+  ]
+}

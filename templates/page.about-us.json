@@ -196,11 +196,11 @@
         "mobile_bottom_padding": 0
       }
     },
-    "image_link_iteD7R": {
+    "image_link_i7L9iD": {
       "type": "image-link",
       "settings": {
-        "pc_img": "shopify:\/\/shop_images\/1920-650_2x_8ee3bbb6-79ed-4002-9379-24b1f3ae1478.jpg",
-        "mb_img": "shopify:\/\/shop_images\/850-1212_2x_74f371a9-28fa-4c83-9521-683f475f78df.jpg",
+        "pc_img": "shopify:\/\/shop_images\/one_tree_planted.jpg",
+        "mb_img": "shopify:\/\/shop_images\/one_tree_pleanted-02.jpg",
         "link": ""
       }
     }
@@ -211,6 +211,6 @@
     "53b73dd6-7cb6-4d47-9273-987a91671018",
     "1f902112-90ba-4676-929e-b84c293461e9",
     "3cad9282-d7cb-4e88-bef4-084566ec6728",
-    "image_link_iteD7R"
+    "image_link_i7L9iD"
   ]
 }

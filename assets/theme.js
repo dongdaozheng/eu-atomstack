@@ -1373,6 +1373,7 @@
       }
       this.addEventListener('click', this._onButtonClick.bind(this));
       this.rootDelegate = new main_default(document.documentElement);
+      this.mobileNavigation = document.querySelector('mobile-navigation');
     }
     _onButtonClick() {
       this.isExpanded = !this.isExpanded;
@@ -1423,6 +1424,7 @@
     }
     set isExpanded(value) {
       this.setAttribute('aria-expanded', value ? 'true' : 'false');
+      this.mobileNavigation.style.display = value ? 'block' : 'none';
 
       const parentElement = this.closest('product-media');
 
@@ -5506,172 +5508,112 @@
   // js/custom-element/section/header/desktop-navigation.js
   var DesktopNavigation = class extends CustomHTMLElement {
     connectedCallback() {
-      this.openingTimeout = null;
-      this.currentMegaMenu = null;
-      this.delegate.on(
-        'mouseenter',
-        '.has-dropdown',
-        (event, target) => {
-          if (event.target === target && event.relatedTarget !== null) {
-            this.openDropdown(target);
-          }
-        },
-        true,
-      );
-      this.delegate.on(
-        'click',
-        '.header__linklist-link[aria-expanded], .nav-dropdown__link[aria-expanded]',
-        (event, target) => {
-          if (window.matchMedia('(hover: hover)').matches || target.getAttribute('aria-expanded') === 'true') {
-            return;
-          }
-          event.preventDefault();
-          this.openDropdown(target.parentElement);
-        },
-      );
-      this.delegate.on('shopify:block:select', (event) => this.openDropdown(event.target.parentElement));
-      this.delegate.on('shopify:block:deselect', (event) => this.closeDropdown(event.target.parentElement));
+      this.line = this.querySelector('.line');
+      this.li = this.querySelectorAll('.nav-bar>li');
+      this.activeIndex = 0;
+      this.init();
     }
-    openDropdown(parentElement) {
-      const menuItem = parentElement.querySelector('[aria-controls]'),
-        dropdown = parentElement.querySelector(`#${menuItem.getAttribute('aria-controls')}`);
-      this.currentMegaMenu = dropdown.classList.contains('mega-menu') ? dropdown : null;
-      let openingTimeout = setTimeout(() => {
-        if (menuItem.getAttribute('aria-expanded') === 'true') {
-          return;
-        }
-        menuItem.setAttribute('aria-expanded', 'true');
-        dropdown.removeAttribute('hidden');
-        if (dropdown.classList.contains('mega-menu') && !MediaFeatures.prefersReducedMotion()) {
-          const items = Array.from(dropdown.querySelectorAll('.mega-menu__column, .mega-menu__image-push'));
-          items.forEach((item) => {
-            item.getAnimations().forEach((animation2) => animation2.cancel());
-            item.style.opacity = 0;
-          });
-          const animation = new CustomAnimation(
-            new ParallelEffect(
-              items.map((item, index) => {
-                return new CustomKeyframeEffect(
-                  item,
-                  {
-                    opacity: [0, 1],
-                    transform: ['translateY(20px)', 'translateY(0)'],
-                  },
-                  {
-                    duration: 250,
-                    delay: 100 + 60 * index,
-                    easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
-                  },
-                );
-              }),
-            ),
-          );
-          animation.play();
-        }
-        const leaveListener = (event) => {
-          if (event.relatedTarget !== null) {
-            this.closeDropdown(parentElement);
-            parentElement.removeEventListener('mouseleave', leaveListener);
-          }
-        };
-        const leaveDocumentListener = () => {
-          this.closeDropdown(parentElement);
-          document.documentElement.removeEventListener('mouseleave', leaveDocumentListener);
-        };
-        parentElement.addEventListener('mouseleave', leaveListener);
-        document.documentElement.addEventListener('mouseleave', leaveDocumentListener);
-        openingTimeout = null;
-        this.dispatchEvent(new CustomEvent('desktop-nav:dropdown:open', { bubbles: true }));
-      }, 100);
-      parentElement.addEventListener(
-        'mouseleave',
-        () => {
-          if (openingTimeout) {
-            clearTimeout(openingTimeout);
-          }
-        },
-        { once: true },
-      );
-    }
-    closeDropdown(parentElement) {
-      const menuItem = parentElement.querySelector('[aria-controls]'),
-        dropdown = parentElement.querySelector(`#${menuItem.getAttribute('aria-controls')}`);
-      requestAnimationFrame(() => {
-        dropdown.classList.add('is-closing');
-        menuItem.setAttribute('aria-expanded', 'false');
-        setTimeout(
-          () => {
-            dropdown.setAttribute('hidden', '');
-            clearTimeout(this.openingTimeout);
-            dropdown.classList.remove('is-closing');
-          },
-          dropdown.classList.contains('mega-menu') && this.currentMegaMenu !== dropdown ? 250 : 0,
-        );
-        this.dispatchEvent(new CustomEvent('desktop-nav:dropdown:close', { bubbles: true }));
+    init() {
+      this.li.forEach((item, index) => {
+        this.productSidebar(item);
+        item.addEventListener('mouseenter', () => {
+          this.activeIndex = index;
+          this.initItem();
+          item.classList.add('active');
+          this.moveLine(item);
+        });
+        item.addEventListener('mouseleave', () => {
+          this.moveLine();
+          this.initItem();
+        });
       });
+      this.line.addEventListener('mouseenter', () => {
+        this.li[this.activeIndex].classList.add('active');
+      });
+      this.querySelectorAll('.right').forEach((item) => {
+        item.querySelector('.product-wrapper').classList.add('active');
+      });
+    }
+
+    moveLine(element) {
+      if (!element) {
+        this.line.style.opacity = 0;
+        return;
+      }
+      this.line.style.left = `${element.offsetLeft}px`;
+      this.line.style.width = `${element.offsetWidth}px`;
+      this.line.style.opacity = 1;
+    }
+
+    productSidebar(el) {
+      el?.querySelectorAll('.left .list')?.forEach((item) => {
+        item?.querySelectorAll('li')?.forEach((li, i) => {
+          li.addEventListener('mouseenter', () => {
+            Array.from(el?.querySelectorAll('.product-wrapper'))?.filter((subItem, j) => {
+              subItem.classList.remove('active');
+              if (j === i) {
+                subItem.classList.add('active');
+              }
+            });
+          });
+        });
+      });
+    }
+
+    initItem() {
+      this.li.forEach((item) => item.classList.remove('active'));
     }
   };
   window.customElements.define('desktop-navigation', DesktopNavigation);
 
   // js/custom-element/section/header/mobile-navigation.js
   var MobileNavigation = class extends DrawerContent {
-    get apparitionAnimation() {
-      if (this._apparitionAnimation) {
-        return this._apparitionAnimation;
-      }
-      if (!MediaFeatures.prefersReducedMotion()) {
-        const navItems = Array.from(this.querySelectorAll('.mobile-nav__item[data-level="1"]')),
-          effects = [];
-        effects.push(
-          new ParallelEffect(
-            navItems.map((item, index) => {
-              return new CustomKeyframeEffect(
-                item,
-                {
-                  opacity: [0, 1],
-                  transform: ['translateX(-40px)', 'translateX(0)'],
-                },
-                {
-                  duration: 300,
-                  delay: 300 + 120 * index - Math.min(2 * index * index, 120 * index),
-                  easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
-                },
-              );
-            }),
-          ),
-        );
-        const bottomBar = this.querySelector('.drawer__footer');
-        if (bottomBar) {
-          effects.push(
-            new CustomKeyframeEffect(
-              bottomBar,
-              {
-                opacity: [0, 1],
-                transform: ['translateY(100%)', 'translateY(0)'],
-              },
-              {
-                duration: 300,
-                delay: 500 + Math.max(125 * navItems.length - 25 * navItems.length, 25),
-                easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
-              },
-            ),
-          );
-        }
-        return (this._apparitionAnimation = new CustomAnimation(new ParallelEffect(effects)));
-      }
+    connectedCallback() {
+      this.menu = this.querySelectorAll('.nav-bar > li .menu');
+      this.bar = this.querySelectorAll('.product-bar');
+      this.support = this.querySelectorAll('.support .container p');
+      this.handleMenu();
+      this.handleBar();
+      this.handleSupport();
     }
-    attributeChangedCallback(name, oldValue, newValue) {
-      super.attributeChangedCallback(name, oldValue, newValue);
-      switch (name) {
-        case 'open':
-          if (this.open && this.apparitionAnimation) {
-            Array.from(this.querySelectorAll('.mobile-nav__item[data-level="1"], .drawer__footer')).forEach(
-              (item) => (item.style.opacity = 0),
-            );
-            this.apparitionAnimation.play();
+    handleMenu() {
+      let activeIndex = -1;
+      this.menu.forEach((menu, index) => {
+        menu.addEventListener('click', () => {
+          this.init(this.menu);
+          activeIndex = index === activeIndex ? -1 : index;
+          if (activeIndex !== -1) {
+            menu.classList.add('active');
           }
-          triggerEvent(this, this.open ? 'mobile-nav:open' : 'mobile-nav:close');
-      }
+        });
+      });
+    }
+    handleBar() {
+      let activeIndex = -1;
+      this.bar.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          this.init(this.bar);
+          activeIndex = index === activeIndex ? -1 : index;
+          if (activeIndex !== -1) {
+            item.classList.add('active');
+          }
+        });
+      });
+    }
+    handleSupport() {
+      let activeIndex = -1;
+      this.support.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          activeIndex = index === activeIndex ? -1 : index;
+          this.init(this.support);
+          if (activeIndex !== -1) {
+            item.classList.add('active');
+          }
+        });
+      });
+    }
+    init(el) {
+      el.forEach((item) => item.classList.remove('active'));
     }
   };
   window.customElements.define('mobile-navigation', MobileNavigation);
@@ -8502,3 +8444,54 @@ function initPaypalCheckoutBtn({ btnClass, totalPrice }) {
  * tabbable 5.2.1
  * @license MIT, https://github.com/focus-trap/tabbable/blob/master/LICENSE
  */
+
+class ToggleNavigation extends HTMLElement {
+  connectedCallback() {
+    this.btn = this.querySelector('.title svg');
+    this.popup = this.querySelector('.toggle-country-popup');
+    this.selectCountry = this.querySelector('.select-country');
+    this.mbArrows = this.querySelector('.mb-arrows');
+    this.selectLanguage = this.querySelectorAll('li');
+    this.handleClick(this.btn);
+    this.handleClick(this.selectCountry);
+    this.handleClick(this.mbArrows);
+    this.handleLanguage();
+    this.area = [
+      {
+        eu: 'https://eu.atomstack.com',
+      },
+      {
+        fr: 'https://eu.atomstack.com/fr',
+      },
+      {
+        de: 'https://eu.atomstack.com/de',
+      },
+      {
+        it: 'https://eu.atomstack.com/it',
+      },
+    ];
+  }
+  handleClick(el) {
+    el?.addEventListener('click', () => {
+      this.popup.classList.toggle('active');
+    });
+  }
+  handleLanguage() {
+    this.selectLanguage.forEach((li) => {
+      li.addEventListener('click', () => {
+        const language = li.getAttribute('data-language');
+        window.location.href = this.findRegion(this.area, language);
+      });
+    });
+  }
+  findRegion(arr, language) {
+    const pathname = new URL(window.location.href).pathname;
+    for (const item of arr) {
+      if (Object.keys(item).includes(language)) {
+        return `${item[language]}${pathname}`;
+      }
+    }
+    return pathname;
+  }
+}
+customElements.define('toggle-navigation', ToggleNavigation);

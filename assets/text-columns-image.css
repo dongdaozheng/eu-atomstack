@@ -1,0 +1,188 @@
+.text-columns-image {
+  background: #f8f8f8;
+}
+.text-columns-image .title {
+  color: #333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text-columns-image .column-title {
+  color: #333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text-columns-image li {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #333;
+}
+.text-columns-image .image-content p {
+  color: #333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text-columns-image .image-content a {
+  color: #2b72ff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (min-width: 1000px) {
+  .text-columns-image {
+    padding: 60px 0px;
+  }
+  .text-columns-image .title {
+    font-size: 52px;
+    margin-bottom: 32px;
+  }
+  .text-columns-image .column-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .text-columns-image .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+  }
+  .text-columns-image .container > div {
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 24px;
+    background: #fff;
+  }
+  .text-columns-image .container > div:last-child {
+    padding: 0px;
+    padding-bottom: 24px;
+  }
+  .text-columns-image ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .text-columns-image ul li {
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  .text-columns-image ul li:hover {
+    color: #2b72ff;
+  }
+  .text-columns-image .image {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .text-columns-image picture,
+  .text-columns-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background: #ddd;
+  }
+  .text-columns-image .image-content {
+    padding: 0px 24px;
+  }
+  .text-columns-image .image-content p {
+    font-size: 24px;
+  }
+  .text-columns-image .image-content a {
+    width: fit-content;
+    font-size: 16px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+  }
+  .text-columns-image .image-content a svg {
+    width: 22px;
+    height: 22px;
+    transition: all 0.3s ease;
+    margin-top: 2px;
+  }
+  .text-columns-image .image-content a:hover svg {
+    transform: translateX(5px);
+  }
+}
+@media (max-width: 1000px) {
+  .text-columns-image {
+    padding: 8vw 0px;
+  }
+  .text-columns-image .title {
+    font-size: 6.4vw;
+    margin-bottom: 6.4vw;
+  }
+  .text-columns-image .container {
+    display: flex;
+    row-gap: 3.2vw;
+    flex-direction: column;
+  }
+  .text-columns-image .container .column-title {
+    font-size: 4.2666666667vw;
+  }
+  .text-columns-image .container > div {
+    border-radius: 3.2vw;
+    overflow: hidden;
+    padding: 6.4vw;
+    background: #fff;
+  }
+  .text-columns-image .container > div:last-child {
+    padding: 0px;
+  }
+  .text-columns-image ul {
+    padding-left: 2.6666666667vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2vw;
+  }
+  .text-columns-image ul li {
+    transition: all 0.3s ease;
+    font-size: 3.7333333333vw;
+  }
+  .text-columns-image .image {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2vw;
+  }
+  .text-columns-image picture,
+  .text-columns-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background: #ddd;
+  }
+  .text-columns-image .image-content {
+    padding: 3.2vw;
+  }
+  .text-columns-image .image-content p {
+    font-size: 4.2666666667vw;
+  }
+  .text-columns-image .image-content a {
+    width: fit-content;
+    font-size: 3.7333333333vw;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+  }
+  .text-columns-image .image-content a svg {
+    width: 5.3333333333vw;
+    height: 22px;
+    transition: all 0.3s ease;
+    margin-top: 2px;
+  }
+  .text-columns-image .image-content a:hover svg {
+    transform: translateX(5px);
+  }
+}

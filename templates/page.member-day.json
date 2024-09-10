@@ -1,0 +1,245 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "large"
+      }
+    },
+    "image_link_FBy9z3": {
+      "type": "image-link",
+      "settings": {
+        "pc_img": "shopify:\/\/shop_images\/member_day-01.jpg",
+        "mb_img": "shopify:\/\/shop_images\/member_day-02.jpg",
+        "link": ""
+      }
+    },
+    "last_timer_9ECyrq": {
+      "type": "last-timer",
+      "settings": {
+        "title": "Limited-time Offers",
+        "desc": "Countdown to Savings. Don't miss out",
+        "time": "2024-09-10T13:00:00"
+      }
+    },
+    "member_grid_KaAWn9": {
+      "type": "member-grid",
+      "blocks": {
+        "member_grid_FbwTta": {
+          "type": "member-grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/place_on_order-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/place_an_order-01.jpg",
+            "link": "https:\/\/atomstack.com\/collections\/laser-engravers"
+          }
+        },
+        "member_grid_WGnETA": {
+          "type": "member-grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/sign_up-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/sign_up-01.jpg",
+            "link": "https:\/\/atomstack.com\/account\/register"
+          }
+        },
+        "member_grid_nUQKCr": {
+          "type": "member-grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/write_a_review-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/leave_a_review-01.jpg",
+            "link": ""
+          }
+        },
+        "member_grid_ehWAVU": {
+          "type": "member-grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/share_on_facebook-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/share_on_facebook-01.jpg",
+            "link": "#smile-points-activity-rules"
+          }
+        },
+        "member_grid_GHLcHV": {
+          "type": "member-grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/share_on_twitte-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/share_on_twitter-01.jpg",
+            "link": "#smile-points-activity-rules"
+          }
+        },
+        "member_grid_x77VVc": {
+          "type": "member-grid",
+          "settings": {
+            "pc_img": "shopify:\/\/shop_images\/celebrate_a_birthday-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/celebrate_a_birthday-01.jpg",
+            "link": "#smile-points-activity-rules"
+          }
+        }
+      },
+      "block_order": [
+        "member_grid_FbwTta",
+        "member_grid_WGnETA",
+        "member_grid_nUQKCr",
+        "member_grid_ehWAVU",
+        "member_grid_GHLcHV",
+        "member_grid_x77VVc"
+      ],
+      "settings": {
+        "pc_img": "shopify:\/\/shop_images\/redeem_points_abc28d1f-aaa1-4d46-be9b-8fc1a67dd7f1.jpg",
+        "mb_img": "shopify:\/\/shop_images\/redeem_points-01.jpg"
+      }
+    },
+    "update_faq_R39Had": {
+      "type": "update-faq",
+      "blocks": {
+        "question_pynzdB": {
+          "type": "question",
+          "settings": {
+            "title": "How Does the Points Program Work?",
+            "answer": "<p>Every time you shop on our website, you earn points based on your order amount. These points can be redeemed for discounts or other rewards on future purchases.<\/p>"
+          }
+        },
+        "question_eT999U": {
+          "type": "question",
+          "settings": {
+            "title": "How do I earn points?",
+            "answer": "<p>You can earn points by making purchases, signing up, sharing on Facebook, sharing on Twitter, leaving product reviews, and more. Click <a href=\"#smile-points-activity-rules\">here<\/a> to see all the ways to earn points.<\/p>"
+          }
+        },
+        "question_VLRHtA": {
+          "type": "question",
+          "settings": {
+            "title": "How many points do I earn for every dollar spent?",
+            "answer": "<p>The rate may vary during special promotions or events. You earn 2 points for every $1 spent during Member Day.<\/p>"
+          }
+        },
+        "question_xiB6Ht": {
+          "type": "question",
+          "settings": {
+            "title": "What can I redeem my points for?",
+            "answer": "<p>Points can be redeemed for discount vouchers. 100 points = $2.<\/p>"
+          }
+        },
+        "question_E733CB": {
+          "type": "question",
+          "settings": {
+            "title": "How do I redeem my points?",
+            "answer": "<p>Click <a href=\"##smile-points-products\">here<\/a> to redeem them.<\/p>"
+          }
+        },
+        "question_99kAYY": {
+          "type": "question",
+          "settings": {
+            "title": "Do my points expire?",
+            "answer": "<p>Yes, points typically expire 12 months after they are earned. Please check your account or contact customer service for specific expiration dates.<\/p>"
+          }
+        },
+        "question_rXCQXC": {
+          "type": "question",
+          "settings": {
+            "title": "How Can I Check My Points Balance?",
+            "answer": "<p>Log in to your Reward Program account and visit the “My Points” page to view your current balance and transaction history.<\/p>"
+          }
+        },
+        "question_rR6RNr": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use all my points in one purchase?",
+            "answer": "<p>Yes, you can choose to use some or all of your points at checkout. However, some promotions may limit the number of points you can use.<\/p>"
+          }
+        },
+        "question_NHRVpr": {
+          "type": "question",
+          "settings": {
+            "title": "Will I lose points if I return an item?",
+            "answer": "<p>Yes, points earned from the returned item will be deducted from your account.<\/p>"
+          }
+        },
+        "question_pcVKkN": {
+          "type": "question",
+          "settings": {
+            "title": "Can I transfer my points to another account?",
+            "answer": "<p>No, points are non-transferable and can only be used by the account that earned them.<\/p>"
+          }
+        },
+        "question_ahyzUE": {
+          "type": "question",
+          "settings": {
+            "title": "Can I apply points after making a purchase if I forgot to use them at checkout?",
+            "answer": "<p>Unfortunately, points must be applied at the time of checkout and cannot be added retroactively.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_pynzdB",
+        "question_eT999U",
+        "question_VLRHtA",
+        "question_xiB6Ht",
+        "question_E733CB",
+        "question_99kAYY",
+        "question_rXCQXC",
+        "question_rR6RNr",
+        "question_NHRVpr",
+        "question_pcVKkN",
+        "question_ahyzUE"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
+    },
+    "contact_us_TcfU7y": {
+      "type": "contact-us",
+      "blocks": {
+        "contact_item_T9rYwQ": {
+          "type": "contact-item",
+          "settings": {
+            "title": "Contact online Custmer service",
+            "image": "shopify:\/\/shop_images\/contact.png",
+            "link": ""
+          }
+        },
+        "contact_item_V3CAQm": {
+          "type": "contact-item",
+          "settings": {
+            "title": "Join facebook group",
+            "image": "shopify:\/\/shop_images\/facebook.png",
+            "link": "https:\/\/www.facebook.com\/groups\/atomstack3d"
+          }
+        },
+        "contact_item_xHnai8": {
+          "type": "contact-item",
+          "settings": {
+            "title": "Join a reddit topic",
+            "image": "shopify:\/\/shop_images\/reddit.png",
+            "link": "https:\/\/www.reddit.com\/r\/AtomstackLaser\/"
+          }
+        }
+      },
+      "block_order": [
+        "contact_item_T9rYwQ",
+        "contact_item_V3CAQm",
+        "contact_item_xHnai8"
+      ],
+      "settings": {
+        "title": "Reach Out TO Us Anytime!"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_link_FBy9z3",
+    "last_timer_9ECyrq",
+    "member_grid_KaAWn9",
+    "update_faq_R39Had",
+    "contact_us_TcfU7y"
+  ]
+}

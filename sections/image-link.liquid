@@ -1,16 +1,24 @@
 <div class='image-link'>
-  <a href='{{section.settings.link}}'>
-    <picture>
-      <source media='(max-width: 1000px)' srcset='{{ section.settings.mb_img | image_url}}'>
-      <source media='(min-width: 1000px)' srcset='{{ section.settings.pc_img | image_url}}'>
-      <img
-        src='{{ section.settings.pc_img | image_url }}'
-        alt='img'
-        width='100%'
-        height='100%'
-      >
-    </picture>
-  </a>
+  {% if section.settings.link %}
+    <a href='{{ section.settings.link }}'>
+  {% else %}
+    <div>
+  {% endif %}
+  <picture>
+    <source media='(max-width: 1000px)' srcset='{{ section.settings.mb_img | image_url }}'>
+    <source media='(min-width: 1000px)' srcset='{{ section.settings.pc_img | image_url }}'>
+    <img
+      src='{{ section.settings.pc_img | image_url }}'
+      alt='img'
+      width='100%'
+      height='100%'
+    >
+  </picture>
+  {% if section.settings.link %}
+    </a>
+  {% else %}
+    </div>
+  {% endif %}
 </div>
 
 {% schema %}

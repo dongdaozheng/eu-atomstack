@@ -1,0 +1,118 @@
+<style>
+  :root {
+    --enable-sticky-announcement-bar: 0;
+  }
+</style>
+
+<style>
+  .active-bar {
+    width: 100%;
+    height: 70px;
+    background: #f0f7ff;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .active-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .active-bar .container p {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 0px;
+    font-weight: 900;
+  }
+  .active-bar .container .left {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+  .active-bar .container div {
+    font-family: 'Open Sans';
+    font-weight: 600;
+  }
+  .active-bar .container .btn {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .active-bar .container .btn div {
+    padding: 4px 10px;
+    background: #2b72ff;
+    font-size: 16px;
+    border-radius: 6px;
+    color: #fff;
+  }
+  .active-bar .container .right {
+    width: 100px;
+    height: auto;
+  }
+  @media (min-width: 1200px) {
+    .active-bar .container {
+      justify-content: center;
+      flex-direction: row-reverse;
+      column-gap: 20px;
+    }
+    .active-bar .container p {
+      font-weight: 600;
+    }
+  }
+  @media (max-width: 900px) {
+    .active-bar {
+      height: 16vw;
+    }
+    .active-bar .container p {
+      font-family: 'Open Sans';
+      font-size: 2.3vw;
+      color: #000;
+      margin-bottom: 0.667vw;
+    }
+    .active-bar .container .btn {
+      column-gap: 0.967vw;
+    }
+    .active-bar .container .btn div {
+      font-size: 1.9vw;
+    }
+
+    .active-bar .container .left {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .active-bar .container .right {
+      width: 20.667vw;
+      height: auto;
+    }
+  }
+</style>
+<div class='active-bar'>
+  <div class='container'>
+    <div class='left'>
+      <p>ATOMSTACK's Member Day</p>
+      <div class='btn'>
+        <div>Get 2x points</div>
+        <div>$80 Off Over $1,000</div>
+      </div>
+    </div>
+    <img class='right' src='{{ 'active-image.png' | asset_url }}' width='100%' height='100%'>
+  </div>
+</div>
+
+<script>
+  document.documentElement.style.setProperty(
+    '--announcement-bar-height',
+    document.getElementById('shopify-section-{{ section.id }}').clientHeight + 'px',
+  );
+</script>
+{% schema %}
+{
+  "name": "t:active_bar",
+  "class": "shopify-section-active_bar",
+  "presets": [
+    {
+      "name": "t:active_bar"
+    }
+  ]
+}
+{% endschema %}

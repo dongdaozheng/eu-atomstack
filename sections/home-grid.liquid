@@ -1,5 +1,5 @@
 <link rel='stylesheet' href='{{ 'home-grid.css' | asset_url }}'>
-<div class='home-grid'>
+<div class='home-grid home-grid-{{ section.id }}'>
   <div class='container'>
     <div class='title'>{{ section.settings.title }}</div>
     <div class='content'>
@@ -16,29 +16,40 @@
               loading='lazy'
             >
           </picture>
-          <p class='item-title'>{{ block.settings.title }}</p>
-          <p class='item-desc'>{{ block.settings.desc }}</p>
-          <a class='btn' href='{{ block.settings.link }}'>
-            {{ block.settings.btn_text }}
-            <svg
-              t='1724382858653'
-              class='icon'
-              viewBox='0 0 1024 1024'
-              version='1.1'
-              xmlns='http://www.w3.org/2000/svg'
-              p-id='4240'
-              width='15'
-              height='15'
-            >
-              <path d="M341.957209 959.354678c-12.893658 0-25.842575-4.425799-36.386722-13.467733-23.493064-20.10592-26.224268-55.426357-6.064113-78.891791L603.929736 511.789199l-304.423361-355.206978c-20.160155-23.465434-17.427928-58.786894 6.064113-78.891791 23.437805-20.024056 58.786894-17.373693 78.837556 6.064113l335.675132 391.620305c17.974373 20.952194 17.974373 51.875484 0 72.827679l-335.675132 391.620305C373.371686 952.717514 357.691565 959.354678 341.957209 959.354678z" p-id="4241" fill="#ffffff"></path>
-            </svg>
-          </a>
+          {% if block.settings.title != blank %}
+            <p class='item-title'>{{ block.settings.title }}</p>
+          {% endif %}
+          {% if block.settings.desc != blank %}
+            <p class='item-desc'>{{ block.settings.desc }}</p>
+          {% endif %}
+          {% if block.settings.link != blank %}
+            <a class='btn' href='{{ block.settings.link }}'>
+              {{ block.settings.btn_text }}
+            </a>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
+    <div class='bottom-content'>
+      {% if section.settings.subtitle != blank %}
+        <p class='subtitle'>{{ section.settings.subtitle }}</p>
+      {% endif %}
+      {% if section.settings.link != blank %}
+        <a class='link' href='{{ section.settings.link }}'>{{ section.settings.text_link }}</a>
+      {% endif %}
+    </div>
   </div>
 </div>
-
+<style>
+  @media (min-width: 1000px) {
+    .home-grid-{{ section.id }} {
+      padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+    }
+    .home-grid-{{ section.id }} .content {
+        grid-template-columns: repeat({{ section.settings.grid_num }}, 1fr) !important;
+    }
+  }
+</style>
 {% schema %}
 {
   "name": "home-grid",
@@ -47,6 +58,47 @@
       "type": "text",
       "id": "title",
       "label": "title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "subtitle"
+    },
+    {
+      "type": "text",
+      "id": "link",
+      "label": "link"
+    },
+    {
+      "type": "text",
+      "id": "text_link",
+      "label": "text link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 10,
+      "unit": "px",
+      "label": "padding top",
+      "default": 150
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 160,
+      "step": 10,
+      "unit": "px",
+      "label": "padding bottom",
+      "default": 150
+    },
+    {
+      "type": "number",
+      "id": "grid_num",
+      "label": "grid num",
+      "default": 4
     }
   ],
   "blocks": [
