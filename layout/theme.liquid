@@ -77,8 +77,11 @@
       const europeanCountry = isEuropeanCountry(ipDetails.country_code);
       const url = new URL(window.location.href);
       if (europeanCountry || url.hash.includes('redirect')) {
-        localStorage.setItem('redirect', true);
         return null;
+      }
+
+      if (url.hash.includes('redirect')) {
+        localStorage.setItem('redirect', true);
       }
       window.location.href = `https://atomstack.com${url.pathname}`;
     } catch (error) {
