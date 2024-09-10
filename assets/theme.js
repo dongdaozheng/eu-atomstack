@@ -8496,7 +8496,6 @@ class ToggleNavigation extends HTMLElement {
     this.area.forEach((item, index) => {
       if (pathname.includes(Object.keys(item)[0])) {
         this.selectCountry.querySelector('p').innerHTML = this.selectLanguage[index].getAttribute('data-select');
-        console.log(this.selectLanguage[index].getAttribute('data-select'));
       }
     });
   }
@@ -8510,8 +8509,8 @@ class ToggleNavigation extends HTMLElement {
         return `${item[language]}${pathname}`;
       }
     }
-    return pathname;
+    return '/';
   }
-  selectValue() {}
+  // selectValue() {}
 }
 customElements.define('toggle-navigation', ToggleNavigation);
