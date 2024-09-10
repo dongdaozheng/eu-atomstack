@@ -65,11 +65,10 @@
     'VA',
   ];
 
-  if (redirect) {
-    return;
-  }
-
   async function getIpAddress() {
+    if (redirect) {
+      return;
+    }
     try {
       const response = await fetch('https://api.ipify.org?format=json');
       const data = await response.json();

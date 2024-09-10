@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('store-header');
   const announcementBar = document.querySelector('announcement-bar');
   //设置滚动距离浏览器顶部的偏移量
-  document.documentElement.style.scrollPaddingTop = `${header.clientHeight + announcementBar.clientHeight}px`;
+  document.documentElement.style.scrollPaddingTop = `${header.clientHeight + announcementBar?.clientHeight}px`;
   //修复网站中产品页面侧边栏的bug
   const sidebar = document.querySelector('#sidebar');
   const sidebarItem = sidebar?.querySelectorAll('li');

@@ -5531,7 +5531,7 @@
         this.li[this.activeIndex].classList.add('active');
       });
       this.querySelectorAll('.right').forEach((item) => {
-        item.querySelector('.product-wrapper').classList.add('active');
+        item.querySelector('.product-wrapper')?.classList.add('active');
       });
     }
 
