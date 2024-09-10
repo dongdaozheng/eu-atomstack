@@ -8456,7 +8456,6 @@ class ToggleNavigation extends HTMLElement {
     this.handleClick(this.selectCountry);
     this.handleClick(this.mbArrows);
     this.handleLanguage();
-    this.initSelect();
     this.area = [
       {
         us: 'https://atomstack.com',
@@ -8474,6 +8473,7 @@ class ToggleNavigation extends HTMLElement {
         it: 'https://eu.atomstack.com/it',
       },
     ];
+    this.initSelect();
   }
   handleClick(el) {
     el?.addEventListener('click', () => {
