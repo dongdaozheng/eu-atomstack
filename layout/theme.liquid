@@ -9,10 +9,7 @@
 <link rel='stylesheet' href='https://unpkg.com/swiper@8/swiper-bundle.min.css'>
 
 <script>
-  let visitCount = localStorage.getItem('visitCount');
-  if (!visitCount) {
-    visitCount = 0;
-  }
+  // const redirect = localStorage.getItem('redirect');
 
   const europeanCountryCodes = [
     'AL',
@@ -75,9 +72,8 @@
       const ipDetails = await getIpDetails(data.ip);
       const europeanCountry = isEuropeanCountry(ipDetails.country_code);
       const url = new URL(window.location.href);
-      if (europeanCountry) {
-        visitCount++;
-        localStorage.setItem('visitCount', visitCount);
+      if (europeanCountry && !url.hash.includes('redirect')) {
+        // localStorage.setItem('redirect', true);
         window.location.href = `https://eu.atomstack.com${url.pathname}`;
       }
     } catch (error) {
@@ -98,9 +94,11 @@
     return europeanCountryCodes.includes(countryCode);
   }
 
-  if (!window.location.href.includes('127.0.0.1') && visitCount <= 2) {
-    // getIpAddress();
+  if (!window.location.href.includes('127.0.0.1')) {
+    getIpAddress();
   }
+
+  // getIpAddress();
 </script>
 
 <html class='no-js' lang='{{ request.locale.iso_code }}' dir='{{ direction }}'>

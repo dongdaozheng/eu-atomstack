@@ -8458,6 +8458,9 @@ class ToggleNavigation extends HTMLElement {
     this.handleLanguage();
     this.area = [
       {
+        us: 'https://atomstack.com',
+      },
+      {
         eu: 'https://eu.atomstack.com',
       },
       {
@@ -8486,6 +8489,9 @@ class ToggleNavigation extends HTMLElement {
   }
   findRegion(arr, language) {
     const pathname = new URL(window.location.href).pathname;
+    if (language === 'us') {
+      return `https://atomstack.com${pathname}#redirect`;
+    }
     for (const item of arr) {
       if (Object.keys(item).includes(language)) {
         return `${item[language]}${pathname}`;
