@@ -280,22 +280,6 @@
             "page": ""
           }
         },
-        "2204da78-b237-421b-a82c-400900893ea0": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "title": "Reviews",
-            "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"
-          }
-        },
-        "content_TceGik": {
-          "type": "content",
-          "settings": {
-            "title": "Specifications",
-            "content": "<p><strong>Engraving Size:<\/strong> 395*385mm<br\/><strong>Engravable\/Cuttable Materials:<\/strong><\/p><ul><li><strong>Engravable Materials:<\/strong> Wood, bamboo, cardboard, plastic, leather, PCB board, aluminum oxide, non-reflective electroplated and lacquer-coated metals, 304 mirror stainless steel, glass, ceramic, cotton fabric, slate.<\/li><li><strong>Cuttable Materials:<\/strong> Cardboard, non-woven fabric, wood board, acrylic, certain thin plastic sheets, sponge.<\/li><\/ul><p><strong>Total Power:<\/strong> 210W<br\/><strong>Laser Power:<\/strong> 180W (in cutting mode)<br\/><strong>Laser Output Power:<\/strong> 40-48W<br\/><strong>Laser Wavelength:<\/strong> 455±5nm<br\/><strong>Engraving Precision:<\/strong> 0.01mm<br\/><strong>Focusing Method:<\/strong> Fixed-focus laser, no need for manual focusing<br\/><strong>Limit Switches:<\/strong> 2 (1 on X-axis, 1 on Y-axis)<br\/><strong>Laser Protection Shield:<\/strong> The laser has a protective shield that safeguards the user's eyes, eliminating the need for additional safety glasses. It also prevents pets from interacting with the laser spot.<br\/><strong>Operating Software:<\/strong> LaserGRBL, LightBurn, supports Win XP \/ Win 7 \/ Win 8 \/ XP \/ Win 10<br\/><strong>Supported File Formats:<\/strong> NC, BMP, JPG, PNG, DXF<br\/><strong>Data Transmission Method:<\/strong> USB connection<br\/><strong>Power Supply:<\/strong> Universal standard power input: 100-240V AC, 50\/60HZ, Output: 24V 9A<br\/><strong>Certifications:<\/strong> CE, FCC, RoHS, FDA, PSE<\/p>",
-            "page": ""
-          }
-        },
         "liquid_Mgxfyg": {
           "type": "liquid",
           "settings": {
@@ -307,8 +291,6 @@
       "block_order": [
         "description",
         "3b3d39be-4a14-4220-a079-595ddb0d3a44",
-        "2204da78-b237-421b-a82c-400900893ea0",
-        "content_TceGik",
         "liquid_Mgxfyg"
       ],
       "custom_css": [

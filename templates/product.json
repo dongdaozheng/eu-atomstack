@@ -18,29 +18,13 @@
             "include_variant_name": false
           }
         },
-        "smile_io_smile_points_on_product_page_qV3LJA": {
+        "smile_io_smile_points_on_product_page_h8MYqr": {
           "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
           "settings": {
             "primary_colour": "#121212",
             "secondary_colour": "#f8f8f8",
             "should_show_icon": true,
             "earning_rate": 2
-          }
-        },
-        "loox_reviews_loox_rating_btQFUP": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
-          "settings": {
-            "contentSize": 16,
-            "pattern": "",
-            "hideText": false,
-            "alignment": "",
-            "layout": "",
-            "textColor": "",
-            "starColor": "",
-            "showAllReviews": false,
-            "looxOpenFloatingWidget": false,
-            "emptyRatingWidget": false
           }
         },
         "image_QXiJpq": {
@@ -290,18 +274,6 @@
           "settings": {
             "title": "Reviews",
             "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
-          }
-        },
-        "loox_reviews_loox_dynamic_section_fzEJHP": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 20,
-            "hide_thumbnails": false,
-            "maxwidth": 1080,
-            "is_sample": true
           }
         }
       },
