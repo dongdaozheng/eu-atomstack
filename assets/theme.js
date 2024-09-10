@@ -8456,6 +8456,7 @@ class ToggleNavigation extends HTMLElement {
     this.handleClick(this.selectCountry);
     this.handleClick(this.mbArrows);
     this.handleLanguage();
+    this.initSelect();
     this.area = [
       {
         us: 'https://atomstack.com',
@@ -8464,10 +8465,10 @@ class ToggleNavigation extends HTMLElement {
         eu: 'https://eu.atomstack.com',
       },
       {
-        fr: 'https://eu.atomstack.com/fr',
+        fr: 'https://eu.atomstack.com/de',
       },
       {
-        de: 'https://eu.atomstack.com/de',
+        de: 'https://eu.atomstack.com/fr',
       },
       {
         it: 'https://eu.atomstack.com/it',
@@ -8483,8 +8484,19 @@ class ToggleNavigation extends HTMLElement {
     this.selectLanguage.forEach((li) => {
       li.addEventListener('click', () => {
         const language = li.getAttribute('data-language');
+        // const dataSelect = li.getAttribute('data-select');
+        // this.selectCountry.querySelector('p').innerHTML = dataSelect;
+
         window.location.href = this.findRegion(this.area, language);
       });
+    });
+  }
+  initSelect() {
+    const url = window.location.href;
+    this.area.forEach((item, index) => {
+      if (url.includes(Object.keys(item)[0])) {
+        this.selectCountry.querySelector('p').innerHTML = this.selectLanguage[index].getAttribute('data-select');
+      }
     });
   }
   findRegion(arr, language) {
@@ -8499,5 +8511,6 @@ class ToggleNavigation extends HTMLElement {
     }
     return pathname;
   }
+  selectValue() {}
 }
 customElements.define('toggle-navigation', ToggleNavigation);
