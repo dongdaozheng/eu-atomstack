@@ -72,10 +72,10 @@
       const ipDetails = await getIpDetails(data.ip);
       const europeanCountry = isEuropeanCountry(ipDetails.country_code);
       const url = new URL(window.location.href);
-      if (europeanCountry && !url.hash.includes('redirect')) {
-        // localStorage.setItem('redirect', true);
-        window.location.href = `https://eu.atomstack.com${url.pathname}`;
+      if (europeanCountry || url.hash.includes('redirect')) {
+        return null;
       }
+      window.location.href = `https://atomstack.com${url.pathname}`;
     } catch (error) {
       console.error('Error fetching IP address:', error);
     }
