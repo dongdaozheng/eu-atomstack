@@ -224,26 +224,17 @@
             "page": ""
           }
         },
-        "2204da78-b237-421b-a82c-400900893ea0": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "title": "Reviews",
-            "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"
-          }
-        },
         "liquid_Mgxfyg": {
           "type": "liquid",
           "settings": {
             "title": "Reviews",
-            "liquid": "<div id=\"looxReviews\" data-limit=\"4\" data-product-id=\"{{ product.id }}\"><\/div>"
+            "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
           }
         }
       },
       "block_order": [
         "description",
         "3b3d39be-4a14-4220-a079-595ddb0d3a44",
-        "2204da78-b237-421b-a82c-400900893ea0",
         "liquid_Mgxfyg"
       ],
       "custom_css": [
