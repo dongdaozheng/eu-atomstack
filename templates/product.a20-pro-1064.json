@@ -287,26 +287,17 @@
             "page": "shipping-policy"
           }
         },
-        "f2883553-07cc-4f77-861c-a9a0a4ca5601": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "title": "Reviews",
-            "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"
-          }
-        },
         "liquid_xeMpn4": {
           "type": "liquid",
           "settings": {
             "title": "Reviews",
-            "liquid": "<div id=\"looxReviews\" data-limit=\"3\" data-product-id=\"{{ product.id }}\"><\/div>"
+            "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
           }
         }
       },
       "block_order": [
         "f9ecd0b6-7ad1-4eee-8636-f1e42cc19e8a",
         "df886055-92be-4283-9c0a-9493f4a3fae5",
-        "f2883553-07cc-4f77-861c-a9a0a4ca5601",
         "liquid_xeMpn4"
       ],
       "custom_css": [
