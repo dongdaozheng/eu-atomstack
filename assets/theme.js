@@ -8492,9 +8492,9 @@ class ToggleNavigation extends HTMLElement {
     });
   }
   initSelect() {
-    const url = window.location.href;
+    const pathname = new URL(window.location.href).pathname;
     this.area.forEach((item, index) => {
-      if (url.includes(Object.keys(item)[0])) {
+      if (pathname.includes(Object.keys(item)[0])) {
         this.selectCountry.querySelector('p').innerHTML = this.selectLanguage[index].getAttribute('data-select');
         console.log(this.selectLanguage[index].getAttribute('data-select'));
       }
