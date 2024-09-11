@@ -8486,8 +8486,8 @@ class ToggleNavigation extends HTMLElement {
         const language = li.getAttribute('data-language');
         // const dataSelect = li.getAttribute('data-select');
         // this.selectCountry.querySelector('p').innerHTML = dataSelect;
-
-        window.location.href = this.findRegion(this.area, language);
+        const url = new URL(window.location.href);
+        window.location.href = url.hostname + this.findRegion(this.area, language);
       });
     });
   }
