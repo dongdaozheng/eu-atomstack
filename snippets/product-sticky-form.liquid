@@ -4,7 +4,145 @@
 {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
 {%- assign product_quantity_selector = section.blocks | where: 'type', 'quantity_selector' -%}
-
+<style>
+  .product-sticky-form__payment-container{
+    margin-left: 10px;
+    display: flex;
+    gap: 32px;
+  }
+  .detailCheckout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(90, 49, 244, 1);
+    color: #fff;
+    line-height: 48px;
+    font-weight: 600;
+    max-width: 188px;
+    font-size: 16px;
+    height: 48px;
+    padding: 0 20px;
+    letter-spacing: 0;
+    min-width: 188px;
+    transition: unset;
+    border-radius: var(--button-border-radius);
+    width: 100%;
+  }
+  .product-sticky-form .button{
+    line-height: 48px;
+    max-width: 188px;
+    height: 48px;
+    padding: 0 20px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    min-width: 188px;
+    transition: unset;
+    width: 100%;
+  }
+  .product-sticky-form .button:hover{
+    background-image: unset;
+  }
+  .product-sticky-form .button .loader-button__text{
+    font-size: 16px;
+  }
+  .product-sticky-form[hidden]{
+    transform: translateY(100%);
+  }
+  /* .product-sticky-form[hidden]{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+  } */
+  .product-sticky-form{
+    top: unset;
+    padding: 0;
+    bottom: 0;
+    padding-bottom: unset !important;
+  }
+  .product-sticky-form__inner{
+    height: 80px;
+  }
+  .product-sticky-form__content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;  
+  }
+  .product-sticky-form__price{
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .product-sticky-form__priceCom{
+    font-size: 24px;
+    color: #949494;
+    font-weight: 600;
+  }
+  .product-sticky-form__bottom-info{
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    gap: 18px;
+  }
+  .product_meta_label span{
+    min-width: 90px;
+    font-weight: 600;
+    height: 24px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #ffaa2b;
+    text-transform: capitalize;
+    display: flex; 
+    align-items: center;
+    padding: 4px 12px;
+    justify-content: center;
+  }
+  @media (max-width:999px) {
+    .product-sticky-form__inner{
+      height: auto;
+    }
+    .product-sticky-form{
+      background-color: #fff;
+      padding-top: 15px;
+      padding-bottom: 20px !important;
+    }
+    .product-sticky-form__price{
+      font-size: 18px;
+    }
+    .product-sticky-form__priceCom{
+      font-size: 12px;
+    }
+    .product_meta_label span{
+      font-size: 12px;
+      height: 20px;
+    }
+    .product_stickyForm{
+      font-size: 12px;
+    }
+    .product-sticky-form__bottom-info{
+      margin-bottom: 6px
+    }
+    .product-sticky-form__payment-container{
+      margin-left: unset;
+      margin-top: 10px;
+      gap: 15px;
+    }
+    .product-sticky-form .button .loader-button__text{
+      font-size: 14px;
+    }
+    .product-sticky-form .button,.detailCheckout{
+      min-width: unset;
+      font-size: 14px;
+      line-height: 31px;
+      width: 50%;
+      height: 31px;
+    }
+    .product-sticky-form__bottom-info{
+      gap: 8px;
+    }
+    
+  }
+  .rp-micro-app-label-icon-container{
+    bottom: 128px !important;
+  }
+</style>
 {%- if buy_buttons_block != blank -%}
   <style>
     @media screen and (min-width: 1000px) {
@@ -17,8 +155,8 @@
   <product-sticky-form form-id="{{ product_form_id }}" hidden class="product-sticky-form">
     <div class="container">
       <div class="product-sticky-form__inner">
-        <div class="product-sticky-form__content-wrapper hidden-pocket">
-          <div class="product-sticky-form__image-wrapper">
+        <div class="product-sticky-form__content-wrapper">
+          <!-- <div class="product-sticky-form__image-wrapper">
             {%- assign featured_media = product.selected_or_first_available_variant.featured_image
               | default: product.featured_media
             -%}
@@ -28,20 +166,60 @@
               sizes="55px"
               {% render 'image-attributes', image: featured_media, sizes: '55,110,165' %}
             >
-          </div>
-
+          </div> -->
+          
           <div class="product-sticky-form__info">
             <div class="product-sticky-form__bottom-info">
-              <span class="product-sticky-form__title">{{ product.title }}</span>
-              <span class="square-separator square-separator--subdued"></span>
+              <!-- <span class="product-sticky-form__title">{{ product.title }}</span> -->
+              
+              
               <span class="product-sticky-form__price">
                 {%- if settings.currency_code_enabled -%}
-                  {{- product.selected_or_first_available_variant.price | money_with_currency -}}
+                  {{- product.selected_or_first_available_variant.price | money -}}
                 {%- else -%}
                   {{- product.selected_or_first_available_variant.price | money -}}
                 {%- endif -%}
               </span>
+              
+              {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}
+              <s class="product-sticky-form__priceCom">
+                {%- if settings.currency_code_enabled -%}
+                {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+              {%- else -%}
+                {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+              {%- endif -%}
+              </s>
+              {% else %}
+              <s class="product-sticky-form__priceCom"></s>
+              {% endif %}
+           <product-meta  form-id='{{ product_form_id }}'
+           price-class='price--large'
+           class='product-meta'>
+                  <div class='product_meta_label label-list' data-product-label-list>
+                    {%- unless product.selected_or_first_available_variant.available -%}
+                      <span class='variant_discount_html'>{{ 'collection.product.sold_out' | t }}</span>
+                    {%- elsif product.selected_or_first_available_variant.compare_at_price
+                        > product.selected_or_first_available_variant.price
+                    -%}
+                      {%- if settings.discount_mode == 'percentage' -%}
+                        {%- assign savings = product.selected_or_first_available_variant.compare_at_price
+                          | minus: product.selected_or_first_available_variant.price
+                          | times: 100.0
+                          | divided_by: product.selected_or_first_available_variant.compare_at_price
+                          | round
+                          | append: '%'
+                        -%}
+                      {%- else -%}
+                        {%- capture savings -%}{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}{%- endcapture -%}
+                      {%- endif -%}
+      
+                      <span class='variant_discount_html'>
+                        {{- 'collection.product.discount_html' | t: savings: savings -}}
+                      </span>
+                    {%- endunless -%}
+                  </div>
 
+                </product-meta>
               <div
                 class="product-sticky-form__unit-price text--xsmall text--subdued"
                 {% unless product.selected_or_first_available_variant.unit_price_measurement %}
@@ -67,13 +245,26 @@
               </div>
             </div>
           </div>
+          
+          <product-payment-terms form-id='{{ product_form_id }}' class="product_stickyForm">
+            {%- assign product_installment_form_id = 'product-installment-form-'
+              | append: section.id
+              | append: '-'
+              | append: product.id
+            -%}
+
+            {%- form 'product', product, id: product_installment_form_id -%}
+              <input type='hidden' name='id' value='{{ product.selected_or_first_available_variant.id }}'>
+              {{- form | payment_terms -}}
+            {%- endform -%}
+          </product-payment-terms>
         </div>
 
         {%- comment -%}
           This form is a simplified representation of the main form, and therefore uses its own code path.
         {%- endcomment -%}
         <div class="product-sticky-form__form">
-          {%- unless product.has_only_default_variant -%}
+          <!-- {%- unless product.has_only_default_variant -%}
             <product-variants
               handle="{{ product.handle }}"
               form-id="{{ product_form_id }}"
@@ -248,7 +439,7 @@
                 </div>
               {%- endfor -%}
             </product-variants>
-          {%- endunless -%}
+          {%- endunless -%} -->
 
           <product-payment-container form-id="{{ product_form_id }}" class="product-sticky-form__payment-container">
             {%- capture button_content -%}
@@ -280,8 +471,12 @@
                 {{- 'product.form.sold_out' | t -}}
               {%- endif -%}
             </button>
-
-            {%- if section.settings.show_sticky_quick_buy -%}
+            {% if section.settings.show_checkOut %}
+            <div data-cart-url="/cart" class="partyPack_product_bottomAdd_right detailCheckout" data-href="/cart/{{product.first_available_variant.id}}:1">
+              Buy Now
+            </div>
+            {% endif %}
+            <!-- {%- if section.settings.show_sticky_quick_buy -%}
               <button
                 type="button"
                 id="StickyAddToCart"
@@ -301,7 +496,7 @@
                   {{- 'product.form.sold_out' | t -}}
                 {%- endif -%}
               </button>
-            {%- endif -%}
+            {%- endif -%} -->
           </product-payment-container>
         </div>
       </div>

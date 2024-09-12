@@ -17,6 +17,15 @@
         </picture>
       </div>
     {% endif %}
+    {% if section.settings.video_url != blank %}
+      <video
+        src='{{ section.settings.video_url }}'
+        poster='{{ section.settings.video_poster }}'
+        autoplay
+        muted
+        loop
+      ></video>
+    {% endif %}
     <div class='content'>
       {% for block in section.blocks %}
         <div class='item'>
@@ -32,6 +41,9 @@
             >
           </picture>
           <div class='corner-mark'>{{ block.settings.corner_mark }}</div>
+          {% if block.settings.block_title %}
+            <p class='block-title'>{{ block.settings.block_title }}</p>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
@@ -61,6 +73,16 @@
       "type": "image_picker",
       "id": "mb_img",
       "label": "MB Image"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "video url"
+    },
+    {
+      "type": "image_picker",
+      "id": "video_poster",
+      "label": "video poster"
     },
     {
       "type": "text",
@@ -120,6 +142,11 @@
           "id": "corner_mark",
           "label": "Corner mark",
           "default": "$99"
+        },
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "block-title"
         }
       ]
     }

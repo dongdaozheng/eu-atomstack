@@ -5,6 +5,818 @@
 {%- capture look_id -%}product-{{ section.id }}-{{ block.id }}{%- endcapture -%}
 
 <style>
+  .product__media-image-wrapper {
+    aspect-ratio: unset;
+  }
+.detailCheckout{
+  cursor: pointer;
+}
+.box_list{
+  display: none;
+}
+.variantItem_bottom p{
+  margin: unset;
+}
+.block_swatchList .block-swatch__item:after{
+  content: unset;
+}
+<style>
+
+.detailCheckout{
+  cursor: pointer;
+}
+.box_list{
+  display: none;
+}
+.variantItem_bottom p{
+  margin: unset;
+}
+.block_swatchList .block-swatch__item:after{
+  content: unset;
+}
+@media (min-width:1000px) {
+  .product--thumbnails-bottom .product__media-image-wrapper {
+    aspect-ratio: unset;
+  }
+  .product--thumbnails-bottom .product__media-image-wrapper{
+     height: 438px !important;
+  }
+  .product--thumbnails-bottom .product__media-image-wrapper img{
+    object-fit: contain;
+  }
+  /* .new-product-template_name */
+  .product--thumbnails-bottom .flickity-viewport{
+    height: 438px !important;
+    background-color: var(--secondary-background);
+  }
+  .product_all.product--thumbnails-bottom .product__thumbnail-list-inner{
+    grid-template-columns:unset;
+    grid-auto-columns:unset;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    gap: 19.2px;
+    justify-content: center;
+  }
+  .product_all.product--thumbnails-bottom .product__thumbnail-item{
+    width: 60px;
+  }
+  .product_all.product--thumbnails-bottom .product__thumbnail-list-inner .product__thumbnail{
+    width: 60px;
+    min-width: 60px;
+    padding: 0;
+  }
+  .product_all .product__media-nav{
+    margin-top: 28px;
+  }
+
+  .product_all{
+    margin: 0;
+    gap: 30px;
+  }
+  .product_all .product__media{
+    width: 64%;
+    padding-left: unset;
+  }
+  .product_all .product__info{
+    width: 36%;
+    min-width: 470px;
+  }
+  .product_all .looxReviews{
+    margin-bottom: unset;
+  }
+  .product_all .product-meta__title {
+    font-size: 28px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .product_all .looxReviews .loox-icon{
+    width: 17px;
+    height: 17px;
+  }
+  .product_all  .loox-rating-label{
+    font-size: 16px;
+  }
+  .product_all .product-meta__price-list-container{
+    margin-top: 10px;
+    align-items: flex-end;
+  }
+  .product_all .price--highlight{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 49.03px;
+  }
+  .product_all .price--compare{
+    color: #949494;
+    opacity: 1;
+    font-size: 16px;
+    line-height: 21.79px;
+    padding-bottom: 8px;
+  }
+  .product_all .price-list{
+    align-items: flex-end;
+  }
+  .product_all .label-list{
+    padding-bottom: 8px;
+  }
+  .product_all .price-list:not(.price-list--stack)>.price:not(:last-child){
+    margin-right: 13px;
+  }
+  .product_all .product-meta__label-list .label {
+    min-width: 90px;
+    height: 24px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #ffaa2b;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    justify-content: center;
+  }
+  .product_all shopify-payment-terms{
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 16px;
+  }
+  /* 变体 start*/
+  .product_all .product-form__option-info{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  .product_all .block-swatch__item{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 3px 10px 4px;
+    border-color: #d3d3d3;
+  }
+  .product_all .block-swatch__radio:checked+.block-swatch__item{
+    background-color: unset;
+  }
+  .block_swatchList .block-swatch__item{
+    border: unset;
+  }
+  .product_all .block-swatch__radio:checked+.block-swatch__item:after{
+    box-shadow: 0 0 0 0px #2872ff inset,0 0 0 1px #2872ff;
+  }
+  .block_swatchList .block-swatch__radio:checked+.block-swatch__item:after{
+    box-shadow: unset;
+    content: unset;
+  }
+  .block_swatchList .block-swatch__radio:checked+.block-swatch__item .variantItem_box{
+    border: 1px solid #2872ff;
+  }
+  .block_swatchList .block-swatch__radio:checked+.block-swatch__item .variantItem_bottom{
+    display: block;
+  }
+  .block_swatchList{
+    width: 100%;
+    overflow: hidden;
+  }
+  .variantItem_box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 13px;
+    padding: 16px 14px;
+    align-items: center;
+    background-color: #fff;
+    height: 120px;
+    border-radius: var(--button-border-radius);
+    border: 1px solid #d3d3d3;
+  }
+  .variantItem_boxLeft{
+    width: 80px;
+    min-width: 80px;
+    /* height: 100%; */
+  }
+  .variantItem_boxLeft img{
+    width: 100%;
+    /* height: 100%; */
+    /* object-fit: cover; */
+  }
+  .block_swatchList .block-swatch__item{
+    padding: 0;
+  }
+  .block_swatchList .block-swatch__item{
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .block_swatchList .block-swatch__item:after{
+    transform: scale(1);
+  }
+  .variantItem_boxRight_title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .variantItem_boxRight{
+    width: 100%;
+    text-align: left;
+  }
+  .block_swatchList_top{
+    margin-top: 50px !important;
+  }
+  .product_all .variantItem_boxRight_price{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .product_all .variantItem_boxRight_price s{
+    color: #949494;
+    margin-left: 8px;
+  }
+  .product_all .variantItem_boxRight_save{
+    position: absolute;
+    top: -1px;
+    display: flex;
+    z-index: 1;
+    right: -1px;
+  }
+  .product_all .variant_discount_html{
+    display: inline-block;
+    font-weight: 600;
+    min-width: 84px;
+    padding: 0 10px;
+    height: 24px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 0px 0px 0px 6px;
+    background-color: #ffaa2b;
+  }
+
+  .product_all .block-swatch__item:after{
+    /* content: unset; */
+    transition: unset;
+  }
+  .variantItem_bottom{
+    display: none;
+    font-size: 14px;
+    background: rgba(43, 114, 255, 0.05);
+    text-align: left;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 28px 11px 11px;
+    margin-top: -12px;
+    color: #000;
+    border-radius: var(--button-border-radius);
+  }
+  .variantItem_bottom span{
+    font-weight: 600;
+    display: block;
+  }
+  /* .product_all .block-swatch-list .block-swatch{
+    width: 100%;
+  } */
+  /* 变体 css end*/
+  /* block product_information */
+  .product_informationBox strong{
+    color: #2872ff;
+    font-weight: 600;
+  }
+  .product_informationBox a{
+    color: #2872ff; 
+    text-decoration-color: #2872ff !important;
+  }
+  .product_informationBox a:hover{
+    color: #2872ff; 
+  }
+  .product_informationBox{
+    display: flex;
+    align-items: baseline;
+    padding: 0 20px;
+    gap: 10px;
+  } 
+  .product_informationBox_svg{
+    height: 19.06px;
+    display: flex;
+    align-items: baseline;
+  }
+  .product_informationBox_text{
+    font-size: 14px;
+    max-width: 330px;
+    line-height: 19.07px;
+  }
+  .product_informationBox_text a:hover{
+    color: #2872ff !important;
+  }
+  .product_informationBox:not(:last-child){
+    padding-bottom: 14px;
+  }
+  .product_informationBox:not(:first-child){
+    border-top: 1px solid #dfdfdf;
+    padding-top: 14px;
+  }
+  .product_informationBox:last-child .product_informationBox_text{
+    line-height: 25.2px;
+  }
+  /* block product_information end */
+  /* 配件 */
+  .product_all .product_form__paymentButtton{
+    margin-top: unset;
+  }
+  .product_form__paymentButtton #AddToCart{
+    transition: unset;
+    line-height: 56px;
+  }
+  .product_form__paymentButtton #AddToCart:hover{
+    background-image: unset;
+  }
+  .product_form__paymentButtton .loader-button__text{
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0; 
+    text-transform: capitalize;
+  }
+  .Bundle_salesAll{
+    margin-top: 16px;
+  }
+  .productFrom_box{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 13px;
+    padding: 16px 14px;
+    align-items: center;
+    background-color: #fff;
+    height: 120px;
+    border-radius: var(--button-border-radius);
+    border: 1px solid #d3d3d3;
+  }
+  .Bundle_salesTitlt{
+    line-height: 36px;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .Bundle_salesBox_left{
+    width: 80px;
+    min-width: 80px;
+  }
+  .Bundle_salesBox_left img{
+    width: 100%;
+  }
+  .Bundle_salesBox_rightTitle{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .productFrom_Box_input .checkbox{
+    background-size: 12px;
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgM0w0IDZMOS4wMDE0NiAxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIvPjwvc3ZnPg==);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .productFrom_Box_input .checkbox:checked{
+    background-color: #2872ff;
+    border-color: #2872ff;
+
+  } 
+  .productFrom_Box_input input{
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+  } 
+  .Bundle_salesBox_rightPriceBox{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .Bundle_salesBox_rightPriceBox s{
+    color: #949494;
+    margin-left: 8px;
+  }
+  .Bundle_salesBox_save{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+  }
+  .Bundle_salesBox_save .variant_discount_html{
+    display: inline-block;
+    font-weight: 600;
+    min-width: 84px;
+    padding: 0 10px;
+    height: 24px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 0px 0px 0px 6px;
+    background-color: #ffaa2b;
+  }
+  .Bundle_soldOut .productFrom_Box_input{
+    pointer-events: none;
+  }
+  .product_compatibleAccessories_bottom {
+    display: grid;
+    gap: 12px;
+  }
+  .bags_variant .productFrom_box {
+    border-color: #2872ff;
+    transition: background-color .2s ease-in-out, border .2s ease-in-out;
+  }
+}
+@media (max-width:999px) {
+  .product_all .product-form{
+    padding-top: 36px;
+  }
+  .product_all .product__thumbnail-list-inner{
+    grid-template-columns:unset;
+    grid-auto-columns:unset;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    gap: 9px;
+        padding: 0;
+    justify-content: center;
+  }
+  .product_all .product__thumbnail-list-inner .product__thumbnail{
+    width: 28px;
+    min-width: 28px;
+    height:28px;
+    display: flex;
+    padding: 0;
+  }
+   .product_all .product__thumbnail-list-inner .product__thumbnail img{
+        object-fit: contain;
+   }
+  .product_all .product__media-nav{
+    margin-top: 12px;
+  }
+
+  .product_all .looxReviews{
+    margin-bottom: unset;
+  }
+  .product_all .product-meta__title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 32.47px;
+  }
+  .product_all .looxReviews .loox-icon{
+    width: 16px;
+    height: 16px;
+  }
+  .product_all  .loox-rating-label{
+    font-size: 12px;
+  }
+  .product_all .product-meta__price-list-container{
+    margin-top: 10px;
+    align-items: center;
+  }
+  .product_all .price--highlight{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30.03px;
+  }
+  .product_all .price--compare{
+    color: #949494;
+    opacity: 1;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .product_all .product__thumbnail-list{
+    margin-left: unset;
+    margin-right: unset;
+  }
+  .product_all .price-list{
+    align-items: baseline;
+  }
+  .product_all .price-list:not(.price-list--stack)>.price:not(:last-child){
+    margin-right: 13px;
+  }
+  .product_all .product-meta__label-list .label {
+    min-width: 90px;
+    height: 20px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #ffaa2b;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    padding: 2px 6px;
+    justify-content: center;
+  }
+  .product_all shopify-payment-terms{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  /* 变体 start*/
+  .product_all .product-form__option-info{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 8px;
+  }
+  .product_all .product-form__variants{
+    margin-top: 16px;
+  }
+  .product_all .block-swatch__item{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 6px 24px;
+    border-color: #d3d3d3;
+  }
+  .product_all .block-swatch__radio:checked+.block-swatch__item{
+    background-color: unset;
+  }
+  .block_swatchList .block-swatch__item{
+    border: unset;
+  }
+  .product_all .block-swatch__radio:checked+.block-swatch__item:after{
+    box-shadow: 0 0 0 0px #2872ff inset,0 0 0 1px #2872ff;
+  }
+  .block_swatchList .block-swatch__radio:checked+.block-swatch__item:after{
+    box-shadow: unset;
+    content: unset;
+  }
+  .block_swatchList .block-swatch__radio:checked+.block-swatch__item .variantItem_box{
+    border: 1px solid #2872ff;
+  }
+  .block_swatchList .block-swatch__radio:checked+.block-swatch__item .variantItem_bottom{
+    display: block;
+  }
+  .block_swatchList{
+    width: 100%;
+    overflow: hidden;
+  }
+  .variantItem_box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 10px;
+    padding: 12px 10px;
+    align-items: center;
+    background-color: #fff;
+    height: 112px;
+    border-radius: var(--button-border-radius);
+    border: 1px solid #d3d3d3;
+  }
+  .variantItem_boxLeft{
+    width: 75px;
+    min-width: 75px;
+  }
+  .variantItem_boxLeft img{
+    width: 100%;
+  }
+  .block_swatchList .block-swatch__item{
+    padding: 0;
+  }
+  .block_swatchList .block-swatch__item{
+    margin-top:9px;
+    margin-bottom: 9px;
+  }
+  .block_swatchList .block-swatch__item:after{
+    transform: scale(1);
+  }
+  .variantItem_boxRight_title{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 6px;
+  }
+  .variantItem_boxRight{
+    width: 100%;
+    text-align: left;
+  }
+  .block_swatchList_top{
+    margin-top: 36px !important;
+  }
+  .product_all .variantItem_boxRight_price{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .product_all .variantItem_boxRight_price span{
+    font-weight: 600;
+  }
+  .product_all .variantItem_boxRight_price s{
+    color: #949494;
+    font-size: 12px;
+    margin-left: 4px;
+  }
+  .product_all .variantItem_boxRight_save{
+    position: absolute;
+    top: -1px;
+    display: flex;
+    z-index: 1;
+    right: -1px;
+  }
+  .product_all .variant_discount_html{
+    display: flex;
+    font-weight: 600;
+    min-width: 72px;
+    padding: 0 10px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 0px 0px 0px 6px;
+    background-color: #ffaa2b;
+  }
+
+  .product_all .block-swatch__item:after{
+    /* content: unset; */
+    transition: unset;
+  }
+  .variantItem_bottom{
+    display: none;
+    font-size: 12px;
+    background: rgba(43, 114, 255, 0.05);
+    text-align: left;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 28px 10px 10px;
+    margin-top: -12px;
+    color: #000;
+    border-radius: var(--button-border-radius);
+  }
+  .variantItem_bottom span{
+    font-weight: 600;
+    display: block;
+  }
+  /* .product_all .block-swatch-list .block-swatch{
+    width: 100%;
+  } */
+  /* 变体 css end*/
+  /* block product_information */
+  .product_informationBox strong{
+    color: #2872ff;
+    font-weight: 600;
+  }
+  .product_informationBox a{
+    color: #2872ff; 
+    text-decoration-color: #2872ff !important;
+  }
+  .product_informationBox a:hover{
+    color: #2872ff; 
+  }
+  .product_informationBox{
+    display: flex;
+    align-items: baseline;
+    padding: 0 10px;
+    gap: 6px;
+  } 
+  .product_informationBox_svg{
+    height: 19.06px;
+    display: flex;
+    align-items: baseline;
+  }
+  .product_informationBox_text{
+    font-size: 12px;
+    line-height: 16.07px;
+  }
+  .product_informationBox:not(:last-child){
+    padding-bottom: 10px;
+  }
+  .product_informationBox:not(:first-child){
+    border-top: 1px solid #dfdfdf;
+    padding-top: 10px;
+  }
+  .product_informationBox:last-child .product_informationBox_text{
+    line-height: 20.2px;
+  }
+  .product_information_box{
+    padding: 10px 0;
+  }
+  /* block product_information end */
+  /* 配件 */
+  .product_all .product_form__paymentButtton{
+    margin-top: unset;
+  }
+  .product_form__paymentButtton #AddToCart{
+    transition: unset;
+    line-height: 40px;
+  }
+  .product_form__paymentButtton #AddToCart:hover{
+    background-image: unset;
+  }
+  .product_form__paymentButtton .loader-button__text{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0; 
+    text-transform: capitalize;
+  }
+  .Bundle_salesAll{
+    margin-top: 16px;
+  }
+  .productFrom_box{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 10px;
+    padding: 12px 10px;
+    align-items: center;
+    background-color: #fff;
+    height: 112px;
+    border-radius: var(--button-border-radius);
+    border: 1px solid #d3d3d3;
+  }
+  .Bundle_salesTitlt{
+    line-height: 27px;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .Bundle_salesBox_left{
+    width: 68px;
+    min-width: 68px;
+  }
+  .Bundle_salesBox_left img{
+    width: 100%;
+  }
+  .Bundle_salesBox_rightTitle{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .productFrom_Box_input .checkbox{
+    background-size: 10px;
+    border-color: #d9d9d9;
+    background-color: #d9d9d9;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgM0w0IDZMOS4wMDE0NiAxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIvPjwvc3ZnPg==);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .p-policy-content .item .icon{
+    width: 20px;
+    height: auto;
+  }
+  .payment-methods-list{
+    grid-template-columns: repeat(auto-fit, 30px);
+  }
+  .payment-methods-list--center svg{
+    width: 30px;
+    height: auto;
+  }
+  .productFrom_Box_input .checkbox:checked{
+    background-color: #2872ff;
+    border-color: #2872ff;
+
+  } 
+  .productFrom_Box_input input{
+    width: 16px;
+    border-radius: 50%;
+    height: 16px;
+  } 
+  .Bundle_salesBox_rightPriceBox{
+    font-size: 14px;
+  }
+  .Bundle_salesBox_rightPriceBox span{
+    font-weight: 600;
+  }
+  .Bundle_salesBox_rightPriceBox s{
+    color: #949494;
+    margin-left: 4px;
+    font-size: 12px;
+  }
+  .Bundle_salesBox_save{
+    position: absolute;
+    display: flex;
+    top: -1px;
+    right: -1px;
+  }
+  .Bundle_salesBox_save .variant_discount_html{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    min-width: 72px;
+    padding: 0 10px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 0px 0px 0px 6px;
+    background-color: #ffaa2b;
+  }
+  .Bundle_soldOut .productFrom_Box_input{
+    pointer-events: none;
+  }
+  .product_compatibleAccessories_bottom {
+    display: grid;
+    gap: 10px;
+  }
+  .bags_variant .productFrom_box {
+    border-color: #2872ff;
+    transition: background-color .2s ease-in-out, border .2s ease-in-out;
+  }
+}
+</style>
+<style>
   #shopify-section-{{ section.id }} {
     --block-box-shadow: {% if section.settings.shadow_effect == 'none' %}none{% else %}var(--box-shadow-{{ section.settings.shadow_effect }}){% endif %};
     --block-box-shadow-reduced: {% if section.settings.shadow_effect == 'none' %}none{% else %}var(--box-shadow-{{ section.settings.shadow_effect }}-reduced){% endif %};
@@ -84,7 +896,7 @@
       </nav>
 
       <!-- PRODUCT TOP PART -->
-      <div class='product product--thumbnails-{{ section.settings.desktop_thumbnails_position }}'>
+      <div class='product product_all product--thumbnails-{{ section.settings.desktop_thumbnails_position }}'>
         {%- render 'product-media', product: product -%}
         {%- render 'product-info',
           atc_button_icon_custom: buy_buttons_block.settings.atc_button_icon_custom,
@@ -155,7 +967,7 @@
                   {%- endif -%}
                 </span>
               {%- else -%}
-                <span class="price">
+                <span class="price price price--highlight">
                   <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
 
                   {%- if settings.currency_code_enabled -%}
@@ -167,7 +979,7 @@
               {%- endif -%}
 
               {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
-                <div class="price text--subdued text--xsmall">
+                <div class="price text--subdued text--xsmall price price--highlight">
                   <div class="unit-price-measurement">
                     <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money }}</span>
                     <span class="unit-price-measurement__separator">/</span>
@@ -248,11 +1060,168 @@
     </quick-buy-popover>
   {%- endif -%}
 {%- endunless -%}
+<script>
+   // 价格方法
+   function formatMoney2(cents, format = "") {
+    console.log("执行啦");
+    if (typeof cents === "string") {
+    cents = cents.replace(".", "");
+    }
+    const placeholderRegex = /\{\{\s*(\w+)\s*\}\}/, formatString = format || window.themeVariables.settings.moneyFormat;
+    function defaultTo(value2, defaultValue) {
+    return value2 == null || value2 !== value2 ? defaultValue : value2;
+    }
+    function formatWithDelimiters(number, precision, thousands, decimal) {
+    precision = defaultTo(precision, 2);
+    thousands = defaultTo(thousands, ",");
+    decimal = defaultTo(decimal, ".");
+    if (isNaN(number) || number == null) {
+        return 0;
+    }
+    number = (number / 100).toFixed(precision);
+    let parts = number.split("."), dollarsAmount = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1" + thousands), centsAmount = parts[1] ? decimal + parts[1] : "";
+    return dollarsAmount + centsAmount;
+    }
+    let value = "";
+    switch (formatString.match(placeholderRegex)[1]) {
+    case "amount":
+        value = formatWithDelimiters(cents, 2);
+        break;
+    case "amount_no_decimals":
+        value = formatWithDelimiters(cents, 0);
+        break;
+    case "amount_with_space_separator":
+        value = formatWithDelimiters(cents, 2, " ", ".");
+        break;
+    case "amount_with_comma_separator":
+        value = formatWithDelimiters(cents, 2, ".", ",");
+        break;
+    case "amount_with_apostrophe_separator":
+        value = formatWithDelimiters(cents, 2, "'", ".");
+        break;
+    case "amount_no_decimals_with_comma_separator":
+        value = formatWithDelimiters(cents, 0, ".", ",");
+        break;
+    case "amount_no_decimals_with_space_separator":
+        value = formatWithDelimiters(cents, 0, " ");
+        break;
+    case "amount_no_decimals_with_apostrophe_separator":
+        value = formatWithDelimiters(cents, 0, "'");
+        break;
+    }
+    if (formatString.indexOf("with_comma_separator") !== -1) {
+    return formatString.replace(placeholderRegex, value);
+    } else {
+    return formatString.replace(placeholderRegex, value);
+    }
+}
 
+  // Global array to keep track of selected product IDs
+  var selectedProductIds = [];
+
+  // Default product ID (the first variant that should always remain)
+  var defaultProductId = "{{product.first_available_variant.id}}";
+
+  function handleCheckboxChange(checkbox) {
+
+      // 获取当前产品 ID
+      var productIdBottomId = checkbox.closest('.productFrom_Box').getAttribute('data-product').trim();
+
+      // 初始化总价格为 0，并确保它是数字
+      var totalPrice = parseInt($(checkbox).parents(".product-form").find(".product-meta__price-list-container .price--highlight").attr("data-price")) || 0;
+      var totalPrice2 = parseInt($(checkbox).parents(".product-form").find(".product-meta__price-list-container .price--compare").attr("data-Comprice")) || 0;
+
+      if(totalPrice2 > totalPrice){
+        totalPrice2 = parseInt($(checkbox).parents(".product-form").find(".product-meta__price-list-container .price--compare").attr("data-Comprice")) || 0;
+      }else{
+        totalPrice2 = parseInt($(checkbox).parents(".product-form").find(".product-meta__price-list-container .price--highlight").attr("data-price")) || 0;
+      }
+
+      // 检查复选框是否被选中 
+      if (checkbox.checked) {
+          // 添加活动样式
+          $(checkbox).parents(".productFrom_Box").addClass("bags_variant");
+          console.log('Selected product ID:', productIdBottomId);
+
+          // 将产品 ID 添加到数组中（如果不存在）
+          if (!selectedProductIds.includes(productIdBottomId)) {
+              selectedProductIds.push(productIdBottomId);
+          }
+          
+          
+      } else {
+          // 移除活动样式
+          $(checkbox).parents(".productFrom_Box").removeClass("bags_variant");
+          console.log('Deselected product ID:', productIdBottomId);
+
+          // 从数组中移除该产品 ID
+          selectedProductIds = selectedProductIds.filter(id => id !== productIdBottomId);
+      }
+  
+      // 遍历所有 .plug_versionAS 元素，计算当前选中的产品总价格
+      $(".product_compatibleAccessories_bottom_box").each(function() {
+          if ($(this).hasClass("bags_variant")) { 
+              // 获取每个选中产品的价格
+              var price = parseInt($(this).attr("data-price"));
+              var Comprice = parseInt($(this).attr("data-Comprice"));
+              console.log(price, "price", Comprice, "Comprice");
+
+              // 累加选中产品的价格
+              totalPrice += price;
+              totalPrice2 += Comprice;
+          }
+
+      }); 
+
+
+      console.log(formatMoney2(totalPrice.toFixed(2)),formatMoney2(parseInt(99800)),"这个价格对吗");
+      if(totalPrice>0){
+        $(".product-sticky-form__price,.price_myBox_zong .price--highlight .price_highlight").text(formatMoney2(totalPrice));
+      }
+      // $(".product-sticky-form__priceCom,.price_myBox_zong .price--compare .price_compare").text(formatMoney(totalPrice2));
+      if(totalPrice2 > totalPrice){
+        $(".product-sticky-form__priceCom,.price_myBox_zong .price--compare .price_compare").text(formatMoney2(totalPrice2));
+        // 优惠save 
+        var saveShow = totalPrice2 - totalPrice;
+        console.log(saveShow); 
+
+        $(".product-sticky-form__info .product_meta_label,.price_myBox_zong .product-meta__label-list").html(`<span class="label">Save ${formatMoney2(saveShow)}</span>`);
+      }else{
+        $(".product-sticky-form__priceCom,.price_myBox_zong .price--compare .price_compare").text('');
+        $(".product-sticky-form__info .product_meta_label").text('');
+      }
+
+
+      // 更新购物车 URL
+      updateCartUrl();
+  }
+
+
+$(".detailCheckout").click(function(){
+
+  window.location.href = $(this).attr("data-href");
+   // Reset the checkboxes after successful addition
+   let AddOnsBox = $(this).parents(".product-form").find(".productFrom_Box_product").toArray();
+   AddOnsBox.forEach((e) => {           
+      if ($(e).hasClass("bags_variant")) {
+        $(e).find('input[type="checkbox"]').prop('checked', false);
+        $(e).removeClass("bags_variant").find('input[type="checkbox"]').prop('checked', false);
+      }
+  });
+})
+  
+ 
+
+$(".block_swatchList").click(function(){
+  var saveOption = $(this).find(".variantItem_boxRight_save").attr("data-save");
+  console.log(saveOption,"saveOptionsaveOptionsaveOptionsaveOptionsaveOptionsaveOption");
+  $(".product_form_optionName").text("Up to "+saveOption+" Off !")
+})
+</script>
 {% schema %}
 {
   "name": "t:Product_page",
-  "class": "shopify-section--main-product",
+  "class": "shopify-section--main-product", 
   "blocks": [
     {
       "type": "@app"
@@ -2268,6 +3237,66 @@
       ]
     },
     {
+      "type": "Bundle_sales",
+      "name": "Bundle sales",
+      "settings": [
+        {
+          "type": "text",
+          "id": "Bundle_sales",
+          "label": "Bundle sales",
+        "default": "Frequently Bought Together"
+        }
+      ]
+    },
+    
+    {
+      "type": "product_information",
+      "name": "Product Information",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "svg",
+          "label": "svg"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "text"
+        },
+        {
+          "type": "textarea",
+          "id": "svg2",
+          "label": "svg2"
+        },
+        {
+          "type": "richtext",
+          "id": "text2",
+          "label": "text2"
+        },
+        {
+          "type": "textarea",
+          "id": "svg3",
+          "label": "svg3"
+        },
+        {
+          "type": "richtext",
+          "id": "text3",
+          "label": "text3"
+        },
+        {
+          "type": "color_background",
+          "id": "bg_color",
+          "label": "background color",
+        }, 
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "text color"
+        }
+      ]
+    },
+    {
       "type": "order_timing",
       "name": "t:Order_timing",
       "limit": 1,
@@ -2401,6 +3430,11 @@
           "default": false
         },
         {
+          "type": "text",
+          "id": "package_title",
+          "label": "Package title"
+        },
+        {
           "type": "select",
           "id": "selector_mode",
           "label": "t:Selector_type",
@@ -2526,6 +3560,13 @@
     }
   ],
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_checkOut",
+      "label": "show checkOut",
+      "default": true
+
+    },
     {
       "type": "checkbox",
       "id": "show_vendor",

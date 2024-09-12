@@ -59,10 +59,10 @@
 @media (min-width: 1000px) {
   .home-grid .container .title {
     font-size: 52px;
-    max-width: 870px;
     margin: auto;
     margin-bottom: 40px;
     line-height: 67px;
+    max-width: 1200px;
   }
   .home-grid .container .content {
     display: grid;
@@ -73,7 +73,7 @@
     width: 200px;
     left: 50%;
     transform: translateX(-50%);
-    top: 140px;
+    top: 180px;
     column-gap: 5px;
   }
   .home-grid .container .content .item .item-title {

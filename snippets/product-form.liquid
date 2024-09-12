@@ -140,43 +140,57 @@
             {% endcomment %}
           {%- endif -%}
 
-          <div class='product-meta__price-list-container' role='region' aria-live='polite'>
+          <div class='product-meta__price-list-container price_myBox_zong' role='region' aria-live='polite'>
             <div class='price-list' data-product-price-list>
               {%- if product.selected_or_first_available_variant.compare_at_price
                   > product.selected_or_first_available_variant.price
               -%}
-                <span class='price price--highlight price--large'>
+                <span class='price price--highlight price--large' data-price="{{product.selected_or_first_available_variant.price}}">
                   <span class='visually-hidden'>{{ 'product.general.sale_price' | t }}</span>
 
-                  {%- if settings.currency_code_enabled -%}
-                    {{- product.selected_or_first_available_variant.price | money_with_currency -}}
-                  {%- else -%}
-                    {{- product.selected_or_first_available_variant.price | money -}}
-                  {%- endif -%}
+                  <span class="price_highlight">
+                    {%- if settings.currency_code_enabled -%}
+                      {{- product.selected_or_first_available_variant.price | money_with_currency -}}
+                    {%- else -%}
+                      {{- product.selected_or_first_available_variant.price | money -}}
+                    {%- endif -%}
+                  </span>
                 </span>
 
-                <span class='price price--compare'>
+                <span class='price price--compare' data-Comprice="{{product.selected_or_first_available_variant.compare_at_price}}">
                   <span class='visually-hidden'>{{ 'product.general.regular_price' | t }}</span>
-
-                  {%- if settings.currency_code_enabled -%}
-                    {{- product.selected_or_first_available_variant.compare_at_price | money_with_currency -}}
-                  {%- else -%}
-                    {{- product.selected_or_first_available_variant.compare_at_price | money -}}
-                  {%- endif -%}
+                    <!-- money_with_currency -->
+                  <span class="price_compare">
+                    {%- if settings.currency_code_enabled -%}
+                      {{- product.selected_or_first_available_variant.compare_at_price | money_with_currency -}}
+                    {%- else -%}
+                      {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+                    {%- endif -%}
+                  </span>
                 </span>
               {%- else -%}
-                <span class='price price--large'>
+                <span class='price price--highlight price--large' data-price="{{product.selected_or_first_available_variant.price}}">
                   <span class='visually-hidden'>{{ 'product.general.sale_price' | t }}</span>
-                  {%- if settings.currency_code_enabled -%}
-                    {{- product.selected_or_first_available_variant.price | money_with_currency -}}
-                  {%- else -%}
-                    {{- product.selected_or_first_available_variant.price | money -}}
-                  {%- endif -%}
+                  <span class="price_highlight">
+                    {%- if settings.currency_code_enabled -%}
+                      {{- product.selected_or_first_available_variant.price | money -}}
+                    {%- else -%}
+                      {{- product.selected_or_first_available_variant.price | money -}}
+                    {%- endif -%}
+                  </span>
                 </span>
+                <span class='price price--compare' data-Comprice="{{product.selected_or_first_available_variant.compare_at_price}}">
+                  <span class='visually-hidden'>{{ 'product.general.regular_price' | t }}</span>
+                    <!-- money_with_currency -->
+                  <span class="price_compare">
+                  
+                  </span>
+                </span> 
+
               {%- endif -%}
 
               {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
-                <div class='price text--subdued'>
+                <div class='price price--highlight text--subdued' data-price="{{product.price}}">
                   <div class='unit-price-measurement'>
                     <span class='unit-price-measurement__price'>
                       {{- product.selected_or_first_available_variant.unit_price | money -}}
@@ -215,7 +229,7 @@
                   {%- capture savings -%}{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}{%- endcapture -%}
                 {%- endif -%}
 
-                <span class='label label--highlight'>
+                <span class='label'>
                   {{- 'collection.product.discount_html' | t: savings: savings -}}
                 </span>
               {%- endunless -%}
@@ -271,7 +285,102 @@
 
       {%- when 'divider' -%}
         <hr class='product-meta__divider' {{ block.shopify_attributes }}>
+      {%- when 'Bundle_sales' -%}
+      <div class="Bundle_salesAll">
+        {% if block.settings.Bundle_sales !=blank %}
+        <h2 class="Bundle_salesTitlt">
+          {{block.settings.Bundle_sales}}
+        </h2>
+        {% endif %}
+        <div class="Bundle_salesBox">
+ 
+          <div class="product_compatibleAccessories_bottom Product{{product.id}}_product"> 
+            {% for item in product.metafields.custom.bundle_sales.value %}  
+                <div class="product_compatibleAccessories_bottom_box productFrom_Box productFrom_Box_product {%- if item.variants[0].available -%} {% else %} Bundle_soldOut{%- endif -%}" data-price="{{item.variants[0].price}}" data-Comprice="{{item.variants[0].compare_at_price}}" data-product="{{item.variants[0].id}} ">
+                  <label class="productFrom_box productFrom_Box_input check_boxInput">
+                    <input type="checkbox" id="checkboxInput{{item.variants[0].id}}_product" class="checkbox" onchange="handleCheckboxChange(this)">
 
+                    <div class="Bundle_salesBox_left">
+                      <img src="{{item.featured_image | img_url:'300x'}}" alt="{{item.featured_image.alt}}">
+                    </div>
+                    <div class="Bundle_salesBox_right">
+                      <h3 class="Bundle_salesBox_rightTitle"> {{item.title}}</h3>
+                      <div class="Bundle_salesBox_rightPriceBox">
+                        <span class=""> {{item.variants[0].price | money }}</span>
+                        <s class="">{{item.variants[0].compare_at_price | money}}</s>
+                      </div>
+                    </div> 
+                    
+                    
+                    <div class="Bundle_salesBox_save">
+                      {%- unless item.variants[0].available -%}
+                        <span class='variant_discount_html'>{{ 'collection.product.sold_out' | t }}</span>
+                      {%- elsif item.variants[0].compare_at_price
+                          > item.variants[0].price
+                      -%}
+
+                      {%- assign savings = item.variants[0].compare_at_price
+                        | minus: item.variants[0].price
+                        | times: 100.0
+                        | divided_by: item.variants[0].compare_at_price
+                        | round 
+                        | append: '%'
+                      -%}
+        
+                        <span class='variant_discount_html'>
+                          {{- 'collection.product.discount_html' | t: savings: savings -}}
+                        </span>
+                      {%- endunless -%}
+                    </div>
+                </label>
+                </div>
+            {% endfor %}
+           
+          </div>
+        </div>
+      </div>
+      {%- when 'product_information' -%}
+      <style>
+        #block_id{{block.id}}.product_information_box{
+          padding: 20px 0;
+          border-radius: var(--button-border-radius);
+          color: {{block.settings.text_color}};
+          background-color: {{block.settings.bg_color}};
+        }
+
+      </style>
+        <div class="product_information_box" id="block_id{{block.id}}">
+          {% if block.settings.text !=blank %}
+            <div class="product_informationBox">
+                <div class="product_informationBox_svg">
+                  {{block.settings.svg}}
+                </div>
+                <div class="product_informationBox_text">
+                  {{block.settings.text}}
+                </div>
+            </div>
+            {% endif %}
+            {% if block.settings.text2 !=blank %}
+            <div class="product_informationBox">
+              <div class="product_informationBox_svg">
+                {{block.settings.svg2}}
+              </div>
+              <div class="product_informationBox_text">
+                {{block.settings.text2}}
+              </div>
+            </div>
+            {% endif %}
+            {% if block.settings.text3 !=blank %}
+            <div class="product_informationBox">
+              <div class="product_informationBox_svg">
+                {{block.settings.svg3}}
+              </div>
+              <div class="product_informationBox_text">
+                {{block.settings.text3}}
+              </div>
+            </div>
+            {% endif %}
+        </div>
       {%- when 'feature_with_icon' -%}
         {%- if feature_with_icon_idx < 1 -%}
           <div class='product-feature-with-icon label-list label-list--horizontal'>
@@ -423,6 +532,7 @@
               hide-sold-out-variants
             {% endif %}
             class='product-form__variants'
+            data-title=" {{ block.settings.package_title}}"
             {{ block.shopify_attributes }}
           >
             {%- for option in product.options_with_values -%}
@@ -451,17 +561,40 @@
               {%- endif -%}
 
               <div
-                class='product-form__option-selector'
+                class='product-form__option-selector {% if block.settings.package_title contains option.name%} block_swatchList_top {% endif %}'
                 data-selector-type='{{ selector_type | replace: '_', '-' | escape }}'
+                data-title="{% if block.settings.package_title contains option.name%} {{ block.settings.package_title}} {% endif %}"
               >
                 <div class='product-form__option-info'>
-                  <span class='product-form__option-name'>{{ option.name }}:</span>
+            
+                  {% if block.settings.package_title contains option.name%}
+                      <span>Bundle & Save: </span>
+                      <span class='product-form__option-value product_form_optionName'>
+       
+                      {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price-%} 
+                          
+                        {%- assign savings = product.selected_or_first_available_variant.compare_at_price
+                          | minus: product.selected_or_first_available_variant.price
+                          | times: 100.0
+                          | divided_by: product.selected_or_first_available_variant.compare_at_price
+                          | round
+                          | append: '%'
+                        -%}
+                        Up to {{savings}} Off !
+                      </span>
+                      {% else %}
+                        Up to 0% Off !
+                      {% endif %}
+                  {% else %}
 
-                  {%- if selector_type != 'dropdown' -%}
+                    <span class='product-form__option-name'>{{ option.name }}:</span>
+                    {%- if selector_type != 'dropdown' -%}
                     <span id='{{ option_id }}-value' class='product-form__option-value'>
                       {{- option.selected_value -}}
                     </span>
-                  {%- endif -%}
+                    {%- endif -%}
+                  {% endif %}
+                
 
                   {%- if size_label_list contains option_downcase
                     and size_chart_page != blank
@@ -583,30 +716,105 @@
                           </label>
                         </div>
                       {%- endfor -%}
-                    </div>
+                    </div> 
 
                   {%- when 'block' -%}
                     <div class='block-swatch-list'>
+                      {%- assign option_position0 = option.position | minus: 1 -%}
                       {%- for value in option.values -%}
-                        <div class='block-swatch'>
+                  
+                        <div class='block-swatch {% if block.settings.package_title contains option.name%} block_swatchList {% endif %}'>
                           <input
                             class='block-swatch__radio visually-hidden'
                             type='radio'
                             name='option{{ option.position }}'
                             form='{{ product_form_id }}'
                             id='{{ option_id }}-{{ forloop.index }}'
-                            value='{{ value | escape }}'
+                            value='{{ value | escape }}' 
                             {% if value == option.selected_value %}
                               checked='checked'
                             {% endif %}
                             data-bind-value='{{ option_id }}-value'
                           >
                           <label class='block-swatch__item' for='{{ option_id }}-{{ forloop.index }}'>
-                            {{- value -}}
+                          
+
+                              {%- for variant in product.variants -%}
+
+                             
+                                {%- if variant.options[option_position0] == value -%}
+                                    {% if variant.metafields.custom.variant_json.value != blank %}
+                                      <!-- {{option.name}} {{item.title}} -->
+
+                                      {%- for item in variant.metafields.custom.variant_json.value -%}
+                                        <!-- {{option.name}} {{item.title}} -->
+                                        {% if item.options_title contains option.name or option.name contains item.options_title%}
+                                        <div class="variantItem_box">
+                                          <div class="variantItem_boxLeft">
+                                              <img src="{{variant.image | img_url:'300x'}}" alt="{{variant.image.alt}}">
+                                          </div>
+                                          <div class="variantItem_boxRight">
+                                            <h5 class="variantItem_boxRight_title">
+                                              {{value}}
+                                            </h5>
+                                            <div class="variantItem_boxRight_price">
+                                              <span class=""> {{variant.price | money }}</span>
+                                           
+
+                                              {% if variant.compare_at_price > variant.price %}
+                                                <s class="">{{variant.compare_at_price | money}}</s>
+                                              {% else %}
+                                                <s class=""></s>
+                                              {% endif %}
+                                            
+                                            </div>
+                                          </div>
+                                          {%- assign savings = variant.compare_at_price
+                                            | minus: variant.price
+                                            | times: 100.0
+                                            | divided_by: variant.compare_at_price
+                                            | round
+                                            | append: '%'
+                                          -%}
+                                            
+                                          <div class="variantItem_boxRight_save" data-save="{%- if variant.compare_at_price > variant.price -%}{{savings}} {%else%} 0%{%- endif -%}">
+                                        
+                                            {%- unless variant.available -%}
+                                              <span class='variant_discount_html'>{{ 'collection.product.sold_out' | t }}</span>
+                                            {%- elsif variant.compare_at_price
+                                                > variant.price
+                                            -%}
+                                  
+                                              
+                                              <span class='variant_discount_html'>
+                                                {{- 'collection.product.discount_html' | t: savings: savings -}}
+                                              </span>
+                                            {%- endunless -%}
+                                          </div>
+                                        </div>
+                                        <div class="variantItem_bottom">
+                                            <span> {{item.title}}</span>
+                                           <p>{{item.text}}</p>
+                                        </div>
+                                        {% else %}
+                                          {{ value }}  
+                                 
+                                        {% endif %} 
+                                      {%- endfor -%} 
+
+                                    {% else %}
+                                        {{ value }} 
+                                    {% endif %}
+                                    {%- break -%}  
+                                {% endif %} 
+                                
+                              {%- endfor -%} 
                           </label>
                         </div>
                       {%- endfor -%}
                     </div>
+
+                    
 
                   {%- when 'dropdown' -%}
                     <div class='select-wrapper'>
@@ -715,6 +923,54 @@
               </div>
             </noscript>
           </product-variants>
+          {% for variant in product.variants %}
+            <div class="box_list" data-variantTitle="{{variant.title}}" data-variantId="{{ variant.id }}">
+                <div class="box_listTitle">
+                  {{variant.title}}
+                </div>
+                <div class="variant-info">
+                  <div>
+                    <p class="item_img">
+                      <img src="{{variant.image | img_url:'300x'}}">
+                    </p>
+                    <p class="item_title">{% assign parts = variant.title | split: '/' %}
+                      {{ parts | last }}
+                    </p>
+                    <p class="item_price">{{ variant.price }}</p>
+                    <p class="item_compare_price">{{ variant.compare_at_price }}</p>
+                    <p class="item_compare_save">
+              
+                      {%- unless variant.available -%}
+                        <span class='variant_discount_html'>{{ 'collection.product.sold_out' | t }}</span>
+                      {%- elsif variant.compare_at_price
+                          > variant.price
+                      -%}
+
+                      {%- assign savings = variant.compare_at_price
+                        | minus: variant.price
+                        | times: 100.0
+                        | divided_by: variant.compare_at_price
+                        | round 
+                        | append: '%'
+                      -%}
+        
+                        <span class='variant_discount_html'>
+                          {{- 'collection.product.discount_html' | t: savings: savings -}}
+                        </span>
+                      {%- endunless -%}
+                    </p> 
+                    {%- for item in variant.metafields.custom.variant_json.value -%}
+                    <div class="product_variantAs_itemTitle">
+                      {{item.title}}
+                    </div>
+                    <div class="product_variantAs_itemText">
+                      {{item.text}}
+                    </div>
+                    {%- endfor -%} 
+                  </div>
+                </div>
+            </div>
+          {% endfor %}
         {%- endunless -%}
 
         {%- comment -%}
@@ -1600,10 +1856,10 @@
 
               <product-payment-container
                 form-id='{{ product_form_id }}'
-                {% comment %} {% if update_url %}
+                {% if update_url %}
                   id='MainPaymentContainer'
-                {% endif %} {% endcomment %}
-                class='product-form__payment-container'
+                {% endif %}
+                class='product-form__payment-container product_form__paymentButtton'
                 {{ block.shopify_attributes }}
               >
                 <button
@@ -1624,7 +1880,7 @@
                   {% endunless %}
                 >
                   {%- if product.selected_or_first_available_variant.available -%}
-                    {%- if atc_button_icon_custom != blank -%}
+                    <!-- {%- if atc_button_icon_custom != blank -%}
                       <span class='loader-button__icon'>
                         <img
                           width='auto'
@@ -1638,7 +1894,7 @@
                       <span class='loader-button__icon'>
                         {%- render 'icon' with atc_button_icon_preset -%}
                       </span>
-                    {%- endif -%}
+                    {%- endif -%} -->
                     {%- if product.template_suffix == 'pre-order' -%}
                       {{- 'product.form.pre_order' | t -}}
                     {%- else -%}

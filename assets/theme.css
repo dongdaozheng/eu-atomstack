@@ -13052,9 +13052,18 @@ free-gift-wrapper .free-gift-product-popup {
 
 .product-form__description {
   margin-top: 8px;
-  margin-bottom: 8px;
+    background: rgb(43 114 255 / 5%);
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 3px;
 }
-
+.product-form__text{
+   margin-top: 8px;
+    background: rgb(43 114 255 / 5%);
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 3px;
+}
 .product-form__image--center {
   text-align: center;
 }

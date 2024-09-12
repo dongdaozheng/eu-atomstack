@@ -214,15 +214,43 @@
               "product_grid_columns": 4
             }
           },
+          "menu_product_FXxcYP": {
+            "type": "menu-product",
+            "settings": {
+              "product_bar_img": "shopify:\/\/shop_images\/K60.png",
+              "product_type": "Hurricane",
+              "product_view": "\/collections\/hurricane",
+              "product_accessories_view": "\/collections\/hurricane-accessory",
+              "product_accessories_type": "Accessories",
+              "product_url_1": "\/products\/atomstack-hurricane",
+              "product_image_1": "shopify:\/\/shop_images\/K60_ad64cea9-da05-4505-93ed-c9e50199c537.png",
+              "product_name_1": "Hurricane",
+              "product_url_2": "",
+              "product_name_2": "",
+              "product_url_3": "",
+              "product_name_3": "",
+              "product_url_4": "",
+              "product_name_4": "",
+              "product_url_5": "",
+              "product_name_5": "",
+              "product_desc_1": "",
+              "product_desc_2": "",
+              "product_desc_3": "",
+              "product_desc_4": "",
+              "product_desc_5": "",
+              "collection": "hurricane-accessory",
+              "product_grid_columns": 3
+            }
+          },
           "menu_product_VUVyiF": {
             "type": "menu-product",
             "settings": {
               "product_bar_img": "shopify:\/\/shop_images\/A70MAX_7cd4fad4-3ea6-4166-a1d9-fe74591c3e2b.jpg",
               "product_type": "Max Series",
-              "product_view": "https:\/\/atomstack.com\/collections\/max-accessory-1",
-              "product_accessories_view": "https:\/\/atomstack.com\/collections\/max-accessory",
+              "product_view": "\/collections\/max-accessory-1",
+              "product_accessories_view": "\/collections\/max-accessory",
               "product_accessories_type": "Accessories",
-              "product_url_1": "https:\/\/atomstack.com\/products\/atomstack-a70-max",
+              "product_url_1": "\/products\/atomstack-a70-max",
               "product_image_1": "shopify:\/\/shop_images\/A70MAX_7cd4fad4-3ea6-4166-a1d9-fe74591c3e2b.jpg",
               "product_name_1": "A70\/X70 Max",
               "product_url_2": "https:\/\/atomstack.com\/products\/atomstack-a40-max",
@@ -235,9 +263,9 @@
               "product_name_4": "",
               "product_url_5": "",
               "product_name_5": "",
-              "product_desc_1": "Maximize Your Vision",
-              "product_desc_2": "Go Big, Cut Bigger",
-              "product_desc_3": "Unleash Boundless Creativity",
+              "product_desc_1": "",
+              "product_desc_2": "",
+              "product_desc_3": "",
               "product_desc_4": "",
               "product_desc_5": "",
               "collection": "max-accessory",
@@ -265,7 +293,7 @@
               "product_name_4": "",
               "product_url_5": "",
               "product_name_5": "",
-              "product_desc_1": "Safe Vision, Hassle-Free Installation, Certified Protection",
+              "product_desc_1": "",
               "product_desc_2": "",
               "product_desc_3": "",
               "product_desc_4": "",
@@ -373,6 +401,7 @@
           "menu_accessories_Pg6qT8",
           "menu_accessories_4AncNH",
           "menu_accessories_zLgjKk",
+          "menu_product_FXxcYP",
           "menu_product_VUVyiF",
           "menu_product_aQt8pV",
           "menu_product_YJfNLq",
@@ -810,12 +839,6 @@
         "settings": {
         }
       },
-      "10112818894266855621": {
-        "type": "shopify:\/\/apps\/ufe-cross-sell-upsell-bundle\/blocks\/app-embed\/588d2ac5-62f3-4ccd-8638-da98ec61fa90",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "16156609502398088594": {
         "type": "shopify:\/\/apps\/omega-facebook-pixel\/blocks\/app-embed-block\/ecdcc423-3dbd-480c-85e8-fdb9789cf058",
         "disabled": false,
@@ -868,6 +891,12 @@
       },
       "14868561720390754469": {
         "type": "shopify:\/\/apps\/loloyal-com\/blocks\/boom-cend\/930ac91f-2bf2-4655-9ba0-574771f782d6",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "10112818894266855621": {
+        "type": "shopify:\/\/apps\/ufe-cross-sell-upsell-bundle\/blocks\/app-embed\/588d2ac5-62f3-4ccd-8638-da98ec61fa90",
         "disabled": true,
         "settings": {
         }

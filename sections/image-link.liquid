@@ -1,30 +1,94 @@
 <div class='image-link'>
-  {% if section.settings.link %}
-    <a href='{{ section.settings.link }}'>
-  {% else %}
-    <div>
+  {% if section.settings.title %}
+    <p class='title'>{{ section.settings.title }}</p>
   {% endif %}
-  <picture>
-    <source media='(max-width: 1000px)' srcset='{{ section.settings.mb_img | image_url }}'>
-    <source media='(min-width: 1000px)' srcset='{{ section.settings.pc_img | image_url }}'>
-    <img
-      src='{{ section.settings.pc_img | image_url }}'
-      alt='img'
-      width='100%'
-      height='100%'
-    >
-  </picture>
-  {% if section.settings.link %}
-    </a>
-  {% else %}
-    </div>
-  {% endif %}
+  <a href='{{section.settings.link}}'>
+    <picture>
+      <source media='(max-width: 1000px)' srcset='{{ section.settings.mb_img | image_url}}'>
+      <source media='(min-width: 1000px)' srcset='{{ section.settings.pc_img | image_url}}'>
+      <img
+        src='{{ section.settings.pc_img | image_url }}'
+        alt='img'
+        width='100%'
+        height='100%'
+      >
+    </picture>
+  </a>
 </div>
+
+<style>
+  @media (min-width: 1000px) {
+    .image-link p {
+      font-size: {{ section.settings.font_size }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+      color: #333;
+      text-align: center;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  }
+    @media (max-width: 1000px) {
+    .image-link p {
+      font-size: {{ section.settings.font_size_mb }}px;
+      padding-top: {{ section.settings.padding_top_mb }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mb }}px;
+      color: #333;
+      text-align: center;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 0;
+    }
+  }
+</style>
 
 {% schema %}
 {
   "name": "image-link",
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "number",
+      "id": "font_size",
+      "label": "Font Size",
+      "default": 52
+    },
+    {
+      "type": "number",
+      "id": "font_size_mb",
+      "label": "Font Size (Mobile)",
+      "default": 30
+    },
+    {
+      "type": "number",
+      "id": "padding_top",
+      "label": "Padding Top"
+    },
+    {
+      "type": "number",
+      "id": "padding_bottom",
+      "label": "Padding Bottom"
+    },
+    {
+      "type": "number",
+      "id": "padding_top_mb",
+      "label": "Padding Top (Mobile)"
+    },
+    {
+      "type": "number",
+      "id": "padding_bottom_mb",
+      "label": "Padding Bottom (Mobile)"
+    },
     {
       "type": "image_picker",
       "id": "pc_img",

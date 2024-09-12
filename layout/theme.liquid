@@ -75,14 +75,13 @@
       const ipDetails = await getIpDetails(data.ip);
       const europeanCountry = isEuropeanCountry(ipDetails.country_code);
       const url = new URL(window.location.href);
-      if (europeanCountry || url.hash.includes('redirect')) {
+      if (!europeanCountry || url.hash.includes('redirect')) {
         return null;
       }
-
       if (url.hash.includes('redirect')) {
         localStorage.setItem('redirect', true);
       }
-      window.location.href = `https://atomstack.com${url.pathname}`;
+      window.location.href = `https://eu.atomstack.com${url.pathname}`;
     } catch (error) {
       console.error('Error fetching IP address:', error);
     }
@@ -101,13 +100,12 @@
     return europeanCountryCodes.includes(countryCode);
   }
 
-  // if (!window.location.href.includes('127.0.0.1')) {
-  //   getIpAddress();
-  // }
+  if (!window.location.href.includes('127.0.0.1')) {
+    getIpAddress();
+  }
 
   // getIpAddress();
 </script>
-
 <html class='no-js' lang='{{ request.locale.iso_code }}' dir='{{ direction }}'>
   <head>
     {% render 'pandectes-rules' %}
@@ -219,7 +217,7 @@
     <link rel='preload' as='style' href='{{ 'theme.css' | asset_url }}'>
     <link rel='preload' as='script' href='{{ 'vendor.js' | asset_url }}'>
     <link rel='preload' as='script' href='{{ 'theme.js' | asset_url }}'>
-
+    <link rel='stylesheet' href='{{ 'global.css' | asset_url }}'>
     {%- comment -%}
       IMPLEMENTATION NOTE: for improving performance, Zalify tries to preload images on known pages (such as blog page, product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential libraries (such as PhotoSwipe or Flickity) and only loads them on demand.
     {%- endcomment -%}
@@ -258,7 +256,7 @@
     {% render 'microdata-schema' %}
     {% render 'css-variables', direction: direction %}
     {% render 'js-variables', direction: direction %}
-
+    {% render 'my-js' %}
     <link rel='stylesheet' href='{{ 'theme.css' | asset_url }}'>
 
     <script src='{{ 'vendor.js' | asset_url }}' defer></script>
@@ -292,9 +290,9 @@
     {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
   {%- endif -%}
 
-  <script src='https://unpkg.com/swiper@8/swiper-bundle.min.js'></script>
+  {% comment %} <script src='https://unpkg.com/swiper@8/swiper-bundle.min.js'></script> {% endcomment %}
   <body
-    class='no-focus-outline {{ feature_classes }}'
+    class='{{template.suffix}}_name no-focus-outline {{ feature_classes }}'
     data-instant-allow-query-string
   >
     <!-- Google Tag Manager (noscript) -->

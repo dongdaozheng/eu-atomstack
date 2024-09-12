@@ -341,7 +341,8 @@ body {
       }
       ul {
         padding: vw(12px) vw(36px);
-        justify-content: space-between;
+        justify-content: center;
+        column-gap: vw(20px);
         li {
           font-size: vw(24px);
         }

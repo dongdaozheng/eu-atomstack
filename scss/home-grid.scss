@@ -71,10 +71,10 @@
     .container {
       .title {
         font-size: 52px;
-        max-width: 870px;
         margin: auto;
         margin-bottom: 40px;
         line-height: 67px;
+        max-width: 1200px;
       }
       .content {
         display: grid;
@@ -85,7 +85,7 @@
             width: 200px;
             left: 50%;
             transform: translateX(-50%);
-            top: 140px;
+            top: 180px;
             column-gap: 5px;
           }
           .item-title {

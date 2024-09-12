@@ -303,7 +303,8 @@ body {
   }
   #Program .product-wrapper ul {
     padding: 1.6vw 4.8vw;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 2.6666666667vw;
   }
   #Program .product-wrapper ul li {
     font-size: 3.2vw;

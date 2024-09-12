@@ -1,0 +1,93 @@
+.video-swiper {
+  color: #333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (min-width: 1000px) {
+  .video-swiper {
+    padding: 60px 0px;
+  }
+  .video-swiper .title {
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .video-swiper .container {
+    width: calc(100% - var(--container-gutter, 0px) * 2);
+    padding: 0px;
+  }
+  .video-swiper .container .swiper-slide {
+    position: relative;
+  }
+  .video-swiper .container .swiper-pagination {
+    display: none;
+  }
+  .video-swiper .container .play {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .video-swiper .container .play svg {
+    width: 64px;
+    height: 64px;
+  }
+  .video-swiper .container .swiper-button-prev,
+  .video-swiper .container .swiper-button-next {
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    top: 60%;
+  }
+  .video-swiper .container .swiper-button-prev::after,
+  .video-swiper .container .swiper-button-next::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("arrows.png") no-repeat center/cover;
+    width: 42px;
+    height: 42px;
+  }
+  .video-swiper .container .swiper-button-prev::after {
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 1000px) {
+  .video-swiper {
+    padding: 8vw 0px;
+  }
+  .video-swiper .swiper-slide {
+    position: relative;
+  }
+  .video-swiper .title {
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .video-swiper .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 9.0666666667vw;
+    height: 9.0666666667vw;
+  }
+  .video-swiper .play svg {
+    width: 9.0666666667vw;
+    height: 9.0666666667vw;
+  }
+  .video-swiper [class*=swiper-button-] {
+    display: none;
+  }
+  .video-swiper .title {
+    margin-bottom: 3.2vw;
+    font-size: 6.9333333333vw;
+  }
+}

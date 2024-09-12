@@ -1,0 +1,106 @@
+<link rel='stylesheet' href='{{ 'video-swiper.css' | asset_url }}'>
+
+<div class='video-swiper'>
+  <div class='container swiper video-swiper--{{ section.id }}'>
+    <p class='title'>{{ section.settings.title }}</p>
+    <div class='swiper-wrapper '>
+      {% for block in section.blocks %}
+        <div class='swiper-slide'>
+          <video
+            src='{{ block.settings.video_url }}'
+            poster='{{ block.settings.vide_poster}}'
+            autoplay
+            muted
+            loop
+          ></video>
+          {% comment %}
+            <div class='play false'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='73' height='82' viewBox='0 0 73 82' fill='none'>
+                <path d="M70.8044 38.6021C72.6596 39.6624 72.6596 42.3376 70.8044 43.3979L4.88226 81.0736C3.04106 82.1259 0.750002 80.7964 0.750002 78.6757L0.750007 3.32427C0.750007 1.20358 3.04107 -0.125865 4.88227 0.926415L70.8044 38.6021Z" fill="white"/>
+              </svg>
+            </div>
+          {% endcomment %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class='swiper-pagination'></div>
+    <div class='swiper-button-prev'></div>
+    <div class='swiper-button-next'></div>
+  </div>
+</div>
+<script>
+  const mySwiper = new Swiper('.video-swiper--{{ section.id }}', {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    breakpoints: {
+      1000: {
+        spaceBetween: 20,
+        slidesPerView: 2,
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+  // const video = document.querySelectorAll('.video-swiper--{{ section.id }} .swiper-slide video');
+  // const paly = document.querySelectorAll('.video-swiper--{{ section.id }} .swiper-slide .play');
+  // video.forEach((item, index) => {
+  //   paly[index].addEventListener('click', () => {
+  //     if (item.paused) {
+  //       item.play();
+  //       paly[index].style.display = 'none';
+  //     } else {
+  //       item.pause();
+  //       paly[index].style.display = 'block';
+  //     }
+  //   });
+  //   item.addEventListener('click', () => {
+  //     if (item.paused) {
+  //       item.play();
+  //       paly[index].style.display = 'none';
+  //     } else {
+  //       item.pause();
+  //       paly[index].style.display = 'block';
+  //     }
+  //   });
+  // });
+</script>
+{% schema %}
+{
+  "name": "video-swiper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "video",
+      "settings": [
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Video URL"
+        },
+        {
+          "type": "text",
+          "id": "vide_poster",
+          "label": "Video poster"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "video-swiper"
+    }
+  ]
+}
+{% endschema %}
