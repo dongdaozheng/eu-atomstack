@@ -334,21 +334,61 @@
         "column_H3UWmj": {
           "type": "column",
           "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/bg_d44e2a3e-9908-4945-a4cd-507b54c04b2a.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/bg-00_3ff59914-a90f-4642-995e-ef4dfd6a1c6d.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/bg-1_b322ff55-84d3-466c-8c06-93d5d303275f.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/bg-01_78a9d7e5-8c15-4bc4-8558-882fe7d16866.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/bg-2_3237bf54-16bd-4a4a-b3d1-dbf39200e559.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/bg-02_6d1809c6-d362-4c4b-8fef-71dc046a991a.jpg",
+            "pc_img_4": "shopify:\/\/shop_images\/bg-3_9e28ff53-b713-44e9-becc-d01ccfae6618.jpg",
+            "mb_img_4": "shopify:\/\/shop_images\/bg-03_1c1a050b-b6d9-4378-841c-22e6fd15bbf8.jpg",
+            "pc_img_5": "shopify:\/\/shop_images\/bg-4_ecc15c89-e360-485f-9301-903af087f584.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/bg-04_a17b1d23-be44-41f3-8c20-0c88dae37f8f.jpg"
           }
         },
         "column_344N7z": {
           "type": "column",
           "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/bg_e239a611-56cc-48d9-95c5-9dee9a3b843c.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/bg-00_40b6d041-8d4c-4379-919a-3e27c9f85168.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/bg-1_dd557c59-bc5c-4f4c-9ecf-92815ff0f401.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/bg-01_07bf7eda-301f-48e3-b352-54fdfe417d5d.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/bg-2_99ee1674-8d64-41dc-9a28-08155dad6a5d.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/bg-02_c3a5dd97-366f-455f-b722-4a7a3f85fbc0.jpg",
+            "pc_img_4": "shopify:\/\/shop_images\/bg-3_8ea74212-6f96-4700-b019-23ab58803a6c.jpg",
+            "mb_img_4": "shopify:\/\/shop_images\/bg-03_a2c3959f-b918-40b0-b526-0035d623a163.jpg",
+            "pc_img_5": "shopify:\/\/shop_images\/bg-4_120efc44-e5c4-4f0f-818a-99b7fe418079.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/bg-04_c9bcc942-2b5a-487e-b4ad-4969037f45ea.jpg"
           }
         },
         "column_3a7Pfg": {
           "type": "column",
           "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/bg_9a22cd7f-bee5-42e1-ba1b-526875b57a12.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/bg-00_c3fcf3d4-4e5f-4f97-9b3f-10efcff261b1.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/bg-1_56edde3f-345b-40c6-9486-5ae00aa81a08.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/bg-01_76e792a5-be77-4575-b4d6-d89a7b0cbd3b.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/bg-2_069b0081-b3a1-4ff7-98d9-2fbba4c0f7ae.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/bg-02_37403514-293c-42ad-bb61-3ebb7cc2f2f6.jpg",
+            "pc_img_4": "shopify:\/\/shop_images\/bg-3_d536ea22-3356-4807-9ae2-16f3070e066f.jpg",
+            "mb_img_4": "shopify:\/\/shop_images\/bg-03_b17819cf-ae43-422a-8bb5-734eaaf2aa12.jpg",
+            "pc_img_5": "shopify:\/\/shop_images\/bg-4_54587b88-f020-43ee-aaa4-0a01415ee41c.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/bg-04_30a2f2d8-d640-4a79-9d37-0d25b5364944.jpg"
           }
         },
         "column_FBxaRm": {
           "type": "column",
           "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/bg_5f40be07-06a4-4285-98ef-febc1bf93127.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/bg-00_251d9cad-e0b2-47fa-97b5-00fd2870f979.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/bg-1_19b1e4a7-354c-4058-8baf-f5b584f915eb.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/bg-01_45afbd25-32a8-46b3-b13d-0dd54bd7cc2c.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/bg-2_c6f23ba9-d4e3-47e5-999a-990d22343aa5.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/bg-02_9a8ecdd7-b705-40a1-8290-578b0b38ebce.jpg",
+            "pc_img_4": "shopify:\/\/shop_images\/bg-3_93a68b1b-9cab-42d9-8944-f721e1cee79c.jpg",
+            "mb_img_4": "shopify:\/\/shop_images\/bg-03_a807b814-b1b6-48f6-b98c-d0025ac236e4.jpg",
+            "pc_img_5": "shopify:\/\/shop_images\/bg-4_617e95c9-1fb8-4123-8341-1f9659a2890d.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/bg-04_bbab4116-db28-4dc4-9543-c47b008509f6.jpg"
           }
         }
       },
@@ -402,21 +442,24 @@
           "type": "grid",
           "settings": {
             "title": "@Trey",
-            "desc": "With AtomStack, Trey transformed his childhood passion for crafting into a successful venture."
+            "desc": "With AtomStack, Trey transformed his childhood passion for crafting into a successful venture.",
+            "image": "shopify:\/\/shop_images\/Trey-1.jpg"
           }
         },
         "grid_KtGyMK": {
           "type": "grid",
           "settings": {
             "title": "@Ali",
-            "desc": "Thanks to AtomStack, Ali, once a newcomer, achieved remarkable success at craft fairs."
+            "desc": "Thanks to AtomStack, Ali, once a newcomer, achieved remarkable success at craft fairs.",
+            "image": "shopify:\/\/shop_images\/Ali-1.jpg"
           }
         },
         "grid_Lgwk46": {
           "type": "grid",
           "settings": {
             "title": "@Dave",
-            "desc": "AtomStack unlocked Dave's creative possibilities, enabling him to tackle ambitious projects he once considered impossible."
+            "desc": "AtomStack unlocked Dave's creative possibilities, enabling him to tackle ambitious projects he once considered impossible.",
+            "image": "shopify:\/\/shop_images\/Dave-1.jpg"
           }
         }
       },
