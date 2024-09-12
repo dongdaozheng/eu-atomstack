@@ -90,21 +90,6 @@
             "Bundle_sales": "Frequently Bought Together"
           }
         },
-        "mentis_product_grouping_group_product_P4hQqA": {
-          "type": "shopify:\/\/apps\/mentis-product-grouping\/blocks\/group_product\/3fd8cb1c-20d6-4ebc-80c1-f61f58a3cec8",
-          "settings": {
-            "product": "{{product}}",
-            "group_style": "grid",
-            "top_spacing": 2,
-            "bottom_spacing": 6,
-            "box_size": 95,
-            "font_size": 12,
-            "bo_color": "#ececec",
-            "boh_color": "#000000",
-            "imgb_color": "#000000",
-            "activegb_color": "#334fb4"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "disabled": true,
@@ -124,34 +109,11 @@
             "image_uploader_label": "<p>Drag & Drop your image or <span style=\"text-decoration:underline\">Browse<\/span> <\/p>"
           }
         },
-        "estimated_delivery_date_plus_delivery_coder_theme_YjrYVC": {
-          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
-          "settings": {
-          }
-        },
         "liquid_xpicCc": {
           "type": "liquid",
           "disabled": true,
           "settings": {
             "liquid": "<style>\n.svg-icon{display:inline !important;\nfill:#2c2c2c;}\n.file-download {border: 1px solid #c2c2c2; border-radius:4px;color:#2c2c2c; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:23px;padding:4px 10px;margin-right:8px;}\n.file-download:hover {border: 1px solid #285ee6;color: #285ee6;}\n.file-download:hover .svg-icon{fill:#285EE6 !important;}\n<\/style>\n<div><a class=\"file-download\" href=\"{{ product.metafields.custom.user_guides.value }}\"><svg t=\"1712050487506\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"4428\" width=\"16\" height=\"16\"><path d=\"M332.32 464.112l144 160a47.952 47.952 0 0 0 71.36 0l144-160a48 48 0 0 0-71.36-64.224L560 466.912V176a48 48 0 1 0-96 0v290.912l-60.32-67.024a48 48 0 1 0-71.36 64.224zM880 560a48 48 0 0 0-48 48v192H192V608a48 48 0 1 0-96 0v240a48 48 0 0 0 48 48h736a48 48 0 0 0 48-48V608a48 48 0 0 0-48-48z\" p-id=\"4429\"><\/path><\/svg>&nbsp;User Guides<\/a>\n<\/div>"
-          }
-        },
-        "mega_better_price_app_block_wpPnNx": {
-          "type": "shopify:\/\/apps\/mega-better-price\/blocks\/app-block\/7a5fb689-a902-4695-8f78-75bdd89e88e7",
-          "disabled": true,
-          "settings": {
-            "buttonType": "link",
-            "buttonText": "Found a better price on another site?",
-            "text_align": "left",
-            "overlay": true,
-            "animation": false,
-            "fontColor": "#c82424",
-            "bannerBackground": "#1c8e6e",
-            "popupFooterColor": "#4a4a4a",
-            "fontSize": 14,
-            "buttonWidth": 100,
-            "minPriceEnabled": false,
-            "minPrice": 0
           }
         },
         "c085ee8b-ba40-47a0-bf17-46d82cfd2d71": {
@@ -176,12 +138,9 @@
         "b1721951-efc2-40a7-a703-ce64f2bd4239",
         "variant_picker",
         "bundle_sales_8L7QpH",
-        "mentis_product_grouping_group_product_P4hQqA",
         "quantity_selector",
         "buy_buttons",
-        "estimated_delivery_date_plus_delivery_coder_theme_YjrYVC",
         "liquid_xpicCc",
-        "mega_better_price_app_block_wpPnNx",
         "c085ee8b-ba40-47a0-bf17-46d82cfd2d71",
         "a33b0886-6286-4ee7-af11-9ff9ba4f6c4a"
       ],
