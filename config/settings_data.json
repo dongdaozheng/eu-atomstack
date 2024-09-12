@@ -79,7 +79,7 @@
           "mobile_close_button_y_margin": 12,
           "desktop_font_size": 12,
           "mobile_font_size": 12,
-          "text_color": "rgba(255,255,255,0)",
+          "text_color": "rgba(0,0,0,0)",
           "border_width": 0,
           "border_style": "solid",
           "border_color": "rgba(0,0,0,0)"
@@ -113,7 +113,7 @@
           "menu_product_aRbaVe": {
             "type": "menu-product",
             "settings": {
-              "point": "",
+              "point": "new",
               "product_type": "",
               "product_view": "",
               "product_accessories_view": "",
