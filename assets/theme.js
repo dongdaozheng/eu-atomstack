@@ -6028,28 +6028,27 @@
       productForm.delete('option1');
       productForm.delete('option2');
       productForm.delete('option3');
-      
-    let valueArr = [];
-    let AddOnsBox = $(this).parents(".product-form").find(".productFrom_Box_product").toArray();
 
-    AddOnsBox.forEach((e) => {
-        if ($(e).hasClass("bags_variant")) {
-            let bagsVariant2 = $(e).attr("data-product").trim();
-            var arrA = { 'id': bagsVariant2, 'quantity': 1 };
-            valueArr.push(arrA);
+      let valueArr = [];
+      let AddOnsBox = $(this).parents('.product-form').find('.productFrom_Box_product').toArray();
+
+      AddOnsBox.forEach((e) => {
+        if ($(e).hasClass('bags_variant')) {
+          let bagsVariant2 = $(e).attr('data-product').trim();
+          var arrA = { id: bagsVariant2, quantity: 1 };
+          valueArr.push(arrA);
         }
-    });
+      });
 
-    valueArr.forEach((item, index) => {
+      valueArr.forEach((item, index) => {
         productForm.set(`items[${index + 1}]id`, item.id);
         productForm.set(`items[${index + 1}]quantity`, item.quantity);
-    });
-
+      });
 
       // let formData = {
       //     'items': valueArr
       // };
-  
+
       // console.log(formData);
 
       let freeGiftProduct;
@@ -6441,9 +6440,10 @@
         productPrices.style.display = 'none';
       } else {
         productPrices.innerHTML = '';
-        if (variant['compare_at_price'] > variant['price']) { 
+        if (variant['compare_at_price'] > variant['price']) {
           productPrices.innerHTML += `<span class="price price--highlight ${
-            this.priceClass}" data-price="${variant['price']}"><span class="visually-hidden">${
+            this.priceClass
+          }" data-price="${variant['price']}"><span class="visually-hidden">${
             window.themeVariables.strings.productSalePrice
           }</span><span class="price_highlight">${formatMoney(variant['price'])}</span></span>`;
           productPrices.innerHTML += `<span class="price price--compare" data-Comprice="${variant['compare_at_price']}"><span class="visually-hidden">${
@@ -6609,7 +6609,7 @@
       if (!this.masterSelector) {
         console.warn(
           `The variant selector for product with handle ${this.productHandle} is not linked to any product form.`,
-        ); 
+        );
         return;
       }
       this.product = await ProductLoader.load(this.productHandle);
@@ -6618,81 +6618,81 @@
       this._updateDisableSelectors();
       this.selectVariant(this.selectedVariant['id']);
 
+      console.log(this.selectedVariant.title, 'selectedVariant.title');
 
-      console.log(this.selectedVariant.title,"selectedVariant.title");
+      var splitTitle = this.selectedVariant.title.split('/'); // Split the string by "/"
+      var firstPart = splitTitle.slice(0, -1).join('/'); // Join all parts before the last "/"
+      console.log(firstPart, 'firstPartfirstPartfirstPart');
 
-      var splitTitle = this.selectedVariant.title.split("/"); // Split the string by "/"
-      var firstPart = splitTitle.slice(0, -1).join("/"); // Join all parts before the last "/"
-      console.log(firstPart,"firstPartfirstPartfirstPart");
-      
       var items = [];
       console.log(items);
       // Iterate over each .box_list element
-      $(".box_list").each(function() {
-        var variantTitle = $(this).attr("data-variantTitle").trim();
-        var newVariantTitle = variantTitle.split("/");
-        var firstVariantTitle = newVariantTitle.slice(0, -1).join("/");
-        console.log(firstVariantTitle,"variantTitlevariantTitlevariantTitlevariantTitle");
+      $('.box_list').each(function () {
+        var variantTitle = $(this).attr('data-variantTitle').trim();
+        var newVariantTitle = variantTitle.split('/');
+        var firstVariantTitle = newVariantTitle.slice(0, -1).join('/');
+        console.log(firstVariantTitle, 'variantTitlevariantTitlevariantTitlevariantTitle');
 
-        if(firstPart == firstVariantTitle){
-          $(this).css("border","1px solid #000")
-          $(this).addClass("active");
+        if (firstPart == firstVariantTitle) {
+          $(this).css('border', '1px solid #000');
+          $(this).addClass('active');
           items = [];
-          $(".box_list.active").find('.variant-info').each(function() {
-            var item = {
-              img: $(this).find('.item_img img').attr("src"),
-              price: parseInt($(this).find('.item_price').text()),
-              comparePrice: parseInt($(this).find('.item_compare_price').text()),
-              title: $(this).find('.item_title').text(),
-              bottom_title: $(this).find('.product_variantAs_itemTitle').text(),
-              bottom_text: $(this).find('.product_variantAs_itemText').text(),
-              save: $(this).find('.item_compare_save').html(),
-            };
-            items.push(item);
-          });
+          $('.box_list.active')
+            .find('.variant-info')
+            .each(function () {
+              var item = {
+                img: $(this).find('.item_img img').attr('src'),
+                price: parseInt($(this).find('.item_price').text()),
+                comparePrice: parseInt($(this).find('.item_compare_price').text()),
+                title: $(this).find('.item_title').text(),
+                bottom_title: $(this).find('.product_variantAs_itemTitle').text(),
+                bottom_text: $(this).find('.product_variantAs_itemText').text(),
+                save: $(this).find('.item_compare_save').html(),
+              };
+              items.push(item);
+            });
 
           // 更新符合条件的.variant-input
-          $('.product-form__option-selector').each(function() {
-            var parentTitle = $(this).closest(".product-form__variants").attr("data-title").trim();
-            var activeTitle = $(this).attr("data-title").trim();
+          $('.product-form__option-selector').each(function () {
+            var parentTitle = $(this).closest('.product-form__variants').attr('data-title').trim();
+            var activeTitle = $(this).attr('data-title').trim();
             console.log(parentTitle, activeTitle);
 
-            if (parentTitle == activeTitle) { 
-              console.log("Matched");
+            if (parentTitle == activeTitle) {
+              console.log('Matched');
               // 确保在.items.length内
-              $(".block_swatchList_top .block_swatchList").each(function(index, element) {
+              $('.block_swatchList_top .block_swatchList').each(function (index, element) {
                 console.log(element);
                 if (index < items.length) {
-                  $(element).find(".variantItem_boxLeft img").attr("src", items[index].img);
-                  $(element).find(".variantItem_boxRight_title").text(items[index].title);
+                  $(element).find('.variantItem_boxLeft img').attr('src', items[index].img);
+                  $(element).find('.variantItem_boxRight_title').text(items[index].title);
 
-                  $(element).find(".variantItem_boxRight_price span").text(formatMoney(items[index].price));
-                  
-                  if(items[index].comparePrice > items[index].price){
-                    $(element).find(".variantItem_boxRight_price s").text(formatMoney(items[index].comparePrice));
-                    $(element).find(".variantItem_boxRight_price s").show();
-                  }else{
-                    $(element).find(".variantItem_boxRight_price s").hide();
+                  $(element).find('.variantItem_boxRight_price span').text(formatMoney(items[index].price));
+
+                  if (items[index].comparePrice > items[index].price) {
+                    $(element).find('.variantItem_boxRight_price s').text(formatMoney(items[index].comparePrice));
+                    $(element).find('.variantItem_boxRight_price s').show();
+                  } else {
+                    $(element).find('.variantItem_boxRight_price s').hide();
                   }
 
-                  $(element).find(".variantItem_bottom span").text(items[index].bottom_title);
-                  $(element).find(".variantItem_bottom p").text(items[index].bottom_text);
-                  $(element).find(".variantItem_boxRight_save").html(items[index].save);
+                  $(element).find('.variantItem_bottom span').text(items[index].bottom_title);
+                  $(element).find('.variantItem_bottom p').text(items[index].bottom_text);
+                  $(element).find('.variantItem_boxRight_save').html(items[index].save);
                 }
               });
-      
+
               console.log(items);
             } else {
-              console.log("No match");
+              console.log('No match');
             }
           });
           items = [];
-        }else{
-          $(this).removeClass("active");
-          $(this).css("border","1px solid red")
+        } else {
+          $(this).removeClass('active');
+          $(this).css('border', '1px solid red');
         }
       });
-
     }
     get selectedVariant() {
       return this._getVariantById(parseInt(this.masterSelector.value));
@@ -6732,138 +6732,169 @@
       this._onDynamicTheme();
       defaultProductId = this.selectedVariant.id;
       console.log(this.selectedVariant);
-      
+
       updateCartUrl();
-      
 
       console.log(defaultProductId);
-      // cheout id 
+      // cheout id
 
-      console.log(this.product," this.product");
+      console.log(this.product, ' this.product');
 
-      console.log(this.selectedVariant," this.selectedVariant");
+      console.log(this.selectedVariant, ' this.selectedVariant');
 
-      var splitTitle = this.selectedVariant.title.split("/"); // Split the string by "/"
-      var firstPart = splitTitle.slice(0, -1).join("/"); // Join all parts before the last "/"
-      console.log(firstPart,"firstPartfirstPartfirstPart");
-      
+      var splitTitle = this.selectedVariant.title.split('/'); // Split the string by "/"
+      var firstPart = splitTitle.slice(0, -1).join('/'); // Join all parts before the last "/"
+      console.log(firstPart, 'firstPartfirstPartfirstPart');
+
       var items = [];
       // Iterate over each .box_list element
-      $(".box_list").each(function() {
-        var variantTitle = $(this).attr("data-variantTitle").trim();
-        var newVariantTitle = variantTitle.split("/");
-        var firstVariantTitle = newVariantTitle.slice(0, -1).join("/");
-        console.log(firstVariantTitle,"variantTitlevariantTitlevariantTitlevariantTitle");
+      $('.box_list').each(function () {
+        var variantTitle = $(this).attr('data-variantTitle').trim();
+        var newVariantTitle = variantTitle.split('/');
+        var firstVariantTitle = newVariantTitle.slice(0, -1).join('/');
+        console.log(firstVariantTitle, 'variantTitlevariantTitlevariantTitlevariantTitle');
 
-        if(firstPart == firstVariantTitle){
-          $(this).css("border","1px solid #000")
-          $(this).addClass("active");
+        if (firstPart == firstVariantTitle) {
+          $(this).css('border', '1px solid #000');
+          $(this).addClass('active');
           items = [];
-          $(".box_list.active").find('.variant-info').each(function() {
-            var item = {
-              img: $(this).find('.item_img img').attr("src"),
-              price: parseInt($(this).find('.item_price').text()),
-              comparePrice: parseInt($(this).find('.item_compare_price').text()),
-              title: $(this).find('.item_title').text(),
-              bottom_title: $(this).find('.product_variantAs_itemTitle').text(),
-              bottom_text: $(this).find('.product_variantAs_itemText').text(),
-              save: $(this).find('.item_compare_save').html(),
-            };
-            items.push(item);
-          });
+          $('.box_list.active')
+            .find('.variant-info')
+            .each(function () {
+              var item = {
+                img: $(this).find('.item_img img').attr('src'),
+                price: parseInt($(this).find('.item_price').text()),
+                comparePrice: parseInt($(this).find('.item_compare_price').text()),
+                title: $(this).find('.item_title').text(),
+                bottom_title: $(this).find('.product_variantAs_itemTitle').text(),
+                bottom_text: $(this).find('.product_variantAs_itemText').text(),
+                save: $(this).find('.item_compare_save').html(),
+              };
+              items.push(item);
+            });
 
           // 更新符合条件的.variant-input
-          $('.product-form__option-selector').each(function() {
-            var parentTitle = $(this).closest(".product-form__variants").attr("data-title").trim();
-            var activeTitle = $(this).attr("data-title").trim();
+          $('.product-form__option-selector').each(function () {
+            var parentTitle = $(this).closest('.product-form__variants').attr('data-title').trim();
+            var activeTitle = $(this).attr('data-title').trim();
             console.log(parentTitle, activeTitle);
 
-            if (parentTitle == activeTitle) { 
-              console.log("Matched");
+            if (parentTitle == activeTitle) {
+              console.log('Matched');
               // 确保在.items.length内
-              $(".block_swatchList_top .block_swatchList").each(function(index, element) {
+              $('.block_swatchList_top .block_swatchList').each(function (index, element) {
                 console.log(element);
                 if (index < items.length) {
-                  $(element).find(".variantItem_boxLeft img").attr("src", items[index].img);
-                  $(element).find(".variantItem_boxRight_title").text(items[index].title);
+                  $(element).find('.variantItem_boxLeft img').attr('src', items[index].img);
+                  $(element).find('.variantItem_boxRight_title').text(items[index].title);
 
-                  $(element).find(".variantItem_boxRight_price span").text(formatMoney(items[index].price));
-                  
-                  if(items[index].comparePrice > items[index].price){
-                    $(element).find(".variantItem_boxRight_price s").text(formatMoney(items[index].comparePrice));
-                    $(element).find(".variantItem_boxRight_price s").show();
-                  }else{
-                    $(element).find(".variantItem_boxRight_price s").hide();
+                  $(element).find('.variantItem_boxRight_price span').text(formatMoney(items[index].price));
+
+                  if (items[index].comparePrice > items[index].price) {
+                    $(element).find('.variantItem_boxRight_price s').text(formatMoney(items[index].comparePrice));
+                    $(element).find('.variantItem_boxRight_price s').show();
+                  } else {
+                    $(element).find('.variantItem_boxRight_price s').hide();
                   }
 
-                  $(element).find(".variantItem_bottom span").text(items[index].bottom_title);
-                  $(element).find(".variantItem_bottom p").text(items[index].bottom_text);
-                  $(element).find(".variantItem_boxRight_save").html(items[index].save);
+                  $(element).find('.variantItem_bottom span').text(items[index].bottom_title);
+                  $(element).find('.variantItem_bottom p').text(items[index].bottom_text);
+                  $(element).find('.variantItem_boxRight_save').html(items[index].save);
                 }
               });
-      
+
               console.log(items);
             } else {
-              console.log("No match");
+              console.log('No match');
             }
           });
           items = [];
-        }else{
-          $(this).removeClass("active");
-          $(this).css("border","1px solid red")
+        } else {
+          $(this).removeClass('active');
+          $(this).css('border', '1px solid red');
         }
       });
 
       // 初始化总价格为 0，并确保它是数字
-      var totalPrice = parseInt($(this).parents(".product-form").find(".product-meta__price-list-container .price--highlight").attr("data-price")) || 0;
-      var totalPrice2 = parseInt($(this).parents(".product-form").find(".product-meta__price-list-container .price--compare").attr("data-Comprice")) || 0;
-      console.log(totalPrice,"totalPricetotalPricetotalPrice",totalPrice2,"totalPricetotalPricetotalPrice");
-      if(totalPrice2 > totalPrice){
-        totalPrice2 = parseInt($(this).parents(".product-form").find(".product-meta__price-list-container .price--compare").attr("data-Comprice")) || 0;
-      }else{
-        totalPrice2 = parseInt($(this).parents(".product-form").find(".product-meta__price-list-container .price--highlight").attr("data-price")) || 0;
+      var totalPrice =
+        parseInt(
+          $(this)
+            .parents('.product-form')
+            .find('.product-meta__price-list-container .price--highlight')
+            .attr('data-price'),
+        ) || 0;
+      var totalPrice2 =
+        parseInt(
+          $(this)
+            .parents('.product-form')
+            .find('.product-meta__price-list-container .price--compare')
+            .attr('data-Comprice'),
+        ) || 0;
+      console.log(totalPrice, 'totalPricetotalPricetotalPrice', totalPrice2, 'totalPricetotalPricetotalPrice');
+      if (totalPrice2 > totalPrice) {
+        totalPrice2 =
+          parseInt(
+            $(this)
+              .parents('.product-form')
+              .find('.product-meta__price-list-container .price--compare')
+              .attr('data-Comprice'),
+          ) || 0;
+      } else {
+        totalPrice2 =
+          parseInt(
+            $(this)
+              .parents('.product-form')
+              .find('.product-meta__price-list-container .price--highlight')
+              .attr('data-price'),
+          ) || 0;
       }
 
       // Collect the IDs of elements with the class 'bags_variant' and add them to selectedProductIds array
-      $(this).parents(".product_all").find(".productFrom_Box_product").toArray().forEach(e => {
+      $(this)
+        .parents('.product_all')
+        .find('.productFrom_Box_product')
+        .toArray()
+        .forEach((e) => {
+          if ($(e).hasClass('bags_variant')) {
+            // Assuming each element has an 'id' attribute
+            var productId = $(e).attr('id');
+            if (productId) {
+              selectedProductIds.push(productId); // Add the product ID to selectedProductIds
+            }
 
-          if ($(e).hasClass("bags_variant")) {
-              // Assuming each element has an 'id' attribute
-              var productId = $(e).attr("id");
-              if (productId) {
-                  selectedProductIds.push(productId);  // Add the product ID to selectedProductIds
-              }
-      
+            // 获取每个选中产品的价格
+            var price = parseInt($(e).attr('data-price')) || 0;
+            var Comprice = parseInt($(e).attr('data-Comprice')) || 0;
+            console.log(price, 'price', Comprice, 'Comprice');
 
-              // 获取每个选中产品的价格
-              var price = parseInt($(e).attr("data-price")) || 0;
-              var Comprice = parseInt($(e).attr("data-Comprice")) || 0;
-              console.log(price, "price", Comprice, "Comprice");
-
-              // 累加选中产品的价格
-              totalPrice += price;
-              totalPrice2 += Comprice;
-
+            // 累加选中产品的价格
+            totalPrice += price;
+            totalPrice2 += Comprice;
           }
           // 输出并更新总价格到页面
-          console.log("所有活动盒子的总价格: " + totalPrice,totalPrice2,"totalPrice2");
-          if(totalPrice>0){
-            $(".product-sticky-form__price,.price_myBox_zong .price--highlight .price_highlight").text(formatMoney(totalPrice));
+          console.log('所有活动盒子的总价格: ' + totalPrice, totalPrice2, 'totalPrice2');
+          if (totalPrice > 0) {
+            $('.product-sticky-form__price,.price_myBox_zong .price--highlight .price_highlight').text(
+              formatMoney(totalPrice),
+            );
           }
           // $(".product-sticky-form__priceCom,.price_myBox_zong .price--compare .price_compare").text(formatMoney(totalPrice2));
-          if(totalPrice2 > totalPrice){
-            $(".product-sticky-form__priceCom,.price_myBox_zong .price--compare .price_compare").text(formatMoney(totalPrice2));
+          if (totalPrice2 > totalPrice) {
+            $('.product-sticky-form__priceCom,.price_myBox_zong .price--compare .price_compare').text(
+              formatMoney(totalPrice2),
+            );
             // 优惠save
             var saveShow = totalPrice2 - totalPrice;
-            console.log(saveShow); 
+            console.log(saveShow);
 
-            $(".product-sticky-form__info .product_meta_label,.price_myBox_zong .product-meta__label-list").html(`<span class="label">Save ${formatMoney(saveShow)}</span>`);
-          }else{
-            $(".product-sticky-form__priceCom,.price_myBox_zong .price--compare .price_compare").text('');
-            $(".product-sticky-form__info .product_meta_label").text('');
+            $('.product-sticky-form__info .product_meta_label,.price_myBox_zong .product-meta__label-list').html(
+              `<span class="label">Save ${formatMoney(saveShow)}</span>`,
+            );
+          } else {
+            $('.product-sticky-form__priceCom,.price_myBox_zong .price--compare .price_compare').text('');
+            $('.product-sticky-form__info .product_meta_label').text('');
           }
-      });
-
+        });
     }
     _onOptionChanged() {
       var _a;
@@ -8705,6 +8736,9 @@ class ToggleNavigation extends HTMLElement {
       {
         it: 'https://eu.atomstack.com/it',
       },
+      {
+        es: 'https://eu.atomstack.com/es',
+      },
     ];
   }
   handleClick(el) {
@@ -8732,18 +8766,15 @@ class ToggleNavigation extends HTMLElement {
 }
 customElements.define('toggle-navigation', ToggleNavigation);
 
-
 function updateCartUrl() {
-  var anchorElement = $('.partyPack_product_bottomAdd_right.detailCheckout');  // jQuery selector
-  var baseUrl = "/cart/";
-  var urlSuffix = ":1";
+  var anchorElement = $('.partyPack_product_bottomAdd_right.detailCheckout'); // jQuery selector
+  var baseUrl = '/cart/';
+  var urlSuffix = ':1';
 
   // Combine default and selected product IDs and add ':1' to each
-  var allProductIds = [defaultProductId, ...selectedProductIds]
-      .map(productId => productId + urlSuffix)
-      .join(",");
+  var allProductIds = [defaultProductId, ...selectedProductIds].map((productId) => productId + urlSuffix).join(',');
 
   // Update the data-href attribute using jQuery
-  console.log(anchorElement.attr("data-href"), "anchorElement");
-  anchorElement.attr("data-href", baseUrl + allProductIds);
+  console.log(anchorElement.attr('data-href'), 'anchorElement');
+  anchorElement.attr('data-href', baseUrl + allProductIds);
 }

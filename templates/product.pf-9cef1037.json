@@ -24,7 +24,7 @@
             "primary_colour": "#121212",
             "secondary_colour": "#f8f8f8",
             "should_show_icon": true,
-            "earning_rate": 2
+            "earning_rate": 1
           }
         },
         "product_information_wmrT6w": {
@@ -99,7 +99,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "atc_button_icon_preset": "quick-buy-shopping-cart",
             "atc_button_background": "rgba(0,0,0,0)",
             "atc_button_text_color": "rgba(0,0,0,0)",
@@ -123,6 +123,7 @@
         },
         "mega_better_price_app_block_wpPnNx": {
           "type": "shopify:\/\/apps\/mega-better-price\/blocks\/app-block\/7a5fb689-a902-4695-8f78-75bdd89e88e7",
+          "disabled": true,
           "settings": {
             "buttonType": "link",
             "buttonText": "Found a better price on another site?",

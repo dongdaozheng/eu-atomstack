@@ -18,13 +18,19 @@
             "include_variant_name": false
           }
         },
+        "liquid_MdUBtx": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"color:#e64d4d; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:23px;\">{{ product.metafields.custom.special_info.value }}<\/div>"
+          }
+        },
         "smile_io_smile_points_on_product_page_TqJFbn": {
           "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
           "settings": {
             "primary_colour": "#121212",
             "secondary_colour": "#f8f8f8",
             "should_show_icon": true,
-            "earning_rate": 2
+            "earning_rate": 1
           }
         },
         "product_information_nYAd9V": {
@@ -186,6 +192,7 @@
       },
       "block_order": [
         "meta",
+        "liquid_MdUBtx",
         "smile_io_smile_points_on_product_page_TqJFbn",
         "product_information_nYAd9V",
         "loox_reviews_loox_rating_btQFUP",

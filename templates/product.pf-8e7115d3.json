@@ -24,7 +24,7 @@
             "primary_colour": "#121212",
             "secondary_colour": "#f8f8f8",
             "should_show_icon": true,
-            "earning_rate": 2
+            "earning_rate": 1
           }
         },
         "product_information_nYAd9V": {
@@ -204,6 +204,7 @@
         "list_delivery_free_return",
         "a33b0886-6286-4ee7-af11-9ff9ba4f6c4a"
       ],
+      "disabled": true,
       "custom_css": [
         ".betterPriceLink {text-decoration: underline !important; margin: 0 !important; display: inline;}",
         ".product-form__image img {max-width: 100% !important; border-radius: 8px;}"
@@ -242,6 +243,7 @@
       "block_order": [
         "selleasy_lb_upsell_fbt_block_Wk98BG"
       ],
+      "disabled": true,
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
@@ -264,15 +266,8 @@
       "blocks": {
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
-          }
-        },
-        "3b3d39be-4a14-4220-a079-595ddb0d3a44": {
-          "type": "content",
-          "settings": {
-            "title": "Shipping & Warranty",
-            "content": "<h2>Shipping Policy<\/h2><h5>Shipping Time<\/h5><p>All products (except the ones marked as “pre-order” in their product titles) you purchase on www.atomstack.com  will be delivered to the address of the order within 5 - 30 days (the delivery time will be depending on different shipping methods or warehouses)<br\/>For pre-order items, we will deliver within 30 - 40 days.<br\/>For refurbished items, we will deliver within 3 - 20 days. <\/p><p>*All Delivery time is estimated, and will longer than expected due to custom clearance, invalid addresses, bad weather and other reason that may slow down the progress irresistibly. Please contact our customer service at <strong>official@atomstack.com<\/strong> for more accurate information.  <\/p><p>Once customers’ orders are shipped, we the tracking number we provided in the notification email, customers can tracking their shipping routing information at: <strong>https:\/\/atomstack.com\/tools\/order_tracking<\/strong>, or the official site of the courier.<\/p><h5>Custom Duty<\/h5><p>We will ship the products from Shenzhen China while the product is out of stock in US, EU or other warehouses, in this case, we will cover the 100% custom fee for the customer who is located in European Union and North America when the shipping method is non-Express, otherwise, customer should pay all custom fee by themselves.  <\/p><p><a href=\"https:\/\/atomstack.com\/pages\/shipping-policy\" title=\"AtomStack Shipping Policy\"><strong>Click here<\/strong><\/a> to view more detailed shipping policy<\/p><h2>Warranty Policy<\/h2><p>Standard One Year Warranty for laser machines, and 6 months for laser modules.<\/p><ul><li>AtomStack warrants a product to be free from defects in workmanship and materials, under normal indoor use and conditions, for a period of one year for the original invoice date.<\/li><li>This warranty is non-transferable and proof of purchase from us or an authorized dealer is required for warranty service.<\/li><\/ul><h5>What Does This Warranty Cover?<\/h5><p>We warrant that the Products are free from defects in materials and workmanship under normal use and use in accordance with the respective Product user manual, during the Warranty Period (defined below). Please refer to the Instructions inside each package for a description of proper use and care of the unit.<br\/>We agree, at its option during the warranty period to furnish a refurbished or replacement product of equal value in exchange without charge (except for a fee for handing, packing, and insurance which will be incurred by the customer). Such replacement is subject to verification of the defect or malfunction and proof of purchase as confirmed by showing the model number on the original dated sales receipt.<\/p><h5>What Does This Warranty Not Cover?<\/h5><p>This Warranty does not cover damages directly or indirectly arising or resulting from or during:<\/p><ul><li>Damage resulting from misuse, abuse, negligence, accidents, or shipping damage.<\/li><li>Any condition resulting from incorrect or inadequate maintenance or care.<\/li><li>Use with another product or other damage or loss suffered by the use or combination of any other item.<\/li><li>Damages incurred during improper or inadequate maintenance.<\/li><li>Repairs by an unauthorized service technician.<\/li><\/ul><p>Open Box & Clearance Items<\/p><ul><li>Open Box items are products that have damaged packaging or are otherwise not suitable to be sold as new. All items are tested to be working by a member of our team.<\/li><li>Open Box items come with a 6-month warranty instead of the standard 12 months warranty and are not eligible for any warranty extension offered to new products. We will not accept returns of Open Box items due to cosmetic damage or other non-performance-related issues. All sales of Open Box items are final and not eligible for a return or refund.<\/li><\/ul><p>In case of arrival defects, reach out to <strong>official@atomstack.com<\/strong> for swift replacements.<\/p>",
-            "page": ""
           }
         },
         "2204da78-b237-421b-a82c-400900893ea0": {
@@ -285,6 +280,7 @@
         },
         "liquid_kzUXxL": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "title": "Reviews",
             "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
@@ -305,11 +301,11 @@
       },
       "block_order": [
         "description",
-        "3b3d39be-4a14-4220-a079-595ddb0d3a44",
         "2204da78-b237-421b-a82c-400900893ea0",
         "liquid_kzUXxL",
         "loox_reviews_loox_dynamic_section_fzEJHP"
       ],
+      "disabled": true,
       "custom_css": [
         "@media screen and (min-width: 1000px) {.product-tabs__tab-item-wrapper .collapsible {overflow: visible !important; } .product-content__tabs:only-child {width: calc( var(--grid-column-width) * 14 + var(--grid-gap) * 14 ) !important; }}",
         ".rte img:not([style*=\"float\"]) {margin: 10px 0 !important;}"
@@ -349,6 +345,7 @@
       "block_order": [
         "image_8iVG3D"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "auto",
         "background_type": "full_width",
@@ -384,6 +381,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "You may also like",
@@ -399,6 +397,11 @@
         "mobile_top_padding": 0,
         "mobile_bottom_padding": 0
       }
+    },
+    "pf-8e7115d3": {
+      "type": "pf-8e7115d3",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -408,6 +411,7 @@
     "product-content",
     "slideshow_8xxknf",
     "1724664245136d2b01",
-    "product-recommendations"
+    "product-recommendations",
+    "pf-8e7115d3"
   ]
 }

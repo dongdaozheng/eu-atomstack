@@ -24,8 +24,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 		featured_media: {{ product_9922328166673.featured_media | json }},
 		images: {{ product_9922328166673.images | json }},
 		quantity: {% assign quantity = '' %}{% for variant in product_9922328166673.variants %}{% assign quantity = quantity | append: variant.id | append: ':' | append: variant.inventory_quantity | append: ',' %}{% endfor %}{% assign quantity = quantity | split: ','%}{{quantity | json }}
-	};
-window.__pageflyProducts["9049199968529"] = {
+	};window.__pageflyProducts["9049199968529"] = {
 		id: {{ product_9049199968529.id | json }},
 		handle: {{ product_9049199968529.handle | json }},
 		title: {{ product_9049199968529.title | json }},
@@ -45,8 +44,7 @@ window.__pageflyProducts["9049199968529"] = {
 		featured_media: {{ product_9049199968529.featured_media | json }},
 		images: {{ product_9049199968529.images | json }},
 		quantity: {% assign quantity = '' %}{% for variant in product_9049199968529.variants %}{% assign quantity = quantity | append: variant.id | append: ':' | append: variant.inventory_quantity | append: ',' %}{% endfor %}{% assign quantity = quantity | split: ','%}{{quantity | json }}
-	};
-{% unless product.id == null %}window.__pageflyProducts["{{product.id}}"] = {
+	};{% unless product.id == null %}window.__pageflyProducts["{{product.id}}"] = {
 		id: {{ product.id | json }},
 		handle: {{ product.handle | json }},
 		title: {{ product.title | json }},
@@ -66,8 +64,7 @@ window.__pageflyProducts["9049199968529"] = {
 		featured_media: {{ product.featured_media | json }},
 		images: {{ product.images | json }},
 		quantity: {% assign quantity = '' %}{% for variant in product.variants %}{% assign quantity = quantity | append: variant.id | append: ':' | append: variant.inventory_quantity | append: ',' %}{% endfor %}{% assign quantity = quantity | split: ','%}{{quantity | json }}
-	};{% endunless %}
-window.__pageflyProducts["8625532272913"] = {
+	};{% endunless %}window.__pageflyProducts["8625532272913"] = {
 		id: {{ product_8625532272913.id | json }},
 		handle: {{ product_8625532272913.handle | json }},
 		title: {{ product_8625532272913.title | json }},

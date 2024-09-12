@@ -75,14 +75,37 @@ store-header {
         display: flex;
         margin: 0px !important;
         align-items: center;
-        padding: 0px 30px;
+        padding: 0px 15px;
         height: 100%;
+        &:nth-child(1) {
+          padding-right: 45px;
+          position: relative;
+        }
         &.active {
           .container-wrapper {
             opacity: 1;
             visibility: visible;
           }
         }
+      }
+      .point {
+        padding: 0px 6px;
+        position: absolute;
+        border-radius: 5px 5px 5px 0px;
+        background: #ffaa2b;
+        color: #fff;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+        right: 65px;
+        top: 20px;
+      }
+      .laser-cutter .point {
+        right: 5px;
+        top: 8px;
       }
       .container-wrapper {
         width: 100%;
@@ -137,21 +160,6 @@ store-header {
           &:hover {
             background: #f6f8fa;
           }
-          .point {
-            padding: 0px 6px;
-            position: absolute;
-            border-radius: 5px 5px 5px 0px;
-            background: #ffaa2b;
-            color: #fff;
-            text-align: center;
-            font-family: "Open Sans";
-            font-size: 12px;
-            font-style: italic;
-            font-weight: 700;
-            line-height: normal;
-            top: 25px;
-            right: 60px;
-          }
         }
       }
       .right {
@@ -178,6 +186,8 @@ store-header {
             display: block;
           }
         }
+      }
+      .laser-cutter {
       }
       .menu-product {
         gap: 15px;
@@ -699,23 +709,32 @@ store-header {
         display: block !important;
       }
     }
+    .point {
+      padding: vw(3px) vw(6px) vw(4px);
+      position: absolute;
+      border-radius: vw(5px) vw(5px) vw(5px) 0px;
+      background: #ffaa2b;
+      color: #fff;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: vw(15px);
+      font-style: italic;
+      font-weight: 700;
+      line-height: normal;
+      top: vw(50px);
+      right: vw(360px);
+    }
     .product-bar {
       border-bottom: vw(2px) solid #ddd;
       position: relative;
+    }
+    .laser-cutter {
+      position: relative;
+      svg {
+        transform: rotate(270deg);
+      }
       .point {
-        padding: vw(3px) vw(6px) vw(4px);
-        position: absolute;
-        border-radius: vw(5px) vw(5px) vw(5px) 0px;
-        background: #ffaa2b;
-        color: #fff;
-        text-align: center;
-        font-family: "Open Sans";
-        font-size: vw(14px);
-        font-style: italic;
-        font-weight: 700;
-        line-height: normal;
-        top: vw(50px);
-        right: vw(360px);
+        right: vw(380px);
       }
     }
     .menu-product {

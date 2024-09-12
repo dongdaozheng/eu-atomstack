@@ -67,12 +67,35 @@ store-header .item-desc {
     display: flex;
     margin: 0px !important;
     align-items: center;
-    padding: 0px 30px;
+    padding: 0px 15px;
     height: 100%;
+  }
+  store-header .nav-bar > li:nth-child(1) {
+    padding-right: 45px;
+    position: relative;
   }
   store-header .nav-bar > li.active .container-wrapper {
     opacity: 1;
     visibility: visible;
+  }
+  store-header .nav-bar .point {
+    padding: 0px 6px;
+    position: absolute;
+    border-radius: 5px 5px 5px 0px;
+    background: #ffaa2b;
+    color: #fff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    right: 65px;
+    top: 20px;
+  }
+  store-header .nav-bar .laser-cutter .point {
+    right: 5px;
+    top: 8px;
   }
   store-header .nav-bar .container-wrapper {
     width: 100%;
@@ -121,21 +144,6 @@ store-header .item-desc {
   }
   store-header .nav-bar .left li:hover {
     background: #f6f8fa;
-  }
-  store-header .nav-bar .left li .point {
-    padding: 0px 6px;
-    position: absolute;
-    border-radius: 5px 5px 5px 0px;
-    background: #ffaa2b;
-    color: #fff;
-    text-align: center;
-    font-family: "Open Sans";
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    top: 25px;
-    right: 60px;
   }
   store-header .nav-bar .right {
     flex: 1;
@@ -636,11 +644,7 @@ store-header .item-desc {
   mobile-navigation .active + .container {
     display: block !important;
   }
-  mobile-navigation .product-bar {
-    border-bottom: 0.2666666667vw solid #ddd;
-    position: relative;
-  }
-  mobile-navigation .product-bar .point {
+  mobile-navigation .point {
     padding: 0.4vw 0.8vw 0.5333333333vw;
     position: absolute;
     border-radius: 0.6666666667vw 0.6666666667vw 0.6666666667vw 0px;
@@ -648,12 +652,25 @@ store-header .item-desc {
     color: #fff;
     text-align: center;
     font-family: "Open Sans";
-    font-size: 1.8666666667vw;
+    font-size: 2vw;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
     top: 6.6666666667vw;
     right: 48vw;
+  }
+  mobile-navigation .product-bar {
+    border-bottom: 0.2666666667vw solid #ddd;
+    position: relative;
+  }
+  mobile-navigation .laser-cutter {
+    position: relative;
+  }
+  mobile-navigation .laser-cutter svg {
+    transform: rotate(270deg);
+  }
+  mobile-navigation .laser-cutter .point {
+    right: 50.6666666667vw;
   }
   mobile-navigation .menu-product {
     display: grid;

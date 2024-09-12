@@ -23,12 +23,14 @@
           "settings": {
             "primary_colour": "#121212",
             "secondary_colour": "#f8f8f8",
-            "should_show_icon": true
+            "should_show_icon": true,
+            "earning_rate": 1
           }
         },
         "product_information_APfBfp": {
           "type": "product_information",
           "settings": {
+            "border_top": true,
             "text": "<p>Get Free Wood Material Package Worth $50<\/p>",
             "show_description": false,
             "text3": "",

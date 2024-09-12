@@ -24,7 +24,7 @@
             "primary_colour": "#121212",
             "secondary_colour": "#f8f8f8",
             "should_show_icon": true,
-            "earning_rate": 2
+            "earning_rate": 1
           }
         },
         "71d1f91a-419d-41fd-8f48-7093f643bd53": {
@@ -36,6 +36,7 @@
         "product_information_TBYPRG": {
           "type": "product_information",
           "settings": {
+            "border_top": true,
             "text": "<p>Get Free Wood Material Package Worth $50<\/p>",
             "show_description": false,
             "text3": "{{ product.metafields.custom.product_highlights | metafield_tag }}",

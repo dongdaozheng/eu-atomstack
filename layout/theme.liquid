@@ -101,15 +101,14 @@
   }
 
   if (!window.location.href.includes('127.0.0.1')) {
-    getIpAddress();
+    // getIpAddress();
   }
 
   // getIpAddress();
 </script>
 <html class='no-js' lang='{{ request.locale.iso_code }}' dir='{{ direction }}'>
   <head>
-	{% render 'pandectes-rules' %}
-    
+    {% render 'pandectes-rules' %}
 
     <meta charset='UTF-8'>
     <meta

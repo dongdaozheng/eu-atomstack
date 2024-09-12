@@ -13052,17 +13052,17 @@ free-gift-wrapper .free-gift-product-popup {
 
 .product-form__description {
   margin-top: 8px;
-    background: rgb(43 114 255 / 5%);
-    margin-bottom: 8px;
-    padding: 16px;
-    border-radius: 3px;
+  background: rgb(43 114 255 / 5%);
+  margin-bottom: 8px;
+  padding: 16px;
+  border-radius: 3px;
 }
-.product-form__text{
-   margin-top: 8px;
-    background: rgb(43 114 255 / 5%);
-    margin-bottom: 8px;
-    padding: 16px;
-    border-radius: 3px;
+.product-form__text {
+  margin-top: 8px;
+  background: rgb(43 114 255 / 5%);
+  margin-bottom: 8px;
+  padding: 16px;
+  border-radius: 3px;
 }
 .product-form__image--center {
   text-align: center;
@@ -17435,9 +17435,9 @@ announcement-bar-item .tip {
   margin-right: 0px;
 }
 
-#product_form_9121921892625 > div > div > div > a {
+/* #product_form_9121921892625 > div > div > div > a {
   display: none;
-}
+} */
 
 @media screen and (max-width: 450px) {
   announcement-bar-item .tip span {
@@ -17500,4 +17500,8 @@ input.needsclick:focus-visible {
 #special .needsclick.kl-teaser-SaJyRz.kl-private-reset-css-Xuajs1,
 #special .needsclick.kl-private-reset-css-Xuajs1 {
   display: none !important;
+}
+
+#shopify-section-active-bar {
+  display: none;
 }
