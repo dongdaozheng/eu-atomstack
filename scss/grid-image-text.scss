@@ -80,12 +80,13 @@
       line-height: normal;
     }
     .container {
-      .account-title {
-        margin-top: 0px;
-      }
       display: flex;
       column-gap: vw(20px);
       overflow: auto;
+      .account-title {
+        margin-top: 0px;
+      }
+
       .grid-item {
         width: vw(326px);
         background-color: #fafafa;

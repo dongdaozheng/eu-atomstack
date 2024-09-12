@@ -107,7 +107,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   /* swiper 切换按钮图标 */
   .swiper-button-next:after,
   .swiper-button-prev:after {
-    display: block;
+    display: inline-block;
   }
 
   @media screen and (min-width: 1000px) {
@@ -307,6 +307,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     display: flex;
     list-style: none;
     margin: 0;
+    padding: 0;
   }
 
   .mod-deposit-bar .menu-item {
@@ -899,7 +900,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     color: #fff;
     font-weight: 600;
     margin-bottom: 20px;
-    line-height: 1.3;
+    line-height: 1.1;
   }
 
   .mod-head .mod-subtitle {
@@ -1016,6 +1017,11 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     font-size: var(--warpper-font-x-small);
     color: #808080;
     line-height: 1.25;
+  }
+
+  .p-mod-media .param-desc em {
+    color: #2B72FF;
+    font-style: normal;
   }
 
   /*p-mod-6*/
@@ -1336,7 +1342,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
   .p-mod-14-swiper-button-prev,
   .p-mod-14-swiper-button-next {
-    display: block;
+    display: flex;
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -2069,7 +2075,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
     .p-mod-4-swiper-button-prev,
     .p-mod-4-swiper-button-next {
-      display: block;
+      display: flex;
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -2184,6 +2190,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
     .p-mod-media .param-title {
       font-size: var(--warpper-font-medium);
+      margin-bottom: 0;
     }
 
     .p-mod-media .param-desc {
@@ -2546,7 +2553,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 
     /* 描点模块的定位 */
     .anchorSection {
-      transform: translateY(calc(var(--px2vw) * -200vw));
+      transform: translateY(calc(var(--px2vw) * -125vw));
     }
 
     /* p-mod-card-list */
@@ -2902,7 +2909,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
           </picture>
         </div>
         <div class="mod-text ">
-          <div class="mod-tag">The All New</div>
+          <div class="mod-tag">The All-New</div>
           <h3 class="mod-title">
 
             <div class="pc-text">ATOMSTACK HURRICANE</div>
@@ -2920,7 +2927,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
         <div class="video">
           <a class="mk-video-play"
             data-small-video-url="https://cdn.shopify.com/videos/c/o/v/281066825cd643e593e96f18f5989f55.mp4"
-            data-big-video-url="https://cdn.shopify.com/videos/c/o/v/bdbcfdb2e3e34a358e75467c482a2e90.mp4"></a>
+            data-big-video-url="https://cdn.shopify.com/videos/c/o/v/b8fc5b8a48414c3d83148db6f2ce9810.mp4"></a>
           <div class="mk-video-play-wrapper">
             <div class="btn-list">
               <div class="btn-video">
@@ -3124,7 +3131,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                 <picture>
                   <source media="(max-width: 999px)"
                     srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-Acrylic-m.png">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-Acrylic.png"
+                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p1-Acrylic.png"
                                                 loading="lazy" alt="">
                 </picture>
               </div>
@@ -3132,7 +3139,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                 <picture>
                   <source media="(max-width: 999px)"
                     srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-wood-m.png">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-Wood.png"
+                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p1-Wood.png"
                                                 loading="lazy" alt="">
                 </picture>
               </div>
@@ -3140,7 +3147,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                 <picture>
                   <source media="(max-width: 999px)"
                     srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-leather-m.png">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-Leather.png"
+                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p1-Leather.png"
                                                 loading="lazy" alt="">
                 </picture>
               </div>
@@ -3148,7 +3155,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                 <picture>
                   <source media="(max-width: 999px)"
                     srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-CoatedMetal-m.png">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-CoatedMetal.png"
+                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p1-CoatedMetal.png"
                                                 loading="lazy" alt="">
                 </picture>
               </div>
@@ -3156,7 +3163,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                 <picture>
                   <source media="(max-width: 999px)"
                     srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-glass-m.png">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-Glass.png"
+                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p1-Glass.png"
                                                 loading="lazy" alt="">
                 </picture>
               </div>
@@ -3164,7 +3171,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                 <picture>
                   <source media="(max-width: 999px)"
                     srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-rock-m.png">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-Rock.png"
+                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p1-Rock.png"
                                                 loading="lazy" alt="">
                 </picture>
               </div>
@@ -3268,7 +3275,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
           <div class="mod-media">
             <video class="lazy" width="100%" autoplay muted loop playsinline controlslist="nodownload"
               disablepictureinpicture="" poster="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-6-2.jpg">
-              <source data-src="https://cdn.shopify.com/videos/c/o/v/a3c7f400fc0d46e8803161566f1c662e.mp4"
+              <source data-src="https://cdn.shopify.com/videos/c/o/v/6df2c23456334529b57226b80b315e22.mp4"
                 type="video/mp4">
             </video>
           </div>
@@ -3278,7 +3285,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
           <div class="mod-media">
             <video class="lazy" width="100%" autoplay muted loop playsinline controlslist="nodownload"
               disablepictureinpicture="" poster="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-6-3.jpg">
-              <source data-src="https://cdn.shopify.com/videos/c/o/v/1173a63f11084f3398d2ebd63437bc72.mp4"
+              <source data-src="https://cdn.shopify.com/videos/c/o/v/ebaadc26405b40df8b2a5674c6687031.mp4"
                 type="video/mp4">
             </video>
           </div>
@@ -3286,20 +3293,20 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
             <h4>Large Working Area</h4>
             <div class="mod-param">
               <div class="param-item">
-                <div class="param-title">
-                  500×300<span>mm</span></div>
+                <div class="param-title">500×300<span>mm</span></div>
+                <div class="param-desc"><em>19.6″ × 11.8″</em></div>
                 <div class="param-desc">Working area</div>
               </div>
               <div class="param-item">
               </div>
               <div class="param-item">
-                <div class="param-title">
-                  625×420<span>mm</span></div>
+                <div class="param-title">625×420<span>mm</span></div>
+                <div class="param-desc"><em>24.6″ × 16.5″</em></div>
                 <div class="param-desc">Bed size</div>
               </div>
               <div class="param-item">
-                <div class="param-title">
-                  800×500<span>mm</span></div>
+                <div class="param-title">800×500<span>mm</span></div>
+                <div class="param-desc"><em>31.5″ × 19.6″</em></div>
                 <div class="param-desc">
                   Expanded working area<br />
                                             with Auto-pass through
@@ -3331,7 +3338,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
           <div class="mod-media">
             <video class="lazy" width="100%" autoplay muted loop playsinline controlslist="nodownload"
               disablepictureinpicture="" poster="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-7-1.jpg">
-              <source data-src="https://cdn.shopify.com/videos/c/o/v/dc5cf84d1f394481b08306e8c464dfac.mp4"
+              <source data-src="https://cdn.shopify.com/videos/c/o/v/b3c7f7eff78b4bc095981e90b1df251e.mp4"
                 type="video/mp4">
             </video>
 
@@ -3363,7 +3370,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
           <div class="mod-media">
             <video class="lazy" width="100%" autoplay muted loop playsinline controlslist="nodownload"
               disablepictureinpicture="" poster="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-7-2.jpg">
-              <source data-src="https://cdn.shopify.com/videos/c/o/v/3b6903b8f41346ad8b6c2f0c6f245406.mp4"
+              <source data-src="https://cdn.shopify.com/videos/c/o/v/abd607a28b994273a60cd3bff4a330c4.mp4"
                 type="video/mp4">
             </video>
           </div>
@@ -3373,7 +3380,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
           <div class="mod-media">
             <video class="lazy" width="100%" autoplay muted loop playsinline controlslist="nodownload"
               disablepictureinpicture="" poster="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-7-3.jpg">
-              <source data-src="https://cdn.shopify.com/videos/c/o/v/d1463e2cf7404434b1b68be0c215fc32.mp4"
+              <source data-src="https://cdn.shopify.com/videos/c/o/v/5dfd258ffb364ff7a780b98f877228b4.mp4"
                 type="video/mp4">
             </video>
           </div>
@@ -3417,7 +3424,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
               <video class="lazy" width="100%" autoplay muted loop playsinline controlslist="nodownload"
                 disablepictureinpicture=""
                 poster="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-8-1.jpg">
-                <source data-src="https://cdn.shopify.com/videos/c/o/v/06f93cefca7a435e96557250e9be3da3.mp4"
+                <source data-src="https://cdn.shopify.com/videos/c/o/v/8333c5bc181141699314e03305099f75.mp4"
                   type="video/mp4">
               </video>
             </div>
@@ -3428,7 +3435,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
               <video class="lazy" width="100%" autoplay muted loop playsinline controlslist="nodownload"
                 disablepictureinpicture=""
                 poster="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-8-2.jpg">
-                <source data-src="https://cdn.shopify.com/videos/c/o/v/12a97892da96440ba844f82ae9c63323.mp4"
+                <source data-src="https://cdn.shopify.com/videos/c/o/v/ce699983fc7644db83bb1b2ff8aae336.mp4"
                   type="video/mp4">
               </video>
             </div>
@@ -3449,7 +3456,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
               <video class="lazy" width="100%" autoplay muted loop playsinline controlslist="nodownload"
                 disablepictureinpicture=""
                 poster="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-8-3.jpg">
-                <source data-src="https://cdn.shopify.com/videos/c/o/v/45d2f6c488694b22aa5be7dbe38d51c1.mp4"
+                <source data-src="https://cdn.shopify.com/videos/c/o/v/adc51a0d362f41a893e775cac074c053.mp4"
                   type="video/mp4">
               </video>
             </div>
@@ -3476,7 +3483,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
               <video class="lazy" width="100%" autoplay muted loop playsinline controlslist="nodownload"
                 disablepictureinpicture=""
                 poster="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-9-1.jpg">
-                <source data-src="https://cdn.shopify.com/videos/c/o/v/fa4576a90e2142f5b72256235c9c6189.mp4"
+                <source data-src="https://cdn.shopify.com/videos/c/o/v/af927c0c6d6c4d6dabdfae7caed91914.mp4"
                   type="video/mp4">
               </video>
             </div>
@@ -3730,42 +3737,16 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
             <div class="swiper-slide">
               <div class="p-user-mod">
                 <div class="mod-media">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-14-1.jpg"
-                                                loading="lazy" alt="">
+                  <picture>
+                    <source media="(max-width: 999px)"
+                      srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-5-m.jpg?v=1722912086">
+                    <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-5.jpg?v=1722912086"
+                                                    loading="lazy" alt="">
+                  </picture>
                 </div>
                 <div class="mod-body">
                   <div class="mod-title">
-                    <span class="icon-user"><img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-14-1-i.jpg" loading="lazy" alt=""></span>Chris
-                    Loh</div>
-                  <div class="mod-desc">Amazing build quality and high-performing laser engravers at competitive prices,
-                    I recommend for both new and experienced users. The A24 is a true workhorse!</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-user-mod">
-                <div class="mod-media">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-14-2.jpg"
-                                            loading="lazy" alt="" />
-                </div>
-                <div class="mod-body">
-                  <div class="mod-title">
-                    <span class="icon-user"><img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-14-2-i.jpg" loading="lazy" alt=""></span>La
-                    chaine de Nico</div>
-                  <div class="mod-desc">Since getting the Atomstack A70 Max, my workshop has become a creative lab.
-                    Every project is precise, easy to complete, and deeply rewarding.</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-user-mod">
-                <div class="mod-media">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-14-3.jpg"
-                                            loading="lazy" alt="" />
-                </div>
-                <div class="mod-body">
-                  <div class="mod-title">
-                    <span class="icon-user"><img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-14-3-i.jpg" loading="lazy" alt=""></span>JT
+                    <span class="icon-user"><img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-5-i.jpg" loading="lazy" alt=""></span>JT
                     MAKE IT</div>
                   <div class="mod-desc">I can't believe how quickly laser engravers have evolved in recent years and how
                     affordable they have become for what they offer.</div>
@@ -3775,15 +3756,57 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
             <div class="swiper-slide">
               <div class="p-user-mod">
                 <div class="mod-media">
-                  <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-14-4.jpg"
-                                            loading="lazy" alt="" />
+                  <picture>
+                    <source media="(max-width: 999px)"
+                      srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-6-m.jpg?v=1722912086">
+                    <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-6.jpg?v=1722912086"
+                                                    loading="lazy" alt="">
+                  </picture>
                 </div>
                 <div class="mod-body">
                   <div class="mod-title">
-                    <span class="icon-user"><img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/p-pro-14-4-i.jpg" loading="lazy" alt=""></span>Electronoobs
+                    <span class="icon-user"><img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-6-i.jpg" loading="lazy" alt=""></span>Electronoobs
                   </div>
                   <div class="mod-desc">AtomStack machines are elegant, user-friendly, yet powerful and precise. Any
                     maker would be fortunate to own one.</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-user-mod">
+                <div class="mod-media">
+                  <picture>
+                    <source media="(max-width: 999px)"
+                      srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-7-m.jpg?v=1722912086">
+                    <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-7.jpg?v=1722912086"
+                                                    loading="lazy" alt="">
+                  </picture>
+                </div>
+                <div class="mod-body">
+                  <div class="mod-title">
+                    <span class="icon-user"><img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-7-i.jpg" loading="lazy" alt=""></span>James
+                    Dean Design</div>
+                  <div class="mod-desc">Clearly a lot of thought has gone into the various aspects of the AtomStack
+                    Hurricane. From the software right through to it's user friendly features.</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-user-mod">
+                <div class="mod-media">
+                  <picture>
+                    <source media="(max-width: 999px)"
+                      srcset="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-8-m.jpg?v=1722912086">
+                    <img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-8.jpg?v=1722912086"
+                                                    loading="lazy" alt="">
+                  </picture>
+                </div>
+                <div class="mod-body">
+                  <div class="mod-title">
+                    <span class="icon-user"><img src="https://cdn.shopify.com/s/files/1/0790/2586/4977/files/pro-14-8-i.jpg" loading="lazy" alt=""></span>Technical
+                    Trendy</div>
+                  <div class="mod-desc">Atomstack Hurricane is a dependable, affordable CO2 laser cutter, perfect for
+                    crafts. The autofocus, camera positioning, and fast speed made me love it.</div>
                 </div>
               </div>
             </div>
@@ -3942,11 +3965,33 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   // 播放帧动画
             frameAnimate();
 
-            $(window).bind('resize', function (){
-                setTimeout(function(){
-                    frameAnimate();
-                } , 1000);
+            function debounce(fn, delay = 1000) {
+                let timer;
+                return function () {
+                    window.clearTimeout(timer);
+                    timer = setTimeout(() => {
+                        fn.apply(this, arguments);
+                        window.clearTimeout(timer);
+                    }, delay);
+                }
+            }
+
+            // 进行函数防抖				
+            let debounced = debounce(function () {
+                frameAnimate();
             });
+
+            // 监听resize事件				
+            window.addEventListener('resize', debounced);
+
+            
+            
+
+            // $(window).bind('resize', function (){
+            //     setTimeout(function(){
+            //         frameAnimate();
+            //     } , 1000);
+            // });
 
             function frameAnimate() {
                 var imgPath = 'https://cdn.shopify.com/s/files/1/0790/2586/4977/files/';
@@ -4124,7 +4169,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                         "options": false
                         },
                         "text": {
-                        "button": "Claim Now"
+                        "button": "Buy Now"
                         }
                     },
                     "cart": {
@@ -4290,8 +4335,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
 </script></div></div></div></div></div></div></div></div></div><script>
     !function(){
       window.__pagefly_page_setting__ = {"pageTitle":"Deposit for AtomStack Hurricane 55W CO2 laser cutter","pageType":"product","pageId":"8e7115d3-85b9-4c0e-a85b-0506ddd44927","lazyLoad":true,"forceByPassGoogleLightHouse":false,"imageLazyLoad":true,"nativeImageLazyLoad":true,"useThemeJQ":false,"trackingIDs":[]};
-      window.__pagefly_setting__&&(window.__pagefly_setting2__=window.__pagefly_setting__),window.__pagefly_setting__={"baseURL":"https://apps.pagefly.io","analyticsURL":"https://analytics.pagefly.io","isBackend":false,"cdnURL":"https://cdn.pagefly.io","pageflyVersion":"4.15.2","shopDomain":"atomstack-official.myshopify.com","elementData":{},"shopifyProxyPath":"/a/pf_preview"},window.__pagefly_setting2__&&(window.__pagefly_setting__=function _(d,b){let c={...d||{}};for(let a of Object.keys(b))b[a]instanceof Object&&(Array.isArray(b[a])&&c[a]?Object.assign(b[a],[...b[a],...c[a]]):Object.assign(b[a],_(c[a],b[a])));return Object.assign(c||{},b),c}(__pagefly_setting2__,__pagefly_setting__),delete window.__pagefly_setting2__),window.__pagefly_setting__.moneyFormat={{shop.money_format|json}}}();
-    </script><script src="https://cdn.pagefly.io/pagefly/4.15.2/core/helper.js" defer></script>
+      window.__pagefly_setting__&&(window.__pagefly_setting2__=window.__pagefly_setting__),window.__pagefly_setting__={"baseURL":"https://apps.pagefly.io","analyticsURL":"https://analytics.pagefly.io","isBackend":false,"cdnURL":"https://cdn.pagefly.io","pageflyVersion":"4.15.3","shopDomain":"atomstack-official.myshopify.com","elementData":{},"shopifyProxyPath":"/a/pf_preview"},window.__pagefly_setting2__&&(window.__pagefly_setting__=function _(d,b){let c={...d||{}};for(let a of Object.keys(b))b[a]instanceof Object&&(Array.isArray(b[a])&&c[a]?Object.assign(b[a],[...b[a],...c[a]]):Object.assign(b[a],_(c[a],b[a])));return Object.assign(c||{},b),c}(__pagefly_setting2__,__pagefly_setting__),delete window.__pagefly_setting2__),window.__pagefly_setting__.moneyFormat={{shop.money_format|json}}}();
+    </script><script src="https://cdn.pagefly.io/pagefly/4.15.3/core/helper.js" defer></script>
 {% schema %}
 {
   "name": "PageFly Page 8e7115d3",

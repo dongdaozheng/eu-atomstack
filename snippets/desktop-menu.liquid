@@ -11,7 +11,9 @@
                   <li>
                     <img width='100%' height='100%' src='{{ block.settings.product_bar_img | image_url}}' alt=''>
                     <p>{{ block.settings.product_type }}</p>
-                    <div class='point'>{{ section.settings.point }}</div>
+                    {% if block.settings.point != blank %}
+                      <div class='point'>{{ block.settings.point }}</div>
+                    {% endif %}
                   </li>
                 {% endif %}
               {% endfor %}
@@ -195,7 +197,7 @@
                 <path d="M8 9.67586C8 7.64574 9.79086 6 12 6C14.2091 6 16 7.64574 16 9.67586V9.67586C16 12.317 12 11.9506 12 14.5918V16" stroke="black" stroke-width="2" stroke-linecap="round"/>
                 <ellipse cx="12" cy="19.0476" rx="1" ry="0.952381" fill="black"/>
               </svg>
-              Hlep Center
+              Help Center
             </p>
             <li><a href='https://atomstack.com/pages/model-comparison'>Machine Comparison</a></li>
             <li><a href='https://atomstack.com/pages/atomstack-studio-software'>Software</a></li>

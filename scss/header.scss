@@ -77,27 +77,11 @@ store-header {
         align-items: center;
         padding: 0px 30px;
         height: 100%;
-        position: relative;
         &.active {
           .container-wrapper {
             opacity: 1;
             visibility: visible;
           }
-        }
-        .point {
-          padding: 3px 6px 4px;
-          position: absolute;
-          border-radius: 5px 5px 5px 0px;
-          background: #ffaa2b;
-          color: #fff;
-          text-align: center;
-          font-family: "Open Sans";
-          font-size: 12px;
-          font-style: italic;
-          font-weight: 700;
-          line-height: normal;
-          top: 25px;
-          right: 60px;
         }
       }
       .container-wrapper {
@@ -144,7 +128,7 @@ store-header {
           align-items: center;
           column-gap: 10px;
           transition: all 0.3s ease;
-
+          position: relative;
           img {
             width: 45px;
             height: 45px;
@@ -152,6 +136,21 @@ store-header {
 
           &:hover {
             background: #f6f8fa;
+          }
+          .point {
+            padding: 0px 6px;
+            position: absolute;
+            border-radius: 5px 5px 5px 0px;
+            background: #ffaa2b;
+            color: #fff;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 700;
+            line-height: normal;
+            top: 25px;
+            right: 60px;
           }
         }
       }
@@ -702,6 +701,22 @@ store-header {
     }
     .product-bar {
       border-bottom: vw(2px) solid #ddd;
+      position: relative;
+      .point {
+        padding: vw(3px) vw(6px) vw(4px);
+        position: absolute;
+        border-radius: vw(5px) vw(5px) vw(5px) 0px;
+        background: #ffaa2b;
+        color: #fff;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: vw(14px);
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+        top: vw(50px);
+        right: vw(360px);
+      }
     }
     .menu-product {
       display: grid;
@@ -845,7 +860,8 @@ store-header {
         }
       }
     }
-    .learn {
+    .learn,
+    .support {
       .menu + .container {
         background: #fafafa;
         padding: vw(32px) 0px;
@@ -884,41 +900,41 @@ store-header {
       .menu + .container {
         padding: vw(40px) 0px;
         background: #fafafa;
-        ul {
-          margin-bottom: vw(20px);
-          border-bottom: vw(2px) solid #d0d0d0;
-          margin: 0px vw(40px);
-          &:last-child {
-            margin-bottom: 0px;
-          }
-        }
-        p {
-          padding: vw(32px) 0;
-          color: #959595;
-          font-family: "Open Sans";
-          font-size: vw(28px);
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          display: flex;
-          justify-content: space-between;
+        // ul {
+        //   margin-bottom: vw(20px);
+        //   border-bottom: vw(2px) solid #d0d0d0;
+        //   margin: 0px vw(40px);
+        //   &:last-child {
+        //     margin-bottom: 0px;
+        //   }
+        // }
+        // p {
+        //   padding: vw(32px) 0;
+        //   color: #959595;
+        //   font-family: "Open Sans";
+        //   font-size: vw(28px);
+        //   font-style: normal;
+        //   font-weight: 400;
+        //   line-height: normal;
+        //   display: flex;
+        //   justify-content: space-between;
 
-          svg {
-            width: vw(30px);
-            height: vw(30px);
-            transition: all 0.3s ease;
-          }
-        }
-        li {
-          padding-left: vw(68px);
-          display: none;
-        }
-        p.active svg {
-          transform: rotate(180deg);
-        }
-        p.active ~ li {
-          display: block;
-        }
+        //   svg {
+        //     width: vw(30px);
+        //     height: vw(30px);
+        //     transition: all 0.3s ease;
+        //   }
+        // }
+        // li {
+        //   padding-left: vw(68px);
+        //   display: none;
+        // }
+        // p.active svg {
+        //   transform: rotate(180deg);
+        // }
+        // p.active ~ li {
+        //   display: block;
+        // }
       }
     }
     a.menu svg {

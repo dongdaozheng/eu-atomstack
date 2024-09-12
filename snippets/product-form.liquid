@@ -342,18 +342,47 @@
       {%- when 'product_information' -%}
       <style>
         #block_id{{block.id}}.product_information_box{
+      
           padding: 20px 0;
+          background-color: rgb(43 114 255 / 5%);
           border-radius: var(--button-border-radius);
           color: {{block.settings.text_color}};
-          background-color: {{block.settings.bg_color}};
+          
         }
-
+        #block_id{{block.id}}.product_information_box2{
+          border-top: 1px solid #dfdfdf;
+        }
+        .product_informationBox_svg svg{
+          width: 13px;
+          height: auto;
+        }
+        .product_informationBox_svg{
+          width: 16px;
+          justify-content: center;
+        }
+        .slp_7cb0e2 img{
+          width: 16px !important;
+          height: auto;
+        }
+        .slp_1d97ce{
+          padding: 20px;
+          padding-bottom: 14px;
+          background-color: rgb(43 114 255 / 5% ) !important;
+          border-radius: var(--button-border-radius) !important;
+        }
+        .slp_96a4ba:after{
+          background-color: rgb(43 114 255 / 5% ) !important;
+        }
       </style>
-        <div class="product_information_box" id="block_id{{block.id}}">
+         {% if block.settings.text ==blank and block.settings.text3 == blank and block.settings.show_description == false %}
+        {% else %}
+        <div class="product_information_box" id="block_id{{block.id}}" style="{%- if block.settings.border_top -%} margin-top: -16px; border-top: 1px solid #dfdfdf;{%- endif -%}">
           {% if block.settings.text !=blank %}
             <div class="product_informationBox">
                 <div class="product_informationBox_svg">
-                  {{block.settings.svg}}
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.55636 1.49169H2.98186C2.87301 1.49169 2.78942 1.46642 2.73111 1.41588C2.67279 1.36534 2.63197 1.3012 2.60865 1.22344C2.58532 1.14569 2.57366 1.05822 2.57366 0.961026C2.57366 0.863835 2.58143 0.772475 2.59699 0.686947C2.60476 0.601419 2.62031 0.508115 2.64364 0.407037C2.66696 0.305958 2.70001 0.22043 2.74277 0.150452C2.78554 0.0804743 2.84191 0.0338225 2.91189 0.0104966C2.98186 -0.0128292 3.06739 0.00660899 3.16847 0.0688113C3.2851 0.138789 3.41728 0.214598 3.56501 0.296239C3.71274 0.377879 3.85658 0.45952 3.99654 0.54116C4.13649 0.622801 4.26673 0.696666 4.38725 0.762756C4.50776 0.828846 4.59912 0.88133 4.66133 0.920206C4.73908 0.974633 4.79739 1.03489 4.83627 1.10098C4.87515 1.16707 4.8907 1.22927 4.88292 1.28759C4.87515 1.3459 4.84405 1.3945 4.78962 1.43338C4.73519 1.47225 4.65744 1.49169 4.55636 1.49169ZM5.46607 1.48003H7.0289C7.13776 1.48003 7.22134 1.45476 7.27966 1.40422C7.33797 1.35368 7.37879 1.28953 7.40212 1.21178C7.42544 1.13403 7.43711 1.04655 7.43711 0.949363C7.43711 0.852172 7.43322 0.760813 7.42544 0.675284C7.40989 0.589756 7.3924 0.498396 7.37296 0.401205C7.35352 0.304014 7.32242 0.22043 7.27966 0.150452C7.23689 0.0804743 7.18052 0.0338225 7.11054 0.0104966C7.04057 -0.0128292 6.95504 0.00272136 6.85396 0.0571484C6.73733 0.127126 6.60515 0.202935 6.45742 0.284576C6.30969 0.366216 6.1639 0.447857 6.02006 0.529498C5.87622 0.611138 5.74404 0.685003 5.62352 0.751093C5.503 0.817183 5.41553 0.869667 5.3611 0.908543C5.27557 0.96297 5.21337 1.02323 5.1745 1.08932C5.13562 1.15541 5.12007 1.21761 5.12784 1.27593C5.13562 1.33424 5.16672 1.38284 5.22115 1.42171C5.27557 1.46059 5.35721 1.48003 5.46607 1.48003ZM4.39308 2.24978H1.01083C0.762016 2.24978 0.600679 2.2906 0.526814 2.37224C0.452948 2.45388 0.416016 2.58412 0.416016 2.76295V3.78929C0.416016 3.98367 0.456836 4.12751 0.538477 4.22082C0.620117 4.31412 0.781454 4.36077 1.02249 4.36077H4.39308V2.24978ZM5.66434 2.24978H8.99994C9.24875 2.24978 9.41786 2.29838 9.50728 2.39557C9.59669 2.49276 9.6414 2.63077 9.6414 2.8096V3.81262C9.6414 3.99922 9.60058 4.13723 9.51894 4.22665C9.4373 4.31607 9.27596 4.36077 9.03493 4.36077H5.66434V2.24978ZM4.39308 4.97891H0.812556V6.89163V7.64972V8.36116V8.96764V9.3875C0.812556 9.78404 0.925297 10.0912 1.15078 10.3089C1.37626 10.5266 1.72615 10.6354 2.20045 10.6354H4.39308V4.97891ZM5.66434 4.97891H9.2332V9.35251C9.22542 9.74905 9.11268 10.062 8.89497 10.2914C8.67726 10.5208 8.33126 10.6354 7.85697 10.6354H5.66434V4.97891Z" fill="#555555"></path>
+                    </svg>
                 </div>
                 <div class="product_informationBox_text">
                   {{block.settings.text}}
@@ -370,17 +399,33 @@
               </div>
             </div>
             {% endif %}
-            {% if block.settings.text3 !=blank %}
+            {% if block.settings.text3 == blank and block.settings.show_description == false%}
+            {%- else -%}
+              
             <div class="product_informationBox">
               <div class="product_informationBox_svg">
-                {{block.settings.svg3}}
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_79_53)">
+                  <path d="M6.82975 0L7.38351 3.39555C7.50717 4.1535 8.01792 4.7466 8.74552 4.97596L12 5.9991L8.46237 7.02225C7.67204 7.2516 6.99642 7.84471 6.66308 8.60266L5.17025 11.9982L4.6147 8.60266C4.49104 7.84471 3.98029 7.2516 3.25269 7.02225L0 5.9991L3.53763 4.97596C4.32796 4.7466 5.00358 4.1535 5.33692 3.39555L6.82975 0Z" fill="#555555"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_79_53">
+                  <rect width="12" height="12" fill="white"></rect>
+                  </clipPath>
+                  </defs>
+                </svg>
               </div>
               <div class="product_informationBox_text">
-                {{block.settings.text3}}
+                {% if block.settings.show_description %}
+                  {{product.description}}
+                  {% else %}
+                  {{block.settings.text3}}
+                {% endif %}
               </div>
             </div>
             {% endif %}
         </div>
+        {% endif %}
       {%- when 'feature_with_icon' -%}
         {%- if feature_with_icon_idx < 1 -%}
           <div class='product-feature-with-icon label-list label-list--horizontal'>

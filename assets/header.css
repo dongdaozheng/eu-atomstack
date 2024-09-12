@@ -113,6 +113,7 @@ store-header .item-desc {
     align-items: center;
     column-gap: 10px;
     transition: all 0.3s ease;
+    position: relative;
   }
   store-header .nav-bar .left li img {
     width: 45px;
@@ -120,6 +121,21 @@ store-header .item-desc {
   }
   store-header .nav-bar .left li:hover {
     background: #f6f8fa;
+  }
+  store-header .nav-bar .left li .point {
+    padding: 0px 6px;
+    position: absolute;
+    border-radius: 5px 5px 5px 0px;
+    background: #ffaa2b;
+    color: #fff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    top: 25px;
+    right: 60px;
   }
   store-header .nav-bar .right {
     flex: 1;
@@ -622,6 +638,22 @@ store-header .item-desc {
   }
   mobile-navigation .product-bar {
     border-bottom: 0.2666666667vw solid #ddd;
+    position: relative;
+  }
+  mobile-navigation .product-bar .point {
+    padding: 0.4vw 0.8vw 0.5333333333vw;
+    position: absolute;
+    border-radius: 0.6666666667vw 0.6666666667vw 0.6666666667vw 0px;
+    background: #ffaa2b;
+    color: #fff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.8666666667vw;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    top: 6.6666666667vw;
+    right: 48vw;
   }
   mobile-navigation .menu-product {
     display: grid;
@@ -758,30 +790,36 @@ store-header .item-desc {
     font-weight: 400;
     margin-bottom: 2.6666666667vw;
   }
-  mobile-navigation .learn .menu + .container {
+  mobile-navigation .learn .menu + .container,
+  mobile-navigation .support .menu + .container {
     background: #fafafa;
     padding: 4.2666666667vw 0px;
   }
-  mobile-navigation .learn .menu + .container ul {
+  mobile-navigation .learn .menu + .container ul,
+  mobile-navigation .support .menu + .container ul {
     padding-left: 5.3333333333vw;
     display: flex;
     flex-direction: column;
     row-gap: 2.6666666667vw;
     margin-bottom: 2.6666666667vw;
   }
-  mobile-navigation .learn .menu + .container ul:last-child {
+  mobile-navigation .learn .menu + .container ul:last-child,
+  mobile-navigation .support .menu + .container ul:last-child {
     margin-bottom: 0px;
   }
-  mobile-navigation .learn .menu + .container ul p {
+  mobile-navigation .learn .menu + .container ul p,
+  mobile-navigation .support .menu + .container ul p {
     display: flex;
     align-items: center;
     column-gap: 2.6666666667vw;
   }
-  mobile-navigation .learn .menu + .container ul svg {
+  mobile-navigation .learn .menu + .container ul svg,
+  mobile-navigation .support .menu + .container ul svg {
     width: 6.4vw;
     height: 6.4vw;
   }
-  mobile-navigation .learn .menu + .container ul li {
+  mobile-navigation .learn .menu + .container ul li,
+  mobile-navigation .support .menu + .container ul li {
     padding-left: 13.3333333333vw;
     list-style: none;
     color: #333;
@@ -793,40 +831,6 @@ store-header .item-desc {
   mobile-navigation .support .menu + .container {
     padding: 5.3333333333vw 0px;
     background: #fafafa;
-  }
-  mobile-navigation .support .menu + .container ul {
-    margin-bottom: 2.6666666667vw;
-    border-bottom: 0.2666666667vw solid #d0d0d0;
-    margin: 0px 5.3333333333vw;
-  }
-  mobile-navigation .support .menu + .container ul:last-child {
-    margin-bottom: 0px;
-  }
-  mobile-navigation .support .menu + .container p {
-    padding: 4.2666666667vw 0;
-    color: #959595;
-    font-family: "Open Sans";
-    font-size: 3.7333333333vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: space-between;
-  }
-  mobile-navigation .support .menu + .container p svg {
-    width: 4vw;
-    height: 4vw;
-    transition: all 0.3s ease;
-  }
-  mobile-navigation .support .menu + .container li {
-    padding-left: 9.0666666667vw;
-    display: none;
-  }
-  mobile-navigation .support .menu + .container p.active svg {
-    transform: rotate(180deg);
-  }
-  mobile-navigation .support .menu + .container p.active ~ li {
-    display: block;
   }
   mobile-navigation a.menu svg {
     transform: rotate(270deg);

@@ -20,7 +20,6 @@
 .block_swatchList .block-swatch__item:after{
   content: unset;
 }
-<style>
 
 .detailCheckout{
   cursor: pointer;
@@ -3254,41 +3253,29 @@ $(".block_swatchList").click(function(){
       "name": "Product Information",
       "limit": 1,
       "settings": [
-        {
-          "type": "textarea",
-          "id": "svg",
-          "label": "svg"
+           {
+          "type": "checkbox",
+          "id": "border_top",
+          "label": "border top",
+          "default": true
         },
         {
           "type": "richtext",
           "id": "text",
-          "label": "text"
+          "label": "text",
+          "default": "<p>Get Free Wood Material Package Worth $50</p>"
         },
         {
-          "type": "textarea",
-          "id": "svg2",
-          "label": "svg2"
-        },
-        {
-          "type": "richtext",
-          "id": "text2",
-          "label": "text2"
-        },
-        {
-          "type": "textarea",
-          "id": "svg3",
-          "label": "svg3"
+          "type": "checkbox",
+          "id": "show_description",
+          "label": "show_description",
+          "default": true
         },
         {
           "type": "richtext",
           "id": "text3",
           "label": "text3"
         },
-        {
-          "type": "color_background",
-          "id": "bg_color",
-          "label": "background color",
-        }, 
         {
           "type": "color",
           "id": "text_color",

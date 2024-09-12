@@ -217,6 +217,7 @@
           "menu_product_FXxcYP": {
             "type": "menu-product",
             "settings": {
+              "point": "New",
               "product_bar_img": "shopify:\/\/shop_images\/K60.png",
               "product_type": "Hurricane",
               "product_view": "\/collections\/hurricane",
@@ -245,6 +246,7 @@
           "menu_product_VUVyiF": {
             "type": "menu-product",
             "settings": {
+              "point": "Hot",
               "product_bar_img": "shopify:\/\/shop_images\/A70MAX_7cd4fad4-3ea6-4166-a1d9-fe74591c3e2b.jpg",
               "product_type": "Max Series",
               "product_view": "\/collections\/max-accessory-1",
@@ -275,6 +277,7 @@
           "menu_product_aQt8pV": {
             "type": "menu-product",
             "settings": {
+              "point": "",
               "product_bar_img": "shopify:\/\/shop_images\/A20_Pro_V2.webp",
               "product_type": "Ace Pro V2 Series",
               "product_view": "https:\/\/atomstack.com\/collections\/ace-pro-v2-accessories",
@@ -305,6 +308,7 @@
           "menu_product_YJfNLq": {
             "type": "menu-product",
             "settings": {
+              "point": "",
               "product_bar_img": "shopify:\/\/shop_images\/A48_Ultra.webp",
               "product_type": "Unibody Laser Series",
               "product_view": "https:\/\/atomstack.com\/collections\/a6-series",
@@ -337,6 +341,7 @@
           "menu_product_BQNg7W": {
             "type": "menu-product",
             "settings": {
+              "point": "",
               "product_bar_img": "shopify:\/\/shop_images\/A40MAX_0b91cfc6-2e8b-4e2f-9c23-c7b4a42d510b.jpg",
               "product_type": "Pro Series",
               "product_view": "https:\/\/atomstack.com\/collections\/pro-series",
@@ -367,6 +372,7 @@
           "menu_product_E6VEGU": {
             "type": "menu-product",
             "settings": {
+              "point": "",
               "product_bar_img": "shopify:\/\/shop_images\/A5M50PRO_02145156-96c4-4345-9400-d0ab685ded81.jpg",
               "product_type": "Refurbished laser",
               "product_view": "https:\/\/atomstack.com\/collections\/refurbished-laser-machine",
