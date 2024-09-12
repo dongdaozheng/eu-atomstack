@@ -489,21 +489,27 @@
           "type": "grid",
           "settings": {
             "title": "La chaine de Nico",
-            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS."
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS.",
+            "image_account": "shopify:\/\/shop_images\/La_chaine_de_Nico.jpg",
+            "image": "shopify:\/\/shop_images\/La_chaine_Nico.jpg"
           }
         },
         "grid_cXFBYf": {
           "type": "grid",
           "settings": {
             "title": "James Dean Design",
-            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS."
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS.",
+            "image_account": "shopify:\/\/shop_images\/chris.jpg",
+            "image": "shopify:\/\/shop_images\/James_Dean_Design.jpg"
           }
         },
         "grid_PcGyN9": {
           "type": "grid",
           "settings": {
             "title": "JT MAKE IT",
-            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS."
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS.",
+            "image_account": "shopify:\/\/shop_images\/JT_MAKE_IT.jpg",
+            "image": "shopify:\/\/shop_images\/JT_MAKE_IT_c0c9df91-7ab8-4024-81a0-5c61b6298000.jpg"
           }
         }
       },
