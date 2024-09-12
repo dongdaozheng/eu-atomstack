@@ -319,6 +319,16 @@
         "column_YnkAkf": {
           "type": "column",
           "settings": {
+            "pc_img_1": "shopify:\/\/shop_images\/bg_47af9cf3-bf8d-4147-b588-6f5f1ea61576.jpg",
+            "mb_img_1": "shopify:\/\/shop_images\/bg-00_fc197a84-a6f7-4cce-8f0b-a72c3c780ecb.jpg",
+            "pc_img_2": "shopify:\/\/shop_images\/bg-1_6f747c8a-463b-4d49-bd8e-3c6a67bdb199.jpg",
+            "mb_img_2": "shopify:\/\/shop_images\/bg-01_768f587f-aa61-4f0c-8875-5c9801a5584f.jpg",
+            "pc_img_3": "shopify:\/\/shop_images\/bg-2_cdae14f9-ce32-478d-a0a4-5ce26f930ae4.jpg",
+            "mb_img_3": "shopify:\/\/shop_images\/bg-02_bf052069-78e0-4c9c-a736-b87105ffa299.jpg",
+            "pc_img_4": "shopify:\/\/shop_images\/bg-3_d096cae8-31ca-4a12-a21a-8ba3145956e7.jpg",
+            "mb_img_4": "shopify:\/\/shop_images\/bg-03_86c52510-a3c2-4044-95f0-103b9c008172.jpg",
+            "pc_img_5": "shopify:\/\/shop_images\/bg-4_e938cc0f-1a05-46ad-9a31-feab961843a7.jpg",
+            "mb_img_5": "shopify:\/\/shop_images\/bg-04_ab505fa5-7f02-42a6-bc04-f8e7af1fc45a.jpg"
           }
         },
         "column_H3UWmj": {
