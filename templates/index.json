@@ -15,40 +15,20 @@
         "column_GGFHhd": {
           "type": "column",
           "settings": {
-            "link_list": "https:\/\/atomstack.com\/pages\/presale-subscription",
-            "pc_img": "shopify:\/\/shop_images\/K60_banner.jpg",
-            "mb_img": "shopify:\/\/shop_images\/K60_-_-750-1080.jpg"
-          }
-        },
-        "column_QtE6aL": {
-          "type": "column",
-          "settings": {
-            "link_list": "https:\/\/atomstack.com\/pages\/atomstack-member-day",
-            "pc_img": "shopify:\/\/shop_images\/member_day-1.jpg",
-            "mb_img": "shopify:\/\/shop_images\/member_day-2.jpg"
-          }
-        },
-        "column_m4C4rx": {
-          "type": "column",
-          "settings": {
-            "link_list": "https:\/\/atomstack.com\/products\/atomstack-ace-a40-pro-v2-laser-engraver",
-            "pc_img": "shopify:\/\/shop_images\/buy_one_get_one-us-01.jpg",
-            "mb_img": "shopify:\/\/shop_images\/a40_pro_v2_laser_engraver.jpg"
+            "link_list": "",
+            "pc_img": "shopify:\/\/shop_images\/K60_CO2_laser_cutter-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/K60_CO2_laser_cutter-01.jpg"
           }
         },
         "column_GfEzPd": {
           "type": "column",
           "settings": {
-            "link_list": "",
-            "pc_img": "shopify:\/\/shop_images\/one_tree_planted.jpg",
-            "mb_img": "shopify:\/\/shop_images\/one_tree_planted_11cccc84-fe24-4fea-a230-aa4d3e7996bc.jpg"
+            "link_list": ""
           }
         }
       },
       "block_order": [
         "column_GGFHhd",
-        "column_QtE6aL",
-        "column_m4C4rx",
         "column_GfEzPd"
       ],
       "settings": {
@@ -60,21 +40,18 @@
         "block_Wp7Xdm": {
           "type": "block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/1_a85c6f31-5d0c-4598-b3d8-e1912a689b38.png",
             "text": "Fast Shipping"
           }
         },
         "block_RtKmeT": {
           "type": "block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/3_5ccb1d30-a09f-49e0-b8a0-76855ea347d4.png",
             "text": "12-month Warranty"
           }
         },
         "block_dhHmgt": {
           "type": "block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/2_fb908d30-097d-4b35-9e6b-f9ce37f7dc96.png",
             "text": "Get 2% of Your Order Back"
           }
         }
@@ -99,9 +76,7 @@
             "product": "atomstack-a70-max",
             "tip": "$700 Off",
             "title": "AtomStack A70\/X70 Max Laser Cutter",
-            "desc": "Go Big, Earn Big.",
-            "pc_img": "shopify:\/\/shop_images\/PC-A70_Max-390-224.png",
-            "mb_img": "shopify:\/\/shop_images\/MB-A70_Max-302-163.png"
+            "desc": "Go Big, Earn Big."
           }
         },
         "column_CN4f3t": {
@@ -111,9 +86,7 @@
             "product": "atomstack-a70-pro",
             "tip": "$700 Off",
             "title": "AtomStack A70\/ X70 Pro Laser Cutter",
-            "desc": "New Beast, 70W Superior Cutting Power",
-            "pc_img": "shopify:\/\/shop_images\/A70_pro_1759eee2-e7d9-46d7-bc11-6be42875fc8a.png",
-            "mb_img": "shopify:\/\/shop_images\/A70_Pro_-302-163.png"
+            "desc": "New Beast, 70W Superior Cutting Power"
           }
         },
         "column_bpA3iG": {
@@ -124,8 +97,7 @@
             "tip": "$400 Off",
             "title": "AtomStack A40 Pro V2 Laser Engraver with F60 Air Assist Kit",
             "desc": "Big Upgrade, Small Budget",
-            "pc_img": "shopify:\/\/shop_images\/PC-A40_Pro.png",
-            "mb_img": "shopify:\/\/shop_images\/MB-A40_Pro-302-163.png"
+            "pc_img": "shopify:\/\/shop_images\/PC-A40_Pro.png"
           }
         },
         "column_gVamHN": {
@@ -135,9 +107,7 @@
             "product": "atomstack-a24-ultra",
             "tip": "$350 Off",
             "title": "AtomStack A24\/X24 Ultra Optical Power 24W Unibody Frame Laser Engraver",
-            "desc": "Installation-free，Class 1 Safety",
-            "pc_img": "shopify:\/\/shop_images\/A24_ultra_f38d1ace-bf78-4ea2-acf4-34994c29368e.png",
-            "mb_img": "shopify:\/\/shop_images\/A24_ultra-302-163.png"
+            "desc": "Installation-free，Class 1 Safety"
           }
         }
       },
@@ -158,7 +128,6 @@
         "grid_TxAgRQ": {
           "type": "grid",
           "settings": {
-            "pc_img": "shopify:\/\/shop_images\/Mask_group-1.jpg",
             "mb_img": "shopify:\/\/shop_images\/1_abd49d58-9876-442c-b6a0-c204f87b07e5.jpg",
             "link": "\/products\/atomstack-a70-max",
             "btn_text": "Buy Now",
@@ -169,8 +138,6 @@
         "grid_8nWf4i": {
           "type": "grid",
           "settings": {
-            "pc_img": "shopify:\/\/shop_images\/Ace-Pro-V2_b2953394-0c55-4440-a8d7-a53800271f3a.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Ace-Pro-V2_4328d4d4-a079-45f0-b1b6-748ce3fc4fff.jpg",
             "link": "\/products\/atomstack-a20-pro-1064nm",
             "btn_text": "Buy Now",
             "title": "Ace Pro V2",
@@ -180,8 +147,6 @@
         "grid_Hi9wML": {
           "type": "grid",
           "settings": {
-            "pc_img": "shopify:\/\/shop_images\/Ace-Pro-V2_1064nm_31be67f3-f171-444a-b8ca-2ab0c9200d89.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Ace-Pro-V2_1064nm_82a057f2-85a3-4d64-b045-d54b1460cd39.jpg",
             "link": "\/products\/atomstack-a20-pro-1064nm",
             "btn_text": "Buy Now",
             "title": "20W Fiber Laser",
@@ -274,9 +239,7 @@
         "grid_CNNzEE"
       ],
       "settings": {
-        "mb_img": "shopify:\/\/shop_images\/assemble-the-cabinet-1.png",
         "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/30bd9e8aede04899bd4a68565274d2f1.mp4",
-        "video_poster": "shopify:\/\/shop_images\/1360-750.jpg",
         "title": "Grow Your Business with Powerful and Stable Laser Engravers",
         "padding_top": 0,
         "padding_bottom": 150,
@@ -290,8 +253,6 @@
         "grid_Y9qRF9": {
           "type": "grid",
           "settings": {
-            "pc_img": "shopify:\/\/shop_images\/Group_199.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Group_214.jpg",
             "link": "\/products\/atomstack-a70-max",
             "btn_text": "Explore the solution",
             "title": "Woodworking",
@@ -301,8 +262,6 @@
         "grid_mkXjaG": {
           "type": "grid",
           "settings": {
-            "pc_img": "shopify:\/\/shop_images\/Group_201.jpg",
-            "mb_img": "shopify:\/\/shop_images\/Group_213.jpg",
             "link": "\/products\/atomstack-a70-max",
             "btn_text": "Explore the solution",
             "title": "Small Business",
@@ -335,91 +294,31 @@
         "column_QKRqVV": {
           "type": "column",
           "settings": {
-            "pc_img_1": "shopify:\/\/shop_images\/bg_23caa962-bc07-439f-93e0-c0284ee2b2b2.jpg",
-            "mb_img_1": "shopify:\/\/shop_images\/bg_c054940a-66be-4d07-8b56-39b370825833.jpg",
-            "pc_img_2": "shopify:\/\/shop_images\/bg-1_9a078e1c-5396-4428-8bc1-9eee987ccc46.jpg",
-            "mb_img_2": "shopify:\/\/shop_images\/bg-1_a301482f-8bf9-4713-9265-df8c5f26b6c2.jpg",
-            "pc_img_3": "shopify:\/\/shop_images\/bg-2_7588a79a-3161-4343-aa95-4d93d385ff4c.jpg",
-            "mb_img_3": "shopify:\/\/shop_images\/bg-2_ae5a5994-75be-4734-9e29-64f3aa7a6e20.jpg",
-            "pc_img_4": "shopify:\/\/shop_images\/bg-3_ac2153d3-a4b6-41a6-b89e-6563c830b50f.jpg",
-            "mb_img_4": "shopify:\/\/shop_images\/bg-3_13602520-e46a-4800-b72e-b85703aa57ef.jpg",
-            "pc_img_5": "shopify:\/\/shop_images\/bg-4_ea4e6a96-59e1-4768-807a-17651996fbe2.jpg",
-            "mb_img_5": "shopify:\/\/shop_images\/bg-4_39194941-7605-4ee6-b74b-7a4338da80ed.jpg"
           }
         },
         "column_YnkAkf": {
           "type": "column",
           "settings": {
-            "pc_img_1": "shopify:\/\/shop_images\/bg_b01b11ee-08d2-468f-a276-35e0b0f7f55a.jpg",
-            "mb_img_1": "shopify:\/\/shop_images\/bg_cce29859-3257-4cb4-9871-d01be7dde6b7.jpg",
-            "pc_img_2": "shopify:\/\/shop_images\/bg-1_c20f192b-7cd3-413f-9a26-560fe19bbb10.jpg",
-            "mb_img_2": "shopify:\/\/shop_images\/bg-1_e228c6f4-59c7-4c3b-8914-40f739cc9f49.jpg",
-            "pc_img_3": "shopify:\/\/shop_images\/bg-2_f20b4657-c8d8-4caa-8328-6f8ab008b2fa.jpg",
-            "mb_img_3": "shopify:\/\/shop_images\/bg-2_351eb36f-6b47-4f7f-8e76-fd93535ff4fb.jpg",
-            "pc_img_4": "shopify:\/\/shop_images\/bg-3_8c8aae7e-a12d-4392-bdf1-941da2bad65a.jpg",
-            "mb_img_4": "shopify:\/\/shop_images\/bg-3_af3d3cb5-cda1-4b41-b049-a3143f66f3f2.jpg",
-            "pc_img_5": "shopify:\/\/shop_images\/bg-4_3c5242b3-f48f-4057-ace2-31870c0188ab.jpg",
-            "mb_img_5": "shopify:\/\/shop_images\/bg-4_8d6505bf-ed8b-4adf-a70a-02d8d4b5e01e.jpg"
           }
         },
         "column_H3UWmj": {
           "type": "column",
           "settings": {
-            "pc_img_1": "shopify:\/\/shop_images\/bg_e5685de8-8e2a-40fd-95cf-f5557f46a3ed.jpg",
-            "mb_img_1": "shopify:\/\/shop_images\/bg_7c326c27-af77-4c0f-b9e1-79c424db6be0.jpg",
-            "pc_img_2": "shopify:\/\/shop_images\/bg-1_179e75ee-9c6a-4887-ae1b-21161307f4d1.jpg",
-            "mb_img_2": "shopify:\/\/shop_images\/bg-1_2d787b2a-2aa8-46c0-ab04-c0b998646438.jpg",
-            "pc_img_3": "shopify:\/\/shop_images\/bg-2_c506dc25-feb5-445e-8840-12bc4d22b966.jpg",
-            "mb_img_3": "shopify:\/\/shop_images\/bg-2_1c8cf666-9864-42be-8275-c43f6ea497c0.jpg",
-            "pc_img_4": "shopify:\/\/shop_images\/bg-3_1f1cf304-e127-4ece-9eed-7e4a454d1f39.jpg",
-            "mb_img_4": "shopify:\/\/shop_images\/bg-3_e81b4fb4-9c87-44a1-aeaf-b60d1fc775a1.jpg",
-            "pc_img_5": "shopify:\/\/shop_images\/bg-4_2fb1bc23-be87-45b2-b6a9-8dde9fce7183.jpg",
-            "mb_img_5": "shopify:\/\/shop_images\/bg-4_9e45beb2-fdf7-4904-83ac-b111f60fd9a5.jpg"
           }
         },
         "column_344N7z": {
           "type": "column",
           "settings": {
-            "pc_img_1": "shopify:\/\/shop_images\/bg_daff761e-71fd-4d66-853a-fcdf035dd7e4.jpg",
-            "mb_img_1": "shopify:\/\/shop_images\/bg_cb40bcd8-16f3-4b87-90a2-27dbad804969.jpg",
-            "pc_img_2": "shopify:\/\/shop_images\/bg-1_e0670789-f99d-4c60-8ee5-253a685de77d.jpg",
-            "mb_img_2": "shopify:\/\/shop_images\/bg-1_9216f7fb-8a39-4533-a23a-004e14909e93.jpg",
-            "pc_img_3": "shopify:\/\/shop_images\/bg-2_3ccf091a-7974-478c-b387-b5e2371a1e0e.jpg",
-            "mb_img_3": "shopify:\/\/shop_images\/bg-2_86dbd7da-202b-478b-a02f-0e22d8f32ac7.jpg",
-            "pc_img_4": "shopify:\/\/shop_images\/bg-3_57156c43-6eb3-484c-aec2-05793ed5db3c.jpg",
-            "mb_img_4": "shopify:\/\/shop_images\/bg-3_3ce89f88-7e25-45c6-9f28-8a9fb09af44f.jpg",
-            "pc_img_5": "shopify:\/\/shop_images\/bg-4_7a0c830c-d173-455c-a439-ae044b4c1686.jpg",
-            "mb_img_5": "shopify:\/\/shop_images\/bg-4_fd46a4b2-387f-4a6c-93d0-97729ba401b2.jpg"
           }
         },
         "column_3a7Pfg": {
           "type": "column",
           "settings": {
-            "pc_img_1": "shopify:\/\/shop_images\/bg_528b2be8-c9de-4ccb-96a0-760a0d83863b.jpg",
-            "mb_img_1": "shopify:\/\/shop_images\/bg_362ef434-fc99-4271-b32b-a5e2670793ed.jpg",
-            "pc_img_2": "shopify:\/\/shop_images\/bg-1_3c8fbbb5-bbcf-4455-a6d5-22a6bfd2fca0.jpg",
-            "mb_img_2": "shopify:\/\/shop_images\/bg-1_6dae1597-8858-401e-a4a3-5825a014b7cd.jpg",
-            "pc_img_3": "shopify:\/\/shop_images\/bg-2_07ff33b5-3df1-465f-887c-4e2897bfb78f.jpg",
-            "mb_img_3": "shopify:\/\/shop_images\/bg-2_07de3ac4-50b8-43c4-8ca6-560c02bffba1.jpg",
-            "pc_img_4": "shopify:\/\/shop_images\/bg-3_4b05f180-3305-4184-9ea1-6a3c42ae6af3.jpg",
-            "mb_img_4": "shopify:\/\/shop_images\/bg-3_4240162b-2d7b-4ac8-a389-ecf37c1a05ae.jpg",
-            "pc_img_5": "shopify:\/\/shop_images\/bg-4_48474cdc-6ca3-4632-8848-8242ea523054.jpg",
-            "mb_img_5": "shopify:\/\/shop_images\/bg-4_476a96aa-e7e1-4a0c-870f-ba8ae36d3d62.jpg"
           }
         },
         "column_FBxaRm": {
           "type": "column",
           "settings": {
-            "pc_img_1": "shopify:\/\/shop_images\/bg_1ad40e21-1cff-4605-a9f8-080dc9cce7da.jpg",
-            "mb_img_1": "shopify:\/\/shop_images\/bg_dd887f05-759c-4f06-97fc-9d54889542e2.jpg",
-            "pc_img_2": "shopify:\/\/shop_images\/bg-1_88957d76-e3c2-4331-9210-69e4f647c83a.jpg",
-            "mb_img_2": "shopify:\/\/shop_images\/bg-1_ef175476-740c-4c7d-ad42-6781b7e60bb0.jpg",
-            "pc_img_3": "shopify:\/\/shop_images\/bg-2_97e9207f-186a-4e78-b1b3-a86018885ba4.jpg",
-            "mb_img_3": "shopify:\/\/shop_images\/bg-2_d3e98248-2027-438f-95c4-87352b40e535.jpg",
-            "pc_img_4": "shopify:\/\/shop_images\/bg-3_7232d71b-507f-4835-8ed3-83ee14802363.jpg",
-            "mb_img_4": "shopify:\/\/shop_images\/bg-3_d14c9bb7-5e77-41dc-a3bd-d76d6fbbeed0.jpg",
-            "pc_img_5": "shopify:\/\/shop_images\/bg-4_5a0742a1-9a0c-4d22-b62b-b6ea7bbf580a.jpg",
-            "mb_img_5": "shopify:\/\/shop_images\/bg-4_65542169-691f-4f83-8321-6f2a68674502.jpg"
           }
         }
       },
@@ -473,24 +372,21 @@
           "type": "grid",
           "settings": {
             "title": "@Trey",
-            "desc": "With AtomStack, Trey transformed his childhood passion for crafting into a successful venture.",
-            "image": "shopify:\/\/shop_images\/Group_202.jpg"
+            "desc": "With AtomStack, Trey transformed his childhood passion for crafting into a successful venture."
           }
         },
         "grid_KtGyMK": {
           "type": "grid",
           "settings": {
             "title": "@Ali",
-            "desc": "Thanks to AtomStack, Ali, once a newcomer, achieved remarkable success at craft fairs.",
-            "image": "shopify:\/\/shop_images\/Group_203.jpg"
+            "desc": "Thanks to AtomStack, Ali, once a newcomer, achieved remarkable success at craft fairs."
           }
         },
         "grid_Lgwk46": {
           "type": "grid",
           "settings": {
             "title": "@Dave",
-            "desc": "AtomStack unlocked Dave's creative possibilities, enabling him to tackle ambitious projects he once considered impossible.",
-            "image": "shopify:\/\/shop_images\/Group_204.jpg"
+            "desc": "AtomStack unlocked Dave's creative possibilities, enabling him to tackle ambitious projects he once considered impossible."
           }
         }
       },
@@ -520,27 +416,21 @@
           "type": "grid",
           "settings": {
             "title": "La chaine de Nico",
-            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS.",
-            "image_account": "shopify:\/\/shop_images\/La_chaine_de_Nico.jpg",
-            "image": "shopify:\/\/shop_images\/La_chaine_Nico.jpg"
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS."
           }
         },
         "grid_cXFBYf": {
           "type": "grid",
           "settings": {
             "title": "James Dean Design",
-            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS.",
-            "image_account": "shopify:\/\/shop_images\/chris.jpg",
-            "image": "shopify:\/\/shop_images\/James_Dean_Design.jpg"
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS."
           }
         },
         "grid_PcGyN9": {
           "type": "grid",
           "settings": {
             "title": "JT MAKE IT",
-            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS.",
-            "image_account": "shopify:\/\/shop_images\/JT_MAKE_IT_6383f8af-7386-49b8-82e3-6eb824f5cf71.jpg",
-            "image": "shopify:\/\/shop_images\/JT_MAKE_IT.jpg"
+            "desc": "Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS, Seamlessly compatible with LightBurn software for precise and efficient control on both Windows and iOS."
           }
         }
       },
