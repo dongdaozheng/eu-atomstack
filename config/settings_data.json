@@ -146,7 +146,7 @@
             "type": "menu-accessories",
             "settings": {
               "product_type": "Laser Module",
-              "product_view": "https:\/\/atomstack.com\/collections\/laser-module",
+              "product_view": "\/collections\/laser-module",
               "collection": "laser-module",
               "product_grid_columns": 4
             }
@@ -155,7 +155,7 @@
             "type": "menu-accessories",
             "settings": {
               "product_type": "Rotary Roller",
-              "product_view": "https:\/\/atomstack.com\/collections\/rotary-roller",
+              "product_view": "\/collections\/rotary-roller",
               "collection": "rotary-roller",
               "product_grid_columns": 4
             }
@@ -164,7 +164,7 @@
             "type": "menu-accessories",
             "settings": {
               "product_type": "Working Panel",
-              "product_view": "https:\/\/atomstack.com\/collections\/working-panel",
+              "product_view": "\/collections\/working-panel",
               "collection": "working-panel",
               "product_grid_columns": 4
             }
@@ -173,7 +173,7 @@
             "type": "menu-accessories",
             "settings": {
               "product_type": "Protective Enclosure",
-              "product_view": "https:\/\/atomstack.com\/collections\/enclosure-protective-case",
+              "product_view": "\/collections\/enclosure-protective-case",
               "collection": "enclosure-protective-case",
               "product_grid_columns": 4
             }
@@ -182,7 +182,7 @@
             "type": "menu-accessories",
             "settings": {
               "product_type": "Air Purifier",
-              "product_view": "https:\/\/atomstack.com\/collections\/air-purifier",
+              "product_view": "\/collections\/air-purifier",
               "collection": "air-purifier",
               "product_grid_columns": 4
             }
@@ -191,7 +191,7 @@
             "type": "menu-accessories",
             "settings": {
               "product_type": "Extension Kit",
-              "product_view": "https:\/\/atomstack.com\/collections\/extension-kit",
+              "product_view": "\/collections\/extension-kit",
               "collection": "extension-kit",
               "product_grid_columns": 4
             }
@@ -200,7 +200,7 @@
             "type": "menu-accessories",
             "settings": {
               "product_type": "Air Assist Set",
-              "product_view": "https:\/\/atomstack.com\/collections\/air-assist",
+              "product_view": "\/collections\/air-assist",
               "collection": "air-assist",
               "product_grid_columns": 4
             }
@@ -209,7 +209,7 @@
             "type": "menu-accessories",
             "settings": {
               "product_type": "Other Accessories",
-              "product_view": "https:\/\/atomstack.com\/collections\/other-accessories",
+              "product_view": "\/collections\/other-accessories",
               "collection": "other-accessories",
               "product_grid_columns": 4
             }
