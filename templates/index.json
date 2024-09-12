@@ -22,6 +22,7 @@
         },
         "column_GfEzPd": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "link_list": ""
           }
@@ -128,7 +129,8 @@
         "grid_TxAgRQ": {
           "type": "grid",
           "settings": {
-            "mb_img": "shopify:\/\/shop_images\/1_abd49d58-9876-442c-b6a0-c204f87b07e5.jpg",
+            "pc_img": "shopify:\/\/shop_images\/A70_Max_laser_cutter-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/A70_Maxlasercutter-01.jpg",
             "link": "\/products\/atomstack-a70-max",
             "btn_text": "Buy Now",
             "title": "A70 Max Laser",
@@ -138,9 +140,11 @@
         "grid_8nWf4i": {
           "type": "grid",
           "settings": {
-            "link": "\/products\/atomstack-a20-pro-1064nm",
+            "pc_img": "shopify:\/\/shop_images\/A20_pro_v2_laser_engraver-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/A20_pro_v2_laser_engraver-01.jpg",
+            "link": "\/products\/products\/atomstack-ace-pro-v2",
             "btn_text": "Buy Now",
-            "title": "Ace Pro V2",
+            "title": "A20 Pro V2",
             "desc": "Enhanced Precision, Accelerated Speed"
           }
         },
