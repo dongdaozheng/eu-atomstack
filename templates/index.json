@@ -259,7 +259,9 @@
         "grid_Y9qRF9": {
           "type": "grid",
           "settings": {
-            "link": "\/products\/atomstack-a70-max",
+            "pc_img": "shopify:\/\/shop_images\/woodworking_program-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/woodworking_program-01.jpg",
+            "link": "",
             "btn_text": "Explore the solution",
             "title": "Woodworking",
             "desc": "Kickstart your craftsmanship—easier setup, exceptional results."
@@ -268,7 +270,9 @@
         "grid_mkXjaG": {
           "type": "grid",
           "settings": {
-            "link": "\/products\/atomstack-a70-max",
+            "pc_img": "shopify:\/\/shop_images\/smsall_business-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/smaill_business-01.jpg",
+            "link": "\/pages\/small-business",
             "btn_text": "Explore the solution",
             "title": "Small Business",
             "desc": "Boost startups with laser engravers—ideal for custom made, marketable projects."
