@@ -77,11 +77,27 @@ store-header {
         align-items: center;
         padding: 0px 30px;
         height: 100%;
+        position: relative;
         &.active {
           .container-wrapper {
             opacity: 1;
             visibility: visible;
           }
+        }
+        .point {
+          padding: 3px 6px 4px;
+          position: absolute;
+          border-radius: 5px 5px 5px 0px;
+          background: #ffaa2b;
+          color: #fff;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 12px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: normal;
+          top: 25px;
+          right: 60px;
         }
       }
       .container-wrapper {
