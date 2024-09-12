@@ -30,6 +30,10 @@
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
+    object-fit: contain;
+    object-position: bottom;
+    height: 590px;
+    background: #000;
   }
   .grid-image .content {
     display: grid;

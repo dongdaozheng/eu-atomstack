@@ -100,6 +100,7 @@
         },
         "em_variant_description_app_embed_block_gXxpXJ": {
           "type": "shopify:\/\/apps\/em-variant-description\/blocks\/app-embed-block\/fde9eb2e-2dc6-4756-86f3-98c22a146066",
+          "disabled": true,
           "settings": {
             "main_heading": "",
             "product": "{{product}}"
