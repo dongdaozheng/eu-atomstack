@@ -151,6 +151,8 @@
         "grid_Hi9wML": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/A20_pro_1064nm_laser_engraver-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/A20_pro_1064_laser_engraver-01.jpg",
             "link": "\/products\/atomstack-a20-pro-1064nm",
             "btn_text": "Buy Now",
             "title": "20W Fiber Laser",
