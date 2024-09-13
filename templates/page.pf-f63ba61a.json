@@ -98,6 +98,8 @@
         "grid_LdRKqm": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Acrylic-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Acrylic-1.jpg",
             "corner_mark": "$29",
             "block_title": "Acrylic"
           }
@@ -105,6 +107,8 @@
         "grid_9Wtbi9": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Wood-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Wood-1.jpg",
             "corner_mark": "$39",
             "block_title": "Wood"
           }
@@ -112,6 +116,8 @@
         "grid_tibp3T": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Leather-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Leather-1.jpg",
             "corner_mark": "$19",
             "block_title": "Leather"
           }
@@ -119,6 +125,8 @@
         "grid_q9zrym": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Paper-1.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Paper-1.jpg",
             "corner_mark": "$19",
             "block_title": "Paper"
           }
@@ -126,6 +134,8 @@
         "grid_AUMegn": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Acrylic.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Acrylic.jpg",
             "corner_mark": "$9",
             "block_title": "Acrylic"
           }
@@ -133,6 +143,8 @@
         "grid_KgFMgk": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Acrylic-2.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Acrylic-2.jpg",
             "corner_mark": "$39",
             "block_title": "Acrylic"
           }
@@ -140,6 +152,8 @@
         "grid_WVJxQM": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Rock.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Rock.jpg",
             "corner_mark": "$19",
             "block_title": "Rock"
           }
@@ -147,6 +161,8 @@
         "grid_4yytf3": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Leather-2.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Leather-2.jpg",
             "corner_mark": "$19",
             "block_title": "Leather"
           }
@@ -154,6 +170,8 @@
         "grid_GhcMxr": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Wood-3.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Wood-3.jpg",
             "corner_mark": "$29",
             "block_title": "Wood"
           }
@@ -161,6 +179,8 @@
         "grid_bFhQd8": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Wood-4.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Wood-4.jpg",
             "corner_mark": "$9",
             "block_title": "Wood"
           }
@@ -168,6 +188,8 @@
         "grid_HLY4wC": {
           "type": "grid",
           "settings": {
+            "pc_img": "shopify:\/\/shop_images\/Metal-2.jpg",
+            "mb_img": "shopify:\/\/shop_images\/Metal-2.jpg",
             "corner_mark": "$39",
             "block_title": "Metal"
           }
