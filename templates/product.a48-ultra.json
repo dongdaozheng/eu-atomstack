@@ -197,6 +197,7 @@
       "block_order": [
         "selleasy_lb_upsell_fbt_block_4Ugm86"
       ],
+      "disabled": true,
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
