@@ -1340,13 +1340,13 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   .p-user-mod .icon-user img {
     width: 100%;
     border-radius: 50%;
+    aspect-ratio: 1/1;
   }
 
   .p-user-mod .mod-desc {
     line-height: 1.5;
     font-size: var(--warpper-font-xxx-small);
     color: rgba(0, 0, 0, 0.93);
-    min-height: calc(var(--warpper-font-xxx-small) * 1.5 * 4);
   }
 
   /*p-mod-14*/
@@ -1367,6 +1367,11 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     font-size: var(--warpper-font-xxxx-large);
     color: #fff;
     padding-bottom: 50px;
+  }
+
+  .p-mod-14 .swiper-slide {
+    height: auto;
+    background-color: #fff;
   }
 
   .p-mod-14-swiper-button-prev,
@@ -2403,8 +2408,6 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
       font-size: var(--warpper-font-xxx-small);
       color: rgba(35, 35, 35, 1);
       line-height: 1.2;
-      /* min-height: calc(var(--warpper-font-xxx-small)*1.2*2);  */
-      /* margin-bottom: 10px; */
       overflow-wrap: anywhere;
     }
 
@@ -2422,6 +2425,12 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
       border-bottom: 1px solid rgba(43, 114, 255, 1);
     }
 
+    /* .p-user-mod */
+    .p-user-mod .icon-user {
+      width: 32px;
+      height: 32px;
+    }
+
     /*p-mod-14*/
     .p-mod-14 {
       background-color: #F7F7F7;
@@ -2437,10 +2446,6 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
       text-align: left;
       font-weight: 600;
       padding-bottom: 40px;
-    }
-
-    .p-user-mod .mod-desc {
-      min-height: auto;
     }
 
     .p-mod-14-swiper-button-prev,
@@ -2873,6 +2878,12 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
     }
 
     /* p-user-mod */
+    .p-user-mod .icon-user {
+      width: calc(var(--px2vw) * 32vw);
+      height: calc(var(--px2vw) * 32vw);
+      margin-bottom: calc(var(--px2vw) * 10vw);
+    }
+
     /*p-mod-14*/
     .p-mod-14 .mod-head .mod-title {
       padding-bottom: calc(var(--px2vw) * 40vw);
