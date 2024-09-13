@@ -216,7 +216,7 @@
           "type": "liquid",
           "settings": {
             "title": "Reviews",
-            "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"
+            "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
           }
         }
       },
