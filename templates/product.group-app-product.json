@@ -201,7 +201,7 @@
           "type": "liquid",
           "settings": {
             "title": "Reviews",
-            "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"
+            "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
           }
         },
         "liquid_hHMBdg": {
@@ -229,39 +229,15 @@
         "mobile_bottom_padding": 0
       }
     },
-    "slideshow_DrrKx7": {
-      "type": "slideshow",
-      "blocks": {
-        "image_MxtbFL": {
-          "type": "image",
-          "settings": {
-            "text_position": "middle_center",
-            "mobile_text_position": "inherit",
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_MxtbFL"
-      ],
+    "image_link_iXAMec": {
+      "type": "image-link",
       "settings": {
-        "section_height": "auto",
-        "background_type": "full_width",
-        "transition_type": "sweep",
-        "autoplay": false,
-        "cycle_speed": 20,
-        "background": "rgba(0,0,0,0)"
+        "title": "",
+        "font_size": 52,
+        "font_size_mb": 30,
+        "pc_img": "shopify:\/\/shop_images\/one_tree_planted-1.jpg",
+        "mb_img": "shopify:\/\/shop_images\/one_tree_planted-01.webp",
+        "link": ""
       }
     },
     "product-recommendations": {
@@ -287,7 +263,7 @@
     "main",
     "image_link_hkYAqU",
     "product-content",
-    "slideshow_DrrKx7",
+    "image_link_iXAMec",
     "product-recommendations"
   ]
 }
