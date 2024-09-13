@@ -8714,6 +8714,9 @@ function initPaypalCheckoutBtn({ btnClass, totalPrice }) {
 
 class ToggleNavigation extends HTMLElement {
   connectedCallback() {
+    this.url = new URL(window.location.href);
+    this.lg = this.url.searchParams.get('lg');
+    Weglot?.switchTo(lg);
     this.btn = this.querySelector('.title svg');
     this.popup = this.querySelector('.toggle-country-popup');
     this.selectCountry = this.querySelector('.select-country');
