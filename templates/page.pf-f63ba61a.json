@@ -91,7 +91,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Metal-1.jpg",
             "mb_img": "shopify:\/\/shop_images\/Metal-1.jpg",
-            "corner_mark": "$59",
+            "corner_mark": "€59",
             "block_title": "Metal"
           }
         },
@@ -100,7 +100,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Acrylic-1.jpg",
             "mb_img": "shopify:\/\/shop_images\/Acrylic-1.jpg",
-            "corner_mark": "$29",
+            "corner_mark": "€29",
             "block_title": "Acrylic"
           }
         },
@@ -109,7 +109,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Wood-1.jpg",
             "mb_img": "shopify:\/\/shop_images\/Wood-1.jpg",
-            "corner_mark": "$39",
+            "corner_mark": "€39",
             "block_title": "Wood"
           }
         },
@@ -118,7 +118,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Leather-1.jpg",
             "mb_img": "shopify:\/\/shop_images\/Leather-1.jpg",
-            "corner_mark": "$19",
+            "corner_mark": "€19",
             "block_title": "Leather"
           }
         },
@@ -127,7 +127,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Paper-1.jpg",
             "mb_img": "shopify:\/\/shop_images\/Paper-1.jpg",
-            "corner_mark": "$19",
+            "corner_mark": "€19",
             "block_title": "Paper"
           }
         },
@@ -136,7 +136,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Acrylic.jpg",
             "mb_img": "shopify:\/\/shop_images\/Acrylic.jpg",
-            "corner_mark": "$9",
+            "corner_mark": "€9",
             "block_title": "Acrylic"
           }
         },
@@ -145,7 +145,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Acrylic-2.jpg",
             "mb_img": "shopify:\/\/shop_images\/Acrylic-2.jpg",
-            "corner_mark": "$39",
+            "corner_mark": "€39",
             "block_title": "Acrylic"
           }
         },
@@ -154,7 +154,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Rock.jpg",
             "mb_img": "shopify:\/\/shop_images\/Rock.jpg",
-            "corner_mark": "$19",
+            "corner_mark": "€19",
             "block_title": "Rock"
           }
         },
@@ -163,7 +163,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Leather-2.jpg",
             "mb_img": "shopify:\/\/shop_images\/Leather-2.jpg",
-            "corner_mark": "$19",
+            "corner_mark": "€19",
             "block_title": "Leather"
           }
         },
@@ -172,7 +172,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Wood-3.jpg",
             "mb_img": "shopify:\/\/shop_images\/Wood-3.jpg",
-            "corner_mark": "$29",
+            "corner_mark": "€29",
             "block_title": "Wood"
           }
         },
@@ -181,7 +181,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Wood-4.jpg",
             "mb_img": "shopify:\/\/shop_images\/Wood-4.jpg",
-            "corner_mark": "$9",
+            "corner_mark": "€9",
             "block_title": "Wood"
           }
         },
@@ -190,7 +190,7 @@
           "settings": {
             "pc_img": "shopify:\/\/shop_images\/Metal-2.jpg",
             "mb_img": "shopify:\/\/shop_images\/Metal-2.jpg",
-            "corner_mark": "$39",
+            "corner_mark": "€39",
             "block_title": "Metal"
           }
         }
