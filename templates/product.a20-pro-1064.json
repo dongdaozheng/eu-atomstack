@@ -47,12 +47,6 @@
             "image_width": 150
           }
         },
-        "0de2f95e-4076-4ccc-8f7c-8ecb07eddda6": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"color:#e64d4d; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:22px;\">{{ product.metafields.custom.special_info.value }}<\/div>"
-          }
-        },
         "942f73c8-e783-4874-a47e-e88b93ec9e7b": {
           "type": "image",
           "disabled": true,
@@ -120,7 +114,6 @@
         "smile_io_smile_points_on_product_page_D7NU4b",
         "product_information_jVRPAz",
         "image_pacXXe",
-        "0de2f95e-4076-4ccc-8f7c-8ecb07eddda6",
         "942f73c8-e783-4874-a47e-e88b93ec9e7b",
         "variant_picker",
         "quantity_selector",
