@@ -451,7 +451,7 @@
           "links_YN7Cqj": {
             "type": "links",
             "settings": {
-              "menu": "",
+              "menu": "footer",
               "mobile_width": "half_width"
             }
           },
