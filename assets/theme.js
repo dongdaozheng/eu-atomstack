@@ -8750,7 +8750,9 @@ class ToggleNavigation extends HTMLElement {
     this.selectLanguage.forEach((li) => {
       li.addEventListener('click', () => {
         const language = li.getAttribute('data-language');
-        window.location.href = this.findRegion(this.area, language);
+        Weglot?.switchTo(language);
+        this.popup.classList.remove('active');
+        // window.location.href = this.findRegion(this.area, language);
       });
     });
   }

@@ -5,17 +5,16 @@
         Contact us
         {% render 'arrows' %}
       </a>
-      {% comment %}
-        <div class='select-country'>
-          <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'>
-            <circle cx="10" cy="10" r="9.5" stroke="#333333"/>
-            <path d="M14.8337 10C14.8337 12.696 14.2498 15.1119 13.3304 16.8358C12.3995 18.5811 11.1985 19.5 10.0003 19.5C8.80212 19.5 7.60112 18.5811 6.67027 16.8358C5.75087 15.1119 5.16699 12.696 5.16699 10C5.16699 7.30403 5.75087 4.88809 6.67027 3.16423C7.60112 1.41888 8.80212 0.5 10.0003 0.5C11.1985 0.5 12.3995 1.41888 13.3304 3.16423C14.2498 4.88809 14.8337 7.30403 14.8337 10Z" stroke="#333333"/>
-            <path d="M1.3335 6.66666H18.6668" stroke="#333333"/>
-            <path d="M1.3335 13.3333H18.6668" stroke="#333333"/>
-          </svg>
-          <p>United States / English</p>
-        </div>
-      {% endcomment %}
+
+      <div class='select-country'>
+        <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'>
+          <circle cx="10" cy="10" r="9.5" stroke="#333333"/>
+          <path d="M14.8337 10C14.8337 12.696 14.2498 15.1119 13.3304 16.8358C12.3995 18.5811 11.1985 19.5 10.0003 19.5C8.80212 19.5 7.60112 18.5811 6.67027 16.8358C5.75087 15.1119 5.16699 12.696 5.16699 10C5.16699 7.30403 5.75087 4.88809 6.67027 3.16423C7.60112 1.41888 8.80212 0.5 10.0003 0.5C11.1985 0.5 12.3995 1.41888 13.3304 3.16423C14.2498 4.88809 14.8337 7.30403 14.8337 10Z" stroke="#333333"/>
+          <path d="M1.3335 6.66666H18.6668" stroke="#333333"/>
+          <path d="M1.3335 13.3333H18.6668" stroke="#333333"/>
+        </svg>
+        <p>United States / English</p>
+      </div>
     </div>
   </div>
   <div class='toggle-country-popup'>
@@ -34,16 +33,18 @@
         <ul>
           <p>North America</p>
           <div class='li-wrapper'>
-            <li data-language='us'>
-              <span>United Stated</span>
-              <span>English / $USD</span>
-            </li>
+            <a href='https://atomstack.com#redirect'>
+              <li data-language='us'>
+                <span>United Stated</span>
+                <span>English / $USD</span>
+              </li>
+            </a>
           </div>
         </ul>
         <ul>
           <p>Europe</p>
           <div class='li-wrapper'>
-            <li data-language='eu'>
+            <li data-language='en'>
               <span>Europe</span>
               <span>English / €EUR</span>
             </li>
