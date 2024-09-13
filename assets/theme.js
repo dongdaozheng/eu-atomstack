@@ -8716,7 +8716,7 @@ class ToggleNavigation extends HTMLElement {
   connectedCallback() {
     this.url = new URL(window.location.href);
     this.lg = this.url.searchParams.get('lg');
-    Weglot?.switchTo(lg);
+    Weglot?.switchTo(this.lg);
     this.btn = this.querySelector('.title svg');
     this.popup = this.querySelector('.toggle-country-popup');
     this.selectCountry = this.querySelector('.select-country');
@@ -8726,6 +8726,36 @@ class ToggleNavigation extends HTMLElement {
     this.handleClick(this.selectCountry);
     this.handleClick(this.mbArrows);
     this.handleLanguage();
+    this.nationalLanguage = [
+      {
+        language: 'en',
+        nation: 'Europe / English',
+      },
+      {
+        language: 'de',
+        nation: 'Deutschland / Deutsch',
+      },
+      {
+        language: 'fr',
+        nation: 'France / Français',
+      },
+      {
+        language: 'it',
+        nation: 'Italy / Italian',
+      },
+      {
+        language: 'es',
+        nation: 'Spanish / Español',
+      },
+    ];
+    Weglot.on('languageChanged', () => {
+      this.nationalLanguage.forEach(({ language, nation }) => {
+        if (language === Weglot.getCurrentLang()) {
+          this.selectCountry.innerHTML = nation;
+        }
+      });
+    });
+
     this.area = [
       {
         eu: 'https://eu.atomstack.com',
