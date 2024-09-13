@@ -1,1 +1,94 @@
-{"sections":{"main":{"type":"main-page","settings":{"show_title":true,"page_width":"large"}},"payment_section_zdmaec":{"type":"payment-section","settings":{}},"update_faq_iVUzAm":{"type":"update-faq","blocks":{"question_VMgwyL":{"type":"question","settings":{"title":"Are there any additional fees for currency exchange?","answer":"<p>When you make a payment for your order through PayPal, the amount will be settled in US dollars. For customers in non-US regions using our website, they will see the product prices and shipping fees displayed in their local currency. However, during the final checkout process, these amounts will be converted to US dollars based on the latest real-time exchange rate for payment. So, rest assured, we'll handle the currency conversion for you (FREE), making it convenient to shop from anywhere in the world!<\/p><p>When using Shopify Payments for checkout, the orders are settled in the local currency. This means that customers in different regions will have their orders processed and charged in their respective local currencies. So, whether you're paying in Euros, Pounds, Yen, or any other supported currency, you can complete your transaction seamlessly without worrying about currency conversions. We've got you covered with a hassle-free payment experience through Shopify Payments!<\/p>"}},"question_KprNQQ":{"type":"question","settings":{"title":"What can I do if the payment for my order is declined?","answer":"<p>If the payment has been declined, please place the order again as we’re not able to reinstate the order. To help ensure your order is not declined when placing new orders, please check the information listed below:<\/p>"}}},"block_order":["question_VMgwyL","question_KprNQQ"],"settings":{"title":"FAQ"}},"contact_us_TcfU7y":{"type":"contact-us","blocks":{"contact_item_T9rYwQ":{"type":"contact-item","settings":{"title":"Contact online Custmer service","image":"shopify:\/\/shop_images\/contact.png","link":""}},"contact_item_V3CAQm":{"type":"contact-item","settings":{"title":"Join facebook group","image":"shopify:\/\/shop_images\/facebook.png","link":""}},"contact_item_xHnai8":{"type":"contact-item","settings":{"title":"Join a reddit topic","image":"shopify:\/\/shop_images\/reddit.png","link":""}}},"block_order":["contact_item_T9rYwQ","contact_item_V3CAQm","contact_item_xHnai8"],"settings":{"title":"Reach Out TO Us Anytime!"}}},"order":["main","payment_section_zdmaec","update_faq_iVUzAm","contact_us_TcfU7y"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "page_width": "large"
+      }
+    },
+    "payment_section_zdmaec": {
+      "type": "payment-section",
+      "settings": {
+      }
+    },
+    "update_faq_iVUzAm": {
+      "type": "update-faq",
+      "blocks": {
+        "question_VMgwyL": {
+          "type": "question",
+          "settings": {
+            "title": "Are there any additional fees for currency exchange?",
+            "answer": "<p>When you make a payment for your order through PayPal, the amount will be settled in US dollars. For customers in non-US regions using our website, they will see the product prices and shipping fees displayed in their local currency. However, during the final checkout process, these amounts will be converted to US dollars based on the latest real-time exchange rate for payment. So, rest assured, we'll handle the currency conversion for you (FREE), making it convenient to shop from anywhere in the world!<\/p><p>When using Shopify Payments for checkout, the orders are settled in the local currency. This means that customers in different regions will have their orders processed and charged in their respective local currencies. So, whether you're paying in Euros, Pounds, Yen, or any other supported currency, you can complete your transaction seamlessly without worrying about currency conversions. We've got you covered with a hassle-free payment experience through Shopify Payments!<\/p>"
+          }
+        },
+        "question_KprNQQ": {
+          "type": "question",
+          "settings": {
+            "title": "What can I do if the payment for my order is declined?",
+            "answer": "<p>If the payment has been declined, please place the order again as we’re not able to reinstate the order. To help ensure your order is not declined when placing new orders, please check the information listed below:<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_VMgwyL",
+        "question_KprNQQ"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
+    },
+    "contact_us_TcfU7y": {
+      "type": "contact-us",
+      "blocks": {
+        "contact_item_T9rYwQ": {
+          "type": "contact-item",
+          "settings": {
+            "title": "Contact online Custmer service",
+            "image": "shopify:\/\/shop_images\/contact.webp",
+            "link": ""
+          }
+        },
+        "contact_item_V3CAQm": {
+          "type": "contact-item",
+          "settings": {
+            "title": "Join facebook group",
+            "image": "shopify:\/\/shop_images\/facebook.png",
+            "link": ""
+          }
+        },
+        "contact_item_xHnai8": {
+          "type": "contact-item",
+          "settings": {
+            "title": "Join a reddit topic",
+            "image": "shopify:\/\/shop_images\/reddit.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "contact_item_T9rYwQ",
+        "contact_item_V3CAQm",
+        "contact_item_xHnai8"
+      ],
+      "settings": {
+        "title": "Reach Out TO Us Anytime!"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "payment_section_zdmaec",
+    "update_faq_iVUzAm",
+    "contact_us_TcfU7y"
+  ]
+}
