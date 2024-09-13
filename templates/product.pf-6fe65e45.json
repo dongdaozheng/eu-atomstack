@@ -311,6 +311,7 @@
     },
     "image_link_et3rmX": {
       "type": "image-link",
+      "disabled": true,
       "settings": {
         "title": "",
         "font_size": 52,
@@ -346,6 +347,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "You may also like",
