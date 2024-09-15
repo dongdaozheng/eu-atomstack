@@ -235,7 +235,7 @@
           "type": "liquid",
           "settings": {
             "title": "Reviews",
-            "liquid": "<div class=\"custom-vstar-review-widget\" style=\"width:100%\"><\/div>"
+            "liquid": "<div id=\"looxReviews\" data-product-id=\"{{ product.id }}\"><\/div>"
           }
         }
       },
@@ -255,39 +255,15 @@
         "mobile_bottom_padding": 0
       }
     },
-    "slideshow_dTn9aj": {
-      "type": "slideshow",
-      "blocks": {
-        "image_DCxwG6": {
-          "type": "image",
-          "settings": {
-            "text_position": "middle_center",
-            "mobile_text_position": "inherit",
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_DCxwG6"
-      ],
+    "image_link_E8yXGw": {
+      "type": "image-link",
       "settings": {
-        "section_height": "auto",
-        "background_type": "full_width",
-        "transition_type": "sweep",
-        "autoplay": false,
-        "cycle_speed": 20,
-        "background": "rgba(0,0,0,0)"
+        "title": "",
+        "font_size": 52,
+        "font_size_mb": 30,
+        "pc_img": "shopify:\/\/shop_images\/1920-650_2x_8ee3bbb6-79ed-4002-9379-24b1f3ae1478.jpg",
+        "mb_img": "shopify:\/\/shop_images\/850-1212_2x_74f371a9-28fa-4c83-9521-683f475f78df.jpg",
+        "link": ""
       }
     },
     "product-recommendations": {
@@ -314,7 +290,7 @@
     "image_link_CQTm8C",
     "172541411903d36d48",
     "product-content",
-    "slideshow_dTn9aj",
+    "image_link_E8yXGw",
     "product-recommendations"
   ]
 }
