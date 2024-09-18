@@ -62,7 +62,6 @@
         "block_RtKmeT",
         "block_dhHmgt"
       ],
-      "disabled": true,
       "settings": {
         "title": "The Only Official Brand Website"
       }
@@ -118,7 +117,6 @@
         "column_bpA3iG",
         "column_gVamHN"
       ],
-      "disabled": true,
       "settings": {
         "title": "Best Seller"
       }
@@ -476,12 +474,6 @@
         "title": "Trusted by Users in 40+ Countries, 200,000+ Users Worldwide Creating Exciting Projects."
       }
     },
-    "pagefly-home": {
-      "type": "pagefly-home",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "grid_image_text_WnPLYH": {
       "type": "grid-image-text",
       "blocks": {
@@ -573,7 +565,6 @@
         "video_hdGKwi",
         "video_ahVGar"
       ],
-      "disabled": true,
       "settings": {
         "title": ""
       }
@@ -588,7 +579,6 @@
     "home_grid_N4PcPb",
     "grid_swiper_Ny3GrL",
     "home_introduction_eUpqAU",
-    "pagefly-home",
     "grid_image_text_WnPLYH",
     "home_form_ytWiYM",
     "video_swiper_4ePbU6"
