@@ -17515,3 +17515,7 @@ input.needsclick:focus-visible {
   text-align: center;
   white-space: normal !important;
 }
+
+.em-secondary-desc img {
+  object-fit: cover;
+}
