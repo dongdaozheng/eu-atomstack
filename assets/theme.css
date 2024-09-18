@@ -17505,3 +17505,20 @@ input.needsclick:focus-visible {
 #shopify-section-active-bar {
   display: none;
 }
+
+.__pf.__pf_nPZYL8Z1 .pf-11_ {
+  line-height: 32px;
+}
+
+.sc-ctqQKy.eJZCTA.pf-21_.pf-heading-2-h3 {
+  line-height: 26px;
+}
+
+.sc-ctqQKy.japqAw.pf-18_.pf-heading-2-h3 {
+  text-align: center;
+}
+
+[data-pf-type='Heading2'] {
+  line-height: normal;
+  text-align: center;
+}
