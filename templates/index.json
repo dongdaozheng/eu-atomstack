@@ -19,18 +19,10 @@
             "pc_img": "shopify:\/\/shop_images\/K60_CO2_laser_cutter-1.jpg",
             "mb_img": "shopify:\/\/shop_images\/K60_CO2_laser_cutter-01.jpg"
           }
-        },
-        "column_GfEzPd": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "link_list": ""
-          }
         }
       },
       "block_order": [
-        "column_GGFHhd",
-        "column_GfEzPd"
+        "column_GGFHhd"
       ],
       "settings": {
       }
@@ -62,6 +54,7 @@
         "block_RtKmeT",
         "block_dhHmgt"
       ],
+      "disabled": true,
       "settings": {
         "title": "The Only Official Brand Website"
       }
@@ -566,6 +559,7 @@
         "video_hdGKwi",
         "video_ahVGar"
       ],
+      "disabled": true,
       "settings": {
         "title": ""
       }
