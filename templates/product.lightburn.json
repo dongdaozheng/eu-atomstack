@@ -1,1 +1,248 @@
-{"sections":{"main":{"type":"main-product","blocks":{"meta":{"type":"meta","settings":{"include_variant_name":false}},"smile_io_smile_points_on_product_page_L8NBrn":{"type":"shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6","settings":{"primary_colour":"#121212","secondary_colour":"#f8f8f8","should_show_icon":true,"earning_rate":1}},"image_zYfhDg":{"type":"image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/PD2.jpg","image_alignment":"left","image_link":"","image_width":150}},"71d1f91a-419d-41fd-8f48-7093f643bd53":{"type":"text","disabled":true,"settings":{"text":"{{ product.metafields.custom.product_highlights | metafield_tag }}"}},"5db30a7c-a691-4e5b-ae51-5384a0f82ffe":{"type":"liquid","disabled":true,"settings":{"liquid":"<div style=\"color:#e64d4d; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:23px;\">{{ product.metafields.custom.special_info.value }}<\/div>"}},"0f4f7ab7-f0a7-4a14-a711-7abe4fc66c8b":{"type":"image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/buy_more_save_more.svg","image_alignment":"center","image_link":"","image_width":600}},"variant_picker":{"type":"variant_picker","settings":{"hide_sold_out_variants":true,"package_title":"","selector_mode":"block","color_mode":"variant_image","enable_dynamic_theme_color":false,"dynamic_theme_color_with_announcement_bar":false,"dynamic_theme_color_with_footer":false,"size_chart_page":"","size_chart_icon":"ruler-3","size_chart_image":false}},"quantity_selector":{"type":"quantity_selector","disabled":true,"settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_payment_button":false,"atc_button_icon_preset":"quick-buy-shopping-bag","atc_button_background":"rgba(0,0,0,0)","atc_button_text_color":"rgba(0,0,0,0)","buy_now_button_background":"rgba(0,0,0,0)","buy_now_button_text_color":"rgba(0,0,0,0)","show_image_uploader":false,"image_uploader_label":"<p>Drag & Drop your image or <span style=\"text-decoration:underline\">Browse<\/span> <\/p>"}},"liquid_dbgzQR":{"type":"liquid","settings":{"liquid":"<style>\n.svg-icon{display:inline !important;\nfill:#2c2c2c;}\n.file-download {border: 1px solid #c2c2c2; border-radius:4px;color:#2c2c2c; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:23px;padding:4px 10px;margin-right:8px;display:inline-flex;align-items:center;}\n.file-download:hover {border: 1px solid #285ee6;color: #285ee6;}\n.file-download:hover .svg-icon{fill:#285EE6 !important;}\n<\/style>\n<div><a target=\"_blank\" class=\"file-download\" href=\"{{ product.metafields.custom.user_guides.value }}\"><svg t=\"1712481044919\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"9258\" width=\"16\" height=\"16\"><path d=\"M348.31 281.26c7.1-7.54 10.8-18.94 10.8-32.85 0-14.06-3.4-24.57-10.21-31.67-6.07-6.37-13.76-8.88-26.64-8.88h-23.68v82.87h23.53c12.14 0 19.98-2.81 26.2-9.47zM242.49 227c0-5.92-1.63-10.8-4.88-14.21-3.41-3.7-8.29-5.33-16.14-5.33h-28.26v39.81h28.26c13.62-0.05 21.02-7.27 21.02-20.27z\" p-id=\"9259\"><\/path><path d=\"M853.51 282.47L646.55 74.6A36 36 0 0 0 621 64H196a36 36 0 0 0-36 36v59h-14a36 36 0 0 0-36 36v108a36 36 0 0 0 36 36h14v585a36 36 0 0 0 36 36h632a36 36 0 0 0 36-36V307.87a36 36 0 0 0-10.49-25.4zM194.39 308.2h-21.9a119.46 119.46 0 0 0 1.18-19.09V209a133.34 133.34 0 0 0-1.18-19c6.36 0.3 10.95 0.44 18.79 0.44h30.93c14.36 0 24.42 3.41 31.53 10.51 6.06 5.92 9.17 14.8 9.17 25.46 0 11.24-3.4 20.42-9.91 27.23-7.26 7.25-17.32 10.65-31.53 10.65h-28.26V289a119.16 119.16 0 0 0 1.18 19.2zM816 902a10 10 0 0 1-10 10H218a10 10 0 0 1-10-10V339h296a36 36 0 0 0 36-36V195a36 36 0 0 0-36-36H208v-37a10 10 0 0 1 10-10h360a10 10 0 0 1 10 10v182a36 36 0 0 0 36 36h182a10 10 0 0 1 10 10zM277.72 190c5.91 0.3 9.47 0.44 18.79 0.44h26.79c18.5 0 30.48 3.85 40 13 10.8 10.21 16.42 25.6 16.42 44.84 0 20.13-5.92 36.11-17.46 47.06-9.47 8.88-21.31 12.88-38.77 12.88h-26.98c-9 0-12.73 0.15-18.79 0.44a120.62 120.62 0 0 0 1.18-19.53v-79.94a125.07 125.07 0 0 0-1.18-19.19zM397 190c6.07 0.3 9.77 0.44 18.8 0.44h41.44a151.3 151.3 0 0 0 20.27-1v20a141.25 141.25 0 0 0-20.27-1h-39.37v31.38h31.67a145.87 145.87 0 0 0 20.13-1v19.68a144.8 144.8 0 0 0-20.13-1h-31.67v29.6c0 10.5 0.3 15.68 1.18 21.31H397c0.89-5 1.19-11.25 1.19-21v-78A127.51 127.51 0 0 0 397 190z\" p-id=\"9260\"><\/path><path d=\"M645.78 665.91c-16.1 0-35.55 1.71-57.84 5.06-60.89-44.52-77.9-93.63-77.9-93.63s10.4-26.48 11.06-69.72c0.42-27.33-3.81-45.77-14.75-56.48-4.25-4.17-11.38-6.86-18.16-6.86a24.05 24.05 0 0 0-14.32 4.53c-31.66 23.16 2.9 132.35 3.83 135.26A979.11 979.11 0 0 1 424.58 694c-6.3 11.11-5.68 10.25-11 19.29 0 0-53.56 25.16-79.55 56.06-14.68 17.46-16.53 29.25-15.75 38.23v0.2c1.23 10.58 14.77 20.21 28.41 20.21h1.69c13.86-0.86 29-10.7 46.42-30.1 11.47-12.81 26.38-35.34 44.33-67 51.49-14.65 96.82-25.08 134.8-31 27.85 15 69.29 32 97.5 32 9.46 0 17.07-1.93 22.62-5.73 6.64-4.55 9.46-10.22 11.22-20.72s-0.69-18.46-5.55-24.23c-8.58-10.33-26.23-15.3-53.94-15.3zM348.07 803a44.52 44.52 0 0 1 3.37-7c3-5 11.28-14.79 32.21-33.65C369.3 784 358.76 795.71 348.07 803z m144.78-336.8l0.06-0.11c5.31 2.8 7.79 22.44 7.29 33.83-0.67 15.28-0.83 21.19-3.51 30.58-7.27-19.58-7.79-54.76-3.84-64.3z m-38.28 236.63a696.07 696.07 0 0 0 40.22-81.71 272.67 272.67 0 0 0 48.86 57.94c-34.83 7.36-68.27 16.58-89.08 23.77z m222.17 3.06c-11.44 0-26.45-4-44.76-11.9 2.6-0.07 5.14-0.1 7.6-0.1 24.76 0 38.17 3.6 45 6.62a29.06 29.06 0 0 1 4.77 2.58c-1.89 1.24-5.71 2.8-12.61 2.8z\" p-id=\"9261\"><\/path><\/svg>&nbsp;LightBurn Document<\/a>\n<a target=\"_blank\" class=\"file-download\" href=\"{{ product.metafields.custom.installation_manual.value }}\"><svg t=\"1712050487506\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"4428\" width=\"16\" height=\"16\"><path d=\"M332.32 464.112l144 160a47.952 47.952 0 0 0 71.36 0l144-160a48 48 0 0 0-71.36-64.224L560 466.912V176a48 48 0 1 0-96 0v290.912l-60.32-67.024a48 48 0 1 0-71.36 64.224zM880 560a48 48 0 0 0-48 48v192H192V608a48 48 0 1 0-96 0v240a48 48 0 0 0 48 48h736a48 48 0 0 0 48-48V608a48 48 0 0 0-48-48z\" p-id=\"4429\"><\/path><\/svg>&nbsp;Software Download<\/a>\n<\/div>"}},"text_QC8b8f":{"type":"text","disabled":true,"settings":{"text":"<h4><span style=\"text-decoration:underline\">🔗<\/span><a href=\"https:\/\/lightburnsoftware.com\/pages\/download-trial\" target=\"_blank\" title=\"Lightburn Software\"><span style=\"text-decoration:underline\">Download Software<\/span><\/a><\/h4>"}},"list_delivery_free_return":{"type":"list","settings":{"item_1_heading":"Issued in 1 day via Email","item_1_content":"<p>Please pay attention to check your inbox and check the License Key.<\/p>","item_1_icon_preset":"picto-email","item_2_heading":"","item_2_content":"","item_2_icon_preset":"picto-gift","item_3_heading":"","item_3_content":"","item_3_icon_preset":"picto-warranty","remove_inner_padding":false,"box_alignment":"row","icon_alignment":"top","background":"#f7f9fa","text_color":"rgba(0,0,0,0)"}},"a33b0886-6286-4ee7-af11-9ff9ba4f6c4a":{"type":"payment_icons","settings":{}}},"block_order":["meta","smile_io_smile_points_on_product_page_L8NBrn","image_zYfhDg","71d1f91a-419d-41fd-8f48-7093f643bd53","5db30a7c-a691-4e5b-ae51-5384a0f82ffe","0f4f7ab7-f0a7-4a14-a711-7abe4fc66c8b","variant_picker","quantity_selector","buy_buttons","liquid_dbgzQR","text_QC8b8f","list_delivery_free_return","a33b0886-6286-4ee7-af11-9ff9ba4f6c4a"],"custom_css":[".product-form__image img {max-width: 100% !important; border-radius: 8px;}"],"settings":{"show_checkOut":true,"show_vendor":false,"show_sku":false,"show_taxes_included":false,"show_product_rating":false,"show_sticky_add_to_cart":true,"show_sticky_quick_buy":false,"show_share_buttons":false,"help_page":"","enable_video_autoplay":false,"enable_video_looping":false,"enable_image_zoom":true,"enable_peeking_carousel_on_mobile":false,"adaptive_media_height":true,"show_thumbnails_on_mobile":true,"always_hide_mobile_pagination_dots":false,"desktop_thumbnails_position":"bottom","shadow_effect":"large","transition_effect":"slide"}},"image_link_6pTYNw":{"type":"image-link","disabled":true,"settings":{"title":"","font_size":52,"font_size_mb":30,"pc_img":"shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg","mb_img":"shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg","link":"shopify:\/\/pages\/back-to-school"}},"product-content":{"type":"product-content","blocks":{"description":{"type":"description","settings":{}}},"block_order":["description"],"custom_css":["@media screen and (min-width: 1000px) {.product-tabs__tab-item-wrapper .collapsible {overflow: visible !important; } .product-content__tabs:only-child {width: calc( var(--grid-column-width) * 14 + var(--grid-gap) * 14 ) !important; }}",".rte img:not([style*=\"float\"]) {margin: 10px 0 !important;}"],"settings":{"desktop_top_padding":0,"desktop_bottom_padding":0,"mobile_top_padding":0,"mobile_bottom_padding":0}},"image_link_gjk8k9":{"type":"image-link","settings":{"title":"","font_size":52,"font_size_mb":30,"pc_img":"shopify:\/\/shop_images\/one_tree_planted-1.jpg","mb_img":"shopify:\/\/shop_images\/one_tree_planted-01.webp","link":""}},"8806764f355a2c0364":{"type":"apps","settings":{"include_horizontal_margins":true,"include_vertical_margins":true}},"product-recommendations":{"type":"product-recommendations","settings":{"subheading":"","title":"You may also like","recommendations_count":4,"products":[],"background":"rgba(0,0,0,0)","text_color":"rgba(0,0,0,0)","ignore_vertical_spacing":false,"desktop_top_padding":0,"desktop_bottom_padding":0,"mobile_top_padding":0,"mobile_bottom_padding":0}}},"order":["main","image_link_6pTYNw","product-content","image_link_gjk8k9","8806764f355a2c0364","product-recommendations"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "meta": {
+          "type": "meta",
+          "settings": {
+            "include_variant_name": false
+          }
+        },
+        "smile_io_smile_points_on_product_page_L8NBrn": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-points-on-product-page\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#121212",
+            "secondary_colour": "#f8f8f8",
+            "should_show_icon": true,
+            "earning_rate": 1
+          }
+        },
+        "image_zYfhDg": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PD2.jpg",
+            "image_alignment": "left",
+            "image_link": "",
+            "image_width": 150
+          }
+        },
+        "71d1f91a-419d-41fd-8f48-7093f643bd53": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.metafields.custom.product_highlights | metafield_tag }}"
+          }
+        },
+        "5db30a7c-a691-4e5b-ae51-5384a0f82ffe": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div style=\"color:#e64d4d; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:23px;\">{{ product.metafields.custom.special_info.value }}<\/div>"
+          }
+        },
+        "0f4f7ab7-f0a7-4a14-a711-7abe4fc66c8b": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/buy_more_save_more.svg",
+            "image_alignment": "center",
+            "image_link": "",
+            "image_width": 600
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "selector_mode": "block",
+            "color_mode": "variant_image",
+            "enable_dynamic_theme_color": false,
+            "dynamic_theme_color_with_announcement_bar": false,
+            "dynamic_theme_color_with_footer": false,
+            "size_chart_page": "",
+            "size_chart_icon": "ruler-3",
+            "size_chart_image": false
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_icon_preset": "quick-buy-shopping-bag",
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)",
+            "show_image_uploader": false,
+            "image_uploader_label": "<p>Drag & Drop your image or <span style=\"text-decoration:underline\">Browse<\/span> <\/p>"
+          }
+        },
+        "liquid_dbgzQR": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n.svg-icon{display:inline !important;\nfill:#2c2c2c;}\n.file-download {border: 1px solid #c2c2c2; border-radius:4px;color:#2c2c2c; font-family: Montserrat, sans-serif; font-weight:600; font-size:15px;line-height:23px;padding:4px 10px;margin-right:8px;display:inline-flex;align-items:center;}\n.file-download:hover {border: 1px solid #285ee6;color: #285ee6;}\n.file-download:hover .svg-icon{fill:#285EE6 !important;}\n<\/style>\n<div><a target=\"_blank\" class=\"file-download\" href=\"{{ product.metafields.custom.user_guides.value }}\"><svg t=\"1712481044919\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"9258\" width=\"16\" height=\"16\"><path d=\"M348.31 281.26c7.1-7.54 10.8-18.94 10.8-32.85 0-14.06-3.4-24.57-10.21-31.67-6.07-6.37-13.76-8.88-26.64-8.88h-23.68v82.87h23.53c12.14 0 19.98-2.81 26.2-9.47zM242.49 227c0-5.92-1.63-10.8-4.88-14.21-3.41-3.7-8.29-5.33-16.14-5.33h-28.26v39.81h28.26c13.62-0.05 21.02-7.27 21.02-20.27z\" p-id=\"9259\"><\/path><path d=\"M853.51 282.47L646.55 74.6A36 36 0 0 0 621 64H196a36 36 0 0 0-36 36v59h-14a36 36 0 0 0-36 36v108a36 36 0 0 0 36 36h14v585a36 36 0 0 0 36 36h632a36 36 0 0 0 36-36V307.87a36 36 0 0 0-10.49-25.4zM194.39 308.2h-21.9a119.46 119.46 0 0 0 1.18-19.09V209a133.34 133.34 0 0 0-1.18-19c6.36 0.3 10.95 0.44 18.79 0.44h30.93c14.36 0 24.42 3.41 31.53 10.51 6.06 5.92 9.17 14.8 9.17 25.46 0 11.24-3.4 20.42-9.91 27.23-7.26 7.25-17.32 10.65-31.53 10.65h-28.26V289a119.16 119.16 0 0 0 1.18 19.2zM816 902a10 10 0 0 1-10 10H218a10 10 0 0 1-10-10V339h296a36 36 0 0 0 36-36V195a36 36 0 0 0-36-36H208v-37a10 10 0 0 1 10-10h360a10 10 0 0 1 10 10v182a36 36 0 0 0 36 36h182a10 10 0 0 1 10 10zM277.72 190c5.91 0.3 9.47 0.44 18.79 0.44h26.79c18.5 0 30.48 3.85 40 13 10.8 10.21 16.42 25.6 16.42 44.84 0 20.13-5.92 36.11-17.46 47.06-9.47 8.88-21.31 12.88-38.77 12.88h-26.98c-9 0-12.73 0.15-18.79 0.44a120.62 120.62 0 0 0 1.18-19.53v-79.94a125.07 125.07 0 0 0-1.18-19.19zM397 190c6.07 0.3 9.77 0.44 18.8 0.44h41.44a151.3 151.3 0 0 0 20.27-1v20a141.25 141.25 0 0 0-20.27-1h-39.37v31.38h31.67a145.87 145.87 0 0 0 20.13-1v19.68a144.8 144.8 0 0 0-20.13-1h-31.67v29.6c0 10.5 0.3 15.68 1.18 21.31H397c0.89-5 1.19-11.25 1.19-21v-78A127.51 127.51 0 0 0 397 190z\" p-id=\"9260\"><\/path><path d=\"M645.78 665.91c-16.1 0-35.55 1.71-57.84 5.06-60.89-44.52-77.9-93.63-77.9-93.63s10.4-26.48 11.06-69.72c0.42-27.33-3.81-45.77-14.75-56.48-4.25-4.17-11.38-6.86-18.16-6.86a24.05 24.05 0 0 0-14.32 4.53c-31.66 23.16 2.9 132.35 3.83 135.26A979.11 979.11 0 0 1 424.58 694c-6.3 11.11-5.68 10.25-11 19.29 0 0-53.56 25.16-79.55 56.06-14.68 17.46-16.53 29.25-15.75 38.23v0.2c1.23 10.58 14.77 20.21 28.41 20.21h1.69c13.86-0.86 29-10.7 46.42-30.1 11.47-12.81 26.38-35.34 44.33-67 51.49-14.65 96.82-25.08 134.8-31 27.85 15 69.29 32 97.5 32 9.46 0 17.07-1.93 22.62-5.73 6.64-4.55 9.46-10.22 11.22-20.72s-0.69-18.46-5.55-24.23c-8.58-10.33-26.23-15.3-53.94-15.3zM348.07 803a44.52 44.52 0 0 1 3.37-7c3-5 11.28-14.79 32.21-33.65C369.3 784 358.76 795.71 348.07 803z m144.78-336.8l0.06-0.11c5.31 2.8 7.79 22.44 7.29 33.83-0.67 15.28-0.83 21.19-3.51 30.58-7.27-19.58-7.79-54.76-3.84-64.3z m-38.28 236.63a696.07 696.07 0 0 0 40.22-81.71 272.67 272.67 0 0 0 48.86 57.94c-34.83 7.36-68.27 16.58-89.08 23.77z m222.17 3.06c-11.44 0-26.45-4-44.76-11.9 2.6-0.07 5.14-0.1 7.6-0.1 24.76 0 38.17 3.6 45 6.62a29.06 29.06 0 0 1 4.77 2.58c-1.89 1.24-5.71 2.8-12.61 2.8z\" p-id=\"9261\"><\/path><\/svg>&nbsp;LightBurn Document<\/a>\n<a target=\"_blank\" class=\"file-download\" href=\"{{ product.metafields.custom.installation_manual.value }}\"><svg t=\"1712050487506\" class=\"svg-icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"4428\" width=\"16\" height=\"16\"><path d=\"M332.32 464.112l144 160a47.952 47.952 0 0 0 71.36 0l144-160a48 48 0 0 0-71.36-64.224L560 466.912V176a48 48 0 1 0-96 0v290.912l-60.32-67.024a48 48 0 1 0-71.36 64.224zM880 560a48 48 0 0 0-48 48v192H192V608a48 48 0 1 0-96 0v240a48 48 0 0 0 48 48h736a48 48 0 0 0 48-48V608a48 48 0 0 0-48-48z\" p-id=\"4429\"><\/path><\/svg>&nbsp;Software Download<\/a>\n<\/div>"
+          }
+        },
+        "text_QC8b8f": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h4><span style=\"text-decoration:underline\">🔗<\/span><a href=\"https:\/\/lightburnsoftware.com\/pages\/download-trial\" target=\"_blank\" title=\"Lightburn Software\"><span style=\"text-decoration:underline\">Download Software<\/span><\/a><\/h4>"
+          }
+        },
+        "list_delivery_free_return": {
+          "type": "list",
+          "settings": {
+            "item_1_heading": "Issued in 1 day via Email",
+            "item_1_content": "<p>Please pay attention to check your inbox and check the License Key.<\/p>",
+            "item_1_icon_preset": "picto-email",
+            "item_2_heading": "",
+            "item_2_content": "",
+            "item_2_icon_preset": "picto-gift",
+            "item_3_heading": "",
+            "item_3_content": "",
+            "item_3_icon_preset": "picto-warranty",
+            "remove_inner_padding": false,
+            "box_alignment": "row",
+            "icon_alignment": "top",
+            "background": "#f7f9fa",
+            "text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "a33b0886-6286-4ee7-af11-9ff9ba4f6c4a": {
+          "type": "payment_icons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "meta",
+        "smile_io_smile_points_on_product_page_L8NBrn",
+        "image_zYfhDg",
+        "71d1f91a-419d-41fd-8f48-7093f643bd53",
+        "5db30a7c-a691-4e5b-ae51-5384a0f82ffe",
+        "0f4f7ab7-f0a7-4a14-a711-7abe4fc66c8b",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "liquid_dbgzQR",
+        "text_QC8b8f",
+        "list_delivery_free_return",
+        "a33b0886-6286-4ee7-af11-9ff9ba4f6c4a"
+      ],
+      "custom_css": [
+        ".product-form__image img {max-width: 100% !important; border-radius: 8px;}"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_sticky_quick_buy": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "enable_peeking_carousel_on_mobile": false,
+        "adaptive_media_height": true,
+        "show_thumbnails_on_mobile": true,
+        "always_hide_mobile_pagination_dots": false,
+        "desktop_thumbnails_position": "bottom",
+        "shadow_effect": "large",
+        "transition_effect": "slide"
+      }
+    },
+    "image_link_6pTYNw": {
+      "type": "image-link",
+      "disabled": true,
+      "settings": {
+        "pc_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-01.jpg",
+        "mb_img": "shopify:\/\/shop_images\/AtomStack_back_to_school_sale-03.jpg",
+        "link": "shopify:\/\/pages\/back-to-school"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 1000px) {.product-tabs__tab-item-wrapper .collapsible {overflow: visible !important; } .product-content__tabs:only-child {width: calc( var(--grid-column-width) * 14 + var(--grid-gap) * 14 ) !important; }}",
+        ".rte img:not([style*=\"float\"]) {margin: 10px 0 !important;}"
+      ],
+      "settings": {
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 0,
+        "mobile_top_padding": 0,
+        "mobile_bottom_padding": 0
+      }
+    },
+    "image_link_gjk8k9": {
+      "type": "image-link",
+      "settings": {
+        "pc_img": "shopify:\/\/shop_images\/one_tree_planted-1.jpg",
+        "mb_img": "shopify:\/\/shop_images\/one_tree_planted-01.webp",
+        "link": ""
+      }
+    },
+    "8806764f355a2c0364": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "You may also like",
+        "recommendations_count": 4,
+        "products": [
+
+        ],
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "ignore_vertical_spacing": false,
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 0,
+        "mobile_top_padding": 0,
+        "mobile_bottom_padding": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_link_6pTYNw",
+    "product-content",
+    "image_link_gjk8k9",
+    "8806764f355a2c0364",
+    "product-recommendations"
+  ]
+}

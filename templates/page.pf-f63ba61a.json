@@ -67,11 +67,6 @@
     "image_link_kBThaB": {
       "type": "image-link",
       "settings": {
-        "title": "Meet The All New Powerful Laser Cutter, Get Small Business Started!",
-        "font_size": 52,
-        "font_size_mb": 30,
-        "padding_bottom": 20,
-        "padding_bottom_mb": 20,
         "pc_img": "shopify:\/\/shop_images\/Collection.jpg",
         "mb_img": "shopify:\/\/shop_images\/K60_-_-750-1080_fd1acd74-50b4-4a16-adee-51f7b455828d.jpg",
         "link": "https:\/\/eu.atomstack.com\/products\/atomstack-hurricane"
